@@ -1,1 +1,360 @@
-Placeholder
+{
+  "groups": [
+    {
+      "id": "baseGame",
+      "name": "Hauptspiel",
+      "description": "Achievements des Cyberpunk-2077-Hauptspiels.",
+      "items": [
+        {
+          "id": "the-fool",
+          "name": "Der Narr",
+          "description": "Werde Söldner.",
+          "unlocked": false
+        },
+        {
+          "id": "the-lovers",
+          "name": "Die Liebenden",
+          "description": "Stiehl das Relic.",
+          "unlocked": false
+        },
+        {
+          "id": "right-back-at-ya",
+          "name": "Rache ist süß",
+          "description": "Töte oder überwältige einen Gegner, der eine Granate auf dich geworfen hat.",
+          "unlocked": false
+        },
+        {
+          "id": "the-wheel-of-fortune",
+          "name": "Das Rad des Schicksals",
+          "description": "Verhöre Anders Hellman.",
+          "unlocked": false
+        },
+        {
+          "id": "stanislavskis-method",
+          "name": "Die Stanislawski-Methode",
+          "description": "Benutze 10-mal eine Dialogoption für Vs Lebensweg.",
+          "unlocked": false
+        },
+        {
+          "id": "the-hermit",
+          "name": "Der Eremit",
+          "description": "Finde Alt Cunningham.",
+          "unlocked": false
+        },
+        {
+          "id": "true-soldier",
+          "name": "Shot to the Heart",
+          "description": "Töte oder überwältige 300 Gegner mit Fernkampfwaffen.",
+          "unlocked": false
+        },
+        {
+          "id": "the-high-priestess",
+          "name": "Die Hohepriesterin",
+          "description": "Sprich mit Hanako Arasaka.",
+          "unlocked": false
+        },
+        {
+          "id": "full-body-conversion",
+          "name": "Vollkörperkonversion",
+          "description": "Installiere in jedem Körperteil und System mindestens ein Implantat.",
+          "unlocked": false
+        },
+        {
+          "id": "christmas-tree-attack",
+          "name": "Christmas Tree Attack",
+          "description": "Schließe ein Breach-Protokoll mit mindestens 3 hochgeladenen Daemons ab.",
+          "unlocked": false
+        },
+        {
+          "id": "legend-of-the-afterlife",
+          "name": "Afterlife-Legende",
+          "description": "Erreiche maximale Street Cred.",
+          "unlocked": false
+        },
+        {
+          "id": "life-of-the-road",
+          "name": "Sturm und Drang",
+          "description": "Schließe Panam Palmers Storyline ab.",
+          "unlocked": false
+        },
+        {
+          "id": "gun-fu",
+          "name": "Gun Fu",
+          "description": "Töte oder überwältige im Nahkampf 3 Gegner kurz nacheinander mit einem Revolver oder einer Pistole.",
+          "unlocked": false
+        },
+        {
+          "id": "the-world",
+          "name": "Die Welt",
+          "description": "Schließe die Hauptgeschichte ab.",
+          "unlocked": false
+        },
+        {
+          "id": "bushido-and-chill",
+          "name": "Dancing With My Axe",
+          "description": "Sieh dir Bushido X zusammen mit Rogue an.",
+          "unlocked": false
+        },
+        {
+          "id": "true-warrior",
+          "name": "Hit ’Em Up",
+          "description": "Töte oder überwältige 100 Gegner mit Nahkampfwaffen.",
+          "unlocked": false
+        },
+        {
+          "id": "master-crafter",
+          "name": "Kunsthandwerk",
+          "description": "Stelle 3 legendäre Items her.",
+          "unlocked": false
+        },
+        {
+          "id": "judy-vs-night-city",
+          "name": "Judy gegen Night City",
+          "description": "Schließe Judy Alvarez' Storyline ab.",
+          "unlocked": false
+        },
+        {
+          "id": "two-heads-one-bullet",
+          "name": "Zwei Köpfe, eine Kugel",
+          "description": "Töte oder überwältige 2 Gegner mit demselben Schuss aus einem Scharfschützengewehr.",
+          "unlocked": false
+        },
+        {
+          "id": "to-protect-and-serve",
+          "name": "Freund und Helfer",
+          "description": "Schließe River Wards Storyline ab.",
+          "unlocked": false
+        },
+        {
+          "id": "the-quick-and-the-dead",
+          "name": "Schneller als der Tod",
+          "description": "Töte oder überwältige 50 Gegner, während die Zeit verlangsamt ist.",
+          "unlocked": false
+        },
+        {
+          "id": "i-am-the-law",
+          "name": "Ich bin das Gesetz",
+          "description": "Schließe alle Cyberpsycho-Attacken ab.",
+          "unlocked": false
+        },
+        {
+          "id": "the-wandering-fool",
+          "name": "Der wandernde Narr",
+          "description": "Finde alle Tarot-Graffiti der Mission „Fool on the Hill“.",
+          "unlocked": false
+        },
+        {
+          "id": "ten-out-of-ten",
+          "name": "Zehn von zehn",
+          "description": "Erreiche das höchste Level in einer Fertigkeit.",
+          "unlocked": false
+        },
+        {
+          "id": "v-for-vendetta",
+          "name": "V wie Vendetta",
+          "description": "Belebe dich mit Zweites Herz wieder und töte oder überwältige deinen Mörder innerhalb von 5 Sekunden.",
+          "unlocked": false
+        },
+        {
+          "id": "breathtaking",
+          "name": "Breathtaking",
+          "description": "Sammle alle Gegenstände, die früher Johnny Silverhand gehörten.",
+          "unlocked": false
+        },
+        {
+          "id": "the-sun",
+          "name": "Die Sonne",
+          "description": "Werde zur Legende des Afterlife.",
+          "unlocked": false
+        },
+        {
+          "id": "the-star",
+          "name": "Der Stern",
+          "description": "Verlasse Night City mit den Aldecaldos.",
+          "unlocked": false
+        },
+        {
+          "id": "to-bad-decisions",
+          "name": "Ein Hoch auf schlechte Entscheidungen!",
+          "description": "Schließe Kerry Eurodynes Storyline ab.",
+          "unlocked": false
+        },
+        {
+          "id": "temperance",
+          "name": "Die Mäßigkeit",
+          "description": "Überlasse Johnny Silverhand deinen Körper.",
+          "unlocked": false
+        },
+        {
+          "id": "must-be-rats",
+          "name": "War da was?",
+          "description": "Setze den Quickhack „Ablenkungsmanöver“ 30-mal ein, ohne Aufmerksamkeit auf dich zu ziehen.",
+          "unlocked": false
+        },
+        {
+          "id": "the-jungle",
+          "name": "Kleiner Mann – was nun?",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte in Santo Domingo ab.",
+          "unlocked": false
+        },
+        {
+          "id": "mean-streets",
+          "name": "Once Upon a Time in Heywood",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte in Heywood ab.",
+          "unlocked": false
+        },
+        {
+          "id": "frequent-flyer",
+          "name": "Bonusmeilen",
+          "description": "Finde alle Schnellreise-Datenterminals.",
+          "unlocked": false
+        },
+        {
+          "id": "gunslinger",
+          "name": "Tontaubenschießen",
+          "description": "Schieße eine gegnerische Granate mit einem Revolver aus der Luft.",
+          "unlocked": false
+        },
+        {
+          "id": "city-lights",
+          "name": "Lichter der Großstadt",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte im Stadtzentrum ab.",
+          "unlocked": false
+        },
+        {
+          "id": "its-elementary",
+          "name": "Wild Wild Watson",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte in Watson ab.",
+          "unlocked": false
+        },
+        {
+          "id": "greetings-from-pacifica",
+          "name": "Grüße aus Pacifica!",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte in Pacifica ab.",
+          "unlocked": false
+        },
+        {
+          "id": "little-tokyo",
+          "name": "Little Tokyo",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte in Westbrook ab.",
+          "unlocked": false
+        },
+        {
+          "id": "autojock",
+          "name": "CHOOH2 im Blut",
+          "description": "Kaufe alle erhältlichen Fahrzeuge.",
+          "unlocked": false
+        },
+        {
+          "id": "the-devil",
+          "name": "Der Teufel",
+          "description": "Hilf Takemura, den Tod von Saburo Arasaka zu rächen.",
+          "unlocked": false
+        },
+        {
+          "id": "the-wasteland",
+          "name": "Das wüste Land",
+          "description": "Schließe alle Aufträge und NCPD-Scanner-Delikte in den Badlands ab.",
+          "unlocked": false
+        },
+        {
+          "id": "rough-landing",
+          "name": "Unsanfte Landung",
+          "description": "Führe mit aktiviertem Berserk eine Superhelden-Landung aus und töte oder überwältige 2 Gegner.",
+          "unlocked": false
+        },
+        {
+          "id": "daemon-in-the-shell",
+          "name": "Daemon in the Shell",
+          "description": "Töte oder überwältige 3 Gegner mit einem einzigen „Granatenzündung“-Quickhack.",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "id": "phantomLiberty",
+      "name": "Phantom Liberty",
+      "description": "Achievements der Erweiterung Phantom Liberty.",
+      "items": [
+        {
+          "id": "all-the-presidents-men",
+          "name": "Flucht aus Dogtown",
+          "description": "Rette Präsidentin Myers.",
+          "unlocked": false
+        },
+        {
+          "id": "arachnophobia",
+          "name": "Arachnophobie",
+          "description": "Besiege die Chimera.",
+          "unlocked": false
+        },
+        {
+          "id": "spin-doctor",
+          "name": "Lang lebe der König",
+          "description": "Schließe „Run This Town“ ab.",
+          "unlocked": false
+        },
+        {
+          "id": "easy-come-easy-go",
+          "name": "Wie gewonnen, so zerronnen",
+          "description": "Stiehl den medizinischen Arasaka-Lieferwagen oder liefere 10 Fahrzeuge bei El Capitán ab.",
+          "unlocked": false
+        },
+        {
+          "id": "king-of-wands",
+          "name": "König der Stäbe",
+          "description": "Bring Songbird zu den Sternen.",
+          "unlocked": false
+        },
+        {
+          "id": "dirty-deeds",
+          "name": "Drecksarbeit",
+          "description": "Schließe alle Aufträge in Dogtown ab.",
+          "unlocked": false
+        },
+        {
+          "id": "relic-ruler",
+          "name": "Relic-Kontrolle",
+          "description": "Schalte alle Vorteile im Relic-Vorteilsbaum frei.",
+          "unlocked": false
+        },
+        {
+          "id": "the-apb-is-not-enough",
+          "name": "Spitze der Fahndungsliste",
+          "description": "Werde zum meistgesuchten Kriminellen in Dogtown.",
+          "unlocked": false
+        },
+        {
+          "id": "the-tower",
+          "name": "Der Turm",
+          "description": "Schließe „Things Done Changed“ ab.",
+          "unlocked": false
+        },
+        {
+          "id": "judgement-day",
+          "name": "Tag des Jüngsten Gerichts",
+          "description": "Eliminiere drei Bosse aus der Kategorie „Erhöhte kriminelle Aktivität“.",
+          "unlocked": false
+        },
+        {
+          "id": "king-of-swords",
+          "name": "König der Schwerter",
+          "description": "Bring Songbird nach Hause.",
+          "unlocked": false
+        },
+        {
+          "id": "king-of-pentacles",
+          "name": "König der Münzen",
+          "description": "Lehne Songbirds Bitte ab.",
+          "unlocked": false
+        },
+        {
+          "id": "king-of-cups",
+          "name": "König der Kelche",
+          "description": "Erfülle Songbirds Bitte.",
+          "unlocked": false
+        }
+      ]
+    }
+  ]
+}
