@@ -1,1 +1,204 @@
-Placeholder
+/* =========================================================
+   Personal Game Tracker
+   Main Stylesheet
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. Grundlegende Einstellungen
+   --------------------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+
+	color: #e5e7eb;
+	background-color: #111827;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* ---------------------------------------------------------
+   2. Header
+   --------------------------------------------------------- */
+
+header {
+	padding: 20px 30px;
+
+	background-color: #1f2937;
+	border-bottom: 1px solid #374151;
+}
+
+header h1 {
+	margin: 0;
+
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   3. Seitenaufbau
+   --------------------------------------------------------- */
+
+.page-layout {
+	flex: 1;
+
+	display: flex;
+
+	width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   4. Sidebar
+   --------------------------------------------------------- */
+
+.sidebar {
+	width: 250px;
+	flex-shrink: 0;
+
+	padding: 25px 20px;
+
+	background-color: #18212f;
+	border-right: 1px solid #374151;
+}
+
+.sidebar h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+
+	font-size: 1.1rem;
+}
+
+.sidebar nav ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.sidebar nav li {
+	margin-bottom: 8px;
+}
+
+.sidebar nav a {
+	display: block;
+
+	padding: 10px 12px;
+
+	color: #d1d5db;
+	text-decoration: none;
+
+	border-radius: 6px;
+
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.sidebar nav a:hover {
+	color: #ffffff;
+	background-color: #374151;
+}
+
+
+/* ---------------------------------------------------------
+   5. Hauptinhalt
+   --------------------------------------------------------- */
+
+main {
+	flex: 1;
+
+	min-width: 0;
+	padding: 30px;
+
+	background-color: #111827;
+}
+
+main h1,
+main h2,
+main h3 {
+	margin-top: 0;
+}
+
+main h1 {
+	font-size: 2rem;
+}
+
+
+/* ---------------------------------------------------------
+   6. Footer
+   --------------------------------------------------------- */
+
+footer {
+	padding: 15px 30px;
+
+	color: #9ca3af;
+	background-color: #1f2937;
+
+	border-top: 1px solid #374151;
+
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+
+/* ---------------------------------------------------------
+   7. Allgemeine Elemente
+   --------------------------------------------------------- */
+
+a {
+	color: #60a5fa;
+}
+
+button {
+	font: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   8. Responsive Layout
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+	.page-layout {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		width: 100%;
+
+		border-right: none;
+		border-bottom: 1px solid #374151;
+	}
+
+	.sidebar nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.sidebar nav li {
+		margin: 0;
+	}
+
+	main {
+		padding: 20px;
+	}
+}
