@@ -1,0 +1,91 @@
+{
+  "userId": "mock-user",
+  "gameId": "theDivision2",
+  "progress": {
+    "division2.exotic.agitator": true,
+    "division2.exotic.caduceus": false,
+    "division2.exotic.capacitor": true,
+    "division2.exotic.chameleon": true,
+    "division2.exotic.eagle-bearer": false,
+    "division2.exotic.st-elmos-engine": true,
+    "division2.exotic.strega": true,
+    "division2.exotic.the-bighorn": false,
+
+    "division2.exotic.backfire": true,
+    "division2.exotic.lady-death": true,
+    "division2.exotic.ouroboros": false,
+    "division2.exotic.oxpecker": true,
+    "division2.exotic.the-chatterbox": false,
+    "division2.exotic.underboss": false,
+
+    "division2.exotic.big-alejandro": true,
+    "division2.exotic.bluescreen": true,
+    "division2.exotic.bullet-king": true,
+    "division2.exotic.iron-lung": true,
+    "division2.exotic.pakhan": true,
+    "division2.exotic.pestilence": true,
+
+    "division2.exotic.bittersweet": true,
+    "division2.exotic.diamondback": false,
+    "division2.exotic.doctor-home": true,
+    "division2.exotic.merciless": true,
+    "division2.exotic.the-ravenous": false,
+    "division2.exotic.vindicator": false,
+
+    "division2.exotic.dread-edict": true,
+    "division2.exotic.mantis": false,
+    "division2.exotic.nemesis": false,
+    "division2.exotic.sacrum-imperium": true,
+    "division2.exotic.shroud": false,
+
+    "division2.exotic.overlord": false,
+    "division2.exotic.scorpio": false,
+    "division2.exotic.sheriff": false,
+    "division2.exotic.sweet-dreams": false,
+
+    "division2.exotic.busy-little-bee": true,
+    "division2.exotic.liberty": false,
+    "division2.exotic.mosquito": false,
+    "division2.exotic.regulus": false,
+    "division2.exotic.tempest": false,
+    "division2.exotic.whiplash": false,
+
+    "division2.exotic.catharsis": true,
+    "division2.exotic.coyotes-mask": true,
+    "division2.exotic.investor": false,
+    "division2.exotic.the-catalyst": false,
+    "division2.exotic.tinkerer": false,
+    "division2.exotic.vile": true,
+
+    "division2.exotic.acostas-go-bag": true,
+    "division2.exotic.birdies-quick-fix": false,
+    "division2.exotic.harrier-pride": false,
+    "division2.exotic.memento": true,
+    "division2.exotic.ninjabike-messenger-bag": true,
+
+    "division2.exotic.beacon": false,
+    "division2.exotic.collector": true,
+    "division2.exotic.provocator": false,
+    "division2.exotic.ridgeways-pride": false,
+    "division2.exotic.tardigrade-armor-system": false,
+
+    "division2.exotic.bloody-knuckles": false,
+    "division2.exotic.btsu-datagloves": true,
+    "division2.exotic.exodus": false,
+    "division2.exotic.overdogs": false,
+    "division2.exotic.rugged-gauntlets": false,
+
+    "division2.exotic.centurions-scabbard": true,
+    "division2.exotic.dodge-city-gunslingers-holster": false,
+    "division2.exotic.imperial-dynasty": true,
+    "division2.exotic.nimble-holster": false,
+    "division2.exotic.shocker-punch": false,
+    "division2.exotic.waveform": true,
+
+    "division2.exotic.acostas-kneepads": false,
+    "division2.exotic.blacklisters": false,
+    "division2.exotic.ninjabike-messenger-kneepads": true,
+    "division2.exotic.nurses-kneepads": false,
+    "division2.exotic.sawyers-kneepads": true
+  }
+}
