@@ -1,0 +1,12 @@
+{
+  "id": "cyberpunk2077",
+  "name": "Cyberpunk 2077",
+  "categories": [
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "description": "Steam-Erfolge aus dem Hauptspiel und Phantom Liberty.",
+      "file": "achievements.json"
+    }
+  ]
+}
