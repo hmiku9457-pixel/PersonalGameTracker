@@ -1,0 +1,31 @@
+{
+	"id": "theDivision2",
+	"name": "The Division 2",
+
+	"categories": [
+		{
+			"id": "collectibles",
+			"name": "Collectibles",
+			"description": "ECHOs, Comms, Found Footage und weitere Sammelobjekte",
+			"file": "collectibles.json"
+		},
+		{
+			"id": "exotics",
+			"name": "Exotics",
+			"description": "Exotische Waffen und Ausrüstung",
+			"file": "exotics.json"
+		},
+		{
+			"id": "blueprints",
+			"name": "Blaupausen",
+			"description": "Freigeschaltete und fehlende Blaupausen",
+			"file": "blueprints.json"
+		},
+		{
+			"id": "achievements",
+			"name": "Achievements",
+			"description": "Erfolge und Herausforderungen",
+			"file": "achievements.json"
+		}
+	]
+}
