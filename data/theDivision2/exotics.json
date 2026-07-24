@@ -1,1 +1,378 @@
-Placeholder
+{
+  "id": "exotics",
+  "name": "Exotics",
+  "description": "Exotische Waffen und Ausrüstungsgegenstände aus The Division 2.",
+  "lastUpdated": "2026-07-24",
+  "groups": [
+    {
+      "id": "assaultRifles",
+      "name": "Sturmgewehre",
+      "items": [
+        {
+          "id": "division2.exotic.agitator",
+          "name": "Agitator"
+        },
+        {
+          "id": "division2.exotic.caduceus",
+          "name": "Caduceus"
+        },
+        {
+          "id": "division2.exotic.capacitor",
+          "name": "Capacitor"
+        },
+        {
+          "id": "division2.exotic.chameleon",
+          "name": "Chameleon"
+        },
+        {
+          "id": "division2.exotic.eagle-bearer",
+          "name": "Eagle Bearer"
+        },
+        {
+          "id": "division2.exotic.st-elmos-engine",
+          "name": "St. Elmo's Engine"
+        },
+        {
+          "id": "division2.exotic.strega",
+          "name": "Strega"
+        },
+        {
+          "id": "division2.exotic.the-bighorn",
+          "name": "The Bighorn"
+        }
+      ]
+    },
+    {
+      "id": "submachineGuns",
+      "name": "Maschinenpistolen",
+      "items": [
+        {
+          "id": "division2.exotic.backfire",
+          "name": "Backfire"
+        },
+        {
+          "id": "division2.exotic.lady-death",
+          "name": "Lady Death"
+        },
+        {
+          "id": "division2.exotic.ouroboros",
+          "name": "Ouroboros"
+        },
+        {
+          "id": "division2.exotic.oxpecker",
+          "name": "Oxpecker"
+        },
+        {
+          "id": "division2.exotic.the-chatterbox",
+          "name": "The Chatterbox"
+        },
+        {
+          "id": "division2.exotic.underboss",
+          "name": "Underboss"
+        }
+      ]
+    },
+    {
+      "id": "lightMachineGuns",
+      "name": "Leichte Maschinengewehre",
+      "items": [
+        {
+          "id": "division2.exotic.big-alejandro",
+          "name": "Big Alejandro"
+        },
+        {
+          "id": "division2.exotic.bluescreen",
+          "name": "Bluescreen"
+        },
+        {
+          "id": "division2.exotic.bullet-king",
+          "name": "Bullet King"
+        },
+        {
+          "id": "division2.exotic.iron-lung",
+          "name": "Iron Lung"
+        },
+        {
+          "id": "division2.exotic.pakhan",
+          "name": "Pakhan"
+        },
+        {
+          "id": "division2.exotic.pestilence",
+          "name": "Pestilence"
+        }
+      ]
+    },
+    {
+      "id": "rifles",
+      "name": "Gewehre",
+      "items": [
+        {
+          "id": "division2.exotic.bittersweet",
+          "name": "Bittersweet"
+        },
+        {
+          "id": "division2.exotic.diamondback",
+          "name": "Diamondback"
+        },
+        {
+          "id": "division2.exotic.doctor-home",
+          "name": "Doctor Home"
+        },
+        {
+          "id": "division2.exotic.merciless",
+          "name": "Merciless"
+        },
+        {
+          "id": "division2.exotic.the-ravenous",
+          "name": "The Ravenous"
+        },
+        {
+          "id": "division2.exotic.vindicator",
+          "name": "Vindicator"
+        }
+      ]
+    },
+    {
+      "id": "marksmanRifles",
+      "name": "Scharfschützengewehre",
+      "items": [
+        {
+          "id": "division2.exotic.dread-edict",
+          "name": "Dread Edict"
+        },
+        {
+          "id": "division2.exotic.mantis",
+          "name": "Mantis"
+        },
+        {
+          "id": "division2.exotic.nemesis",
+          "name": "Nemesis"
+        },
+        {
+          "id": "division2.exotic.sacrum-imperium",
+          "name": "Sacrum Imperium"
+        },
+        {
+          "id": "division2.exotic.shroud",
+          "name": "Shroud"
+        }
+      ]
+    },
+    {
+      "id": "shotguns",
+      "name": "Schrotflinten",
+      "items": [
+        {
+          "id": "division2.exotic.overlord",
+          "name": "Overlord"
+        },
+        {
+          "id": "division2.exotic.scorpio",
+          "name": "Scorpio"
+        },
+        {
+          "id": "division2.exotic.sheriff",
+          "name": "Sheriff"
+        },
+        {
+          "id": "division2.exotic.sweet-dreams",
+          "name": "Sweet Dreams"
+        }
+      ]
+    },
+    {
+      "id": "pistols",
+      "name": "Pistolen",
+      "items": [
+        {
+          "id": "division2.exotic.busy-little-bee",
+          "name": "Busy Little Bee"
+        },
+        {
+          "id": "division2.exotic.liberty",
+          "name": "Liberty"
+        },
+        {
+          "id": "division2.exotic.mosquito",
+          "name": "Mosquito"
+        },
+        {
+          "id": "division2.exotic.regulus",
+          "name": "Regulus"
+        },
+        {
+          "id": "division2.exotic.tempest",
+          "name": "Tempest"
+        },
+        {
+          "id": "division2.exotic.whiplash",
+          "name": "Whiplash"
+        }
+      ]
+    },
+    {
+      "id": "masks",
+      "name": "Masken",
+      "items": [
+        {
+          "id": "division2.exotic.catharsis",
+          "name": "Catharsis"
+        },
+        {
+          "id": "division2.exotic.coyotes-mask",
+          "name": "Coyote's Mask"
+        },
+        {
+          "id": "division2.exotic.investor",
+          "name": "Investor"
+        },
+        {
+          "id": "division2.exotic.the-catalyst",
+          "name": "The Catalyst"
+        },
+        {
+          "id": "division2.exotic.tinkerer",
+          "name": "Tinkerer"
+        },
+        {
+          "id": "division2.exotic.vile",
+          "name": "Vile"
+        }
+      ]
+    },
+    {
+      "id": "backpacks",
+      "name": "Rucksäcke",
+      "items": [
+        {
+          "id": "division2.exotic.acostas-go-bag",
+          "name": "Acosta's Go-Bag"
+        },
+        {
+          "id": "division2.exotic.birdies-quick-fix",
+          "name": "Birdie's Quick Fix"
+        },
+        {
+          "id": "division2.exotic.harrier-pride",
+          "name": "Harrier Pride"
+        },
+        {
+          "id": "division2.exotic.memento",
+          "name": "Memento"
+        },
+        {
+          "id": "division2.exotic.ninjabike-messenger-bag",
+          "name": "NinjaBike Messenger Bag"
+        }
+      ]
+    },
+    {
+      "id": "chests",
+      "name": "Westen",
+      "items": [
+        {
+          "id": "division2.exotic.beacon",
+          "name": "Beacon"
+        },
+        {
+          "id": "division2.exotic.collector",
+          "name": "Collector"
+        },
+        {
+          "id": "division2.exotic.provocator",
+          "name": "Provocator"
+        },
+        {
+          "id": "division2.exotic.ridgeways-pride",
+          "name": "Ridgeway's Pride"
+        },
+        {
+          "id": "division2.exotic.tardigrade-armor-system",
+          "name": "Tardigrade Armor System"
+        }
+      ]
+    },
+    {
+      "id": "gloves",
+      "name": "Handschuhe",
+      "items": [
+        {
+          "id": "division2.exotic.bloody-knuckles",
+          "name": "Bloody Knuckles"
+        },
+        {
+          "id": "division2.exotic.btsu-datagloves",
+          "name": "BTSU Datagloves"
+        },
+        {
+          "id": "division2.exotic.exodus",
+          "name": "Exodus"
+        },
+        {
+          "id": "division2.exotic.overdogs",
+          "name": "Overdogs"
+        },
+        {
+          "id": "division2.exotic.rugged-gauntlets",
+          "name": "Rugged Gauntlets"
+        }
+      ]
+    },
+    {
+      "id": "holsters",
+      "name": "Holster",
+      "items": [
+        {
+          "id": "division2.exotic.centurions-scabbard",
+          "name": "Centurion's Scabbard"
+        },
+        {
+          "id": "division2.exotic.dodge-city-gunslingers-holster",
+          "name": "Dodge City Gunslinger's Holster"
+        },
+        {
+          "id": "division2.exotic.imperial-dynasty",
+          "name": "Imperial Dynasty"
+        },
+        {
+          "id": "division2.exotic.nimble-holster",
+          "name": "Nimble Holster"
+        },
+        {
+          "id": "division2.exotic.shocker-punch",
+          "name": "Shocker Punch"
+        },
+        {
+          "id": "division2.exotic.waveform",
+          "name": "Waveform"
+        }
+      ]
+    },
+    {
+      "id": "kneepads",
+      "name": "Knieschoner",
+      "items": [
+        {
+          "id": "division2.exotic.acostas-kneepads",
+          "name": "Acosta's Kneepads"
+        },
+        {
+          "id": "division2.exotic.blacklisters",
+          "name": "Blacklisters"
+        },
+        {
+          "id": "division2.exotic.ninjabike-messenger-kneepads",
+          "name": "NinjaBike Messenger Kneepads"
+        },
+        {
+          "id": "division2.exotic.nurses-kneepads",
+          "name": "Nurse's Kneepads"
+        },
+        {
+          "id": "division2.exotic.sawyers-kneepads",
+          "name": "Sawyer's Kneepads"
+        }
+      ]
+    }
+  ]
+}
