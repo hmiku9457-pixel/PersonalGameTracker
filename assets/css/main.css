@@ -37,12 +37,17 @@ body {
    --------------------------------------------------------- */
 
 header {
+	position: relative;
+
+	min-height: 70px;
 	padding: 20px 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	background-color: #1f2937;
 	border-bottom: 1px solid #374151;
-
-	text-align: center;
 }
 
 header h1 {
@@ -50,6 +55,117 @@ header h1 {
 
 	font-size: 1.5rem;
 	font-weight: 600;
+
+	text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   2.1 Account-Modul
+   --------------------------------------------------------- */
+
+.account-module {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+
+	transform: translateY(-50%);
+}
+
+
+/* Ausrichtung der Account-Elemente */
+
+#account-logged-out,
+#account-logged-in:not([hidden]) {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+/* Benutzername */
+
+#account-username {
+	max-width: 180px;
+
+	color: #d1d5db;
+
+	font-size: 0.9rem;
+	font-weight: 500;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/* Allgemeines Button-Design */
+
+.account-module button {
+	padding: 8px 14px;
+
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+
+	color: #e5e7eb;
+	background-color: #374151;
+
+	border: 1px solid #4b5563;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease;
+}
+
+
+/* Hover */
+
+.account-module button:hover {
+	color: #ffffff;
+	background-color: #4b5563;
+	border-color: #6b7280;
+}
+
+
+/* Tastatur-Navigation */
+
+.account-module button:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
+
+/* Login-Button etwas hervorheben */
+
+#login-button {
+	color: #ffffff;
+	background-color: #2563eb;
+	border-color: #2563eb;
+}
+
+#login-button:hover {
+	background-color: #1d4ed8;
+	border-color: #1d4ed8;
+}
+
+
+/* Abmelden bewusst etwas zurückhaltender */
+
+#logout-button {
+	color: #fca5a5;
+	background-color: transparent;
+	border-color: #4b5563;
+}
+
+#logout-button:hover {
+	color: #fecaca;
+	background-color: #7f1d1d;
+	border-color: #991b1b;
 }
 
 
