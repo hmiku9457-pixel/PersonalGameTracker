@@ -41,6 +41,8 @@ header {
 
 	background-color: #1f2937;
 	border-bottom: 1px solid #374151;
+
+	text-align: center;
 }
 
 header h1 {
@@ -155,6 +157,10 @@ footer {
 
 	text-align: center;
 	font-size: 0.9rem;
+}
+
+footer p {
+	margin: 0;
 }
 
 
