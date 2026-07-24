@@ -60,18 +60,53 @@
 							</a>
 						</li>
 					</ul>
+					<ul id="game-navigation">
+						<!-- Wird dynamisch geladen -->
+					</ul>
 				</nav>
 			</aside>
 
 			<!-- Dynamischer Seiteninhalt -->
 			<main id="main-content">
-				<h2>Übersicht</h2>
+				<section class="game-page">
+					<div class="game-header">
+						<h2 id="game-title">
+							Spiel auswählen
+						</h2>
+					</div>
 
-				<p>
-					Wähle ein Spiel aus der Navigation aus.
-				</p>
+					<div
+						id="category-grid"
+						class="category-grid"
+					>
+						<!-- Kategorie-Buttons -->
+					</div>
+
+					<div
+						id="game-progress"
+						class="game-progress"
+						hidden
+					>
+						<div class="game-progress-header">
+							<span>Gesamtfortschritt</span>
+							<strong id="game-progress-count">
+								0 / 0
+							</strong>
+						</div>
+
+						<div class="progress-bar">
+							<div
+								id="game-progress-fill"
+								class="progress-bar-fill"
+							></div>
+						</div>
+
+						<span id="game-progress-percent">
+							0 %
+						</span>
+					</div>
+				</section>
 			</main>
-
 		</div>
 		
 		<footer>
