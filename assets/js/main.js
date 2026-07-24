@@ -7,6 +7,9 @@ const defaultContent = mainContent.innerHTML;
 // Basisordner für alle JSON-Daten
 const DATA_PATH = "data";
 
+// Dateiname für lokalen Test-Fortschritt
+const MOCK_PROGRESS_FILE = "mockProgress.json";
+
 // Bereits geladene JSON-Dateien zwischenspeichern
 const jsonCache = new Map();
 
@@ -44,6 +47,45 @@ async function loadJson(path) {
 
 
 /**
+ * Lädt eine optionale JSON-Datei.
+ *
+ * Existiert die Datei nicht (404), wird null zurückgegeben.
+ * Andere Fehler werden weiterhin geworfen.
+ *
+ * Das ist beispielsweise für mockProgress.json gedacht:
+ * Ein Spiel muss diese Datei nicht besitzen.
+ *
+ * @param {string} path Pfad zur JSON-Datei
+ * @returns {Promise<any|null>}
+ */
+async function loadOptionalJson(path) {
+	if (jsonCache.has(path)) {
+		return jsonCache.get(path);
+	}
+
+	const response = await fetch(path);
+
+	if (response.status === 404) {
+		jsonCache.set(path, null);
+
+		return null;
+	}
+
+	if (!response.ok) {
+		throw new Error(
+			`JSON-Datei konnte nicht geladen werden: ${path} (${response.status})`
+		);
+	}
+
+	const data = await response.json();
+
+	jsonCache.set(path, data);
+
+	return data;
+}
+
+
+/**
  * Lädt die Liste aller Spiele.
  *
  * data/games.json:
@@ -58,10 +100,14 @@ async function loadJson(path) {
  * @returns {Promise<Array>}
  */
 async function loadGames() {
-	const games = await loadJson(`${DATA_PATH}/games.json`);
+	const games = await loadJson(
+		`${DATA_PATH}/games.json`
+	);
 
 	if (!Array.isArray(games)) {
-		throw new Error("games.json muss ein Array enthalten.");
+		throw new Error(
+			"games.json muss ein Array enthalten."
+		);
 	}
 
 	return games;
@@ -86,11 +132,15 @@ async function loadGameNavigation() {
 		gameNavigation.replaceChildren();
 
 		for (const game of games) {
-			const listItem = document.createElement("li");
+			const listItem =
+				document.createElement("li");
 
-			const link = document.createElement("a");
+			const link =
+				document.createElement("a");
 
-			link.href = `#game/${encodeURIComponent(game.id)}`;
+			link.href =
+				`#game/${encodeURIComponent(game.id)}`;
+
 			link.textContent = game.name;
 			link.dataset.gameId = game.id;
 
@@ -105,8 +155,11 @@ async function loadGameNavigation() {
 
 		gameNavigation.replaceChildren();
 
-		const listItem = document.createElement("li");
-		listItem.textContent = "Spiele konnten nicht geladen werden.";
+		const listItem =
+			document.createElement("li");
+
+		listItem.textContent =
+			"Spiele konnten nicht geladen werden.";
 
 		gameNavigation.append(listItem);
 	}
@@ -120,9 +173,11 @@ async function loadGameNavigation() {
  * @returns {Promise<Object>}
  */
 async function loadGameManifest(gameId) {
-	const path = `${DATA_PATH}/${gameId}/manifest.json`;
+	const path =
+		`${DATA_PATH}/${gameId}/manifest.json`;
 
-	const manifest = await loadJson(path);
+	const manifest =
+		await loadJson(path);
 
 	if (!manifest.id) {
 		manifest.id = gameId;
@@ -143,16 +198,57 @@ async function loadGameManifest(gameId) {
  * @param {Object} category Kategorie aus dem Manifest
  * @returns {Promise<Object>}
  */
-async function loadCategoryData(gameId, category) {
+async function loadCategoryData(
+	gameId,
+	category
+) {
 	if (!category.file) {
 		throw new Error(
 			`Für die Kategorie "${category.name}" wurde keine Datei angegeben.`
 		);
 	}
 
-	const path = `${DATA_PATH}/${gameId}/${category.file}`;
+	const path =
+		`${DATA_PATH}/${gameId}/${category.file}`;
 
 	return loadJson(path);
+}
+
+
+/**
+ * Lädt die Fortschrittsdaten eines Spiels.
+ *
+ * Für den aktuellen Testbetrieb wird automatisch nach
+ *
+ * data/<gameId>/mockProgress.json
+ *
+ * gesucht.
+ *
+ * Existiert keine mockProgress.json, wird null zurückgegeben
+ * und der Tracker verwendet weiterhin mögliche Statusfelder
+ * aus den eigentlichen Kategorie-JSONs.
+ *
+ * Diese Funktion kann später leicht so angepasst werden,
+ * dass sie ihre Daten beispielsweise aus Supabase bezieht.
+ *
+ * @param {string} gameId ID des Spiels
+ * @returns {Promise<Object|null>}
+ */
+async function loadGameProgressData(gameId) {
+	const path =
+		`${DATA_PATH}/${gameId}/${MOCK_PROGRESS_FILE}`;
+
+	try {
+		return await loadOptionalJson(path);
+
+	} catch (error) {
+		console.warn(
+			`Fortschrittsdaten für "${gameId}" konnten nicht geladen werden.`,
+			error
+		);
+
+		return null;
+	}
 }
 
 
@@ -173,7 +269,9 @@ function showLoading() {
  *
  * @param {string} message Fehlermeldung
  */
-function showError(message = "Der Inhalt konnte nicht geladen werden.") {
+function showError(
+	message = "Der Inhalt konnte nicht geladen werden."
+) {
 	mainContent.innerHTML = `
 		<section class="error-message">
 			<h2>Fehler</h2>
@@ -193,17 +291,23 @@ function renderGame(game) {
 
 	currentGameId = game.id;
 
-	const gamePage = document.createElement("section");
+	const gamePage =
+		document.createElement("section");
+
 	gamePage.className = "game-page";
 
 
 	/*
 	 * Spieltitel
 	 */
-	const gameHeader = document.createElement("div");
+	const gameHeader =
+		document.createElement("div");
+
 	gameHeader.className = "game-header";
 
-	const gameTitle = document.createElement("h2");
+	const gameTitle =
+		document.createElement("h2");
+
 	gameTitle.className = "game-title";
 	gameTitle.textContent = game.name;
 
@@ -213,15 +317,18 @@ function renderGame(game) {
 	/*
 	 * Kategorien
 	 */
-	const categoryGrid = document.createElement("div");
+	const categoryGrid =
+		document.createElement("div");
+
 	categoryGrid.className = "category-grid";
 	categoryGrid.id = "category-grid";
 
 	for (const category of game.categories) {
-		const categoryCard = createCategoryCard(
-			game,
-			category
-		);
+		const categoryCard =
+			createCategoryCard(
+				game,
+				category
+			);
 
 		categoryGrid.append(categoryCard);
 	}
@@ -230,7 +337,8 @@ function renderGame(game) {
 	/*
 	 * Gesamtfortschritt
 	 */
-	const progressContainer = createGameProgress();
+	const progressContainer =
+		createGameProgress();
 
 
 	gamePage.append(
@@ -255,28 +363,37 @@ function renderGame(game) {
  * @param {Object} category Kategorie
  * @returns {HTMLButtonElement}
  */
-function createCategoryCard(game, category) {
-	const button = document.createElement("button");
+function createCategoryCard(
+	game,
+	category
+) {
+	const button =
+		document.createElement("button");
 
 	button.type = "button";
 	button.className = "category-card";
 
-	button.dataset.categoryId = category.id;
+	button.dataset.categoryId =
+		category.id;
 
 
 	/*
 	 * Kategorie-Titel
 	 */
-	const title = document.createElement("h3");
+	const title =
+		document.createElement("h3");
+
 	title.textContent = category.name;
 
 
 	/*
 	 * Beschreibung
 	 */
-	const description = document.createElement("p");
+	const description =
+		document.createElement("p");
 
-	description.className = "category-description";
+	description.className =
+		"category-description";
 
 	description.textContent =
 		category.description ?? "";
@@ -285,12 +402,16 @@ function createCategoryCard(game, category) {
 	/*
 	 * Fortschritt
 	 */
-	const progress = document.createElement("span");
+	const progress =
+		document.createElement("span");
 
-	progress.className = "category-progress";
+	progress.className =
+		"category-progress";
+
 	progress.textContent = "0 / 0";
 
-	progress.dataset.categoryProgress = category.id;
+	progress.dataset.categoryProgress =
+		category.id;
 
 
 	button.append(
@@ -303,10 +424,13 @@ function createCategoryCard(game, category) {
 	/*
 	 * Kategorie öffnen
 	 */
-	button.addEventListener("click", () => {
-		window.location.hash =
-			`game/${encodeURIComponent(game.id)}/${encodeURIComponent(category.id)}`;
-	});
+	button.addEventListener(
+		"click",
+		() => {
+			window.location.hash =
+				`game/${encodeURIComponent(game.id)}/${encodeURIComponent(category.id)}`;
+		}
+	);
 
 
 	return button;
@@ -319,25 +443,32 @@ function createCategoryCard(game, category) {
  * @returns {HTMLElement}
  */
 function createGameProgress() {
-	const container = document.createElement("div");
+	const container =
+		document.createElement("div");
 
-	container.className = "game-progress";
+	container.className =
+		"game-progress";
 
 
 	/*
 	 * Kopfzeile
 	 */
-	const header = document.createElement("div");
+	const header =
+		document.createElement("div");
 
-	header.className = "game-progress-header";
-
-
-	const label = document.createElement("span");
-
-	label.textContent = "Gesamtfortschritt";
+	header.className =
+		"game-progress-header";
 
 
-	const count = document.createElement("strong");
+	const label =
+		document.createElement("span");
+
+	label.textContent =
+		"Gesamtfortschritt";
+
+
+	const count =
+		document.createElement("strong");
 
 	count.id = "game-progress-count";
 	count.textContent = "0 / 0";
@@ -352,9 +483,11 @@ function createGameProgress() {
 	/*
 	 * Fortschrittsbalken
 	 */
-	const progressBar = document.createElement("div");
+	const progressBar =
+		document.createElement("div");
 
-	progressBar.className = "progress-bar";
+	progressBar.className =
+		"progress-bar";
 
 	progressBar.setAttribute(
 		"role",
@@ -382,11 +515,17 @@ function createGameProgress() {
 	);
 
 
-	const progressFill = document.createElement("div");
+	const progressFill =
+		document.createElement("div");
 
-	progressFill.id = "game-progress-fill";
-	progressFill.className = "progress-bar-fill";
-	progressFill.style.width = "0%";
+	progressFill.id =
+		"game-progress-fill";
+
+	progressFill.className =
+		"progress-bar-fill";
+
+	progressFill.style.width =
+		"0%";
 
 
 	progressBar.append(progressFill);
@@ -395,11 +534,17 @@ function createGameProgress() {
 	/*
 	 * Prozentanzeige
 	 */
-	const percentage = document.createElement("span");
+	const percentage =
+		document.createElement("span");
 
-	percentage.id = "game-progress-percent";
-	percentage.className = "game-progress-percent";
-	percentage.textContent = "0 %";
+	percentage.id =
+		"game-progress-percent";
+
+	percentage.className =
+		"game-progress-percent";
+
+	percentage.textContent =
+		"0 %";
 
 
 	container.append(
@@ -417,11 +562,21 @@ function createGameProgress() {
  * Lädt alle Kategorien eines Spiels und berechnet daraus
  * den Gesamtfortschritt.
  *
+ * Fortschrittsdaten aus mockProgress.json werden dabei
+ * automatisch berücksichtigt.
+ *
  * @param {Object} game Spiel-Manifest
  */
 async function loadGameProgress(game) {
 	let totalCompleted = 0;
 	let totalItems = 0;
+
+
+	/*
+	 * Fortschrittsdaten nur einmal pro Spiel laden.
+	 */
+	const progressData =
+		await loadGameProgressData(game.id);
 
 
 	for (const category of game.categories) {
@@ -434,12 +589,16 @@ async function loadGameProgress(game) {
 
 			const progress =
 				calculateCategoryProgress(
-					categoryData
+					categoryData,
+					progressData
 				);
 
 
-			totalCompleted += progress.completed;
-			totalItems += progress.total;
+			totalCompleted +=
+				progress.completed;
+
+			totalItems +=
+				progress.total;
 
 
 			updateCategoryProgress(
@@ -491,30 +650,43 @@ async function loadGameProgress(game) {
  *     ]
  * }
  *
- * Ein Item gilt als abgeschlossen, wenn eines dieser
- * Felder true ist:
+ * oder:
  *
- * found
- * completed
- * collected
- * unlocked
+ * {
+ *     "sections": [...]
+ * }
+ *
+ * Fortschrittswerte können aus einer externen
+ * Fortschrittsdatei kommen oder direkt im Item stehen.
  *
  * @param {Object|Array} data Kategorie-Daten
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  * @returns {{completed: number, total: number}}
  */
-function calculateCategoryProgress(data) {
+function calculateCategoryProgress(
+	data,
+	progressData = null
+) {
 	/*
-	 * Explizit angegebener Fortschritt hat Vorrang.
+	 * Explizit angegebener Gesamtfortschritt
+	 * hat Vorrang.
 	 */
 	if (
 		data &&
 		data.progress &&
-		Number.isFinite(data.progress.completed) &&
-		Number.isFinite(data.progress.total)
+		Number.isFinite(
+			data.progress.completed
+		) &&
+		Number.isFinite(
+			data.progress.total
+		)
 	) {
 		return {
-			completed: data.progress.completed,
-			total: data.progress.total
+			completed:
+				data.progress.completed,
+
+			total:
+				data.progress.total
 		};
 	}
 
@@ -523,7 +695,10 @@ function calculateCategoryProgress(data) {
 	 * Direktes Items-Array
 	 */
 	if (Array.isArray(data?.items)) {
-		return calculateItemsProgress(data.items);
+		return calculateItemsProgress(
+			data.items,
+			progressData
+		);
 	}
 
 
@@ -531,7 +706,10 @@ function calculateCategoryProgress(data) {
 	 * Gruppen
 	 */
 	if (Array.isArray(data?.groups)) {
-		return calculateGroupedProgress(data.groups);
+		return calculateGroupedProgress(
+			data.groups,
+			progressData
+		);
 	}
 
 
@@ -539,7 +717,10 @@ function calculateCategoryProgress(data) {
 	 * Sections
 	 */
 	if (Array.isArray(data?.sections)) {
-		return calculateGroupedProgress(data.sections);
+		return calculateGroupedProgress(
+			data.sections,
+			progressData
+		);
 	}
 
 
@@ -547,7 +728,10 @@ function calculateCategoryProgress(data) {
 	 * Falls direkt ein Array geladen wurde
 	 */
 	if (Array.isArray(data)) {
-		return calculateItemsProgress(data);
+		return calculateItemsProgress(
+			data,
+			progressData
+		);
 	}
 
 
@@ -562,14 +746,23 @@ function calculateCategoryProgress(data) {
  * Berechnet den Fortschritt eines Item-Arrays.
  *
  * @param {Array} items Items
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  * @returns {{completed: number, total: number}}
  */
-function calculateItemsProgress(items) {
+function calculateItemsProgress(
+	items,
+	progressData = null
+) {
 	const total = items.length;
 
-	const completed = items.filter(
-		item => isItemCompleted(item)
-	).length;
+	const completed =
+		items.filter(
+			item =>
+				isItemCompleted(
+					item,
+					progressData
+				)
+		).length;
 
 
 	return {
@@ -583,19 +776,29 @@ function calculateItemsProgress(items) {
  * Berechnet den Fortschritt mehrerer Gruppen.
  *
  * @param {Array} groups Gruppen
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  * @returns {{completed: number, total: number}}
  */
-function calculateGroupedProgress(groups) {
+function calculateGroupedProgress(
+	groups,
+	progressData = null
+) {
 	let completed = 0;
 	let total = 0;
 
 
 	for (const group of groups) {
 		const progress =
-			calculateCategoryProgress(group);
+			calculateCategoryProgress(
+				group,
+				progressData
+			);
 
-		completed += progress.completed;
-		total += progress.total;
+		completed +=
+			progress.completed;
+
+		total +=
+			progress.total;
 	}
 
 
@@ -607,16 +810,182 @@ function calculateGroupedProgress(groups) {
 
 
 /**
- * Prüft, ob ein einzelnes Item abgeschlossen ist.
+ * Liest einen externen Fortschrittsstatus
+ * für ein einzelnes Item.
+ *
+ * Unterstützte Struktur:
+ *
+ * {
+ *     "progress": {
+ *         "division2.exotic.capacitor": true
+ *     }
+ * }
+ *
+ * Alternativ werden auch Objekte unterstützt:
+ *
+ * {
+ *     "progress": {
+ *         "item-id": {
+ *             "found": true
+ *         }
+ *     }
+ * }
+ *
+ * Rückgabe:
+ *
+ * true  = abgeschlossen
+ * false = nicht abgeschlossen
+ * null  = für dieses Item existiert kein externer Status
  *
  * @param {Object} item Item
+ * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @returns {boolean|null}
+ */
+function getExternalItemStatus(
+	item,
+	progressData
+) {
+	if (
+		!item ||
+		typeof item !== "object" ||
+		!item.id
+	) {
+		return null;
+	}
+
+
+	if (
+		!progressData ||
+		typeof progressData !== "object"
+	) {
+		return null;
+	}
+
+
+	/*
+	 * Standardstruktur:
+	 *
+	 * {
+	 *     "progress": {
+	 *         "item-id": true
+	 *     }
+	 * }
+	 *
+	 * Zusätzlich wird auch ein direktes Mapping akzeptiert.
+	 */
+	const progressMap =
+		progressData.progress &&
+		typeof progressData.progress === "object" &&
+		!Array.isArray(progressData.progress)
+			? progressData.progress
+			: progressData;
+
+
+	if (
+		!Object.prototype.hasOwnProperty.call(
+			progressMap,
+			item.id
+		)
+	) {
+		return null;
+	}
+
+
+	const value =
+		progressMap[item.id];
+
+
+	/*
+	 * Einfacher Boolean
+	 */
+	if (typeof value === "boolean") {
+		return value;
+	}
+
+
+	/*
+	 * Optional auch Statusobjekte unterstützen.
+	 */
+	if (
+		value &&
+		typeof value === "object"
+	) {
+		const statusFields = [
+			"found",
+			"completed",
+			"collected",
+			"unlocked"
+		];
+
+
+		for (const field of statusFields) {
+			if (
+				Object.prototype.hasOwnProperty.call(
+					value,
+					field
+				)
+			) {
+				return value[field] === true;
+			}
+		}
+	}
+
+
+	return null;
+}
+
+
+/**
+ * Prüft, ob ein einzelnes Item abgeschlossen ist.
+ *
+ * Priorität:
+ *
+ * 1. Externe Fortschrittsdaten
+ *    z. B. mockProgress.json
+ *
+ * 2. Status direkt im Item
+ *
+ * Unterstützte Statusfelder:
+ *
+ * found
+ * completed
+ * collected
+ * unlocked
+ *
+ * @param {Object} item Item
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  * @returns {boolean}
  */
-function isItemCompleted(item) {
-	if (!item || typeof item !== "object") {
+function isItemCompleted(
+	item,
+	progressData = null
+) {
+	if (
+		!item ||
+		typeof item !== "object"
+	) {
 		return false;
 	}
 
+
+	/*
+	 * Externer Status hat Vorrang.
+	 */
+	const externalStatus =
+		getExternalItemStatus(
+			item,
+			progressData
+		);
+
+
+	if (externalStatus !== null) {
+		return externalStatus;
+	}
+
+
+	/*
+	 * Fallback auf Status direkt im Item.
+	 */
 	return (
 		item.found === true ||
 		item.completed === true ||
@@ -636,9 +1005,10 @@ function updateCategoryProgress(
 	categoryId,
 	progress
 ) {
-	const element = document.querySelector(
-		`[data-category-progress="${CSS.escape(categoryId)}"]`
-	);
+	const element =
+		document.querySelector(
+			`[data-category-progress="${CSS.escape(categoryId)}"]`
+		);
 
 	if (!element) {
 		return;
@@ -729,11 +1099,23 @@ async function renderCategory(
 	showLoading();
 
 	try {
-		const data =
-			await loadCategoryData(
+		/*
+		 * Kategorie und Fortschritt parallel laden.
+		 */
+		const [
+			data,
+			progressData
+		] = await Promise.all([
+			loadCategoryData(
 				game.id,
 				category
-			);
+			),
+
+			loadGameProgressData(
+				game.id
+			)
+		]);
+
 
 		mainContent.replaceChildren();
 
@@ -741,7 +1123,8 @@ async function renderCategory(
 		const gamePage =
 			document.createElement("section");
 
-		gamePage.className = "game-page";
+		gamePage.className =
+			"game-page";
 
 
 		/*
@@ -774,7 +1157,9 @@ async function renderCategory(
 			document.createElement("button");
 
 		backButton.type = "button";
-		backButton.className = "back-button";
+		backButton.className =
+			"back-button";
+
 		backButton.textContent =
 			"← Zurück zur Übersicht";
 
@@ -825,7 +1210,8 @@ async function renderCategory(
 
 		renderCategoryData(
 			categoryContent,
-			data
+			data,
+			progressData
 		);
 
 
@@ -855,22 +1241,31 @@ async function renderCategory(
 /**
  * Gibt die Inhalte einer Kategorie aus.
  *
- * Diese Funktion ist bewusst allgemein gehalten.
- * Sobald die endgültige Struktur deiner Kategorie-JSONs
- * feststeht, können wir diese Darstellung spezialisieren.
+ * Unterstützt:
+ *
+ * groups
+ * sections
+ * items
+ * direkte Arrays
+ *
+ * Externe Fortschrittsdaten werden bis zu den
+ * einzelnen Items weitergereicht.
  *
  * @param {HTMLElement} container Ziel-Element
  * @param {Object|Array} data Kategorie-Daten
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  */
 function renderCategoryData(
 	container,
-	data
+	data,
+	progressData = null
 ) {
 	if (Array.isArray(data?.groups)) {
 		for (const group of data.groups) {
 			renderCategoryGroup(
 				container,
-				group
+				group,
+				progressData
 			);
 		}
 
@@ -882,7 +1277,8 @@ function renderCategoryData(
 		for (const section of data.sections) {
 			renderCategoryGroup(
 				container,
-				section
+				section,
+				progressData
 			);
 		}
 
@@ -893,7 +1289,8 @@ function renderCategoryData(
 	if (Array.isArray(data?.items)) {
 		renderItemList(
 			container,
-			data.items
+			data.items,
+			progressData
 		);
 
 		return;
@@ -903,7 +1300,8 @@ function renderCategoryData(
 	if (Array.isArray(data)) {
 		renderItemList(
 			container,
-			data
+			data,
+			progressData
 		);
 
 		return;
@@ -925,10 +1323,12 @@ function renderCategoryData(
  *
  * @param {HTMLElement} container Ziel-Element
  * @param {Object} group Gruppe
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  */
 function renderCategoryGroup(
 	container,
-	group
+	group,
+	progressData = null
 ) {
 	const section =
 		document.createElement("section");
@@ -962,7 +1362,8 @@ function renderCategoryGroup(
 	if (Array.isArray(group.items)) {
 		renderItemList(
 			section,
-			group.items
+			group.items,
+			progressData
 		);
 	}
 
@@ -976,10 +1377,12 @@ function renderCategoryGroup(
  *
  * @param {HTMLElement} container Ziel-Element
  * @param {Array} items Items
+ * @param {Object|null} progressData Externe Fortschrittsdaten
  */
 function renderItemList(
 	container,
-	items
+	items,
+	progressData = null
 ) {
 	const list =
 		document.createElement("ul");
@@ -997,9 +1400,23 @@ function renderItemList(
 
 
 		/*
+		 * ID für spätere Interaktionen speichern.
+		 */
+		if (item.id) {
+			listItem.dataset.itemId =
+				item.id;
+		}
+
+
+		/*
 		 * Status
 		 */
-		if (isItemCompleted(item)) {
+		if (
+			isItemCompleted(
+				item,
+				progressData
+			)
+		) {
 			listItem.classList.add(
 				"is-completed"
 			);
@@ -1089,8 +1506,9 @@ function getHashParts() {
 	return hash
 		.split("/")
 		.filter(Boolean)
-		.map(part =>
-			decodeURIComponent(part)
+		.map(
+			part =>
+				decodeURIComponent(part)
 		);
 }
 
@@ -1099,7 +1517,8 @@ function getHashParts() {
  * Lädt den Inhalt passend zur aktuellen URL.
  */
 async function loadPageFromHash() {
-	const parts = getHashParts();
+	const parts =
+		getHashParts();
 
 
 	/*
@@ -1161,7 +1580,8 @@ async function loadPageFromHash() {
 			const category =
 				game.categories.find(
 					entry =>
-						entry.id === categoryId
+						entry.id ===
+						categoryId
 				);
 
 
