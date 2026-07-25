@@ -628,3 +628,44 @@ export async function setItemCompleted(
 
 	return progressData;
 }
+
+
+/**
+ * Übersetzt Fehler beim Schreiben des Fortschritts
+ * in benutzerfreundliche Meldungen.
+ *
+ * @param {Error|object} error
+ * @returns {string}
+ */
+export function getProgressErrorMessage(error) {
+	if (!error) {
+		return "Der Fortschritt konnte nicht gespeichert werden.";
+	}
+
+
+	if (error.code === "AUTH_REQUIRED") {
+		return "Bitte melde dich an, um deinen Fortschritt zu ändern.";
+	}
+
+
+	if (error.code === "42501") {
+		return "Du hast keine Berechtigung, diesen Fortschritt zu ändern.";
+	}
+
+
+	const message =
+		String(
+			error.message ?? ""
+		).toLowerCase();
+
+
+	if (
+		message.includes("failed to fetch") ||
+		message.includes("network")
+	) {
+		return "Supabase ist momentan nicht erreichbar.";
+	}
+
+
+	return "Der Fortschritt konnte nicht gespeichert werden.";
+}
