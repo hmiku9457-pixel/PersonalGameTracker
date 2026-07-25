@@ -438,25 +438,53 @@
 		console.info(
 			`[Auth] Status geändert: ${event}`
 		);
-
-
+	
+	
 		renderSession(session);
-
-
+	
+	
 		if (event === "SIGNED_IN") {
-
 			console.info(
 				"[Auth] Benutzer angemeldet:",
 				session?.user?.email
 			);
 		}
-
-
+	
+	
 		if (event === "SIGNED_OUT") {
-
 			console.info(
 				"[Auth] Benutzer abgemeldet."
 			);
+		}
+	
+	
+		/*
+		 * Andere Anwendungsteile über einen echten
+		 * Benutzerwechsel informieren.
+		 *
+		 * Der setTimeout sorgt dafür, dass mögliche
+		 * Supabase-Abfragen nicht direkt innerhalb des
+		 * Auth-State-Callbacks gestartet werden.
+		 */
+		if (
+			event === "SIGNED_IN" ||
+			event === "SIGNED_OUT"
+		) {
+			window.setTimeout(() => {
+	
+				window.dispatchEvent(
+					new CustomEvent(
+						"auth-session-changed",
+						{
+							detail: {
+								event,
+								session
+							}
+						}
+					)
+				);
+	
+			}, 0);
 		}
 	}
 
