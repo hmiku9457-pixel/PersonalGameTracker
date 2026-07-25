@@ -2,7 +2,7 @@
   "id": "collectibles",
   "name": "Collectibles",
   "description": "Einzelitem-Tracker für Intel und Collectibles aus The Division 2.",
-  "lastUpdated": "2026-07-25",
+  "lastUpdated": "2026-07-24",
   "dataStatus": {
     "scope": "individual-items",
     "generatedItems": 1122,
