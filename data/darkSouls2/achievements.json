@@ -1,0 +1,572 @@
+[
+	{
+		"id": "darkSouls2.achievement.selfRecollection",
+		"name": "Self Recollection",
+		"description": "Stelle deine menschliche Gestalt wieder her und beginne deine Reise in Drangleic.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Fortschritt"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.thisIsDarkSouls",
+		"name": "This is Dark Souls",
+		"description": "Stirb zum ersten Mal.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Fortschritt"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.lastGiant",
+		"name": "Last Giant",
+		"description": "Besiege den Last Giant.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Boss"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.covenantOfTheMeek",
+		"name": "Covenant of the Meek",
+		"description": "Entdecke den Eid 'Way of Blue'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.sinnerSBonfire",
+		"name": "Sinner's Bonfire",
+		"description": "Entzünde das Ur-Leuchtfeuer im Gebiet von Sinner's Rise.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Story"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.changeOfClothes",
+		"name": "Change of Clothes",
+		"description": "Gib Rosabeth of Melfia Kleidung.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebeninhalt"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.clangorousCovenant",
+		"name": "Clangorous Covenant",
+		"description": "Entdecke den Eid 'Bell Keepers'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.brightstoneBonfire",
+		"name": "Brightstone Bonfire",
+		"description": "Entzünde das Ur-Leuchtfeuer in Brightstone Cove Tseldora.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Story"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.ironKeepBonfire",
+		"name": "Iron Keep Bonfire",
+		"description": "Entzünde das Ur-Leuchtfeuer im Iron Keep.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Story"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.gulchBonfire",
+		"name": "Gulch Bonfire",
+		"description": "Entzünde das Ur-Leuchtfeuer im Black Gulch.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Story"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.gnawingCovenant",
+		"name": "Gnawing Covenant",
+		"description": "Entdecke den Eid 'Rat King'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.supremeWeapon",
+		"name": "Supreme Weapon",
+		"description": "Verstärke eine Waffe bis zur höchsten Stufe.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Upgrade"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.lookingGlassKnight",
+		"name": "Looking Glass Knight",
+		"description": "Besiege den Looking Glass Knight.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Boss"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.kingSRing",
+		"name": "King's Ring",
+		"description": "Erhalte den King's Ring.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Story"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.ancientDragon",
+		"name": "Ancient Dragon",
+		"description": "Erhalte das Ashen Mist Heart.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Story"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.covenantOfTheFittest",
+		"name": "Covenant of the Fittest",
+		"description": "Entdecke den Eid 'Company of Champions'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.brilliantCovenant",
+		"name": "Brilliant Covenant",
+		"description": "Entdecke den Eid 'Heirs of the Sun'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.reflectionsOnDisembodiment",
+		"name": "Reflections on Disembodiment",
+		"description": "Erhalte die Ausrüstung von Vengarl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.protectorCovenant",
+		"name": "Protector Covenant",
+		"description": "Entdecke den Eid 'Blue Sentinels'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.theHeir",
+		"name": "The Heir",
+		"description": "Erreiche das reguläre Spielende und nimm den Thron ein.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Ende"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.vendrick",
+		"name": "Vendrick",
+		"description": "Besiege König Vendrick.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Boss"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.sanguinaryCovenant",
+		"name": "Sanguinary Covenant",
+		"description": "Entdecke den Eid 'Brotherhood of Blood'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.abysmalCovenant",
+		"name": "Abysmal Covenant",
+		"description": "Entdecke den Eid 'Pilgrims of Dark'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.garrulousMiser",
+		"name": "Garrulous Miser",
+		"description": "Erhalte die Ausrüstung von Laddersmith Gilligan.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.selflessGiver",
+		"name": "Selfless Giver",
+		"description": "Erreiche den höchsten Rang in einem Eid.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.holderOfTheFort",
+		"name": "Holder of the Fort",
+		"description": "Erhalte die Ausrüstung von Captain Drummond.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.gatheringOfExiles",
+		"name": "Gathering of Exiles",
+		"description": "Bringe die erforderlichen NPCs nach Majula.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.covenantOfAncients",
+		"name": "Covenant of Ancients",
+		"description": "Entdecke den Eid 'Dragon Remnants'.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Eid"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.curiousMap",
+		"name": "Curious Map",
+		"description": "Entzünde alle Flammen auf Cales Karte in Majula.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebeninhalt"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.smithForLife",
+		"name": "Smith for Life",
+		"description": "Erhalte die Ausrüstung von Steady Hand McDuff.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.lucatiel",
+		"name": "Lucatiel",
+		"description": "Erhalte die Ausrüstung von Lucatiel of Mirrah.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.gestureMaestro",
+		"name": "Gesture Maestro",
+		"description": "Erlerne alle Gesten.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Sammlung"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.moonlightGreatsword",
+		"name": "Moonlight Greatsword",
+		"description": "Erhalte die Ausrüstung von Benhart of Jugo.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "NPC"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.masterOfHexes",
+		"name": "Master of Hexes",
+		"description": "Erhalte alle Hexereien.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Sammlung"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.masterOfSorcery",
+		"name": "Master of Sorcery",
+		"description": "Erhalte alle Zaubereien.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Sammlung"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.masterOfMiracles",
+		"name": "Master of Miracles",
+		"description": "Erhalte alle Wunder.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Sammlung"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.masterOfPyromancy",
+		"name": "Master of Pyromancy",
+		"description": "Erhalte alle Pyromantien.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Sammlung"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	},
+	{
+		"id": "darkSouls2.achievement.theDarkSoul",
+		"name": "The Dark Soul",
+		"description": "Schalte alle anderen Achievements frei.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Abschluss"
+			},
+			{
+				"label": "Version",
+				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+			}
+		]
+	}
+]
