@@ -1,0 +1,1405 @@
+[
+	{
+		"id": "crimsonDesert.equipmentSet.cantaPlateSet",
+		"name": "Canta Plate Set",
+		"description": "Plattenrüstungs-Familie; frühes beziehungsweise grundlegendes Set.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.frostcursedArmorSet",
+		"name": "Frostcursed Armor Set",
+		"description": "Plattenrüstungs-Familie mit Eis-Thematik.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.blackwingSet",
+		"name": "Blackwing Set",
+		"description": "Schwarzflügel-Rüstungsfamilie mit Leder-/Plattenteilen.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.fallenKingdomSet",
+		"name": "Fallen Kingdom Set",
+		"description": "Rüstungsfamilie des gefallenen Königreichs.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.shadowsArmorSet",
+		"name": "Shadows Armor Set",
+		"description": "Rüstungsfamilie 'of the Shadows'.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.scorchflameSet",
+		"name": "Scorchflame Set",
+		"description": "Plattenrüstungs-Familie mit Feuer-Thematik.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.cursedSoulArmorSet",
+		"name": "Cursed Soul Armor Set",
+		"description": "Plattenrüstungs-Familie der verfluchten Seele.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.duskfangArmorSet",
+		"name": "Duskfang Armor Set",
+		"description": "Duskfang-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.kairosPlateArmorSet",
+		"name": "Kairos Plate Armor Set",
+		"description": "Kairos-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.boltonPlateArmorSet",
+		"name": "Bolton Plate Armor Set",
+		"description": "Bolton-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.solasPlateArmorSet",
+		"name": "Solas Plate Armor Set",
+		"description": "Solas-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.scholastoneSet",
+		"name": "Scholastone Set",
+		"description": "Scholastone-Uniform-/Gelehrtenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.scarletBladesSet",
+		"name": "Scarlet Blades Set",
+		"description": "Rüstungsfamilie der Scarlet Blades.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.jackalsLeatherSet",
+		"name": "Jackals' Leather Set",
+		"description": "Leder-Rüstungsfamilie der Jackals.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.unyieldingWarriorSet",
+		"name": "Unyielding Warrior Set",
+		"description": "Plattenrüstungsfamilie des Unyielding Warrior.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.demenissianArmorSet",
+		"name": "Demenissian Armor Set",
+		"description": "Demenissian-Uniform-/Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.demenissEliteUniformSet",
+		"name": "Demeniss Elite Uniform Set",
+		"description": "Rüstungsfamilie der Demeniss-Elitesoldaten.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.hernandCeremonialGuardSet",
+		"name": "Hernand Ceremonial Guard Set",
+		"description": "Zeremonielle Rüstungsfamilie der Hernand-Garde.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.ynitiumArmorSet",
+		"name": "Ynitium Armor Set",
+		"description": "Ynitium-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.cartaPlateArmorSet",
+		"name": "Carta Plate Armor Set",
+		"description": "Carta-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.grotevantPlateArmorSet",
+		"name": "Grotevant Plate Armor Set",
+		"description": "Grotevant-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.icewingPlateSet",
+		"name": "Icewing Plate Set",
+		"description": "Icewing-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.shadowleafSet",
+		"name": "Shadowleaf Set",
+		"description": "Shadowleaf-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.odeckSProtectorSet",
+		"name": "Odeck's Protector Set",
+		"description": "Rüstungsfamilie des Beschützers von Odeck.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka / Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.frozenHeartPlateSet",
+		"name": "Frozen Heart Plate Set",
+		"description": "Frozen-Heart-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.skyblazerSet",
+		"name": "Skyblazer Set",
+		"description": "Skyblazer-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.goldenGreedPlateSet",
+		"name": "Golden Greed Plate Set",
+		"description": "Golden-Greed-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.lightningBoltPlateSet",
+		"name": "Lightning Bolt Plate Set",
+		"description": "Lightning-Bolt-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.northernFighterSSet",
+		"name": "Northern Fighter's Set",
+		"description": "Rüstungsfamilie der Northern Fighters.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.jesterLeatherSet",
+		"name": "Jester Leather Set",
+		"description": "Jester-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.pailuneClothSet",
+		"name": "Pailune Cloth Set",
+		"description": "Pailune-Stoffrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.ridingSet",
+		"name": "Riding Set",
+		"description": "Reit-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.rabbitLeatherSet",
+		"name": "Rabbit Leather Set",
+		"description": "Rabbit-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.greyWolfLeatherSet",
+		"name": "Grey Wolf Leather Set",
+		"description": "Grey-Wolf-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.hungeringFangLeatherSet",
+		"name": "Hungering Fang Leather Set",
+		"description": "Hungering-Fang-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.helfrynLeatherSet",
+		"name": "Helfryn Leather Set",
+		"description": "Helfryn-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.weaselLeatherSet",
+		"name": "Weasel Leather Set",
+		"description": "Weasel-Lederrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.sahazhadPlateSet",
+		"name": "Sahazhad Plate Set",
+		"description": "Sahazhad-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.sunsetReedSet",
+		"name": "Sunset Reed Set",
+		"description": "Sunset-Reed-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.darkRingLeaderSArmorSet",
+		"name": "Dark Ring Leader's Armor Set",
+		"description": "Rüstungsfamilie des Dark Ring Leader.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.darkMarksmanSet",
+		"name": "Dark Marksman Set",
+		"description": "Boss-/Spezialrüstungsfamilie des Dark Marksman.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka / Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.maskedLiberatorSet",
+		"name": "Masked Liberator Set",
+		"description": "Rüstungsfamilie des Masked Liberator.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka / Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.stHalssiusPriestSet",
+		"name": "St. Halssius Priest Set",
+		"description": "Priester-Outfit/Rüstungsfamilie von St. Halssius.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.abyssalDragonSet",
+		"name": "Abyssal Dragon Set",
+		"description": "Späte beziehungsweise Endgame-Rüstungsfamilie mit Abyssal-Dragon-Thematik.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.belkandorPlateSet",
+		"name": "Belkandor Plate Set",
+		"description": "Fünfteilige Belkandor-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.lightOfTheBattlefieldSet",
+		"name": "Light of the Battlefield Set",
+		"description": "Benannte Damiane-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.officialKnightSSet",
+		"name": "Official Knight's Set",
+		"description": "Benannte Ritter-Rüstungsfamilie für Damiane.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.elegantCarmineSet",
+		"name": "Elegant Carmine Set",
+		"description": "Benannte Damiane-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.whiteBloodwindSet",
+		"name": "White Bloodwind Set",
+		"description": "Benannte Damiane-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.autumnBanquetSet",
+		"name": "Autumn Banquet Set",
+		"description": "Benannte Damiane-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.wandererOfFaithSet",
+		"name": "Wanderer of Faith Set",
+		"description": "Benannte Damiane-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.goldlightPlateSet",
+		"name": "Goldlight Plate Set",
+		"description": "Goldlight-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.executionerOfDarknessSet",
+		"name": "Executioner of Darkness Set",
+		"description": "Benannte, teilweise aus mehreren Rüstungsteilen bestehende Damiane-Familie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Damiane"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.valortreadSet",
+		"name": "Valortread Set",
+		"description": "Benannte Oongka-Rüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.ashadPlateSet",
+		"name": "Ashad Plate Set",
+		"description": "Ashad-Plattenrüstungsfamilie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Oongka / Kliff"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.greymaneLightArmor",
+		"name": "Greymane Light Armor",
+		"description": "Mit Patch 1.12.00 hinzugefügtes Rüstungsset.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.tarandusTheAshenOutfit",
+		"name": "Tarandus the Ashen Outfit",
+		"description": "Mit Patch 1.13.00 hinzugefügtes fünfteilige Boss-Outfit.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.unyieldingHeroOutfit",
+		"name": "Unyielding Hero Outfit",
+		"description": "Mit Patch 1.13.00 hinzugefügtes fünfteilige Boss-Outfit.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.knightOfCarnageOutfit",
+		"name": "Knight of Carnage Outfit",
+		"description": "Mit Patch 1.13.00 hinzugefügtes fünfteilige Boss-Outfit.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.martialMonkOutfit",
+		"name": "Martial Monk Outfit",
+		"description": "Mit Patch 1.13.00 hinzugefügte Boss-Outfit-Familie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.equipmentSet.grandGeneralOfDemenissOutfit",
+		"name": "Grand General of Demeniss Outfit",
+		"description": "Mit Patch 1.13.00 hinzugefügte Boss-Outfit-Familie.",
+		"details": [
+			{
+				"label": "Charakter",
+				"value": "Kliff / Oongka"
+			},
+			{
+				"label": "Kategorie",
+				"value": "Benanntes Rüstungs-/Outfit-Set"
+			},
+			{
+				"label": "Set-Bonus",
+				"value": "Kein allgemeiner Bonus allein für das Tragen eines vollständigen Namens-Sets; Werte stammen primär von den Einzelteilen."
+			},
+			{
+				"label": "Datenstand",
+				"value": "Patch 1.15.00 – 24.07.2026"
+			}
+		]
+	}
+]
