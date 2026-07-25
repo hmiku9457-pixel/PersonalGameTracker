@@ -1,0 +1,18 @@
+{
+  "id": "dragonsDogma2",
+  "name": "Dragon's Dogma 2",
+  "categories": [
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "description": "Steam-Erfolge aus dem Hauptspiel",
+      "file": "achievements.json"
+    },
+    {
+      "id": "quests",
+      "name": "Quests",
+      "description": "Alle Quests des Spiels",
+      "file": "quests.json"
+    }
+  ]
+}
