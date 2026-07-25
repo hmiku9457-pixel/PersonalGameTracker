@@ -1,10 +1,30 @@
 [
 	{
-		"id": "theDivision2",
-		"name": "The Division 2"
+		"id": "crimsonDesert",
+		"name": "Crimson Desert"
 	},
 	{
 		"id": "cyberpunk2077",
 		"name": "Cyberpunk 2077"
+	},
+	{
+		"id": "darkSouls1",
+		"name": "Dark Souls 1"
+	},
+	{
+		"id": "darkSouls2",
+		"name": "Dark Souls 2"
+	},
+	{
+		"id": "darkSouls3",
+		"name": "Dark Souls 3"
+	},
+	{
+		"id": "dragonsDogma2",
+		"name": "Dragon's Dogma 2"
+	},
+	{
+		"id": "theDivision2",
+		"name": "The Division 2"
 	}
 ]
