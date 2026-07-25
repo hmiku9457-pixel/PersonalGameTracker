@@ -1,1 +1,1177 @@
-Placeholder
+{
+  "id": "blueprints",
+  "name": "Blueprints",
+  "description": "Strukturierter Design-Datensatz für Waffen-, Ausrüstungs- und Rekonfigurationsbaupläne aus The Division 2.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "design-test",
+    "isComplete": false,
+    "includedItems": 73,
+    "referenceAvailableBlueprints": 713,
+    "referenceTotalBlueprints": 716,
+    "note": "Die aktuelle vollständige Sammlung umfasst mehrere hundert Einträge. Diese Datei enthält bewusst eine repräsentative Auswahl für Layout-, Filter- und Fortschrittstests."
+  },
+  "groups": [
+    {
+      "id": "assaultRifles",
+      "name": "Sturmgewehre",
+      "items": [
+        {
+          "id": "division2.blueprint.assaultRifles.police-m4",
+          "name": "Police M4",
+          "description": "Bauplan zur Herstellung von „Police M4“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.famas-2010",
+          "name": "FAMAS 2010",
+          "description": "Bauplan zur Herstellung von „FAMAS 2010“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.carbine-7",
+          "name": "Carbine 7",
+          "description": "Bauplan zur Herstellung von „Carbine 7“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.military-p416",
+          "name": "Military P416",
+          "description": "Bauplan zur Herstellung von „Military P416“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.f2000",
+          "name": "F2000",
+          "description": "Bauplan zur Herstellung von „F2000“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.ctar-21",
+          "name": "CTAR-21",
+          "description": "Bauplan zur Herstellung von „CTAR-21“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.ak-m",
+          "name": "AK-M",
+          "description": "Bauplan zur Herstellung von „AK-M“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.assaultRifles.g36-enhanced",
+          "name": "G36 Enhanced",
+          "description": "Bauplan zur Herstellung von „G36 Enhanced“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Sturmgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "submachineGuns",
+      "name": "Maschinenpistolen",
+      "items": [
+        {
+          "id": "division2.blueprint.submachineGuns.cmmg-banshee",
+          "name": "CMMG Banshee",
+          "description": "Bauplan zur Herstellung von „CMMG Banshee“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.submachineGuns.mpx",
+          "name": "MPX",
+          "description": "Bauplan zur Herstellung von „MPX“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.submachineGuns.p90",
+          "name": "P90",
+          "description": "Bauplan zur Herstellung von „P90“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.submachineGuns.pp-19",
+          "name": "PP-19",
+          "description": "Bauplan zur Herstellung von „PP-19“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.submachineGuns.tactical-vector-sbr-9mm",
+          "name": "Tactical Vector SBR 9mm",
+          "description": "Bauplan zur Herstellung von „Tactical Vector SBR 9mm“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.submachineGuns.vector-sbr-45-acp",
+          "name": "Vector SBR .45 ACP",
+          "description": "Bauplan zur Herstellung von „Vector SBR .45 ACP“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.submachineGuns.ump-45",
+          "name": "UMP-45",
+          "description": "Bauplan zur Herstellung von „UMP-45“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maschinenpistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lightMachineGuns",
+      "name": "Leichte Maschinengewehre",
+      "items": [
+        {
+          "id": "division2.blueprint.lightMachineGuns.m60-e6",
+          "name": "M60 E6",
+          "description": "Bauplan zur Herstellung von „M60 E6“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.lightMachineGuns.military-m249-b",
+          "name": "Military M249 B",
+          "description": "Bauplan zur Herstellung von „Military M249 B“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.lightMachineGuns.infantry-mg5",
+          "name": "Infantry MG5",
+          "description": "Bauplan zur Herstellung von „Infantry MG5“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.lightMachineGuns.rpk-74-e",
+          "name": "RPK-74 E",
+          "description": "Bauplan zur Herstellung von „RPK-74 E“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.lightMachineGuns.l86-a2",
+          "name": "L86 A2",
+          "description": "Bauplan zur Herstellung von „L86 A2“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.lightMachineGuns.gr9",
+          "name": "GR9",
+          "description": "Bauplan zur Herstellung von „GR9“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.lightMachineGuns.stoner-lamg",
+          "name": "Stoner LAMG",
+          "description": "Bauplan zur Herstellung von „Stoner LAMG“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Leichte Maschinengewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rifles",
+      "name": "Gewehre",
+      "items": [
+        {
+          "id": "division2.blueprint.rifles.classic-m1a",
+          "name": "Classic M1A",
+          "description": "Bauplan zur Herstellung von „Classic M1A“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.rifles.m1a-cqb",
+          "name": "M1A CQB",
+          "description": "Bauplan zur Herstellung von „M1A CQB“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.rifles.police-mk17",
+          "name": "Police Mk17",
+          "description": "Bauplan zur Herstellung von „Police Mk17“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.rifles.sig-716",
+          "name": "SIG 716",
+          "description": "Bauplan zur Herstellung von „SIG 716“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.rifles.acr-ss",
+          "name": "ACR SS",
+          "description": "Bauplan zur Herstellung von „ACR SS“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.rifles.m16a2",
+          "name": "M16A2",
+          "description": "Bauplan zur Herstellung von „M16A2“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.rifles.usc-45-acp",
+          "name": "USC .45 ACP",
+          "description": "Bauplan zur Herstellung von „USC .45 ACP“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marksmanRifles",
+      "name": "Präzisionsgewehre",
+      "items": [
+        {
+          "id": "division2.blueprint.marksmanRifles.model-700",
+          "name": "Model 700",
+          "description": "Bauplan zur Herstellung von „Model 700“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.marksmanRifles.m700-carbon",
+          "name": "M700 Carbon",
+          "description": "Bauplan zur Herstellung von „M700 Carbon“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.marksmanRifles.m700-tactical",
+          "name": "M700 Tactical",
+          "description": "Bauplan zur Herstellung von „M700 Tactical“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.marksmanRifles.srs-a1",
+          "name": "SRS A1",
+          "description": "Bauplan zur Herstellung von „SRS A1“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.marksmanRifles.covert-srs",
+          "name": "Covert SRS",
+          "description": "Bauplan zur Herstellung von „Covert SRS“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.marksmanRifles.sr-1",
+          "name": "SR-1",
+          "description": "Bauplan zur Herstellung von „SR-1“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.marksmanRifles.surplus-svd",
+          "name": "Surplus SVD",
+          "description": "Bauplan zur Herstellung von „Surplus SVD“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Präzisionsgewehr"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shotguns",
+      "name": "Schrotflinten",
+      "items": [
+        {
+          "id": "division2.blueprint.shotguns.m870-express",
+          "name": "M870 Express",
+          "description": "Bauplan zur Herstellung von „M870 Express“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.shotguns.custom-m870-mcs",
+          "name": "Custom M870 MCS",
+          "description": "Bauplan zur Herstellung von „Custom M870 MCS“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.shotguns.super-90",
+          "name": "Super 90",
+          "description": "Bauplan zur Herstellung von „Super 90“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.shotguns.spas-12",
+          "name": "SPAS-12",
+          "description": "Bauplan zur Herstellung von „SPAS-12“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.shotguns.acs-12",
+          "name": "ACS-12",
+          "description": "Bauplan zur Herstellung von „ACS-12“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.shotguns.six12",
+          "name": "SIX12",
+          "description": "Bauplan zur Herstellung von „SIX12“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.shotguns.ksg-shotgun",
+          "name": "KSG Shotgun",
+          "description": "Bauplan zur Herstellung von „KSG Shotgun“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Schrotflinten"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pistols",
+      "name": "Pistolen",
+      "items": [
+        {
+          "id": "division2.blueprint.pistols.d50",
+          "name": "D50",
+          "description": "Bauplan zur Herstellung von „D50“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.pistols.m1911",
+          "name": "M1911",
+          "description": "Bauplan zur Herstellung von „M1911“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.pistols.police-686-magnum",
+          "name": "Police 686 Magnum",
+          "description": "Bauplan zur Herstellung von „Police 686 Magnum“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.pistols.x-45-tactical",
+          "name": "X-45 Tactical",
+          "description": "Bauplan zur Herstellung von „X-45 Tactical“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.pistols.m45a1",
+          "name": "M45A1",
+          "description": "Bauplan zur Herstellung von „M45A1“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.pistols.pf45",
+          "name": "PF45",
+          "description": "Bauplan zur Herstellung von „PF45“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.pistols.93r",
+          "name": "93R",
+          "description": "Bauplan zur Herstellung von „93R“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Pistolen"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Die genaue Freischaltquelle hängt vom Bauplan ab; üblich sind Kontrollpunkte, Projekte, Händler, Summit-Challenges, Descent-Reconstructed-Caches oder saisonale Belohnungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "namedAndRecent",
+      "name": "Named und aktuelle Baupläne",
+      "items": [
+        {
+          "id": "division2.blueprint.named-and-recent.insult-to-injury",
+          "name": "Insult To Injury",
+          "description": "Named-Bauplan aus dem aktuellen Y8S2/TU29-Pool.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Named-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.named-and-recent.brain-break",
+          "name": "Brain Break",
+          "description": "Named-Bauplan aus dem aktuellen Y8S2/TU29-Pool.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Named-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.named-and-recent.benefactor",
+          "name": "Benefactor",
+          "description": "Named-Bauplan aus dem aktuellen Y8S2/TU29-Pool.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Named-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.named-and-recent.momma-badger",
+          "name": "Momma Badger",
+          "description": "Named-Bauplan aus dem aktuellen Y8S2/TU29-Pool.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Named-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.named-and-recent.agitator",
+          "name": "Agitator",
+          "description": "Crafting-Bauplan für das Exotic „Agitator“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Crafting-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.named-and-recent.investor",
+          "name": "Investor",
+          "description": "Crafting-Bauplan für die Exotic-Maske „Investor“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Crafting-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.named-and-recent.whiplash",
+          "name": "Whiplash",
+          "description": "Crafting-Bauplan für die Exotic-Pistole „Whiplash“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Crafting-Bauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Saison-, Endgame- oder Update-Freischaltung. Der genaue Zugang kann sich mit Title Updates ändern."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brandAndGearSets",
+      "name": "Marken- und Gear-Sets",
+      "items": [
+        {
+          "id": "division2.blueprint.brand-and-gear-sets.edelweiss-gpz",
+          "name": "Edelweiss GPz",
+          "description": "Sechs Baupläne – jeweils einer für Maske, Rucksack, Weste, Handschuhe, Holster und Knieschoner.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Markenset"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Je nach Set über Saisonbelohnungen, Projekte, Kontrollpunkte, Rekonstruierte Caches oder andere Endgame-Quellen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.brand-and-gear-sets.ortiz-reficere",
+          "name": "Ortiz: Reficere",
+          "description": "Sechs Baupläne – jeweils einer für jeden Ausrüstungsslot.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gear Set"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Je nach Set über Saisonbelohnungen, Projekte, Kontrollpunkte, Rekonstruierte Caches oder andere Endgame-Quellen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.brand-and-gear-sets.royal-works",
+          "name": "Royal Works",
+          "description": "Sechs saisongebundene Baupläne für die Ausrüstungsslots.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Markenset"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Je nach Set über Saisonbelohnungen, Projekte, Kontrollpunkte, Rekonstruierte Caches oder andere Endgame-Quellen."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.brand-and-gear-sets.core-strength",
+          "name": "Core Strength",
+          "description": "Sechs saisongebundene Baupläne für die Ausrüstungsslots.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Gear Set"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "Je nach Set über Saisonbelohnungen, Projekte, Kontrollpunkte, Rekonstruierte Caches oder andere Endgame-Quellen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exoticReconfiguration",
+      "name": "Exotic-Rekonfiguration",
+      "items": [
+        {
+          "id": "division2.blueprint.exotic-reconfiguration.capacitor",
+          "name": "Capacitor",
+          "description": "Erlaubt die Rekonfiguration von „Capacitor“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Rekonfigurationsbauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "In der Regel nach dem ersten Besitz des Exotics beim Bauplanhändler erhältlich; einzelne neuere Baupläne folgen besonderen Freischaltregeln."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.exotic-reconfiguration.st-elmos-engine",
+          "name": "St. Elmo's Engine",
+          "description": "Erlaubt die Rekonfiguration von „St. Elmo's Engine“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Rekonfigurationsbauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "In der Regel nach dem ersten Besitz des Exotics beim Bauplanhändler erhältlich; einzelne neuere Baupläne folgen besonderen Freischaltregeln."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.exotic-reconfiguration.memento",
+          "name": "Memento",
+          "description": "Erlaubt die Rekonfiguration von „Memento“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Rekonfigurationsbauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "In der Regel nach dem ersten Besitz des Exotics beim Bauplanhändler erhältlich; einzelne neuere Baupläne folgen besonderen Freischaltregeln."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.exotic-reconfiguration.caduceus",
+          "name": "Caduceus",
+          "description": "Erlaubt die Rekonfiguration von „Caduceus“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Rekonfigurationsbauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "In der Regel nach dem ersten Besitz des Exotics beim Bauplanhändler erhältlich; einzelne neuere Baupläne folgen besonderen Freischaltregeln."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.exotic-reconfiguration.nurses-kneepads",
+          "name": "Nurse's Kneepads",
+          "description": "Erlaubt die Rekonfiguration von „Nurse's Kneepads“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Rekonfigurationsbauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "In der Regel nach dem ersten Besitz des Exotics beim Bauplanhändler erhältlich; einzelne neuere Baupläne folgen besonderen Freischaltregeln."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.exotic-reconfiguration.underboss",
+          "name": "Underboss",
+          "description": "Erlaubt die Rekonfiguration von „Underboss“ an der Werkbank.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Exotic-Rekonfigurationsbauplan"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "In der Regel nach dem ersten Besitz des Exotics beim Bauplanhändler erhältlich; einzelne neuere Baupläne folgen besonderen Freischaltregeln."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "improvisedGear",
+      "name": "Improvisierte Ausrüstung",
+      "items": [
+        {
+          "id": "division2.blueprint.improvised-gear.improvisierte-maske",
+          "name": "Improvisierte Maske",
+          "description": "Bauplan für ein improvisiertes Ausrüstungsteil im Slot „Maske“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Maske"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "An der Werkbank verfügbar beziehungsweise über die reguläre Bauplan-Freischaltung erhältlich."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.improvised-gear.improvisierter-rucksack",
+          "name": "Improvisierter Rucksack",
+          "description": "Bauplan für ein improvisiertes Ausrüstungsteil im Slot „Rucksack“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Rucksack"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "An der Werkbank verfügbar beziehungsweise über die reguläre Bauplan-Freischaltung erhältlich."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.improvised-gear.improvisierte-weste",
+          "name": "Improvisierte Weste",
+          "description": "Bauplan für ein improvisiertes Ausrüstungsteil im Slot „Weste“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Weste"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "An der Werkbank verfügbar beziehungsweise über die reguläre Bauplan-Freischaltung erhältlich."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.improvised-gear.improvisierte-handschuhe",
+          "name": "Improvisierte Handschuhe",
+          "description": "Bauplan für ein improvisiertes Ausrüstungsteil im Slot „Handschuhe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Handschuhe"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "An der Werkbank verfügbar beziehungsweise über die reguläre Bauplan-Freischaltung erhältlich."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.improvised-gear.improvisiertes-holster",
+          "name": "Improvisiertes Holster",
+          "description": "Bauplan für ein improvisiertes Ausrüstungsteil im Slot „Holster“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Holster"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "An der Werkbank verfügbar beziehungsweise über die reguläre Bauplan-Freischaltung erhältlich."
+            }
+          ]
+        },
+        {
+          "id": "division2.blueprint.improvised-gear.improvisierte-knieschoner",
+          "name": "Improvisierte Knieschoner",
+          "description": "Bauplan für ein improvisiertes Ausrüstungsteil im Slot „Knieschoner“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Knieschoner"
+            },
+            {
+              "label": "Freischaltung",
+              "value": "An der Werkbank verfügbar beziehungsweise über die reguläre Bauplan-Freischaltung erhältlich."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
