@@ -1,3 +1,8 @@
+/* =========================================================
+   Personal Game Tracker
+   Category View
+   ========================================================= */
+
 import {
 	loadCategoryData
 } from "../services/dataService.js";
@@ -96,8 +101,11 @@ export async function renderCategory(
 
 
 		/*
+		 * ---------------------------------------------------
 		 * Spieltitel
+		 * ---------------------------------------------------
 		 */
+
 		const gameHeader =
 			document.createElement(
 				"div"
@@ -128,11 +136,11 @@ export async function renderCategory(
 
 
 		/*
+		 * ---------------------------------------------------
 		 * Sticky-Toolbar
-		 *
-		 * Enthält den Zurück-Button und den
-		 * Fortschritt der geöffneten Kategorie.
+		 * ---------------------------------------------------
 		 */
+
 		const categoryToolbar =
 			document.createElement(
 				"div"
@@ -190,10 +198,6 @@ export async function renderCategory(
 			"true";
 
 
-		/*
-		 * Fallback, bis der tatsächliche Wert
-		 * berechnet wurde.
-		 */
 		categoryProgress.textContent =
 			"0 / 0 · 0 %";
 
@@ -205,8 +209,11 @@ export async function renderCategory(
 
 
 		/*
+		 * ---------------------------------------------------
 		 * Kategorie-Inhalt
+		 * ---------------------------------------------------
 		 */
+
 		const categoryContent =
 			document.createElement(
 				"section"
@@ -280,14 +287,31 @@ export async function renderCategory(
 		renderCategoryData(
 			categoryContent,
 			data,
-			game.id,
 			progressData
 		);
 
 
 		/*
-		 * Seite zusammensetzen
+		 * Fortschrittsbuttons aktivieren.
+		 *
+		 * Es wird nur ein Event-Listener für die
+		 * gesamte Kategorie benötigt.
 		 */
+		registerProgressToggleHandler(
+			categoryContent,
+			game.id,
+			category.id,
+			data,
+			progressData
+		);
+
+
+		/*
+		 * ---------------------------------------------------
+		 * Seite zusammensetzen
+		 * ---------------------------------------------------
+		 */
+
 		gamePage.append(
 			gameHeader,
 			categoryToolbar,
@@ -301,11 +325,8 @@ export async function renderCategory(
 
 
 		/*
-		 * Wichtig:
-		 *
-		 * Erst nach mainContent.append() aktualisieren,
-		 * damit die Fortschrittsanzeige bereits im DOM
-		 * vorhanden ist.
+		 * Erst aktualisieren, wenn die Anzeige
+		 * tatsächlich im DOM vorhanden ist.
 		 */
 		updateCurrentCategoryProgress(
 			data,
@@ -317,8 +338,12 @@ export async function renderCategory(
 			game.id
 		);
 
-	} catch (error) {
-		console.error(error);
+	}
+	catch (error) {
+		console.error(
+			"[Category] Kategorie konnte nicht geladen werden:",
+			error
+		);
 
 
 		showError(
@@ -331,15 +356,20 @@ export async function renderCategory(
 /**
  * Gibt die Inhalte einer Kategorie aus.
  *
+ * Unterstützt:
+ *
+ * - groups
+ * - sections
+ * - items
+ * - direkte Arrays
+ *
  * @param {HTMLElement} container
  * @param {Object|Array} data
- * @param {string} gameId
  * @param {Object} progressData
  */
 function renderCategoryData(
 	container,
 	data,
-	gameId,
 	progressData
 ) {
 	if (
@@ -353,9 +383,7 @@ function renderCategoryData(
 			renderCategoryGroup(
 				container,
 				group,
-				gameId,
-				progressData,
-				data
+				progressData
 			);
 		}
 
@@ -375,9 +403,7 @@ function renderCategoryData(
 			renderCategoryGroup(
 				container,
 				section,
-				gameId,
-				progressData,
-				data
+				progressData
 			);
 		}
 
@@ -394,9 +420,7 @@ function renderCategoryData(
 		renderItemList(
 			container,
 			data.items,
-			gameId,
-			progressData,
-			data
+			progressData
 		);
 
 
@@ -408,9 +432,7 @@ function renderCategoryData(
 		renderItemList(
 			container,
 			data,
-			gameId,
-			progressData,
-			data
+			progressData
 		);
 
 
@@ -435,20 +457,16 @@ function renderCategoryData(
 
 
 /**
- * Gibt eine einzelne Gruppe aus.
+ * Gibt eine einzelne Gruppe oder Section aus.
  *
  * @param {HTMLElement} container
  * @param {Object} group
- * @param {string} gameId
  * @param {Object} progressData
- * @param {Object|Array} categoryData
  */
 function renderCategoryGroup(
 	container,
 	group,
-	gameId,
-	progressData,
-	categoryData
+	progressData
 ) {
 	const section =
 		document.createElement(
@@ -463,7 +481,10 @@ function renderCategoryGroup(
 	/*
 	 * Gruppenname
 	 */
-	if (group.name) {
+	if (
+		group.name ||
+		group.title
+	) {
 		const header =
 			document.createElement(
 				"div"
@@ -481,7 +502,8 @@ function renderCategoryGroup(
 
 
 		title.textContent =
-			group.name;
+			group.name ??
+			group.title;
 
 
 		header.append(
@@ -519,6 +541,9 @@ function renderCategoryGroup(
 	}
 
 
+	/*
+	 * Direkte Items
+	 */
 	if (
 		Array.isArray(
 			group.items
@@ -527,10 +552,50 @@ function renderCategoryGroup(
 		renderItemList(
 			section,
 			group.items,
-			gameId,
-			progressData,
-			categoryData
+			progressData
 		);
+	}
+
+
+	/*
+	 * Optional verschachtelte Gruppen
+	 */
+	if (
+		Array.isArray(
+			group.groups
+		)
+	) {
+		for (
+			const nestedGroup
+			of group.groups
+		) {
+			renderCategoryGroup(
+				section,
+				nestedGroup,
+				progressData
+			);
+		}
+	}
+
+
+	/*
+	 * Optional verschachtelte Sections
+	 */
+	if (
+		Array.isArray(
+			group.sections
+		)
+	) {
+		for (
+			const nestedSection
+			of group.sections
+		) {
+			renderCategoryGroup(
+				section,
+				nestedSection,
+				progressData
+			);
+		}
 	}
 
 
@@ -541,20 +606,16 @@ function renderCategoryGroup(
 
 
 /**
- * Gibt eine Liste von Tracker-Items aus.
+ * Rendert eine Liste von Tracker-Items.
  *
  * @param {HTMLElement} container
- * @param {Array} items
- * @param {string} gameId
- * @param {Object} progressData
- * @param {Object|Array} categoryData
+ * @param {Array<Object>} items
+ * @param {Object|null} progressData
  */
 function renderItemList(
 	container,
 	items,
-	gameId,
-	progressData,
-	categoryData
+	progressData = null
 ) {
 	const list =
 		document.createElement(
@@ -570,9 +631,7 @@ function renderItemList(
 		const listItem =
 			createTrackerItem(
 				item,
-				gameId,
-				progressData,
-				categoryData
+				progressData
 			);
 
 
@@ -591,17 +650,17 @@ function renderItemList(
 /**
  * Erstellt einen einzelnen Tracker-Eintrag.
  *
+ * Diese Funktion rendert ausschließlich.
+ * Die Speicherung erfolgt zentral über
+ * registerProgressToggleHandler().
+ *
  * @param {Object} item
- * @param {string} gameId
- * @param {Object} progressData
- * @param {Object|Array} categoryData
+ * @param {Object|null} progressData
  * @returns {HTMLLIElement}
  */
 function createTrackerItem(
 	item,
-	gameId,
-	progressData,
-	categoryData
+	progressData
 ) {
 	const listItem =
 		document.createElement(
@@ -620,8 +679,11 @@ function createTrackerItem(
 
 
 	/*
+	 * -------------------------------------------------------
 	 * Status-Indikator
+	 * -------------------------------------------------------
 	 */
+
 	const statusIndicator =
 		document.createElement(
 			"span"
@@ -639,8 +701,11 @@ function createTrackerItem(
 
 
 	/*
+	 * -------------------------------------------------------
 	 * Inhalt
+	 * -------------------------------------------------------
 	 */
+
 	const content =
 		document.createElement(
 			"div"
@@ -701,7 +766,9 @@ function createTrackerItem(
 	 * Details
 	 */
 	const details =
-		createItemDetails(item);
+		createItemDetails(
+			item
+		);
 
 
 	if (details) {
@@ -712,8 +779,11 @@ function createTrackerItem(
 
 
 	/*
+	 * -------------------------------------------------------
 	 * Toggle-Button
+	 * -------------------------------------------------------
 	 */
+
 	const toggleButton =
 		document.createElement(
 			"button"
@@ -728,9 +798,12 @@ function createTrackerItem(
 		"tracker-toggle";
 
 
-	/*
-	 * Initialen Status setzen
-	 */
+	if (item.id) {
+		toggleButton.dataset.itemId =
+			item.id;
+	}
+
+
 	const completed =
 		isItemCompleted(
 			item,
@@ -742,52 +815,23 @@ function createTrackerItem(
 		listItem,
 		statusIndicator,
 		toggleButton,
-		completed
+		completed,
+		progressData?.authenticated === true
 	);
 
 
 	/*
-	 * Status ändern
+	 * Items ohne ID können nicht persistent
+	 * gespeichert werden.
 	 */
-	toggleButton.addEventListener(
-		"click",
-		() => {
-			const currentState =
-				isItemCompleted(
-					item,
-					progressData
-				);
+	if (!item.id) {
+		toggleButton.disabled =
+			true;
 
 
-			const newState =
-				!currentState;
-
-
-			setItemCompleted(
-				gameId,
-				item,
-				newState,
-				progressData
-			);
-
-
-			updateTrackerItemState(
-				listItem,
-				statusIndicator,
-				toggleButton,
-				newState
-			);
-
-
-			/*
-			 * Fortschrittsanzeige direkt aktualisieren.
-			 */
-			updateCurrentCategoryProgress(
-				categoryData,
-				progressData
-			);
-		}
-	);
+		toggleButton.title =
+			"Dieses Item besitzt keine gültige ID.";
+	}
 
 
 	listItem.append(
@@ -804,7 +848,7 @@ function createTrackerItem(
 /**
  * Erstellt den Detailbereich eines Items.
  *
- * Unterstützt bevorzugt:
+ * Unterstützt:
  *
  * "details": [
  *     {
@@ -813,8 +857,8 @@ function createTrackerItem(
  *     }
  * ]
  *
- * Das bisherige Feld "location" wird zusätzlich
- * weiterhin unterstützt.
+ * Das ältere Feld "location" wird weiterhin
+ * als Fallback unterstützt.
  *
  * @param {Object} item
  * @returns {HTMLDetailsElement|null}
@@ -824,7 +868,7 @@ function createItemDetails(item) {
 
 
 	/*
-	 * Universelle neue Detail-Struktur
+	 * Universelle Detail-Struktur
 	 */
 	if (
 		Array.isArray(
@@ -861,14 +905,14 @@ function createItemDetails(item) {
 
 
 	/*
-	 * Alte location-Eigenschaft weiterhin
-	 * als Fallback unterstützen.
+	 * location weiterhin als Fallback.
 	 */
 	if (
 		item.location &&
 		!detailEntries.some(
 			detail =>
-				detail.label.toLowerCase() ===
+				detail.label
+					.toLowerCase() ===
 				"fundort"
 		)
 	) {
@@ -923,7 +967,8 @@ function createItemDetails(item) {
 
 
 	for (
-		const detail of detailEntries
+		const detail
+		of detailEntries
 	) {
 		const term =
 			document.createElement(
@@ -957,9 +1002,6 @@ function createItemDetails(item) {
 	);
 
 
-	/*
-	 * Text beim Öffnen/Schließen anpassen.
-	 */
 	details.addEventListener(
 		"toggle",
 		() => {
@@ -976,19 +1018,20 @@ function createItemDetails(item) {
 
 
 /**
- * Aktualisiert den visuellen Status
- * eines Tracker-Items.
+ * Aktualisiert den sichtbaren Zustand eines Items.
  *
  * @param {HTMLElement} listItem
  * @param {HTMLElement} statusIndicator
  * @param {HTMLButtonElement} toggleButton
  * @param {boolean} completed
+ * @param {boolean} authenticated
  */
 function updateTrackerItemState(
 	listItem,
 	statusIndicator,
 	toggleButton,
-	completed
+	completed,
+	authenticated
 ) {
 	listItem.classList.toggle(
 		"is-completed",
@@ -1008,37 +1051,82 @@ function updateTrackerItemState(
 	);
 
 
-	toggleButton.classList.toggle(
-		"is-active",
+	updateTrackerToggle(
+		toggleButton,
+		completed,
+		authenticated
+	);
+}
+
+
+/**
+ * Aktualisiert den sichtbaren Status eines
+ * Fortschrittsbuttons.
+ *
+ * @param {HTMLButtonElement} button
+ * @param {boolean} completed
+ * @param {boolean} authenticated
+ */
+function updateTrackerToggle(
+	button,
+	completed,
+	authenticated
+) {
+	button.classList.toggle(
+		"is-completed",
 		completed
 	);
 
 
-	toggleButton.setAttribute(
+	button.setAttribute(
 		"aria-pressed",
 		String(completed)
 	);
 
 
-	if (completed) {
-		toggleButton.textContent =
-			"✓ Gefunden";
+	button.textContent =
+		completed
+			? "Gefunden"
+			: "Nicht gefunden";
 
 
-		toggleButton.setAttribute(
+	button.disabled =
+		!authenticated;
+
+
+	if (authenticated) {
+
+		const actionText =
+			completed
+				? "Markierung entfernen"
+				: "Als gefunden markieren";
+
+
+		button.title =
+			actionText;
+
+
+		button.setAttribute(
 			"aria-label",
-			"Als nicht gefunden markieren"
+			actionText
 		);
 
-	} else {
-		toggleButton.textContent =
-			"Als gefunden markieren";
+	}
+	else {
+
+		const loginText =
+			"Zum Ändern des Fortschritts anmelden";
 
 
-		toggleButton.setAttribute(
+		button.title =
+			loginText;
+
+
+		button.setAttribute(
 			"aria-label",
-			"Als gefunden markieren"
+			loginText
 		);
+
 	}
 }
 
@@ -1075,13 +1163,330 @@ function updateCurrentCategoryProgress(
 	const percent =
 		progress.total > 0
 			? Math.round(
-				(progress.completed /
-					progress.total) *
-					100
+				(
+					progress.completed /
+					progress.total
+				) * 100
 			)
 			: 0;
 
 
 	element.textContent =
 		`${progress.completed} / ${progress.total} · ${percent} %`;
+}
+
+
+/**
+ * Sucht rekursiv ein Item anhand seiner ID.
+ *
+ * @param {Object|Array} data
+ * @param {string} itemId
+ * @returns {Object|null}
+ */
+function findItemById(
+	data,
+	itemId
+) {
+	if (!data) {
+		return null;
+	}
+
+
+	if (Array.isArray(data)) {
+
+		for (const entry of data) {
+
+			if (
+				entry?.id === itemId
+			) {
+				return entry;
+			}
+
+
+			const nested =
+				findItemById(
+					entry,
+					itemId
+				);
+
+
+			if (nested) {
+				return nested;
+			}
+		}
+
+
+		return null;
+	}
+
+
+	if (
+		typeof data === "object"
+	) {
+
+		if (
+			data.id === itemId
+		) {
+			return data;
+		}
+
+
+		for (
+			const value
+			of Object.values(data)
+		) {
+
+			if (
+				typeof value !== "object" ||
+				value === null
+			) {
+				continue;
+			}
+
+
+			const nested =
+				findItemById(
+					value,
+					itemId
+				);
+
+
+			if (nested) {
+				return nested;
+			}
+		}
+
+	}
+
+
+	return null;
+}
+
+
+/**
+ * Aktiviert die Fortschrittsbuttons einer Kategorie.
+ *
+ * Es wird Event Delegation verwendet, sodass für eine
+ * Kategorie nur ein einziger Click-Listener notwendig ist.
+ *
+ * @param {HTMLElement} container
+ * @param {string} gameId
+ * @param {string} categoryId
+ * @param {Object|Array} data
+ * @param {Object} progressData
+ */
+function registerProgressToggleHandler(
+	container,
+	gameId,
+	categoryId,
+	data,
+	progressData
+) {
+	container.addEventListener(
+		"click",
+		async (event) => {
+
+			if (
+				!(
+					event.target
+					instanceof Element
+				)
+			) {
+				return;
+			}
+
+
+			const button =
+				event.target.closest(
+					".tracker-toggle"
+				);
+
+
+			if (
+				!button ||
+				!container.contains(button)
+			) {
+				return;
+			}
+
+
+			const itemId =
+				button.dataset.itemId;
+
+
+			if (!itemId) {
+				console.error(
+					"[Progress] Button besitzt keine Item-ID."
+				);
+
+				return;
+			}
+
+
+			const item =
+				findItemById(
+					data,
+					itemId
+				);
+
+
+			if (!item) {
+				console.error(
+					"[Progress] Item konnte nicht gefunden werden:",
+					itemId
+				);
+
+				return;
+			}
+
+
+			const currentState =
+				isItemCompleted(
+					item,
+					progressData
+				);
+
+
+			const newState =
+				!currentState;
+
+
+			const listItem =
+				button.closest(
+					".tracker-item"
+				);
+
+
+			const statusIndicator =
+				listItem?.querySelector(
+					".tracker-item-status"
+				) ?? null;
+
+
+			/*
+			 * Während des Requests keine weiteren
+			 * Klicks zulassen.
+			 */
+			button.disabled =
+				true;
+
+
+			button.setAttribute(
+				"aria-busy",
+				"true"
+			);
+
+
+			button.textContent =
+				newState
+					? "Speichern..."
+					: "Entfernen...";
+
+
+			try {
+
+				await setItemCompleted(
+					gameId,
+					categoryId,
+					item,
+					newState,
+					progressData
+				);
+
+
+				/*
+				 * Item visuell aktualisieren.
+				 */
+				if (
+					listItem &&
+					statusIndicator
+				) {
+					updateTrackerItemState(
+						listItem,
+						statusIndicator,
+						button,
+						newState,
+						true
+					);
+				}
+				else {
+					updateTrackerToggle(
+						button,
+						newState,
+						true
+					);
+				}
+
+
+				/*
+				 * Kategorie-Fortschritt sofort
+				 * neu berechnen.
+				 */
+				updateCurrentCategoryProgress(
+					data,
+					progressData
+				);
+
+
+				console.info(
+					`[Progress] "${item.id}" wurde ${
+						newState
+							? "markiert"
+							: "demarkiert"
+					}.`
+				);
+
+			}
+			catch (error) {
+
+				console.error(
+					"[Progress] Änderung konnte nicht gespeichert werden:",
+					error
+				);
+
+
+				/*
+				 * Der lokale Zustand wurde im Service
+				 * bei einem Fehler nicht verändert.
+				 * Deshalb stellen wir den alten Zustand
+				 * wieder dar.
+				 */
+				if (
+					listItem &&
+					statusIndicator
+				) {
+					updateTrackerItemState(
+						listItem,
+						statusIndicator,
+						button,
+						currentState,
+						progressData?.authenticated === true
+					);
+				}
+				else {
+					updateTrackerToggle(
+						button,
+						currentState,
+						progressData?.authenticated === true
+					);
+				}
+
+
+				window.alert(
+					getProgressErrorMessage(
+						error
+					)
+				);
+
+			}
+			finally {
+
+				button.removeAttribute(
+					"aria-busy"
+				);
+
+			}
+
+		}
+	);
 }
