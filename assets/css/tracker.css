@@ -266,11 +266,41 @@
 
 
 /* ---------------------------------------------------------
-   5.1 Zurück-Button
+   5.1 Sticky-Toolbar
+   --------------------------------------------------------- */
+
+.game-page .category-toolbar {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+
+	width: 100%;
+
+	margin: 0 0 28px;
+	padding: 12px 14px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 16px;
+
+	background-color: #111827;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+
+	box-shadow:
+		0 6px 16px rgb(0 0 0 / 22%);
+}
+
+
+/* ---------------------------------------------------------
+   5.2 Zurück-Button
    --------------------------------------------------------- */
 
 .game-page .back-button {
-	margin-bottom: 28px;
+	margin: 0;
 	padding: 8px 14px;
 
 	font: inherit;
@@ -284,6 +314,8 @@
 	border-radius: 6px;
 
 	cursor: pointer;
+
+	white-space: nowrap;
 
 	transition:
 		color 0.2s ease,
@@ -304,37 +336,8 @@
 
 
 /* ---------------------------------------------------------
-   5.2 Kategorie-Inhalt
+   5.3 Fortschrittsanzeige der geöffneten Kategorie
    --------------------------------------------------------- */
-
-.game-page .category-content {
-	width: 100%;
-}
-
-
-/* Kategorie-Kopf */
-
-.game-page .category-content-header {
-	margin-bottom: 8px;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	gap: 20px;
-}
-
-.game-page .category-content-header h3 {
-	margin: 0;
-
-	font-size: 1.4rem;
-	font-weight: 700;
-
-	color: #f3f4f6;
-}
-
-
-/* Fortschrittsanzeige der geöffneten Kategorie */
 
 .game-page .category-content-progress {
 	flex-shrink: 0;
@@ -349,6 +352,33 @@
 
 	border: 1px solid #315d8a;
 	border-radius: 999px;
+
+	white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   5.4 Kategorie-Inhalt
+   --------------------------------------------------------- */
+
+.game-page .category-content {
+	width: 100%;
+}
+
+
+/* Kategorie-Kopf */
+
+.game-page .category-content-header {
+	margin-bottom: 8px;
+}
+
+.game-page .category-content-header h3 {
+	margin: 0;
+
+	font-size: 1.4rem;
+	font-weight: 700;
+
+	color: #f3f4f6;
 }
 
 
@@ -556,7 +586,7 @@
 }
 
 
-/* Gefundene Items minimal zurücknehmen */
+/* Gefundene Items */
 
 .game-page .tracker-item.is-completed
 .tracker-item-name {
@@ -827,13 +857,27 @@
 	}
 
 
-	/* Kategorie-Kopf */
+	/* Sticky-Toolbar */
 
-	.game-page .category-content-header {
-		align-items: flex-start;
-		flex-direction: column;
+	.game-page .category-toolbar {
+		padding: 10px;
 
-		gap: 8px;
+		gap: 10px;
+	}
+
+
+	.game-page .back-button {
+		padding-right: 10px;
+		padding-left: 10px;
+
+		font-size: 0.85rem;
+	}
+
+
+	.game-page .category-content-progress {
+		padding: 5px 9px;
+
+		font-size: 0.8rem;
 	}
 
 
@@ -890,6 +934,28 @@
 		gap: 10px;
 	}
 
+
+	/* Sticky-Toolbar */
+
+	.game-page .category-toolbar {
+		align-items: stretch;
+		flex-direction: column;
+
+		gap: 8px;
+	}
+
+
+	.game-page .back-button {
+		width: 100%;
+	}
+
+
+	.game-page .category-content-progress {
+		align-self: flex-start;
+	}
+
+
+	/* Tracker */
 
 	.game-page .tracker-item {
 		grid-template-columns:
