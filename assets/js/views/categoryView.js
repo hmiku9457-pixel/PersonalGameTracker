@@ -6,7 +6,8 @@ import {
 	calculateCategoryProgress,
 	isItemCompleted,
 	loadGameProgressData,
-	setItemCompleted
+	setItemCompleted,
+	getProgressErrorMessage
 } from "../services/progressService.js";
 
 import {
