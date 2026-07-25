@@ -3,6 +3,7 @@
    Category View
    ========================================================= */
 
+
 import {
 	loadCategoryData
 } from "../services/dataService.js";
