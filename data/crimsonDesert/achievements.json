@@ -1,0 +1,648 @@
+[
+	{
+		"id": "crimsonDesert.achievement.noviceAdventurer",
+		"name": "Novice Adventurer",
+		"description": "Schließe alle Hauptquests von Kapitel 1 ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterCamper",
+		"name": "Master Camper",
+		"description": "Aktiviere das Lager am Howling Hill.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.protectorOfPailune",
+		"name": "Protector of Pailune",
+		"description": "Schließe alle Hauptquests von Kapitel 7 ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.expertStoryteller",
+		"name": "Expert Storyteller",
+		"description": "Schließe alle Hauptquests ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.lightbringer",
+		"name": "Lightbringer",
+		"description": "Schließe alle Sanctum-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.conquerorOfSpires",
+		"name": "Conqueror of Spires",
+		"description": "Schließe alle Spire-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.beastSlayer",
+		"name": "Beast Slayer",
+		"description": "Schließe alle Herausforderungen der Kategorie 'New Power' ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.proudReturnee",
+		"name": "Proud Returnee",
+		"description": "Schließe die Verlegung des Greymane-Lagers nach Pailune ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfSwords",
+		"name": "Master of Swords",
+		"description": "Schließe alle Schwert-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.conquerorOfTheAbysses",
+		"name": "Conqueror of the Abysses",
+		"description": "Schließe alle Abyss-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfSpears",
+		"name": "Master of Spears",
+		"description": "Schließe alle Speer-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.mazePathfinder",
+		"name": "Maze Pathfinder",
+		"description": "Schließe alle Maze-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.navigatorOfTheStars",
+		"name": "Navigator of the Stars",
+		"description": "Schließe alle Constellation-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfShields",
+		"name": "Master of Shields",
+		"description": "Schließe alle Schild-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.pilgrimOfWonders",
+		"name": "Pilgrim of Wonders",
+		"description": "Schließe alle Secret-Place-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.puzzleSolver",
+		"name": "Puzzle Solver",
+		"description": "Schließe alle Ancient-Ruins-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfBows",
+		"name": "Master of Bows",
+		"description": "Schließe alle Bogen-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfTwoHandedWeapons",
+		"name": "Master of Two-Handed Weapons",
+		"description": "Schließe alle Zweihandwaffen-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfRapiers",
+		"name": "Master of Rapiers",
+		"description": "Schließe alle Rapier-und-Schild-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfArtillery",
+		"name": "Master of Artillery",
+		"description": "Schließe alle Kanonen-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.masterOfFirearms",
+		"name": "Master of Firearms",
+		"description": "Schließe alle Feuerwaffen-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.relentlessWarrior",
+		"name": "Relentless Warrior",
+		"description": "Schließe alle Trainings-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.ultimateHunter",
+		"name": "Ultimate Hunter",
+		"description": "Schließe alle Jagd-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.expertExplorer",
+		"name": "Expert Explorer",
+		"description": "Schließe alle Erkundungs-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.battlefieldConqueror",
+		"name": "Battlefield Conqueror",
+		"description": "Schließe alle Kampf-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.brilliantTactician",
+		"name": "Brilliant Tactician",
+		"description": "Schließe alle Operations-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.theGoldenMerchant",
+		"name": "The Golden Merchant",
+		"description": "Schließe alle Handels-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.shadowlord",
+		"name": "Shadowlord",
+		"description": "Schließe alle 'Above the Law'-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.lordOfHonor",
+		"name": "Lord of Honor",
+		"description": "Schließe alle 'Challenges and Changes'-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.grandCollectorOfArms",
+		"name": "Grand Collector of Arms",
+		"description": "Schließe alle Special-Equipment-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.tamerOfLegends",
+		"name": "Tamer of Legends",
+		"description": "Schließe alle Pferde-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.trueGamer",
+		"name": "True Gamer",
+		"description": "Schließe alle Minispiel-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.unvanquishedStrategist",
+		"name": "Unvanquished Strategist",
+		"description": "Schließe alle Mastery-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	},
+	{
+		"id": "crimsonDesert.achievement.naturalCollector",
+		"name": "Natural Collector",
+		"description": "Schließe alle Life-Herausforderungen ab.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Datenstand",
+				"value": "25.07.2026"
+			}
+		]
+	}
+]
