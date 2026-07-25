@@ -1,0 +1,1028 @@
+[
+	{
+		"id": "dragonsDogma2.achievement.firstTasteOfFreedom",
+		"name": "First Taste of Freedom",
+		"description": "Entkomme der Sklaverei.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.arisen",
+		"name": "Arisen",
+		"description": "Erlange die Erinnerung daran zurück, zum Erweckten bestimmt worden zu sein.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.seatOfTheProxy",
+		"name": "Seat of the Proxy",
+		"description": "Erreiche Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.anInTentsAdventure",
+		"name": "An In-Tents Adventure",
+		"description": "Übernachte in einem Lager.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.oneSpeedOnly",
+		"name": "One Speed Only",
+		"description": "Steige in einen Ochsenkarren.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.versatile",
+		"name": "Versatile",
+		"description": "Wechsle deine Laufbahn.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.justAStoneSThrowAway",
+		"name": "Just a Stone's Throw Away",
+		"description": "Benutze einen Ferrystone.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.quitPlayingDead",
+		"name": "Quit Playing Dead",
+		"description": "Belebe zwei Vasallen gleichzeitig wieder.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.myrmecoleonDelights",
+		"name": "Myrmecoleon Delights",
+		"description": "Betritt das Rose Chateau Bordelrie.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.aHouseInThisEconomy",
+		"name": "A House? In This Economy?",
+		"description": "Kaufe ein eigenes Haus.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.wishUponTheRift",
+		"name": "Wish upon the Rift",
+		"description": "Lege eine Vasallenquest fest.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.noblesNightOut",
+		"name": "Nobles' Night Out",
+		"description": "Besuche einen Maskenball im Palast in formeller Kleidung.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.acrossTheBorder",
+		"name": "Across the Border",
+		"description": "Passiere das Grenztor nach Battahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theSavior",
+		"name": "The Savior",
+		"description": "Belebe einen Toten mit einem Wakestone wieder.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.aPawnOfManyTalents",
+		"name": "A Pawn of Many Talents",
+		"description": "Bringe deinem Hauptvasallen eine Spezialisierung bei.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theSpecialist",
+		"name": "The Specialist",
+		"description": "Erreiche den maximalen Rang einer Laufbahn.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.affinityAndBeyond",
+		"name": "Affinity and Beyond",
+		"description": "Erhöhe die Zuneigung einer Person auf das Maximum.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.duoDestinies",
+		"name": "Duo Destinies",
+		"description": "Wechsle zur Laufbahn Mystic Spearhand.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.backWhereItAllBegan",
+		"name": "Back Where It All Began",
+		"description": "Kehre nach Agamen Volcanic Island zurück.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.hopeYouBroughtALantern",
+		"name": "Hope You Brought a Lantern",
+		"description": "Erreiche Drabnir's Grotto.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.thisLlCureWhatAilsYe",
+		"name": "This'll Cure What Ails Ye",
+		"description": "Bade in den heißen Quellen.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.roostOfTheDragon",
+		"name": "Roost of the Dragon",
+		"description": "Erreiche Dragonsbreath Tower.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.arrowsAndIncantations",
+		"name": "Arrows and Incantations",
+		"description": "Wechsle zur Laufbahn Magick Archer.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.tricksterOfTheTrade",
+		"name": "Trickster of the Trade",
+		"description": "Wechsle zur Laufbahn Trickster.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.beforeDawnBreaks",
+		"name": "Before Dawn Breaks",
+		"description": "Besiege einen Dullahan.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theRegriffining",
+		"name": "The Regriffining",
+		"description": "Fliege ein zweites Mal auf einem Greifen.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.jackOfAllTradesMasterOfAllTrades",
+		"name": "Jack of All Trades, Master of...All Trades",
+		"description": "Wechsle zur Laufbahn Warfarer.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.dragonSDogma2",
+		"name": "Dragon's Dogma 2",
+		"description": "Erreiche und erlebe die Unmoored World.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.dragonForged",
+		"name": "Dragon Forged",
+		"description": "Verstärke eine Waffe mit Wyrmfire.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.toTheVictorGoTheSpoils",
+		"name": "To the Victor Go the Spoils",
+		"description": "Hole Gegenstände von dem Plünderer zurück, der sie dir gestohlen hat.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.closure",
+		"name": "Closure",
+		"description": "Erlebe das Ende des Kreislaufs. Nicht im Casual Mode verfügbar.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.aBadgeOfHonor",
+		"name": "A Badge of Honor",
+		"description": "Erhalte ein Pawn Badge.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.areWeThereYet",
+		"name": "Are We There Yet?",
+		"description": "Steige in den Phantom Oxcart.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.thoughtIDLostYou",
+		"name": "Thought I'd Lost You",
+		"description": "Belebe einen Toten in einer Leichenhalle oder einem Beinhaus wieder.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.iMIn",
+		"name": "I'm In",
+		"description": "Passiere das Grenztor auf unerlaubte Weise.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theGuardian",
+		"name": "The Guardian",
+		"description": "Bringe die Bevölkerung in der Unmoored World in Sicherheit.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theHero",
+		"name": "The Hero",
+		"description": "Bewältige alle Prüfungen der Unmoored World.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.offWithItsHead",
+		"name": "Off with Its Head!",
+		"description": "Enthaupte eine Medusa.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.fullMarks",
+		"name": "Full Marks",
+		"description": "Löse alle Rätsel der Sphinx.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.peace",
+		"name": "Peace",
+		"description": "Werde Sovran von Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.iTalos",
+		"name": "I, Talos",
+		"description": "Hilf dem Gigantus, in der Unmoored World erneut zu gehen.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.cyclopsAbridged",
+		"name": "Cyclops Abridged",
+		"description": "Überquere eine von einem Zyklopen gebildete Brücke.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.dragonSDogma",
+		"name": "Dragon's Dogma",
+		"description": "Erhalte das Schwert Dragon's Dogma.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.gigantusIHardlyKnewYe",
+		"name": "Gigantus, I Hardly Knew Ye",
+		"description": "Besiege den Gigantus innerhalb kurzer Zeit.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.harpyJoyride",
+		"name": "Harpy Joyride",
+		"description": "Beschwöre mit einem Harpy Snare Beacon eine Harpyie, halte dich fest und fliege mit ihr.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theTourist",
+		"name": "The Tourist",
+		"description": "Entdecke 50 Dungeons.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theCollector",
+		"name": "The Collector",
+		"description": "Sammle 80 Seeker's Tokens.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.gettingAHead",
+		"name": "Getting a Head",
+		"description": "Erhalte einen konservierten Medusenkopf.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.thePhilanthropist",
+		"name": "The Philanthropist",
+		"description": "Gewinne die Zuneigung von 50 Personen.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.masterOfTheMaisters",
+		"name": "Master of the Maisters",
+		"description": "Erhalte alle Maister-Lehren.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.reaperSScorn",
+		"name": "Reaper's Scorn",
+		"description": "Vollbringe mit einem Eternal Wakestone ein Wunder für mehrere Personen gleichzeitig.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.theBarbecueMaister",
+		"name": "The Barbecue-Maister",
+		"description": "Grille jede Fleischart sowohl bei Tag als auch bei Nacht.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.anEyeForAnEye",
+		"name": "An Eye for an Eye",
+		"description": "Versteinere eine Medusa.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.achievement.plentyArisenToGoRound",
+		"name": "Plenty Arisen to Go Round",
+		"description": "Erlebe, wie sich mehrere Verehrer in deinem Haus prügeln.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Achievement"
+			},
+			{
+				"label": "Plattform",
+				"value": "Steam"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Einige Achievements sind verpassbar oder an bestimmte Enden gebunden."
+			}
+		]
+	}
+]
