@@ -12,6 +12,10 @@
 	box-sizing: border-box;
 }
 
+[hidden] {
+	display: none !important;
+}
+
 html {
 	height: 100%;
 }
@@ -75,7 +79,7 @@ header h1 {
 
 /* Ausrichtung der Account-Elemente */
 
-#account-logged-out,
+#account-logged-out:not([hidden]),
 #account-logged-in:not([hidden]) {
 	display: flex;
 	align-items: center;
@@ -119,13 +123,14 @@ header h1 {
 	transition:
 		background-color 0.2s ease,
 		border-color 0.2s ease,
-		color 0.2s ease;
+		color 0.2s ease,
+		opacity 0.2s ease;
 }
 
 
 /* Hover */
 
-.account-module button:hover {
+.account-module button:hover:not(:disabled) {
 	color: #ffffff;
 	background-color: #4b5563;
 	border-color: #6b7280;
@@ -148,7 +153,7 @@ header h1 {
 	border-color: #2563eb;
 }
 
-#login-button:hover {
+#login-button:hover:not(:disabled) {
 	background-color: #1d4ed8;
 	border-color: #1d4ed8;
 }
@@ -162,7 +167,7 @@ header h1 {
 	border-color: #4b5563;
 }
 
-#logout-button:hover {
+#logout-button:hover:not(:disabled) {
 	color: #fecaca;
 	background-color: #7f1d1d;
 	border-color: #991b1b;
@@ -234,6 +239,11 @@ header h1 {
 	background-color: #374151;
 }
 
+.sidebar nav a:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
 
 /* ---------------------------------------------------------
    5. Hauptinhalt
@@ -292,48 +302,23 @@ button {
 	font: inherit;
 }
 
-
-/* ---------------------------------------------------------
-   8. Responsive Layout
-   --------------------------------------------------------- */
-
-@media (max-width: 768px) {
-
-	.page-layout {
-		flex-direction: column;
-	}
-
-	.sidebar {
-		width: 100%;
-
-		border-right: none;
-		border-bottom: 1px solid #374151;
-	}
-
-	.sidebar nav ul {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-	}
-
-	.sidebar nav li {
-		margin: 0;
-	}
-
-	main {
-		padding: 20px;
-	}
+button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
 }
 
 
-/* =========================================================
-   Authentifizierung
-   ========================================================= */
+/* ---------------------------------------------------------
+   8. Authentifizierung
+   --------------------------------------------------------- */
 
 .auth-dialog {
 	width: min(420px, calc(100% - 32px));
+	max-height: calc(100dvh - 32px);
 
 	padding: 0;
+
+	overflow-y: auto;
 
 	color: #e5e7eb;
 	background-color: #1f2937;
@@ -345,16 +330,13 @@ button {
 		0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
-
 .auth-dialog::backdrop {
 	background-color: rgba(0, 0, 0, 0.65);
 }
 
-
 .auth-dialog-content {
 	padding: 24px;
 }
-
 
 .auth-dialog-header {
 	display: flex;
@@ -366,13 +348,16 @@ button {
 	margin-bottom: 20px;
 }
 
-
 .auth-dialog-header h2 {
 	margin: 0;
 
 	font-size: 1.4rem;
 }
 
+
+/* ---------------------------------------------------------
+   8.1 Schließen-Button
+   --------------------------------------------------------- */
 
 .auth-close-button {
 	width: 36px;
@@ -384,22 +369,26 @@ button {
 	line-height: 1;
 
 	color: #e5e7eb;
-	background: transparent;
+	background-color: transparent;
 
 	border: 0;
 	border-radius: 6px;
 
 	cursor: pointer;
+
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
 }
 
-
-.auth-close-button:hover {
+.auth-close-button:hover:not(:disabled) {
+	color: #ffffff;
 	background-color: #374151;
 }
 
 
 /* ---------------------------------------------------------
-   Tabs
+   8.2 Auth-Tabs
    --------------------------------------------------------- */
 
 .auth-tabs {
@@ -409,7 +398,6 @@ button {
 	gap: 6px;
 
 	margin-bottom: 22px;
-
 	padding: 4px;
 
 	background-color: #111827;
@@ -417,24 +405,30 @@ button {
 	border-radius: 8px;
 }
 
-
 .auth-tab {
 	padding: 8px 12px;
 
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+
 	color: #9ca3af;
-	background: transparent;
+	background-color: transparent;
 
 	border: 0;
 	border-radius: 6px;
 
 	cursor: pointer;
+
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
 }
 
-
-.auth-tab:hover {
+.auth-tab:hover:not(:disabled) {
 	color: #e5e7eb;
+	background-color: #1f2937;
 }
-
 
 .auth-tab.active {
 	color: #ffffff;
@@ -443,7 +437,7 @@ button {
 
 
 /* ---------------------------------------------------------
-   Formulare
+   8.3 Auth-Formulare
    --------------------------------------------------------- */
 
 .auth-field {
@@ -455,14 +449,12 @@ button {
 	margin-bottom: 16px;
 }
 
-
 .auth-field label {
 	font-size: 0.9rem;
 	font-weight: 600;
 
 	color: #d1d5db;
 }
-
 
 .auth-field input {
 	width: 100%;
@@ -477,14 +469,31 @@ button {
 	border: 1px solid #4b5563;
 	border-radius: 6px;
 
-	outline: none;
+	transition:
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.auth-field input::placeholder {
+	color: #6b7280;
+}
+
+.auth-field input:focus-visible {
+	border-color: #60a5fa;
+
+	outline: 2px solid rgba(96, 165, 250, 0.25);
+	outline-offset: 1px;
+}
+
+.auth-field input:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
 }
 
 
-.auth-field input:focus {
-	border-color: #9ca3af;
-}
-
+/* ---------------------------------------------------------
+   8.4 Auth-Submit-Button
+   --------------------------------------------------------- */
 
 .auth-submit-button {
 	width: 100%;
@@ -495,17 +504,44 @@ button {
 	font: inherit;
 	font-weight: 600;
 
+	color: #ffffff;
+	background-color: #2563eb;
+
+	border: 1px solid #2563eb;
+	border-radius: 6px;
+
 	cursor: pointer;
+
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		opacity 0.2s ease;
+}
+
+.auth-submit-button:hover:not(:disabled) {
+	background-color: #1d4ed8;
+	border-color: #1d4ed8;
 }
 
 
 /* ---------------------------------------------------------
-   Meldungen
+   8.5 Tastatur-Fokus
+   --------------------------------------------------------- */
+
+.auth-close-button:focus-visible,
+.auth-tab:focus-visible,
+.auth-submit-button:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   8.6 Auth-Meldungen
    --------------------------------------------------------- */
 
 .auth-message {
 	margin: 18px 0 0;
-
 	padding: 10px 12px;
 
 	font-size: 0.9rem;
@@ -513,20 +549,161 @@ button {
 	border-radius: 6px;
 }
 
-
 .auth-message[data-type="error"] {
 	color: #fecaca;
 	background-color: rgba(127, 29, 29, 0.35);
-}
 
+	border: 1px solid rgba(248, 113, 113, 0.25);
+}
 
 .auth-message[data-type="success"] {
 	color: #bbf7d0;
 	background-color: rgba(20, 83, 45, 0.35);
-}
 
+	border: 1px solid rgba(74, 222, 128, 0.25);
+}
 
 .auth-message[data-type="info"] {
 	color: #bfdbfe;
 	background-color: rgba(30, 64, 175, 0.25);
+
+	border: 1px solid rgba(96, 165, 250, 0.25);
+}
+
+
+/* ---------------------------------------------------------
+   9. Responsive Layout
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+	header {
+		padding: 16px 20px;
+
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	header h1 {
+		font-size: 1.35rem;
+	}
+
+
+	/* Account-Modul unter dem Seitentitel anzeigen */
+
+	.account-module {
+		position: static;
+
+		transform: none;
+	}
+
+	#account-logged-out:not([hidden]),
+	#account-logged-in:not([hidden]) {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	#account-username {
+		max-width: min(260px, 70vw);
+	}
+
+
+	/* Seitenlayout */
+
+	.page-layout {
+		flex-direction: column;
+	}
+
+
+	/* Sidebar */
+
+	.sidebar {
+		width: 100%;
+
+		padding: 20px;
+
+		border-right: none;
+		border-bottom: 1px solid #374151;
+	}
+
+	.sidebar h2 {
+		margin-bottom: 12px;
+	}
+
+	.sidebar nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.sidebar nav li {
+		margin: 0;
+	}
+
+
+	/* Hauptinhalt */
+
+	main {
+		padding: 20px;
+	}
+
+	main h1 {
+		font-size: 1.7rem;
+	}
+
+
+	/* Footer */
+
+	footer {
+		padding: 15px 20px;
+	}
+}
+
+
+/* ---------------------------------------------------------
+   9.1 Sehr kleine Displays
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+	header {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.account-module button {
+		padding: 7px 12px;
+	}
+
+	#account-username {
+		max-width: 100%;
+	}
+
+
+	.sidebar {
+		padding: 16px;
+	}
+
+	.sidebar nav ul {
+		flex-direction: column;
+	}
+
+	.sidebar nav a {
+		width: 100%;
+	}
+
+
+	main {
+		padding: 16px;
+	}
+
+
+	.auth-dialog {
+		width: calc(100% - 20px);
+		max-height: calc(100dvh - 20px);
+	}
+
+	.auth-dialog-content {
+		padding: 20px;
+	}
 }
