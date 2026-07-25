@@ -4,7 +4,9 @@
    ========================================================= */
 
 import {
-	fetchGameProgressRows
+	fetchGameProgressRows,
+	insertProgressRow,
+	deleteProgressRow
 } from "../supabase/progressRepository.js";
 
 
@@ -488,35 +490,136 @@ export function calculateCategoryProgress(
 
 
 /**
- * Ändert den Fortschritt momentan ausschließlich
- * im bereits geladenen Objekt.
- *
- * Die Persistierung in Supabase folgt in Phase 5.
+ * Ändert den Fortschritt eines Items und speichert
+ * die Änderung in Supabase.
  *
  * @param {string} gameId
+ * @param {string} categoryId
  * @param {object} item
  * @param {boolean} completed
  * @param {object} progressData
- * @returns {object}
+ * @returns {Promise<object>}
  */
-export function setItemCompleted(
+export async function setItemCompleted(
 	gameId,
+	categoryId,
 	item,
 	completed,
 	progressData
 ) {
 	if (
-		!item?.id ||
-		!progressData?.progress
+		typeof gameId !== "string" ||
+		gameId.trim() === ""
 	) {
+		throw new Error(
+			"Ungültige gameId."
+		);
+	}
+
+
+	if (
+		typeof categoryId !== "string" ||
+		categoryId.trim() === ""
+	) {
+		throw new Error(
+			"Ungültige categoryId."
+		);
+	}
+
+
+	if (!item?.id) {
+		throw new Error(
+			"Das Item besitzt keine gültige ID."
+		);
+	}
+
+
+	if (!progressData?.progress) {
+		throw new Error(
+			"Fortschrittsdaten sind nicht verfügbar."
+		);
+	}
+
+
+	if (!progressData.authenticated) {
+		const error =
+			new Error(
+				"Für diese Aktion ist eine Anmeldung erforderlich."
+			);
+
+		error.code = "AUTH_REQUIRED";
+
+		throw error;
+	}
+
+
+	const targetState =
+		Boolean(completed);
+
+
+	const currentState =
+		Boolean(
+			progressData.progress[item.id]
+		);
+
+
+	/*
+	 * Gewünschter Zustand ist bereits vorhanden.
+	 * Kein Supabase-Request notwendig.
+	 */
+	if (currentState === targetState) {
 		return progressData;
 	}
 
 
-	progressData.progress[item.id] =
-		Boolean(completed);
+	/*
+	 * -------------------------------------------------------
+	 * In Supabase speichern
+	 * -------------------------------------------------------
+	 */
+
+	if (targetState) {
+
+		await insertProgressRow(
+			gameId,
+			categoryId,
+			item.id
+		);
+
+	}
+	else {
+
+		await deleteProgressRow(
+			gameId,
+			categoryId,
+			item.id
+		);
+
+	}
 
 
+	/*
+	 * -------------------------------------------------------
+	 * Lokalen Zustand erst NACH erfolgreichem Request ändern
+	 * -------------------------------------------------------
+	 */
+
+	if (targetState) {
+
+		progressData.progress[item.id] =
+			true;
+
+	}
+	else {
+
+		delete progressData.progress[item.id];
+
+	}
+
+
+	/*
+	 * Cache aktualisieren
+	 */
 	progressCache.set(
 		gameId,
 		progressData
