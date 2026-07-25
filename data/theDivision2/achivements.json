@@ -1,1 +1,1056 @@
-Placeholder
+{
+  "id": "achievements",
+  "name": "Achievements",
+  "description": "Steam-Erfolge aus The Division 2 einschließlich Warlords of New York und Battle for Brooklyn.",
+  "lastUpdated": "2026-07-25",
+  "platform": "Steam",
+  "groups": [
+    {
+      "id": "storyAndProgression",
+      "name": "Story und Fortschritt",
+      "items": [
+        {
+          "id": "division2.achievement.lebenszeichen",
+          "name": "Lebenszeichen",
+          "description": "Eleanor Sawyer vor den Hyenas im Hotel Grand Washington retten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.frohe-kunde-verbreiten",
+          "name": "Frohe Kunde verbreiten",
+          "description": "Den True Sons die Kontrolle über das ViewPoint Museum abnehmen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.jailbreak-american-history-museum",
+          "name": "Gefängnisausbruch",
+          "description": "Verhördaten aus dem American History Museum sicherstellen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.globale-kommunikation",
+          "name": "Globale Kommunikation",
+          "description": "Das SHD-Satellitennetzwerk beim Space Administration HQ wiederherstellen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.oeffnung-des-tresorraums",
+          "name": "Öffnung des Tresorraums",
+          "description": "Herausfinden, was die Hyenas aus Air Force One gestohlen haben.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.krankschreibung",
+          "name": "Krankschreibung",
+          "description": "Die Outcast-Aktivität beim DCD-Hauptquartier unterbinden.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.ich-kam-sah-und-kontrollierte",
+          "name": "Ich kam, sah und kontrollierte",
+          "description": "20 Kontrollpunkte in Washington, D.C. entdecken.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.bunker-action",
+          "name": "Bunker-Action",
+          "description": "SHD-Netzwerk-Ausrüstung aus dem Regierungsbunker bergen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.strategische-exfiltration",
+          "name": "Strategische Exfiltration",
+          "description": "Den Chefstrategen der Outcasts beim Potomac Event Center gefangen nehmen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.wiederaufbau-von-dc",
+          "name": "Wiederaufbau von DC",
+          "description": "Alle Siedlungen vollständig ausbauen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.hochrangige-einsatzkraft",
+          "name": "Hochrangige Einsatzkraft",
+          "description": "Stufe 30 erreichen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.dauerkarte",
+          "name": "Dauerkarte",
+          "description": "Die Ratsmitglieder der Hyenas in der District Union Arena eliminieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.in-die-wildnis",
+          "name": "In die Wildnis",
+          "description": "Den Outcast-Stützpunkt auf Roosevelt Island ausschalten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.projekt-manager",
+          "name": "Projekt-Manager",
+          "description": "Je ein Projekt für die Theater- und die Campus-Siedlung abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.lage-der-nation",
+          "name": "Lage der Nation",
+          "description": "Die True Sons aus dem Kapitol-Gebäude verdrängen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.landpartie",
+          "name": "Landpartie",
+          "description": "An der Operation bei Camp White Oak teilnehmen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.tier-im-kaefig",
+          "name": "Tier im Käfig",
+          "description": "Emeline Shaw im Manning National Zoo ausschalten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.naeharbeit",
+          "name": "Näharbeit",
+          "description": "10 Aufnäher durch Belobigungen erhalten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.nachgebohrt",
+          "name": "Nachgebohrt",
+          "description": "Die Pläne der Black Tusk im Pentagon aufdecken und vereiteln.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.um-es-auf-den-punkt-zu-bringen",
+          "name": "Um es auf den Punkt zu bringen",
+          "description": "Tchernenko nach der Konfrontation mit Elijah Sumner erfolgreich bergen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.reaktorverfolgung",
+          "name": "Reaktorverfolgung",
+          "description": "Den Perfusions-Bioreaktor aus den DARPA-Laboren unter dem Pentagon sichern.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.den-kriegst-du-nicht",
+          "name": "Den kriegst du nicht",
+          "description": "Dolores Jones daran hindern, Aaron Keener zu fangen oder zu töten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.schwere-nummer",
+          "name": "Schwere Nummer",
+          "description": "Alle Einsätze im Schwierigkeitsgrad „Schwer“ oder höher abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Story und Fortschritt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warlordsOfNewYork",
+      "name": "Warlords of New York",
+      "items": [
+        {
+          "id": "division2.achievement.ueber-den-berg",
+          "name": "Über den Berg",
+          "description": "Mit einem Agenten Stufe 40 erreichen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.jailbreak-theo-parnell",
+          "name": "Gefängnisausbruch",
+          "description": "Alle Fallen von Theo Parnell überleben und ihn besiegen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.tief-im-untergrund",
+          "name": "Tief im Untergrund",
+          "description": "Den Bohrer der Cleaners zerstören und Javier Kajika eliminieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.siedepunkt",
+          "name": "Siedepunkt",
+          "description": "Die Ölraffinerie der Cleaners lahmlegen und Vivian Conley besiegen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.boersenabsturz",
+          "name": "Börsenabsturz",
+          "description": "James Dragov an der New Yorker Börse besiegen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.befreiung",
+          "name": "Befreiung",
+          "description": "Den Raketenstart verhindern und Aaron Keener besiegen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.im-angesicht-von-lady-liberty",
+          "name": "Im Angesicht von Lady Liberty",
+          "description": "Die Fahndung abschließen und Aaron Keener eliminieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.extreme-fahndung",
+          "name": "Extreme Fahndung",
+          "description": "Eine saisonale Fahndungsmission auf „Herausfordernd“ oder höher abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.fast-schon-eine-band",
+          "name": "Fast schon eine Band",
+          "description": "Einen Haupteinsatz in New York mit mindestens einer aktiven Direktive abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Warlords of New York"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battleForBrooklyn",
+      "name": "Battle for Brooklyn",
+      "items": [
+        {
+          "id": "division2.achievement.brooklyn-controller",
+          "name": "Brooklyn-Controller",
+          "description": "Vier Kontrollpunkte in Brooklyn entdecken.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.vor-ort-in-brooklyn",
+          "name": "Vor Ort in Brooklyn",
+          "description": "Zugang zu einem Safehouse in Brooklyn erlangen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.held-der-heimat",
+          "name": "Held der Heimat",
+          "description": "Alle Haupt- und Nebenstandorte in Brooklyn befreien.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.brooklyn-kumpel",
+          "name": "Brooklyn-Kumpel",
+          "description": "Einen Ruf nach Verstärkung in Brooklyn absetzen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.brooklyn-koepfchen",
+          "name": "Brooklyn-Köpfchen",
+          "description": "Die Fertigkeit „Kluge Deckung“ freischalten und benutzen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.brooklyn-kopfgeldjaeger",
+          "name": "Brooklyn-Kopfgeldjäger",
+          "description": "Einen Kopfgeldeinsatz von jedem Safehouse in Brooklyn abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.brooklyn-rueckendeckung",
+          "name": "Brooklyn-Rückendeckung",
+          "description": "Auf einen Hilferuf antworten und einen verbündeten Agenten in Brooklyn wiederbeleben.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combatEquipmentAndSkills",
+      "name": "Kampf, Ausrüstung und Fertigkeiten",
+      "items": [
+        {
+          "id": "division2.achievement.tuer-zu-schon-wieder",
+          "name": "Tür zu (schon wieder)",
+          "description": "Zwei Autotüren schließen, während du dich in Deckung befindest.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.negativ-ramos",
+          "name": "Negativ Ramos!",
+          "description": "Feindliche Sanitäter schocken, indem du auf ihren Defibrillator schießt.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.fernsehbulle",
+          "name": "Fernsehbulle",
+          "description": "Über die Motorhaube eines Autos rutschen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.handwerklicher-sammler",
+          "name": "Handwerklicher Sammler",
+          "description": "20 Blaupausen sammeln.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.kleider-machen-leute",
+          "name": "Kleider machen Leute",
+          "description": "In jedem Ausrüstungsplatz Highend-Ausstattung oder besser tragen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.spezialisiert",
+          "name": "Spezialisiert",
+          "description": "Die erste Spezialisierung ausrüsten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.die-besten-der-besten",
+          "name": "Die Besten der Besten",
+          "description": "In jede für eine Spezialisierung verfügbare Verbesserungsart investieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.exotischer-geschmack",
+          "name": "Exotischer Geschmack",
+          "description": "Eine exotische Waffe oder einen exotischen Gegenstand herstellen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.fertigkeitenkoenig",
+          "name": "Fertigkeitenkönig",
+          "description": "Jede Fertigkeit ausrüsten und benutzen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.zum-toeten-ausgezogen",
+          "name": "Zum Töten ausgezogen",
+          "description": "Alle Rüstungsteile eines Tanks zerstören und ihn anschließend eliminieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.individualist",
+          "name": "Individualist",
+          "description": "Je einen Gegner mit Armbrust, Präzisionsgewehr und Granatenwerfer eliminieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.die-farbe-steht-ihnen-sir",
+          "name": "Die Farbe steht Ihnen, Sir!",
+          "description": "Eine vollständige Spielkartenfarbe in der offenen Welt sammeln.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.pfeil-ins-knie",
+          "name": "Pfeil ins Knie",
+          "description": "10 Gegnern mit einer Armbrust ins Bein schießen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Kampf, Ausrüstung und Fertigkeiten"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coopClansAndConflict",
+      "name": "Koop, Clans und Konflikt",
+      "items": [
+        {
+          "id": "division2.achievement.gruppentherapie",
+          "name": "Gruppentherapie",
+          "description": "Einen Kontrollpunkt als Gruppe übernehmen, ohne dass ein Gruppenmitglied kampfunfähig wird.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.hilfe",
+          "name": "Hilfe!",
+          "description": "Einen Ruf nach Verstärkung absetzen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.zahlenmaessig-ueberlegen",
+          "name": "Zahlenmäßig überlegen",
+          "description": "Einen Clan gründen oder einem Clan beitreten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.ein-freund-in-not",
+          "name": "Ein Freund in Not",
+          "description": "Einem Hilferuf nachgehen und den Agenten wiederbeleben.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.agent-mit-ressourcen",
+          "name": "Agent mit Ressourcen",
+          "description": "Verbündeten beim Sammeln von Ressourcen helfen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.grosswildjaeger",
+          "name": "Großwildjäger",
+          "description": "Einen Kopfgeldeinsatz von jedem Safehouse abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.clan-kollision",
+          "name": "Clan-Kollision",
+          "description": "Mit deinem Clan gegen einen anderen Clan im Konflikt-Modus antreten.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.erster-unter-gleichen",
+          "name": "Erster unter Gleichen",
+          "description": "Ein Match im Modus Gefecht oder Vorherrschaft gewinnen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.fuer-die-nachwelt",
+          "name": "Für die Nachwelt",
+          "description": "Im Fotomodus ein Foto von einer Gruppe aus vier Agenten aufnehmen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Koop, Clans und Konflikt"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "darkZones",
+      "name": "Dark Zones",
+      "items": [
+        {
+          "id": "division2.achievement.dark-zone-safehouse",
+          "name": "Dark Zone: Safehouse",
+          "description": "Zugang zu einem Safehouse in einer Dark Zone erlangen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Dark Zones"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.dark-zone-bergung",
+          "name": "Dark Zone: Bergung",
+          "description": "Je einen Gegenstand aus jeder Dark Zone bergen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Dark Zones"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.dark-zone-ausschaltung",
+          "name": "Dark Zone: Ausschaltung",
+          "description": "Je einen abtrünnigen Agenten in jeder Dark Zone eliminieren.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Dark Zones"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.dark-zone-kaperung-in-besetzter-zone",
+          "name": "Dark Zone: Kaperung in besetzter Zone",
+          "description": "Eine Bergung in einer beliebigen besetzten Dark Zone abfangen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Dark Zones"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raids",
+      "name": "Raids",
+      "items": [
+        {
+          "id": "division2.achievement.washington-raider",
+          "name": "Washington-Raider",
+          "description": "Operation „Dunkle Stunden“ vollständig mit einer Gruppe aus acht Spielern abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Raids"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        },
+        {
+          "id": "division2.achievement.eisenbrecher",
+          "name": "Eisenbrecher",
+          "description": "Operation „Stahlross“ vollständig mit einer Gruppe aus acht Spielern abschließen.",
+          "details": [
+            {
+              "label": "Bereich",
+              "value": "Raids"
+            },
+            {
+              "label": "Plattform",
+              "value": "Steam"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
