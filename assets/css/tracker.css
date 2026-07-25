@@ -1,6 +1,12 @@
 /* =========================================================
-   Spiele-Seite
+   Personal Game Tracker
+   Tracker / Spiele-Seiten
    ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. Grundlayout der Spielseite
+   --------------------------------------------------------- */
 
 .game-page {
 	width: 100%;
@@ -12,7 +18,7 @@
 
 
 /* ---------------------------------------------------------
-   Spieltitel
+   2. Spieltitel
    --------------------------------------------------------- */
 
 .game-page .game-header {
@@ -31,42 +37,48 @@
 }
 
 
+/* =========================================================
+   3. Kategorie-Übersicht
+   ========================================================= */
+
+
 /* ---------------------------------------------------------
-   Kategorien
+   3.1 Kategorie-Grid
    --------------------------------------------------------- */
 
 .game-page .category-grid {
+	width: 100%;
+	max-width: 900px;
+
+	margin: 0 auto 60px;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
 	gap: 24px;
-
-	width: 100%;
-	max-width: 900px;
-
-	margin: 0 auto 60px;
 }
 
 
 /* ---------------------------------------------------------
-   Kategorie-Karten / Buttons
+   3.2 Kategorie-Karten
    --------------------------------------------------------- */
 
 .game-page .category-card {
+	width: 100%;
+	max-width: 438px;
+	min-height: 170px;
+
+	flex: 1 1 380px;
+
+	padding: 25px 30px;
+
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 380px;
 	align-items: center;
 	justify-content: center;
 
 	gap: 10px;
-
-	width: 100%;
-	min-height: 170px;
-	max-width: 438px;
-
-	padding: 25px 30px;
 
 	color: #e5e7eb;
 	background-color: #1f2937;
@@ -79,7 +91,8 @@
 
 	cursor: pointer;
 
-	box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+	box-shadow:
+		0 4px 12px rgb(0 0 0 / 15%);
 
 	transition:
 		transform 0.2s ease,
@@ -116,9 +129,19 @@
 }
 
 
-/* ---------------------------------------------------------
-   Hover
-   --------------------------------------------------------- */
+/* Fortschritt innerhalb der Karte */
+
+.game-page .category-progress {
+	margin-top: 4px;
+
+	font-size: 0.9rem;
+	font-weight: 600;
+
+	color: #93c5fd;
+}
+
+
+/* Hover */
 
 .game-page .category-card:hover {
 	transform: translateY(-4px);
@@ -126,13 +149,12 @@
 	background-color: #273449;
 	border-color: #60a5fa;
 
-	box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+	box-shadow:
+		0 8px 20px rgb(0 0 0 / 25%);
 }
 
 
-/* ---------------------------------------------------------
-   Tastatur-Navigation
-   --------------------------------------------------------- */
+/* Tastatur-Navigation */
 
 .game-page .category-card:focus-visible {
 	outline: 2px solid #60a5fa;
@@ -140,9 +162,7 @@
 }
 
 
-/* ---------------------------------------------------------
-   Klick-Effekt
-   --------------------------------------------------------- */
+/* Klick-Effekt */
 
 .game-page .category-card:active {
 	transform: translateY(-1px);
@@ -150,7 +170,7 @@
 
 
 /* =========================================================
-   Gesamtfortschritt
+   4. Gesamtfortschritt
    ========================================================= */
 
 .game-page .game-progress {
@@ -165,38 +185,39 @@
 	border: 1px solid #374151;
 	border-radius: 10px;
 
-	box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+	box-shadow:
+		0 4px 12px rgb(0 0 0 / 15%);
 }
 
 
 /* ---------------------------------------------------------
-   Kopfzeile
+   4.1 Kopfzeile
    --------------------------------------------------------- */
 
 .game-page .game-progress-header {
+	margin-bottom: 16px;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 	gap: 20px;
-
-	margin-bottom: 16px;
 }
 
 .game-page .game-progress-header span {
 	font-weight: 600;
 }
 
-.game-page .game-progress-count {
+.game-page #game-progress-count {
 	white-space: nowrap;
 
 	color: #f3f4f6;
 }
 
 
-/* =========================================================
-   Fortschrittsbalken
-   ========================================================= */
+/* ---------------------------------------------------------
+   4.2 Fortschrittsbalken
+   --------------------------------------------------------- */
 
 .game-page .progress-bar {
 	width: 100%;
@@ -240,14 +261,503 @@
 
 
 /* =========================================================
-   Responsive
+   5. Kategorie-Detailseite
    ========================================================= */
+
+
+/* ---------------------------------------------------------
+   5.1 Zurück-Button
+   --------------------------------------------------------- */
+
+.game-page .back-button {
+	margin-bottom: 28px;
+	padding: 8px 14px;
+
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+
+	color: #d1d5db;
+	background-color: transparent;
+
+	border: 1px solid #4b5563;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+.game-page .back-button:hover {
+	color: #ffffff;
+	background-color: #1f2937;
+	border-color: #6b7280;
+}
+
+.game-page .back-button:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   5.2 Kategorie-Inhalt
+   --------------------------------------------------------- */
+
+.game-page .category-content {
+	width: 100%;
+}
+
+
+/* Kategorie-Kopf */
+
+.game-page .category-content-header {
+	margin-bottom: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 20px;
+}
+
+.game-page .category-content-header h3 {
+	margin: 0;
+
+	font-size: 1.4rem;
+	font-weight: 700;
+
+	color: #f3f4f6;
+}
+
+
+/* Fortschrittsanzeige der geöffneten Kategorie */
+
+.game-page .category-content-progress {
+	flex-shrink: 0;
+
+	padding: 5px 11px;
+
+	font-size: 0.875rem;
+	font-weight: 700;
+
+	color: #dbeafe;
+	background-color: #1e3a5f;
+
+	border: 1px solid #315d8a;
+	border-radius: 999px;
+}
+
+
+/* Beschreibung */
+
+.game-page .category-content-description {
+	max-width: 850px;
+
+	margin: 0 0 30px;
+
+	color: #b6c0ce;
+
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+
+/* =========================================================
+   6. Kategorie-Gruppen
+   ========================================================= */
+
+.game-page .category-group {
+	margin-top: 34px;
+}
+
+.game-page .category-group:first-of-type {
+	margin-top: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   6.1 Gruppen-Kopf
+   --------------------------------------------------------- */
+
+.game-page .category-group-header {
+	margin-bottom: 12px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 16px;
+}
+
+.game-page .category-group-header h4 {
+	margin: 0;
+
+	font-size: 1.1rem;
+	font-weight: 600;
+
+	color: #e5e7eb;
+}
+
+
+/* ---------------------------------------------------------
+   6.2 Gruppen-Beschreibung
+   --------------------------------------------------------- */
+
+.game-page .category-group-description {
+	margin: -4px 0 14px;
+
+	color: #9ca3af;
+
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+
+/* =========================================================
+   7. Tracker-Liste
+   ========================================================= */
+
+.game-page .tracker-list {
+	margin: 0;
+	padding: 0;
+
+	display: grid;
+
+	gap: 12px;
+
+	list-style: none;
+}
+
+
+/* =========================================================
+   8. Tracker-Eintrag
+   ========================================================= */
+
+.game-page .tracker-item {
+	width: 100%;
+
+	padding: 16px 18px;
+
+	display: grid;
+	grid-template-columns:
+		30px
+		minmax(0, 1fr)
+		auto;
+
+	align-items: start;
+
+	gap: 14px;
+
+	background-color: #182235;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+
+	box-shadow:
+		0 2px 6px rgb(0 0 0 / 10%);
+
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+
+/* Hover */
+
+.game-page .tracker-item:hover {
+	border-color: #4b5563;
+
+	box-shadow:
+		0 4px 12px rgb(0 0 0 / 18%);
+}
+
+
+/* ---------------------------------------------------------
+   8.1 Gefundener Eintrag
+   --------------------------------------------------------- */
+
+.game-page .tracker-item.is-completed {
+	background-color: #162725;
+	border-color: #2f6f62;
+}
+
+.game-page .tracker-item.is-completed:hover {
+	border-color: #3c8c7a;
+}
+
+
+/* =========================================================
+   9. Status-Indikator
+   ========================================================= */
+
+.game-page .tracker-item-status {
+	width: 26px;
+	height: 26px;
+
+	flex-shrink: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: transparent;
+	background-color: #111827;
+
+	border: 2px solid #4b5563;
+	border-radius: 50%;
+
+	font-size: 0.9rem;
+	font-weight: 700;
+	line-height: 1;
+
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+
+/* Gefunden */
+
+.game-page .tracker-item-status.is-completed {
+	color: #ecfdf5;
+	background-color: #15803d;
+
+	border-color: #22c55e;
+}
+
+
+/* =========================================================
+   10. Tracker-Inhalt
+   ========================================================= */
+
+.game-page .tracker-item-content {
+	min-width: 0;
+}
+
+
+/* ---------------------------------------------------------
+   10.1 Name
+   --------------------------------------------------------- */
+
+.game-page .tracker-item-name {
+	margin: 1px 0 5px;
+
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.35;
+
+	color: #f3f4f6;
+}
+
+
+/* Gefundene Items minimal zurücknehmen */
+
+.game-page .tracker-item.is-completed
+.tracker-item-name {
+	color: #dcfce7;
+}
+
+
+/* ---------------------------------------------------------
+   10.2 Beschreibung
+   --------------------------------------------------------- */
+
+.game-page .tracker-item-description {
+	margin: 0;
+
+	color: #bfc8d6;
+
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+
+/* =========================================================
+   11. Tracker-Details
+   ========================================================= */
+
+.game-page .tracker-item-details {
+	margin-top: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   11.1 Details-Button / Summary
+   --------------------------------------------------------- */
+
+.game-page .tracker-item-details summary {
+	width: fit-content;
+
+	color: #93c5fd;
+
+	font-size: 0.9rem;
+	font-weight: 600;
+
+	cursor: pointer;
+
+	user-select: none;
+
+	transition:
+		color 0.2s ease;
+}
+
+.game-page .tracker-item-details summary:hover {
+	color: #bfdbfe;
+}
+
+.game-page .tracker-item-details summary:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 3px;
+
+	border-radius: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   11.2 Detail-Inhalt
+   --------------------------------------------------------- */
+
+.game-page .tracker-item-details dl {
+	margin: 12px 0 0;
+	padding: 12px 14px;
+
+	display: grid;
+	grid-template-columns:
+		max-content
+		minmax(0, 1fr);
+
+	gap: 7px 16px;
+
+	background-color: rgb(17 24 39 / 55%);
+
+	border: 1px solid rgb(55 65 81 / 65%);
+	border-radius: 6px;
+}
+
+.game-page .tracker-item-details dt {
+	font-weight: 700;
+
+	color: #e5e7eb;
+}
+
+.game-page .tracker-item-details dd {
+	margin: 0;
+
+	color: #bfc8d6;
+
+	line-height: 1.5;
+}
+
+
+/* =========================================================
+   12. Tracker-Toggle
+   ========================================================= */
+
+.game-page .tracker-toggle {
+	min-width: 175px;
+
+	padding: 8px 13px;
+
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 600;
+
+	color: #e5e7eb;
+	background-color: #263449;
+
+	border: 1px solid #4b5563;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	white-space: nowrap;
+
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+
+/* Hover */
+
+.game-page .tracker-toggle:hover {
+	background-color: #334155;
+	border-color: #64748b;
+}
+
+
+/* Tastatur-Navigation */
+
+.game-page .tracker-toggle:focus-visible {
+	outline: 2px solid #93c5fd;
+	outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   12.1 Gefunden
+   --------------------------------------------------------- */
+
+.game-page .tracker-toggle.is-active {
+	color: #d1fae5;
+	background-color: #166534;
+
+	border-color: #22c55e;
+}
+
+.game-page .tracker-toggle.is-active:hover {
+	background-color: #14532d;
+	border-color: #4ade80;
+}
+
+
+/* =========================================================
+   13. Lade- und Fehlerzustände
+   ========================================================= */
+
+.game-page .loading,
+.game-page .error-message {
+	width: 100%;
+
+	padding: 25px;
+
+	text-align: center;
+
+	color: #d1d5db;
+	background-color: #1f2937;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+}
+
+
+/* =========================================================
+   14. Responsive Layout
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Tablets
+   --------------------------------------------------------- */
 
 @media (max-width: 768px) {
 
 	.game-page {
-		padding: 10px 0 20px;
+		padding:
+			10px
+			0
+			20px;
 	}
+
+
+	/* Spieltitel */
 
 	.game-page .game-header {
 		margin-bottom: 35px;
@@ -256,6 +766,9 @@
 	.game-page .game-title {
 		font-size: 1.7rem;
 	}
+
+
+	/* Kategorien */
 
 	.game-page .category-grid {
 		gap: 16px;
@@ -269,21 +782,132 @@
 		padding: 20px;
 	}
 
+
+	/* Tracker */
+
+	.game-page .tracker-item {
+		grid-template-columns:
+			28px
+			minmax(0, 1fr);
+	}
+
+
+	.game-page .tracker-toggle {
+		grid-column: 2;
+
+		width: 100%;
+		min-width: 0;
+
+		margin-top: 4px;
+	}
+
 }
 
 
+/* ---------------------------------------------------------
+   Smartphones
+   --------------------------------------------------------- */
+
 @media (max-width: 600px) {
 
-	.game-page .category-grid {
-		grid-template-columns: 1fr;
-	}
+	/* Kategorien */
 
 	.game-page .category-card {
+		max-width: 100%;
 		min-height: 130px;
+
+		flex-basis: 100%;
 	}
+
+
+	/* Gesamtfortschritt */
 
 	.game-page .game-progress {
 		padding: 20px;
+	}
+
+
+	/* Kategorie-Kopf */
+
+	.game-page .category-content-header {
+		align-items: flex-start;
+		flex-direction: column;
+
+		gap: 8px;
+	}
+
+
+	/* Tracker */
+
+	.game-page .tracker-item {
+		padding: 14px;
+
+		gap: 12px;
+	}
+
+
+	.game-page .tracker-item-details dl {
+		grid-template-columns: 1fr;
+
+		gap: 3px;
+	}
+
+
+	.game-page .tracker-item-details dd {
+		margin-bottom: 8px;
+	}
+
+
+	.game-page .tracker-item-details dd:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+
+/* ---------------------------------------------------------
+   Sehr kleine Displays
+   --------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+	.game-page .game-title {
+		font-size: 1.5rem;
+	}
+
+
+	.game-page .category-card {
+		padding: 18px 14px;
+	}
+
+
+	.game-page .game-progress {
+		padding: 18px;
+	}
+
+
+	.game-page .game-progress-header {
+		gap: 10px;
+	}
+
+
+	.game-page .tracker-item {
+		grid-template-columns:
+			24px
+			minmax(0, 1fr);
+
+		padding: 12px;
+	}
+
+
+	.game-page .tracker-item-status {
+		width: 24px;
+		height: 24px;
+	}
+
+
+	.game-page .tracker-toggle {
+		font-size: 0.85rem;
 	}
 
 }
