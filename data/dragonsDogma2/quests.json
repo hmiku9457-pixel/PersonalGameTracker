@@ -1,0 +1,1865 @@
+[
+	{
+		"id": "dragonsDogma2.quest.gaoledAwakening",
+		"name": "Gaoled Awakening",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 1 – A New Journey.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Excavation Site"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.taleSBeginning",
+		"name": "Tale's Beginning",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 1 – A New Journey.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Ultramarine Waterfall"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.ordealsOfANewRecruit",
+		"name": "Ordeals of a New Recruit",
+		"description": "Nebenquest in beziehungsweise rund um Borderwatch Outpost.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Borderwatch Outpost"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theProvisionerSPlight",
+		"name": "The Provisioner's Plight",
+		"description": "Nebenquest in beziehungsweise rund um Borderwatch Outpost.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Borderwatch Outpost"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.medicamentPredicament",
+		"name": "Medicament Predicament",
+		"description": "Nebenquest in beziehungsweise rund um Melve.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.brothersBraveAndTimid",
+		"name": "Brothers Brave and Timid",
+		"description": "Nebenquest in beziehungsweise rund um Melve.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.nestingTroubles",
+		"name": "Nesting Troubles",
+		"description": "Nebenquest in beziehungsweise rund um Melve.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.inDragonSWake",
+		"name": "In Dragon's Wake",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 1 – A New Journey.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.oneEyedInterloper",
+		"name": "One-Eyed Interloper",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 1 – A New Journey.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 1 – A New Journey"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aPlaceToCallHome",
+		"name": "A Place to Call Home",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theOrnateBox",
+		"name": "The Ornate Box",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.oxcartCourier",
+		"name": "Oxcart Courier",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theHeelOfHistory",
+		"name": "The Heel of History",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theGiftOfGiving",
+		"name": "The Gift of Giving",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.seatOfTheSovran",
+		"name": "Seat of the Sovran",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.maskedCorrespondence",
+		"name": "Masked Correspondence",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.monsterCulling",
+		"name": "Monster Culling",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.scalyInvaders",
+		"name": "Scaly Invaders",
+		"description": "Nebenquest in beziehungsweise rund um Harve Village.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Harve Village"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.vocationFrustration",
+		"name": "Vocation Frustration",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.disaSPlot",
+		"name": "Disa's Plot",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theCagedMagistrate",
+		"name": "The Caged Magistrate",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aMagisterialAmenity",
+		"name": "A Magisterial Amenity",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theStolenThrone",
+		"name": "The Stolen Throne",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.anUnsettlingEncounter",
+		"name": "An Unsettling Encounter",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.everyRoseHasItsThorn",
+		"name": "Every Rose Has Its Thorn",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theNamelessVillage",
+		"name": "The Nameless Village",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theArisenSShadow",
+		"name": "The Arisen's Shadow",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.tillDeathDoUsPart",
+		"name": "Till Death Do Us Part",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aBeggarSTale",
+		"name": "A Beggar's Tale",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.saintOfTheSlums",
+		"name": "Saint of the Slums",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.houseOfTheBlueSunbright",
+		"name": "House of the Blue Sunbright",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.readventOfCalamity",
+		"name": "Readvent of Calamity",
+		"description": "Nebenquest in beziehungsweise rund um Melve.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.homeIsWhereTheHearthIs",
+		"name": "Home Is Where the Hearth Is",
+		"description": "Nebenquest in beziehungsweise rund um Melve.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Melve"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.clawThemIntoShape",
+		"name": "Claw Them Into Shape",
+		"description": "Nebenquest in beziehungsweise rund um Moonglow Garden.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Moonglow Garden"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.berenSFinalLesson",
+		"name": "Beren's Final Lesson",
+		"description": "Nebenquest in beziehungsweise rund um Moonglow Garden.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Moonglow Garden"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.spellbound",
+		"name": "Spellbound",
+		"description": "Nebenquest in beziehungsweise rund um Eini's House.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Eini's House"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.troubleOnTheCape",
+		"name": "Trouble on the Cape",
+		"description": "Nebenquest in beziehungsweise rund um Harve Village.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Harve Village"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.giftOfTheBow",
+		"name": "Gift of the Bow",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth / Sacred Arbor.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth / Sacred Arbor"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aTrialOfArchery",
+		"name": "A Trial of Archery",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth / Sacred Arbor.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth / Sacred Arbor"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theAilingArborheart",
+		"name": "The Ailing Arborheart",
+		"description": "Nebenquest in beziehungsweise rund um Sacred Arbor.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Sacred Arbor"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.preyForThePack",
+		"name": "Prey for the Pack",
+		"description": "Nebenquest in beziehungsweise rund um Checkpoint Rest Town.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Checkpoint Rest Town"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.huntForTheJadeiteOrb",
+		"name": "Hunt for the Jadeite Orb",
+		"description": "Nebenquest in beziehungsweise rund um Checkpoint Rest Town.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Checkpoint Rest Town"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theSorcererSAppraisal",
+		"name": "The Sorcerer's Appraisal",
+		"description": "Nebenquest in beziehungsweise rund um Checkpoint Rest Town.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Checkpoint Rest Town"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.feastOfDeception",
+		"name": "Feast of Deception",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 2 – The Arisen Returns.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 2 – The Arisen Returns"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aNobleExchange",
+		"name": "A Noble Exchange",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aVeilOfGossamerClouds",
+		"name": "A Veil of Gossamer Clouds",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.dulledSteelColdForge",
+		"name": "Dulled Steel, Cold Forge",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.nationOfTheLambentFlame",
+		"name": "Nation of the Lambent Flame",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 3 – Honor and Treachery.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.mercyAmongThieves",
+		"name": "Mercy among Thieves",
+		"description": "Nebenquest in beziehungsweise rund um Checkpoint Rest Town.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Checkpoint Rest Town"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.welcomeToBattahl",
+		"name": "Welcome to Battahl",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.shadowedPrayers",
+		"name": "Shadowed Prayers",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.shortSightedAmbition",
+		"name": "Short-Sighted Ambition",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.offThePilferedPath",
+		"name": "Off the Pilfered Path",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aPoisonousProposal",
+		"name": "A Poisonous Proposal",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.flickeringShadows",
+		"name": "Flickering Shadows",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 3 – Honor and Treachery.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.twixtARockAndAHardPlace",
+		"name": "Twixt a Rock and a Hard Place",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.outOfTheForestIntoTheForge",
+		"name": "Out of the Forest, Into the Forge",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.steeledResolveBlazingForge",
+		"name": "Steeled Resolve, Blazing Forge",
+		"description": "Nebenquest in beziehungsweise rund um Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.putASpringInThyStep",
+		"name": "Put a Spring in Thy Step",
+		"description": "Nebenquest in beziehungsweise rund um Agamen Volcanic Island.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Agamen Volcanic Island"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theSottedSage",
+		"name": "The Sotted Sage",
+		"description": "Nebenquest in beziehungsweise rund um Agamen Volcanic Island.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Agamen Volcanic Island"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aCandleInTheStorm",
+		"name": "A Candle in the Storm",
+		"description": "Nebenquest in beziehungsweise rund um Agamen Volcanic Island.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Agamen Volcanic Island"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.tolledToRest",
+		"name": "Tolled to Rest",
+		"description": "Nebenquest in beziehungsweise rund um Ancient Battleground.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Ancient Battleground"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aGameOfWits",
+		"name": "A Game of Wits",
+		"description": "Nebenquest in beziehungsweise rund um Mountain Shrine.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Mountain Shrine"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.crossingInShadow",
+		"name": "Crossing in Shadow",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.thePhantomOxcart",
+		"name": "The Phantom Oxcart",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aCaseOfSculptorSBlock",
+		"name": "A Case of Sculptor's Block",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.tensionsOnTheHighroad",
+		"name": "Tensions on the Highroad",
+		"description": "Nebenquest in beziehungsweise rund um Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.clashAndConclusion",
+		"name": "Clash and Conclusion",
+		"description": "Nebenquest in beziehungsweise rund um Agamen Volcanic Island.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Nebenquest"
+			},
+			{
+				"label": "Region",
+				"value": "Agamen Volcanic Island"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Vor dem Point of No Return abschließen, wenn du einen möglichst vollständigen Durchlauf planst."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.convergence",
+		"name": "Convergence",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 3 – Honor and Treachery.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl / Harve Village"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aNewGodsway",
+		"name": "A New Godsway",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 3 – Honor and Treachery.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl / Harve Village"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theGuardianGigantus",
+		"name": "The Guardian Gigantus",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 3 – Honor and Treachery.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl / Agamen Volcanic Island"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.legacy",
+		"name": "Legacy",
+		"description": "Hauptquest der Geschichte; Abschnitt: Phase 3 – Honor and Treachery.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Hauptquest"
+			},
+			{
+				"label": "Region",
+				"value": "Excavation Site / Moonglint Tower"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 3 – Honor and Treachery"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.dreamsApart",
+		"name": "Dreams Apart",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.aScholarlyPursuit",
+		"name": "A Scholarly Pursuit",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.hallsOfTheFirstDawn",
+		"name": "Halls of the First Dawn",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Seafloor Shrine.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Seafloor Shrine"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.civilUnrest",
+		"name": "Civil Unrest",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Bakbattahl.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Bakbattahl"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theImportanceOfAidingErnesto",
+		"name": "The Importance of Aiding Ernesto",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Volcanic Island Camp.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Volcanic Island Camp"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.shepherdOfThePawns",
+		"name": "Shepherd of the Pawns",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Excavation Site.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Excavation Site"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.theRegentkinSResolve",
+		"name": "The Regentkin's Resolve",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Vernworth.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Vernworth"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.wanderingRoots",
+		"name": "Wandering Roots",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Sacred Arbor.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Sacred Arbor"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	},
+	{
+		"id": "dragonsDogma2.quest.whenWillsCollide",
+		"name": "When Wills Collide",
+		"description": "Quest der Unmoored World mit Ausgangspunkt beziehungsweise Schwerpunkt in Agamen Volcanic Island.",
+		"details": [
+			{
+				"label": "Typ",
+				"value": "Unmoored-World-Quest"
+			},
+			{
+				"label": "Region",
+				"value": "Agamen Volcanic Island"
+			},
+			{
+				"label": "Phase",
+				"value": "Phase 4 – The Unmoored World"
+			},
+			{
+				"label": "Hinweis",
+				"value": "Teil des regulären Story-/Endgame-Fortschritts."
+			}
+		]
+	}
+]
