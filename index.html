@@ -29,7 +29,7 @@
 						Benutzer
 					</span>
 		
-					<button type="button" id="account-button">
+					<button type="button" id="account-button" hidden>
 						Account
 					</button>
 		
@@ -40,6 +40,145 @@
 		
 			</div>
 		</header>
+		
+		<dialog
+			id="auth-dialog"
+			class="auth-dialog"
+		>		
+			<div class="auth-dialog-content">		
+				<div class="auth-dialog-header">		
+					<h2 id="auth-dialog-title">
+						Anmelden
+					</h2>
+		
+					<button
+						type="button"
+						id="auth-close-button"
+						class="auth-close-button"
+						aria-label="Anmeldung schließen"
+					>
+						×
+					</button>		
+				</div>		
+		
+				<div
+					class="auth-tabs"
+					role="tablist"
+					aria-label="Benutzerkonto"
+				>		
+					<button
+						type="button"
+						class="auth-tab active"
+						data-auth-mode="login"
+					>
+						Anmelden
+					</button>		
+					<button
+						type="button"
+						class="auth-tab"
+						data-auth-mode="register"
+					>
+						Registrieren
+					</button>		
+				</div>		
+		
+				<!-- Login -->
+				<form id="login-form">		
+					<div class="auth-field">		
+						<label for="login-email">
+							E-Mail-Adresse
+						</label>		
+						<input
+							type="email"
+							id="login-email"
+							name="email"
+							autocomplete="username"
+							required
+						>		
+					</div>		
+		
+					<div class="auth-field">		
+						<label for="login-password">
+							Passwort
+						</label>		
+						<input
+							type="password"
+							id="login-password"
+							name="password"
+							autocomplete="current-password"
+							required
+						>		
+					</div>		
+		
+					<button
+						type="submit"
+						class="auth-submit-button"
+					>
+						Anmelden
+					</button>		
+				</form>		
+		
+				<!-- Registrierung -->
+				<form
+					id="register-form"
+					hidden
+				>		
+					<div class="auth-field">		
+						<label for="register-email">
+							E-Mail-Adresse
+						</label>		
+						<input
+							type="email"
+							id="register-email"
+							name="email"
+							autocomplete="email"
+							required
+						>		
+					</div>		
+		
+					<div class="auth-field">		
+						<label for="register-password">
+							Passwort
+						</label>		
+						<input
+							type="password"
+							id="register-password"
+							name="password"
+							autocomplete="new-password"
+							required
+						>		
+					</div>		
+		
+					<div class="auth-field">		
+						<label for="register-password-repeat">
+							Passwort wiederholen
+						</label>		
+						<input
+							type="password"
+							id="register-password-repeat"
+							name="password-repeat"
+							autocomplete="new-password"
+							required
+						>		
+					</div>		
+		
+					<button
+						type="submit"
+						class="auth-submit-button"
+					>
+						Account erstellen
+					</button>		
+				</form>		
+		
+				<p
+					id="auth-message"
+					class="auth-message"
+					role="status"
+					aria-live="polite"
+					hidden
+				></p>		
+			</div>		
+		</dialog>
 
 		<!-- Hauptlayout -->
 		<div class="page-layout">
@@ -71,7 +210,7 @@
 		<!-- Eigener Supabase Client -->
 		<script src="./assets/js/supabaseClient.js"></script>
 		<!-- Temporärer Verbindungstest -->
-		<script src="./assets/js/supabaseTest.js"></script>
+		<!-- script src="./assets/js/supabaseTest.js"></script-->
 		
 		<script type="module" src="assets/js/main.js"></script>
 	</body>
