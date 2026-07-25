@@ -1,378 +1,1196 @@
 {
-  "id": "exotics",
-  "name": "Exotics",
-  "description": "Exotische Waffen und Ausrüstungsgegenstände aus The Division 2.",
-  "lastUpdated": "2026-07-24",
-  "groups": [
-    {
-      "id": "assaultRifles",
-      "name": "Sturmgewehre",
-      "items": [
-        {
-          "id": "division2.exotic.agitator",
-          "name": "Agitator"
-        },
-        {
-          "id": "division2.exotic.caduceus",
-          "name": "Caduceus"
-        },
-        {
-          "id": "division2.exotic.capacitor",
-          "name": "Capacitor"
-        },
-        {
-          "id": "division2.exotic.chameleon",
-          "name": "Chameleon"
-        },
-        {
-          "id": "division2.exotic.eagle-bearer",
-          "name": "Eagle Bearer"
-        },
-        {
-          "id": "division2.exotic.st-elmos-engine",
-          "name": "St. Elmo's Engine"
-        },
-        {
-          "id": "division2.exotic.strega",
-          "name": "Strega"
-        },
-        {
-          "id": "division2.exotic.the-bighorn",
-          "name": "The Bighorn"
-        }
-      ]
-    },
-    {
-      "id": "submachineGuns",
-      "name": "Maschinenpistolen",
-      "items": [
-        {
-          "id": "division2.exotic.backfire",
-          "name": "Backfire"
-        },
-        {
-          "id": "division2.exotic.lady-death",
-          "name": "Lady Death"
-        },
-        {
-          "id": "division2.exotic.ouroboros",
-          "name": "Ouroboros"
-        },
-        {
-          "id": "division2.exotic.oxpecker",
-          "name": "Oxpecker"
-        },
-        {
-          "id": "division2.exotic.the-chatterbox",
-          "name": "The Chatterbox"
-        },
-        {
-          "id": "division2.exotic.underboss",
-          "name": "Underboss"
-        }
-      ]
-    },
-    {
-      "id": "lightMachineGuns",
-      "name": "Leichte Maschinengewehre",
-      "items": [
-        {
-          "id": "division2.exotic.big-alejandro",
-          "name": "Big Alejandro"
-        },
-        {
-          "id": "division2.exotic.bluescreen",
-          "name": "Bluescreen"
-        },
-        {
-          "id": "division2.exotic.bullet-king",
-          "name": "Bullet King"
-        },
-        {
-          "id": "division2.exotic.iron-lung",
-          "name": "Iron Lung"
-        },
-        {
-          "id": "division2.exotic.pakhan",
-          "name": "Pakhan"
-        },
-        {
-          "id": "division2.exotic.pestilence",
-          "name": "Pestilence"
-        }
-      ]
-    },
-    {
-      "id": "rifles",
-      "name": "Gewehre",
-      "items": [
-        {
-          "id": "division2.exotic.bittersweet",
-          "name": "Bittersweet"
-        },
-        {
-          "id": "division2.exotic.diamondback",
-          "name": "Diamondback"
-        },
-        {
-          "id": "division2.exotic.doctor-home",
-          "name": "Doctor Home"
-        },
-        {
-          "id": "division2.exotic.merciless",
-          "name": "Merciless"
-        },
-        {
-          "id": "division2.exotic.the-ravenous",
-          "name": "The Ravenous"
-        },
-        {
-          "id": "division2.exotic.vindicator",
-          "name": "Vindicator"
-        }
-      ]
-    },
-    {
-      "id": "marksmanRifles",
-      "name": "Scharfschützengewehre",
-      "items": [
-        {
-          "id": "division2.exotic.dread-edict",
-          "name": "Dread Edict"
-        },
-        {
-          "id": "division2.exotic.mantis",
-          "name": "Mantis"
-        },
-        {
-          "id": "division2.exotic.nemesis",
-          "name": "Nemesis"
-        },
-        {
-          "id": "division2.exotic.sacrum-imperium",
-          "name": "Sacrum Imperium"
-        },
-        {
-          "id": "division2.exotic.shroud",
-          "name": "Shroud"
-        }
-      ]
-    },
-    {
-      "id": "shotguns",
-      "name": "Schrotflinten",
-      "items": [
-        {
-          "id": "division2.exotic.overlord",
-          "name": "Overlord"
-        },
-        {
-          "id": "division2.exotic.scorpio",
-          "name": "Scorpio"
-        },
-        {
-          "id": "division2.exotic.sheriff",
-          "name": "Sheriff"
-        },
-        {
-          "id": "division2.exotic.sweet-dreams",
-          "name": "Sweet Dreams"
-        }
-      ]
-    },
-    {
-      "id": "pistols",
-      "name": "Pistolen",
-      "items": [
-        {
-          "id": "division2.exotic.busy-little-bee",
-          "name": "Busy Little Bee"
-        },
-        {
-          "id": "division2.exotic.liberty",
-          "name": "Liberty"
-        },
-        {
-          "id": "division2.exotic.mosquito",
-          "name": "Mosquito"
-        },
-        {
-          "id": "division2.exotic.regulus",
-          "name": "Regulus"
-        },
-        {
-          "id": "division2.exotic.tempest",
-          "name": "Tempest"
-        },
-        {
-          "id": "division2.exotic.whiplash",
-          "name": "Whiplash"
-        }
-      ]
-    },
-    {
-      "id": "masks",
-      "name": "Masken",
-      "items": [
-        {
-          "id": "division2.exotic.catharsis",
-          "name": "Catharsis"
-        },
-        {
-          "id": "division2.exotic.coyotes-mask",
-          "name": "Coyote's Mask"
-        },
-        {
-          "id": "division2.exotic.investor",
-          "name": "Investor"
-        },
-        {
-          "id": "division2.exotic.the-catalyst",
-          "name": "The Catalyst"
-        },
-        {
-          "id": "division2.exotic.tinkerer",
-          "name": "Tinkerer"
-        },
-        {
-          "id": "division2.exotic.vile",
-          "name": "Vile"
-        }
-      ]
-    },
-    {
-      "id": "backpacks",
-      "name": "Rucksäcke",
-      "items": [
-        {
-          "id": "division2.exotic.acostas-go-bag",
-          "name": "Acosta's Go-Bag"
-        },
-        {
-          "id": "division2.exotic.birdies-quick-fix",
-          "name": "Birdie's Quick Fix"
-        },
-        {
-          "id": "division2.exotic.harrier-pride",
-          "name": "Harrier Pride"
-        },
-        {
-          "id": "division2.exotic.memento",
-          "name": "Memento"
-        },
-        {
-          "id": "division2.exotic.ninjabike-messenger-bag",
-          "name": "NinjaBike Messenger Bag"
-        }
-      ]
-    },
-    {
-      "id": "chests",
-      "name": "Westen",
-      "items": [
-        {
-          "id": "division2.exotic.beacon",
-          "name": "Beacon"
-        },
-        {
-          "id": "division2.exotic.collector",
-          "name": "Collector"
-        },
-        {
-          "id": "division2.exotic.provocator",
-          "name": "Provocator"
-        },
-        {
-          "id": "division2.exotic.ridgeways-pride",
-          "name": "Ridgeway's Pride"
-        },
-        {
-          "id": "division2.exotic.tardigrade-armor-system",
-          "name": "Tardigrade Armor System"
-        }
-      ]
-    },
-    {
-      "id": "gloves",
-      "name": "Handschuhe",
-      "items": [
-        {
-          "id": "division2.exotic.bloody-knuckles",
-          "name": "Bloody Knuckles"
-        },
-        {
-          "id": "division2.exotic.btsu-datagloves",
-          "name": "BTSU Datagloves"
-        },
-        {
-          "id": "division2.exotic.exodus",
-          "name": "Exodus"
-        },
-        {
-          "id": "division2.exotic.overdogs",
-          "name": "Overdogs"
-        },
-        {
-          "id": "division2.exotic.rugged-gauntlets",
-          "name": "Rugged Gauntlets"
-        }
-      ]
-    },
-    {
-      "id": "holsters",
-      "name": "Holster",
-      "items": [
-        {
-          "id": "division2.exotic.centurions-scabbard",
-          "name": "Centurion's Scabbard"
-        },
-        {
-          "id": "division2.exotic.dodge-city-gunslingers-holster",
-          "name": "Dodge City Gunslinger's Holster"
-        },
-        {
-          "id": "division2.exotic.imperial-dynasty",
-          "name": "Imperial Dynasty"
-        },
-        {
-          "id": "division2.exotic.nimble-holster",
-          "name": "Nimble Holster"
-        },
-        {
-          "id": "division2.exotic.shocker-punch",
-          "name": "Shocker Punch"
-        },
-        {
-          "id": "division2.exotic.waveform",
-          "name": "Waveform"
-        }
-      ]
-    },
-    {
-      "id": "kneepads",
-      "name": "Knieschoner",
-      "items": [
-        {
-          "id": "division2.exotic.acostas-kneepads",
-          "name": "Acosta's Kneepads"
-        },
-        {
-          "id": "division2.exotic.blacklisters",
-          "name": "Blacklisters"
-        },
-        {
-          "id": "division2.exotic.ninjabike-messenger-kneepads",
-          "name": "NinjaBike Messenger Kneepads"
-        },
-        {
-          "id": "division2.exotic.nurses-kneepads",
-          "name": "Nurse's Kneepads"
-        },
-        {
-          "id": "division2.exotic.sawyers-kneepads",
-          "name": "Sawyer's Kneepads"
-        }
-      ]
-    }
-  ]
+	"id": "exotics",
+	"name": "Exotics",
+	"description": "Exotische Waffen und Ausrüstungsgegenstände aus The Division 2.",
+	"lastUpdated": "2026-07-25",
+	"groups": [
+		{
+			"id": "assaultRifles",
+			"name": "Sturmgewehre",
+			"items": [
+				{
+					"id": "division2.exotic.agitator",
+					"name": "Agitator",
+					"description": "Exotisches Sturmgewehr, das auf Waffenwechsel und aggressiven Burst-Schaden ausgelegt ist.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Perturb“: Wird die Waffe 10 Sekunden im Holster getragen, wird sie vorbereitet. Beim Wechsel zur Agitator erhält sie für 20 Sekunden deutlich erhöhte Feuerrate und Waffenschaden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die Rise-Up-Saison erhältlich. Die Blaupause kann über Retaliation bei den Hyenas freigeschaltet werden."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.caduceus",
+					"name": "Caduceus",
+					"description": "Exotisches Sturmgewehr mit einer starken Kombination aus kritischen Treffern und Gruppenheilung.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Caduceus“: Kritische Treffer reparieren dich und deine Verbündeten um 3 % des verursachten Trefferschadens."
+						},
+						{
+							"label": "Fundort",
+							"value": "Belohnung des kostenlosen Into-the-Dark-Saisonpfads. Während des Dust-Storm-Events 2026 außerdem aus den Gear Caches des Events erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.capacitor",
+					"name": "Capacitor",
+					"description": "Exotisches Sturmgewehr mit einer starken Synergie zwischen Waffenschaden und Skills.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Capacitance“: Treffer bauen Stapel auf, die den Skill-Schaden erhöhen. Zusätzlich steigt der Waffenschaden mit vorhandenen Skill-Tiers."
+						},
+						{
+							"label": "Fundort",
+							"value": "Die erste Capacitor wird durch das Abschließen von fünf Summit-Challenges innerhalb eines Aufstiegs freigeschaltet. Danach ist sie auch über Sturmgewehr-Targeted-Loot und passende Exotic-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.chameleon",
+					"name": "Chameleon",
+					"description": "Schnell feuerndes exotisches Sturmgewehr, dessen Boni davon abhängen, welche Körperbereiche getroffen werden.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Adaptive Instincts“: Treffer auf Kopf, Körper und Beine bauen unterschiedliche Boni auf, darunter kritische Werte, Waffenschaden und Nachladegeschwindigkeit."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool sowie Sturmgewehr-Targeted-Loot, Exotic Caches und passende Retaliation-Belohnungen."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.eagle-bearer",
+					"name": "Eagle Bearer",
+					"description": "Raid-Sturmgewehr mit hoher offensiver Leistung und einer defensiven Mechanik nach erfolgreichen Kills.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Die Talente „Eagle's Strike“ und „Tenacity“ belohnen präzises Spiel und können eingehenden Schaden zeitlich verzögern, während weitere Eliminierungen dessen Auswirkungen reduzieren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Primär aus Operation Dark Hours, insbesondere der wöchentlichen Raid-Kiste. Zusätzlich kann Eagle Bearer in bestimmten Dark-Zone- und speziellen Event-Lootpools auftauchen."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.st-elmos-engine",
+					"name": "St. Elmo's Engine",
+					"description": "Sehr stabiles exotisches Sturmgewehr mit großem Magazin und regelmäßig verfügbarer Schockmunition.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Actum Est“: Treffer bauen Stapel auf. Bei maximalen Stapeln wird das nächste Magazin vollständig mit Schockmunition geladen."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Sturmgewehr-Targeted-Loot. Die Blaupause ist außerdem über Retaliation erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.strega",
+					"name": "Strega",
+					"description": "Exotisches Sturmgewehr, das Gegnergruppen markiert und dadurch Ketten von verstärktem Schaden ermöglicht.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Unnerve“: Ein Kill markiert Gegner im Umkreis von 20 Metern. Mehrere Markierungen können sich stapeln und erhöhen den verstärkten Schaden gegen markierte Ziele."
+						},
+						{
+							"label": "Fundort",
+							"value": "Nach der ursprünglichen saisonalen Freischaltung über Sturmgewehr-Targeted-Loot, Exotic Caches und die entsprechende Retaliation-Blaupause erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.the-bighorn",
+					"name": "The Bighorn",
+					"description": "Exotisches Sturmgewehr für schwierige Endgame-Inhalte, das zwischen automatischem Feuer und einem präzisen Fernkampfmodus wechselt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Big Game Hunter“: Beim Zielen durch das Visier wird die Waffe halbautomatisch und verursacht erheblich höheren Einzelschussschaden. Kopftreffer verstärken zusätzlich den Kopfschussschaden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Von Named Bosses in legendären Strongholds und im Summit auf Legendär sowie aus bestimmten Dark-Zone- und Retaliation-Quellen."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "submachineGuns",
+			"name": "Maschinenpistolen",
+			"items": [
+				{
+					"id": "division2.exotic.backfire",
+					"name": "Backfire",
+					"description": "Exotische Maschinenpistole mit extrem hohem potentiellem kritischen Schaden, der durch eine gefährliche Nachlade-Mechanik erkauft wird.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Payment in Kind“: Kritische Treffer bauen einen starken Bonus auf kritischen Trefferschaden auf. Nachladen verursacht jedoch einen Blutungs-Status auf dem eigenen Agenten."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Maschinenpistolen-Targeted-Loot. Zusätzlich über Outcast-Retaliation erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.lady-death",
+					"name": "Lady Death",
+					"description": "Mobile exotische Maschinenpistole, die aggressives Bewegen und Kämpfen auf kurze Distanz belohnt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Breathe Free“: Bewegung baut Stapel auf, die beim Schießen verbraucht werden und den verursachten Schaden verstärken. Kills erhöhen zusätzlich kurzzeitig die Bewegungsgeschwindigkeit."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Maschinenpistolen-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.ouroboros",
+					"name": "Ouroboros",
+					"description": "Extrem schnell feuernde exotische Maschinenpistole aus Paradise Lost mit einer ungewöhnlichen Status-Effekt-Mechanik.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Rule Them All“: Wird dem Agenten im Kampf ein Statuseffekt zugefügt, erhält die Hälfte der Munition des nächsten Magazins denselben Statuseffekt und kann ihn auf Gegner übertragen."
+						},
+						{
+							"label": "Fundort",
+							"value": "Exklusiver Drop der Incursion „Paradise Lost“. Sie kann von den Named Bosses oder mit erhöhter Chance aus der wöchentlichen Abschlusskiste droppen."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.oxpecker",
+					"name": "Oxpecker",
+					"description": "Exotische Maschinenpistole für Schild-Builds, die verursachten Schaden direkt mit der Haltbarkeit des Schildes verbindet.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Symbiosis“: Bei aktivem Schild verliert dieser kontinuierlich Lebenspunkte, wird aber um einen Teil des mit der Oxpecker verursachten Schadens repariert."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über Burden of Truth erhältlich. Heute unter anderem über Maschinenpistolen-Targeted-Loot und passende Retaliation-Belohnungen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.the-chatterbox",
+					"name": "The Chatterbox",
+					"description": "Exotische P90, die von Gegnergruppen und aggressivem Magazinmanagement profitiert.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Incessant Chatter“: Nachladen in der Nähe mehrerer Gegner erhöht die Feuerrate. Kills können einen Teil des Magazins automatisch wieder auffüllen."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über exotische Komponenten aus Hyena-Kisten und anschließendes Crafting freischaltbar. Nach Freischaltung auch über passende Exotic-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.underboss",
+					"name": "Underboss",
+					"description": "Exotische Maschinenpistole für koordiniertes Gruppenspiel, bei der mehrere Agenten dasselbe Ziel markieren können.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Gangland Hit“: Treffer markieren einen Gegner. Die Underboss verursacht verstärkten Schaden gegen das markierte Ziel; zusätzliche Markierungen anderer Agenten mit Underboss erhöhen den Bonus."
+						},
+						{
+							"label": "Fundort",
+							"value": "Belohnung der Into-the-Dark-Climax-Mission. Auf Meister ist der erste erfolgreiche Abschluss als garantierte Belohnung vorgesehen."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "lightMachineGuns",
+			"name": "Leichte Maschinengewehre",
+			"items": [
+				{
+					"id": "division2.exotic.big-alejandro",
+					"name": "Big Alejandro",
+					"description": "Exotisches LMG, das lange Feuerstöße aus der Deckung mit immer höherem Waffenschaden belohnt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Cover Shooter“: Jeder aus der Deckung abgefeuerte Schuss erhöht den Waffenschaden bis zu einem hohen Maximalwert. Nachladen, Waffenwechsel oder das Verlassen des Kampfes entfernt den Bonus."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich während des 10-Jahre-Jubiläums 2026 erhältlich. Zusätzlich über entsprechende Retaliation-Belohnungen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.bluescreen",
+					"name": "Bluescreen",
+					"description": "Exotisches LMG zur Kontrolle von Gegnergruppen und feindlicher Elektronik.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Disruptor Rounds“: Treffer markieren Gegner. Das Aktivieren eines Skills löst abhängig von den aufgebauten Stapeln unterschiedliche Effekte aus, darunter Disrupt und weitere Kontroll-Effekte."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und LMG-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.bullet-king",
+					"name": "Bullet King",
+					"description": "Exotisches LMG für dauerhaftes Sperrfeuer, das vollständig auf klassisches Nachladen verzichtet.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Bullet Hell“: Die Waffe muss nicht nachgeladen werden. Eine bestimmte Anzahl erzielter Treffer füllt außerdem Munition für den Agenten und seine Gruppe auf."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und LMG-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.iron-lung",
+					"name": "Iron Lung",
+					"description": "Exotisches LMG, das durch dauerhaftes Feuern Hitze aufbaut und Gegner anschließend in Brand setzen kann.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Ardent“: Schießen füllt eine Hitzeanzeige. Bei voller Hitze wird ein Teil der folgenden Munition zu Brandmunition und kann Gegner entzünden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und LMG-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.pakhan",
+					"name": "Pakhan",
+					"description": "Exotisches RPK, das aufeinanderfolgende Kills in immer größere Magazine für den nächsten Nachladevorgang umwandelt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Pakhan“: Jeder Kill gewährt einen Stapel, der die Magazingröße des nächsten Magazins stark erhöht. Mehrere Stapel können gesammelt werden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die Crossroads-Saison erhältlich. Heute unter anderem über LMG-Targeted-Loot und Retaliation verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.pestilence",
+					"name": "Pestilence",
+					"description": "Exotisches LMG mit einem übertragbaren Schaden-über-Zeit-Effekt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Plague of the Outcasts“: Treffer bauen einen Schadens-Debuff auf dem Ziel auf. Stirbt der Gegner, kann der Effekt auf einen Gegner in der Nähe überspringen."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und LMG-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "rifles",
+			"name": "Gewehre",
+			"items": [
+				{
+					"id": "division2.exotic.bittersweet",
+					"name": "Bittersweet",
+					"description": "Exotisches M1A, das Kopfschüsse mit direkter Unterstützung und Heilung von Verbündeten kombiniert.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Transfusion“: Kopfschüsse bauen Stapel auf. Schüsse auf Verbündete oder deren Skills können diese heilen und Bonus-Rüstung gewähren. Bei maximalen Stapeln wird zusätzlich eine offensive Phase aktiviert."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich in der Mutiny-Saison erhältlich. Mittlerweile unter anderem über entsprechende Retaliation-Belohnungen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.diamondback",
+					"name": "Diamondback",
+					"description": "Exotisches Unterhebelgewehr, das nacheinander ausgewählte Gegner markiert und präzises Zielwechseln belohnt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Agonizing Bite“: Ein Gegner wird markiert. Ein Treffer auf dieses Ziel garantiert einen kritischen Treffer und aktiviert zusätzliche offensive Boni."
+						},
+						{
+							"label": "Fundort",
+							"value": "Garantierte Belohnung nach Abschluss aller Bereiche von Kenly College. Danach auch über weitere passende Exotic-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.doctor-home",
+					"name": "Doctor Home",
+					"description": "Support-Gewehr, das markierte Gegner nach ihrem Tod in Gruppenheilung umwandelt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Doctor Home“: Beschossene Gegner werden markiert. Stirbt ein markiertes Ziel, entsteht eine Rüstungsreparatur für die gesamte Gruppe."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die General-Anderson-Manhunt erhältlich. Nach der Freischaltung über Gewehr-Targeted-Loot und Exotic Caches verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.merciless",
+					"name": "Merciless",
+					"description": "Exotisches Gewehr mit einem ungewöhnlichen binären Abzug und explosivem Schadensmechanismus.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Binary Trigger“: Ein Schuss wird beim Drücken und ein weiterer beim Loslassen des Abzugs abgefeuert. Treffen beide dasselbe Ziel, wird zusätzlicher Explosionsschaden ausgelöst."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Gewehr-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.the-ravenous",
+					"name": "The Ravenous",
+					"description": "Raid-Gewehr mit zwei unterschiedlichen Primern, die durch Schulterwechsel offensiv oder defensiv genutzt werden können.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Geri and Freki“: Treffer bauen abhängig von der verwendeten Schulter unterschiedliche Primer auf. Ein Schulterwechsel detoniert diese und erzeugt offensive oder defensive Effekte."
+						},
+						{
+							"label": "Fundort",
+							"value": "Primär aus Operation Iron Horse. Zusätzlich in bestimmten Dark-Zone-, Event- und Retaliation-Lootpools erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.vindicator",
+					"name": "Vindicator",
+					"description": "Exotisches Gewehr aus Descent, das beim Zielen bestimmte Körperbereiche eines Gegners als Schwachstelle hervorhebt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Ortiz Assault Interface“: Beim Zielen wird zufällig ein Körperbereich des Gegners markiert. Treffer auf diesen Bereich verursachen deutlich erhöhten Waffenschaden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Kann an der NSA Station gegen NSA Tech aus dem Descent-Spielmodus erworben werden."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "marksmanRifles",
+			"name": "Scharfschützengewehre",
+			"items": [
+				{
+					"id": "division2.exotic.dread-edict",
+					"name": "Dread Edict",
+					"description": "Schnell feuerndes exotisches Präzisionsgewehr, das Kopftreffer in offensive Stapel und zusätzliche Überlebensfähigkeit umwandelt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Full Stop“: Kopftreffer bauen Stapel auf und verbessern den Schaden. Beim Nachladen werden die aufgebauten Stapel genutzt und können Bonus-Rüstung gewähren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Präzisionsgewehr-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.mantis",
+					"name": "Mantis",
+					"description": "Exotisches Scharfschützengewehr mit besonderer Synergie zum Decoy-Skill und gezielten Kopfschüssen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „In Plain Sight“: Beim Zielen werden die Köpfe von Gegnern hervorgehoben, die den Agenten nicht anvisieren. Kopfschuss-Kills setzen den Cooldown des Decoys zurück."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Präzisionsgewehr-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.nemesis",
+					"name": "Nemesis",
+					"description": "Extrem starkes exotisches Scharfschützengewehr, dessen Einzelschussschaden durch das Aufladen eines Schusses gesteigert wird.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Counter-Sniper“: Das Halten des Abzugs lädt den Schuss auf und erhöht dessen Schaden erheblich."
+						},
+						{
+							"label": "Fundort",
+							"value": "Die erste Nemesis wird über ihre mehrstufige Exotic-Quest und anschließend über Crafting freigeschaltet. Danach ist sie auch über weitere Präzisionsgewehr-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.prima-donna",
+					"name": "Prima Donna",
+					"description": "Sehr langsam feuerndes Exotic-Marksman-Rifle mit enormem Schadensbonus und einer eingebauten Schutzmechanik.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „You can look... but you can't touch.“: Außerhalb des Kampfes werden Stapel aufgebaut, die den verursachten Schaden stark verstärken. Ein Stapel kann automatisch verbraucht werden, um eine eingehende Schadensinstanz vollständig zu reparieren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Seit dem 21. Juli 2026 in der Incursion „Paradise Lost“. Sie kann mit niedriger Chance von Wright, Martinez und Johnson sowie mit höherer Chance aus der finalen Incursion-Kiste droppen."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.sacrum-imperium",
+					"name": "Sacrum Imperium",
+					"description": "Exotisches Präzisionsgewehr mit einer Markierungsmechanik, die Statuseffekte auf vorbereitete Gegner auslösen kann.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „The Trap“: Beim Zielen können Gegner markiert werden. Ein erfolgreicher Kopfschuss-Kill aktiviert die vorbereiteten Markierungen und löst Kontroll- beziehungsweise Brand-Effekte aus."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool und Präzisionsgewehr-Targeted-Loot sowie passende Retaliation-Belohnungen."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.shroud",
+					"name": "Shroud",
+					"description": "Exotisches M700, das gezielt den gefährlichsten aktuell beteiligten Gegnertyp massiv verstärkt beschädigt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „High Priority Target“: Die Waffe verursacht stark verstärkten Schaden gegen den höchstrangigen Gegnertyp, der sich aktuell im Kampf befindet."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die The-Pact-Saison erhältlich. Heute über entsprechende Präzisionsgewehr- und Retaliation-Quellen verfügbar."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "shotguns",
+			"name": "Schrotflinten",
+			"items": [
+				{
+					"id": "division2.exotic.overlord",
+					"name": "Overlord",
+					"description": "Exotische Schrotflinte, die getroffene Gegner stark verlangsamen kann.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Capitulate“: Jeder treffende Schrotpellet reduziert für kurze Zeit die Bewegungsgeschwindigkeit des Gegners. Mehrere Treffer stapeln diesen Effekt."
+						},
+						{
+							"label": "Fundort",
+							"value": "Nach der saisonalen Freischaltung über Schrotflinten-Targeted-Loot, Exotic Caches und passende Retaliation-Belohnungen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.scorpio",
+					"name": "Scorpio",
+					"description": "Extrem vielseitige exotische Schrotflinte, die Gegner mit mehreren aufeinanderfolgenden Statuseffekten kontrolliert.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Septic Shock“: Treffer bauen Gift-Stapel auf. Mit steigender Stapelzahl werden unter anderem Gift, Desorientierung und Schock ausgelöst; hohe Stapel erhöhen zusätzlich den Schaden, den das Ziel aus allen Quellen erhält."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Schrotflinten-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.sheriff",
+					"name": "Sheriff",
+					"description": "Exotische Super 90 mit stark verbesserten Basiswerten und ohne klassischen Schadensabfall über Distanz.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Autentico“: Die Waffe besitzt erhöhten Waffenschaden und stark verbesserte Präzision und unterliegt keinem normalen Damage Drop-off."
+						},
+						{
+							"label": "Fundort",
+							"value": "Die erste Sheriff wird über die Mutiny-Climax-Mission auf Meister garantiert. Wiederholungen auf niedrigeren Schwierigkeitsgraden können sie ebenfalls droppen lassen. Zusätzlich in ausgewählten späteren Exotic-Pools."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.sweet-dreams",
+					"name": "Sweet Dreams",
+					"description": "Exotische Schrotflinte mit einer besonders starken Nahkampf-Mechanik gegen schwächere Gegner.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Sandman“: Nahkampfangriffe können normale Gegner sofort eliminieren. Der Effekt besitzt einen Cooldown und funktioniert nicht als Instant-Kill gegen Elite-Gegner."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Schrotflinten-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "pistols",
+			"name": "Pistolen",
+			"items": [
+				{
+					"id": "division2.exotic.busy-little-bee",
+					"name": "Busy Little Bee",
+					"description": "Exotische Pistole, mit der mehrere Gegner vorbereitet werden können, um anschließend einen starken Schadensbonus für andere Waffen zu erhalten.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Busy Little Bee“: Treffer auf unterschiedliche Gegner bauen Stapel auf. Beim Wechsel auf eine andere Waffe werden diese Stapel in einen temporären Waffenschadensbonus umgewandelt."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Pistolen-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.liberty",
+					"name": "Liberty",
+					"description": "Exotische D50 mit besonderer Synergie zu ballistischen Schilden und gegnerischen Schwachpunkten.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Liberty or Death“: Treffer auf Gegner und Schwachpunkte bauen Stapel auf. Kopftreffer können diese verbrauchen, um den ausgerüsteten Schild zu reparieren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Die erste Liberty wird über mehrere Komponenten und anschließend Crafting freigeschaltet. Danach ist sie auch über Pistolen-Targeted-Loot und weitere Exotic-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.mosquito",
+					"name": "Mosquito",
+					"description": "Exotische Pistole für Tank- und Gruppenspiel, mit der ein Gegner gezielt zum Angriff auf einen bestimmten Agenten gezwungen werden kann.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Mosquito Song“: Treffer bauen gemeinsame Stapel auf einem Gegner auf. Bei maximalen Stapeln wird das Ziel gezwungen, den Agenten anzugreifen, der den letzten Stapel gesetzt hat, und erleidet erhöhten Rüstungsschaden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Pistolen-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.regulus",
+					"name": "Regulus",
+					"description": "Extrem starke exotische Revolver-Pistole, deren Kopfschuss-Kills explosive Kettenreaktionen auslösen können.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Regicide“: Kopfschuss-Kills erzeugen eine Explosion und verursachen Blutung bei Gegnern im Wirkungsbereich."
+						},
+						{
+							"label": "Fundort",
+							"value": "Über das Raid-Projekt von Operation Iron Horse und anschließendes Crafting freischaltbar. Außerdem Bestandteil bestimmter spezieller Event- und Retaliation-Lootpools."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.tempest",
+					"name": "Tempest",
+					"description": "Vollautomatische exotische 93R und damit eine besonders aggressive Seitenwaffe für Schild-Builds.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Restrained“: Die Pistole feuert vollautomatisch. Wird der Schild des Agenten zerstört, erhält die Tempest für kurze Zeit stark verstärkten Schaden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Belohnung der The-Pact-Climax-Mission. Zusätzlich wurde eine Freischaltmöglichkeit über Level 100 im Summit eingeführt und sie erscheint in ausgewählten neueren Exotic-Pools."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.whiplash",
+					"name": "Whiplash",
+					"description": "Exotische Pistole, die als vorbereitete Wechselwaffe gleichzeitig die Hauptwaffen nachlädt und einen starken temporären Offensivbonus gewährt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Faster Than Reloading“: Nach fünf Sekunden im Holster ist die Pistole vorbereitet. Der Waffenwechsel lädt Primär- und Sekundärwaffe nach und verleiht der Whiplash erhöhte Feuerrate und Waffenschaden bis das Magazin leer ist."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die Rise-Up-Climax-Mission erhältlich. Inzwischen auch über passende Retaliation-Belohnungen verfügbar."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "masks",
+			"name": "Masken",
+			"items": [
+				{
+					"id": "division2.exotic.catharsis",
+					"name": "Catharsis",
+					"description": "Defensive exotische Maske, die eingehenden Schaden zunächst in offensive Stapel und anschließend in Heilung umwandelt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Vicious Cycle“: Eingehender Schaden baut Stapel auf und erhöht den verursachten Schaden. Bei maximalen Stapeln werden diese entfernt und eine heilende Wolke erzeugt."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Masken-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.coyotes-mask",
+					"name": "Coyote's Mask",
+					"description": "Offensive exotische Maske, die der gesamten Gruppe abhängig von der Kampfdistanz Boni auf kritische Treffer verleiht.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Pack Instincts“: Der letzte getroffene Gegner bestimmt anhand seiner Entfernung, welche Kombination aus kritischer Trefferchance und kritischem Trefferschaden der Gruppe gewährt wird."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool und Masken-Targeted-Loot. Ursprünglich unter anderem mit der Jefferson Trade Center Mission verbunden."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.investor",
+					"name": "Investor",
+					"description": "Flexible exotische Maske, deren Boni direkt von der Farbe ihrer normalen Attribute abhängen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Slotted“: Rote Attribute gewähren zusätzlichen kritischen Trefferschaden, gelbe Attribute Skill Efficiency und blaue Attribute Rüstungsregeneration. Die Maske besitzt ein zusätzliches normales Attribut anstelle eines Gear-Mod-Slots."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über den kostenlosen Rise-Up-Saisonpfad erhältlich. Die Blaupause kann inzwischen auch über Retaliation freigeschaltet werden."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.the-catalyst",
+					"name": "The Catalyst",
+					"description": "Battle-for-Brooklyn-Maske, die offensives Spiel mit Statuseffekten belohnt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Chemical Agent“: Verursachte und erhaltene Statuseffekte bauen Catalysis-Stapel auf. Diese erhöhen unter anderem Waffenschaden und Status Effects."
+						},
+						{
+							"label": "Fundort",
+							"value": "Exotic aus der Battle-for-Brooklyn-Erweiterung und an deren Inhalte beziehungsweise Lootpool gebunden."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.tinkerer",
+					"name": "Tinkerer",
+					"description": "Ungewöhnliche exotische Maske, mit der das Talent einer zweiten normalen Waffe auf die Primärwaffe übertragen werden kann.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Abridged“: Sind Primär- und Sekundärwaffe vom gleichen Typ und weder Named noch Exotic, wird das Talent der Sekundärwaffe zusätzlich auf die Primärwaffe angewendet."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich garantierte Belohnung für den ersten Abschluss der Crossroads-Climax-Mission auf Meister. Mittlerweile auch in ausgewählten aktuellen Exotic- und Retaliation-Pools."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.vile",
+					"name": "Vile",
+					"description": "Exotische Status-Maske, die jeden angewendeten Statuseffekt zusätzlich mit Schaden über Zeit ergänzt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Toxic Delivery“: Statuseffekte verursachen zusätzlich einen eigenen Schaden-über-Zeit-Debuff, dessen Stärke unter anderem von Status Effects beeinflusst wird."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Masken-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "backpacks",
+			"name": "Rucksäcke",
+			"items": [
+				{
+					"id": "division2.exotic.acostas-go-bag",
+					"name": "Acosta's Go-Bag",
+					"description": "Skill-orientierter exotischer Rucksack, der Granaten nutzt, um Skills temporär zu überladen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Das Talent ermöglicht durch das Werfen einer Granate einen Overcharge-Effekt und bietet zusätzliche Utility-Boni für Granaten und Skills."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Rucksack-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.birdies-quick-fix",
+					"name": "Birdie's Quick Fix",
+					"description": "Exotischer Support-Rucksack, der Wiederbelebungen erheblich verbessert und beide beteiligten Agenten schützt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Combat Medic“: Erhöht die Wiederbelebungsgeschwindigkeit, reduziert den Weakened-Debuff und gewährt während sowie nach einem Revive Schadensresistenz. Erfolgreiche Revives können außerdem Skill Tier beziehungsweise Overcharge gewähren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die Burden-of-Truth-Climax-Mission erhältlich. Inzwischen auch in ausgewählten Event- und Retaliation-Pools."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.harrier-pride",
+					"name": "Harrier Pride",
+					"description": "Hybrid-Rucksack, der sowohl verursachten als auch erhaltenen Schaden in offensive und defensive Stapel umwandelt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Rebalance“: Angriffe und Kills erzeugen rote Stapel für Waffenschaden, während eingehende Treffer blaue Stapel für Schadensresistenz erzeugen. Bei hoher Gesamtstapelzahl verstärken sich beide Seiten gegenseitig."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich Exotic-Belohnung des 10-Jahre-Jubiläums 2026. Zusätzlich über entsprechende Retaliation- und Event-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.memento",
+					"name": "Memento",
+					"description": "Sehr vielseitiger Solo-Rucksack, der nach Kills Trophäen für offensive, defensive und Skill-Boni erzeugt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Kill Confirmed“: Besiegte Gegner lassen Trophäen fallen. Das Einsammeln gewährt kurzfristige Boni abhängig von den eigenen Core Attributes und baut zusätzlich einen langfristigen Buff auf."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Rucksack-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.ninjabike-messenger-bag",
+					"name": "NinjaBike Messenger Bag",
+					"description": "Extrem flexibler Build-Rucksack, der Brand- und Gear-Set-Kombinationen mit weniger ausgerüsteten Teilen ermöglicht.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Resourceful“: Jedes ausgerüstete Brand- oder Gear-Set-Teil zählt für dessen Set-Boni als zusätzliches Teil."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Rucksack-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "chests",
+			"name": "Westen",
+			"items": [
+				{
+					"id": "division2.exotic.beacon",
+					"name": "Beacon",
+					"description": "Gruppenorientierte exotische Weste, die Verbündete in unmittelbarer Nähe gleichzeitig offensiv und defensiv stärkt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Bond“: Befindet sich ein Verbündeter innerhalb von 10 Metern, erhalten du und deine Verbündeten Boni auf kritischen Trefferschaden, Skill Efficiency und Rüstungsregeneration."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich aus der Mutiny-Saison. Heute über passende Retaliation- und Legacy-Quellen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.collector",
+					"name": "Collector",
+					"description": "Granatenorientierte exotische Weste, die explosive Builds und häufigen Granateneinsatz unterstützt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Das Exotic erhöht die Bedeutung und Verfügbarkeit von Granaten und belohnt erfolgreiche Granatentreffer beziehungsweise Granaten-Kills mit zusätzlichen Effekten."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Westen-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.provocator",
+					"name": "Provocator",
+					"description": "Defensive exotische Weste für Nah- und Mitteldistanzkämpfe gegen mehrere Gegner.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Challenger“: Im PvE erhält der Agent 25 % Schadensresistenz gegen Gegner innerhalb von 20 Metern."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich garantierte Belohnung des Shades-of-Red-Climax-Einsatzes auf Meister. Inzwischen auch über ausgewählte Retaliation- und Event-Pools erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.ridgeways-pride",
+					"name": "Ridgeway's Pride",
+					"description": "Aggressive Nahkampf-Weste, die Blutung mit eigener Rüstungsregeneration kombiniert.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Bleeding Edge“: Treffer auf nahe Gegner verursachen Blutung. Befinden sich blutende Gegner in der Nähe, erhöht sich die eigene Rüstungsregeneration."
+						},
+						{
+							"label": "Fundort",
+							"value": "Die erste Ridgeway's Pride wird über die Summit-Quest und anschließend Crafting freigeschaltet. Danach auch über passende Exotic-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.tardigrade-armor-system",
+					"name": "Tardigrade Armor System",
+					"description": "Defensive Gruppenweste, die Verbündeten automatisch Notfall-Bonusrüstung bereitstellt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Ablative Nano-Plating“: Wird die Rüstung eines Gruppenmitglieds zerstört, erhält dieses Bonus-Rüstung auf Basis der Rüstung des Tardigrade-Trägers."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Westen-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "gloves",
+			"name": "Handschuhe",
+			"items": [
+				{
+					"id": "division2.exotic.bloody-knuckles",
+					"name": "Bloody Knuckles",
+					"description": "Offensive exotische Handschuhe, die Granaten und Nahkampfangriffe als Auslöser für einen Waffenschadensbonus verwenden.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Over the Top“: Das Treffen eines Gegners mit einer Granate oder einem Nahkampfangriff aktiviert einen temporären Bonus auf Waffenschaden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Handschuh-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.btsu-datagloves",
+					"name": "BTSU Datagloves",
+					"description": "Skill-orientierte Exotic-Handschuhe mit besonders starker Hive- und Overcharge-Synergie.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Transference Overclock“: Das Zerstören beziehungsweise Abbrechen eines eigenen Hive kann Skill-Cooldowns zurücksetzen und abhängig vom Skill Tier Overcharge für den Agenten und die Gruppe ermöglichen."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Handschuh-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.exodus",
+					"name": "Exodus",
+					"description": "Defensive Exotic-Handschuhe, die beim Rüstungsbruch automatisch eine Rauchwolke erzeugen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Smoke Screen“: Beim Brechen der eigenen Rüstung wird eine Smoke Bomb am Standort des Agenten ausgelöst, die ihn im PvE kurzzeitig vor Gegnern verbirgt."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich aus Burden of Truth. Heute unter anderem über Handschuh-Targeted-Loot und entsprechende Retaliation-Belohnungen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.overdogs",
+					"name": "Overdogs",
+					"description": "Offensive Exotic-Handschuhe, die gezielt den niedrigstrangigsten aktuell beteiligten Gegnertyp verstärkt beschädigen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Weakest Link“: Verursacht verstärkten Waffenschaden gegen die aktuell niedrigste Gegnerklasse im Kampf."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die The-Pact-Saison erhältlich. Heute über passende Handschuh-, Event- und Retaliation-Quellen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.rugged-gauntlets",
+					"name": "Rugged Gauntlets",
+					"description": "Exotic-Handschuhe für Hüftfeuer und Blindfire aus der Deckung.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Iron Grip“: Reduziert die Rückstoßnachteile beim Hüftfeuer und beim Blindfire aus der Deckung erheblich."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Handschuh-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "holsters",
+			"name": "Holster",
+			"items": [
+				{
+					"id": "division2.exotic.centurions-scabbard",
+					"name": "Centurion's Scabbard",
+					"description": "Exotisches Holster, das regelmäßigen Waffenwechsel mit abwechselnden offensiven und Handling-Boni belohnt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Counter“: Waffenwechsel aktivieren abwechselnd einen Bonus auf Feuerrate und Waffenschaden oder auf Magazingröße und Nachladegeschwindigkeit."
+						},
+						{
+							"label": "Fundort",
+							"value": "Nach der ursprünglichen Shades-of-Red-Freischaltung über Holster-Targeted-Loot und passende Retaliation-Quellen erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.dodge-city-gunslingers-holster",
+					"name": "Dodge City Gunslinger's Holster",
+					"description": "Exotisches Holster für extrem starke einzelne Pistolen-Schüsse nach längerer Nutzung einer Hauptwaffe.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Quick Draw“: Während die Pistole im Holster steckt, wird ein Stapelbonus aufgebaut. Beim Wechsel zur Pistole wird dieser für einen stark verstärkten ersten Treffer verbraucht."
+						},
+						{
+							"label": "Fundort",
+							"value": "Die erste Version wird über das zugehörige Exotic-Holster-Projekt und Crafting freigeschaltet. Danach kann sie auch aus weiteren Exotic-Quellen stammen."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.imperial-dynasty",
+					"name": "Imperial Dynasty",
+					"description": "Status-Holster, das regelmäßig automatisch einen Gegner in der Nähe entzünden kann.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Dragon's Glare“: Während des Kampfes wird in festen Abständen automatisch ein Gegner in Reichweite in Brand gesetzt."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Holster-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.nimble-holster",
+					"name": "Nimble Holster",
+					"description": "Mobiles exotisches Holster, das Cover-to-Cover-Bewegungen in Selbstheilung umwandelt.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Bob and Weave“: Für zurückgelegte Distanz während einer Cover-to-Cover-Bewegung erhält der Agent Reparatur. Während der Bewegung erlittener Schaden wird zusätzlich nachträglich geheilt."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über Crossroads erhältlich. Heute über Holster-Targeted-Loot und entsprechende Retaliation-Belohnungen verfügbar."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.shocker-punch",
+					"name": "Shocker Punch",
+					"description": "Nahkampf- und Schild-Holster mit besonderer Synergie zu Schockeffekten.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Das Exotic verbessert den Einsatz eines Schildes und ermöglicht es, Gegner über Nahkampfangriffe mit Schock zu kontrollieren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Holster-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.waveform",
+					"name": "Waveform",
+					"description": "Skill-Damage-Holster, dessen Schadensbonus kontinuierlich zwischen den beiden ausgerüsteten Skills hin- und herwandert.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Alternating Current“: Einer der beiden Skills baut automatisch Skill-Damage-Stapel auf. Nach Erreichen des Maximums wechseln die Stapel auf den anderen Skill und der Zyklus beginnt erneut."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Holster-Targeted-Loot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "kneepads",
+			"name": "Knieschoner",
+			"items": [
+				{
+					"id": "division2.exotic.acostas-kneepads",
+					"name": "Acosta's Kneepads",
+					"description": "Exotische Knieschoner für hohe Mobilität und bessere Bewegungsfreiheit unter Statuseffekten.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Escape Plan“: Vaulting, Klettern und Herunterspringen gewähren Bewegungsgeschwindigkeit. Auch nach längerem Stillstand oder beim Erleiden eines Statuseffekts können Bewegungsboni aktiviert werden."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Knieschoner-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.blacklisters",
+					"name": "Blacklisters",
+					"description": "Riskante offensive Exotic-Knieschoner, mit denen ein einzelner Gegner bewusst zur gefährlichen Ausnahme erklärt wird.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Ostracize“: Ein beschossener Gegner wird markiert. Der Agent erleidet deutlich mehr Schaden von diesem Ziel, verursacht dafür aber verstärkten Schaden gegen alle nicht markierten Gegner."
+						},
+						{
+							"label": "Fundort",
+							"value": "Ursprünglich über die The-Pact-Climax-Mission erhältlich. Inzwischen auch Bestandteil ausgewählter aktueller Event- und Retaliation-Lootpools."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.ninjabike-messenger-kneepads",
+					"name": "NinjaBike Messenger Kneepads",
+					"description": "Exotische Knieschoner für einen sehr mobilen Spielstil mit häufigem Vaulting und Cover-to-Cover-Bewegungen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Parkour!“: Cover-to-Cover-Bewegungen und das Überspringen von Hindernissen können die aktuell gezogene Waffe automatisch nachladen und zusätzliche Vorteile für aggressives Movement gewähren."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Knieschoner-Targeted-Loot."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.nurses-kneepads",
+					"name": "Nurse's Kneepads",
+					"description": "Gruppenorientierte Exotic-Knieschoner, die den Schutz vor Statuseffekten für nahe Verbündete massiv erhöhen.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Impervious“: Der Träger und Verbündete innerhalb von 10 Metern erhalten 40 % Hazard Protection."
+						},
+						{
+							"label": "Fundort",
+							"value": "Belohnung des kostenlosen Into-the-Dark-Saisonpfads. Während des Dust-Storm-Events 2026 außerdem aus den Event Gear Caches erhältlich."
+						}
+					]
+				},
+				{
+					"id": "division2.exotic.sawyers-kneepads",
+					"name": "Sawyer's Kneepads",
+					"description": "Defensive Exotic-Knieschoner für stationäres Feuer aus einer festen Position.",
+					"details": [
+						{
+							"label": "Besonderheit",
+							"value": "Talent „Stand Your Ground“: Der Agent kann von Explosionen nicht so leicht ins Taumeln gebracht werden. Stillstehen baut zusätzlich einen steigenden Waffenschadensbonus auf, der durch Bewegung wieder verloren geht."
+						},
+						{
+							"label": "Fundort",
+							"value": "Allgemeiner Exotic-Lootpool, Exotic Caches und Knieschoner-Targeted-Loot."
+						}
+					]
+				}
+			]
+		}
+	]
 }
