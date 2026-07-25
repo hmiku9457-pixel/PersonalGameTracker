@@ -1,0 +1,18 @@
+{
+  "id": "crimsonDesert",
+  "name": "Crimson Desert",
+  "categories": [
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "description": "Steam-Erfolge aus dem Hauptspiel",
+      "file": "achievements.json"
+    },
+    {
+      "id": "equipmentSets",
+      "name": "Equipment Sets",
+      "description": "Equipment Sets",
+      "file": "equipmentSets.json"
+    }
+  ]
+}
