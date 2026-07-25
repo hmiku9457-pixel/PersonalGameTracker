@@ -363,48 +363,71 @@ export async function renderCategory(
  * - items
  * - direkte Arrays
  *
+ * Gruppen und Sections werden als
+ * einklappbare Bereiche dargestellt.
+ *
  * @param {HTMLElement} container
  * @param {Object|Array} data
+ * @param {string} gameId
  * @param {Object} progressData
  */
 function renderCategoryData(
 	container,
 	data,
+	gameId,
 	progressData
 ) {
+	/*
+	 * Gruppen bestimmen.
+	 *
+	 * "groups" und "sections" werden
+	 * gleich behandelt.
+	 */
+	let groups = null;
+
+
 	if (
 		Array.isArray(
 			data?.groups
 		)
 	) {
-		for (
-			const group of data.groups
-		) {
-			renderCategoryGroup(
-				container,
-				group,
-				progressData
-			);
-		}
-
-
-		return;
+		groups =
+			data.groups;
 	}
-
-
-	if (
+	else if (
 		Array.isArray(
 			data?.sections
 		)
 	) {
-		for (
-			const section of data.sections
-		) {
-			renderCategoryGroup(
-				container,
-				section,
-				progressData
+		groups =
+			data.sections;
+	}
+
+
+	/*
+	 * Gruppierte Kategorie
+	 */
+	if (groups) {
+
+		if (groups.length > 0) {
+
+			renderCategoryGroupControls(
+				container
 			);
+
+
+			for (
+				const group of groups
+			) {
+				renderCategoryGroup(
+					container,
+					group,
+					gameId,
+					progressData,
+					data
+				);
+			}
+
 		}
 
 
@@ -412,6 +435,10 @@ function renderCategoryData(
 	}
 
 
+	/*
+	 * Direktes Items-Array innerhalb
+	 * des Kategorie-Objekts.
+	 */
 	if (
 		Array.isArray(
 			data?.items
@@ -420,7 +447,9 @@ function renderCategoryData(
 		renderItemList(
 			container,
 			data.items,
-			progressData
+			gameId,
+			progressData,
+			data
 		);
 
 
@@ -428,11 +457,19 @@ function renderCategoryData(
 	}
 
 
-	if (Array.isArray(data)) {
+	/*
+	 * Kategorie selbst ist bereits
+	 * ein Array.
+	 */
+	if (
+		Array.isArray(data)
+	) {
 		renderItemList(
 			container,
 			data,
-			progressData
+			gameId,
+			progressData,
+			data
 		);
 
 
@@ -457,20 +494,153 @@ function renderCategoryData(
 
 
 /**
- * Gibt eine einzelne Gruppe oder Section aus.
+ * Erstellt die Steuerung für
+ * alle einklappbaren Kategoriegruppen.
+ *
+ * @param {HTMLElement} container
+ */
+function renderCategoryGroupControls(
+	container
+) {
+	const controls =
+		document.createElement(
+			"div"
+		);
+
+
+	controls.className =
+		"category-group-controls";
+
+
+	/*
+	 * Alle öffnen
+	 */
+	const openAllButton =
+		document.createElement(
+			"button"
+		);
+
+
+	openAllButton.type =
+		"button";
+
+
+	openAllButton.className =
+		"category-group-control-button";
+
+
+	openAllButton.textContent =
+		"Alle öffnen";
+
+
+	openAllButton.addEventListener(
+		"click",
+		() => {
+			setAllCategoryGroups(
+				container,
+				true
+			);
+		}
+	);
+
+
+	/*
+	 * Alle schließen
+	 */
+	const closeAllButton =
+		document.createElement(
+			"button"
+		);
+
+
+	closeAllButton.type =
+		"button";
+
+
+	closeAllButton.className =
+		"category-group-control-button";
+
+
+	closeAllButton.textContent =
+		"Alle schließen";
+
+
+	closeAllButton.addEventListener(
+		"click",
+		() => {
+			setAllCategoryGroups(
+				container,
+				false
+			);
+		}
+	);
+
+
+	controls.append(
+		openAllButton,
+		closeAllButton
+	);
+
+
+	container.append(
+		controls
+	);
+}
+
+
+/**
+ * Öffnet oder schließt alle
+ * Kategoriegruppen.
+ *
+ * @param {HTMLElement} container
+ * @param {boolean} open
+ */
+function setAllCategoryGroups(
+	container,
+	open
+) {
+	const groups =
+		container.querySelectorAll(
+			".category-group"
+		);
+
+
+	for (
+		const group of groups
+	) {
+		group.open =
+			open;
+	}
+}
+
+
+/**
+ * Gibt eine einzelne Gruppe als
+ * einklappbaren Bereich aus.
  *
  * @param {HTMLElement} container
  * @param {Object} group
+ * @param {string} gameId
  * @param {Object} progressData
+ * @param {Object|Array} categoryData
  */
 function renderCategoryGroup(
 	container,
 	group,
-	progressData
+	gameId,
+	progressData,
+	categoryData
 ) {
+	/*
+	 * Native Details-Struktur.
+	 *
+	 * Ohne gesetztes "open"-Attribut
+	 * ist die Gruppe standardmäßig
+	 * geschlossen.
+	 */
 	const section =
 		document.createElement(
-			"section"
+			"details"
 		);
 
 
@@ -478,49 +648,134 @@ function renderCategoryGroup(
 		"category-group";
 
 
-	/*
-	 * Gruppenname
-	 */
-	if (
-		group.name ||
-		group.title
-	) {
-		const header =
-			document.createElement(
-				"div"
-			);
-
-
-		header.className =
-			"category-group-header";
-
-
-		const title =
-			document.createElement(
-				"h4"
-			);
-
-
-		title.textContent =
-			group.name ??
-			group.title;
-
-
-		header.append(
-			title
-		);
-
-
-		section.append(
-			header
-		);
+	if (group.id) {
+		section.dataset.groupId =
+			group.id;
 	}
 
 
 	/*
-	 * Gruppenbeschreibung
+	 * ---------------------------------------------
+	 * Gruppen-Header
+	 * ---------------------------------------------
+	 */
+	const header =
+		document.createElement(
+			"summary"
+		);
+
+
+	header.className =
+		"category-group-header";
+
+
+	/*
+	 * Linker Bereich:
+	 *
+	 * Pfeil + Gruppenname
+	 */
+	const headerMain =
+		document.createElement(
+			"span"
+		);
+
+
+	headerMain.className =
+		"category-group-header-main";
+
+
+	const chevron =
+		document.createElement(
+			"span"
+		);
+
+
+	chevron.className =
+		"category-group-chevron";
+
+
+	chevron.setAttribute(
+		"aria-hidden",
+		"true"
+	);
+
+
+	chevron.textContent =
+		"▶";
+
+
+	const title =
+		document.createElement(
+			"span"
+		);
+
+
+	title.className =
+		"category-group-title";
+
+
+	title.textContent =
+		group.name ??
+		group.id ??
+		"Gruppe";
+
+
+	headerMain.append(
+		chevron,
+		title
+	);
+
+
+	/*
+	 * Fortschritt der Gruppe
+	 */
+	const progress =
+		calculateCategoryProgress(
+			group,
+			progressData
+		);
+
+
+	const progressElement =
+		document.createElement(
+			"span"
+		);
+
+
+	progressElement.className =
+		"category-group-progress";
+
+
+	progressElement.textContent =
+		`${progress.completed} / ${progress.total}`;
+
+
+	header.append(
+		headerMain,
+		progressElement
+	);
+
+
+	/*
+	 * ---------------------------------------------
+	 * Inhalt der Gruppe
+	 * ---------------------------------------------
+	 */
+	const body =
+		document.createElement(
+			"div"
+		);
+
+
+	body.className =
+		"category-group-body";
+
+
+	/*
+	 * Optionale Beschreibung
 	 */
 	if (group.description) {
+
 		const description =
 			document.createElement(
 				"p"
@@ -535,14 +790,15 @@ function renderCategoryGroup(
 			group.description;
 
 
-		section.append(
+		body.append(
 			description
 		);
+
 	}
 
 
 	/*
-	 * Direkte Items
+	 * Items
 	 */
 	if (
 		Array.isArray(
@@ -550,53 +806,19 @@ function renderCategoryGroup(
 		)
 	) {
 		renderItemList(
-			section,
+			body,
 			group.items,
-			progressData
+			gameId,
+			progressData,
+			categoryData
 		);
 	}
 
 
-	/*
-	 * Optional verschachtelte Gruppen
-	 */
-	if (
-		Array.isArray(
-			group.groups
-		)
-	) {
-		for (
-			const nestedGroup
-			of group.groups
-		) {
-			renderCategoryGroup(
-				section,
-				nestedGroup,
-				progressData
-			);
-		}
-	}
-
-
-	/*
-	 * Optional verschachtelte Sections
-	 */
-	if (
-		Array.isArray(
-			group.sections
-		)
-	) {
-		for (
-			const nestedSection
-			of group.sections
-		) {
-			renderCategoryGroup(
-				section,
-				nestedSection,
-				progressData
-			);
-		}
-	}
+	section.append(
+		header,
+		body
+	);
 
 
 	container.append(
@@ -1132,6 +1354,49 @@ function updateTrackerToggle(
 
 
 /**
+ * Aktualisiert den Fortschritt einer
+ * sichtbaren Kategoriegruppe anhand
+ * der gerenderten Tracker-Items.
+ *
+ * @param {HTMLElement|null} groupElement
+ */
+function updateCategoryGroupProgress(
+	groupElement
+) {
+	if (!groupElement) {
+		return;
+	}
+
+
+	const progressElement =
+		groupElement.querySelector(
+			".category-group-progress"
+		);
+
+
+	if (!progressElement) {
+		return;
+	}
+
+
+	const items =
+		groupElement.querySelectorAll(
+			".tracker-item"
+		);
+
+
+	const completedItems =
+		groupElement.querySelectorAll(
+			".tracker-item.is-completed"
+		);
+
+
+	progressElement.textContent =
+		`${completedItems.length} / ${items.length}`;
+}
+
+
+/**
  * Aktualisiert den Fortschritt der aktuell
  * geöffneten Kategorie.
  *
@@ -1414,6 +1679,24 @@ function registerProgressToggleHandler(
 						button,
 						newState,
 						true
+					);
+				}
+
+
+				/*
+				 * Fortschritt der Unterkategorie
+				 * sofort neu berechnen.
+				 *
+				 * Befindet sich das Item in keiner
+				 * Unterkategorie, liefert closest()
+				 * null. Die Update-Funktion beendet
+				 * sich in diesem Fall ohne Änderung.
+				 */
+				if (listItem) {
+					updateCategoryGroupProgress(
+						listItem.closest(
+							".category-group"
+						)
 					);
 				}
 
