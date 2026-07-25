@@ -3,8 +3,10 @@ import {
 } from "../services/dataService.js";
 
 import {
+	calculateCategoryProgress,
 	isItemCompleted,
-	loadGameProgressData
+	loadGameProgressData,
+	setItemCompleted
 } from "../services/progressService.js";
 
 import {
@@ -32,8 +34,8 @@ function getMainContent() {
 /**
  * Öffnet eine bestimmte Kategorie.
  *
- * @param {Object} game Spiel-Manifest
- * @param {Object} category Kategorie
+ * @param {Object} game
+ * @param {Object} category
  */
 export async function renderCategory(
 	game,
@@ -56,9 +58,6 @@ export async function renderCategory(
 
 
 	try {
-		/*
-		 * Kategorie und Fortschritt parallel laden.
-		 */
 		const [
 			data,
 			progressData
@@ -170,6 +169,19 @@ export async function renderCategory(
 			"category-content";
 
 
+		/*
+		 * Kategorie-Kopf
+		 */
+		const categoryHeader =
+			document.createElement(
+				"div"
+			);
+
+
+		categoryHeader.className =
+			"category-content-header";
+
+
 		const categoryTitle =
 			document.createElement(
 				"h3"
@@ -180,16 +192,43 @@ export async function renderCategory(
 			category.name;
 
 
-		categoryContent.append(
-			categoryTitle
+		const categoryProgress =
+			document.createElement(
+				"span"
+			);
+
+
+		categoryProgress.className =
+			"category-content-progress";
+
+
+		categoryProgress.dataset.currentCategoryProgress =
+			"true";
+
+
+		categoryHeader.append(
+			categoryTitle,
+			categoryProgress
 		);
 
 
+		categoryContent.append(
+			categoryHeader
+		);
+
+
+		/*
+		 * Beschreibung
+		 */
 		if (category.description) {
 			const description =
 				document.createElement(
 					"p"
 				);
+
+
+			description.className =
+				"category-content-description";
 
 
 			description.textContent =
@@ -202,9 +241,22 @@ export async function renderCategory(
 		}
 
 
+		/*
+		 * Fortschritt initial setzen
+		 */
+		updateCurrentCategoryProgress(
+			data,
+			progressData
+		);
+
+
+		/*
+		 * Daten darstellen
+		 */
 		renderCategoryData(
 			categoryContent,
 			data,
+			game.id,
 			progressData
 		);
 
@@ -239,28 +291,17 @@ export async function renderCategory(
 /**
  * Gibt die Inhalte einer Kategorie aus.
  *
- * Unterstützt:
- *
- * groups
- * sections
- * items
- * direkte Arrays
- *
- * Externe Fortschrittsdaten werden bis zu den
- * einzelnen Items weitergereicht.
- *
- * @param {HTMLElement} container Ziel-Element
- * @param {Object|Array} data Kategorie-Daten
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {HTMLElement} container
+ * @param {Object|Array} data
+ * @param {string} gameId
+ * @param {Object} progressData
  */
 function renderCategoryData(
 	container,
 	data,
-	progressData = null
+	gameId,
+	progressData
 ) {
-	/*
-	 * Gruppen
-	 */
 	if (
 		Array.isArray(
 			data?.groups
@@ -272,7 +313,9 @@ function renderCategoryData(
 			renderCategoryGroup(
 				container,
 				group,
-				progressData
+				gameId,
+				progressData,
+				data
 			);
 		}
 
@@ -281,9 +324,6 @@ function renderCategoryData(
 	}
 
 
-	/*
-	 * Sections
-	 */
 	if (
 		Array.isArray(
 			data?.sections
@@ -295,7 +335,9 @@ function renderCategoryData(
 			renderCategoryGroup(
 				container,
 				section,
-				progressData
+				gameId,
+				progressData,
+				data
 			);
 		}
 
@@ -304,9 +346,6 @@ function renderCategoryData(
 	}
 
 
-	/*
-	 * Direktes Items-Array
-	 */
 	if (
 		Array.isArray(
 			data?.items
@@ -315,7 +354,9 @@ function renderCategoryData(
 		renderItemList(
 			container,
 			data.items,
-			progressData
+			gameId,
+			progressData,
+			data
 		);
 
 
@@ -323,14 +364,13 @@ function renderCategoryData(
 	}
 
 
-	/*
-	 * Direkt geladenes Array
-	 */
 	if (Array.isArray(data)) {
 		renderItemList(
 			container,
 			data,
-			progressData
+			gameId,
+			progressData,
+			data
 		);
 
 
@@ -338,9 +378,6 @@ function renderCategoryData(
 	}
 
 
-	/*
-	 * Keine unterstützten Daten vorhanden
-	 */
 	const message =
 		document.createElement(
 			"p"
@@ -360,14 +397,18 @@ function renderCategoryData(
 /**
  * Gibt eine einzelne Gruppe aus.
  *
- * @param {HTMLElement} container Ziel-Element
- * @param {Object} group Gruppe
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {HTMLElement} container
+ * @param {Object} group
+ * @param {string} gameId
+ * @param {Object} progressData
+ * @param {Object|Array} categoryData
  */
 function renderCategoryGroup(
 	container,
 	group,
-	progressData = null
+	gameId,
+	progressData,
+	categoryData
 ) {
 	const section =
 		document.createElement(
@@ -383,6 +424,16 @@ function renderCategoryGroup(
 	 * Gruppenname
 	 */
 	if (group.name) {
+		const header =
+			document.createElement(
+				"div"
+			);
+
+
+		header.className =
+			"category-group-header";
+
+
 		const title =
 			document.createElement(
 				"h4"
@@ -393,8 +444,13 @@ function renderCategoryGroup(
 			group.name;
 
 
-		section.append(
+		header.append(
 			title
+		);
+
+
+		section.append(
+			header
 		);
 	}
 
@@ -409,6 +465,10 @@ function renderCategoryGroup(
 			);
 
 
+		description.className =
+			"category-group-description";
+
+
 		description.textContent =
 			group.description;
 
@@ -419,9 +479,6 @@ function renderCategoryGroup(
 	}
 
 
-	/*
-	 * Items
-	 */
 	if (
 		Array.isArray(
 			group.items
@@ -430,7 +487,9 @@ function renderCategoryGroup(
 		renderItemList(
 			section,
 			group.items,
-			progressData
+			gameId,
+			progressData,
+			categoryData
 		);
 	}
 
@@ -442,16 +501,20 @@ function renderCategoryGroup(
 
 
 /**
- * Gibt eine Liste von Items aus.
+ * Gibt eine Liste von Tracker-Items aus.
  *
- * @param {HTMLElement} container Ziel-Element
- * @param {Array} items Items
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {HTMLElement} container
+ * @param {Array} items
+ * @param {string} gameId
+ * @param {Object} progressData
+ * @param {Object|Array} categoryData
  */
 function renderItemList(
 	container,
 	items,
-	progressData = null
+	gameId,
+	progressData,
+	categoryData
 ) {
 	const list =
 		document.createElement(
@@ -465,110 +528,12 @@ function renderItemList(
 
 	for (const item of items) {
 		const listItem =
-			document.createElement(
-				"li"
-			);
-
-
-		listItem.className =
-			"tracker-item";
-
-
-		/*
-		 * ID für spätere Interaktionen speichern.
-		 */
-		if (item.id) {
-			listItem.dataset.itemId =
-				item.id;
-		}
-
-
-		/*
-		 * Status
-		 */
-		if (
-			isItemCompleted(
+			createTrackerItem(
 				item,
-				progressData
-			)
-		) {
-			listItem.classList.add(
-				"is-completed"
+				gameId,
+				progressData,
+				categoryData
 			);
-		}
-
-
-		/*
-		 * Name
-		 */
-		const name =
-			document.createElement(
-				"span"
-			);
-
-
-		name.className =
-			"tracker-item-name";
-
-
-		name.textContent =
-			item.name ??
-			item.title ??
-			item.id ??
-			"Unbenannter Eintrag";
-
-
-		listItem.append(
-			name
-		);
-
-
-		/*
-		 * Optionale Beschreibung
-		 */
-		if (item.description) {
-			const description =
-				document.createElement(
-					"span"
-				);
-
-
-			description.className =
-				"tracker-item-description";
-
-
-			description.textContent =
-				item.description;
-
-
-			listItem.append(
-				description
-			);
-		}
-
-
-		/*
-		 * Optionaler Fundort
-		 */
-		if (item.location) {
-			const location =
-				document.createElement(
-					"span"
-				);
-
-
-			location.className =
-				"tracker-item-location";
-
-
-			location.textContent =
-				item.location;
-
-
-			listItem.append(
-				location
-			);
-		}
 
 
 		list.append(
@@ -580,4 +545,503 @@ function renderItemList(
 	container.append(
 		list
 	);
+}
+
+
+/**
+ * Erstellt einen einzelnen Tracker-Eintrag.
+ *
+ * @param {Object} item
+ * @param {string} gameId
+ * @param {Object} progressData
+ * @param {Object|Array} categoryData
+ * @returns {HTMLLIElement}
+ */
+function createTrackerItem(
+	item,
+	gameId,
+	progressData,
+	categoryData
+) {
+	const listItem =
+		document.createElement(
+			"li"
+		);
+
+
+	listItem.className =
+		"tracker-item";
+
+
+	if (item.id) {
+		listItem.dataset.itemId =
+			item.id;
+	}
+
+
+	/*
+	 * Status-Indikator
+	 */
+	const statusIndicator =
+		document.createElement(
+			"span"
+		);
+
+
+	statusIndicator.className =
+		"tracker-item-status";
+
+
+	statusIndicator.setAttribute(
+		"aria-hidden",
+		"true"
+	);
+
+
+	/*
+	 * Inhalt
+	 */
+	const content =
+		document.createElement(
+			"div"
+		);
+
+
+	content.className =
+		"tracker-item-content";
+
+
+	const name =
+		document.createElement(
+			"h5"
+		);
+
+
+	name.className =
+		"tracker-item-name";
+
+
+	name.textContent =
+		item.name ??
+		item.title ??
+		item.id ??
+		"Unbenannter Eintrag";
+
+
+	content.append(
+		name
+	);
+
+
+	/*
+	 * Beschreibung
+	 */
+	if (item.description) {
+		const description =
+			document.createElement(
+				"p"
+			);
+
+
+		description.className =
+			"tracker-item-description";
+
+
+		description.textContent =
+			item.description;
+
+
+		content.append(
+			description
+		);
+	}
+
+
+	/*
+	 * Details
+	 */
+	const details =
+		createItemDetails(item);
+
+
+	if (details) {
+		content.append(
+			details
+		);
+	}
+
+
+	/*
+	 * Toggle-Button
+	 */
+	const toggleButton =
+		document.createElement(
+			"button"
+		);
+
+
+	toggleButton.type =
+		"button";
+
+
+	toggleButton.className =
+		"tracker-toggle";
+
+
+	/*
+	 * Initialen Status setzen
+	 */
+	const completed =
+		isItemCompleted(
+			item,
+			progressData
+		);
+
+
+	updateTrackerItemState(
+		listItem,
+		statusIndicator,
+		toggleButton,
+		completed
+	);
+
+
+	/*
+	 * Status ändern
+	 */
+	toggleButton.addEventListener(
+		"click",
+		() => {
+			const currentState =
+				isItemCompleted(
+					item,
+					progressData
+				);
+
+
+			const newState =
+				!currentState;
+
+
+			setItemCompleted(
+				gameId,
+				item,
+				newState,
+				progressData
+			);
+
+
+			updateTrackerItemState(
+				listItem,
+				statusIndicator,
+				toggleButton,
+				newState
+			);
+
+
+			/*
+			 * Fortschrittsanzeige direkt aktualisieren.
+			 */
+			updateCurrentCategoryProgress(
+				categoryData,
+				progressData
+			);
+		}
+	);
+
+
+	listItem.append(
+		statusIndicator,
+		content,
+		toggleButton
+	);
+
+
+	return listItem;
+}
+
+
+/**
+ * Erstellt den Detailbereich eines Items.
+ *
+ * Unterstützt bevorzugt:
+ *
+ * "details": [
+ *     {
+ *         "label": "Fundort",
+ *         "value": "..."
+ *     }
+ * ]
+ *
+ * Das bisherige Feld "location" wird zusätzlich
+ * weiterhin unterstützt.
+ *
+ * @param {Object} item
+ * @returns {HTMLDetailsElement|null}
+ */
+function createItemDetails(item) {
+	const detailEntries = [];
+
+
+	/*
+	 * Universelle neue Detail-Struktur
+	 */
+	if (
+		Array.isArray(
+			item.details
+		)
+	) {
+		for (
+			const detail of item.details
+		) {
+			if (
+				!detail ||
+				!detail.label ||
+				detail.value === undefined ||
+				detail.value === null ||
+				detail.value === ""
+			) {
+				continue;
+			}
+
+
+			detailEntries.push({
+				label:
+					String(
+						detail.label
+					),
+
+				value:
+					String(
+						detail.value
+					)
+			});
+		}
+	}
+
+
+	/*
+	 * Alte location-Eigenschaft weiterhin
+	 * als Fallback unterstützen.
+	 */
+	if (
+		item.location &&
+		!detailEntries.some(
+			detail =>
+				detail.label.toLowerCase() ===
+				"fundort"
+		)
+	) {
+		detailEntries.push({
+			label:
+				"Fundort",
+
+			value:
+				String(
+					item.location
+				)
+		});
+	}
+
+
+	if (
+		detailEntries.length === 0
+	) {
+		return null;
+	}
+
+
+	const details =
+		document.createElement(
+			"details"
+		);
+
+
+	details.className =
+		"tracker-item-details";
+
+
+	const summary =
+		document.createElement(
+			"summary"
+		);
+
+
+	summary.textContent =
+		"Details anzeigen";
+
+
+	details.append(
+		summary
+	);
+
+
+	const detailList =
+		document.createElement(
+			"dl"
+		);
+
+
+	for (
+		const detail of detailEntries
+	) {
+		const term =
+			document.createElement(
+				"dt"
+			);
+
+
+		term.textContent =
+			detail.label;
+
+
+		const description =
+			document.createElement(
+				"dd"
+			);
+
+
+		description.textContent =
+			detail.value;
+
+
+		detailList.append(
+			term,
+			description
+		);
+	}
+
+
+	details.append(
+		detailList
+	);
+
+
+	/*
+	 * Text beim Öffnen/Schließen anpassen.
+	 */
+	details.addEventListener(
+		"toggle",
+		() => {
+			summary.textContent =
+				details.open
+					? "Details ausblenden"
+					: "Details anzeigen";
+		}
+	);
+
+
+	return details;
+}
+
+
+/**
+ * Aktualisiert den visuellen Status
+ * eines Tracker-Items.
+ *
+ * @param {HTMLElement} listItem
+ * @param {HTMLElement} statusIndicator
+ * @param {HTMLButtonElement} toggleButton
+ * @param {boolean} completed
+ */
+function updateTrackerItemState(
+	listItem,
+	statusIndicator,
+	toggleButton,
+	completed
+) {
+	listItem.classList.toggle(
+		"is-completed",
+		completed
+	);
+
+
+	statusIndicator.textContent =
+		completed
+			? "✓"
+			: "";
+
+
+	statusIndicator.classList.toggle(
+		"is-completed",
+		completed
+	);
+
+
+	toggleButton.classList.toggle(
+		"is-active",
+		completed
+	);
+
+
+	toggleButton.setAttribute(
+		"aria-pressed",
+		String(completed)
+	);
+
+
+	if (completed) {
+		toggleButton.textContent =
+			"✓ Gefunden";
+
+
+		toggleButton.setAttribute(
+			"aria-label",
+			"Als nicht gefunden markieren"
+		);
+
+	} else {
+		toggleButton.textContent =
+			"Als gefunden markieren";
+
+
+		toggleButton.setAttribute(
+			"aria-label",
+			"Als gefunden markieren"
+		);
+	}
+}
+
+
+/**
+ * Aktualisiert den Fortschritt der aktuell
+ * geöffneten Kategorie.
+ *
+ * @param {Object|Array} categoryData
+ * @param {Object} progressData
+ */
+function updateCurrentCategoryProgress(
+	categoryData,
+	progressData
+) {
+	const element =
+		document.querySelector(
+			"[data-current-category-progress]"
+		);
+
+
+	if (!element) {
+		return;
+	}
+
+
+	const progress =
+		calculateCategoryProgress(
+			categoryData,
+			progressData
+		);
+
+
+	const percent =
+		progress.total > 0
+			? Math.round(
+				(progress.completed /
+					progress.total) *
+					100
+			)
+			: 0;
+
+
+	element.textContent =
+		`${progress.completed} / ${progress.total} · ${percent} %`;
 }
