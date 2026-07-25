@@ -1,1 +1,753 @@
-Placeholder
+{
+  "id": "collectibles",
+  "name": "Collectibles",
+  "description": "Sammlungsbasierter Tracker für Found Footage, Comms, Artifacts, ECHOs, Database und Field Data.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "collection-set-tracking",
+    "isCompleteIndividualItemList": false,
+    "includedCollections": 37,
+    "note": "Die Datei verfolgt zunächst komplette Sammlungen beziehungsweise Unterkategorien. Einzelne Audiologs, Karten und Artefakte können später als eigene Items ergänzt werden."
+  },
+  "groups": [
+    {
+      "id": "foundFootage",
+      "name": "Found Footage",
+      "items": [
+        {
+          "id": "division2.collectible.found-footage.haven",
+          "name": "Haven",
+          "description": "Videoaufzeichnung aus dem Umfeld von Haven und den Ereignissen in New York.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Umfang",
+              "value": "Ein Eintrag"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über den zugehörigen Story-, Saison- oder Legacy-Manhunt-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.echo",
+          "name": "ECHO",
+          "description": "Aufzeichnung von Agent Kelso auf der Spur von ANNA und einer wichtigen ECHO-Entdeckung.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Umfang",
+              "value": "Ein Eintrag"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über den zugehörigen Vanguard- beziehungsweise Legacy-Manhunt-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms",
+      "name": "Comms",
+      "items": [
+        {
+          "id": "division2.collectible.comms.division",
+          "name": "Division",
+          "description": "Audiologs über Division-Agenten und deren Einsätze.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über verschiedene Bezirke von Washington, D.C. verteilt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater",
+          "name": "Theater",
+          "description": "Aufzeichnungen rund um die Theater-Siedlung.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "8 Einträge"
+            },
+            {
+              "label": "Fundort",
+              "value": "In und um die Theater-Siedlung sowie angrenzende Bezirke."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus",
+          "name": "Campus",
+          "description": "Aufzeichnungen rund um die Campus-Siedlung.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "8 Einträge"
+            },
+            {
+              "label": "Fundort",
+              "value": "In und um die Campus-Siedlung sowie angrenzende Bezirke."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.castle",
+          "name": "Castle",
+          "description": "Aufzeichnungen zur Castle-Siedlung.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "4 Einträge im ursprünglichen Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Umfeld der Castle-Siedlung."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government",
+          "name": "Government",
+          "description": "Regierungsbezogene Aufzeichnungen aus der Zeit des Ausbruchs.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über Washington, D.C. verteilt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons",
+          "name": "True Sons",
+          "description": "Kommunikation der True Sons.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Gebieten und Missionen mit True-Sons-Aktivität."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas",
+          "name": "Hyenas",
+          "description": "Kommunikation der Hyenas.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Gebieten und Missionen mit Hyena-Aktivität."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts",
+          "name": "Outcasts",
+          "description": "Kommunikation der Outcasts.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "12 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Gebieten und Missionen mit Outcast-Aktivität."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.unknown",
+          "name": "Unknown",
+          "description": "Nicht eindeutig zugeordnete beziehungsweise später zugeordnete Aufzeichnungen.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über Washington, D.C. verteilt; einzelne Einträge setzen Spielfortschritt voraus."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis",
+          "name": "Profile: President Ellis",
+          "description": "Aufzeichnungen über Präsident Andrew Ellis.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Story-Gebieten, Missionen und späteren Saisoninhalten."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso",
+          "name": "Profile: Agent Kelso",
+          "description": "Aufzeichnungen über Agent Alani Kelso.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Story-Gebieten, Missionen und späteren Saisoninhalten."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw",
+          "name": "Profile: Emeline Shaw",
+          "description": "Aufzeichnungen über Emeline Shaw und die Outcasts.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Outcast-Gebieten und zugehörigen Missionen."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau",
+          "name": "Faye Lau",
+          "description": "Offene-Welt-Aufzeichnungen über Faye Lau.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die offene Welt verteilt; zusätzliche Manhunt-Comms werden separat behandelt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell",
+          "name": "Theo Parnell",
+          "description": "Aufzeichnungen rund um Theo Parnell.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Lower Manhattan und im Umfeld seiner Story-Missionen."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes",
+          "name": "Paul Rhodes",
+          "description": "Aufzeichnungen rund um Paul Rhodes.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Umfang",
+              "value": "10 Einträge"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Lower Manhattan und im Umfeld von Haven."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artifacts",
+      "name": "Artifacts",
+      "items": [
+        {
+          "id": "division2.collectible.artifacts.artwork",
+          "name": "Artwork",
+          "description": "Historische Kunstgegenstände und begleitende SHD-Daten.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über Washington, D.C. verteilt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics",
+          "name": "Relics",
+          "description": "Historische Relikte und begleitende SHD-Daten.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über Washington, D.C. verteilt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers",
+          "name": "Founding Fathers",
+          "description": "Artefakte rund um die Gründerväter der Vereinigten Staaten.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Umfang",
+              "value": "7 Einträge im ursprünglichen DC-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "An historischen Orten in Washington, D.C."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.incursion-paradise-lost",
+          "name": "Incursion: Paradise Lost",
+          "description": "Artefakt-Sammlung aus der Incursion „Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "Innerhalb der Incursion und über besondere Boss- beziehungsweise Begegnungsbedingungen."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.drone-kid",
+          "name": "Drone Kid",
+          "description": "Ein einzelnes Artefakt aus „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Umfang",
+              "value": "Ein Eintrag"
+            },
+            {
+              "label": "Fundort",
+              "value": "Innerhalb der Incursion „Paradise Lost“."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echos",
+      "name": "ECHOs",
+      "items": [
+        {
+          "id": "division2.collectible.echos.fandelis",
+          "name": "Fandelis",
+          "description": "ECHO-Aufzeichnung mit Bezug zu Fandelis.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHO"
+            },
+            {
+              "label": "Umfang",
+              "value": "Ein Eintrag"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über den zugehörigen Story- oder Saisoninhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.faye-lau",
+          "name": "Faye Lau",
+          "description": "ECHO-Aufzeichnung mit Bezug zu Faye Lau.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHO"
+            },
+            {
+              "label": "Umfang",
+              "value": "Ein Eintrag"
+            },
+            {
+              "label": "Fundort",
+              "value": "Wird nach dem Abschluss der zugehörigen Brooklyn-Datenbank-Sammlung freigeschaltet."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world-echos",
+          "name": "World ECHOs",
+          "description": "In der offenen Welt verteilte ECHO-Szenen.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHO"
+            },
+            {
+              "label": "Umfang",
+              "value": "17 Einträge im ursprünglichen Open-World-Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über Washington, D.C. verteilt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions-echos",
+          "name": "Factions ECHOs",
+          "description": "ECHO-Szenen mit Bezug zu den gegnerischen Fraktionen.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHO"
+            },
+            {
+              "label": "Umfang",
+              "value": "11 Einträge im ursprünglichen Fraktionssatz"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Fraktionsgebieten und zugehörigen Missionsbereichen."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.unknown-echos",
+          "name": "Unknown ECHOs",
+          "description": "Nicht eindeutig zugeordnete ECHO-Szenen.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHO"
+            },
+            {
+              "label": "Umfang",
+              "value": "5 Einträge im ursprünglichen Satz"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über Washington, D.C. verteilt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "items": [
+        {
+          "id": "division2.collectible.database.danvers-network",
+          "name": "Danver's Network",
+          "description": "Brooklyn-Kartensammlung über Danvers Netzwerk und dessen benannte Ziele.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "16 Karten"
+            },
+            {
+              "label": "Fundort",
+              "value": "Durch das Eliminieren der 16 zugehörigen benannten Gegner in den spielbaren Brooklyn-Gebieten."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.lost-ellis-memos",
+          "name": "Lost Ellis Memos",
+          "description": "Memoiren von Präsident Ellis über seine Zusammenarbeit mit Natalya Sokolova und Black Tusk.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "3 Einträge"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise die dortigen benannten Gegner."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana",
+          "name": "Snitch Cards: Arcana",
+          "description": "Karten der benannten Open-World-Gegner in New York.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "22 Karten"
+            },
+            {
+              "label": "Fundort",
+              "value": "Durch wiederholt erscheinende benannte Gegner in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs",
+          "name": "Snitch Cards: Clubs",
+          "description": "Eine der vier Kartenspiel-Farben der benannten Gegner in Washington, D.C.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Karten"
+            },
+            {
+              "label": "Fundort",
+              "value": "Durch wiederholt erscheinende Open-World-Bosse in Washington, D.C."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds",
+          "name": "Snitch Cards: Diamonds",
+          "description": "Eine der vier Kartenspiel-Farben der benannten Gegner in Washington, D.C.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Karten"
+            },
+            {
+              "label": "Fundort",
+              "value": "Durch wiederholt erscheinende Open-World-Bosse in Washington, D.C."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts",
+          "name": "Snitch Cards: Hearts",
+          "description": "Eine der vier Kartenspiel-Farben der benannten Gegner in Washington, D.C.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Karten"
+            },
+            {
+              "label": "Fundort",
+              "value": "Durch wiederholt erscheinende Open-World-Bosse in Washington, D.C."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades",
+          "name": "Snitch Cards: Spades",
+          "description": "Eine der vier Kartenspiel-Farben der benannten Gegner in Washington, D.C.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Umfang",
+              "value": "13 Karten"
+            },
+            {
+              "label": "Fundort",
+              "value": "Durch wiederholt erscheinende Open-World-Bosse in Washington, D.C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData",
+      "name": "Field Data",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.kenly-college-field-data",
+          "name": "Kenly College Field Data",
+          "description": "Felddaten aus der Expedition Kenly College.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "Innerhalb der verschiedenen Kenly-College-Bereiche."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.convoy-comms-field-data",
+          "name": "Convoy Comms Field Data",
+          "description": "Felddaten aus den Convoy-Comms-Aufzeichnungen.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Convoy-Aktivitäten und Fundorte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-podcast-field-data",
+          "name": "Kenly Podcast Field Data",
+          "description": "Podcast-Aufzeichnungen aus Kenly College.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Umfang",
+              "value": "Sammlung"
+            },
+            {
+              "label": "Fundort",
+              "value": "Innerhalb der Kenly-College-Expedition."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
