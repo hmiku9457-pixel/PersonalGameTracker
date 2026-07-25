@@ -127,6 +127,22 @@ export async function renderCategory(
 
 
 		/*
+		 * Sticky-Toolbar
+		 *
+		 * Enthält den Zurück-Button und den
+		 * Fortschritt der geöffneten Kategorie.
+		 */
+		const categoryToolbar =
+			document.createElement(
+				"div"
+			);
+
+
+		categoryToolbar.className =
+			"category-toolbar";
+
+
+		/*
 		 * Zurück-Button
 		 */
 		const backButton =
@@ -157,7 +173,38 @@ export async function renderCategory(
 
 
 		/*
-		 * Kategorie
+		 * Fortschrittsanzeige
+		 */
+		const categoryProgress =
+			document.createElement(
+				"span"
+			);
+
+
+		categoryProgress.className =
+			"category-content-progress";
+
+
+		categoryProgress.dataset.currentCategoryProgress =
+			"true";
+
+
+		/*
+		 * Fallback, bis der tatsächliche Wert
+		 * berechnet wurde.
+		 */
+		categoryProgress.textContent =
+			"0 / 0 · 0 %";
+
+
+		categoryToolbar.append(
+			backButton,
+			categoryProgress
+		);
+
+
+		/*
+		 * Kategorie-Inhalt
 		 */
 		const categoryContent =
 			document.createElement(
@@ -192,23 +239,8 @@ export async function renderCategory(
 			category.name;
 
 
-		const categoryProgress =
-			document.createElement(
-				"span"
-			);
-
-
-		categoryProgress.className =
-			"category-content-progress";
-
-
-		categoryProgress.dataset.currentCategoryProgress =
-			"true";
-
-
 		categoryHeader.append(
-			categoryTitle,
-			categoryProgress
+			categoryTitle
 		);
 
 
@@ -242,16 +274,7 @@ export async function renderCategory(
 
 
 		/*
-		 * Fortschritt initial setzen
-		 */
-		updateCurrentCategoryProgress(
-			data,
-			progressData
-		);
-
-
-		/*
-		 * Daten darstellen
+		 * Kategorie-Daten darstellen
 		 */
 		renderCategoryData(
 			categoryContent,
@@ -261,15 +284,31 @@ export async function renderCategory(
 		);
 
 
+		/*
+		 * Seite zusammensetzen
+		 */
 		gamePage.append(
 			gameHeader,
-			backButton,
+			categoryToolbar,
 			categoryContent
 		);
 
 
 		mainContent.append(
 			gamePage
+		);
+
+
+		/*
+		 * Wichtig:
+		 *
+		 * Erst nach mainContent.append() aktualisieren,
+		 * damit die Fortschrittsanzeige bereits im DOM
+		 * vorhanden ist.
+		 */
+		updateCurrentCategoryProgress(
+			data,
+			progressData
 		);
 
 
