@@ -25,29 +25,65 @@ function getClient() {
 
 
 /**
- * Prüft eine gameId.
+ * Prüft eine ID.
  *
- * @param {string} gameId
+ * @param {string} value
+ * @param {string} name
  */
-function validateGameId(gameId) {
+function validateId(value, name) {
 	if (
-		typeof gameId !== "string" ||
-		gameId.trim() === ""
+		typeof value !== "string" ||
+		value.trim() === ""
 	) {
 		throw new Error(
-			"Ungültige gameId."
+			`Ungültige ${name}.`
 		);
 	}
 }
 
 
 /**
+ * Gibt den aktuell angemeldeten Benutzer zurück.
+ *
+ * @returns {Promise<object>}
+ */
+async function getAuthenticatedUser() {
+	const client = getClient();
+
+	const {
+		data,
+		error
+	} = await client.auth.getSession();
+
+
+	if (error) {
+		throw error;
+	}
+
+
+	const user =
+		data?.session?.user ?? null;
+
+
+	if (!user) {
+		const authError =
+			new Error(
+				"Für diese Aktion ist eine Anmeldung erforderlich."
+			);
+
+		authError.code = "AUTH_REQUIRED";
+
+		throw authError;
+	}
+
+
+	return user;
+}
+
+
+/**
  * Lädt alle Fortschrittsdatensätze eines Spiels
  * für den aktuell angemeldeten Benutzer.
- *
- * Die RLS-Regeln in Supabase stellen sicher,
- * dass ausschließlich Datensätze des aktuellen
- * Benutzers zurückgegeben werden.
  *
  * @param {string} gameId
  * @returns {Promise<{
@@ -56,16 +92,10 @@ function validateGameId(gameId) {
  * }>}
  */
 export async function fetchGameProgressRows(gameId) {
-	validateGameId(gameId);
+	validateId(gameId, "gameId");
 
 	const client = getClient();
 
-
-	/*
-	 * -------------------------------------------------------
-	 * Session prüfen
-	 * -------------------------------------------------------
-	 */
 
 	const {
 		data: sessionData,
@@ -82,12 +112,6 @@ export async function fetchGameProgressRows(gameId) {
 		sessionData?.session ?? null;
 
 
-	/*
-	 * Nicht angemeldete Benutzer besitzen keinen
-	 * persönlichen Fortschritt.
-	 *
-	 * Wir führen deshalb gar keine Tabellenabfrage aus.
-	 */
 	if (!session?.user) {
 		return {
 			authenticated: false,
@@ -95,12 +119,6 @@ export async function fetchGameProgressRows(gameId) {
 		};
 	}
 
-
-	/*
-	 * -------------------------------------------------------
-	 * Fortschritt laden
-	 * -------------------------------------------------------
-	 */
 
 	const rows = [];
 
@@ -157,10 +175,6 @@ export async function fetchGameProgressRows(gameId) {
 		rows.push(...page);
 
 
-		/*
-		 * Weniger als PAGE_SIZE Datensätze bedeutet,
-		 * dass wir die letzte Seite erreicht haben.
-		 */
 		if (page.length < PAGE_SIZE) {
 			break;
 		}
@@ -174,4 +188,109 @@ export async function fetchGameProgressRows(gameId) {
 		authenticated: true,
 		rows
 	};
+}
+
+
+/**
+ * Markiert ein Item als abgeschlossen.
+ *
+ * @param {string} gameId
+ * @param {string} categoryId
+ * @param {string} itemId
+ */
+export async function insertProgressRow(
+	gameId,
+	categoryId,
+	itemId
+) {
+	validateId(gameId, "gameId");
+	validateId(categoryId, "categoryId");
+	validateId(itemId, "itemId");
+
+
+	const client = getClient();
+	const user = await getAuthenticatedUser();
+
+
+	const {
+		error
+	} = await client
+		.from("user_progress")
+		.insert({
+			user_id: user.id,
+			game_id: gameId,
+			category_id: categoryId,
+			item_id: itemId
+		});
+
+
+	if (error) {
+
+		/*
+		 * 23505 = Unique Violation.
+		 *
+		 * Unser zusammengesetzter Primärschlüssel
+		 * verhindert doppelte Einträge.
+		 *
+		 * Ist der Datensatz bereits vorhanden,
+		 * betrachten wir den gewünschten Zustand
+		 * bereits als erreicht.
+		 */
+		if (error.code === "23505") {
+			return;
+		}
+
+
+		throw error;
+	}
+}
+
+
+/**
+ * Entfernt die Markierung eines Items.
+ *
+ * @param {string} gameId
+ * @param {string} categoryId
+ * @param {string} itemId
+ */
+export async function deleteProgressRow(
+	gameId,
+	categoryId,
+	itemId
+) {
+	validateId(gameId, "gameId");
+	validateId(categoryId, "categoryId");
+	validateId(itemId, "itemId");
+
+
+	const client = getClient();
+	const user = await getAuthenticatedUser();
+
+
+	const {
+		error
+	} = await client
+		.from("user_progress")
+		.delete()
+		.eq(
+			"user_id",
+			user.id
+		)
+		.eq(
+			"game_id",
+			gameId
+		)
+		.eq(
+			"category_id",
+			categoryId
+		)
+		.eq(
+			"item_id",
+			itemId
+		);
+
+
+	if (error) {
+		throw error;
+	}
 }
