@@ -1,0 +1,12 @@
+{
+  "id": "darkSouls1",
+  "name": "Dark Souls 1",
+  "categories": [
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "description": "Steam-Erfolge aus dem Hauptspiel",
+      "file": "achievements.json"
+    }
+  ]
+}
