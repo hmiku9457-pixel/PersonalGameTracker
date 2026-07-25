@@ -397,48 +397,240 @@
 
 
 /* =========================================================
-   6. Kategorie-Gruppen
+   6. Kategorie-Gruppen / Accordions
    ========================================================= */
 
-.game-page .category-group {
-	margin-top: 34px;
+
+/* ---------------------------------------------------------
+   6.1 Globale Gruppen-Steuerung
+   --------------------------------------------------------- */
+
+.game-page .category-group-controls {
+	margin: 0 0 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	gap: 8px;
 }
 
-.game-page .category-group:first-of-type {
-	margin-top: 24px;
+
+.game-page .category-group-control-button {
+	padding: 6px 10px;
+
+	font: inherit;
+	font-size: 0.85rem;
+	font-weight: 600;
+
+	color: #bfc8d6;
+	background-color: transparent;
+
+	border: 1px solid #374151;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+
+.game-page .category-group-control-button:hover {
+	color: #ffffff;
+
+	background-color: #1f2937;
+	border-color: #4b5563;
+}
+
+
+.game-page .category-group-control-button:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
 }
 
 
 /* ---------------------------------------------------------
-   6.1 Gruppen-Kopf
+   6.2 Gruppe
+   --------------------------------------------------------- */
+
+.game-page .category-group {
+	margin-top: 12px;
+}
+
+
+.game-page .category-group:first-of-type {
+	margin-top: 0;
+}
+
+
+/* ---------------------------------------------------------
+   6.3 Gruppen-Header / Summary
    --------------------------------------------------------- */
 
 .game-page .category-group-header {
-	margin-bottom: 12px;
+	width: 100%;
+
+	margin: 0;
+	padding: 13px 16px;
 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 	gap: 16px;
-}
-
-.game-page .category-group-header h4 {
-	margin: 0;
-
-	font-size: 1.1rem;
-	font-weight: 600;
 
 	color: #e5e7eb;
+	background-color: #182235;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+
+	cursor: pointer;
+
+	list-style: none;
+
+	user-select: none;
+
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+
+/*
+ * Standard-Marker des Browsers ausblenden.
+ */
+.game-page .category-group-header::-webkit-details-marker {
+	display: none;
+}
+
+
+.game-page .category-group-header::marker {
+	display: none;
+	content: "";
+}
+
+
+/* Hover */
+
+.game-page .category-group-header:hover {
+	background-color: #1d293d;
+	border-color: #4b5563;
+}
+
+
+/* Geöffnete Gruppe */
+
+.game-page .category-group[open]
+.category-group-header {
+	background-color: #1d293d;
+	border-color: #4b6b91;
+}
+
+
+/* Tastatur-Navigation */
+
+.game-page .category-group-header:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
 }
 
 
 /* ---------------------------------------------------------
-   6.2 Gruppen-Beschreibung
+   6.4 Linker Header-Bereich
+   --------------------------------------------------------- */
+
+.game-page .category-group-header-main {
+	min-width: 0;
+
+	display: flex;
+	align-items: center;
+
+	gap: 10px;
+}
+
+
+.game-page .category-group-title {
+	font-size: 1.05rem;
+	font-weight: 700;
+	line-height: 1.35;
+
+	color: #f3f4f6;
+}
+
+
+/* ---------------------------------------------------------
+   6.5 Pfeil
+   --------------------------------------------------------- */
+
+.game-page .category-group-chevron {
+	flex-shrink: 0;
+
+	display: inline-block;
+
+	color: #93c5fd;
+
+	font-size: 0.8rem;
+	line-height: 1;
+
+	transform: rotate(0deg);
+
+	transition:
+		transform 0.2s ease;
+}
+
+
+/*
+ * ▶ wird bei geöffneter Gruppe
+ * um 90 Grad gedreht.
+ */
+.game-page .category-group[open]
+.category-group-chevron {
+	transform: rotate(90deg);
+}
+
+
+/* ---------------------------------------------------------
+   6.6 Gruppen-Fortschritt
+   --------------------------------------------------------- */
+
+.game-page .category-group-progress {
+	flex-shrink: 0;
+
+	padding: 4px 9px;
+
+	font-size: 0.8rem;
+	font-weight: 700;
+
+	color: #dbeafe;
+	background-color: #1e3a5f;
+
+	border: 1px solid #315d8a;
+	border-radius: 999px;
+
+	white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   6.7 Gruppen-Inhalt
+   --------------------------------------------------------- */
+
+.game-page .category-group-body {
+	padding-top: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   6.8 Gruppen-Beschreibung
    --------------------------------------------------------- */
 
 .game-page .category-group-description {
-	margin: -4px 0 14px;
+	margin: 0 0 14px;
+	padding: 0 4px;
 
 	color: #9ca3af;
 
