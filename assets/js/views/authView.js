@@ -227,35 +227,29 @@
 	}
 
 
-	/*
-	 * -------------------------------------------------------
-	 * Session darstellen
-	 * -------------------------------------------------------
+	/**
+	 * Stellt den aktuellen Authentifizierungsstatus dar.
+	 *
+	 * @param {object|null} session
 	 */
-
 	function renderSession(session) {
-
-		const user =
-			session?.user ?? null;
-
-
-		if (user) {
-
-			loggedOutContainer.hidden = true;
-			loggedInContainer.hidden = false;
-
+		const user = session?.user ?? null;
+	
+		const isLoggedIn = Boolean(user);
+	
+	
+		loggedOutContainer.hidden = isLoggedIn;
+		loggedInContainer.hidden = !isLoggedIn;
+	
+	
+		if (isLoggedIn) {
 			accountUsername.textContent =
 				user.email ?? "Benutzer";
-
-			return;
 		}
-
-
-		loggedOutContainer.hidden = false;
-		loggedInContainer.hidden = true;
-
-		accountUsername.textContent =
-			"Benutzer";
+		else {
+			accountUsername.textContent =
+				"Benutzer";
+		}
 	}
 
 
