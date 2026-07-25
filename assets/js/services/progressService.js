@@ -9,23 +9,118 @@ const MOCK_PROGRESS_FILE =
 	"mockProgress.json";
 
 
+// Präfix für localStorage
+const STORAGE_PREFIX =
+	"personal-game-tracker";
+
+
+/**
+ * Erstellt den localStorage-Schlüssel
+ * für ein Spiel.
+ *
+ * @param {string} gameId
+ * @returns {string}
+ */
+function getProgressStorageKey(gameId) {
+	return `${STORAGE_PREFIX}:${gameId}:progress`;
+}
+
+
+/**
+ * Lädt lokal gespeicherten Fortschritt.
+ *
+ * @param {string} gameId
+ * @returns {Object}
+ */
+function loadLocalProgress(gameId) {
+	const storageKey =
+		getProgressStorageKey(gameId);
+
+	const storedData =
+		localStorage.getItem(
+			storageKey
+		);
+
+
+	if (!storedData) {
+		return {};
+	}
+
+
+	try {
+		const progress =
+			JSON.parse(storedData);
+
+
+		if (
+			!progress ||
+			typeof progress !== "object" ||
+			Array.isArray(progress)
+		) {
+			return {};
+		}
+
+
+		return progress;
+
+	} catch (error) {
+		console.warn(
+			`Lokaler Fortschritt für "${gameId}" konnte nicht gelesen werden.`,
+			error
+		);
+
+		return {};
+	}
+}
+
+
+/**
+ * Speichert Fortschritt lokal.
+ *
+ * @param {string} gameId
+ * @param {Object} progress
+ */
+function saveLocalProgress(
+	gameId,
+	progress
+) {
+	const storageKey =
+		getProgressStorageKey(gameId);
+
+
+	try {
+		localStorage.setItem(
+			storageKey,
+			JSON.stringify(progress)
+		);
+
+	} catch (error) {
+		console.error(
+			`Fortschritt für "${gameId}" konnte nicht gespeichert werden.`,
+			error
+		);
+	}
+}
+
+
 /**
  * Lädt die Fortschrittsdaten eines Spiels.
  *
- * Für den aktuellen Testbetrieb wird automatisch nach
+ * Für den aktuellen Testbetrieb wird zunächst
  *
  * data/<gameId>/mockProgress.json
  *
- * gesucht.
+ * geladen.
  *
- * Existiert keine mockProgress.json, wird null
- * zurückgegeben.
+ * Anschließend werden lokal gespeicherte Änderungen
+ * darübergelegt.
  *
- * Später kann diese Funktion durch eine Supabase-
- * Implementierung ersetzt oder erweitert werden.
+ * Dadurch dient mockProgress.json als Ausgangszustand,
+ * während Änderungen des Benutzers im localStorage
+ * erhalten bleiben.
  *
- * @param {string} gameId ID des Spiels
- * @returns {Promise<Object|null>}
+ * @param {string} gameId
+ * @returns {Promise<Object>}
  */
 export async function loadGameProgressData(
 	gameId
@@ -34,52 +129,130 @@ export async function loadGameProgressData(
 		`${getDataPath()}/${gameId}/${MOCK_PROGRESS_FILE}`;
 
 
+	let mockData = null;
+
+
 	try {
-		return await loadOptionalJson(
-			path
-		);
+		mockData =
+			await loadOptionalJson(
+				path
+			);
 
 	} catch (error) {
 		console.warn(
 			`Fortschrittsdaten für "${gameId}" konnten nicht geladen werden.`,
 			error
 		);
-
-		return null;
 	}
+
+
+	/*
+	 * Eigenes Objekt erzeugen, damit die gecachte
+	 * mockProgress.json nicht direkt verändert wird.
+	 */
+	const progressData = {
+		gameId,
+
+		progress: {
+			...(
+				mockData?.progress &&
+				typeof mockData.progress === "object" &&
+				!Array.isArray(mockData.progress)
+					? mockData.progress
+					: {}
+			)
+		}
+	};
+
+
+	/*
+	 * Lokal gespeicherten Fortschritt darüberlegen.
+	 */
+	const localProgress =
+		loadLocalProgress(gameId);
+
+
+	progressData.progress = {
+		...progressData.progress,
+		...localProgress
+	};
+
+
+	return progressData;
+}
+
+
+/**
+ * Setzt den Fortschrittsstatus eines einzelnen Items.
+ *
+ * @param {string} gameId
+ * @param {Object} item
+ * @param {boolean} completed
+ * @param {Object} progressData
+ */
+export function setItemCompleted(
+	gameId,
+	item,
+	completed,
+	progressData
+) {
+	if (
+		!item ||
+		typeof item !== "object" ||
+		!item.id
+	) {
+		console.warn(
+			"Ein Item ohne ID kann nicht gespeichert werden."
+		);
+
+		return;
+	}
+
+
+	if (
+		!progressData.progress ||
+		typeof progressData.progress !== "object" ||
+		Array.isArray(progressData.progress)
+	) {
+		progressData.progress = {};
+	}
+
+
+	progressData.progress[item.id] =
+		Boolean(completed);
+
+
+	/*
+	 * Nur das Progress-Mapping speichern.
+	 */
+	saveLocalProgress(
+		gameId,
+		progressData.progress
+	);
 }
 
 
 /**
  * Berechnet den Fortschritt einer Kategorie.
  *
- * Unterstützt beispielsweise:
+ * Unterstützt:
  *
  * {
  *     "items": [...]
  * }
  *
- * oder:
- *
  * {
- *     "groups": [
- *         {
- *             "items": [...]
- *         }
- *     ]
+ *     "groups": [...]
  * }
- *
- * oder:
  *
  * {
  *     "sections": [...]
  * }
  *
- * Fortschrittswerte können aus einer externen
- * Fortschrittsdatei kommen oder direkt im Item stehen.
+ * sowie direkte Arrays.
  *
- * @param {Object|Array} data Kategorie-Daten
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {Object|Array} data
+ * @param {Object|null} progressData
  * @returns {{completed: number, total: number}}
  */
 export function calculateCategoryProgress(
@@ -110,9 +283,6 @@ export function calculateCategoryProgress(
 	}
 
 
-	/*
-	 * Direktes Items-Array
-	 */
 	if (
 		Array.isArray(
 			data?.items
@@ -125,9 +295,6 @@ export function calculateCategoryProgress(
 	}
 
 
-	/*
-	 * Gruppen
-	 */
 	if (
 		Array.isArray(
 			data?.groups
@@ -140,9 +307,6 @@ export function calculateCategoryProgress(
 	}
 
 
-	/*
-	 * Sections
-	 */
 	if (
 		Array.isArray(
 			data?.sections
@@ -155,9 +319,6 @@ export function calculateCategoryProgress(
 	}
 
 
-	/*
-	 * Falls direkt ein Array geladen wurde
-	 */
 	if (Array.isArray(data)) {
 		return calculateItemsProgress(
 			data,
@@ -176,8 +337,8 @@ export function calculateCategoryProgress(
 /**
  * Berechnet den Fortschritt eines Item-Arrays.
  *
- * @param {Array} items Items
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {Array} items
+ * @param {Object|null} progressData
  * @returns {{completed: number, total: number}}
  */
 export function calculateItemsProgress(
@@ -208,8 +369,8 @@ export function calculateItemsProgress(
 /**
  * Berechnet den Fortschritt mehrerer Gruppen.
  *
- * @param {Array} groups Gruppen
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {Array} groups
+ * @param {Object|null} progressData
  * @returns {{completed: number, total: number}}
  */
 export function calculateGroupedProgress(
@@ -248,32 +409,8 @@ export function calculateGroupedProgress(
  * Liest einen externen Fortschrittsstatus
  * für ein einzelnes Item.
  *
- * Unterstützte Struktur:
- *
- * {
- *     "progress": {
- *         "division2.exotic.capacitor": true
- *     }
- * }
- *
- * Alternativ werden auch Statusobjekte unterstützt:
- *
- * {
- *     "progress": {
- *         "item-id": {
- *             "found": true
- *         }
- *     }
- * }
- *
- * Rückgabe:
- *
- * true  = abgeschlossen
- * false = nicht abgeschlossen
- * null  = kein externer Status vorhanden
- *
- * @param {Object} item Item
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {Object} item
+ * @param {Object|null} progressData
  * @returns {boolean|null}
  */
 export function getExternalItemStatus(
@@ -297,18 +434,6 @@ export function getExternalItemStatus(
 	}
 
 
-	/*
-	 * Standardstruktur:
-	 *
-	 * {
-	 *     "progress": {
-	 *         "item-id": true
-	 *     }
-	 * }
-	 *
-	 * Zusätzlich wird auch ein direktes Mapping
-	 * akzeptiert.
-	 */
 	const progressMap =
 		progressData.progress &&
 		typeof progressData.progress === "object" &&
@@ -333,9 +458,6 @@ export function getExternalItemStatus(
 		progressMap[item.id];
 
 
-	/*
-	 * Einfacher Boolean
-	 */
 	if (
 		typeof value ===
 		"boolean"
@@ -345,7 +467,7 @@ export function getExternalItemStatus(
 
 
 	/*
-	 * Optional auch Statusobjekte unterstützen.
+	 * Statusobjekte weiterhin unterstützen.
 	 */
 	if (
 		value &&
@@ -381,24 +503,15 @@ export function getExternalItemStatus(
 
 
 /**
- * Prüft, ob ein einzelnes Item abgeschlossen ist.
+ * Prüft, ob ein Item abgeschlossen ist.
  *
  * Priorität:
  *
  * 1. Externe Fortschrittsdaten
- *    z. B. mockProgress.json
- *
  * 2. Status direkt im Item
  *
- * Unterstützte Statusfelder:
- *
- * found
- * completed
- * collected
- * unlocked
- *
- * @param {Object} item Item
- * @param {Object|null} progressData Externe Fortschrittsdaten
+ * @param {Object} item
+ * @param {Object|null} progressData
  * @returns {boolean}
  */
 export function isItemCompleted(
@@ -413,9 +526,6 @@ export function isItemCompleted(
 	}
 
 
-	/*
-	 * Externer Status hat Vorrang.
-	 */
 	const externalStatus =
 		getExternalItemStatus(
 			item,
@@ -430,9 +540,6 @@ export function isItemCompleted(
 	}
 
 
-	/*
-	 * Fallback auf Status direkt im Item.
-	 */
 	return (
 		item.found === true ||
 		item.completed === true ||
