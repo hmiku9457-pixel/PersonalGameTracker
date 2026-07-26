@@ -11,17 +11,78 @@ import {
 
 
 /* ---------------------------------------------------------
-   1. Initialisierung
+   1. UI-Texte
+   --------------------------------------------------------- */
+
+const UI_TEXT = {
+	de: {
+		language: "Sprache",
+		selectLanguage: "Sprache auswählen",
+
+		games: "Spiele",
+		gamesNavigation: "Spiele",
+
+		login: "Anmelden",
+		logout: "Abmelden",
+		account: "Account",
+
+		welcome: "Willkommen",
+		welcomeText:
+			"Wähle links ein Spiel aus."
+	},
+
+	en: {
+		language: "Language",
+		selectLanguage: "Select language",
+
+		games: "Games",
+		gamesNavigation: "Games",
+
+		login: "Sign in",
+		logout: "Sign out",
+		account: "Account",
+
+		welcome: "Welcome",
+		welcomeText:
+			"Select a game on the left."
+	}
+};
+
+
+/**
+ * Gibt einen UI-Text in der aktuell
+ * ausgewählten Sprache zurück.
+ *
+ * @param {string} key
+ * @returns {string}
+ */
+function getUiText(key) {
+	const language =
+		getCurrentLanguage();
+
+
+	return (
+		UI_TEXT[language]?.[key] ??
+		UI_TEXT.en?.[key] ??
+		key
+	);
+}
+
+
+/* ---------------------------------------------------------
+   2. Initialisierung
    --------------------------------------------------------- */
 
 /**
- * Initialisiert die Sprachauswahl im Header.
+ * Initialisiert die Sprachauswahl und
+ * die statischen Texte der Oberfläche.
  */
 export function initLanguageView() {
 	const languageSelect =
 		document.getElementById(
 			"language-select"
 		);
+
 
 	if (!languageSelect) {
 		console.warn(
@@ -55,28 +116,35 @@ export function initLanguageView() {
 
 
 	/*
-	 * Falls die Sprache an einer anderen
-	 * Stelle der Anwendung geändert wird,
-	 * bleibt das Select synchron.
+	 * Falls die Sprache geändert wird:
+	 *
+	 * - Select synchronisieren
+	 * - statische UI-Texte aktualisieren
 	 */
 	window.addEventListener(
 		LANGUAGE_CHANGE_EVENT,
 		() => {
+
 			updateLanguageSelect(
 				languageSelect
 			);
 
-			updateLanguageModuleText();
+
+			updateStaticUiText();
+
 		}
 	);
 
 
-	updateLanguageModuleText();
+	/*
+	 * Initiale Texte setzen.
+	 */
+	updateStaticUiText();
 }
 
 
 /* ---------------------------------------------------------
-   2. Sprachwechsel
+   3. Sprachwechsel
    --------------------------------------------------------- */
 
 /**
@@ -111,7 +179,7 @@ function handleLanguageChange(
 
 
 /* ---------------------------------------------------------
-   3. Select aktualisieren
+   4. Select aktualisieren
    --------------------------------------------------------- */
 
 /**
@@ -129,25 +197,30 @@ function updateLanguageSelect(
 
 
 /* ---------------------------------------------------------
-   4. Texte des Sprachmoduls
+   5. Statische UI-Texte
    --------------------------------------------------------- */
 
 /**
- * Übersetzt die Beschriftung der
- * Sprachauswahl selbst.
+ * Aktualisiert alle statischen Texte,
+ * die direkt aus der index.html stammen.
  *
- * Andere Teile der Oberfläche werden später
- * über die jeweiligen Views lokalisiert.
+ * Dynamische Spiel-, Kategorie- und Item-Texte
+ * werden weiterhin von ihren jeweiligen Views
+ * behandelt.
  */
-function updateLanguageModuleText() {
-	const language =
-		getCurrentLanguage();
+function updateStaticUiText() {
 
+	/*
+	 * -----------------------------------------------------
+	 * Sprachmodul
+	 * -----------------------------------------------------
+	 */
 
 	const languageLabel =
 		document.querySelector(
 			".language-label"
 		);
+
 
 	const languageSelect =
 		document.getElementById(
@@ -157,18 +230,144 @@ function updateLanguageModuleText() {
 
 	if (languageLabel) {
 		languageLabel.textContent =
-			language === "de"
-				? "Sprache"
-				: "Language";
+			getUiText(
+				"language"
+			);
 	}
 
 
 	if (languageSelect) {
 		languageSelect.setAttribute(
 			"aria-label",
-			language === "de"
-				? "Sprache auswählen"
-				: "Select language"
+			getUiText(
+				"selectLanguage"
+			)
 		);
+	}
+
+
+	/*
+	 * -----------------------------------------------------
+	 * Account-Modul
+	 * -----------------------------------------------------
+	 */
+
+	const loginButton =
+		document.getElementById(
+			"login-button"
+		);
+
+
+	const accountButton =
+		document.getElementById(
+			"account-button"
+		);
+
+
+	const logoutButton =
+		document.getElementById(
+			"logout-button"
+		);
+
+
+	if (loginButton) {
+		loginButton.textContent =
+			getUiText(
+				"login"
+			);
+	}
+
+
+	if (accountButton) {
+		accountButton.textContent =
+			getUiText(
+				"account"
+			);
+	}
+
+
+	if (logoutButton) {
+		logoutButton.textContent =
+			getUiText(
+				"logout"
+			);
+	}
+
+
+	/*
+	 * -----------------------------------------------------
+	 * Spiele-Navigation
+	 * -----------------------------------------------------
+	 */
+
+	const sidebarNavigation =
+		document.querySelector(
+			".sidebar nav"
+		);
+
+
+	const sidebarTitle =
+		sidebarNavigation?.querySelector(
+			"h2"
+		);
+
+
+	if (sidebarTitle) {
+		sidebarTitle.textContent =
+			getUiText(
+				"games"
+			);
+	}
+
+
+	if (sidebarNavigation) {
+		sidebarNavigation.setAttribute(
+			"aria-label",
+			getUiText(
+				"gamesNavigation"
+			)
+		);
+	}
+
+
+	/*
+	 * -----------------------------------------------------
+	 * Startseite
+	 * -----------------------------------------------------
+	 *
+	 * Die Startseite besteht momentan direkt aus
+	 * einem <h2> und einem <p> innerhalb von
+	 * #main-content.
+	 *
+	 * Dynamische Spiel- und Kategorieansichten liegen
+	 * dagegen innerhalb eigener Sections und werden
+	 * deshalb von diesen Selektoren nicht verändert.
+	 */
+
+	const welcomeTitle =
+		document.querySelector(
+			"#main-content > h2"
+		);
+
+
+	const welcomeText =
+		document.querySelector(
+			"#main-content > p"
+		);
+
+
+	if (welcomeTitle) {
+		welcomeTitle.textContent =
+			getUiText(
+				"welcome"
+			);
+	}
+
+
+	if (welcomeText) {
+		welcomeText.textContent =
+			getUiText(
+				"welcomeText"
+			);
 	}
 }
