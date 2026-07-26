@@ -396,16 +396,37 @@
 
 
 /* =========================================================
-   6. Kategorie-Suche
+   6. Kategorie-Bedienelemente
+   ========================================================= */
+
+/*
+ * Gemeinsamer Bereich für:
+ *
+ * - Suche
+ * - Statusfilter
+ * - Sortierung
+ */
+
+.game-page .category-list-controls {
+	width: 100%;
+
+	margin: 20px 0 18px;
+}
+
+
+/* =========================================================
+   7. Kategorie-Suche
    ========================================================= */
 
 .game-page .category-search {
-	margin: 20px 0 16px;
+	width: 100%;
+
+	margin: 0 0 16px;
 }
 
 
 /* ---------------------------------------------------------
-   6.1 Suchfeld-Beschriftung
+   7.1 Suchfeld-Beschriftung
    --------------------------------------------------------- */
 
 .game-page .category-search-label {
@@ -421,7 +442,7 @@
 
 
 /* ---------------------------------------------------------
-   6.2 Suchzeile
+   7.2 Suchzeile
    --------------------------------------------------------- */
 
 .game-page .category-search-row {
@@ -433,7 +454,7 @@
 
 
 /* ---------------------------------------------------------
-   6.3 Suchfeld
+   7.3 Suchfeld
    --------------------------------------------------------- */
 
 .game-page .category-search-input {
@@ -480,13 +501,13 @@
 
 
 /* ---------------------------------------------------------
-   6.4 Trefferanzahl
+   7.4 Trefferanzahl
    --------------------------------------------------------- */
 
 .game-page .category-search-result-count {
 	flex-shrink: 0;
 
-	min-width: 72px;
+	min-width: 78px;
 
 	font-size: 0.85rem;
 	font-weight: 600;
@@ -500,7 +521,7 @@
 
 
 /* ---------------------------------------------------------
-   6.5 Keine Treffer
+   7.5 Keine Treffer
    --------------------------------------------------------- */
 
 .game-page .category-search-empty {
@@ -517,9 +538,193 @@
 }
 
 
+/* =========================================================
+   8. Statusfilter und Sortierung
+   ========================================================= */
+
 /* ---------------------------------------------------------
-   6.6 Gefilterte Elemente
+   8.1 Gemeinsame Zeile
    --------------------------------------------------------- */
+
+.game-page .category-filter-sort-row {
+	width: 100%;
+
+	padding: 12px 14px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 20px;
+
+	background-color: #151f31;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+}
+
+
+/* ---------------------------------------------------------
+   8.2 Allgemeine Beschriftung
+   --------------------------------------------------------- */
+
+.game-page .category-control-label {
+	flex-shrink: 0;
+
+	font-size: 0.875rem;
+	font-weight: 600;
+
+	color: #bfc8d6;
+}
+
+
+/* ---------------------------------------------------------
+   8.3 Statusfilter
+   --------------------------------------------------------- */
+
+.game-page .category-status-filter {
+	min-width: 0;
+
+	display: flex;
+	align-items: center;
+
+	gap: 10px;
+}
+
+
+.game-page .category-status-buttons {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 6px;
+}
+
+
+/* ---------------------------------------------------------
+   8.4 Statusfilter-Button
+   --------------------------------------------------------- */
+
+.game-page .category-status-button {
+	margin: 0;
+	padding: 7px 11px;
+
+	font: inherit;
+	font-size: 0.85rem;
+	font-weight: 600;
+
+	color: #bfc8d6;
+	background-color: #111827;
+
+	border: 1px solid #374151;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	white-space: nowrap;
+
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+
+.game-page .category-status-button:hover {
+	color: #ffffff;
+
+	background-color: #1f2937;
+	border-color: #4b5563;
+}
+
+
+.game-page .category-status-button:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
+
+/*
+ * Aktiver Filter.
+ */
+.game-page .category-status-button.is-active {
+	color: #dbeafe;
+	background-color: #1e3a5f;
+
+	border-color: #3b82f6;
+
+	box-shadow:
+		inset 0 0 0 1px rgb(96 165 250 / 15%);
+}
+
+
+.game-page .category-status-button.is-active:hover {
+	background-color: #23466f;
+	border-color: #60a5fa;
+}
+
+
+/* ---------------------------------------------------------
+   8.5 Sortierung
+   --------------------------------------------------------- */
+
+.game-page .category-sort {
+	flex-shrink: 0;
+
+	display: flex;
+	align-items: center;
+
+	gap: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   8.6 Sortier-Auswahl
+   --------------------------------------------------------- */
+
+.game-page .category-sort-select {
+	min-width: 90px;
+
+	padding: 7px 32px 7px 10px;
+
+	font: inherit;
+	font-size: 0.85rem;
+	font-weight: 600;
+
+	color: #e5e7eb;
+	background-color: #111827;
+
+	border: 1px solid #374151;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	outline: none;
+
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+
+.game-page .category-sort-select:hover {
+	background-color: #1f2937;
+	border-color: #4b5563;
+}
+
+
+.game-page .category-sort-select:focus {
+	border-color: #60a5fa;
+
+	box-shadow:
+		0 0 0 2px rgb(96 165 250 / 12%);
+}
+
+
+/* =========================================================
+   9. Gefilterte Elemente
+   ========================================================= */
 
 .game-page .tracker-item[hidden],
 .game-page .tracker-list[hidden],
@@ -531,11 +736,11 @@
 
 
 /* =========================================================
-   7. Kategorie-Gruppen / Accordions
+   10. Kategorie-Gruppen / Accordions
    ========================================================= */
 
 /* ---------------------------------------------------------
-   7.1 Globale Gruppen-Steuerung
+   10.1 Globale Gruppen-Steuerung
    --------------------------------------------------------- */
 
 .game-page .category-group-controls {
@@ -586,7 +791,7 @@
 
 
 /* ---------------------------------------------------------
-   7.2 Gruppe
+   10.2 Gruppe
    --------------------------------------------------------- */
 
 .game-page .category-group {
@@ -600,7 +805,7 @@
 
 
 /* ---------------------------------------------------------
-   7.3 Gruppen-Header / Summary
+   10.3 Gruppen-Header / Summary
    --------------------------------------------------------- */
 
 .game-page .category-group-header {
@@ -673,7 +878,7 @@
 
 
 /* ---------------------------------------------------------
-   7.4 Linker Header-Bereich
+   10.4 Linker Header-Bereich
    --------------------------------------------------------- */
 
 .game-page .category-group-header-main {
@@ -696,7 +901,7 @@
 
 
 /* ---------------------------------------------------------
-   7.5 Pfeil
+   10.5 Pfeil
    --------------------------------------------------------- */
 
 .game-page .category-group-chevron {
@@ -727,7 +932,7 @@
 
 
 /* ---------------------------------------------------------
-   7.6 Gruppen-Fortschritt
+   10.6 Gruppen-Fortschritt
    --------------------------------------------------------- */
 
 .game-page .category-group-progress {
@@ -749,7 +954,7 @@
 
 
 /* ---------------------------------------------------------
-   7.7 Gruppen-Inhalt
+   10.7 Gruppen-Inhalt
    --------------------------------------------------------- */
 
 .game-page .category-group-body {
@@ -758,7 +963,7 @@
 
 
 /* ---------------------------------------------------------
-   7.8 Gruppen-Beschreibung
+   10.8 Gruppen-Beschreibung
    --------------------------------------------------------- */
 
 .game-page .category-group-description {
@@ -773,7 +978,7 @@
 
 
 /* =========================================================
-   8. Tracker-Liste
+   11. Tracker-Liste
    ========================================================= */
 
 .game-page .tracker-list {
@@ -789,7 +994,7 @@
 
 
 /* =========================================================
-   9. Tracker-Eintrag
+   12. Tracker-Eintrag
    ========================================================= */
 
 .game-page .tracker-item {
@@ -833,7 +1038,7 @@
 
 
 /* ---------------------------------------------------------
-   9.1 Gefundener Eintrag
+   12.1 Gefundener Eintrag
    --------------------------------------------------------- */
 
 .game-page .tracker-item.is-completed {
@@ -847,7 +1052,7 @@
 
 
 /* =========================================================
-   10. Status-Indikator
+   13. Status-Indikator
    ========================================================= */
 
 .game-page .tracker-item-status {
@@ -888,7 +1093,7 @@
 
 
 /* =========================================================
-   11. Tracker-Inhalt
+   14. Tracker-Inhalt
    ========================================================= */
 
 .game-page .tracker-item-content {
@@ -897,7 +1102,7 @@
 
 
 /* ---------------------------------------------------------
-   11.1 Name
+   14.1 Name
    --------------------------------------------------------- */
 
 .game-page .tracker-item-name {
@@ -920,7 +1125,7 @@
 
 
 /* ---------------------------------------------------------
-   11.2 Beschreibung
+   14.2 Beschreibung
    --------------------------------------------------------- */
 
 .game-page .tracker-item-description {
@@ -934,7 +1139,7 @@
 
 
 /* =========================================================
-   12. Tracker-Details
+   15. Tracker-Details
    ========================================================= */
 
 .game-page .tracker-item-details {
@@ -943,7 +1148,7 @@
 
 
 /* ---------------------------------------------------------
-   12.1 Details-Button / Summary
+   15.1 Details-Button / Summary
    --------------------------------------------------------- */
 
 .game-page .tracker-item-details summary {
@@ -975,7 +1180,7 @@
 
 
 /* ---------------------------------------------------------
-   12.2 Detail-Inhalt
+   15.2 Detail-Inhalt
    --------------------------------------------------------- */
 
 .game-page .tracker-item-details dl {
@@ -1011,7 +1216,7 @@
 
 
 /* =========================================================
-   13. Tracker-Toggle
+   16. Tracker-Toggle
    ========================================================= */
 
 .game-page .tracker-toggle {
@@ -1036,7 +1241,8 @@
 	transition:
 		color 0.2s ease,
 		background-color 0.2s ease,
-		border-color 0.2s ease;
+		border-color 0.2s ease,
+		opacity 0.2s ease;
 }
 
 
@@ -1057,7 +1263,7 @@
 
 
 /* ---------------------------------------------------------
-   13.1 Gefunden
+   16.1 Gefunden
    --------------------------------------------------------- */
 
 .game-page .tracker-toggle.is-completed {
@@ -1074,7 +1280,7 @@
 
 
 /* ---------------------------------------------------------
-   13.2 Deaktivierter Button
+   16.2 Deaktivierter Button
    --------------------------------------------------------- */
 
 .game-page .tracker-toggle:disabled {
@@ -1085,7 +1291,7 @@
 
 
 /* =========================================================
-   14. Lade- und Fehlerzustände
+   17. Lade- und Fehlerzustände
    ========================================================= */
 
 .game-page .loading,
@@ -1105,7 +1311,7 @@
 
 
 /* =========================================================
-   15. Responsive Layout
+   18. Responsive Layout
    ========================================================= */
 
 
@@ -1146,6 +1352,29 @@
 		min-height: 150px;
 
 		padding: 20px;
+	}
+
+
+	/* Filter / Sortierung */
+
+	.game-page .category-filter-sort-row {
+		align-items: flex-start;
+
+		flex-direction: column;
+
+		gap: 14px;
+	}
+
+
+	.game-page .category-status-filter {
+		width: 100%;
+	}
+
+
+	.game-page .category-sort {
+		width: 100%;
+
+		justify-content: flex-start;
 	}
 
 
@@ -1217,6 +1446,13 @@
 	}
 
 
+	/* Kategorie-Bedienelemente */
+
+	.game-page .category-list-controls {
+		margin-top: 16px;
+	}
+
+
 	/* Suche */
 
 	.game-page .category-search-row {
@@ -1231,6 +1467,32 @@
 		min-width: 0;
 
 		text-align: left;
+	}
+
+
+	/* Filter / Sortierung */
+
+	.game-page .category-filter-sort-row {
+		padding: 12px;
+	}
+
+
+	.game-page .category-status-filter {
+		align-items: flex-start;
+
+		flex-direction: column;
+
+		gap: 7px;
+	}
+
+
+	.game-page .category-status-buttons {
+		width: 100%;
+	}
+
+
+	.game-page .category-status-button {
+		flex: 1 1 auto;
 	}
 
 
@@ -1315,10 +1577,31 @@
 	}
 
 
-	/* Suche */
+	/* Statusfilter */
 
-	.game-page .category-search {
-		margin-top: 16px;
+	.game-page .category-status-buttons {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+
+	.game-page .category-status-button {
+		width: 100%;
+	}
+
+
+	/* Sortierung */
+
+	.game-page .category-sort {
+		align-items: stretch;
+		flex-direction: column;
+
+		gap: 7px;
+	}
+
+
+	.game-page .category-sort-select {
+		width: 100%;
 	}
 
 
