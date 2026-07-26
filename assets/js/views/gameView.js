@@ -1,3 +1,8 @@
+/* =========================================================
+   Personal Game Tracker
+   Game View
+   ========================================================= */
+
 import {
 	loadCategoryData,
 	loadManifest,
@@ -11,11 +16,21 @@ import {
 } from "../services/progressService.js";
 
 
+import {
+	getCurrentLanguage,
+	getLocalizedText
+} from "../services/languageService.js";
+
+
 const mainContent =
 	document.getElementById(
 		"main-content"
 	);
 
+
+/* ---------------------------------------------------------
+   1. Spielansicht
+   --------------------------------------------------------- */
 
 /**
  * Rendert eine Spiel- oder Manifestübersicht.
@@ -54,16 +69,39 @@ export async function renderGame(
 			: [];
 
 
+	/*
+	 * Titel ermitteln.
+	 *
+	 * Unterstützt:
+	 *
+	 * "name": "Dark Souls"
+	 *
+	 * sowie:
+	 *
+	 * "name": {
+	 *     "de": "Dark Souls",
+	 *     "en": "Dark Souls"
+	 * }
+	 */
 	const title =
-		options.title ||
-		manifest.name ||
-		game.name;
+		getLocalizedText(
+			options.title ||
+			manifest.name ||
+			game.name,
+			game.id
+		);
 
 
+	/*
+	 * Beschreibung ermitteln.
+	 */
 	const description =
-		options.description ||
-		manifest.description ||
-		"";
+		getLocalizedText(
+			options.description ||
+			manifest.description ||
+			"",
+			""
+		);
 
 
 	mainContent.innerHTML = "";
@@ -105,7 +143,7 @@ export async function renderGame(
 			"back-button";
 
 		backButton.textContent =
-			"← Zurück";
+			getBackButtonText();
 
 
 		backButton.addEventListener(
@@ -280,6 +318,10 @@ export async function renderGame(
 }
 
 
+/* ---------------------------------------------------------
+   2. Kategorie-Kacheln
+   --------------------------------------------------------- */
+
 /**
  * Erstellt eine Kategorie-Kachel.
  *
@@ -314,8 +356,12 @@ function createCategoryCard(
 			"h3"
 		);
 
+
 	title.textContent =
-		category.name;
+		getLocalizedText(
+			category.name,
+			category.id
+		);
 
 
 	button.append(
@@ -323,7 +369,14 @@ function createCategoryCard(
 	);
 
 
-	if (category.description) {
+	const localizedDescription =
+		getLocalizedText(
+			category.description,
+			""
+		);
+
+
+	if (localizedDescription) {
 
 		const description =
 			document.createElement(
@@ -334,7 +387,7 @@ function createCategoryCard(
 			"category-description";
 
 		description.textContent =
-			category.description;
+			localizedDescription;
 
 
 		button.append(
@@ -386,6 +439,10 @@ function createCategoryCard(
 }
 
 
+/* ---------------------------------------------------------
+   3. Gesamtfortschritt
+   --------------------------------------------------------- */
+
 /**
  * Erstellt die Gesamtfortschrittsanzeige.
  *
@@ -417,7 +474,7 @@ function createGameProgress() {
 		);
 
 	label.textContent =
-		"Gesamtfortschritt";
+		getTotalProgressText();
 
 
 	const count =
@@ -489,6 +546,10 @@ function createGameProgress() {
 	return container;
 }
 
+
+/* ---------------------------------------------------------
+   4. Fortschrittsberechnung
+   --------------------------------------------------------- */
 
 /**
  * Berechnet den Fortschritt aller Kategorien
@@ -711,6 +772,10 @@ async function calculateManifestProgress(
 }
 
 
+/* ---------------------------------------------------------
+   5. Fortschrittsanzeige
+   --------------------------------------------------------- */
+
 /**
  * Aktualisiert die Fortschrittsanzeige
  * einer einzelnen Kategorie-Kachel.
@@ -851,6 +916,39 @@ function hideProgressElements(
 	}
 }
 
+
+/* ---------------------------------------------------------
+   6. Lokalisierte UI-Texte
+   --------------------------------------------------------- */
+
+/**
+ * Gibt den Text des Zurück-Buttons zurück.
+ *
+ * @returns {string}
+ */
+function getBackButtonText() {
+	return getCurrentLanguage() === "de"
+		? "← Zurück"
+		: "← Back";
+}
+
+
+/**
+ * Gibt die Beschriftung des
+ * Gesamtfortschritts zurück.
+ *
+ * @returns {string}
+ */
+function getTotalProgressText() {
+	return getCurrentLanguage() === "de"
+		? "Gesamtfortschritt"
+		: "Overall progress";
+}
+
+
+/* ---------------------------------------------------------
+   7. Routing
+   --------------------------------------------------------- */
 
 /**
  * Erzeugt einen Hash für eine Spielroute.
