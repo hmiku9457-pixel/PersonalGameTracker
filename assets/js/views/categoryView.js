@@ -176,7 +176,7 @@ export async function renderCategory(
 		backButton.addEventListener(
 			"click",
 			() => {
-		
+
 				window.location.hash =
 					category.parentHash ||
 					`#game/${game.id}`;
@@ -337,6 +337,16 @@ export async function renderCategory(
 		);
 
 
+		/*
+		 * Gruppenfortschritte zusätzlich anhand
+		 * der tatsächlich gerenderten Item-Zustände
+		 * synchronisieren.
+		 */
+		updateAllCategoryGroupProgress(
+			categoryContent
+		);
+
+
 		updateActiveGameNavigation(
 			game.id
 		);
@@ -371,13 +381,11 @@ export async function renderCategory(
  *
  * @param {HTMLElement} container
  * @param {Object|Array} data
- * @param {string} gameId
  * @param {Object} progressData
  */
 function renderCategoryData(
 	container,
 	data,
-	gameId,
 	progressData
 ) {
 	/*
@@ -425,9 +433,7 @@ function renderCategoryData(
 				renderCategoryGroup(
 					container,
 					group,
-					gameId,
-					progressData,
-					data
+					progressData
 				);
 			}
 
@@ -450,9 +456,7 @@ function renderCategoryData(
 		renderItemList(
 			container,
 			data.items,
-			gameId,
-			progressData,
-			data
+			progressData
 		);
 
 
@@ -470,9 +474,7 @@ function renderCategoryData(
 		renderItemList(
 			container,
 			data,
-			gameId,
-			progressData,
-			data
+			progressData
 		);
 
 
@@ -623,16 +625,12 @@ function setAllCategoryGroups(
  *
  * @param {HTMLElement} container
  * @param {Object} group
- * @param {string} gameId
  * @param {Object} progressData
- * @param {Object|Array} categoryData
  */
 function renderCategoryGroup(
 	container,
 	group,
-	gameId,
-	progressData,
-	categoryData
+	progressData
 ) {
 	/*
 	 * Native Details-Struktur.
@@ -811,9 +809,7 @@ function renderCategoryGroup(
 		renderItemList(
 			body,
 			group.items,
-			gameId,
-			progressData,
-			categoryData
+			progressData
 		);
 	}
 
@@ -1400,6 +1396,36 @@ function updateCategoryGroupProgress(
 
 
 /**
+ * Aktualisiert den Fortschritt aller
+ * sichtbaren Kategoriegruppen.
+ *
+ * @param {HTMLElement} container
+ */
+function updateAllCategoryGroupProgress(
+	container
+) {
+	if (!container) {
+		return;
+	}
+
+
+	const groups =
+		container.querySelectorAll(
+			".category-group"
+		);
+
+
+	for (
+		const group of groups
+	) {
+		updateCategoryGroupProgress(
+			group
+		);
+	}
+}
+
+
+/**
  * Aktualisiert den Fortschritt der aktuell
  * geöffneten Kategorie.
  *
@@ -1692,8 +1718,7 @@ function registerProgressToggleHandler(
 				 *
 				 * Befindet sich das Item in keiner
 				 * Unterkategorie, liefert closest()
-				 * null. Die Update-Funktion beendet
-				 * sich in diesem Fall ohne Änderung.
+				 * null.
 				 */
 				if (listItem) {
 					updateCategoryGroupProgress(
@@ -1754,6 +1779,19 @@ function registerProgressToggleHandler(
 						button,
 						currentState,
 						progressData?.authenticated === true
+					);
+				}
+
+
+				/*
+				 * Sicherheitshalber auch den sichtbaren
+				 * Gruppenfortschritt wieder synchronisieren.
+				 */
+				if (listItem) {
+					updateCategoryGroupProgress(
+						listItem.closest(
+							".category-group"
+						)
 					);
 				}
 
