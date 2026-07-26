@@ -25,6 +25,10 @@ import {
 	updateActiveGameNavigation
 } from "./navigationView.js";
 
+import {
+	renderCategoryControls
+} from "./categoryControlsView.js";
+
 
 /**
  * Gibt den Main-Container zurück.
@@ -291,6 +295,22 @@ export async function renderCategory(
 			categoryContent,
 			data,
 			progressData
+		);
+
+
+		/*
+		 * Bedienelemente der Kategorie
+		 * erstellen.
+		 *
+		 * Aktuell:
+		 * - Volltextsuche
+		 *
+		 * Später:
+		 * - Statusfilter
+		 * - Sortierung
+		 */
+		renderCategoryControls(
+			categoryContent
 		);
 
 
@@ -632,13 +652,6 @@ function renderCategoryGroup(
 	group,
 	progressData
 ) {
-	/*
-	 * Native Details-Struktur.
-	 *
-	 * Ohne gesetztes "open"-Attribut
-	 * ist die Gruppe standardmäßig
-	 * geschlossen.
-	 */
 	const section =
 		document.createElement(
 			"details"
@@ -670,11 +683,6 @@ function renderCategoryGroup(
 		"category-group-header";
 
 
-	/*
-	 * Linker Bereich:
-	 *
-	 * Pfeil + Gruppenname
-	 */
 	const headerMain =
 		document.createElement(
 			"span"
@@ -1088,9 +1096,6 @@ function createItemDetails(item) {
 	const detailEntries = [];
 
 
-	/*
-	 * Universelle Detail-Struktur
-	 */
 	if (
 		Array.isArray(
 			item.details
@@ -1125,9 +1130,6 @@ function createItemDetails(item) {
 	}
 
 
-	/*
-	 * location weiterhin als Fallback.
-	 */
 	if (
 		item.location &&
 		!detailEntries.some(
@@ -1715,10 +1717,6 @@ function registerProgressToggleHandler(
 				/*
 				 * Fortschritt der Unterkategorie
 				 * sofort neu berechnen.
-				 *
-				 * Befindet sich das Item in keiner
-				 * Unterkategorie, liefert closest()
-				 * null.
 				 */
 				if (listItem) {
 					updateCategoryGroupProgress(
@@ -1756,12 +1754,6 @@ function registerProgressToggleHandler(
 				);
 
 
-				/*
-				 * Der lokale Zustand wurde im Service
-				 * bei einem Fehler nicht verändert.
-				 * Deshalb stellen wir den alten Zustand
-				 * wieder dar.
-				 */
 				if (
 					listItem &&
 					statusIndicator
@@ -1783,10 +1775,6 @@ function registerProgressToggleHandler(
 				}
 
 
-				/*
-				 * Sicherheitshalber auch den sichtbaren
-				 * Gruppenfortschritt wieder synchronisieren.
-				 */
 				if (listItem) {
 					updateCategoryGroupProgress(
 						listItem.closest(
