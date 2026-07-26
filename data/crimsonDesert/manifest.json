@@ -6,12 +6,14 @@
       "id": "achievements",
       "name": "Achievements",
       "description": "Steam-Erfolge aus dem Hauptspiel",
+			"type": "category",
       "file": "achievements.json"
     },
     {
       "id": "equipmentSets",
       "name": "Equipment Sets",
       "description": "Equipment Sets",
+			"type": "category",
       "file": "equipmentSets.json"
     }
   ]
