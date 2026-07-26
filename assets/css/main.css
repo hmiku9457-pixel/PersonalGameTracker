@@ -41,39 +41,109 @@ body {
    --------------------------------------------------------- */
 
 header {
-	position: relative;
-
 	min-height: 70px;
 	padding: 20px 30px;
 
-	display: flex;
+	display: grid;
+	grid-template-columns:
+		minmax(0, 1fr)
+		auto
+		minmax(0, 1fr);
 	align-items: center;
-	justify-content: center;
 
 	background-color: #1f2937;
 	border-bottom: 1px solid #374151;
 }
 
 header h1 {
+	grid-column: 2;
+
 	margin: 0;
 
 	font-size: 1.5rem;
 	font-weight: 600;
 
 	text-align: center;
+	white-space: nowrap;
 }
 
 
 /* ---------------------------------------------------------
-   2.1 Account-Modul
+   2.1 Sprach-Modul
+   --------------------------------------------------------- */
+
+.language-module {
+	grid-column: 1;
+
+	display: flex;
+	align-items: center;
+	justify-self: start;
+
+	gap: 10px;
+}
+
+
+/* Label */
+
+.language-label {
+	color: #d1d5db;
+
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+
+/* Auswahlfeld */
+
+.language-select {
+	min-width: 120px;
+
+	padding: 8px 34px 8px 12px;
+
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+
+	color: #e5e7eb;
+	background-color: #374151;
+
+	border: 1px solid #4b5563;
+	border-radius: 6px;
+
+	cursor: pointer;
+
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease;
+}
+
+
+/* Hover */
+
+.language-select:hover {
+	color: #ffffff;
+	background-color: #4b5563;
+	border-color: #6b7280;
+}
+
+
+/* Tastatur-Navigation */
+
+.language-select:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   2.2 Account-Modul
    --------------------------------------------------------- */
 
 .account-module {
-	position: absolute;
-	top: 50%;
-	right: 30px;
+	grid-column: 3;
 
-	transform: translateY(-50%);
+	justify-self: end;
 }
 
 
@@ -580,21 +650,34 @@ button:disabled {
 	header {
 		padding: 16px 20px;
 
+		display: flex;
 		flex-direction: column;
+
 		gap: 12px;
 	}
 
 	header h1 {
 		font-size: 1.35rem;
+		white-space: normal;
 	}
 
 
-	/* Account-Modul unter dem Seitentitel anzeigen */
+	/* Sprach-Modul */
+
+	.language-module {
+		justify-content: center;
+		justify-self: auto;
+	}
+
+	.language-select {
+		min-width: 120px;
+	}
+
+
+	/* Account-Modul */
 
 	.account-module {
-		position: static;
-
-		transform: none;
+		justify-self: auto;
 	}
 
 	#account-logged-out:not([hidden]),
@@ -671,6 +754,23 @@ button:disabled {
 		padding-left: 16px;
 	}
 
+
+	/* Sprach-Modul */
+
+	.language-module {
+		width: 100%;
+	}
+
+	.language-select {
+		flex: 1;
+
+		min-width: 0;
+		max-width: 180px;
+	}
+
+
+	/* Account-Modul */
+
 	.account-module button {
 		padding: 7px 12px;
 	}
@@ -679,6 +779,8 @@ button:disabled {
 		max-width: 100%;
 	}
 
+
+	/* Sidebar */
 
 	.sidebar {
 		padding: 16px;
@@ -693,10 +795,14 @@ button:disabled {
 	}
 
 
+	/* Hauptinhalt */
+
 	main {
 		padding: 16px;
 	}
 
+
+	/* Authentifizierungsdialog */
 
 	.auth-dialog {
 		width: calc(100% - 20px);
