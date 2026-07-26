@@ -1,571 +1,1255 @@
 [
 	{
 		"id": "darkSouls2.achievement.selfRecollection",
-		"name": "Self Recollection",
-		"description": "Stelle deine menschliche Gestalt wieder her und beginne deine Reise in Drangleic.",
+		"name": {
+			"de": "Verlorene Erinnerung",
+			"en": "Self Recollection"
+		},
+		"description": {
+			"de": "Stelle deine menschliche Gestalt wieder her und beginne deine Reise in Drangleic.",
+			"en": "Restore your human form and begin your journey through Drangleic."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.thisIsDarkSouls",
-		"name": "This is Dark Souls",
-		"description": "Stirb zum ersten Mal.",
+		"name": {
+			"de": "Willkommen bei Dark Souls",
+			"en": "This is Dark Souls"
+		},
+		"description": {
+			"de": "Stirb zum ersten Mal.",
+			"en": "Die for the first time."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.lastGiant",
-		"name": "Last Giant",
-		"description": "Besiege den Last Giant.",
+		"name": {
+			"de": "Letzter Riese",
+			"en": "Last Giant"
+		},
+		"description": {
+			"de": "Besiege den Last Giant.",
+			"en": "Defeat the Last Giant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.covenantOfTheMeek",
-		"name": "Covenant of the Meek",
-		"description": "Entdecke den Eid 'Way of Blue'.",
+		"name": {
+			"de": "Eid der Demütigen",
+			"en": "Covenant of the Meek"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Way of Blue'.",
+			"en": "Discover the Way of Blue covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.sinnerSBonfire",
-		"name": "Sinner's Bonfire",
-		"description": "Entzünde das Ur-Leuchtfeuer im Gebiet von Sinner's Rise.",
+		"name": {
+			"de": "Leuchtfeuer des Sünderhügels",
+			"en": "Sinner's Bonfire"
+		},
+		"description": {
+			"de": "Entzünde das Ur-Leuchtfeuer im Gebiet von Sinner's Rise.",
+			"en": "Light the primal bonfire in the Sinner's Rise area."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.changeOfClothes",
-		"name": "Change of Clothes",
-		"description": "Gib Rosabeth of Melfia Kleidung.",
+		"name": {
+			"de": "Kleiderwechsel",
+			"en": "Change of Clothes"
+		},
+		"description": {
+			"de": "Gib Rosabeth of Melfia Kleidung.",
+			"en": "Give Rosabeth of Melfia some clothing."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Nebeninhalt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Nebeninhalt",
+					"en": "Side Content"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.clangorousCovenant",
-		"name": "Clangorous Covenant",
-		"description": "Entdecke den Eid 'Bell Keepers'.",
+		"name": {
+			"de": "Klangvoller Eid",
+			"en": "Clangorous Covenant"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Bell Keepers'.",
+			"en": "Discover the Bell Keepers covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.brightstoneBonfire",
-		"name": "Brightstone Bonfire",
-		"description": "Entzünde das Ur-Leuchtfeuer in Brightstone Cove Tseldora.",
+		"name": {
+			"de": "Leuchtfeuer der Lichtsteinbucht",
+			"en": "Brightstone Bonfire"
+		},
+		"description": {
+			"de": "Entzünde das Ur-Leuchtfeuer in Brightstone Cove Tseldora.",
+			"en": "Light the primal bonfire in Brightstone Cove Tseldora."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.ironKeepBonfire",
-		"name": "Iron Keep Bonfire",
-		"description": "Entzünde das Ur-Leuchtfeuer im Iron Keep.",
+		"name": {
+			"de": "Leuchtfeuer des Eisenschlosses",
+			"en": "Iron Keep Bonfire"
+		},
+		"description": {
+			"de": "Entzünde das Ur-Leuchtfeuer im Iron Keep.",
+			"en": "Light the primal bonfire in the Iron Keep."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.gulchBonfire",
-		"name": "Gulch Bonfire",
-		"description": "Entzünde das Ur-Leuchtfeuer im Black Gulch.",
+		"name": {
+			"de": "Leuchtfeuer der Schlucht",
+			"en": "Gulch Bonfire"
+		},
+		"description": {
+			"de": "Entzünde das Ur-Leuchtfeuer im Black Gulch.",
+			"en": "Light the primal bonfire in the Black Gulch."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.gnawingCovenant",
-		"name": "Gnawing Covenant",
-		"description": "Entdecke den Eid 'Rat King'.",
+		"name": {
+			"de": "Pestbehafteter Eid",
+			"en": "Gnawing Covenant"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Rat King'.",
+			"en": "Discover the Rat King covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.supremeWeapon",
-		"name": "Supreme Weapon",
-		"description": "Verstärke eine Waffe bis zur höchsten Stufe.",
+		"name": {
+			"de": "Mächtigste Waffe",
+			"en": "Supreme Weapon"
+		},
+		"description": {
+			"de": "Verstärke eine Waffe bis zur höchsten Stufe.",
+			"en": "Reinforce a weapon to the highest level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.lookingGlassKnight",
-		"name": "Looking Glass Knight",
-		"description": "Besiege den Looking Glass Knight.",
+		"name": {
+			"de": "Spiegel-Ritter",
+			"en": "Looking Glass Knight"
+		},
+		"description": {
+			"de": "Besiege den Looking Glass Knight.",
+			"en": "Defeat the Looking Glass Knight."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.kingSRing",
-		"name": "King's Ring",
-		"description": "Erhalte den King's Ring.",
+		"name": {
+			"de": "Königsring",
+			"en": "King's Ring"
+		},
+		"description": {
+			"de": "Erhalte den King's Ring.",
+			"en": "Acquire the King's Ring."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.ancientDragon",
-		"name": "Ancient Dragon",
-		"description": "Erhalte das Ashen Mist Heart.",
+		"name": {
+			"de": "Uralter Drache",
+			"en": "Ancient Dragon"
+		},
+		"description": {
+			"de": "Erhalte das Ashen Mist Heart.",
+			"en": "Acquire the Ashen Mist Heart."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.covenantOfTheFittest",
-		"name": "Covenant of the Fittest",
-		"description": "Entdecke den Eid 'Company of Champions'.",
+		"name": {
+			"de": "Eid der Stärke",
+			"en": "Covenant of the Fittest"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Company of Champions'.",
+			"en": "Discover the Company of Champions covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.brilliantCovenant",
-		"name": "Brilliant Covenant",
-		"description": "Entdecke den Eid 'Heirs of the Sun'.",
+		"name": {
+			"de": "Eid mit der Helligkeit",
+			"en": "Brilliant Covenant"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Heirs of the Sun'.",
+			"en": "Discover the Heirs of the Sun covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.reflectionsOnDisembodiment",
-		"name": "Reflections on Disembodiment",
-		"description": "Erhalte die Ausrüstung von Vengarl.",
+		"name": {
+			"de": "Entkörperlichte Gedanken",
+			"en": "Reflections on Disembodiment"
+		},
+		"description": {
+			"de": "Erhalte die Ausrüstung von Vengarl.",
+			"en": "Acquire Vengarl's equipment."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.protectorCovenant",
-		"name": "Protector Covenant",
-		"description": "Entdecke den Eid 'Blue Sentinels'.",
+		"name": {
+			"de": "Eid der Beschützer",
+			"en": "Protector Covenant"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Blue Sentinels'.",
+			"en": "Discover the Blue Sentinels covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.theHeir",
-		"name": "The Heir",
-		"description": "Erreiche das reguläre Spielende und nimm den Thron ein.",
+		"name": {
+			"de": "Thronerbe",
+			"en": "The Heir"
+		},
+		"description": {
+			"de": "Erreiche das reguläre Spielende und nimm den Thron ein.",
+			"en": "Reach the regular ending and take the throne."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Ende"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Ende",
+					"en": "Ending"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.vendrick",
-		"name": "Vendrick",
-		"description": "Besiege König Vendrick.",
+		"name": {
+			"de": "Vendrick",
+			"en": "Vendrick"
+		},
+		"description": {
+			"de": "Besiege König Vendrick.",
+			"en": "Defeat King Vendrick."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.sanguinaryCovenant",
-		"name": "Sanguinary Covenant",
-		"description": "Entdecke den Eid 'Brotherhood of Blood'.",
+		"name": {
+			"de": "Eid der Blutrünstigen",
+			"en": "Sanguinary Covenant"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Brotherhood of Blood'.",
+			"en": "Discover the Brotherhood of Blood covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.abysmalCovenant",
-		"name": "Abysmal Covenant",
-		"description": "Entdecke den Eid 'Pilgrims of Dark'.",
+		"name": {
+			"de": "Eid mit der Finsternis",
+			"en": "Abysmal Covenant"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Pilgrims of Dark'.",
+			"en": "Discover the Pilgrims of Dark covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.garrulousMiser",
-		"name": "Garrulous Miser",
-		"description": "Erhalte die Ausrüstung von Laddersmith Gilligan.",
+		"name": {
+			"de": "Der geschwätzige Geizkragen",
+			"en": "Garrulous Miser"
+		},
+		"description": {
+			"de": "Erhalte die Ausrüstung von Laddersmith Gilligan.",
+			"en": "Acquire Laddersmith Gilligan's equipment."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.selflessGiver",
-		"name": "Selfless Giver",
-		"description": "Erreiche den höchsten Rang in einem Eid.",
+		"name": {
+			"de": "Ein selbstloses Geschenk",
+			"en": "Selfless Giver"
+		},
+		"description": {
+			"de": "Erreiche den höchsten Rang in einem Eid.",
+			"en": "Reach the highest rank in a covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.holderOfTheFort",
-		"name": "Holder of the Fort",
-		"description": "Erhalte die Ausrüstung von Captain Drummond.",
+		"name": {
+			"de": "Festungswächter",
+			"en": "Holder of the Fort"
+		},
+		"description": {
+			"de": "Erhalte die Ausrüstung von Captain Drummond.",
+			"en": "Acquire Captain Drummond's equipment."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.gatheringOfExiles",
-		"name": "Gathering of Exiles",
-		"description": "Bringe die erforderlichen NPCs nach Majula.",
+		"name": {
+			"de": "Versammlung der Verbannten",
+			"en": "Gathering of Exiles"
+		},
+		"description": {
+			"de": "Bringe die erforderlichen NPCs nach Majula.",
+			"en": "Bring the required NPCs to Majula."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.covenantOfAncients",
-		"name": "Covenant of Ancients",
-		"description": "Entdecke den Eid 'Dragon Remnants'.",
+		"name": {
+			"de": "Uralter Eid",
+			"en": "Covenant of Ancients"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Dragon Remnants'.",
+			"en": "Discover the Dragon Remnants covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.curiousMap",
-		"name": "Curious Map",
-		"description": "Entzünde alle Flammen auf Cales Karte in Majula.",
+		"name": {
+			"de": "Eine seltsame Karte",
+			"en": "Curious Map"
+		},
+		"description": {
+			"de": "Entzünde alle Flammen auf Cales Karte in Majula.",
+			"en": "Light all flames on Cale's map in Majula."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Nebeninhalt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Nebeninhalt",
+					"en": "Side Content"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.smithForLife",
-		"name": "Smith for Life",
-		"description": "Erhalte die Ausrüstung von Steady Hand McDuff.",
+		"name": {
+			"de": "Der Lebensschmied",
+			"en": "Smith for Life"
+		},
+		"description": {
+			"de": "Erhalte die Ausrüstung von Steady Hand McDuff.",
+			"en": "Acquire Steady Hand McDuff's equipment."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.lucatiel",
-		"name": "Lucatiel",
-		"description": "Erhalte die Ausrüstung von Lucatiel of Mirrah.",
+		"name": {
+			"de": "Lucatiel",
+			"en": "Lucatiel"
+		},
+		"description": {
+			"de": "Erhalte die Ausrüstung von Lucatiel of Mirrah.",
+			"en": "Acquire Lucatiel of Mirrah's equipment."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.gestureMaestro",
-		"name": "Gesture Maestro",
-		"description": "Erlerne alle Gesten.",
+		"name": {
+			"de": "Gesten-Maestro",
+			"en": "Gesture Maestro"
+		},
+		"description": {
+			"de": "Erlerne alle Gesten.",
+			"en": "Learn all gestures."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.moonlightGreatsword",
-		"name": "Moonlight Greatsword",
-		"description": "Erhalte die Ausrüstung von Benhart of Jugo.",
+		"name": {
+			"de": "Mondlicht-Grosschwert",
+			"en": "Moonlight Greatsword"
+		},
+		"description": {
+			"de": "Erhalte die Ausrüstung von Benhart of Jugo.",
+			"en": "Acquire Benhart of Jugo's equipment."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "NPC"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "NPC",
+					"en": "NPC"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.masterOfHexes",
-		"name": "Master of Hexes",
-		"description": "Erhalte alle Hexereien.",
+		"name": {
+			"de": "Meister der Hexereien",
+			"en": "Master of Hexes"
+		},
+		"description": {
+			"de": "Erhalte alle Hexereien.",
+			"en": "Acquire all hexes."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.masterOfSorcery",
-		"name": "Master of Sorcery",
-		"description": "Erhalte alle Zaubereien.",
+		"name": {
+			"de": "Meister der Zauberei",
+			"en": "Master of Sorcery"
+		},
+		"description": {
+			"de": "Erhalte alle Zaubereien.",
+			"en": "Acquire all sorceries."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.masterOfMiracles",
-		"name": "Master of Miracles",
-		"description": "Erhalte alle Wunder.",
+		"name": {
+			"de": "Meister der Wunder",
+			"en": "Master of Miracles"
+		},
+		"description": {
+			"de": "Erhalte alle Wunder.",
+			"en": "Acquire all miracles."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.masterOfPyromancy",
-		"name": "Master of Pyromancy",
-		"description": "Erhalte alle Pyromantien.",
+		"name": {
+			"de": "Meister der Pyromantie",
+			"en": "Master of Pyromancy"
+		},
+		"description": {
+			"de": "Erhalte alle Pyromantien.",
+			"en": "Acquire all pyromancies."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls2.achievement.theDarkSoul",
-		"name": "The Dark Soul",
-		"description": "Schalte alle anderen Achievements frei.",
+		"name": {
+			"de": "Die Finstere Seele",
+			"en": "The Dark Soul"
+		},
+		"description": {
+			"de": "Schalte alle anderen Achievements frei.",
+			"en": "Unlock all other achievements."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Abschluss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Abschluss",
+					"en": "Completion"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls II: Scholar of the First Sin (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls II: Scholar of the First Sin (Steam)",
+					"en": "Dark Souls II: Scholar of the First Sin (Steam)"
+				}
 			}
 		]
 	}
