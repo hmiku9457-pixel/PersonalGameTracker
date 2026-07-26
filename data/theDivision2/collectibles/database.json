@@ -2,13 +2,1275 @@
   "id": "database",
   "name": "Database",
   "description": "Database aus The Division 2.",
-  "lastUpdated": "2026-07-25",
+  "lastUpdated": "2026-07-26",
   "dataStatus": {
     "scope": "individual-items",
-    "itemCount": 107,
-    "pendingNameVerification": 18
+    "itemCount": 211,
+    "groupCount": 18,
+    "groupStructureVerifiedFromInGameScreenshots": true,
+    "pendingNameVerification": 122,
+    "note": "Alle 18 Gruppen und ihre In-Game-Zähler entsprechen den vom Nutzer bereitgestellten Screenshots. Bereits verifizierte Einzelitems wurden beibehalten; bei neu ergänzten Gruppen werden unbekannte Einzelnamen transparent als noch nicht verifiziert markiert."
   },
   "groups": [
+    {
+      "id": "database-combatintel",
+      "name": "Database – Combat Intel",
+      "items": [
+        {
+          "id": "division2.collectible.database.combatintel.001",
+          "name": "Combat Intel #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.002",
+          "name": "Combat Intel #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.003",
+          "name": "Combat Intel #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.004",
+          "name": "Combat Intel #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.005",
+          "name": "Combat Intel #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.006",
+          "name": "Combat Intel #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.007",
+          "name": "Combat Intel #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.008",
+          "name": "Combat Intel #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.009",
+          "name": "Combat Intel #09 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.010",
+          "name": "Combat Intel #10 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.011",
+          "name": "Combat Intel #11 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.012",
+          "name": "Combat Intel #12 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.013",
+          "name": "Combat Intel #13 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.014",
+          "name": "Combat Intel #14 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.015",
+          "name": "Combat Intel #15 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.016",
+          "name": "Combat Intel #16 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.017",
+          "name": "Combat Intel #17 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.018",
+          "name": "Combat Intel #18 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.019",
+          "name": "Combat Intel #19 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.020",
+          "name": "Combat Intel #20 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.021",
+          "name": "Combat Intel #21 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "21 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.022",
+          "name": "Combat Intel #22 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "22 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.023",
+          "name": "Combat Intel #23 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "23 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.024",
+          "name": "Combat Intel #24 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "24 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.025",
+          "name": "Combat Intel #25 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "25 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.026",
+          "name": "Combat Intel #26 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "26 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.027",
+          "name": "Combat Intel #27 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "27 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.028",
+          "name": "Combat Intel #28 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "28 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.029",
+          "name": "Combat Intel #29 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "29 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.030",
+          "name": "Combat Intel #30 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "30 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.031",
+          "name": "Combat Intel #31 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "31 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.032",
+          "name": "Combat Intel #32 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "32 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.033",
+          "name": "Combat Intel #33 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "33 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.034",
+          "name": "Combat Intel #34 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "34 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.035",
+          "name": "Combat Intel #35 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "35 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.combatintel.036",
+          "name": "Combat Intel #36 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Combat Intel“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Combat Intel"
+            },
+            {
+              "label": "Position",
+              "value": "36 / 36"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-danversNetwork",
+      "name": "Database – Danver's Network",
+      "items": [
+        {
+          "id": "division2.collectible.database.danvers-network.001-alpha",
+          "name": "Alpha",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.002-danvers-network-02-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #02 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.003-danvers-network-03-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #03 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.004-danvers-network-04-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #04 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.005-danvers-network-05-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #05 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.006-danvers-network-06-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #06 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.007-danvers-network-07-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #07 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.008-danvers-network-08-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #08 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.009-danvers-network-09-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #09 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.010-danvers-network-10-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #10 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.011-danvers-network-11-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #11 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.012-danvers-network-12-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #12 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.013-danvers-network-13-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #13 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.014-danvers-network-14-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #14 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.015-danvers-network-15-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #15 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.016-danvers-network-16-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #16 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        }
+      ]
+    },
     {
       "id": "database-ellis-at-camp-white-oak",
       "name": "Database – Ellis at Camp White Oak",
@@ -102,6 +1364,744 @@
             {
               "label": "Fundort",
               "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-factionhyenas",
+      "name": "Database – Faction: Hyenas",
+      "items": [
+        {
+          "id": "division2.collectible.database.factionhyenas.001",
+          "name": "Faction: Hyenas #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.002",
+          "name": "Faction: Hyenas #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.003",
+          "name": "Faction: Hyenas #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.004",
+          "name": "Faction: Hyenas #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.005",
+          "name": "Faction: Hyenas #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.006",
+          "name": "Faction: Hyenas #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.007",
+          "name": "Faction: Hyenas #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.008",
+          "name": "Faction: Hyenas #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionhyenas.009",
+          "name": "Faction: Hyenas #09 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Hyenas“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-factionoutcasts",
+      "name": "Database – Faction: Outcasts",
+      "items": [
+        {
+          "id": "division2.collectible.database.factionoutcasts.001",
+          "name": "Faction: Outcasts #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.002",
+          "name": "Faction: Outcasts #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.003",
+          "name": "Faction: Outcasts #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.004",
+          "name": "Faction: Outcasts #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.005",
+          "name": "Faction: Outcasts #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.006",
+          "name": "Faction: Outcasts #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.007",
+          "name": "Faction: Outcasts #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.008",
+          "name": "Faction: Outcasts #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factionoutcasts.009",
+          "name": "Faction: Outcasts #09 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: Outcasts“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-factiontruesons",
+      "name": "Database – Faction: True Sons",
+      "items": [
+        {
+          "id": "division2.collectible.database.factiontruesons.001",
+          "name": "Faction: True Sons #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.002",
+          "name": "Faction: True Sons #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.003",
+          "name": "Faction: True Sons #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.004",
+          "name": "Faction: True Sons #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.005",
+          "name": "Faction: True Sons #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.006",
+          "name": "Faction: True Sons #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.007",
+          "name": "Faction: True Sons #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.008",
+          "name": "Faction: True Sons #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.009",
+          "name": "Faction: True Sons #09 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.010",
+          "name": "Faction: True Sons #10 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.011",
+          "name": "Faction: True Sons #11 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.factiontruesons.012",
+          "name": "Faction: True Sons #12 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Faction: True Sons“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 12"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
             }
           ]
         }
@@ -252,6 +2252,798 @@
       ]
     },
     {
+      "id": "database-lostEllisMemos",
+      "name": "Database – Lost Ellis Memos",
+      "items": [
+        {
+          "id": "division2.collectible.database.lost-ellis-memos.001-lost-ellis-memo-01-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Lost Ellis Memo #01 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Lost Ellis Memos"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.lost-ellis-memos.002-lost-ellis-memo-02-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Lost Ellis Memo #02 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Lost Ellis Memos"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.lost-ellis-memos.003-lost-ellis-memo-03-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Lost Ellis Memo #03 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Lost Ellis Memos"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        }
+      ]
+    },
+    {
+      "id": "database-organizations",
+      "name": "Database – Organizations",
+      "items": [
+        {
+          "id": "division2.collectible.database.organizations.001",
+          "name": "Organizations #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.002",
+          "name": "Organizations #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.003",
+          "name": "Organizations #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.004",
+          "name": "Organizations #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.005",
+          "name": "Organizations #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.006",
+          "name": "Organizations #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.007",
+          "name": "Organizations #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.008",
+          "name": "Organizations #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.009",
+          "name": "Organizations #09 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.010",
+          "name": "Organizations #10 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.011",
+          "name": "Organizations #11 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.012",
+          "name": "Organizations #12 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.organizations.013",
+          "name": "Organizations #13 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Organizations“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Organizations"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-profilescivilians",
+      "name": "Database – Profiles: Civilians",
+      "items": [
+        {
+          "id": "division2.collectible.database.profilescivilians.001",
+          "name": "Profiles: Civilians #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.002",
+          "name": "Profiles: Civilians #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.003",
+          "name": "Profiles: Civilians #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.004",
+          "name": "Profiles: Civilians #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.005",
+          "name": "Profiles: Civilians #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.006",
+          "name": "Profiles: Civilians #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.007",
+          "name": "Profiles: Civilians #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profilescivilians.008",
+          "name": "Profiles: Civilians #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Civilians“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Civilians"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-profileskeypeople",
+      "name": "Database – Profiles: Key People",
+      "items": [
+        {
+          "id": "division2.collectible.database.profileskeypeople.001",
+          "name": "Profiles: Key People #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.002",
+          "name": "Profiles: Key People #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.003",
+          "name": "Profiles: Key People #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.004",
+          "name": "Profiles: Key People #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.005",
+          "name": "Profiles: Key People #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.006",
+          "name": "Profiles: Key People #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.007",
+          "name": "Profiles: Key People #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profileskeypeople.008",
+          "name": "Profiles: Key People #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Profiles: Key People“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: Key People"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "database-profiles-new-york",
       "name": "Database – Profiles: New York",
       "items": [
@@ -344,6 +3136,228 @@
             {
               "label": "Fundort",
               "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-reports",
+      "name": "Database – Reports",
+      "items": [
+        {
+          "id": "division2.collectible.database.reports.001",
+          "name": "Reports #01 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.002",
+          "name": "Reports #02 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.003",
+          "name": "Reports #03 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.004",
+          "name": "Reports #04 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.005",
+          "name": "Reports #05 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.006",
+          "name": "Reports #06 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.007",
+          "name": "Reports #07 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.008",
+          "name": "Reports #08 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.reports.009",
+          "name": "Reports #09 – Name noch nicht verifiziert",
+          "description": "Database-Eintrag aus der Gruppe „Reports“.",
+          "verificationStatus": "pending-name-verification",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Reports"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Hinweis",
+              "value": "Gruppenname und Anzahl sind durch die In-Game-Screenshots bestätigt; der einzelne Name ist noch nicht verifiziert."
             }
           ]
         }
@@ -2078,473 +5092,6 @@
               "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "database-danversNetwork",
-      "name": "Database – Danver's Network",
-      "items": [
-        {
-          "id": "division2.collectible.database.danvers-network.001-alpha",
-          "name": "Alpha",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "1 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ]
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.002-danvers-network-02-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #02 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "2 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.003-danvers-network-03-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #03 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "3 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.004-danvers-network-04-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #04 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "4 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.005-danvers-network-05-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #05 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "5 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.006-danvers-network-06-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #06 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "6 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.007-danvers-network-07-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #07 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "7 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.008-danvers-network-08-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #08 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "8 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.009-danvers-network-09-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #09 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "9 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.010-danvers-network-10-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #10 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "10 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.011-danvers-network-11-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #11 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "11 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.012-danvers-network-12-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #12 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "12 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.013-danvers-network-13-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #13 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "13 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.014-danvers-network-14-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #14 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "14 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.015-danvers-network-15-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #15 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "15 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.danvers-network.016-danvers-network-16-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Danver's Network #16 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Danver's Network“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Danver's Network"
-            },
-            {
-              "label": "Position",
-              "value": "16 / 16"
-            },
-            {
-              "label": "Fundort",
-              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        }
-      ]
-    },
-    {
-      "id": "database-lostEllisMemos",
-      "name": "Database – Lost Ellis Memos",
-      "items": [
-        {
-          "id": "division2.collectible.database.lost-ellis-memos.001-lost-ellis-memo-01-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Lost Ellis Memo #01 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Lost Ellis Memos"
-            },
-            {
-              "label": "Position",
-              "value": "1 / 3"
-            },
-            {
-              "label": "Fundort",
-              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.lost-ellis-memos.002-lost-ellis-memo-02-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Lost Ellis Memo #02 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Lost Ellis Memos"
-            },
-            {
-              "label": "Position",
-              "value": "2 / 3"
-            },
-            {
-              "label": "Fundort",
-              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
-        },
-        {
-          "id": "division2.collectible.database.lost-ellis-memos.003-lost-ellis-memo-03-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Lost Ellis Memo #03 – Name noch nicht öffentlich verifiziert",
-          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
-          "details": [
-            {
-              "label": "Typ",
-              "value": "Database"
-            },
-            {
-              "label": "Sammlung",
-              "value": "Lost Ellis Memos"
-            },
-            {
-              "label": "Position",
-              "value": "3 / 3"
-            },
-            {
-              "label": "Fundort",
-              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
-            }
-          ],
-          "verificationStatus": "pending-name-verification"
         }
       ]
     }
