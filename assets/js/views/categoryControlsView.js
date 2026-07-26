@@ -4,6 +4,87 @@
    ========================================================= */
 
 
+import {
+	getCurrentLanguage,
+	getCurrentLocale
+} from "../services/languageService.js";
+
+
+/* ---------------------------------------------------------
+   1. UI-Texte
+   --------------------------------------------------------- */
+
+const UI_TEXT = {
+	de: {
+		searchLabel: "Kategorie durchsuchen",
+		searchPlaceholder:
+			"Name, Beschreibung, Fundort ...",
+
+		status: "Status:",
+		all: "Alle",
+		incomplete: "Nicht gefunden",
+		completed: "Gefunden",
+
+		sort: "Sortierung:",
+
+		noResults:
+			"Keine passenden Items gefunden.",
+
+		resultSingular: "Treffer",
+		resultPlural: "Treffer",
+
+		itemSingular: "Item",
+		itemPlural: "Items"
+	},
+
+	en: {
+		searchLabel: "Search category",
+		searchPlaceholder:
+			"Name, description, location ...",
+
+		status: "Status:",
+		all: "All",
+		incomplete: "Not found",
+		completed: "Found",
+
+		sort: "Sort:",
+
+		noResults:
+			"No matching items found.",
+
+		resultSingular: "result",
+		resultPlural: "results",
+
+		itemSingular: "item",
+		itemPlural: "items"
+	}
+};
+
+
+/**
+ * Gibt einen UI-Text in der aktuell
+ * ausgewählten Sprache zurück.
+ *
+ * @param {string} key
+ * @returns {string}
+ */
+function getUiText(key) {
+	const language =
+		getCurrentLanguage();
+
+
+	return (
+		UI_TEXT[language]?.[key] ??
+		UI_TEXT.en?.[key] ??
+		key
+	);
+}
+
+
+/* ---------------------------------------------------------
+   2. Observer
+   --------------------------------------------------------- */
+
 /*
  * Es soll immer nur ein Observer für die aktuell
  * dargestellte Kategorie aktiv sein.
@@ -14,6 +95,10 @@
 let activeItemStateObserver =
 	null;
 
+
+/* ---------------------------------------------------------
+   3. Kategorie-Controls
+   --------------------------------------------------------- */
 
 /**
  * Erstellt die Bedienelemente für die aktuell
@@ -140,7 +225,9 @@ export function renderCategoryControls(
 
 
 	searchLabel.textContent =
-		"Kategorie durchsuchen";
+		getUiText(
+			"searchLabel"
+		);
 
 
 	const searchRow =
@@ -172,7 +259,9 @@ export function renderCategoryControls(
 
 
 	searchInput.placeholder =
-		"Name, Beschreibung, Fundort ...";
+		getUiText(
+			"searchPlaceholder"
+		);
 
 
 	searchInput.autocomplete =
@@ -261,7 +350,9 @@ export function renderCategoryControls(
 
 
 	statusLabel.textContent =
-		"Status:";
+		getUiText(
+			"status"
+		);
 
 
 	const statusButtons =
@@ -276,19 +367,24 @@ export function renderCategoryControls(
 
 	/*
 	 * Verfügbare Filter.
+	 *
+	 * Der interne Wert bleibt sprachunabhängig.
 	 */
 	const filterOptions = [
 		{
 			value: "all",
-			label: "Alle"
+			label:
+				getUiText("all")
 		},
 		{
 			value: "incomplete",
-			label: "Nicht gefunden"
+			label:
+				getUiText("incomplete")
 		},
 		{
 			value: "completed",
-			label: "Gefunden"
+			label:
+				getUiText("completed")
 		}
 	];
 
@@ -404,7 +500,9 @@ export function renderCategoryControls(
 
 
 	sortLabel.textContent =
-		"Sortierung:";
+		getUiText(
+			"sort"
+		);
 
 
 	const sortSelect =
@@ -488,7 +586,9 @@ export function renderCategoryControls(
 
 
 	emptyMessage.textContent =
-		"Keine passenden Items gefunden.";
+		getUiText(
+			"noResults"
+		);
 
 
 	emptyMessage.hidden =
@@ -640,18 +740,6 @@ export function renderCategoryControls(
 	 * =====================================================
 	 * Änderung eines Tracker-Status beobachten
 	 * =====================================================
-	 *
-	 * Beispiel:
-	 *
-	 * Statusfilter:
-	 * "Nicht gefunden"
-	 *
-	 * Ein Item wird als gefunden markiert.
-	 *
-	 * Sobald categoryView.js dem Item die Klasse
-	 * ".is-completed" gibt, wird der Filter erneut
-	 * angewendet und das Item verschwindet sofort
-	 * aus der gefilterten Liste.
 	 */
 
 	let updateScheduled =
@@ -737,6 +825,10 @@ export function renderCategoryControls(
 }
 
 
+/* ---------------------------------------------------------
+   4. Statusfilter
+   --------------------------------------------------------- */
+
 /**
  * Aktualisiert die sichtbare Auswahl der
  * Statusfilter-Buttons.
@@ -777,8 +869,12 @@ function updateStatusButtons(
 }
 
 
+/* ---------------------------------------------------------
+   5. Textnormalisierung
+   --------------------------------------------------------- */
+
 /**
- * Normalisiert Text für Suche und Sortierung.
+ * Normalisiert Text für die Volltextsuche.
  *
  * Dadurch werden unter anderem:
  *
@@ -811,17 +907,25 @@ function normalizeSearchText(
 }
 
 
+/* ---------------------------------------------------------
+   6. Suchtext
+   --------------------------------------------------------- */
+
 /**
  * Erstellt beziehungsweise liest den
  * durchsuchbaren Text eines Tracker-Items.
  *
- * Durchsucht werden:
+ * Durchsucht werden ausschließlich die
+ * aktuell gerenderten Texte:
  *
  * - Item-ID
  * - Name
  * - Beschreibung
  * - Detail-Labels
  * - Detail-Werte
+ *
+ * Damit arbeitet die Suche automatisch in
+ * der aktuell ausgewählten Sprache.
  *
  * Der Suchtext wird im Dataset gecacht.
  *
@@ -889,10 +993,7 @@ function getItemSearchText(
 
 
 	/*
-	 * Details.
-	 *
-	 * Sowohl Labels als auch Werte werden
-	 * aufgenommen.
+	 * Details
 	 */
 	const detailElements =
 		itemElement.querySelectorAll(
@@ -931,9 +1032,17 @@ function getItemSearchText(
 }
 
 
+/* ---------------------------------------------------------
+   7. Sortiername
+   --------------------------------------------------------- */
+
 /**
- * Gibt den Namen eines Items für die
- * alphabetische Sortierung zurück.
+ * Gibt den sichtbaren Namen eines Items für
+ * die alphabetische Sortierung zurück.
+ *
+ * Da die Kategorie bei einem Sprachwechsel
+ * neu gerendert wird, entspricht der Name
+ * automatisch der aktuell gewählten Sprache.
  *
  * @param {HTMLElement} itemElement
  * @returns {string}
@@ -956,11 +1065,12 @@ function getItemSortName(
 
 
 	const sortName =
-		normalizeSearchText(
+		String(
 			name?.textContent ??
 			itemElement.dataset.itemId ??
 			""
-		);
+		)
+			.trim();
 
 
 	itemElement.dataset.sortName =
@@ -970,6 +1080,10 @@ function getItemSortName(
 	return sortName;
 }
 
+
+/* ---------------------------------------------------------
+   8. Statusprüfung
+   --------------------------------------------------------- */
 
 /**
  * Prüft, ob ein Item zum aktuell
@@ -1014,12 +1128,19 @@ function matchesStatusFilter(
 }
 
 
+/* ---------------------------------------------------------
+   9. Sortierung
+   --------------------------------------------------------- */
+
 /**
  * Sortiert die Items innerhalb aller
  * Tracker-Listen.
  *
  * Unterkategorien selbst werden nicht
  * alphabetisch verschoben.
+ *
+ * Die Sortierung verwendet das Locale der
+ * aktuell ausgewählten Sprache.
  *
  * @param {HTMLElement} container
  * @param {string} direction
@@ -1032,6 +1153,10 @@ function sortCategoryItems(
 		container.querySelectorAll(
 			".tracker-list"
 		);
+
+
+	const locale =
+		getCurrentLocale();
 
 
 	for (
@@ -1063,7 +1188,7 @@ function sortCategoryItems(
 				const comparison =
 					firstName.localeCompare(
 						secondName,
-						"de",
+						locale,
 						{
 							sensitivity:
 								"base",
@@ -1093,6 +1218,10 @@ function sortCategoryItems(
 	}
 }
 
+
+/* ---------------------------------------------------------
+   10. Controls anwenden
+   --------------------------------------------------------- */
 
 /**
  * Wendet Suche, Statusfilter und Sortierung
@@ -1384,9 +1513,10 @@ function applyCategoryControls(
 	if (searchIsActive) {
 
 		resultCount.textContent =
-			visibleItemCount === 1
-				? "1 Treffer"
-				: `${visibleItemCount} Treffer`;
+			getResultCountText(
+				visibleItemCount,
+				true
+			);
 
 
 		resultCount.hidden =
@@ -1396,9 +1526,10 @@ function applyCategoryControls(
 	else if (statusIsActive) {
 
 		resultCount.textContent =
-			visibleItemCount === 1
-				? "1 Item"
-				: `${visibleItemCount} Items`;
+			getResultCountText(
+				visibleItemCount,
+				false
+			);
 
 
 		resultCount.hidden =
@@ -1433,4 +1564,62 @@ function applyCategoryControls(
 			filteringIsActive &&
 			visibleItemCount === 0
 		);
+}
+
+
+/* ---------------------------------------------------------
+   11. Treffertext
+   --------------------------------------------------------- */
+
+/**
+ * Erstellt die lokalisierte Trefferanzeige.
+ *
+ * Beispiele:
+ *
+ * Deutsch:
+ * 1 Treffer
+ * 5 Treffer
+ * 1 Item
+ * 5 Items
+ *
+ * Englisch:
+ * 1 result
+ * 5 results
+ * 1 item
+ * 5 items
+ *
+ * @param {number} count
+ * @param {boolean} searchMode
+ * @returns {string}
+ */
+function getResultCountText(
+	count,
+	searchMode
+) {
+	if (searchMode) {
+		const label =
+			count === 1
+				? getUiText(
+					"resultSingular"
+				)
+				: getUiText(
+					"resultPlural"
+				);
+
+
+		return `${count} ${label}`;
+	}
+
+
+	const label =
+		count === 1
+			? getUiText(
+				"itemSingular"
+			)
+			: getUiText(
+				"itemPlural"
+			);
+
+
+	return `${count} ${label}`;
 }
