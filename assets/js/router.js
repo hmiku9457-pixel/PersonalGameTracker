@@ -1,8 +1,19 @@
+/* =========================================================
+   Personal Game Tracker
+   Router
+   ========================================================= */
+
 import {
 	loadGameManifest,
 	loadManifest,
 	resolveRelativeFile
 } from "./services/dataService.js";
+
+
+import {
+	getCurrentLanguage,
+	getLocalizedText
+} from "./services/languageService.js";
 
 
 import {
@@ -26,15 +37,176 @@ import {
 } from "./views/navigationView.js";
 
 
+/* ---------------------------------------------------------
+   1. UI-Texte
+   --------------------------------------------------------- */
+
+const UI_TEXT = {
+	de: {
+		welcome: "Willkommen",
+		welcomeText:
+			"Wähle links ein Spiel aus.",
+
+		noGame:
+			"Es wurde kein Spiel angegeben.",
+
+		categoryNotFound:
+			'Kategorie "{category}" wurde nicht gefunden.',
+
+		categoryFileMissing:
+			'Für Kategorie "{category}" wurde keine Datei angegeben.',
+
+		noSubcategories:
+			'Kategorie "{category}" besitzt keine weiteren Unterkategorien.',
+
+		categoryLoadFailed:
+			"Die angeforderte Kategorie konnte nicht geladen werden.",
+
+		pageLoadFailed:
+			"Die Seite konnte nicht geladen werden."
+	},
+
+	en: {
+		welcome: "Welcome",
+		welcomeText:
+			"Select a game on the left.",
+
+		noGame:
+			"No game was specified.",
+
+		categoryNotFound:
+			'Category "{category}" was not found.',
+
+		categoryFileMissing:
+			'No file was specified for category "{category}".',
+
+		noSubcategories:
+			'Category "{category}" does not contain any further subcategories.',
+
+		categoryLoadFailed:
+			"The requested category could not be loaded.",
+
+		pageLoadFailed:
+			"The page could not be loaded."
+	}
+};
+
+
+/**
+ * Gibt einen lokalisierten Router-Text zurück.
+ *
+ * Platzhalter wie:
+ *
+ * {category}
+ *
+ * werden automatisch ersetzt.
+ *
+ * @param {string} key
+ * @param {Object} values
+ * @returns {string}
+ */
+function getUiText(
+	key,
+	values = {}
+) {
+	const language =
+		getCurrentLanguage();
+
+
+	let text =
+		UI_TEXT[language]?.[key] ??
+		UI_TEXT.en?.[key] ??
+		key;
+
+
+	text =
+		text.replace(
+			/\{(\w+)\}/g,
+			(match, placeholder) => {
+
+				if (
+					Object.prototype
+						.hasOwnProperty.call(
+							values,
+							placeholder
+						)
+				) {
+					return String(
+						values[placeholder]
+					);
+				}
+
+
+				return match;
+			}
+		);
+
+
+	return text;
+}
+
+
+/* ---------------------------------------------------------
+   2. DOM
+   --------------------------------------------------------- */
+
 const mainContent =
 	document.getElementById(
 		"main-content"
 	);
 
 
-const defaultContent =
-	mainContent.innerHTML;
+/* ---------------------------------------------------------
+   3. Startseite
+   --------------------------------------------------------- */
 
+/**
+ * Rendert die Startseite in der aktuell
+ * ausgewählten Sprache.
+ */
+function renderHomePage() {
+	mainContent.replaceChildren();
+
+
+	const title =
+		document.createElement(
+			"h2"
+		);
+
+
+	title.textContent =
+		getUiText(
+			"welcome"
+		);
+
+
+	const description =
+		document.createElement(
+			"p"
+		);
+
+
+	description.textContent =
+		getUiText(
+			"welcomeText"
+		);
+
+
+	mainContent.append(
+		title,
+		description
+	);
+
+
+	updateActiveGameNavigation(
+		null
+	);
+}
+
+
+/* ---------------------------------------------------------
+   4. Route laden
+   --------------------------------------------------------- */
 
 /**
  * Lädt die aktuelle Route anhand
@@ -50,39 +222,26 @@ export async function loadPageFromHash() {
 	 * Kein Hash:
 	 * normale Startseite anzeigen.
 	 */
+	if (
+		routeParts.length === 0
+	) {
 
-	if (routeParts.length === 0) {
-
-		mainContent.innerHTML =
-			defaultContent;
-
-
-		updateActiveGameNavigation(
-			null
-		);
-
+		renderHomePage();
 
 		return;
 	}
 
 
 	/*
-	 * Unbekannte Route
+	 * Unbekannte Route:
+	 * ebenfalls Startseite anzeigen.
 	 */
-
 	if (
 		routeParts[0] !==
 		"game"
 	) {
 
-		mainContent.innerHTML =
-			defaultContent;
-
-
-		updateActiveGameNavigation(
-			null
-		);
-
+		renderHomePage();
 
 		return;
 	}
@@ -95,7 +254,9 @@ export async function loadPageFromHash() {
 	if (!gameId) {
 
 		showError(
-			"Es wurde kein Spiel angegeben."
+			getUiText(
+				"noGame"
+			)
 		);
 
 		return;
@@ -125,7 +286,6 @@ export async function loadPageFromHash() {
 		/*
 		 * Nur das Spiel wurde aufgerufen.
 		 */
-
 		if (
 			categoryRoute.length ===
 			0
@@ -135,6 +295,7 @@ export async function loadPageFromHash() {
 				game
 			);
 
+
 			return;
 		}
 
@@ -142,7 +303,6 @@ export async function loadPageFromHash() {
 		/*
 		 * Unterkategorien / Manifeste auflösen.
 		 */
-
 		const resolvedRoute =
 			await resolveGameRoute(
 				game,
@@ -153,7 +313,6 @@ export async function loadPageFromHash() {
 		/*
 		 * Ziel ist wieder ein Manifest.
 		 */
-
 		if (
 			resolvedRoute.type ===
 			"manifest"
@@ -190,7 +349,6 @@ export async function loadPageFromHash() {
 		/*
 		 * Ziel ist eine normale Item-Kategorie.
 		 */
-
 		const parentRoute =
 			categoryRoute.slice(
 				0,
@@ -214,7 +372,8 @@ export async function loadPageFromHash() {
 			category
 		);
 
-	} catch (error) {
+	}
+	catch (error) {
 
 		console.error(
 			"Route konnte nicht geladen werden:",
@@ -222,13 +381,38 @@ export async function loadPageFromHash() {
 		);
 
 
-		showError(
-			error.message ||
-			"Die Seite konnte nicht geladen werden."
-		);
+		/*
+		 * Eigene Router-Fehler dürfen direkt
+		 * angezeigt werden.
+		 *
+		 * Bei technischen Ladefehlern zeigen wir
+		 * dagegen keine möglicherweise englische
+		 * oder interne Fehlermeldung an.
+		 */
+		if (
+			typeof error?.code === "string" &&
+			error.code.startsWith(
+				"ROUTER_"
+			)
+		) {
+			showError(
+				error.message
+			);
+		}
+		else {
+			showError(
+				getUiText(
+					"pageLoadFailed"
+				)
+			);
+		}
 	}
 }
 
+
+/* ---------------------------------------------------------
+   5. Route auflösen
+   --------------------------------------------------------- */
 
 /**
  * Löst eine beliebig tiefe Kategorie-Route auf.
@@ -287,16 +471,29 @@ async function resolveGameRoute(
 
 		if (!entry) {
 
-			throw new Error(
-				`Kategorie "${categoryId}" wurde nicht gefunden.`
+			throw createRouterError(
+				"ROUTER_CATEGORY_NOT_FOUND",
+				"categoryNotFound",
+				{
+					category:
+						categoryId
+				}
 			);
 		}
 
 
 		if (!entry.file) {
 
-			throw new Error(
-				`Für Kategorie "${categoryId}" wurde keine Datei angegeben.`
+			throw createRouterError(
+				"ROUTER_CATEGORY_FILE_MISSING",
+				"categoryFileMissing",
+				{
+					category:
+						getLocalizedText(
+							entry.name,
+							entry.id
+						)
+				}
 			);
 		}
 
@@ -320,7 +517,6 @@ async function resolveGameRoute(
 		/*
 		 * Manifest-Eintrag
 		 */
-
 		if (
 			entry.type ===
 			"manifest"
@@ -368,13 +564,20 @@ async function resolveGameRoute(
 		 * Normale Kategorie darf nur
 		 * das letzte Element der Route sein.
 		 */
-
 		if (
 			!isLastRoutePart
 		) {
 
-			throw new Error(
-				`Kategorie "${entry.name}" besitzt keine weiteren Unterkategorien.`
+			throw createRouterError(
+				"ROUTER_NO_SUBCATEGORIES",
+				"noSubcategories",
+				{
+					category:
+						getLocalizedText(
+							entry.name,
+							entry.id
+						)
+				}
 			);
 		}
 
@@ -385,6 +588,7 @@ async function resolveGameRoute(
 
 			category: {
 				...entry,
+
 				file:
 					resolvedFile
 			},
@@ -395,11 +599,50 @@ async function resolveGameRoute(
 	}
 
 
-	throw new Error(
-		"Die angeforderte Kategorie konnte nicht geladen werden."
+	throw createRouterError(
+		"ROUTER_CATEGORY_LOAD_FAILED",
+		"categoryLoadFailed"
 	);
 }
 
+
+/* ---------------------------------------------------------
+   6. Router-Fehler
+   --------------------------------------------------------- */
+
+/**
+ * Erstellt einen kontrollierten Router-Fehler.
+ *
+ * @param {string} code
+ * @param {string} textKey
+ * @param {Object} values
+ * @returns {Error}
+ */
+function createRouterError(
+	code,
+	textKey,
+	values = {}
+) {
+	const error =
+		new Error(
+			getUiText(
+				textKey,
+				values
+			)
+		);
+
+
+	error.code =
+		code;
+
+
+	return error;
+}
+
+
+/* ---------------------------------------------------------
+   7. Hash auslesen
+   --------------------------------------------------------- */
 
 /**
  * Zerlegt den aktuellen Hash.
@@ -443,6 +686,10 @@ function getRouteParts() {
 }
 
 
+/* ---------------------------------------------------------
+   8. Hash erzeugen
+   --------------------------------------------------------- */
+
 /**
  * Baut eine Spielroute.
  *
@@ -457,9 +704,11 @@ function buildGameHash(
 
 	const parts = [
 		"game",
+
 		encodeURIComponent(
 			gameId
 		),
+
 		...routeIds.map(
 			routeId =>
 				encodeURIComponent(
