@@ -15,6 +15,18 @@ import {
 	clearProgressCache
 } from "./services/progressService.js";
 
+import {
+	initLanguageView
+} from "./views/languageView.js";
+
+import {
+	LANGUAGE_CHANGE_EVENT
+} from "./services/languageService.js";
+
+
+/* ---------------------------------------------------------
+   1. Authentifizierung
+   --------------------------------------------------------- */
 
 /**
  * Reagiert auf Änderungen am Login-Zustand.
@@ -23,6 +35,8 @@ import {
  *
  * 1. alten Fortschrittscache löschen
  * 2. aktuell geöffnete Route neu rendern
+ *
+ * @param {CustomEvent} event
  */
 async function handleAuthSessionChanged(event) {
 	console.info(
@@ -56,6 +70,67 @@ async function handleAuthSessionChanged(event) {
 }
 
 
+/* ---------------------------------------------------------
+   2. Sprache
+   --------------------------------------------------------- */
+
+/**
+ * Reagiert auf Änderungen der ausgewählten Sprache.
+ *
+ * Nach einem Sprachwechsel:
+ *
+ * 1. Spiele-Navigation neu rendern
+ * 2. aktuell geöffnete Route neu rendern
+ *
+ * Der Fortschrittscache muss dabei nicht gelöscht werden,
+ * da sich durch die Sprache keine Item-IDs ändern.
+ *
+ * @param {CustomEvent} event
+ */
+async function handleLanguageChanged(event) {
+	console.info(
+		"[App] Sprache geändert:",
+		event.detail?.language
+	);
+
+
+	try {
+
+		/*
+		 * Navigation neu laden.
+		 *
+		 * Dadurch können später auch Spielnamen in der
+		 * Sidebar automatisch übersetzt werden.
+		 */
+		await loadGameNavigation();
+
+
+		/*
+		 * Aktuelle Ansicht neu rendern.
+		 *
+		 * Dadurch werden Spiel-, Kategorie-, Gruppen-
+		 * und Item-Texte in der neuen Sprache angezeigt.
+		 */
+		await loadPageFromHash();
+
+
+		console.info(
+			"[App] Ansicht nach Sprachänderung neu geladen."
+		);
+	}
+	catch (error) {
+		console.error(
+			"[App] Ansicht konnte nach Sprachänderung nicht neu geladen werden:",
+			error
+		);
+	}
+}
+
+
+/* ---------------------------------------------------------
+   3. Initialisierung
+   --------------------------------------------------------- */
+
 /**
  * Initialisiert die Anwendung.
  */
@@ -75,13 +150,34 @@ async function initializeApp() {
 
 
 		/*
-		 * Navigation laden
+		 * Sprachänderungen beobachten.
+		 *
+		 * Auch dieser Listener wird vor dem ersten Rendern
+		 * registriert.
+		 */
+		window.addEventListener(
+			LANGUAGE_CHANGE_EVENT,
+			handleLanguageChanged
+		);
+
+
+		/*
+		 * Sprachauswahl initialisieren.
+		 *
+		 * Dabei wird die gespeicherte bzw. automatisch
+		 * erkannte Sprache im Select angezeigt.
+		 */
+		initLanguageView();
+
+
+		/*
+		 * Navigation laden.
 		 */
 		await loadGameNavigation();
 
 
 		/*
-		 * Aktuelle Route laden
+		 * Aktuelle Route laden.
 		 */
 		await loadPageFromHash();
 
@@ -99,6 +195,10 @@ async function initializeApp() {
 }
 
 
+/* ---------------------------------------------------------
+   4. Routing
+   --------------------------------------------------------- */
+
 /*
  * Hash-Routen beobachten.
  */
@@ -110,7 +210,8 @@ window.addEventListener(
 );
 
 
-/*
- * Anwendung starten.
- */
+/* ---------------------------------------------------------
+   5. Anwendung starten
+   --------------------------------------------------------- */
+
 initializeApp();
