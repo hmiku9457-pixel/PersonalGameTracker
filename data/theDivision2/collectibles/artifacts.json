@@ -2,10 +2,10 @@
   "id": "artifacts",
   "name": "Artifacts",
   "description": "Artifacts aus The Division 2.",
-  "lastUpdated": "2026-07-25",
+  "lastUpdated": "2026-07-26",
   "dataStatus": {
     "scope": "individual-items",
-    "itemCount": 50,
+    "itemCount": 53,
     "pendingNameVerification": 0
   },
   "groups": [
@@ -1178,6 +1178,81 @@
             {
               "label": "Fundort",
               "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artifacts-incursion-paradise-lost",
+      "name": "Artifacts – Incursion: Paradise Lost",
+      "items": [
+        {
+          "id": "division2.collectible.artifacts.incursion-paradise-lost.001-novel",
+          "name": "Novel",
+          "description": "Artefakt aus der Incursion „Paradise Lost“ im Meret Estate.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "In Paradise Lost mit dem Buch interagieren."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.incursion-paradise-lost.002-drone-kid",
+          "name": "Drone Kid",
+          "description": "Artefakt aus der Incursion „Paradise Lost“ im Meret Estate.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Beim Lovebirds-Encounter Martinez vor Johnson eliminieren."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.incursion-paradise-lost.003-lock-and-key",
+          "name": "Lock and Key",
+          "description": "Artefakt aus der Incursion „Paradise Lost“ im Meret Estate.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Nach dem Tanker-Encounter mit dem entsprechenden Gemälde interagieren."
             }
           ]
         }
