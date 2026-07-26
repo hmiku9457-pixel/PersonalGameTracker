@@ -17,6 +17,11 @@ import {
 } from "../services/progressService.js";
 
 import {
+	getCurrentLanguage,
+	getLocalizedText
+} from "../services/languageService.js";
+
+import {
 	showError,
 	showLoading
 } from "./commonView.js";
@@ -30,6 +35,87 @@ import {
 } from "./categoryControlsView.js";
 
 
+/* ---------------------------------------------------------
+   1. UI-Texte
+   --------------------------------------------------------- */
+
+const UI_TEXT = {
+	de: {
+		backToOverview: "← Zurück zur Übersicht",
+		noEntries:
+			"Für diese Kategorie sind noch keine darstellbaren Einträge vorhanden.",
+		openAll: "Alle öffnen",
+		closeAll: "Alle schließen",
+		group: "Gruppe",
+		unnamedEntry: "Unbenannter Eintrag",
+		location: "Fundort",
+		showDetails: "Details anzeigen",
+		hideDetails: "Details ausblenden",
+		found: "Gefunden",
+		notFound: "Nicht gefunden",
+		removeMark: "Markierung entfernen",
+		markFound: "Als gefunden markieren",
+		loginForProgress:
+			"Zum Ändern des Fortschritts anmelden",
+		invalidItemId:
+			"Dieses Item besitzt keine gültige ID.",
+		saving: "Speichern...",
+		removing: "Entfernen...",
+		categoryLoadError:
+			"Die Kategorie konnte nicht geladen werden."
+	},
+
+	en: {
+		backToOverview: "← Back to overview",
+		noEntries:
+			"There are no displayable entries in this category yet.",
+		openAll: "Open all",
+		closeAll: "Close all",
+		group: "Group",
+		unnamedEntry: "Unnamed entry",
+		location: "Location",
+		showDetails: "Show details",
+		hideDetails: "Hide details",
+		found: "Found",
+		notFound: "Not found",
+		removeMark: "Remove mark",
+		markFound: "Mark as found",
+		loginForProgress:
+			"Sign in to change progress",
+		invalidItemId:
+			"This item does not have a valid ID.",
+		saving: "Saving...",
+		removing: "Removing...",
+		categoryLoadError:
+			"The category could not be loaded."
+	}
+};
+
+
+/**
+ * Gibt einen statischen UI-Text in der
+ * aktuell gewählten Sprache zurück.
+ *
+ * @param {string} key
+ * @returns {string}
+ */
+function getUiText(key) {
+	const language =
+		getCurrentLanguage();
+
+
+	return (
+		UI_TEXT[language]?.[key] ??
+		UI_TEXT.en?.[key] ??
+		key
+	);
+}
+
+
+/* ---------------------------------------------------------
+   2. DOM
+   --------------------------------------------------------- */
+
 /**
  * Gibt den Main-Container zurück.
  *
@@ -41,6 +127,10 @@ function getMainContent() {
 	);
 }
 
+
+/* ---------------------------------------------------------
+   3. Kategorie öffnen
+   --------------------------------------------------------- */
 
 /**
  * Öffnet eine bestimmte Kategorie.
@@ -132,7 +222,10 @@ export async function renderCategory(
 
 
 		gameTitle.textContent =
-			game.name;
+			getLocalizedText(
+				game.name,
+				game.id
+			);
 
 
 		gameHeader.append(
@@ -174,7 +267,9 @@ export async function renderCategory(
 
 
 		backButton.textContent =
-			"← Zurück zur Übersicht";
+			getUiText(
+				"backToOverview"
+			);
 
 
 		backButton.addEventListener(
@@ -251,7 +346,10 @@ export async function renderCategory(
 
 
 		categoryTitle.textContent =
-			category.name;
+			getLocalizedText(
+				category.name,
+				category.id
+			);
 
 
 		categoryHeader.append(
@@ -267,7 +365,16 @@ export async function renderCategory(
 		/*
 		 * Beschreibung
 		 */
-		if (category.description) {
+		const localizedCategoryDescription =
+			getLocalizedText(
+				category.description,
+				""
+			);
+
+
+		if (
+			localizedCategoryDescription
+		) {
 			const description =
 				document.createElement(
 					"p"
@@ -279,7 +386,7 @@ export async function renderCategory(
 
 
 			description.textContent =
-				category.description;
+				localizedCategoryDescription;
 
 
 			categoryContent.append(
@@ -301,13 +408,6 @@ export async function renderCategory(
 		/*
 		 * Bedienelemente der Kategorie
 		 * erstellen.
-		 *
-		 * Aktuell:
-		 * - Volltextsuche
-		 *
-		 * Später:
-		 * - Statusfilter
-		 * - Sortierung
 		 */
 		renderCategoryControls(
 			categoryContent
@@ -316,9 +416,6 @@ export async function renderCategory(
 
 		/*
 		 * Fortschrittsbuttons aktivieren.
-		 *
-		 * Es wird nur ein Event-Listener für die
-		 * gesamte Kategorie benötigt.
 		 */
 		registerProgressToggleHandler(
 			categoryContent,
@@ -347,21 +444,12 @@ export async function renderCategory(
 		);
 
 
-		/*
-		 * Erst aktualisieren, wenn die Anzeige
-		 * tatsächlich im DOM vorhanden ist.
-		 */
 		updateCurrentCategoryProgress(
 			data,
 			progressData
 		);
 
 
-		/*
-		 * Gruppenfortschritte zusätzlich anhand
-		 * der tatsächlich gerenderten Item-Zustände
-		 * synchronisieren.
-		 */
 		updateAllCategoryGroupProgress(
 			categoryContent
 		);
@@ -380,11 +468,17 @@ export async function renderCategory(
 
 
 		showError(
-			"Die Kategorie konnte nicht geladen werden."
+			getUiText(
+				"categoryLoadError"
+			)
 		);
 	}
 }
 
+
+/* ---------------------------------------------------------
+   4. Kategorie-Daten
+   --------------------------------------------------------- */
 
 /**
  * Gibt die Inhalte einer Kategorie aus.
@@ -408,12 +502,6 @@ function renderCategoryData(
 	data,
 	progressData
 ) {
-	/*
-	 * Gruppen bestimmen.
-	 *
-	 * "groups" und "sections" werden
-	 * gleich behandelt.
-	 */
 	let groups = null;
 
 
@@ -509,7 +597,9 @@ function renderCategoryData(
 
 
 	message.textContent =
-		"Für diese Kategorie sind noch keine darstellbaren Einträge vorhanden.";
+		getUiText(
+			"noEntries"
+		);
 
 
 	container.append(
@@ -517,6 +607,10 @@ function renderCategoryData(
 	);
 }
 
+
+/* ---------------------------------------------------------
+   5. Gruppensteuerung
+   --------------------------------------------------------- */
 
 /**
  * Erstellt die Steuerung für
@@ -555,7 +649,9 @@ function renderCategoryGroupControls(
 
 
 	openAllButton.textContent =
-		"Alle öffnen";
+		getUiText(
+			"openAll"
+		);
 
 
 	openAllButton.addEventListener(
@@ -587,7 +683,9 @@ function renderCategoryGroupControls(
 
 
 	closeAllButton.textContent =
-		"Alle schließen";
+		getUiText(
+			"closeAll"
+		);
 
 
 	closeAllButton.addEventListener(
@@ -639,6 +737,10 @@ function setAllCategoryGroups(
 }
 
 
+/* ---------------------------------------------------------
+   6. Kategoriegruppe
+   --------------------------------------------------------- */
+
 /**
  * Gibt eine einzelne Gruppe als
  * einklappbaren Bereich aus.
@@ -669,9 +771,7 @@ function renderCategoryGroup(
 
 
 	/*
-	 * ---------------------------------------------
 	 * Gruppen-Header
-	 * ---------------------------------------------
 	 */
 	const header =
 		document.createElement(
@@ -724,9 +824,11 @@ function renderCategoryGroup(
 
 
 	title.textContent =
-		group.name ??
-		group.id ??
-		"Gruppe";
+		getLocalizedText(
+			group.name,
+			group.id ||
+			getUiText("group")
+		);
 
 
 	headerMain.append(
@@ -766,9 +868,7 @@ function renderCategoryGroup(
 
 
 	/*
-	 * ---------------------------------------------
 	 * Inhalt der Gruppe
-	 * ---------------------------------------------
 	 */
 	const body =
 		document.createElement(
@@ -783,7 +883,16 @@ function renderCategoryGroup(
 	/*
 	 * Optionale Beschreibung
 	 */
-	if (group.description) {
+	const localizedGroupDescription =
+		getLocalizedText(
+			group.description,
+			""
+		);
+
+
+	if (
+		localizedGroupDescription
+	) {
 
 		const description =
 			document.createElement(
@@ -796,13 +905,12 @@ function renderCategoryGroup(
 
 
 		description.textContent =
-			group.description;
+			localizedGroupDescription;
 
 
 		body.append(
 			description
 		);
-
 	}
 
 
@@ -833,6 +941,10 @@ function renderCategoryGroup(
 	);
 }
 
+
+/* ---------------------------------------------------------
+   7. Item-Liste
+   --------------------------------------------------------- */
 
 /**
  * Rendert eine Liste von Tracker-Items.
@@ -876,6 +988,10 @@ function renderItemList(
 }
 
 
+/* ---------------------------------------------------------
+   8. Tracker-Item
+   --------------------------------------------------------- */
+
 /**
  * Erstellt einen einzelnen Tracker-Eintrag.
  *
@@ -908,11 +1024,8 @@ function createTrackerItem(
 
 
 	/*
-	 * -------------------------------------------------------
 	 * Status-Indikator
-	 * -------------------------------------------------------
 	 */
-
 	const statusIndicator =
 		document.createElement(
 			"span"
@@ -930,11 +1043,8 @@ function createTrackerItem(
 
 
 	/*
-	 * -------------------------------------------------------
 	 * Inhalt
-	 * -------------------------------------------------------
 	 */
-
 	const content =
 		document.createElement(
 			"div"
@@ -955,11 +1065,27 @@ function createTrackerItem(
 		"tracker-item-name";
 
 
+	const localizedName =
+		getLocalizedText(
+			item.name,
+			""
+		);
+
+
+	const localizedTitle =
+		getLocalizedText(
+			item.title,
+			""
+		);
+
+
 	name.textContent =
-		item.name ??
-		item.title ??
-		item.id ??
-		"Unbenannter Eintrag";
+		localizedName ||
+		localizedTitle ||
+		item.id ||
+		getUiText(
+			"unnamedEntry"
+		);
 
 
 	content.append(
@@ -970,7 +1096,16 @@ function createTrackerItem(
 	/*
 	 * Beschreibung
 	 */
-	if (item.description) {
+	const localizedDescription =
+		getLocalizedText(
+			item.description,
+			""
+		);
+
+
+	if (
+		localizedDescription
+	) {
 		const description =
 			document.createElement(
 				"p"
@@ -982,7 +1117,7 @@ function createTrackerItem(
 
 
 		description.textContent =
-			item.description;
+			localizedDescription;
 
 
 		content.append(
@@ -1008,11 +1143,8 @@ function createTrackerItem(
 
 
 	/*
-	 * -------------------------------------------------------
 	 * Toggle-Button
-	 * -------------------------------------------------------
 	 */
-
 	const toggleButton =
 		document.createElement(
 			"button"
@@ -1059,7 +1191,9 @@ function createTrackerItem(
 
 
 		toggleButton.title =
-			"Dieses Item besitzt keine gültige ID.";
+			getUiText(
+				"invalidItemId"
+			);
 	}
 
 
@@ -1074,15 +1208,34 @@ function createTrackerItem(
 }
 
 
+/* ---------------------------------------------------------
+   9. Item-Details
+   --------------------------------------------------------- */
+
 /**
  * Erstellt den Detailbereich eines Items.
  *
- * Unterstützt:
+ * Unterstützt weiterhin:
  *
  * "details": [
  *     {
  *         "label": "Fundort",
  *         "value": "..."
+ *     }
+ * ]
+ *
+ * Zusätzlich:
+ *
+ * "details": [
+ *     {
+ *         "label": {
+ *             "de": "Fundort",
+ *             "en": "Location"
+ *         },
+ *         "value": {
+ *             "de": "...",
+ *             "en": "..."
+ *         }
  *     }
  * ]
  *
@@ -1104,12 +1257,28 @@ function createItemDetails(item) {
 		for (
 			const detail of item.details
 		) {
+			if (!detail) {
+				continue;
+			}
+
+
+			const label =
+				getLocalizedText(
+					detail.label,
+					""
+				);
+
+
+			const value =
+				getLocalizedText(
+					detail.value,
+					""
+				);
+
+
 			if (
-				!detail ||
-				!detail.label ||
-				detail.value === undefined ||
-				detail.value === null ||
-				detail.value === ""
+				!label.trim() ||
+				!value.trim()
 			) {
 				continue;
 			}
@@ -1117,36 +1286,43 @@ function createItemDetails(item) {
 
 			detailEntries.push({
 				label:
-					String(
-						detail.label
-					),
+					label.trim(),
 
 				value:
-					String(
-						detail.value
-					)
+					value.trim()
 			});
 		}
 	}
 
 
+	/*
+	 * Altes "location"-Feld weiterhin
+	 * unterstützen.
+	 */
+	const localizedLocation =
+		getLocalizedText(
+			item.location,
+			""
+		);
+
+
 	if (
-		item.location &&
+		localizedLocation &&
 		!detailEntries.some(
 			detail =>
-				detail.label
-					.toLowerCase() ===
-				"fundort"
+				isLocationLabel(
+					detail.label
+				)
 		)
 	) {
 		detailEntries.push({
 			label:
-				"Fundort",
+				getUiText(
+					"location"
+				),
 
 			value:
-				String(
-					item.location
-				)
+				localizedLocation
 		});
 	}
 
@@ -1175,7 +1351,9 @@ function createItemDetails(item) {
 
 
 	summary.textContent =
-		"Details anzeigen";
+		getUiText(
+			"showDetails"
+		);
 
 
 	details.append(
@@ -1230,8 +1408,12 @@ function createItemDetails(item) {
 		() => {
 			summary.textContent =
 				details.open
-					? "Details ausblenden"
-					: "Details anzeigen";
+					? getUiText(
+						"hideDetails"
+					)
+					: getUiText(
+						"showDetails"
+					);
 		}
 	);
 
@@ -1239,6 +1421,37 @@ function createItemDetails(item) {
 	return details;
 }
 
+
+/**
+ * Prüft, ob eine Detail-Beschriftung
+ * bereits einen Fundort beschreibt.
+ *
+ * Dadurch wird verhindert, dass ein altes
+ * "location"-Feld zusätzlich zu einem
+ * vorhandenen Fundort-Detail angezeigt wird.
+ *
+ * @param {string} label
+ * @returns {boolean}
+ */
+function isLocationLabel(label) {
+	const normalizedLabel =
+		label
+			.trim()
+			.toLocaleLowerCase();
+
+
+	return (
+		normalizedLabel ===
+			"fundort" ||
+		normalizedLabel ===
+			"location"
+	);
+}
+
+
+/* ---------------------------------------------------------
+   10. Item-Status
+   --------------------------------------------------------- */
 
 /**
  * Aktualisiert den sichtbaren Zustand eines Items.
@@ -1309,8 +1522,12 @@ function updateTrackerToggle(
 
 	button.textContent =
 		completed
-			? "Gefunden"
-			: "Nicht gefunden";
+			? getUiText(
+				"found"
+			)
+			: getUiText(
+				"notFound"
+			);
 
 
 	button.disabled =
@@ -1321,8 +1538,12 @@ function updateTrackerToggle(
 
 		const actionText =
 			completed
-				? "Markierung entfernen"
-				: "Als gefunden markieren";
+				? getUiText(
+					"removeMark"
+				)
+				: getUiText(
+					"markFound"
+				);
 
 
 		button.title =
@@ -1338,7 +1559,9 @@ function updateTrackerToggle(
 	else {
 
 		const loginText =
-			"Zum Ändern des Fortschritts anmelden";
+			getUiText(
+				"loginForProgress"
+			);
 
 
 		button.title =
@@ -1353,6 +1576,10 @@ function updateTrackerToggle(
 	}
 }
 
+
+/* ---------------------------------------------------------
+   11. Gruppenfortschritt
+   --------------------------------------------------------- */
 
 /**
  * Aktualisiert den Fortschritt einer
@@ -1427,6 +1654,10 @@ function updateAllCategoryGroupProgress(
 }
 
 
+/* ---------------------------------------------------------
+   12. Kategorie-Fortschritt
+   --------------------------------------------------------- */
+
 /**
  * Aktualisiert den Fortschritt der aktuell
  * geöffneten Kategorie.
@@ -1471,6 +1702,10 @@ function updateCurrentCategoryProgress(
 		`${progress.completed} / ${progress.total} · ${percent} %`;
 }
 
+
+/* ---------------------------------------------------------
+   13. Item-Suche
+   --------------------------------------------------------- */
 
 /**
  * Sucht rekursiv ein Item anhand seiner ID.
@@ -1558,6 +1793,10 @@ function findItemById(
 	return null;
 }
 
+
+/* ---------------------------------------------------------
+   14. Fortschrittsbuttons
+   --------------------------------------------------------- */
 
 /**
  * Aktiviert die Fortschrittsbuttons einer Kategorie.
@@ -1675,8 +1914,12 @@ function registerProgressToggleHandler(
 
 			button.textContent =
 				newState
-					? "Speichern..."
-					: "Entfernen...";
+					? getUiText(
+						"saving"
+					)
+					: getUiText(
+						"removing"
+					);
 
 
 			try {
