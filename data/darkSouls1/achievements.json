@@ -1,616 +1,1354 @@
 [
 	{
 		"id": "darkSouls1.achievement.enkindle",
-		"name": "Enkindle",
-		"description": "Entzünde zum ersten Mal ein Leuchtfeuer.",
+		"name": {
+			"de": "Entfachen",
+			"en": "Enkindle"
+		},
+		"description": {
+			"de": "Entzünde zum ersten Mal ein Leuchtfeuer.",
+			"en": "Light a bonfire for the first time."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.estusFlask",
-		"name": "Estus Flask",
-		"description": "Erhalte den Estus-Flakon.",
+		"name": {
+			"de": "Estus-Flakon",
+			"en": "Estus Flask"
+		},
+		"description": {
+			"de": "Erhalte den Estus-Flakon.",
+			"en": "Acquire the Estus Flask."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.reachLordran",
-		"name": "Reach Lordran",
-		"description": "Erreiche Lordran.",
+		"name": {
+			"de": "Ankunft in Lordran",
+			"en": "Reach Lordran"
+		},
+		"description": {
+			"de": "Erreiche Lordran.",
+			"en": "Reach Lordran."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.ringTheBellUndeadChurch",
-		"name": "Ring the Bell (Undead Church)",
-		"description": "Läute die Glocke des Erwachens in der Untoten-Kirche.",
+		"name": {
+			"de": "Glockenläuten (Kirche der Untoten)",
+			"en": "Ring the Bell (Undead Church)"
+		},
+		"description": {
+			"de": "Läute die Glocke des Erwachens in der Kirche der Untoten.",
+			"en": "Ring the Bell of Awakening in the Undead Church."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantWayOfWhite",
-		"name": "Covenant: Way of White",
-		"description": "Entdecke den Eid 'Way of White'.",
+		"name": {
+			"de": "Eid: Der Weiße Pfad",
+			"en": "Covenant: Way of White"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Der Weiße Pfad“.",
+			"en": "Discover the Way of White covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.ringTheBellQuelaagSDomain",
-		"name": "Ring the Bell (Quelaag's Domain)",
-		"description": "Läute die Glocke des Erwachens in Quelaags Sphäre.",
+		"name": {
+			"de": "Glockenläuten (Quelaags Sphäre)",
+			"en": "Ring the Bell (Quelaag's Domain)"
+		},
+		"description": {
+			"de": "Läute die Glocke des Erwachens in Quelaags Sphäre.",
+			"en": "Ring the Bell of Awakening in Quelaag's Domain."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.reachAnorLondo",
-		"name": "Reach Anor Londo",
-		"description": "Erreiche Anor Londo.",
+		"name": {
+			"de": "Ankunft in Anor Londo",
+			"en": "Reach Anor Londo"
+		},
+		"description": {
+			"de": "Erreiche Anor Londo.",
+			"en": "Reach Anor Londo."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.lordvessel",
-		"name": "Lordvessel",
-		"description": "Erhalte das Herrschergefäß.",
+		"name": {
+			"de": "Herrschergefäß",
+			"en": "Lordvessel"
+		},
+		"description": {
+			"de": "Erhalte das Herrschergefäß.",
+			"en": "Acquire the Lordvessel."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.riteOfKindling",
-		"name": "Rite of Kindling",
-		"description": "Erhalte den Ritus des Entfachens.",
+		"name": {
+			"de": "Kunst des Entfachens",
+			"en": "Rite of Kindling"
+		},
+		"description": {
+			"de": "Erhalte die Kunst des Entfachens.",
+			"en": "Acquire the Rite of Kindling."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantChaosServant",
-		"name": "Covenant: Chaos Servant",
-		"description": "Entdecke den Eid 'Chaos Servant'.",
+		"name": {
+			"de": "Eid: Diener des Chaos",
+			"en": "Covenant: Chaos Servant"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Diener des Chaos“.",
+			"en": "Discover the Chaos Servant covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.artOfAbysswalking",
-		"name": "Art of Abysswalking",
-		"description": "Erhalte die Fähigkeit, den Abgrund zu betreten.",
+		"name": {
+			"de": "Kunst des Abgrundschreitens",
+			"en": "Art of Abysswalking"
+		},
+		"description": {
+			"de": "Erhalte die Fähigkeit, den Abgrund zu betreten.",
+			"en": "Acquire the ability to enter the Abyss."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Story"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Story",
+					"en": "Story"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.defeatSeathTheScaleless",
-		"name": "Defeat Seath the Scaleless",
-		"description": "Besiege Seath den Schuppenlosen.",
+		"name": {
+			"de": "Sieg über den Schuppenlosen",
+			"en": "Defeat Seath the Scaleless"
+		},
+		"description": {
+			"de": "Besiege Seath den Schuppenlosen.",
+			"en": "Defeat Seath the Scaleless."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.defeatGravelordNito",
-		"name": "Defeat Gravelord Nito",
-		"description": "Besiege Gravelord Nito.",
+		"name": {
+			"de": "Sieg über Grabesfürst Nito",
+			"en": "Defeat Gravelord Nito"
+		},
+		"description": {
+			"de": "Besiege Grabesfürst Nito.",
+			"en": "Defeat Gravelord Nito."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.defeatTheFourKings",
-		"name": "Defeat the Four Kings",
-		"description": "Besiege die Vier Könige.",
+		"name": {
+			"de": "Sieg über die Vier Könige",
+			"en": "Defeat the Four Kings"
+		},
+		"description": {
+			"de": "Besiege die Vier Könige.",
+			"en": "Defeat the Four Kings."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.defeatBedOfChaos",
-		"name": "Defeat Bed of Chaos",
-		"description": "Besiege das Bed of Chaos.",
+		"name": {
+			"de": "Sieg über Chaoswesen",
+			"en": "Defeat Bed of Chaos"
+		},
+		"description": {
+			"de": "Besiege das Chaoswesen.",
+			"en": "Defeat the Bed of Chaos."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantPrincessSGuard",
-		"name": "Covenant: Princess's Guard",
-		"description": "Entdecke den Eid 'Princess's Guard'.",
+		"name": {
+			"de": "Eid: Wache der Prinzessin",
+			"en": "Covenant: Princess's Guard"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Wache der Prinzessin“.",
+			"en": "Discover the Princess's Guard covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantForestHunter",
-		"name": "Covenant: Forest Hunter",
-		"description": "Entdecke den Eid 'Forest Hunter'.",
+		"name": {
+			"de": "Eid: Waldjäger",
+			"en": "Covenant: Forest Hunter"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Waldjäger“.",
+			"en": "Discover the Forest Hunter covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.defeatCrossbreedPriscilla",
-		"name": "Defeat Crossbreed Priscilla",
-		"description": "Besiege Crossbreed Priscilla.",
+		"name": {
+			"de": "Sieg über Mischwesen Priscilla",
+			"en": "Defeat Crossbreed Priscilla"
+		},
+		"description": {
+			"de": "Besiege Mischwesen Priscilla.",
+			"en": "Defeat Crossbreed Priscilla."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.defeatTheDarkSunGwyndolin",
-		"name": "Defeat the Dark Sun Gwyndolin",
-		"description": "Besiege Dark Sun Gwyndolin.",
+		"name": {
+			"de": "Sieg über Finstersonne Wendelin",
+			"en": "Defeat the Dark Sun Gwyndolin"
+		},
+		"description": {
+			"de": "Besiege Finstersonne Wendelin.",
+			"en": "Defeat Dark Sun Gwyndolin."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.toLinkTheFire",
-		"name": "To Link the Fire",
-		"description": "Erreiche das Ende 'To Link the Fire'.",
+		"name": {
+			"de": "Das Band des Feuers",
+			"en": "To Link the Fire"
+		},
+		"description": {
+			"de": "Erreiche das Ende „Das Band des Feuers“.",
+			"en": "Reach the 'To Link the Fire' ending."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Ende"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Ende",
+					"en": "Ending"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantGravelordServant",
-		"name": "Covenant: Gravelord Servant",
-		"description": "Entdecke den Eid 'Gravelord Servant'.",
+		"name": {
+			"de": "Eid: Diener des Grabesfürsten",
+			"en": "Covenant: Gravelord Servant"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Diener des Grabesfürsten“.",
+			"en": "Discover the Gravelord Servant covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantPathOfTheDragon",
-		"name": "Covenant: Path of the Dragon",
-		"description": "Entdecke den Eid 'Path of the Dragon'.",
+		"name": {
+			"de": "Eid: Pfad des Drachen",
+			"en": "Covenant: Path of the Dragon"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Pfad des Drachen“.",
+			"en": "Discover the Path of the Dragon covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.strongestWeapon",
-		"name": "Strongest Weapon",
-		"description": "Verstärke eine Standardwaffe bis zur höchsten normalen Verstärkungsstufe.",
+		"name": {
+			"de": "Stärkste Waffe",
+			"en": "Strongest Weapon"
+		},
+		"description": {
+			"de": "Verstärke eine Standardwaffe bis zur höchsten normalen Verstärkungsstufe.",
+			"en": "Reinforce a standard weapon to the highest normal reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantBladeOfTheDarkmoon",
-		"name": "Covenant: Blade of the Darkmoon",
-		"description": "Entdecke den Eid 'Blade of the Darkmoon'.",
+		"name": {
+			"de": "Eid: Klinge des Finstermonds",
+			"en": "Covenant: Blade of the Darkmoon"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Klinge des Finstermonds“.",
+			"en": "Discover the Blade of the Darkmoon covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantWarriorOfSunlight",
-		"name": "Covenant: Warrior of Sunlight",
-		"description": "Entdecke den Eid 'Warrior of Sunlight'.",
+		"name": {
+			"de": "Eid: Krieger des Sonnenlichts",
+			"en": "Covenant: Warrior of Sunlight"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Krieger des Sonnenlichts“.",
+			"en": "Discover the Warrior of Sunlight covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.darkLord",
-		"name": "Dark Lord",
-		"description": "Erreiche das Ende 'Dark Lord'.",
+		"name": {
+			"de": "Der Finstere Fürst",
+			"en": "Dark Lord"
+		},
+		"description": {
+			"de": "Erreiche das Ende „Der Finstere Fürst“.",
+			"en": "Reach the 'Dark Lord' ending."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Ende"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Ende",
+					"en": "Ending"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.covenantDarkwraith",
-		"name": "Covenant: Darkwraith",
-		"description": "Entdecke den Eid 'Darkwraith'.",
+		"name": {
+			"de": "Eid: Geist der Finsternis",
+			"en": "Covenant: Darkwraith"
+		},
+		"description": {
+			"de": "Entdecke den Eid „Geist der Finsternis“.",
+			"en": "Discover the Darkwraith covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.lightningWeapon",
-		"name": "Lightning Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Blitz-Verstärkungsstufe.",
+		"name": {
+			"de": "Blitzwaffe",
+			"en": "Lightning Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten Blitz-Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest lightning reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.rawWeapon",
-		"name": "Raw Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Raw-Verstärkungsstufe.",
+		"name": {
+			"de": "Krude Waffe",
+			"en": "Raw Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten Krude-Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest raw reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.divineWeapon",
-		"name": "Divine Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Divine-Verstärkungsstufe.",
+		"name": {
+			"de": "Göttliche Waffe",
+			"en": "Divine Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten göttlichen Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest divine reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.enchantedWeapon",
-		"name": "Enchanted Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Enchanted-Verstärkungsstufe.",
+		"name": {
+			"de": "Verzauberte Waffe",
+			"en": "Enchanted Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten verzauberten Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest enchanted reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.crystalWeapon",
-		"name": "Crystal Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Crystal-Verstärkungsstufe.",
+		"name": {
+			"de": "Kristallwaffe",
+			"en": "Crystal Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten Kristall-Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest crystal reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.wisdomOfASage",
-		"name": "Wisdom of a Sage",
-		"description": "Erhalte alle Zaubereien.",
+		"name": {
+			"de": "Die Klugheit des Weisen",
+			"en": "Wisdom of a Sage"
+		},
+		"description": {
+			"de": "Erhalte alle Zaubereien.",
+			"en": "Acquire all sorceries."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.chaosWeapon",
-		"name": "Chaos Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Chaos-Verstärkungsstufe.",
+		"name": {
+			"de": "Chaoswaffe",
+			"en": "Chaos Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten Chaos-Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest chaos reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.occultWeapon",
-		"name": "Occult Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Occult-Verstärkungsstufe.",
+		"name": {
+			"de": "Okkulte Waffe",
+			"en": "Occult Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten okkulten Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest occult reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.fireWeapon",
-		"name": "Fire Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Feuer-Verstärkungsstufe.",
+		"name": {
+			"de": "Feuerwaffe",
+			"en": "Fire Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten Feuer-Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest fire reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.bondOfAPyromancer",
-		"name": "Bond of a Pyromancer",
-		"description": "Erhalte alle Pyromantien.",
+		"name": {
+			"de": "Das Band des Pyromanten",
+			"en": "Bond of a Pyromancer"
+		},
+		"description": {
+			"de": "Erhalte alle Pyromantien.",
+			"en": "Acquire all pyromancies."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.magicWeapon",
-		"name": "Magic Weapon",
-		"description": "Erhalte eine Waffe auf der höchsten Magic-Verstärkungsstufe.",
+		"name": {
+			"de": "Zauberwaffe",
+			"en": "Magic Weapon"
+		},
+		"description": {
+			"de": "Erhalte eine Waffe auf der höchsten Magie-Verstärkungsstufe.",
+			"en": "Acquire a weapon at the highest magic reinforcement level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.prayerOfAMaiden",
-		"name": "Prayer of a Maiden",
-		"description": "Erhalte alle Wunder.",
+		"name": {
+			"de": "Das Gebet der Maid",
+			"en": "Prayer of a Maiden"
+		},
+		"description": {
+			"de": "Erhalte alle Wunder.",
+			"en": "Acquire all miracles."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.knightSHonor",
-		"name": "Knight's Honor",
-		"description": "Erhalte alle für die Errungenschaft erforderlichen seltenen Waffen.",
+		"name": {
+			"de": "Die Ehre des Ritters",
+			"en": "Knight's Honor"
+		},
+		"description": {
+			"de": "Erhalte alle für die Errungenschaft erforderlichen seltenen Waffen.",
+			"en": "Acquire all rare weapons required for the achievement."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls1.achievement.theDarkSoul",
-		"name": "The Dark Soul",
-		"description": "Schalte alle anderen Achievements frei.",
+		"name": {
+			"de": "Die Finstere Seele",
+			"en": "The Dark Soul"
+		},
+		"description": {
+			"de": "Schalte alle anderen Achievements frei.",
+			"en": "Unlock all other achievements."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Abschluss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Abschluss",
+					"en": "Completion"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls Remastered (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls Remastered (Steam)",
+					"en": "Dark Souls Remastered (Steam)"
+				}
 			}
 		]
 	}
