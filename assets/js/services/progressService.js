@@ -10,14 +10,106 @@ import {
 } from "../supabase/progressRepository.js";
 
 
+import {
+	getCurrentLanguage
+} from "./languageService.js";
+
+
+/* ---------------------------------------------------------
+   1. UI-Texte
+   --------------------------------------------------------- */
+
+const UI_TEXT = {
+	de: {
+		invalidGameId:
+			"Ungültige Spiel-ID.",
+
+		invalidCategoryId:
+			"Ungültige Kategorie-ID.",
+
+		invalidItemId:
+			"Das Item besitzt keine gültige ID.",
+
+		progressUnavailable:
+			"Fortschrittsdaten sind nicht verfügbar.",
+
+		authRequired:
+			"Bitte melde dich an, um deinen Fortschritt zu ändern.",
+
+		permissionDenied:
+			"Du hast keine Berechtigung, diesen Fortschritt zu ändern.",
+
+		networkUnavailable:
+			"Supabase ist momentan nicht erreichbar.",
+
+		saveFailed:
+			"Der Fortschritt konnte nicht gespeichert werden."
+	},
+
+	en: {
+		invalidGameId:
+			"Invalid game ID.",
+
+		invalidCategoryId:
+			"Invalid category ID.",
+
+		invalidItemId:
+			"The item does not have a valid ID.",
+
+		progressUnavailable:
+			"Progress data is not available.",
+
+		authRequired:
+			"Please sign in to change your progress.",
+
+		permissionDenied:
+			"You do not have permission to change this progress.",
+
+		networkUnavailable:
+			"Supabase is currently unavailable.",
+
+		saveFailed:
+			"Progress could not be saved."
+	}
+};
+
+
+/**
+ * Gibt einen lokalisierten UI-Text zurück.
+ *
+ * @param {string} key
+ * @returns {string}
+ */
+function getUiText(key) {
+	const language =
+		getCurrentLanguage();
+
+
+	return (
+		UI_TEXT[language]?.[key] ??
+		UI_TEXT.en?.[key] ??
+		key
+	);
+}
+
+
+/* ---------------------------------------------------------
+   2. Fortschrittscache
+   --------------------------------------------------------- */
+
 /*
  * Cache pro Spiel.
  *
  * Dadurch wird beispielsweise für The Division 2 nicht
  * bei jeder einzelnen Kategorie erneut Supabase abgefragt.
  */
-const progressCache = new Map();
+const progressCache =
+	new Map();
 
+
+/* ---------------------------------------------------------
+   3. Fortschrittsstruktur
+   --------------------------------------------------------- */
 
 /**
  * Erzeugt eine leere Fortschrittsstruktur.
@@ -48,16 +140,6 @@ function createEmptyProgressData(
 /**
  * Wandelt Supabase-Datensätze in das bisherige
  * Progress-Format des Trackers um.
- *
- * Beispiel:
- *
- * {
- *     progress: {
- *         "division2.exotic.capacitor": true
- *     }
- * }
- *
- * Dadurch bleiben bestehende Views kompatibel.
  *
  * @param {string} gameId
  * @param {Array<object>} rows
@@ -94,6 +176,10 @@ function convertRowsToProgressData(
 }
 
 
+/* ---------------------------------------------------------
+   4. Fortschritt laden
+   --------------------------------------------------------- */
+
 /**
  * Lädt den Fortschritt eines Spiels.
  *
@@ -112,9 +198,19 @@ export async function loadGameProgressData(
 		typeof gameId !== "string" ||
 		gameId.trim() === ""
 	) {
-		throw new Error(
-			"Ungültige gameId."
-		);
+		const error =
+			new Error(
+				getUiText(
+					"invalidGameId"
+				)
+			);
+
+
+		error.code =
+			"INVALID_GAME_ID";
+
+
+		throw error;
 	}
 
 
@@ -125,7 +221,9 @@ export async function loadGameProgressData(
 		!force &&
 		progressCache.has(gameId)
 	) {
-		return progressCache.get(gameId);
+		return progressCache.get(
+			gameId
+		);
 	}
 
 
@@ -159,6 +257,7 @@ export async function loadGameProgressData(
 
 
 		return progressData;
+
 	}
 	catch (error) {
 
@@ -168,18 +267,6 @@ export async function loadGameProgressData(
 		);
 
 
-		/*
-		 * Wichtig:
-		 *
-		 * Ein Supabase-Fehler darf nicht verhindern,
-		 * dass die lokalen JSON-Spieldaten dargestellt
-		 * werden.
-		 *
-		 * Deshalb liefern wir eine leere Progress-Struktur.
-		 *
-		 * available: false zeigt später der UI, dass
-		 * Supabase nicht erreichbar war.
-		 */
 		return {
 			...createEmptyProgressData(
 				gameId,
@@ -193,6 +280,10 @@ export async function loadGameProgressData(
 }
 
 
+/* ---------------------------------------------------------
+   5. Cache
+   --------------------------------------------------------- */
+
 /**
  * Löscht den Fortschrittscache.
  *
@@ -204,7 +295,9 @@ export function clearProgressCache(
 	gameId = null
 ) {
 	if (gameId) {
-		progressCache.delete(gameId);
+		progressCache.delete(
+			gameId
+		);
 
 		return;
 	}
@@ -213,6 +306,10 @@ export function clearProgressCache(
 	progressCache.clear();
 }
 
+
+/* ---------------------------------------------------------
+   6. Item-Status
+   --------------------------------------------------------- */
 
 /**
  * Sucht einen extern gespeicherten Status für ein Item.
@@ -244,21 +341,18 @@ export function getExternalItemStatus(
 
 
 	const value =
-		progressData.progress[item.id];
+		progressData.progress[
+			item.id
+		];
 
 
-	/*
-	 * Neues Supabase-Format
-	 */
-	if (typeof value === "boolean") {
+	if (
+		typeof value === "boolean"
+	) {
 		return value;
 	}
 
 
-	/*
-	 * Kompatibilität mit möglichen älteren
-	 * Statusobjekten.
-	 */
 	if (
 		value &&
 		typeof value === "object"
@@ -272,15 +366,14 @@ export function getExternalItemStatus(
 	}
 
 
-	return Boolean(value);
+	return Boolean(
+		value
+	);
 }
 
 
 /**
  * Prüft, ob ein einzelnes Item abgeschlossen ist.
- *
- * Externe Fortschrittsdaten haben Vorrang vor
- * Statusfeldern innerhalb der Stammdaten.
  *
  * @param {object} item
  * @param {object|null} progressData
@@ -297,7 +390,9 @@ export function isItemCompleted(
 		);
 
 
-	if (externalStatus !== null) {
+	if (
+		externalStatus !== null
+	) {
 		return externalStatus;
 	}
 
@@ -310,6 +405,10 @@ export function isItemCompleted(
 	);
 }
 
+
+/* ---------------------------------------------------------
+   7. Fortschritt berechnen
+   --------------------------------------------------------- */
 
 /**
  * Berechnet den Fortschritt einer Liste von Items.
@@ -330,7 +429,8 @@ export function calculateItemsProgress(
 	}
 
 
-	let completed = 0;
+	let completed =
+		0;
 
 
 	for (const item of items) {
@@ -348,7 +448,8 @@ export function calculateItemsProgress(
 
 	return {
 		completed,
-		total: items.length
+		total:
+			items.length
 	};
 }
 
@@ -358,7 +459,7 @@ export function calculateItemsProgress(
  *
  * @param {Array<object>} groups
  * @param {object|null} progressData
- * @returns {{completed: number, total: number}}
+ * @returns {{completed: number,total: number}}
  */
 export function calculateGroupedProgress(
 	groups,
@@ -372,8 +473,12 @@ export function calculateGroupedProgress(
 	}
 
 
-	let completed = 0;
-	let total = 0;
+	let completed =
+		0;
+
+
+	let total =
+		0;
 
 
 	for (const group of groups) {
@@ -385,8 +490,12 @@ export function calculateGroupedProgress(
 			);
 
 
-		completed += result.completed;
-		total += result.total;
+		completed +=
+			result.completed;
+
+
+		total +=
+			result.total;
 	}
 
 
@@ -405,7 +514,7 @@ export function calculateGroupedProgress(
  *
  * @param {object|Array} data
  * @param {object|null} progressData
- * @returns {{completed: number, total: number}}
+ * @returns {{completed: number,total: number}}
  */
 export function calculateCategoryProgress(
 	data,
@@ -433,7 +542,11 @@ export function calculateCategoryProgress(
 	/*
 	 * Items
 	 */
-	if (Array.isArray(data.items)) {
+	if (
+		Array.isArray(
+			data.items
+		)
+	) {
 		return calculateItemsProgress(
 			data.items,
 			progressData
@@ -444,7 +557,11 @@ export function calculateCategoryProgress(
 	/*
 	 * Groups
 	 */
-	if (Array.isArray(data.groups)) {
+	if (
+		Array.isArray(
+			data.groups
+		)
+	) {
 		return calculateGroupedProgress(
 			data.groups,
 			progressData
@@ -455,13 +572,24 @@ export function calculateCategoryProgress(
 	/*
 	 * Sections
 	 */
-	if (Array.isArray(data.sections)) {
+	if (
+		Array.isArray(
+			data.sections
+		)
+	) {
 
-		let completed = 0;
-		let total = 0;
+		let completed =
+			0;
 
 
-		for (const section of data.sections) {
+		let total =
+			0;
+
+
+		for (
+			const section
+			of data.sections
+		) {
 
 			const result =
 				calculateCategoryProgress(
@@ -470,8 +598,12 @@ export function calculateCategoryProgress(
 				);
 
 
-			completed += result.completed;
-			total += result.total;
+			completed +=
+				result.completed;
+
+
+			total +=
+				result.total;
 		}
 
 
@@ -488,6 +620,10 @@ export function calculateCategoryProgress(
 	};
 }
 
+
+/* ---------------------------------------------------------
+   8. Fortschritt speichern
+   --------------------------------------------------------- */
 
 /**
  * Ändert den Fortschritt eines Items und speichert
@@ -511,9 +647,19 @@ export async function setItemCompleted(
 		typeof gameId !== "string" ||
 		gameId.trim() === ""
 	) {
-		throw new Error(
-			"Ungültige gameId."
-		);
+		const error =
+			new Error(
+				getUiText(
+					"invalidGameId"
+				)
+			);
+
+
+		error.code =
+			"INVALID_GAME_ID";
+
+
+		throw error;
 	}
 
 
@@ -521,63 +667,104 @@ export async function setItemCompleted(
 		typeof categoryId !== "string" ||
 		categoryId.trim() === ""
 	) {
-		throw new Error(
-			"Ungültige categoryId."
-		);
+		const error =
+			new Error(
+				getUiText(
+					"invalidCategoryId"
+				)
+			);
+
+
+		error.code =
+			"INVALID_CATEGORY_ID";
+
+
+		throw error;
 	}
 
 
 	if (!item?.id) {
-		throw new Error(
-			"Das Item besitzt keine gültige ID."
-		);
+
+		const error =
+			new Error(
+				getUiText(
+					"invalidItemId"
+				)
+			);
+
+
+		error.code =
+			"INVALID_ITEM_ID";
+
+
+		throw error;
 	}
 
 
 	if (!progressData?.progress) {
-		throw new Error(
-			"Fortschrittsdaten sind nicht verfügbar."
-		);
+
+		const error =
+			new Error(
+				getUiText(
+					"progressUnavailable"
+				)
+			);
+
+
+		error.code =
+			"PROGRESS_UNAVAILABLE";
+
+
+		throw error;
 	}
 
 
 	if (!progressData.authenticated) {
+
 		const error =
 			new Error(
-				"Für diese Aktion ist eine Anmeldung erforderlich."
+				getUiText(
+					"authRequired"
+				)
 			);
 
-		error.code = "AUTH_REQUIRED";
+
+		error.code =
+			"AUTH_REQUIRED";
+
 
 		throw error;
 	}
 
 
 	const targetState =
-		Boolean(completed);
+		Boolean(
+			completed
+		);
 
 
 	const currentState =
 		Boolean(
-			progressData.progress[item.id]
+			progressData.progress[
+				item.id
+			]
 		);
 
 
 	/*
 	 * Gewünschter Zustand ist bereits vorhanden.
-	 * Kein Supabase-Request notwendig.
 	 */
-	if (currentState === targetState) {
+	if (
+		currentState ===
+		targetState
+	) {
 		return progressData;
 	}
 
 
 	/*
-	 * -------------------------------------------------------
-	 * In Supabase speichern
-	 * -------------------------------------------------------
+	 * In Supabase speichern.
 	 */
-
 	if (targetState) {
 
 		await insertProgressRow(
@@ -599,26 +786,27 @@ export async function setItemCompleted(
 
 
 	/*
-	 * -------------------------------------------------------
-	 * Lokalen Zustand erst NACH erfolgreichem Request ändern
-	 * -------------------------------------------------------
+	 * Lokalen Zustand erst nach erfolgreichem
+	 * Request ändern.
 	 */
-
 	if (targetState) {
 
-		progressData.progress[item.id] =
-			true;
+		progressData.progress[
+			item.id
+		] = true;
 
 	}
 	else {
 
-		delete progressData.progress[item.id];
+		delete progressData.progress[
+			item.id
+		];
 
 	}
 
 
 	/*
-	 * Cache aktualisieren
+	 * Cache aktualisieren.
 	 */
 	progressCache.set(
 		gameId,
@@ -630,6 +818,10 @@ export async function setItemCompleted(
 }
 
 
+/* ---------------------------------------------------------
+   9. Fehlermeldungen
+   --------------------------------------------------------- */
+
 /**
  * Übersetzt Fehler beim Schreiben des Fortschritts
  * in benutzerfreundliche Meldungen.
@@ -637,35 +829,98 @@ export async function setItemCompleted(
  * @param {Error|object} error
  * @returns {string}
  */
-export function getProgressErrorMessage(error) {
+export function getProgressErrorMessage(
+	error
+) {
 	if (!error) {
-		return "Der Fortschritt konnte nicht gespeichert werden.";
+		return getUiText(
+			"saveFailed"
+		);
 	}
 
 
-	if (error.code === "AUTH_REQUIRED") {
-		return "Bitte melde dich an, um deinen Fortschritt zu ändern.";
+	if (
+		error.code ===
+		"AUTH_REQUIRED"
+	) {
+		return getUiText(
+			"authRequired"
+		);
 	}
 
 
-	if (error.code === "42501") {
-		return "Du hast keine Berechtigung, diesen Fortschritt zu ändern.";
+	if (
+		error.code ===
+		"INVALID_GAME_ID"
+	) {
+		return getUiText(
+			"invalidGameId"
+		);
+	}
+
+
+	if (
+		error.code ===
+		"INVALID_CATEGORY_ID"
+	) {
+		return getUiText(
+			"invalidCategoryId"
+		);
+	}
+
+
+	if (
+		error.code ===
+		"INVALID_ITEM_ID"
+	) {
+		return getUiText(
+			"invalidItemId"
+		);
+	}
+
+
+	if (
+		error.code ===
+		"PROGRESS_UNAVAILABLE"
+	) {
+		return getUiText(
+			"progressUnavailable"
+		);
+	}
+
+
+	if (
+		error.code ===
+		"42501"
+	) {
+		return getUiText(
+			"permissionDenied"
+		);
 	}
 
 
 	const message =
 		String(
 			error.message ?? ""
-		).toLowerCase();
+		)
+			.toLowerCase();
 
 
 	if (
-		message.includes("failed to fetch") ||
-		message.includes("network")
+		message.includes(
+			"failed to fetch"
+		) ||
+		message.includes(
+			"network"
+		)
 	) {
-		return "Supabase ist momentan nicht erreichbar.";
+		return getUiText(
+			"networkUnavailable"
+		);
 	}
 
 
-	return "Der Fortschritt konnte nicht gespeichert werden.";
+	return getUiText(
+		"saveFailed"
+	);
 }
