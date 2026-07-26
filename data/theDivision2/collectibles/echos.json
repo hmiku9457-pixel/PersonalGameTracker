@@ -1,0 +1,1199 @@
+{
+  "id": "echos",
+  "name": "ECHOs",
+  "description": "ECHOs aus The Division 2.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 50,
+    "pendingNameVerification": 0
+  },
+  "groups": [
+    {
+      "id": "echos-factions",
+      "name": "ECHOs – Factions",
+      "items": [
+        {
+          "id": "division2.collectible.echos.factions.001-agent-down",
+          "name": "Agent Down",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Downtown East"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.002-job-offer",
+          "name": "Job Offer",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Downtown East"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.003-felony-murder",
+          "name": "Felony Murder",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Downtown East"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.004-the-last-supper",
+          "name": "The Last Supper",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Constitution Hall"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.005-true-sons-trial",
+          "name": "True Sons Trial",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "East Mall"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.006-lessons",
+          "name": "Lessons",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "West End"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.007-division-agents",
+          "name": "Division Agents",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Foggy Bottom"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.008-promotion",
+          "name": "Promotion",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Federal Triangle"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.009-the-stash",
+          "name": "The Stash",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Federal Triangle"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.010-frisk",
+          "name": "Frisk",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "Constitution Hall"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.factions.011-under-arrest",
+          "name": "Under Arrest",
+          "description": "ECHOs aus der Sammlung „Factions“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Factions"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 11"
+            },
+            {
+              "label": "Fundort",
+              "value": "West Potomac Park"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echos-unknown",
+      "name": "ECHOs – Unknown",
+      "items": [
+        {
+          "id": "division2.collectible.echos.unknown.001-recon",
+          "name": "Recon",
+          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "White House"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.unknown.002-coffee",
+          "name": "Coffee",
+          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Downtown East"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.unknown.003-secret-service",
+          "name": "Secret Service",
+          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "White House"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.unknown.004-network-sabotage",
+          "name": "Network Sabotage",
+          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "West Potomac Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.unknown.005-interrogation",
+          "name": "Interrogation",
+          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Southwest"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.unknown.006-antiviral",
+          "name": "Antiviral",
+          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Gatehouse Facility"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echos-world",
+      "name": "ECHOs – World",
+      "items": [
+        {
+          "id": "division2.collectible.echos.world.001-rally",
+          "name": "Rally",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Dark Zone West"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.002-insubordination",
+          "name": "Insubordination",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Dark Zone South"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.003-emergency-evacuation",
+          "name": "Emergency Evacuation",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Dark Zone East"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.004-rogue-agents",
+          "name": "Rogue Agents",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Southwest"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.005-factory-time",
+          "name": "Factory Time",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Judiciary Square"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.006-update-april-kelleher",
+          "name": "Update: April Kelleher",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Judiciary Square"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.007-update-david-hawkings",
+          "name": "Update: David Hawkings",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "West Potomac Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.008-emergency-room",
+          "name": "Emergency Room",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "West End"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.009-orders",
+          "name": "Orders",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "White House"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.010-civil-unrest",
+          "name": "Civil Unrest",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "East Mall"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.011-hostile-activity",
+          "name": "Hostile Activity",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Downtown West"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.012-orphan",
+          "name": "Orphan",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Foggy Bottom"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.013-panic-room",
+          "name": "Panic Room",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Judiciary Square"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.014-relocated",
+          "name": "Relocated",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Foggy Bottom"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.015-vigilantes",
+          "name": "Vigilantes",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "West Potomac Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.016-memorial",
+          "name": "Memorial",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "West Potomac Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.017-interview",
+          "name": "Interview",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "West End"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.world.018-pleased-to-meet-you-mr-president",
+          "name": "Pleased to Meet You Mr. President",
+          "description": "ECHOs aus der Sammlung „World“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "World"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 18"
+            },
+            {
+              "label": "Fundort",
+              "value": "Camp White Oak"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echos-manhattan",
+      "name": "ECHOs – Manhattan",
+      "items": [
+        {
+          "id": "division2.collectible.echos.manhattan.001-pathways",
+          "name": "Pathways",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Battery Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.002-compromised",
+          "name": "Compromised",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Civic Center"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.003-a-gift",
+          "name": "A Gift",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Battery Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.004-respite",
+          "name": "Respite",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Two Bridges"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.005-technician",
+          "name": "Technician",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Two Bridges"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.006-delivery",
+          "name": "Delivery",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Financial District"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.007-instructions",
+          "name": "Instructions",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Financial District"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.008-supplies",
+          "name": "Supplies",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Battery Park"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.009-parts",
+          "name": "Parts",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Civic Center"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manhattan.010-keeners-legacy",
+          "name": "Keener's Legacy",
+          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhattan"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Liberty Island"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echos-manning-national-zoo",
+      "name": "ECHOs – Manning National Zoo",
+      "items": [
+        {
+          "id": "division2.collectible.echos.manning-national-zoo.001-savannah",
+          "name": "Savannah",
+          "description": "ECHOs aus der Sammlung „Manning National Zoo“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manning National Zoo"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 2"
+            },
+            {
+              "label": "Fundort",
+              "value": "Manning National Zoo"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.manning-national-zoo.002-crocodile",
+          "name": "Crocodile",
+          "description": "ECHOs aus der Sammlung „Manning National Zoo“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manning National Zoo"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 2"
+            },
+            {
+              "label": "Fundort",
+              "value": "Manning National Zoo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echos-battle-for-brooklyn",
+      "name": "ECHOs – Battle for Brooklyn",
+      "items": [
+        {
+          "id": "division2.collectible.echos.battle-for-brooklyn.001-fire-doors",
+          "name": "Fire Doors",
+          "description": "ECHOs aus der Sammlung „Battle for Brooklyn“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "CERA Clinic"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.battle-for-brooklyn.002-born",
+          "name": "Born",
+          "description": "ECHOs aus der Sammlung „Battle for Brooklyn“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "The Art Museum"
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.echos.battle-for-brooklyn.003-faye",
+          "name": "Faye",
+          "description": "ECHOs aus der Sammlung „Battle for Brooklyn“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "ECHOs"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "DUMBO"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

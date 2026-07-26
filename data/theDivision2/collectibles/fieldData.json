@@ -1,0 +1,1604 @@
+{
+  "id": "fieldData",
+  "name": "Field Data",
+  "description": "Field Data aus The Division 2.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 65,
+    "pendingNameVerification": 6
+  },
+  "groups": [
+    {
+      "id": "fieldData-convoy-comms",
+      "name": "Field Data – Convoy Comms",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.convoy-comms.001-sitrep-17-00",
+          "name": "SitRep 17:00",
+          "description": "Field Data aus der Sammlung „Convoy Comms“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Convoy Comms"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.convoy-comms.002-sitrep-19-00",
+          "name": "SitRep 19:00",
+          "description": "Field Data aus der Sammlung „Convoy Comms“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Convoy Comms"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.convoy-comms.003-sitrep-8-00",
+          "name": "SitRep 8:00",
+          "description": "Field Data aus der Sammlung „Convoy Comms“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Convoy Comms"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-kenly-college",
+      "name": "Field Data – Kenly College",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.kenly-college.001-safe",
+          "name": "Safe",
+          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly College"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-college.002-yellow-alert",
+          "name": "Yellow Alert",
+          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly College"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-college.003-derby-ball",
+          "name": "Derby Ball",
+          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly College"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-college.004-quarantine",
+          "name": "Quarantine",
+          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly College"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-college.005-homecoming",
+          "name": "Homecoming",
+          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly College"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-kenly-podcast",
+      "name": "Field Data – Kenly Podcast",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.kenly-podcast.001-welcome-to-kenlycast",
+          "name": "Welcome to Kenlycast",
+          "description": "Field Data aus der Sammlung „Kenly Podcast“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly Podcast"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-podcast.002-liberal-arts",
+          "name": "Liberal Arts",
+          "description": "Field Data aus der Sammlung „Kenly Podcast“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly Podcast"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.kenly-podcast.003-kenly-podcast-03-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Kenly Podcast #03 – Name noch nicht öffentlich verifiziert",
+          "description": "Field Data aus der Sammlung „Kenly Podcast“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Kenly Podcast"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        }
+      ]
+    },
+    {
+      "id": "fieldData-aquarium",
+      "name": "Field Data – Aquarium",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.aquarium.001-tough-calls",
+          "name": "Tough Calls",
+          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aquarium"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.aquarium.002-options",
+          "name": "Options",
+          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aquarium"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.aquarium.003-fish-fry",
+          "name": "Fish Fry",
+          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aquarium"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.aquarium.004-pools",
+          "name": "Pools",
+          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aquarium"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-data-center",
+      "name": "Field Data – Data Center",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.data-center.001-gordon-amherst-recording-118",
+          "name": "Gordon Amherst Recording 118",
+          "description": "Field Data aus der Sammlung „Data Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Data Center"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.data-center.002-ivan-grekov-recording-2",
+          "name": "Ivan Grekov Recording 2",
+          "description": "Field Data aus der Sammlung „Data Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Data Center"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.data-center.003-erica-gonzalez-recording-42",
+          "name": "Erica Gonzalez Recording 42",
+          "description": "Field Data aus der Sammlung „Data Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Data Center"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-detention-center",
+      "name": "Field Data – Detention Center",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.detention-center.001-nsa-wiretap",
+          "name": "NSA Wiretap",
+          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Detention Center"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.detention-center.002-nsa-interrogation",
+          "name": "NSA Interrogation",
+          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Detention Center"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.detention-center.003-mass-arrests",
+          "name": "Mass Arrests",
+          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Detention Center"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.detention-center.004-prison-outbreak",
+          "name": "Prison Outbreak",
+          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Detention Center"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-embassy",
+      "name": "Field Data – Embassy",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.embassy.001-policy",
+          "name": "Policy",
+          "description": "Field Data aus der Sammlung „Embassy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Embassy"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.embassy.002-family",
+          "name": "Family",
+          "description": "Field Data aus der Sammlung „Embassy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Embassy"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.embassy.003-activated",
+          "name": "Activated",
+          "description": "Field Data aus der Sammlung „Embassy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Embassy"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.embassy.004-hoodie",
+          "name": "Hoodie",
+          "description": "Field Data aus der Sammlung „Embassy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Embassy"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-marina-supply-route",
+      "name": "Field Data – Marina Supply Route",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.marina-supply-route.001-skimming",
+          "name": "Skimming",
+          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Marina Supply Route"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.marina-supply-route.002-promise",
+          "name": "Promise",
+          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Marina Supply Route"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.marina-supply-route.003-inflation",
+          "name": "Inflation",
+          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Marina Supply Route"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.marina-supply-route.004-value",
+          "name": "Value",
+          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Marina Supply Route"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.marina-supply-route.005-fair",
+          "name": "Fair",
+          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Marina Supply Route"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-national-bond-bank",
+      "name": "Field Data – National Bond Bank",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.national-bond-bank.001-logistics",
+          "name": "Logistics",
+          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "National Bond Bank"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.national-bond-bank.002-opportunities",
+          "name": "Opportunities",
+          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "National Bond Bank"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.national-bond-bank.003-orders-from-corporate",
+          "name": "Orders from Corporate",
+          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "National Bond Bank"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.national-bond-bank.004-exit-plan",
+          "name": "Exit Plan",
+          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "National Bond Bank"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-nelson-theatre",
+      "name": "Field Data – Nelson Theatre",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.nelson-theatre.001-holding",
+          "name": "Holding",
+          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Nelson Theatre"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.nelson-theatre.002-briefing",
+          "name": "Briefing",
+          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Nelson Theatre"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.nelson-theatre.003-barricades",
+          "name": "Barricades",
+          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Nelson Theatre"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.nelson-theatre.004-hostile-takeover",
+          "name": "Hostile Takeover",
+          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Nelson Theatre"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-tens-nightclub",
+      "name": "Field Data – Tens Nightclub",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.tens-nightclub.001-od-call",
+          "name": "OD Call",
+          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Tens Nightclub"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.tens-nightclub.002-are-we-rogue",
+          "name": "Are We Rogue?",
+          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Tens Nightclub"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.tens-nightclub.003-spice-effects",
+          "name": "Spice Effects",
+          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Tens Nightclub"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.tens-nightclub.004-spice-production",
+          "name": "Spice Production",
+          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Tens Nightclub"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-library-of-congress",
+      "name": "Field Data – Library of Congress",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.library-of-congress.001-the-audit",
+          "name": "The Audit",
+          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Library of Congress"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.library-of-congress.002-a-big-bonfire",
+          "name": "A Big Bonfire",
+          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Library of Congress"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.library-of-congress.003-are-you-testing-me",
+          "name": "Are you testing me?",
+          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Library of Congress"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.library-of-congress.004-knowledge",
+          "name": "Knowledge",
+          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Library of Congress"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.library-of-congress.005-cui-bono",
+          "name": "Cui Bono",
+          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Library of Congress"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.library-of-congress.006-real-smart-echo",
+          "name": "Real Smart (ECHO)",
+          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Library of Congress"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-the-capitol-globe",
+      "name": "Field Data – The Capitol Globe",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.the-capitol-globe.001-staff-call",
+          "name": "Staff Call",
+          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "The Capitol Globe"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.the-capitol-globe.002-who-is-your-source",
+          "name": "Who is your source?!",
+          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "The Capitol Globe"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.the-capitol-globe.003-bye-art",
+          "name": "Bye, Art",
+          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "The Capitol Globe"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.the-capitol-globe.004-sixty-seconds",
+          "name": "Sixty Seconds",
+          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "The Capitol Globe"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.the-capitol-globe.005-shaw-would-be-proud",
+          "name": "Shaw would be proud",
+          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "The Capitol Globe"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.the-capitol-globe.006-on-my-own-echo",
+          "name": "On My Own (ECHO)",
+          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "The Capitol Globe"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-conspiracy-zone",
+      "name": "Field Data – Conspiracy Zone",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.conspiracy-zone.001-like-candy",
+          "name": "Like Candy",
+          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Conspiracy Zone"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.conspiracy-zone.002-we-take",
+          "name": "We Take",
+          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Conspiracy Zone"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.conspiracy-zone.003-youre-twitching",
+          "name": "You're Twitching",
+          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Conspiracy Zone"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.conspiracy-zone.004-games",
+          "name": "Games",
+          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Conspiracy Zone"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.conspiracy-zone.005-conspiracy-zone-echo",
+          "name": "Conspiracy Zone ECHO",
+          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Conspiracy Zone"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fieldData-mcmillan-reservoir",
+      "name": "Field Data – McMillan Reservoir",
+      "items": [
+        {
+          "id": "division2.collectible.field-data.mcmillan-reservoir.001-mcmillan-reservoir-01-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "McMillan Reservoir #01 – Name noch nicht öffentlich verifiziert",
+          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "McMillan Reservoir"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.field-data.mcmillan-reservoir.002-mcmillan-reservoir-02-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "McMillan Reservoir #02 – Name noch nicht öffentlich verifiziert",
+          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "McMillan Reservoir"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.field-data.mcmillan-reservoir.003-mcmillan-reservoir-03-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "McMillan Reservoir #03 – Name noch nicht öffentlich verifiziert",
+          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "McMillan Reservoir"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.field-data.mcmillan-reservoir.004-mcmillan-reservoir-04-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "McMillan Reservoir #04 – Name noch nicht öffentlich verifiziert",
+          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "McMillan Reservoir"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.field-data.mcmillan-reservoir.005-mcmillan-reservoir-echo-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "McMillan Reservoir ECHO – Name noch nicht öffentlich verifiziert",
+          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "McMillan Reservoir"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        }
+      ]
+    }
+  ]
+}

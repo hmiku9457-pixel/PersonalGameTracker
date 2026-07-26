@@ -1,0 +1,2552 @@
+{
+  "id": "database",
+  "name": "Database",
+  "description": "Database aus The Division 2.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 107,
+    "pendingNameVerification": 18
+  },
+  "groups": [
+    {
+      "id": "database-ellis-at-camp-white-oak",
+      "name": "Database – Ellis at Camp White Oak",
+      "items": [
+        {
+          "id": "division2.collectible.database.ellis-at-camp-white-oak.001-ellis-memoirs-advice",
+          "name": "Ellis' memoirs: Advice",
+          "description": "Database aus der Sammlung „Ellis at Camp White Oak“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Ellis at Camp White Oak"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.ellis-at-camp-white-oak.002-ellis-memoirs-succession",
+          "name": "Ellis' memoirs: Succession",
+          "description": "Database aus der Sammlung „Ellis at Camp White Oak“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Ellis at Camp White Oak"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.ellis-at-camp-white-oak.003-ellis-memoirs-crisis",
+          "name": "Ellis' memoirs: Crisis",
+          "description": "Database aus der Sammlung „Ellis at Camp White Oak“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Ellis at Camp White Oak"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.ellis-at-camp-white-oak.004-ellis-memoirs-legacy",
+          "name": "Ellis' memoirs: Legacy",
+          "description": "Database aus der Sammlung „Ellis at Camp White Oak“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Ellis at Camp White Oak"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-faction-unknown",
+      "name": "Database – Faction: Unknown",
+      "items": [
+        {
+          "id": "division2.collectible.database.faction-unknown.001-bardon-schaeffer",
+          "name": "Bardon Schaeffer",
+          "description": "Database aus der Sammlung „Faction: Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.faction-unknown.002-ellis-galveston",
+          "name": "Ellis Galveston",
+          "description": "Database aus der Sammlung „Faction: Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.faction-unknown.003-jack-bonney",
+          "name": "Jack Bonney",
+          "description": "Database aus der Sammlung „Faction: Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.faction-unknown.004-elijah-sumner",
+          "name": "Elijah Sumner",
+          "description": "Database aus der Sammlung „Faction: Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.faction-unknown.005-petrus-brenner",
+          "name": "Petrus Brenner",
+          "description": "Database aus der Sammlung „Faction: Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.faction-unknown.006-milla-wyvern-radek",
+          "name": "Milla \"Wyvern\" Radek",
+          "description": "Database aus der Sammlung „Faction: Unknown“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faction: Unknown"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-profiles-new-york",
+      "name": "Database – Profiles: New York",
+      "items": [
+        {
+          "id": "division2.collectible.database.profiles-new-york.001-faye-lau",
+          "name": "Faye Lau",
+          "description": "Database aus der Sammlung „Profiles: New York“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: New York"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profiles-new-york.002-jessica-kandel",
+          "name": "Jessica Kandel",
+          "description": "Database aus der Sammlung „Profiles: New York“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: New York"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profiles-new-york.003-paul-rhodes",
+          "name": "Paul Rhodes",
+          "description": "Database aus der Sammlung „Profiles: New York“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: New York"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.profiles-new-york.004-roy-benitez",
+          "name": "Roy Benitez",
+          "description": "Database aus der Sammlung „Profiles: New York“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profiles: New York"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die zugehörigen Story-, Missions- und Open-World-Inhalte freischaltbar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-snitchCardsArcana",
+      "name": "Database – Snitch Cards: Arcana",
+      "items": [
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.001-0-the-fool-chuckles",
+          "name": "0 The Fool — Chuckles",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.002-i-the-magician-bates",
+          "name": "I The Magician — Bates",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.003-ii-the-high-priestess-jones",
+          "name": "II The High Priestess — Jones",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.004-iii-the-empress-noble",
+          "name": "III The Empress — Noble",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.005-iv-the-emperor-bougie",
+          "name": "IV The Emperor — Bougie",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.006-v-the-hierophant-pope",
+          "name": "V The Hierophant — Pope",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.007-vi-the-lovers-adam-and-eve",
+          "name": "VI The Lovers — Adam and Eve",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.008-vii-the-chariot-atlas",
+          "name": "VII The Chariot — Atlas",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.009-viii-strength-justice",
+          "name": "VIII Strength — Justice",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.010-ix-the-hermit-tully",
+          "name": "IX The Hermit — Tully",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.011-x-wheel-of-fortune-executioner",
+          "name": "X Wheel of Fortune — Executioner",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.012-xi-justice-maddie-shady-benson",
+          "name": "XI Justice — Maddie \"Shady\" Benson",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.013-xii-the-hanged-man-thomas",
+          "name": "XII The Hanged Man — Thomas",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.014-xiii-death-gray",
+          "name": "XIII Death — Gray",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.015-xiv-temperance-angel",
+          "name": "XIV Temperance — Angel",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.016-xv-the-devil-corwin",
+          "name": "XV The Devil — Corwin",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.017-xvi-the-tower-betsy",
+          "name": "XVI The Tower — Betsy",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.018-xvii-the-star-rider",
+          "name": "XVII The Star — Rider",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.019-xviii-the-moon-wolfe",
+          "name": "XVIII The Moon — Wolfe",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.020-xix-the-sun-blink",
+          "name": "XIX The Sun — Blink",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.021-xx-judgement-matt-bendy-patterson",
+          "name": "XX Judgement — Matt \"Bendy\" Patterson",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "21 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-arcana.022-xxi-the-world-andrew-sticks-gallow",
+          "name": "XXI The World — Andrew \"Sticks\" Gallow",
+          "description": "Database aus der Sammlung „Snitch Cards: Arcana“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Arcana"
+            },
+            {
+              "label": "Position",
+              "value": "22 / 22"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von den zugehörigen benannten Open-World-Gegnern in Lower Manhattan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-snitchCardsClubs",
+      "name": "Database – Snitch Cards: Clubs",
+      "items": [
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.001-2-of-clubs-the-accursed",
+          "name": "2 of Clubs — The Accursed",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.002-3-of-clubs-the-determined",
+          "name": "3 of Clubs — The Determined",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.003-4-of-clubs-the-hunter",
+          "name": "4 of Clubs — The Hunter",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.004-5-of-clubs-the-valiant",
+          "name": "5 of Clubs — The Valiant",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.005-6-of-clubs-the-fury",
+          "name": "6 of Clubs — The Fury",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.006-7-of-clubs-the-peacemaker",
+          "name": "7 of Clubs — The Peacemaker",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.007-8-of-clubs-the-reckless",
+          "name": "8 of Clubs — The Reckless",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.008-9-of-clubs-the-scar",
+          "name": "9 of Clubs — The Scar",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.009-10-of-clubs-the-fearless",
+          "name": "10 of Clubs — The Fearless",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.010-jack-of-clubs-the-brutal",
+          "name": "Jack of Clubs — The Brutal",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.011-queen-of-clubs-the-wicked",
+          "name": "Queen of Clubs — The Wicked",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.012-king-of-clubs-the-cardinal",
+          "name": "King of Clubs — The Cardinal",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-clubs.013-ace-of-clubs-the-cursed",
+          "name": "Ace of Clubs — The Cursed",
+          "description": "Database aus der Sammlung „Snitch Cards: Clubs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Clubs"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-snitchCardsDiamonds",
+      "name": "Database – Snitch Cards: Diamonds",
+      "items": [
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.001-2-of-diamonds-carson-riot-frost",
+          "name": "2 of Diamonds — Carson \"Riot\" Frost",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.002-3-of-diamonds-molly-southpaw-nielsen",
+          "name": "3 of Diamonds — Molly \"Southpaw\" Nielsen",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.003-4-of-diamonds-sean-kickback-hemper",
+          "name": "4 of Diamonds — Sean \"Kickback\" Hemper",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.004-5-of-diamonds-elliot-undertaker-chan",
+          "name": "5 of Diamonds — Elliot \"Undertaker\" Chan",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.005-6-of-diamonds-joseph-meatball-baker",
+          "name": "6 of Diamonds — Joseph \"Meatball\" Baker",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.006-7-of-diamonds-andrew-negative-ramos",
+          "name": "7 of Diamonds — Andrew \"Negative\" Ramos",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.007-8-of-diamonds-rebecca-viper-osborn",
+          "name": "8 of Diamonds — Rebecca \"Viper\" Osborn",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.008-9-of-diamonds-elias-husky-mckay",
+          "name": "9 of Diamonds — Elias \"Husky\" Mckay",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.009-10-of-diamonds-daisy",
+          "name": "10 of Diamonds — Daisy",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.010-jack-of-diamonds-cameron-sparkplug-powell",
+          "name": "Jack of Diamonds — Cameron \"Sparkplug\" Powell",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.011-queen-of-diamonds-bianca-slingshot-solano",
+          "name": "Queen of Diamonds — Bianca \"Slingshot\" Solano",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.012-king-of-diamonds-gabriel-nightcap-simmons",
+          "name": "King of Diamonds — Gabriel \"Nightcap\" Simmons",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-diamonds.013-ace-of-diamonds-jake-boomerang-reilley",
+          "name": "Ace of Diamonds — Jake \"Boomerang\" Reilley",
+          "description": "Database aus der Sammlung „Snitch Cards: Diamonds“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Diamonds"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-snitchCardsHearts",
+      "name": "Database – Snitch Cards: Hearts",
+      "items": [
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.001-2-of-hearts-bonville",
+          "name": "2 of Hearts — Bonville",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.002-3-of-hearts-greystoke",
+          "name": "3 of Hearts — Greystoke",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.003-4-of-hearts-harrington",
+          "name": "4 of Hearts — Harrington",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.004-5-of-hearts-neville",
+          "name": "5 of Hearts — Neville",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.005-6-of-hearts-stanley",
+          "name": "6 of Hearts — Stanley",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.006-7-of-hearts-tyrell",
+          "name": "7 of Hearts — Tyrell",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.007-8-of-hearts-schwartz",
+          "name": "8 of Hearts — Schwartz",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.008-9-of-hearts-donne",
+          "name": "9 of Hearts — Donne",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.009-10-of-hearts-matthews",
+          "name": "10 of Hearts — Matthews",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.010-jack-of-hearts-edwards",
+          "name": "Jack of Hearts — Edwards",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.011-queen-of-hearts-hastings",
+          "name": "Queen of Hearts — Hastings",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.012-king-of-hearts-coppini",
+          "name": "King of Hearts — Coppini",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-hearts.013-ace-of-hearts-wyatt",
+          "name": "Ace of Hearts — Wyatt",
+          "description": "Database aus der Sammlung „Snitch Cards: Hearts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Hearts"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-snitchCardsSpades",
+      "name": "Database – Snitch Cards: Spades",
+      "items": [
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.001-2-of-spades-dewey",
+          "name": "2 of Spades — Dewey",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.002-3-of-spades-crab",
+          "name": "3 of Spades — Crab",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.003-4-of-spades-sharps",
+          "name": "4 of Spades — Sharps",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.004-5-of-spades-fever",
+          "name": "5 of Spades — Fever",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.005-6-of-spades-bootleg",
+          "name": "6 of Spades — Bootleg",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.006-7-of-spades-mullet",
+          "name": "7 of Spades — Mullet",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.007-8-of-spades-snowman",
+          "name": "8 of Spades — Snowman",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.008-9-of-spades-pusher",
+          "name": "9 of Spades — Pusher",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.009-10-of-spades-sawbuck",
+          "name": "10 of Spades — Sawbuck",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.010-jack-of-spades-jackknife",
+          "name": "Jack of Spades — Jackknife",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.011-queen-of-spades-calamity",
+          "name": "Queen of Spades — Calamity",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.012-king-of-spades-cowboy",
+          "name": "King of Spades — Cowboy",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.snitch-cards-spades.013-ace-of-spades-spike",
+          "name": "Ace of Spades — Spike",
+          "description": "Database aus der Sammlung „Snitch Cards: Spades“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Snitch Cards: Spades"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von benannten Open-World-Gegnern in Washington, D.C. Die Gegner erscheinen wiederholt an bekannten Boss-Spawns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-danversNetwork",
+      "name": "Database – Danver's Network",
+      "items": [
+        {
+          "id": "division2.collectible.database.danvers-network.001-alpha",
+          "name": "Alpha",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.002-danvers-network-02-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #02 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.003-danvers-network-03-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #03 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.004-danvers-network-04-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #04 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.005-danvers-network-05-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #05 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.006-danvers-network-06-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #06 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.007-danvers-network-07-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #07 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.008-danvers-network-08-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #08 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.009-danvers-network-09-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #09 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.010-danvers-network-10-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #10 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.011-danvers-network-11-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #11 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.012-danvers-network-12-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #12 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.013-danvers-network-13-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #13 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.014-danvers-network-14-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #14 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.015-danvers-network-15-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #15 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.danvers-network.016-danvers-network-16-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Danver's Network #16 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Danver's Network“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Danver's Network"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Von 16 benannten Gegnern in den spielbaren Brooklyn-Gebieten. Der Abschluss der Sammlung schaltet das letzte Brooklyn-ECHO frei."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        }
+      ]
+    },
+    {
+      "id": "database-lostEllisMemos",
+      "name": "Database – Lost Ellis Memos",
+      "items": [
+        {
+          "id": "division2.collectible.database.lost-ellis-memos.001-lost-ellis-memo-01-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Lost Ellis Memo #01 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Lost Ellis Memos"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.lost-ellis-memos.002-lost-ellis-memo-02-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Lost Ellis Memo #02 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Lost Ellis Memos"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        },
+        {
+          "id": "division2.collectible.database.lost-ellis-memos.003-lost-ellis-memo-03-name-noch-nicht-oeffentlich-verifiziert",
+          "name": "Lost Ellis Memo #03 – Name noch nicht öffentlich verifiziert",
+          "description": "Database aus der Sammlung „Lost Ellis Memos“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Database"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Lost Ellis Memos"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die Faye-Lau-Climax-Mission beziehungsweise deren benannte Gegner."
+            }
+          ],
+          "verificationStatus": "pending-name-verification"
+        }
+      ]
+    }
+  ]
+}

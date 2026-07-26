@@ -1,0 +1,1187 @@
+{
+  "id": "artifacts",
+  "name": "Artifacts",
+  "description": "Artifacts aus The Division 2.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 50,
+    "pendingNameVerification": 0
+  },
+  "groups": [
+    {
+      "id": "artifacts-artwork",
+      "name": "Artifacts – Artwork",
+      "items": [
+        {
+          "id": "division2.collectible.artifacts.artwork.001-portrait-of-ginevra-de-benci",
+          "name": "Portrait of Ginevra de' Benci",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.002-rembrandt-van-rijn-self-portrait",
+          "name": "Rembrandt van Rijn - Self Portrait",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.003-woman-holding-a-balance",
+          "name": "Woman Holding a Balance",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.004-watson-and-the-shark",
+          "name": "Watson and the Shark",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.005-the-emperor-napoleon-in-his-study-at-the-tuileries",
+          "name": "The Emperor Napoleon in His Study at the Tuileries",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.006-vincent-van-gogh-self-portrait",
+          "name": "Vincent van Gogh - Self-Portrait",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.007-the-boston-massacre",
+          "name": "The Boston Massacre",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.008-st-george-and-the-dragon",
+          "name": "St George and the Dragon",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.009-judith-leyster-self-portrait",
+          "name": "Judith Leyster - Self-Portrait",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.010-hercules-and-the-nemean-lion",
+          "name": "Hercules and the Nemean Lion",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.011-bazille-and-camille",
+          "name": "Bazille and Camille",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.012-the-fall-of-phaeton",
+          "name": "The Fall of Phaeton",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.artwork.013-the-great-red-dragon-and-the-woman-clothed-with-the-sun",
+          "name": "The Great Red Dragon and the Woman Clothed with the Sun",
+          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Artwork"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artifacts-founding-fathers",
+      "name": "Artifacts – Founding Fathers",
+      "items": [
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.001-benjamin-franklin",
+          "name": "Benjamin Franklin",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.002-george-washington",
+          "name": "George Washington",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.003-james-madison",
+          "name": "James Madison",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.004-john-adams",
+          "name": "John Adams",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.005-john-jay",
+          "name": "John Jay",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.006-thomas-jefferson",
+          "name": "Thomas Jefferson",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.founding-fathers.007-alexander-hamilton",
+          "name": "Alexander Hamilton",
+          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Founding Fathers"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 7"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artifacts-relics",
+      "name": "Artifacts – Relics",
+      "items": [
+        {
+          "id": "division2.collectible.artifacts.relics.001-abraham-lincolns-top-hat",
+          "name": "Abraham Lincoln's Top Hat",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.002-lewis-and-clark-pocket-compass",
+          "name": "Lewis and Clark Pocket Compass",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.003-old-glory-flag",
+          "name": "Old Glory Flag",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.004-plymouth-rock-fragment",
+          "name": "Plymouth Rock Fragment",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.005-the-bill-of-rights",
+          "name": "The Bill of Rights",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.006-the-constitution-of-the-united-states",
+          "name": "The Constitution of the United States",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.007-crystal-skull",
+          "name": "Crystal Skull",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.008-teddy-roosevelts-teddy-bear",
+          "name": "Teddy Roosevelt's Teddy Bear",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.009-lincolns-pocket-watch",
+          "name": "Lincoln's Pocket Watch",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.010-yamaki-pine",
+          "name": "Yamaki Pine",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.011-george-washingtons-battle-sword-and-scabbard",
+          "name": "George Washington's Battle Sword and Scabbard",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.012-greffuhle-stradivarius",
+          "name": "Greffuhle Stradivarius",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.relics.013-thomas-jeffersons-polygraph",
+          "name": "Thomas Jefferson's Polygraph",
+          "description": "Artifacts aus der Sammlung „Relics“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Relics"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artifacts-memorabilia",
+      "name": "Artifacts – Memorabilia",
+      "items": [
+        {
+          "id": "division2.collectible.artifacts.memorabilia.001-quarterback-figurine",
+          "name": "Quarterback Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.002-knight-figurine",
+          "name": "Knight Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.003-sheriff-figurine",
+          "name": "Sheriff Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.004-bald-eagle-figurine",
+          "name": "Bald Eagle Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.005-scarecrow-figurine",
+          "name": "Scarecrow Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.006-cerberus-figurine",
+          "name": "Cerberus Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.007-nutcracker-figurine",
+          "name": "Nutcracker Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.008-witch-figurine",
+          "name": "Witch Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.009-t-rex-figurine",
+          "name": "T-Rex Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.010-president-wallers-presidential-coin",
+          "name": "President Waller's Presidential Coin",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.011-statue-of-liberty-figurine",
+          "name": "Statue of Liberty Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.012-uncle-sam-bobble-head",
+          "name": "Uncle Sam Bobble Head",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.013-us-capitol-snow-globe",
+          "name": "US Capitol Snow Globe",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.014-white-house-snow-globe",
+          "name": "White House Snow Globe",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.015-german-shepard-figurine",
+          "name": "German Shepard Figurine",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.016-white-chess-piece-king",
+          "name": "White Chess Piece King",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.artifacts.memorabilia.017-black-chess-piece-rook",
+          "name": "Black Chess Piece Rook",
+          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Artifacts"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Memorabilia"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 17"
+            },
+            {
+              "label": "Fundort",
+              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

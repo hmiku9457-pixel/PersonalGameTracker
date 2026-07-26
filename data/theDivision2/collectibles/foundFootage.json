@@ -1,0 +1,330 @@
+{
+  "id": "foundFootage",
+  "name": "Found Footage",
+  "description": "Found Footage aus The Division 2.",
+  "lastUpdated": "2026-07-25",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 13,
+    "pendingNameVerification": 0
+  },
+  "groups": [
+    {
+      "id": "foundFootage-washington-dc",
+      "name": "Found Footage – Washington, D.C.",
+      "items": [
+        {
+          "id": "division2.collectible.found-footage.washington-dc.001-hyenas",
+          "name": "Hyenas",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.002-hyenas-council",
+          "name": "Hyenas Council",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.003-true-sons",
+          "name": "True Sons",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.004-true-sons-leader",
+          "name": "True Sons Leader",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.005-outcast",
+          "name": "Outcast",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.006-outcast-leader",
+          "name": "Outcast Leader",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.007-satellite-surveillance",
+          "name": "Satellite Surveillance",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.washington-dc.008-helmet-cam-footage",
+          "name": "Helmet Cam Footage",
+          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Washington, D.C."
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundFootage-manhunt-vanguard",
+      "name": "Found Footage – Manhunt: Vanguard",
+      "items": [
+        {
+          "id": "division2.collectible.found-footage.manhunt-vanguard.001-haven",
+          "name": "Haven",
+          "description": "Found Footage aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 2"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.manhunt-vanguard.002-echo",
+          "name": "ECHO",
+          "description": "Found Footage aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 2"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundFootage-battle-for-brooklyn",
+      "name": "Found Footage – Battle for Brooklyn",
+      "items": [
+        {
+          "id": "division2.collectible.found-footage.battle-for-brooklyn.001-deepfake",
+          "name": "Deepfake",
+          "description": "Found Footage aus der Sammlung „Battle for Brooklyn“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.battle-for-brooklyn.002-friends",
+          "name": "Friends",
+          "description": "Found Footage aus der Sammlung „Battle for Brooklyn“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.found-footage.battle-for-brooklyn.003-tech",
+          "name": "Tech",
+          "description": "Found Footage aus der Sammlung „Battle for Brooklyn“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Found Footage"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 3"
+            },
+            {
+              "label": "Fundort",
+              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
