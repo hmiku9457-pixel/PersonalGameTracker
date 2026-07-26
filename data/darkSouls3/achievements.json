@@ -1,646 +1,1420 @@
 [
 	{
 		"id": "darkSouls3.achievement.enkindle",
-		"name": "Enkindle",
-		"description": "Entzünde zum ersten Mal ein Leuchtfeuer.",
+		"name": {
+			"de": "Entfachen",
+			"en": "Enkindle"
+		},
+		"description": {
+			"de": "Entzünde zum ersten Mal ein Leuchtfeuer.",
+			"en": "Light a bonfire for the first time."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.embraceTheFlame",
-		"name": "Embrace the Flame",
-		"description": "Werde zum Host of Embers.",
+		"name": {
+			"de": "Umarmung der Flamme",
+			"en": "Embrace the Flame"
+		},
+		"description": {
+			"de": "Werde zum Host of Embers.",
+			"en": "Become a Host of Embers."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Fortschritt"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Fortschritt",
+					"en": "Progress"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.iudexGundyr",
-		"name": "Iudex Gundyr",
-		"description": "Besiege Iudex Gundyr.",
+		"name": {
+			"de": "Iudex Gundyr",
+			"en": "Iudex Gundyr"
+		},
+		"description": {
+			"de": "Besiege Iudex Gundyr.",
+			"en": "Defeat Iudex Gundyr."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.vordtOfTheBorealValley",
-		"name": "Vordt of the Boreal Valley",
-		"description": "Besiege Vordt of the Boreal Valley.",
+		"name": {
+			"de": "Vordt vom Nordwindtal",
+			"en": "Vordt of the Boreal Valley"
+		},
+		"description": {
+			"de": "Besiege Vordt of the Boreal Valley.",
+			"en": "Defeat Vordt of the Boreal Valley."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantWayOfBlue",
-		"name": "Covenant: Way of Blue",
-		"description": "Entdecke den Eid 'Way of Blue'.",
+		"name": {
+			"de": "Eid: Der Blaue Pfad",
+			"en": "Covenant: Way of Blue"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Way of Blue'.",
+			"en": "Discover the Way of Blue covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.curseRottedGreatwood",
-		"name": "Curse-rotted Greatwood",
-		"description": "Besiege den Curse-rotted Greatwood.",
+		"name": {
+			"de": "Fluchverderbtes Großholz",
+			"en": "Curse-rotted Greatwood"
+		},
+		"description": {
+			"de": "Besiege den Curse-rotted Greatwood.",
+			"en": "Defeat the Curse-rotted Greatwood."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantBlueSentinels",
-		"name": "Covenant: Blue Sentinels",
-		"description": "Entdecke den Eid 'Blue Sentinels'.",
+		"name": {
+			"de": "Eid: Blaue Wächter",
+			"en": "Covenant: Blue Sentinels"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Blue Sentinels'.",
+			"en": "Discover the Blue Sentinels covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.crystalSage",
-		"name": "Crystal Sage",
-		"description": "Besiege den Crystal Sage.",
+		"name": {
+			"de": "Kristallweiser",
+			"en": "Crystal Sage"
+		},
+		"description": {
+			"de": "Besiege den Crystal Sage.",
+			"en": "Defeat the Crystal Sage."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.lordsOfCinderAbyssWatchers",
-		"name": "Lords of Cinder: Abyss Watchers",
-		"description": "Besiege die Abyss Watchers.",
+		"name": {
+			"de": "Aschefürsten: Wächter des Abgrunds",
+			"en": "Lords of Cinder: Abyss Watchers"
+		},
+		"description": {
+			"de": "Besiege die Abyss Watchers.",
+			"en": "Defeat the Abyss Watchers."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.deaconsOfTheDeep",
-		"name": "Deacons of the Deep",
-		"description": "Besiege die Deacons of the Deep.",
+		"name": {
+			"de": "Diakone des Abgrunds",
+			"en": "Deacons of the Deep"
+		},
+		"description": {
+			"de": "Besiege die Deacons of the Deep.",
+			"en": "Defeat the Deacons of the Deep."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.highLordWolnir",
-		"name": "High Lord Wolnir",
-		"description": "Besiege High Lord Wolnir.",
+		"name": {
+			"de": "Hochfürst Wolnir",
+			"en": "High Lord Wolnir"
+		},
+		"description": {
+			"de": "Besiege High Lord Wolnir.",
+			"en": "Defeat High Lord Wolnir."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantWarriorOfSunlight",
-		"name": "Covenant: Warrior of Sunlight",
-		"description": "Entdecke den Eid 'Warrior of Sunlight'.",
+		"name": {
+			"de": "Eid: Krieger des Sonnenlichts",
+			"en": "Covenant: Warrior of Sunlight"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Warrior of Sunlight'.",
+			"en": "Discover the Warrior of Sunlight covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.pontiffSulyvahn",
-		"name": "Pontiff Sulyvahn",
-		"description": "Besiege Pontiff Sulyvahn.",
+		"name": {
+			"de": "Hohepriester Sulyvahn",
+			"en": "Pontiff Sulyvahn"
+		},
+		"description": {
+			"de": "Besiege Pontiff Sulyvahn.",
+			"en": "Defeat Pontiff Sulyvahn."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantWatchdogsOfFarron",
-		"name": "Covenant: Watchdogs of Farron",
-		"description": "Entdecke den Eid 'Watchdogs of Farron'.",
+		"name": {
+			"de": "Eid: Farrons Wachhunde",
+			"en": "Covenant: Watchdogs of Farron"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Watchdogs of Farron'.",
+			"en": "Discover the Watchdogs of Farron covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.dancerOfTheBorealValley",
-		"name": "Dancer of the Boreal Valley",
-		"description": "Besiege die Dancer of the Boreal Valley.",
+		"name": {
+			"de": "Tänzerin des Nordwindtals",
+			"en": "Dancer of the Boreal Valley"
+		},
+		"description": {
+			"de": "Besiege die Dancer of the Boreal Valley.",
+			"en": "Defeat the Dancer of the Boreal Valley."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.lordOfCinderYhormTheGiant",
-		"name": "Lord of Cinder: Yhorm the Giant",
-		"description": "Besiege Yhorm the Giant.",
+		"name": {
+			"de": "Aschefürsten: Yhorm der Riese",
+			"en": "Lord of Cinder: Yhorm the Giant"
+		},
+		"description": {
+			"de": "Besiege Yhorm the Giant.",
+			"en": "Defeat Yhorm the Giant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.lordOfCinderAldrichDevourerOfGods",
-		"name": "Lord of Cinder: Aldrich, Devourer of Gods",
-		"description": "Besiege Aldrich, Devourer of Gods.",
+		"name": {
+			"de": "Aschefürsten: Aldrich der Götterfresser",
+			"en": "Lord of Cinder: Aldrich, Devourer of Gods"
+		},
+		"description": {
+			"de": "Besiege Aldrich, Devourer of Gods.",
+			"en": "Defeat Aldrich, Devourer of Gods."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.oldDemonKing",
-		"name": "Old Demon King",
-		"description": "Besiege den Old Demon King.",
+		"name": {
+			"de": "Alter Dämonenkönig",
+			"en": "Old Demon King"
+		},
+		"description": {
+			"de": "Besiege den Old Demon King.",
+			"en": "Defeat the Old Demon King."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.dragonslayerArmour",
-		"name": "Dragonslayer Armour",
-		"description": "Besiege die Dragonslayer Armour.",
+		"name": {
+			"de": "Drachentöter-Rüstung",
+			"en": "Dragonslayer Armour"
+		},
+		"description": {
+			"de": "Besiege die Dragonslayer Armour.",
+			"en": "Defeat the Dragonslayer Armour."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.oceirosTheConsumedKing",
-		"name": "Oceiros, the Consumed King",
-		"description": "Besiege Oceiros, the Consumed King.",
+		"name": {
+			"de": "Oceiros, der Verzehrte König",
+			"en": "Oceiros, the Consumed King"
+		},
+		"description": {
+			"de": "Besiege Oceiros, the Consumed King.",
+			"en": "Defeat Oceiros, the Consumed King."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.untendedGraves",
-		"name": "Untended Graves",
-		"description": "Erreiche das Gebiet Untended Graves.",
+		"name": {
+			"de": "Unbehütete Gräber",
+			"en": "Untended Graves"
+		},
+		"description": {
+			"de": "Erreiche das Gebiet Untended Graves.",
+			"en": "Reach the Untended Graves area."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Gebiet"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Gebiet",
+					"en": "Area"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantRosariaSFingers",
-		"name": "Covenant: Rosaria's Fingers",
-		"description": "Entdecke den Eid 'Rosaria's Fingers'.",
+		"name": {
+			"de": "Eid: Rosarias Finger",
+			"en": "Covenant: Rosaria's Fingers"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Rosaria's Fingers'.",
+			"en": "Discover Rosaria's Fingers covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.lordOfCinderLothricYoungerPrince",
-		"name": "Lord of Cinder: Lothric, Younger Prince",
-		"description": "Besiege Lothric, Younger Prince.",
+		"name": {
+			"de": "Aschefürsten: Lothric, junger Prinz",
+			"en": "Lord of Cinder: Lothric, Younger Prince"
+		},
+		"description": {
+			"de": "Besiege Lothric, Younger Prince.",
+			"en": "Defeat Lothric, Younger Prince."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.championGundyr",
-		"name": "Champion Gundyr",
-		"description": "Besiege Champion Gundyr.",
+		"name": {
+			"de": "Meister Gundyr",
+			"en": "Champion Gundyr"
+		},
+		"description": {
+			"de": "Besiege Champion Gundyr.",
+			"en": "Defeat Champion Gundyr."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.supremeWeaponReinforcement",
-		"name": "Supreme Weapon Reinforcement",
-		"description": "Verstärke eine Waffe bis zur höchsten Stufe.",
+		"name": {
+			"de": "Verstärkung zur Mächtigsten Waffe",
+			"en": "Supreme Weapon Reinforcement"
+		},
+		"description": {
+			"de": "Verstärke eine Waffe bis zur höchsten Stufe.",
+			"en": "Reinforce a weapon to the highest level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.archdragonPeak",
-		"name": "Archdragon Peak",
-		"description": "Erreiche Archdragon Peak.",
+		"name": {
+			"de": "Erzdrachengipfel",
+			"en": "Archdragon Peak"
+		},
+		"description": {
+			"de": "Erreiche Archdragon Peak.",
+			"en": "Reach Archdragon Peak."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Gebiet"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Gebiet",
+					"en": "Area"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.ancientWyvern",
-		"name": "Ancient Wyvern",
-		"description": "Besiege den Ancient Wyvern.",
+		"name": {
+			"de": "Alter Lindwurm",
+			"en": "Ancient Wyvern"
+		},
+		"description": {
+			"de": "Besiege den Ancient Wyvern.",
+			"en": "Defeat the Ancient Wyvern."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.theNamelessKing",
-		"name": "The Nameless King",
-		"description": "Besiege den Nameless King.",
+		"name": {
+			"de": "Der Namenlose König",
+			"en": "The Nameless King"
+		},
+		"description": {
+			"de": "Besiege den Nameless King.",
+			"en": "Defeat the Nameless King."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Boss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Boss",
+					"en": "Boss"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantMoundMakers",
-		"name": "Covenant: Mound-makers",
-		"description": "Entdecke den Eid 'Mound-makers'.",
+		"name": {
+			"de": "Eid: Wallbauer",
+			"en": "Covenant: Mound-makers"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Mound-makers'.",
+			"en": "Discover the Mound-makers covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantAldrichFaithful",
-		"name": "Covenant: Aldrich Faithful",
-		"description": "Entdecke den Eid 'Aldrich Faithful'.",
+		"name": {
+			"de": "Eid: Aldrichs Getreue",
+			"en": "Covenant: Aldrich Faithful"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Aldrich Faithful'.",
+			"en": "Discover the Aldrich Faithful covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.ultimateBonfire",
-		"name": "Ultimate Bonfire",
-		"description": "Verstärke ein Leuchtfeuer bis zur höchsten Stufe.",
+		"name": {
+			"de": "Ultimatives Leuchtfeuer",
+			"en": "Ultimate Bonfire"
+		},
+		"description": {
+			"de": "Verstärke ein Leuchtfeuer bis zur höchsten Stufe.",
+			"en": "Reinforce a bonfire to the highest level."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.covenantBladeOfTheDarkmoon",
-		"name": "Covenant: Blade of the Darkmoon",
-		"description": "Entdecke den Eid 'Blade of the Darkmoon'.",
+		"name": {
+			"de": "Eid: Klinge des Finstermonds",
+			"en": "Covenant: Blade of the Darkmoon"
+		},
+		"description": {
+			"de": "Entdecke den Eid 'Blade of the Darkmoon'.",
+			"en": "Discover the Blade of the Darkmoon covenant."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Eid"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Eid",
+					"en": "Covenant"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.ultimateEstus",
-		"name": "Ultimate Estus",
-		"description": "Verstärke den Estus-Flakon vollständig.",
+		"name": {
+			"de": "Ultimativer Estus",
+			"en": "Ultimate Estus"
+		},
+		"description": {
+			"de": "Verstärke den Estus-Flakon vollständig.",
+			"en": "Fully reinforce the Estus Flask."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Upgrade"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Upgrade",
+					"en": "Upgrade"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.toLinkTheFirstFlame",
-		"name": "To Link the First Flame",
-		"description": "Erreiche das Ende 'To Link the First Flame'.",
+		"name": {
+			"de": "Bindet die Erste Flamme",
+			"en": "To Link the First Flame"
+		},
+		"description": {
+			"de": "Erreiche das Ende 'To Link the First Flame'.",
+			"en": "Reach the 'To Link the First Flame' ending."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Ende"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Ende",
+					"en": "Ending"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.theEndOfFire",
-		"name": "The End of Fire",
-		"description": "Erreiche das Ende 'The End of Fire'.",
+		"name": {
+			"de": "Das Ende des Feuers",
+			"en": "The End of Fire"
+		},
+		"description": {
+			"de": "Erreiche das Ende 'The End of Fire'.",
+			"en": "Reach the 'The End of Fire' ending."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Ende"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Ende",
+					"en": "Ending"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.theUsurpationOfFire",
-		"name": "The Usurpation of Fire",
-		"description": "Erreiche das Ende 'The Usurpation of Fire'.",
+		"name": {
+			"de": "Die Aneignung des Feuers",
+			"en": "The Usurpation of Fire"
+		},
+		"description": {
+			"de": "Erreiche das Ende 'The Usurpation of Fire'.",
+			"en": "Reach the 'The Usurpation of Fire' ending."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Ende"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Ende",
+					"en": "Ending"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.masterOfInfusion",
-		"name": "Master of Infusion",
-		"description": "Führe jede erforderliche Art von Waffeninfusion mindestens einmal aus.",
+		"name": {
+			"de": "Meister der Durchwirkung",
+			"en": "Master of Infusion"
+		},
+		"description": {
+			"de": "Führe jede erforderliche Art von Waffeninfusion mindestens einmal aus.",
+			"en": "Perform every required type of weapon infusion at least once."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.masterOfSorceries",
-		"name": "Master of Sorceries",
-		"description": "Erhalte alle Zaubereien.",
+		"name": {
+			"de": "Meister der Zauberei",
+			"en": "Master of Sorceries"
+		},
+		"description": {
+			"de": "Erhalte alle Zaubereien.",
+			"en": "Acquire all sorceries."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.masterOfPyromancies",
-		"name": "Master of Pyromancies",
-		"description": "Erhalte alle Pyromantien.",
+		"name": {
+			"de": "Meister der Pyromantie",
+			"en": "Master of Pyromancies"
+		},
+		"description": {
+			"de": "Erhalte alle Pyromantien.",
+			"en": "Acquire all pyromancies."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.masterOfMiracles",
-		"name": "Master of Miracles",
-		"description": "Erhalte alle Wunder.",
+		"name": {
+			"de": "Meister der Wunder",
+			"en": "Master of Miracles"
+		},
+		"description": {
+			"de": "Erhalte alle Wunder.",
+			"en": "Acquire all miracles."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.masterOfExpression",
-		"name": "Master of Expression",
-		"description": "Erlerne alle Gesten.",
+		"name": {
+			"de": "Meister der Ausdrücke",
+			"en": "Master of Expression"
+		},
+		"description": {
+			"de": "Erlerne alle Gesten.",
+			"en": "Learn all gestures."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.masterOfRings",
-		"name": "Master of Rings",
-		"description": "Erhalte alle für die Errungenschaft erforderlichen Ringe.",
+		"name": {
+			"de": "Meister der Ringe",
+			"en": "Master of Rings"
+		},
+		"description": {
+			"de": "Erhalte alle für die Errungenschaft erforderlichen Ringe.",
+			"en": "Acquire all rings required for the achievement."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Sammlung"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Sammlung",
+					"en": "Collection"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	},
 	{
 		"id": "darkSouls3.achievement.theDarkSoul",
-		"name": "The Dark Soul",
-		"description": "Schalte alle anderen Achievements frei.",
+		"name": {
+			"de": "Die Finstere Seele",
+			"en": "The Dark Soul"
+		},
+		"description": {
+			"de": "Schalte alle anderen Achievements frei.",
+			"en": "Unlock all other achievements."
+		},
 		"details": [
 			{
-				"label": "Typ",
-				"value": "Abschluss"
+				"label": {
+					"de": "Typ",
+					"en": "Type"
+				},
+				"value": {
+					"de": "Abschluss",
+					"en": "Completion"
+				}
 			},
 			{
-				"label": "Version",
-				"value": "Dark Souls III (Steam)"
+				"label": {
+					"de": "Version",
+					"en": "Version"
+				},
+				"value": {
+					"de": "Dark Souls III (Steam)",
+					"en": "Dark Souls III (Steam)"
+				}
 			}
 		]
 	}
