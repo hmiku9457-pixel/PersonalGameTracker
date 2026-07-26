@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="stylesheet" href="assets/css/tracker.css">
 
@@ -10,47 +11,98 @@
 	</head>
 
 	<body>
+
 		<!-- Seitenkopf -->
 		<header>
-			<h1>Personal Game Tracker</h1>
-		
+
+			<!-- Sprachauswahl -->
+			<div class="language-module">
+				<label
+					for="language-select"
+					class="language-label"
+				>
+					Sprache
+				</label>
+
+				<select
+					id="language-select"
+					class="language-select"
+					aria-label="Sprache auswählen"
+				>
+					<option value="de">
+						Deutsch
+					</option>
+
+					<option value="en">
+						English
+					</option>
+				</select>
+			</div>
+
+
+			<!-- Seitentitel -->
+			<h1>
+				Personal Game Tracker
+			</h1>
+
+
+			<!-- Account -->
 			<div class="account-module">
-		
+
 				<!-- Nicht eingeloggt -->
 				<div id="account-logged-out">
-					<button type="button" id="login-button">
+					<button
+						type="button"
+						id="login-button"
+					>
 						Anmelden
 					</button>
 				</div>
-		
+
+
 				<!-- Eingeloggt -->
-				<div id="account-logged-in" hidden>
+				<div
+					id="account-logged-in"
+					hidden
+				>
 					<span id="account-username">
 						Benutzer
 					</span>
-		
-					<button type="button" id="account-button" hidden>
+
+					<button
+						type="button"
+						id="account-button"
+						hidden
+					>
 						Account
 					</button>
-		
-					<button type="button" id="logout-button">
+
+					<button
+						type="button"
+						id="logout-button"
+					>
 						Abmelden
 					</button>
 				</div>
-		
+
 			</div>
+
 		</header>
-		
+
+
+		<!-- Authentifizierungsdialog -->
 		<dialog
 			id="auth-dialog"
 			class="auth-dialog"
-		>		
-			<div class="auth-dialog-content">		
-				<div class="auth-dialog-header">		
+		>
+			<div class="auth-dialog-content">
+
+				<div class="auth-dialog-header">
+
 					<h2 id="auth-dialog-title">
 						Anmelden
 					</h2>
-		
+
 					<button
 						type="button"
 						id="auth-close-button"
@@ -58,165 +110,225 @@
 						aria-label="Anmeldung schließen"
 					>
 						×
-					</button>		
-				</div>		
-		
+					</button>
+
+				</div>
+
+
 				<div
 					class="auth-tabs"
 					role="tablist"
 					aria-label="Benutzerkonto"
-				>		
+				>
+
 					<button
 						type="button"
 						class="auth-tab active"
 						data-auth-mode="login"
 					>
 						Anmelden
-					</button>		
+					</button>
+
 					<button
 						type="button"
 						class="auth-tab"
 						data-auth-mode="register"
 					>
 						Registrieren
-					</button>		
-				</div>		
-		
+					</button>
+
+				</div>
+
+
 				<!-- Login -->
-				<form id="login-form">		
-					<div class="auth-field">		
+				<form id="login-form">
+
+					<div class="auth-field">
+
 						<label for="login-email">
 							E-Mail-Adresse
-						</label>		
+						</label>
+
 						<input
 							type="email"
 							id="login-email"
 							name="email"
 							autocomplete="username"
 							required
-						>		
-					</div>		
-		
-					<div class="auth-field">		
+						>
+
+					</div>
+
+
+					<div class="auth-field">
+
 						<label for="login-password">
 							Passwort
-						</label>		
+						</label>
+
 						<input
 							type="password"
 							id="login-password"
 							name="password"
 							autocomplete="current-password"
 							required
-						>		
-					</div>		
-		
+						>
+
+					</div>
+
+
 					<button
 						type="submit"
 						class="auth-submit-button"
 					>
 						Anmelden
-					</button>		
-				</form>		
-		
+					</button>
+
+				</form>
+
+
 				<!-- Registrierung -->
 				<form
 					id="register-form"
 					hidden
-				>		
-					<div class="auth-field">		
+				>
+
+					<div class="auth-field">
+
 						<label for="register-email">
 							E-Mail-Adresse
-						</label>		
+						</label>
+
 						<input
 							type="email"
 							id="register-email"
 							name="email"
 							autocomplete="email"
 							required
-						>		
-					</div>		
-		
-					<div class="auth-field">		
+						>
+
+					</div>
+
+
+					<div class="auth-field">
+
 						<label for="register-password">
 							Passwort
-						</label>		
+						</label>
+
 						<input
 							type="password"
 							id="register-password"
 							name="password"
 							autocomplete="new-password"
 							required
-						>		
-					</div>		
-		
-					<div class="auth-field">		
+						>
+
+					</div>
+
+
+					<div class="auth-field">
+
 						<label for="register-password-repeat">
 							Passwort wiederholen
-						</label>		
+						</label>
+
 						<input
 							type="password"
 							id="register-password-repeat"
 							name="password-repeat"
 							autocomplete="new-password"
 							required
-						>		
-					</div>		
-		
+						>
+
+					</div>
+
+
 					<button
 						type="submit"
 						class="auth-submit-button"
 					>
 						Account erstellen
-					</button>		
-				</form>		
-		
+					</button>
+
+				</form>
+
+
 				<p
 					id="auth-message"
 					class="auth-message"
 					role="status"
 					aria-live="polite"
 					hidden
-				></p>		
-			</div>		
+				></p>
+
+			</div>
 		</dialog>
+
 
 		<!-- Hauptlayout -->
 		<div class="page-layout">
 
 			<!-- Spiele-Navigation -->
 			<aside class="sidebar">
+
 				<nav aria-label="Spiele">
-					<h2>Spiele</h2>
+
+					<h2>
+						Spiele
+					</h2>
 
 					<ul id="game-navigation">
 						<!-- Wird dynamisch geladen -->
 					</ul>
+
 				</nav>
+
 			</aside>
+
 
 			<!-- Dynamischer Seiteninhalt -->
 			<main id="main-content">
-				<h2>Willkommen</h2>
-				<p>Wähle links ein Spiel aus.</p>
+
+				<h2>
+					Willkommen
+				</h2>
+
+				<p>
+					Wähle links ein Spiel aus.
+				</p>
+
 			</main>
+
 		</div>
-		
+
+
+		<!-- Seitenfuß -->
 		<footer>
-			<p>&copy; 2026 Personal Game Tracker</p>
+			<p>
+				&copy; 2026 Personal Game Tracker
+			</p>
 		</footer>
+
 
 		<!-- Supabase SDK -->
 		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.8"></script>
-		
+
+
 		<!-- Supabase -->
 		<script src="./assets/js/supabase/supabaseClient.js"></script>
 		<script src="./assets/js/supabase/authService.js"></script>
-		
+
+
 		<!-- Views -->
 		<script src="./assets/js/views/authView.js"></script>
-		
-		<!-- Anwendung -->
-		<script type="module" src="./assets/js/main.js"></script>
-	</body>
 
+
+		<!-- Anwendung -->
+		<script
+			type="module"
+			src="./assets/js/main.js"
+		></script>
+
+	</body>
 </html>
