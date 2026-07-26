@@ -1,7 +1,21 @@
+/* =========================================================
+   Personal Game Tracker
+   Navigation View
+   ========================================================= */
+
 import {
 	loadGames
 } from "../services/dataService.js";
 
+import {
+	getCurrentLanguage,
+	getLocalizedText
+} from "../services/languageService.js";
+
+
+/* ---------------------------------------------------------
+   1. Navigation
+   --------------------------------------------------------- */
 
 /**
  * Gibt den Container der Spiele-Navigation zurück.
@@ -57,15 +71,32 @@ export async function loadGameNavigation() {
 				`#game/${encodeURIComponent(game.id)}`;
 
 
+			/*
+			 * Unterstützt sowohl:
+			 *
+			 * "name": "Dark Souls"
+			 *
+			 * als auch:
+			 *
+			 * "name": {
+			 *     "de": "Dark Souls",
+			 *     "en": "Dark Souls"
+			 * }
+			 */
 			link.textContent =
-				game.name;
+				getLocalizedText(
+					game.name,
+					game.id
+				);
 
 
 			link.dataset.gameId =
 				game.id;
 
 
-			listItem.append(link);
+			listItem.append(
+				link
+			);
 
 			gameNavigation.append(
 				listItem
@@ -91,7 +122,7 @@ export async function loadGameNavigation() {
 
 
 		listItem.textContent =
-			"Spiele konnten nicht geladen werden.";
+			getNavigationErrorText();
 
 
 		gameNavigation.append(
@@ -100,6 +131,10 @@ export async function loadGameNavigation() {
 	}
 }
 
+
+/* ---------------------------------------------------------
+   2. Aktives Spiel
+   --------------------------------------------------------- */
 
 /**
  * Markiert das aktuell ausgewählte Spiel
@@ -149,4 +184,21 @@ export function updateActiveGameNavigation(
 			);
 		}
 	}
+}
+
+
+/* ---------------------------------------------------------
+   3. Lokalisierte UI-Texte
+   --------------------------------------------------------- */
+
+/**
+ * Gibt die Fehlermeldung für die
+ * Spiele-Navigation zurück.
+ *
+ * @returns {string}
+ */
+function getNavigationErrorText() {
+	return getCurrentLanguage() === "de"
+		? "Spiele konnten nicht geladen werden."
+		: "Games could not be loaded.";
 }
