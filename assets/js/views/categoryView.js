@@ -176,8 +176,10 @@ export async function renderCategory(
 		backButton.addEventListener(
 			"click",
 			() => {
+		
 				window.location.hash =
-					`game/${encodeURIComponent(game.id)}`;
+					category.parentHash ||
+					`#game/${game.id}`;
 			}
 		);
 
