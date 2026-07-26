@@ -396,11 +396,146 @@
 
 
 /* =========================================================
-   6. Kategorie-Gruppen / Accordions
+   6. Kategorie-Suche
+   ========================================================= */
+
+.game-page .category-search {
+	margin: 20px 0 16px;
+}
+
+
+/* ---------------------------------------------------------
+   6.1 Suchfeld-Beschriftung
+   --------------------------------------------------------- */
+
+.game-page .category-search-label {
+	display: block;
+
+	margin-bottom: 7px;
+
+	font-size: 0.9rem;
+	font-weight: 600;
+
+	color: #d1d5db;
+}
+
+
+/* ---------------------------------------------------------
+   6.2 Suchzeile
+   --------------------------------------------------------- */
+
+.game-page .category-search-row {
+	display: flex;
+	align-items: center;
+
+	gap: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   6.3 Suchfeld
+   --------------------------------------------------------- */
+
+.game-page .category-search-input {
+	width: 100%;
+	min-width: 0;
+
+	padding: 10px 12px;
+
+	font: inherit;
+	font-size: 0.95rem;
+
+	color: #f3f4f6;
+	background-color: #111827;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+
+	outline: none;
+
+	transition:
+		border-color 0.2s ease,
+		background-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+
+.game-page .category-search-input::placeholder {
+	color: #6b7280;
+}
+
+
+.game-page .category-search-input:hover {
+	border-color: #4b5563;
+}
+
+
+.game-page .category-search-input:focus {
+	background-color: #162033;
+	border-color: #60a5fa;
+
+	box-shadow:
+		0 0 0 2px rgb(96 165 250 / 12%);
+}
+
+
+/* ---------------------------------------------------------
+   6.4 Trefferanzahl
+   --------------------------------------------------------- */
+
+.game-page .category-search-result-count {
+	flex-shrink: 0;
+
+	min-width: 72px;
+
+	font-size: 0.85rem;
+	font-weight: 600;
+
+	color: #9ca3af;
+
+	text-align: right;
+
+	white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   6.5 Keine Treffer
+   --------------------------------------------------------- */
+
+.game-page .category-search-empty {
+	margin: 14px 0 0;
+	padding: 12px 14px;
+
+	color: #9ca3af;
+	background-color: #182235;
+
+	border: 1px solid #374151;
+	border-radius: 8px;
+
+	font-size: 0.9rem;
+}
+
+
+/* ---------------------------------------------------------
+   6.6 Gefilterte Elemente
+   --------------------------------------------------------- */
+
+.game-page .tracker-item[hidden],
+.game-page .tracker-list[hidden],
+.game-page .category-group[hidden],
+.game-page .category-search-empty[hidden],
+.game-page .category-search-result-count[hidden] {
+	display: none;
+}
+
+
+/* =========================================================
+   7. Kategorie-Gruppen / Accordions
    ========================================================= */
 
 /* ---------------------------------------------------------
-   6.1 Globale Gruppen-Steuerung
+   7.1 Globale Gruppen-Steuerung
    --------------------------------------------------------- */
 
 .game-page .category-group-controls {
@@ -451,7 +586,7 @@
 
 
 /* ---------------------------------------------------------
-   6.2 Gruppe
+   7.2 Gruppe
    --------------------------------------------------------- */
 
 .game-page .category-group {
@@ -465,7 +600,7 @@
 
 
 /* ---------------------------------------------------------
-   6.3 Gruppen-Header / Summary
+   7.3 Gruppen-Header / Summary
    --------------------------------------------------------- */
 
 .game-page .category-group-header {
@@ -538,7 +673,7 @@
 
 
 /* ---------------------------------------------------------
-   6.4 Linker Header-Bereich
+   7.4 Linker Header-Bereich
    --------------------------------------------------------- */
 
 .game-page .category-group-header-main {
@@ -561,7 +696,7 @@
 
 
 /* ---------------------------------------------------------
-   6.5 Pfeil
+   7.5 Pfeil
    --------------------------------------------------------- */
 
 .game-page .category-group-chevron {
@@ -592,7 +727,7 @@
 
 
 /* ---------------------------------------------------------
-   6.6 Gruppen-Fortschritt
+   7.6 Gruppen-Fortschritt
    --------------------------------------------------------- */
 
 .game-page .category-group-progress {
@@ -614,7 +749,7 @@
 
 
 /* ---------------------------------------------------------
-   6.7 Gruppen-Inhalt
+   7.7 Gruppen-Inhalt
    --------------------------------------------------------- */
 
 .game-page .category-group-body {
@@ -623,7 +758,7 @@
 
 
 /* ---------------------------------------------------------
-   6.8 Gruppen-Beschreibung
+   7.8 Gruppen-Beschreibung
    --------------------------------------------------------- */
 
 .game-page .category-group-description {
@@ -638,7 +773,7 @@
 
 
 /* =========================================================
-   7. Tracker-Liste
+   8. Tracker-Liste
    ========================================================= */
 
 .game-page .tracker-list {
@@ -654,7 +789,7 @@
 
 
 /* =========================================================
-   8. Tracker-Eintrag
+   9. Tracker-Eintrag
    ========================================================= */
 
 .game-page .tracker-item {
@@ -698,7 +833,7 @@
 
 
 /* ---------------------------------------------------------
-   8.1 Gefundener Eintrag
+   9.1 Gefundener Eintrag
    --------------------------------------------------------- */
 
 .game-page .tracker-item.is-completed {
@@ -712,7 +847,7 @@
 
 
 /* =========================================================
-   9. Status-Indikator
+   10. Status-Indikator
    ========================================================= */
 
 .game-page .tracker-item-status {
@@ -753,7 +888,7 @@
 
 
 /* =========================================================
-   10. Tracker-Inhalt
+   11. Tracker-Inhalt
    ========================================================= */
 
 .game-page .tracker-item-content {
@@ -762,7 +897,7 @@
 
 
 /* ---------------------------------------------------------
-   10.1 Name
+   11.1 Name
    --------------------------------------------------------- */
 
 .game-page .tracker-item-name {
@@ -785,7 +920,7 @@
 
 
 /* ---------------------------------------------------------
-   10.2 Beschreibung
+   11.2 Beschreibung
    --------------------------------------------------------- */
 
 .game-page .tracker-item-description {
@@ -799,7 +934,7 @@
 
 
 /* =========================================================
-   11. Tracker-Details
+   12. Tracker-Details
    ========================================================= */
 
 .game-page .tracker-item-details {
@@ -808,7 +943,7 @@
 
 
 /* ---------------------------------------------------------
-   11.1 Details-Button / Summary
+   12.1 Details-Button / Summary
    --------------------------------------------------------- */
 
 .game-page .tracker-item-details summary {
@@ -840,7 +975,7 @@
 
 
 /* ---------------------------------------------------------
-   11.2 Detail-Inhalt
+   12.2 Detail-Inhalt
    --------------------------------------------------------- */
 
 .game-page .tracker-item-details dl {
@@ -876,7 +1011,7 @@
 
 
 /* =========================================================
-   12. Tracker-Toggle
+   13. Tracker-Toggle
    ========================================================= */
 
 .game-page .tracker-toggle {
@@ -907,7 +1042,7 @@
 
 /* Hover */
 
-.game-page .tracker-toggle:hover {
+.game-page .tracker-toggle:hover:not(:disabled) {
 	background-color: #334155;
 	border-color: #64748b;
 }
@@ -922,24 +1057,35 @@
 
 
 /* ---------------------------------------------------------
-   12.1 Gefunden
+   13.1 Gefunden
    --------------------------------------------------------- */
 
-.game-page .tracker-toggle.is-active {
+.game-page .tracker-toggle.is-completed {
 	color: #d1fae5;
 	background-color: #166534;
 
 	border-color: #22c55e;
 }
 
-.game-page .tracker-toggle.is-active:hover {
+.game-page .tracker-toggle.is-completed:hover:not(:disabled) {
 	background-color: #14532d;
 	border-color: #4ade80;
 }
 
 
+/* ---------------------------------------------------------
+   13.2 Deaktivierter Button
+   --------------------------------------------------------- */
+
+.game-page .tracker-toggle:disabled {
+	cursor: not-allowed;
+
+	opacity: 0.65;
+}
+
+
 /* =========================================================
-   13. Lade- und Fehlerzustände
+   14. Lade- und Fehlerzustände
    ========================================================= */
 
 .game-page .loading,
@@ -959,7 +1105,7 @@
 
 
 /* =========================================================
-   14. Responsive Layout
+   15. Responsive Layout
    ========================================================= */
 
 
@@ -1071,6 +1217,30 @@
 	}
 
 
+	/* Suche */
+
+	.game-page .category-search-row {
+		align-items: stretch;
+		flex-direction: column;
+
+		gap: 6px;
+	}
+
+
+	.game-page .category-search-result-count {
+		min-width: 0;
+
+		text-align: left;
+	}
+
+
+	/* Gruppen-Steuerung */
+
+	.game-page .category-group-controls {
+		justify-content: flex-start;
+	}
+
+
 	/* Tracker */
 
 	.game-page .tracker-item {
@@ -1142,6 +1312,20 @@
 
 	.game-page .category-content-progress {
 		align-self: flex-start;
+	}
+
+
+	/* Suche */
+
+	.game-page .category-search {
+		margin-top: 16px;
+	}
+
+
+	/* Gruppen-Steuerung */
+
+	.game-page .category-group-controls {
+		flex-wrap: wrap;
 	}
 
 
