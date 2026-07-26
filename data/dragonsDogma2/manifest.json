@@ -6,12 +6,14 @@
       "id": "achievements",
       "name": "Achievements",
       "description": "Steam-Erfolge aus dem Hauptspiel",
+			"type": "category",
       "file": "achievements.json"
     },
     {
       "id": "quests",
       "name": "Quests",
       "description": "Alle Quests des Spiels",
+			"type": "category",
       "file": "quests.json"
     }
   ]
