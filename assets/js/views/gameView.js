@@ -1,50 +1,72 @@
 import {
-	loadCategoryData
+	loadCategoryData,
+	loadManifest,
+	resolveRelativeFile
 } from "../services/dataService.js";
+
 
 import {
 	calculateCategoryProgress,
 	loadGameProgressData
 } from "../services/progressService.js";
 
-import {
-	updateActiveGameNavigation
-} from "./navigationView.js";
 
-
-/**
- * Gibt den Main-Container zurück.
- *
- * @returns {HTMLElement|null}
- */
-function getMainContent() {
-	return document.getElementById(
+const mainContent =
+	document.getElementById(
 		"main-content"
 	);
-}
 
 
 /**
- * Erstellt die komplette Übersichtsseite
- * eines Spiels.
+ * Rendert eine Spiel- oder Manifestübersicht.
  *
- * @param {Object} game Spiel-Manifest
+ * Dadurch kann dieselbe Kachelansicht sowohl für
+ *
+ * The Division 2
+ *
+ * als auch beispielsweise
+ *
+ * The Division 2 → Collectibles
+ *
+ * verwendet werden.
+ *
+ * @param {Object} game
+ * @param {Object} options
  */
-export function renderGame(game) {
-	const mainContent =
-		getMainContent();
+export async function renderGame(
+	game,
+	options = {}
+) {
+
+	const manifest =
+		options.manifest ||
+		game;
 
 
-	if (!mainContent) {
-		console.warn(
-			"Element #main-content wurde nicht gefunden."
-		);
-
-		return;
-	}
+	const manifestFile =
+		options.manifestFile ||
+		"manifest.json";
 
 
-	mainContent.replaceChildren();
+	const routeIds =
+		Array.isArray(options.routeIds)
+			? options.routeIds
+			: [];
+
+
+	const title =
+		options.title ||
+		manifest.name ||
+		game.name;
+
+
+	const description =
+		options.description ||
+		manifest.description ||
+		"";
+
+
+	mainContent.innerHTML = "";
 
 
 	const gamePage =
@@ -52,98 +74,167 @@ export function renderGame(game) {
 			"section"
 		);
 
-
 	gamePage.className =
 		"game-page";
 
 
 	/*
-	 * Die Spiel-ID am Seitencontainer speichern.
-	 *
-	 * Dadurch können asynchrone Prozesse später
-	 * prüfen, ob immer noch dasselbe Spiel
-	 * dargestellt wird.
+	 * Bei Untermanifesten einen
+	 * Zurück-Button anzeigen.
 	 */
-	gamePage.dataset.gameId =
-		game.id;
+	if (routeIds.length > 0) {
 
-
-	/*
-	 * Spieltitel
-	 */
-	const gameHeader =
-		document.createElement(
-			"div"
-		);
-
-
-	gameHeader.className =
-		"game-header";
-
-
-	const gameTitle =
-		document.createElement(
-			"h2"
-		);
-
-
-	gameTitle.className =
-		"game-title";
-
-
-	gameTitle.textContent =
-		game.name;
-
-
-	gameHeader.append(
-		gameTitle
-	);
-
-
-	/*
-	 * Kategorien
-	 */
-	const categoryGrid =
-		document.createElement(
-			"div"
-		);
-
-
-	categoryGrid.className =
-		"category-grid";
-
-
-	categoryGrid.id =
-		"category-grid";
-
-
-	for (
-		const category of game.categories
-	) {
-		const categoryCard =
-			createCategoryCard(
-				game,
-				category
+		const toolbar =
+			document.createElement(
+				"div"
 			);
 
+		toolbar.className =
+			"category-toolbar";
 
-		categoryGrid.append(
-			categoryCard
+
+		const backButton =
+			document.createElement(
+				"button"
+			);
+
+		backButton.type =
+			"button";
+
+		backButton.className =
+			"back-button";
+
+		backButton.textContent =
+			"← Zurück";
+
+
+		backButton.addEventListener(
+			"click",
+			() => {
+
+				const parentRoute =
+					routeIds.slice(
+						0,
+						-1
+					);
+
+
+				window.location.hash =
+					buildGameHash(
+						game.id,
+						parentRoute
+					);
+			}
+		);
+
+
+		toolbar.append(
+			backButton
+		);
+
+
+		gamePage.append(
+			toolbar
 		);
 	}
 
 
 	/*
+	 * Titel
+	 */
+
+	const titleElement =
+		document.createElement(
+			"h2"
+		);
+
+	titleElement.className =
+		"game-title";
+
+	titleElement.textContent =
+		title;
+
+
+	gamePage.append(
+		titleElement
+	);
+
+
+	/*
+	 * Optionale Beschreibung
+	 */
+
+	if (description) {
+
+		const descriptionElement =
+			document.createElement(
+				"p"
+			);
+
+		descriptionElement.className =
+			"game-description";
+
+		descriptionElement.textContent =
+			description;
+
+
+		gamePage.append(
+			descriptionElement
+		);
+	}
+
+
+	/*
+	 * Kategorie-Kacheln
+	 */
+
+	const categoryGrid =
+		document.createElement(
+			"div"
+		);
+
+	categoryGrid.className =
+		"category-grid";
+
+
+	const categories =
+		Array.isArray(
+			manifest.categories
+		)
+			? manifest.categories
+			: [];
+
+
+	for (
+		const category
+		of categories
+	) {
+
+		categoryGrid.append(
+			createCategoryCard(
+				game,
+				category,
+				routeIds
+			)
+		);
+	}
+
+
+	gamePage.append(
+		categoryGrid
+	);
+
+
+	/*
 	 * Gesamtfortschritt
 	 */
-	const progressContainer =
+
+	const gameProgress =
 		createGameProgress();
 
 
 	gamePage.append(
-		gameHeader,
-		categoryGrid,
-		progressContainer
+		gameProgress
 	);
 
 
@@ -152,116 +243,141 @@ export function renderGame(game) {
 	);
 
 
-	updateActiveGameNavigation(
-		game.id
-	);
+	/*
+	 * Benutzerfortschritt laden.
+	 */
+
+	const progressData =
+		await loadGameProgressData(
+			game.id
+		);
 
 
 	/*
-	 * Fortschrittswerte nachladen.
-	 *
-	 * Bewusst nicht mit await:
-	 * Die Seite kann sofort dargestellt werden.
+	 * Ohne Anmeldung keinen persönlichen
+	 * Fortschritt anzeigen.
 	 */
-	loadGameProgress(game);
+
+	if (
+		!progressData ||
+		!progressData.available
+	) {
+
+		hideProgressElements(
+			gamePage
+		);
+
+		return;
+	}
+
+
+	await loadManifestProgress(
+		game,
+		manifest,
+		manifestFile,
+		progressData
+	);
 }
 
 
 /**
- * Erstellt einen einzelnen Kategorie-Button.
+ * Erstellt eine Kategorie-Kachel.
  *
- * @param {Object} game Spiel-Manifest
- * @param {Object} category Kategorie
+ * @param {Object} game
+ * @param {Object} category
+ * @param {Array<string>} routeIds
  * @returns {HTMLButtonElement}
  */
 function createCategoryCard(
 	game,
-	category
+	category,
+	routeIds
 ) {
+
 	const button =
 		document.createElement(
 			"button"
 		);
 
-
 	button.type =
 		"button";
 
-
 	button.className =
 		"category-card";
-
 
 	button.dataset.categoryId =
 		category.id;
 
 
-	/*
-	 * Kategorie-Titel
-	 */
 	const title =
 		document.createElement(
 			"h3"
 		);
 
-
 	title.textContent =
 		category.name;
 
 
-	/*
-	 * Beschreibung
-	 */
-	const description =
-		document.createElement(
-			"p"
+	button.append(
+		title
+	);
+
+
+	if (category.description) {
+
+		const description =
+			document.createElement(
+				"p"
+			);
+
+		description.className =
+			"category-description";
+
+		description.textContent =
+			category.description;
+
+
+		button.append(
+			description
 		);
+	}
 
 
-	description.className =
-		"category-description";
-
-
-	description.textContent =
-		category.description ?? "";
-
-
-	/*
-	 * Fortschritt
-	 */
 	const progress =
 		document.createElement(
 			"span"
 		);
 
-
 	progress.className =
 		"category-progress";
 
+	progress.dataset.categoryProgress =
+		category.id;
 
 	progress.textContent =
 		"0 / 0";
 
 
-	progress.dataset.categoryProgress =
-		category.id;
-
-
 	button.append(
-		title,
-		description,
 		progress
 	);
 
 
-	/*
-	 * Kategorie öffnen
-	 */
 	button.addEventListener(
 		"click",
 		() => {
+
+			const nextRoute = [
+				...routeIds,
+				category.id
+			];
+
+
 			window.location.hash =
-				`game/${encodeURIComponent(game.id)}/${encodeURIComponent(category.id)}`;
+				buildGameHash(
+					game.id,
+					nextRoute
+				);
 		}
 	);
 
@@ -271,30 +387,25 @@ function createCategoryCard(
 
 
 /**
- * Erstellt den Gesamtfortschritt
- * eines Spiels.
+ * Erstellt die Gesamtfortschrittsanzeige.
  *
  * @returns {HTMLElement}
  */
 function createGameProgress() {
+
 	const container =
 		document.createElement(
 			"div"
 		);
 
-
 	container.className =
 		"game-progress";
 
 
-	/*
-	 * Kopfzeile
-	 */
 	const header =
 		document.createElement(
 			"div"
 		);
-
 
 	header.className =
 		"game-progress-header";
@@ -305,20 +416,17 @@ function createGameProgress() {
 			"span"
 		);
 
-
 	label.textContent =
 		"Gesamtfortschritt";
 
 
 	const count =
 		document.createElement(
-			"strong"
+			"span"
 		);
-
 
 	count.id =
 		"game-progress-count";
-
 
 	count.textContent =
 		"0 / 0";
@@ -330,47 +438,13 @@ function createGameProgress() {
 	);
 
 
-	/*
-	 * Fortschrittsbalken
-	 */
 	const progressBar =
 		document.createElement(
 			"div"
 		);
 
-
 	progressBar.className =
 		"progress-bar";
-
-
-	progressBar.setAttribute(
-		"role",
-		"progressbar"
-	);
-
-
-	progressBar.setAttribute(
-		"aria-label",
-		"Gesamtfortschritt"
-	);
-
-
-	progressBar.setAttribute(
-		"aria-valuemin",
-		"0"
-	);
-
-
-	progressBar.setAttribute(
-		"aria-valuemax",
-		"100"
-	);
-
-
-	progressBar.setAttribute(
-		"aria-valuenow",
-		"0"
-	);
 
 
 	const progressFill =
@@ -378,17 +452,11 @@ function createGameProgress() {
 			"div"
 		);
 
-
-	progressFill.id =
-		"game-progress-fill";
-
-
 	progressFill.className =
 		"progress-bar-fill";
 
-
-	progressFill.style.width =
-		"0%";
+	progressFill.id =
+		"game-progress-fill";
 
 
 	progressBar.append(
@@ -396,31 +464,25 @@ function createGameProgress() {
 	);
 
 
-	/*
-	 * Prozentanzeige
-	 */
-	const percentage =
+	const percent =
 		document.createElement(
-			"span"
+			"div"
 		);
 
-
-	percentage.id =
+	percent.className =
 		"game-progress-percent";
 
-
-	percentage.className =
+	percent.id =
 		"game-progress-percent";
 
-
-	percentage.textContent =
+	percent.textContent =
 		"0 %";
 
 
 	container.append(
 		header,
 		progressBar,
-		percentage
+		percent
 	);
 
 
@@ -429,108 +491,238 @@ function createGameProgress() {
 
 
 /**
- * Lädt alle Kategorien eines Spiels und berechnet
- * daraus den Gesamtfortschritt.
+ * Berechnet den Fortschritt aller Kategorien
+ * eines Manifests.
  *
- * Fortschrittsdaten aus mockProgress.json werden
- * dabei automatisch berücksichtigt.
+ * Untermanifeste werden rekursiv ausgewertet.
  *
- * @param {Object} game Spiel-Manifest
+ * @param {Object} game
+ * @param {Object} manifest
+ * @param {string} manifestFile
+ * @param {Object} progressData
  */
-async function loadGameProgress(game) {
-	let totalCompleted = 0;
-	let totalItems = 0;
+async function loadManifestProgress(
+	game,
+	manifest,
+	manifestFile,
+	progressData
+) {
 
-
-	/*
-	 * Fortschrittsdaten nur einmal pro Spiel laden.
-	 */
-	const progressData =
-		await loadGameProgressData(
-			game.id
-		);
-
-
-	for (
-		const category of game.categories
-	) {
-		try {
-			const categoryData =
-				await loadCategoryData(
-					game.id,
-					category
-				);
-
-
-			const progress =
-				calculateCategoryProgress(
-					categoryData,
-					progressData
-				);
-
-
-			totalCompleted +=
-				progress.completed;
-
-
-			totalItems +=
-				progress.total;
-
-
-			updateCategoryProgress(
-				category.id,
-				progress
-			);
-
-		} catch (error) {
-			console.error(
-				`Fortschritt für "${category.name}" konnte nicht geladen werden.`,
-				error
-			);
-		}
-	}
-
-
-	/*
-	 * Sicherstellen, dass inzwischen nicht
-	 * auf eine andere Seite gewechselt wurde.
-	 */
-	const currentGamePage =
-		document.querySelector(
-			".game-page[data-game-id]"
-		);
-
-
-	if (
-		!currentGamePage ||
-		currentGamePage.dataset.gameId !==
-			game.id ||
-		!document.getElementById(
-			"category-grid"
+	const categories =
+		Array.isArray(
+			manifest.categories
 		)
-	) {
-		return;
-	}
+			? manifest.categories
+			: [];
+
+
+	const results =
+		await Promise.all(
+			categories.map(
+				async (category) => {
+
+					try {
+
+						const progress =
+							await calculateEntryProgress(
+								game.id,
+								category,
+								manifestFile,
+								progressData
+							);
+
+
+						updateCategoryProgress(
+							category.id,
+							progress
+						);
+
+
+						return progress;
+
+					} catch (error) {
+
+						console.error(
+							`Fortschritt für Kategorie "${category.id}" konnte nicht geladen werden.`,
+							error
+						);
+
+
+						const progress = {
+							completed: 0,
+							total: 0
+						};
+
+
+						updateCategoryProgress(
+							category.id,
+							progress
+						);
+
+
+						return progress;
+					}
+				}
+			)
+		);
 
 
 	updateTotalProgress(
-		totalCompleted,
-		totalItems
+		results
+	);
+}
+
+
+/**
+ * Berechnet den Fortschritt eines einzelnen
+ * Manifest-Eintrags.
+ *
+ * Normale Kategorie:
+ * JSON laden und direkt berechnen.
+ *
+ * Manifest:
+ * Untermanifest rekursiv berechnen.
+ *
+ * @param {string} gameId
+ * @param {Object} entry
+ * @param {string} parentManifestFile
+ * @param {Object} progressData
+ * @returns {Promise<{completed:number,total:number}>}
+ */
+async function calculateEntryProgress(
+	gameId,
+	entry,
+	parentManifestFile,
+	progressData
+) {
+
+	const resolvedFile =
+		resolveRelativeFile(
+			parentManifestFile,
+			entry.file
+		);
+
+
+	/*
+	 * Untermanifest
+	 */
+
+	if (
+		entry.type ===
+		"manifest"
+	) {
+
+		const childManifest =
+			await loadManifest(
+				gameId,
+				resolvedFile
+			);
+
+
+		return calculateManifestProgress(
+			gameId,
+			childManifest,
+			resolvedFile,
+			progressData
+		);
+	}
+
+
+	/*
+	 * Normale Kategorie
+	 */
+
+	const resolvedCategory = {
+		...entry,
+		file: resolvedFile
+	};
+
+
+	const data =
+		await loadCategoryData(
+			gameId,
+			resolvedCategory
+		);
+
+
+	return calculateCategoryProgress(
+		data,
+		progressData
+	);
+}
+
+
+/**
+ * Berechnet rekursiv den Fortschritt
+ * eines kompletten Manifests.
+ *
+ * @param {string} gameId
+ * @param {Object} manifest
+ * @param {string} manifestFile
+ * @param {Object} progressData
+ * @returns {Promise<{completed:number,total:number}>}
+ */
+async function calculateManifestProgress(
+	gameId,
+	manifest,
+	manifestFile,
+	progressData
+) {
+
+	const categories =
+		Array.isArray(
+			manifest.categories
+		)
+			? manifest.categories
+			: [];
+
+
+	const results =
+		await Promise.all(
+			categories.map(
+				(category) =>
+					calculateEntryProgress(
+						gameId,
+						category,
+						manifestFile,
+						progressData
+					)
+			)
+		);
+
+
+	return results.reduce(
+		(totalProgress, progress) => {
+
+			totalProgress.completed +=
+				progress.completed;
+
+			totalProgress.total +=
+				progress.total;
+
+
+			return totalProgress;
+		},
+		{
+			completed: 0,
+			total: 0
+		}
 	);
 }
 
 
 /**
  * Aktualisiert die Fortschrittsanzeige
- * einer Kategorie.
+ * einer einzelnen Kategorie-Kachel.
  *
- * @param {string} categoryId Kategorie-ID
- * @param {{completed: number, total: number}} progress Fortschritt
+ * @param {string} categoryId
+ * @param {{completed:number,total:number}} progress
  */
 function updateCategoryProgress(
 	categoryId,
 	progress
 ) {
+
 	const element =
 		document.querySelector(
 			`[data-category-progress="${CSS.escape(categoryId)}"]`
@@ -550,71 +742,149 @@ function updateCategoryProgress(
 /**
  * Aktualisiert den Gesamtfortschritt.
  *
- * @param {number} completed Erledigte Einträge
- * @param {number} total Gesamte Einträge
+ * @param {Array<{completed:number,total:number}>} progresses
  */
 function updateTotalProgress(
-	completed,
-	total
+	progresses
 ) {
-	const count =
+
+	const completed =
+		progresses.reduce(
+			(sum, progress) =>
+				sum +
+				progress.completed,
+			0
+		);
+
+
+	const total =
+		progresses.reduce(
+			(sum, progress) =>
+				sum +
+				progress.total,
+			0
+		);
+
+
+	const percent =
+		total > 0
+			? Math.round(
+				(completed / total) *
+				100
+			)
+			: 0;
+
+
+	const countElement =
 		document.getElementById(
 			"game-progress-count"
 		);
 
 
-	const fill =
+	const fillElement =
 		document.getElementById(
 			"game-progress-fill"
 		);
 
 
-	const percentage =
+	const percentElement =
 		document.getElementById(
 			"game-progress-percent"
 		);
 
 
-	const progressBar =
-		document.querySelector(
-			".progress-bar"
-		);
+	if (countElement) {
 
-
-	let percent = 0;
-
-
-	if (total > 0) {
-		percent =
-			Math.round(
-				(completed / total) *
-				100
-			);
-	}
-
-
-	if (count) {
-		count.textContent =
+		countElement.textContent =
 			`${completed} / ${total}`;
 	}
 
 
-	if (fill) {
-		fill.style.width =
+	if (fillElement) {
+
+		fillElement.style.width =
 			`${percent}%`;
 	}
 
 
-	if (percentage) {
-		percentage.textContent =
+	if (percentElement) {
+
+		percentElement.textContent =
 			`${percent} %`;
 	}
+}
 
 
-	if (progressBar) {
-		progressBar.setAttribute(
-			"aria-valuenow",
-			String(percent)
+/**
+ * Blendet persönliche Fortschrittsanzeigen
+ * aus, wenn kein Benutzer angemeldet ist.
+ *
+ * @param {HTMLElement} container
+ */
+function hideProgressElements(
+	container
+) {
+
+	const gameProgress =
+		container.querySelector(
+			".game-progress"
 		);
+
+
+	if (gameProgress) {
+		gameProgress.hidden = true;
 	}
+
+
+	const categoryProgressElements =
+		container.querySelectorAll(
+			".category-progress"
+		);
+
+
+	for (
+		const element
+		of categoryProgressElements
+	) {
+
+		element.hidden = true;
+	}
+}
+
+
+/**
+ * Erzeugt einen Hash für eine Spielroute.
+ *
+ * @param {string} gameId
+ * @param {Array<string>} routeIds
+ * @returns {string}
+ */
+function buildGameHash(
+	gameId,
+	routeIds = []
+) {
+
+	const encodedGameId =
+		encodeURIComponent(
+			gameId
+		);
+
+
+	const encodedRoute =
+		routeIds.map(
+			routeId =>
+				encodeURIComponent(
+					routeId
+				)
+		);
+
+
+	const parts = [
+		"game",
+		encodedGameId,
+		...encodedRoute
+	];
+
+
+	return `#${parts.join("/")}`;
 }
