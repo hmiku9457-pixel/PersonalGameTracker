@@ -1,46 +1,37 @@
-// Basisordner für alle JSON-Daten
-const DATA_PATH = "data";
+const DATA_ROOT = "data";
 
-
-// Bereits geladene JSON-Dateien zwischenspeichern
 const jsonCache = new Map();
 
 
 /**
  * Lädt eine JSON-Datei.
  *
- * Bereits geladene Dateien werden aus dem Cache
- * zurückgegeben.
+ * Bereits geladene Dateien werden während der aktuellen
+ * Sitzung aus dem Cache gelesen.
  *
- * @param {string} path Pfad zur JSON-Datei
+ * @param {string} path
  * @returns {Promise<any>}
  */
 export async function loadJson(path) {
+
 	if (jsonCache.has(path)) {
 		return jsonCache.get(path);
 	}
 
 
-	const response =
-		await fetch(path);
+	const response = await fetch(path);
 
 
 	if (!response.ok) {
 		throw new Error(
-			`JSON-Datei konnte nicht geladen werden: ${path} (${response.status})`
+			`JSON konnte nicht geladen werden: ${path} (${response.status})`
 		);
 	}
 
 
-	const data =
-		await response.json();
+	const data = await response.json();
 
-
-	jsonCache.set(
-		path,
-		data
-	);
-
+	jsonCache.set(path, data);
 
 	return data;
 }
@@ -49,167 +40,211 @@ export async function loadJson(path) {
 /**
  * Lädt eine optionale JSON-Datei.
  *
- * Existiert die Datei nicht (404), wird null
- * zurückgegeben.
+ * Existiert die Datei nicht, wird null zurückgegeben.
  *
- * Andere Fehler werden weiterhin geworfen.
- *
- * Das wird beispielsweise für mockProgress.json
- * verwendet.
- *
- * @param {string} path Pfad zur JSON-Datei
+ * @param {string} path
  * @returns {Promise<any|null>}
  */
 export async function loadOptionalJson(path) {
-	if (jsonCache.has(path)) {
-		return jsonCache.get(path);
-	}
+
+	try {
+
+		const response = await fetch(path);
 
 
-	const response =
-		await fetch(path);
+		if (response.status === 404) {
+			return null;
+		}
 
 
-	if (response.status === 404) {
-		jsonCache.set(
-			path,
-			null
+		if (!response.ok) {
+			throw new Error(
+				`JSON konnte nicht geladen werden: ${path} (${response.status})`
+			);
+		}
+
+
+		return await response.json();
+
+	} catch (error) {
+
+		console.warn(
+			`Optionale JSON-Datei konnte nicht geladen werden: ${path}`,
+			error
 		);
 
 		return null;
 	}
-
-
-	if (!response.ok) {
-		throw new Error(
-			`JSON-Datei konnte nicht geladen werden: ${path} (${response.status})`
-		);
-	}
-
-
-	const data =
-		await response.json();
-
-
-	jsonCache.set(
-		path,
-		data
-	);
-
-
-	return data;
 }
 
 
 /**
- * Lädt die Liste aller Spiele.
+ * Gibt den Datenpfad eines Spiels zurück.
  *
- * Erwartete Struktur von data/games.json:
+ * @param {string} gameId
+ * @param {string} file
+ * @returns {string}
+ */
+export function getDataPath(
+	gameId,
+	file = ""
+) {
+
+	const basePath =
+		`${DATA_ROOT}/${gameId}`;
+
+
+	if (!file) {
+		return basePath;
+	}
+
+
+	return `${basePath}/${file}`;
+}
+
+
+/**
+ * Lädt die globale Spieleliste.
  *
- * [
- *     {
- *         "id": "theDivision2",
- *         "name": "The Division 2"
- *     }
- * ]
- *
- * @returns {Promise<Array>}
+ * @returns {Promise<any>}
  */
 export async function loadGames() {
-	const games =
-		await loadJson(
-			`${DATA_PATH}/games.json`
-		);
 
-
-	if (!Array.isArray(games)) {
-		throw new Error(
-			"games.json muss ein Array enthalten."
-		);
-	}
-
-
-	return games;
+	return loadJson(
+		`${DATA_ROOT}/games.json`
+	);
 }
 
 
 /**
- * Lädt das Manifest eines Spiels.
+ * Lädt das Hauptmanifest eines Spiels.
  *
- * @param {string} gameId ID des Spiels
- * @returns {Promise<Object>}
+ * @param {string} gameId
+ * @returns {Promise<any>}
  */
 export async function loadGameManifest(
 	gameId
 ) {
-	const path =
-		`${DATA_PATH}/${gameId}/manifest.json`;
 
-
-	const manifest =
-		await loadJson(path);
-
-
-	/*
-	 * Falls im Manifest keine ID angegeben wurde,
-	 * wird die Ordner-ID verwendet.
-	 */
-	if (!manifest.id) {
-		manifest.id =
-			gameId;
-	}
-
-
-	/*
-	 * Sicherstellen, dass categories immer
-	 * ein Array ist.
-	 */
-	if (
-		!Array.isArray(
-			manifest.categories
-		)
-	) {
-		manifest.categories = [];
-	}
-
-
-	return manifest;
+	return loadManifest(
+		gameId,
+		"manifest.json"
+	);
 }
 
 
 /**
- * Lädt die JSON-Datei einer Kategorie.
+ * Lädt ein beliebiges Manifest innerhalb
+ * des Datenordners eines Spiels.
  *
- * @param {string} gameId ID des Spiels
- * @param {Object} category Kategorie aus dem Manifest
- * @returns {Promise<Object>}
+ * Beispiele:
+ *
+ * manifest.json
+ * collectibles/manifest.json
+ * collectibles/comms/manifest.json
+ *
+ * @param {string} gameId
+ * @param {string} manifestFile
+ * @returns {Promise<any>}
+ */
+export async function loadManifest(
+	gameId,
+	manifestFile = "manifest.json"
+) {
+
+	return loadJson(
+		getDataPath(
+			gameId,
+			manifestFile
+		)
+	);
+}
+
+
+/**
+ * Lädt die Datendatei einer normalen Kategorie.
+ *
+ * category.file muss relativ zum Datenordner
+ * des Spiels angegeben sein.
+ *
+ * @param {string} gameId
+ * @param {Object|string} category
+ * @returns {Promise<any>}
  */
 export async function loadCategoryData(
 	gameId,
 	category
 ) {
-	if (!category.file) {
+
+	const file =
+		typeof category === "string"
+			? category
+			: category?.file;
+
+
+	if (!file) {
 		throw new Error(
-			`Für die Kategorie "${category.name}" wurde keine Datei angegeben.`
+			"Für die Kategorie wurde keine Datei angegeben."
 		);
 	}
 
 
-	const path =
-		`${DATA_PATH}/${gameId}/${category.file}`;
-
-
-	return loadJson(path);
+	return loadJson(
+		getDataPath(
+			gameId,
+			file
+		)
+	);
 }
 
 
 /**
- * Liefert den Basisordner der Spieldaten.
+ * Löst einen Dateipfad relativ zur Position
+ * des aktuellen Manifests auf.
  *
- * Wird beispielsweise vom Progress-Service benötigt.
+ * Beispiel:
  *
+ * parentFile:
+ * collectibles/manifest.json
+ *
+ * childFile:
+ * echos.json
+ *
+ * Ergebnis:
+ * collectibles/echos.json
+ *
+ * @param {string} parentFile
+ * @param {string} childFile
  * @returns {string}
  */
-export function getDataPath() {
-	return DATA_PATH;
+export function resolveRelativeFile(
+	parentFile,
+	childFile
+) {
+
+	if (!childFile) {
+		throw new Error(
+			"Es wurde keine Zieldatei angegeben."
+		);
+	}
+
+
+	const baseFile =
+		parentFile ||
+		"manifest.json";
+
+
+	const dummyOrigin =
+		"https://tracker.local/";
+
+
+	const resolvedUrl =
+		new URL(
+			childFile,
+			`${dummyOrigin}${baseFile}`
+		);
+
+
+	return resolvedUrl.pathname
+		.replace(/^\/+/, "");
 }
