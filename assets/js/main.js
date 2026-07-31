@@ -7,17 +7,21 @@ import {
 	loadGameNavigation
 } from "./views/navigationView.js";
 
+
 import {
 	loadPageFromHash
 } from "./router.js";
+
 
 import {
 	clearProgressCache
 } from "./services/progressService.js";
 
+
 import {
 	initLanguageView
 } from "./views/languageView.js";
+
 
 import {
 	LANGUAGE_CHANGE_EVENT
@@ -38,7 +42,9 @@ import {
  *
  * @param {CustomEvent} event
  */
-async function handleAuthSessionChanged(event) {
+async function handleAuthSessionChanged(
+	event
+) {
 	console.info(
 		"[App] Auth-Session geändert:",
 		event.detail?.event
@@ -46,22 +52,24 @@ async function handleAuthSessionChanged(event) {
 
 
 	/*
-	 * Ganz wichtig:
-	 *
-	 * Fortschritt des vorherigen Login-Zustands darf
-	 * nicht weiterverwendet werden.
+	 * Fortschritt des vorherigen Login-Zustands
+	 * darf nicht weiterverwendet werden.
 	 */
 	clearProgressCache();
 
 
 	try {
+
 		await loadPageFromHash();
+
 
 		console.info(
 			"[App] Aktuelle Ansicht nach Auth-Änderung neu geladen."
 		);
+
 	}
 	catch (error) {
+
 		console.error(
 			"[App] Ansicht konnte nach Auth-Änderung nicht neu geladen werden:",
 			error
@@ -82,12 +90,11 @@ async function handleAuthSessionChanged(event) {
  * 1. Spiele-Navigation neu rendern
  * 2. aktuell geöffnete Route neu rendern
  *
- * Der Fortschrittscache muss dabei nicht gelöscht werden,
- * da sich durch die Sprache keine Item-IDs ändern.
- *
  * @param {CustomEvent} event
  */
-async function handleLanguageChanged(event) {
+async function handleLanguageChanged(
+	event
+) {
 	console.info(
 		"[App] Sprache geändert:",
 		event.detail?.language
@@ -98,18 +105,12 @@ async function handleLanguageChanged(event) {
 
 		/*
 		 * Navigation neu laden.
-		 *
-		 * Dadurch können später auch Spielnamen in der
-		 * Sidebar automatisch übersetzt werden.
 		 */
 		await loadGameNavigation();
 
 
 		/*
 		 * Aktuelle Ansicht neu rendern.
-		 *
-		 * Dadurch werden Spiel-, Kategorie-, Gruppen-
-		 * und Item-Texte in der neuen Sprache angezeigt.
 		 */
 		await loadPageFromHash();
 
@@ -117,8 +118,10 @@ async function handleLanguageChanged(event) {
 		console.info(
 			"[App] Ansicht nach Sprachänderung neu geladen."
 		);
+
 	}
 	catch (error) {
+
 		console.error(
 			"[App] Ansicht konnte nach Sprachänderung nicht neu geladen werden:",
 			error
@@ -128,20 +131,101 @@ async function handleLanguageChanged(event) {
 
 
 /* ---------------------------------------------------------
-   3. Initialisierung
+   3. Spieleübersicht
+   --------------------------------------------------------- */
+
+/**
+ * Behandelt einen Klick auf den oberen
+ * Navigationseintrag "Spiele".
+ *
+ * Der Klick funktioniert auch dann, wenn
+ * #games bereits die aktuelle Route ist.
+ *
+ * @param {MouseEvent} event
+ */
+function handleGamesOverviewClick(
+	event
+) {
+	event.preventDefault();
+
+
+	const gamesHash =
+		"#games";
+
+
+	/*
+	 * Befinden wir uns bereits auf #games,
+	 * entsteht normalerweise kein Hashchange.
+	 *
+	 * Deshalb wird die Route direkt neu geladen.
+	 */
+	if (
+		window.location.hash ===
+		gamesHash
+	) {
+
+		void loadPageFromHash();
+
+		return;
+	}
+
+
+	/*
+	 * Bei einer anderen Route wird der Hash
+	 * geändert. Der normale hashchange-Listener
+	 * lädt anschließend die Spieleübersicht.
+	 */
+	window.location.hash =
+		gamesHash;
+}
+
+
+/**
+ * Initialisiert den oberen Link
+ * zur Spieleübersicht.
+ */
+function initGamesOverviewLink() {
+
+	const gamesOverviewLink =
+		document.getElementById(
+			"games-overview-link"
+		);
+
+
+	if (!gamesOverviewLink) {
+
+		console.warn(
+			"[App] Element #games-overview-link wurde nicht gefunden."
+		);
+
+		return;
+	}
+
+
+	gamesOverviewLink.href =
+		"#games";
+
+
+	gamesOverviewLink.addEventListener(
+		"click",
+		handleGamesOverviewClick
+	);
+}
+
+
+/* ---------------------------------------------------------
+   4. Initialisierung
    --------------------------------------------------------- */
 
 /**
  * Initialisiert die Anwendung.
  */
 async function initializeApp() {
+
 	try {
 
 		/*
 		 * Auth-Änderungen beobachten.
-		 *
-		 * Listener wird bewusst vor dem ersten Rendern
-		 * registriert.
 		 */
 		window.addEventListener(
 			"auth-session-changed",
@@ -151,9 +235,6 @@ async function initializeApp() {
 
 		/*
 		 * Sprachänderungen beobachten.
-		 *
-		 * Auch dieser Listener wird vor dem ersten Rendern
-		 * registriert.
 		 */
 		window.addEventListener(
 			LANGUAGE_CHANGE_EVENT,
@@ -163,15 +244,18 @@ async function initializeApp() {
 
 		/*
 		 * Sprachauswahl initialisieren.
-		 *
-		 * Dabei wird die gespeicherte bzw. automatisch
-		 * erkannte Sprache im Select angezeigt.
 		 */
 		initLanguageView();
 
 
 		/*
-		 * Navigation laden.
+		 * Oberen Spiele-Link initialisieren.
+		 */
+		initGamesOverviewLink();
+
+
+		/*
+		 * Spiele-Navigation laden.
 		 */
 		await loadGameNavigation();
 
@@ -185,8 +269,10 @@ async function initializeApp() {
 		console.info(
 			"[App] Anwendung initialisiert."
 		);
+
 	}
 	catch (error) {
+
 		console.error(
 			"[App] Initialisierung fehlgeschlagen:",
 			error
@@ -196,22 +282,29 @@ async function initializeApp() {
 
 
 /* ---------------------------------------------------------
-   4. Routing
+   5. Routing
    --------------------------------------------------------- */
+
+/**
+ * Reagiert auf Änderungen des URL-Hashes.
+ */
+function handleHashChanged() {
+
+	void loadPageFromHash();
+}
+
 
 /*
  * Hash-Routen beobachten.
  */
 window.addEventListener(
 	"hashchange",
-	() => {
-		void loadPageFromHash();
-	}
+	handleHashChanged
 );
 
 
 /* ---------------------------------------------------------
-   5. Anwendung starten
+   6. Anwendung starten
    --------------------------------------------------------- */
 
 initializeApp();
