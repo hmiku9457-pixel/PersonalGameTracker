@@ -16,35 +16,49 @@ import {
 
 const UI_TEXT = {
 	de: {
-		language: "Sprache",
-		selectLanguage: "Sprache auswählen",
+		language:
+			"Sprache",
 
-		games: "Spiele",
-		gamesNavigation: "Spiele",
+		selectLanguage:
+			"Sprache auswählen",
 
-		login: "Anmelden",
-		logout: "Abmelden",
-		account: "Account",
+		games:
+			"Spiele",
 
-		welcome: "Willkommen",
-		welcomeText:
-			"Wähle links ein Spiel aus."
+		gamesNavigation:
+			"Spiele",
+
+		login:
+			"Anmelden",
+
+		logout:
+			"Abmelden",
+
+		account:
+			"Account"
 	},
 
 	en: {
-		language: "Language",
-		selectLanguage: "Select language",
+		language:
+			"Language",
 
-		games: "Games",
-		gamesNavigation: "Games",
+		selectLanguage:
+			"Select language",
 
-		login: "Sign in",
-		logout: "Sign out",
-		account: "Account",
+		games:
+			"Games",
 
-		welcome: "Welcome",
-		welcomeText:
-			"Select a game on the left."
+		gamesNavigation:
+			"Games",
+
+		login:
+			"Sign in",
+
+		logout:
+			"Sign out",
+
+		account:
+			"Account"
 	}
 };
 
@@ -56,7 +70,9 @@ const UI_TEXT = {
  * @param {string} key
  * @returns {string}
  */
-function getUiText(key) {
+function getUiText(
+	key
+) {
 	const language =
 		getCurrentLanguage();
 
@@ -78,6 +94,7 @@ function getUiText(key) {
  * die statischen Texte der Oberfläche.
  */
 export function initLanguageView() {
+
 	const languageSelect =
 		document.getElementById(
 			"language-select"
@@ -85,6 +102,7 @@ export function initLanguageView() {
 
 
 	if (!languageSelect) {
+
 		console.warn(
 			"Sprachauswahl wurde im DOM nicht gefunden."
 		);
@@ -94,7 +112,7 @@ export function initLanguageView() {
 
 
 	/*
-	 * Bereits gespeicherte bzw.
+	 * Bereits gespeicherte beziehungsweise
 	 * automatisch erkannte Sprache anzeigen.
 	 */
 	updateLanguageSelect(
@@ -108,6 +126,7 @@ export function initLanguageView() {
 	languageSelect.addEventListener(
 		"change",
 		() => {
+
 			handleLanguageChange(
 				languageSelect
 			);
@@ -131,7 +150,6 @@ export function initLanguageView() {
 
 
 			updateStaticUiText();
-
 		}
 	);
 
@@ -155,6 +173,7 @@ export function initLanguageView() {
 function handleLanguageChange(
 	languageSelect
 ) {
+
 	const selectedLanguage =
 		languageSelect.value;
 
@@ -166,11 +185,11 @@ function handleLanguageChange(
 
 
 	/*
-	 * Falls ein ungültiger Wert gesetzt
-	 * worden sein sollte, wird wieder die
-	 * tatsächliche Sprache angezeigt.
+	 * Falls ein ungültiger Wert gesetzt wurde,
+	 * wird wieder die tatsächliche Sprache angezeigt.
 	 */
 	if (!success) {
+
 		updateLanguageSelect(
 			languageSelect
 		);
@@ -191,6 +210,7 @@ function handleLanguageChange(
 function updateLanguageSelect(
 	languageSelect
 ) {
+
 	languageSelect.value =
 		getCurrentLanguage();
 }
@@ -205,8 +225,7 @@ function updateLanguageSelect(
  * die direkt aus der index.html stammen.
  *
  * Dynamische Spiel-, Kategorie- und Item-Texte
- * werden weiterhin von ihren jeweiligen Views
- * behandelt.
+ * werden von ihren jeweiligen Views behandelt.
  */
 function updateStaticUiText() {
 
@@ -229,6 +248,7 @@ function updateStaticUiText() {
 
 
 	if (languageLabel) {
+
 		languageLabel.textContent =
 			getUiText(
 				"language"
@@ -237,6 +257,7 @@ function updateStaticUiText() {
 
 
 	if (languageSelect) {
+
 		languageSelect.setAttribute(
 			"aria-label",
 			getUiText(
@@ -271,6 +292,7 @@ function updateStaticUiText() {
 
 
 	if (loginButton) {
+
 		loginButton.textContent =
 			getUiText(
 				"login"
@@ -279,6 +301,7 @@ function updateStaticUiText() {
 
 
 	if (accountButton) {
+
 		accountButton.textContent =
 			getUiText(
 				"account"
@@ -287,6 +310,7 @@ function updateStaticUiText() {
 
 
 	if (logoutButton) {
+
 		logoutButton.textContent =
 			getUiText(
 				"logout"
@@ -306,68 +330,39 @@ function updateStaticUiText() {
 		);
 
 
-	const sidebarTitle =
-		sidebarNavigation?.querySelector(
-			"h2"
+	const gamesOverviewLink =
+		document.getElementById(
+			"games-overview-link"
 		);
 
 
-	if (sidebarTitle) {
-		sidebarTitle.textContent =
+	/*
+	 * Wichtig:
+	 *
+	 * Nicht den Inhalt des <h2>-Elements ersetzen.
+	 * Sonst würde das darin enthaltene <a>-Element
+	 * aus dem DOM entfernt.
+	 */
+	if (gamesOverviewLink) {
+
+		gamesOverviewLink.textContent =
 			getUiText(
 				"games"
 			);
+
+
+		gamesOverviewLink.href =
+			"#games";
 	}
 
 
 	if (sidebarNavigation) {
+
 		sidebarNavigation.setAttribute(
 			"aria-label",
 			getUiText(
 				"gamesNavigation"
 			)
 		);
-	}
-
-
-	/*
-	 * -----------------------------------------------------
-	 * Startseite
-	 * -----------------------------------------------------
-	 *
-	 * Die Startseite besteht momentan direkt aus
-	 * einem <h2> und einem <p> innerhalb von
-	 * #main-content.
-	 *
-	 * Dynamische Spiel- und Kategorieansichten liegen
-	 * dagegen innerhalb eigener Sections und werden
-	 * deshalb von diesen Selektoren nicht verändert.
-	 */
-
-	const welcomeTitle =
-		document.querySelector(
-			"#main-content > h2"
-		);
-
-
-	const welcomeText =
-		document.querySelector(
-			"#main-content > p"
-		);
-
-
-	if (welcomeTitle) {
-		welcomeTitle.textContent =
-			getUiText(
-				"welcome"
-			);
-	}
-
-
-	if (welcomeText) {
-		welcomeText.textContent =
-			getUiText(
-				"welcomeText"
-			);
 	}
 }
