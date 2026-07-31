@@ -4,6 +4,567 @@
    ========================================================= */
 
 
+/* =========================================================
+   Spieleübersicht / Homepage
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   A. Grundlayout
+   --------------------------------------------------------- */
+
+.games-page {
+	width: 100%;
+	max-width: 1180px;
+
+	margin: 0 auto;
+	padding: 10px 20px 40px;
+}
+
+
+/*
+ * Die gamesView.js verwendet ein <header>-Element.
+ *
+ * Diese Regeln überschreiben gezielt die allgemeinen
+ * Header-Styles aus der main.css, damit der Seitenkopf
+ * der Spieleübersicht nicht wie der Hauptheader aussieht.
+ */
+.games-page .games-header {
+	min-height: 0;
+
+	margin: 0 0 36px;
+	padding: 0;
+
+	display: block;
+
+	background: none;
+	border: 0;
+}
+
+
+/* ---------------------------------------------------------
+   B. Überschrift und Beschreibung
+   --------------------------------------------------------- */
+
+.games-page .games-title {
+	margin: 0;
+
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+
+	color: #f3f4f6;
+}
+
+
+.games-page .games-description {
+	max-width: 720px;
+
+	margin: 10px auto 0;
+
+	font-size: 1rem;
+	line-height: 1.6;
+	text-align: center;
+
+	color: #9ca3af;
+}
+
+
+/* ---------------------------------------------------------
+   C. Leere Spieleliste
+   --------------------------------------------------------- */
+
+.games-page .games-empty-message {
+	margin: 40px auto 0;
+	padding: 24px;
+
+	text-align: center;
+
+	color: #d1d5db;
+	background-color: #1f2937;
+
+	border: 1px solid #374151;
+	border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   D. Spiele-Grid
+   --------------------------------------------------------- */
+
+.games-page .games-grid {
+	width: 100%;
+
+	display: grid;
+	grid-template-columns:
+		repeat(
+			2,
+			minmax(0, 1fr)
+		);
+
+	gap: 26px;
+}
+
+
+/* ---------------------------------------------------------
+   E. Spiele-Karte
+   --------------------------------------------------------- */
+
+.games-page .game-card {
+	position: relative;
+	isolation: isolate;
+
+	width: 100%;
+	min-width: 0;
+	min-height: 280px;
+
+	aspect-ratio: 16 / 9;
+
+	display: block;
+
+	overflow: hidden;
+
+	color: #ffffff;
+	background-color: #1f2937;
+
+	border: 1px solid #374151;
+	border-radius: 12px;
+
+	text-decoration: none;
+
+	cursor: pointer;
+
+	box-shadow:
+		0 6px 18px rgb(0 0 0 / 24%);
+
+	transition:
+		transform 0.25s ease,
+		border-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+
+.games-page .game-card:visited {
+	color: #ffffff;
+}
+
+
+/* Hover */
+
+.games-page .game-card:hover {
+	transform: translateY(-5px);
+
+	border-color: #60a5fa;
+
+	box-shadow:
+		0 14px 30px rgb(0 0 0 / 38%);
+}
+
+
+/* Tastatur-Navigation */
+
+.games-page .game-card:focus-visible {
+	outline: 3px solid #60a5fa;
+	outline-offset: 4px;
+}
+
+
+/* Klick-Effekt */
+
+.games-page .game-card:active {
+	transform: translateY(-2px);
+}
+
+
+/* ---------------------------------------------------------
+   F. Hintergrundmedium
+   --------------------------------------------------------- */
+
+.games-page .game-card-media {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+
+	overflow: hidden;
+
+	background:
+		linear-gradient(
+			135deg,
+			#25344a,
+			#111827
+		);
+}
+
+
+/*
+ * Platzhalter, falls für ein Spiel noch
+ * kein Bild oder Video eingetragen wurde.
+ */
+.games-page .game-card-media.is-empty {
+	background:
+		radial-gradient(
+			circle at 50% 35%,
+			rgb(59 130 246 / 22%),
+			transparent 45%
+		),
+		linear-gradient(
+			135deg,
+			#25344a,
+			#111827
+		);
+}
+
+
+/* Bild, GIF oder Video */
+
+.games-page .game-card-media-element {
+	width: 100%;
+	height: 100%;
+
+	display: block;
+
+	object-fit: cover;
+	object-position: center;
+
+	pointer-events: none;
+
+	transform: scale(1.001);
+
+	transition:
+		transform 0.45s ease,
+		filter 0.3s ease;
+}
+
+
+/* Medium beim Hover leicht vergrößern */
+
+.games-page .game-card:hover
+.game-card-media-element {
+	transform: scale(1.045);
+
+	filter: brightness(1.06);
+}
+
+
+/* ---------------------------------------------------------
+   G. Verlauf über dem Hintergrund
+   --------------------------------------------------------- */
+
+.games-page .game-card-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+
+	display: flex;
+	align-items: flex-end;
+
+	pointer-events: none;
+
+	background:
+		linear-gradient(
+			to bottom,
+			rgb(3 7 18 / 3%) 0%,
+			rgb(3 7 18 / 10%) 35%,
+			rgb(3 7 18 / 65%) 68%,
+			rgb(3 7 18 / 94%) 100%
+		);
+}
+
+
+/* ---------------------------------------------------------
+   H. Unterer Karteninhalt
+   --------------------------------------------------------- */
+
+.games-page .game-card-content {
+	width: 100%;
+
+	padding:
+		80px
+		22px
+		22px;
+}
+
+
+/* Spielname */
+
+.games-page .game-card-title {
+	margin: 0 0 12px;
+
+	font-size: 1.45rem;
+	font-weight: 700;
+	line-height: 1.25;
+
+	color: #ffffff;
+
+	text-shadow:
+		0 2px 5px rgb(0 0 0 / 85%);
+}
+
+
+/* ---------------------------------------------------------
+   I. Fortschritt
+   --------------------------------------------------------- */
+
+.games-page .game-card-progress {
+	width: 100%;
+}
+
+
+/*
+ * Verhindert zuverlässig, dass der Fortschrittsbereich
+ * ohne verfügbare persönliche Daten Platz einnimmt.
+ */
+.games-page .game-card-progress[hidden] {
+	display: none;
+}
+
+
+/* Fortschrittsbalken */
+
+.games-page .game-card-progress-bar {
+	position: relative;
+
+	width: 100%;
+	height: 26px;
+
+	overflow: hidden;
+
+	background-color: rgb(17 24 39 / 88%);
+
+	border: 1px solid rgb(209 213 219 / 36%);
+	border-radius: 999px;
+
+	box-shadow:
+		inset 0 1px 3px rgb(0 0 0 / 45%);
+}
+
+
+/* Gefüllter Bereich */
+
+.games-page .game-card-progress-fill {
+	position: absolute;
+	inset:
+		0
+		auto
+		0
+		0;
+
+	width: 0%;
+
+	background:
+		linear-gradient(
+			90deg,
+			#1d4ed8,
+			#3b82f6
+		);
+
+	border-radius: inherit;
+
+	transition:
+		width 0.45s ease;
+}
+
+
+/* X/X innerhalb des Balkens */
+
+.games-page .game-card-progress-count {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 10px;
+
+	font-size: 0.85rem;
+	font-weight: 700;
+	line-height: 1;
+
+	color: #ffffff;
+
+	text-shadow:
+		0 1px 3px rgb(0 0 0 / 95%);
+}
+
+
+/* Vollständig abgeschlossen */
+
+.games-page .game-card-progress.is-complete
+.game-card-progress-fill {
+	background:
+		linear-gradient(
+			90deg,
+			#15803d,
+			#22c55e
+		);
+}
+
+
+/* =========================================================
+   Responsive Spieleübersicht
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Tablets
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+	.games-page .games-grid {
+		grid-template-columns: 1fr;
+
+		max-width: 680px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+
+/* ---------------------------------------------------------
+   Kleine Tablets und Smartphones
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+	.games-page {
+		padding:
+			10px
+			0
+			30px;
+	}
+
+
+	.games-page .games-header {
+		margin-bottom: 28px;
+	}
+
+
+	.games-page .games-title {
+		font-size: 1.7rem;
+	}
+
+
+	.games-page .games-description {
+		font-size: 0.95rem;
+	}
+
+
+	.games-page .games-grid {
+		gap: 18px;
+	}
+
+
+	.games-page .game-card {
+		min-height: 240px;
+	}
+
+
+	.games-page .game-card-content {
+		padding:
+			70px
+			18px
+			18px;
+	}
+
+
+	.games-page .game-card-title {
+		font-size: 1.3rem;
+	}
+
+}
+
+
+/* ---------------------------------------------------------
+   Smartphones
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+	.games-page .game-card {
+		min-height: 220px;
+
+		aspect-ratio: 4 / 3;
+	}
+
+
+	.games-page .game-card-content {
+		padding:
+			60px
+			16px
+			16px;
+	}
+
+
+	.games-page .game-card-title {
+		margin-bottom: 10px;
+
+		font-size: 1.2rem;
+	}
+
+
+	.games-page .game-card-progress-bar {
+		height: 24px;
+	}
+
+
+	.games-page .game-card-progress-count {
+		font-size: 0.8rem;
+	}
+
+}
+
+
+/* ---------------------------------------------------------
+   Sehr kleine Displays
+   --------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+	.games-page .game-card {
+		min-height: 200px;
+	}
+
+
+	.games-page .game-card-content {
+		padding:
+			50px
+			14px
+			14px;
+	}
+
+}
+
+
+/* ---------------------------------------------------------
+   Reduzierte Bewegung
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+	.games-page .game-card,
+	.games-page .game-card-media-element,
+	.games-page .game-card-progress-fill {
+		transition: none;
+	}
+
+
+	.games-page .game-card:hover {
+		transform: none;
+	}
+
+
+	.games-page .game-card:hover
+	.game-card-media-element {
+		transform: none;
+	}
+
+}
+
+
 /* ---------------------------------------------------------
    1. Grundlayout der Spielseite
    --------------------------------------------------------- */
