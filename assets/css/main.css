@@ -278,6 +278,26 @@ header h1 {
 	font-size: 1.1rem;
 }
 
+.sidebar h2 a {
+	display: inline-block;
+
+	padding: 0;
+
+	color: inherit;
+	text-decoration: none;
+}
+
+.sidebar h2 a:hover {
+	color: #ffffff;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.sidebar h2 a:focus-visible {
+	outline: 2px solid #60a5fa;
+	outline-offset: 4px;
+}
+
 .sidebar nav ul {
 	margin: 0;
 	padding: 0;
