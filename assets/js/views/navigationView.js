@@ -7,6 +7,7 @@ import {
 	loadGames
 } from "../services/dataService.js";
 
+
 import {
 	getCurrentLanguage,
 	getLocalizedText
@@ -14,7 +15,52 @@ import {
 
 
 /* ---------------------------------------------------------
-   1. Navigation
+   1. UI-Texte
+   --------------------------------------------------------- */
+
+const UI_TEXT = {
+	de: {
+		gamesOverview:
+			"Spiele",
+
+		loadFailed:
+			"Spiele konnten nicht geladen werden."
+	},
+
+	en: {
+		gamesOverview:
+			"Games",
+
+		loadFailed:
+			"Games could not be loaded."
+	}
+};
+
+
+/**
+ * Gibt einen lokalisierten Text
+ * der Navigation zurück.
+ *
+ * @param {string} key
+ * @returns {string}
+ */
+function getUiText(
+	key
+) {
+	const language =
+		getCurrentLanguage();
+
+
+	return (
+		UI_TEXT[language]?.[key] ??
+		UI_TEXT.en?.[key] ??
+		key
+	);
+}
+
+
+/* ---------------------------------------------------------
+   2. Navigation
    --------------------------------------------------------- */
 
 /**
@@ -23,6 +69,7 @@ import {
  * @returns {HTMLElement|null}
  */
 function getGameNavigation() {
+
 	return document.getElementById(
 		"game-navigation"
 	);
@@ -33,11 +80,13 @@ function getGameNavigation() {
  * Erstellt die Spiele-Navigation.
  */
 export async function loadGameNavigation() {
+
 	const gameNavigation =
 		getGameNavigation();
 
 
 	if (!gameNavigation) {
+
 		console.warn(
 			"Element #game-navigation wurde nicht gefunden."
 		);
@@ -47,6 +96,7 @@ export async function loadGameNavigation() {
 
 
 	try {
+
 		const games =
 			await loadGames();
 
@@ -54,62 +104,66 @@ export async function loadGameNavigation() {
 		gameNavigation.replaceChildren();
 
 
-		for (const game of games) {
-			const listItem =
-				document.createElement(
-					"li"
-				);
+		/*
+		 * ---------------------------------------------------
+		 * Allgemeine Spieleübersicht
+		 * ---------------------------------------------------
+		 */
+
+		gameNavigation.append(
+			createGamesOverviewNavigationItem()
+		);
 
 
-			const link =
-				document.createElement(
-					"a"
-				);
+		/*
+		 * ---------------------------------------------------
+		 * Einzelne Spiele
+		 * ---------------------------------------------------
+		 */
+
+		const validGames =
+			Array.isArray(
+				games
+			)
+				? games.filter(
+					game =>
+						game &&
+						typeof game.id ===
+							"string" &&
+						game.id.trim() !==
+							""
+				)
+				: [];
 
 
-			link.href =
-				`#game/${encodeURIComponent(game.id)}`;
-
-
-			/*
-			 * Unterstützt sowohl:
-			 *
-			 * "name": "Dark Souls"
-			 *
-			 * als auch:
-			 *
-			 * "name": {
-			 *     "de": "Dark Souls",
-			 *     "en": "Dark Souls"
-			 * }
-			 */
-			link.textContent =
-				getLocalizedText(
-					game.name,
-					game.id
-				);
-
-
-			link.dataset.gameId =
-				game.id;
-
-
-			listItem.append(
-				link
-			);
+		for (
+			const game
+			of validGames
+		) {
 
 			gameNavigation.append(
-				listItem
+				createGameNavigationItem(
+					game
+				)
 			);
 		}
 
 
+		/*
+		 * Aktiven Zustand anhand des aktuellen
+		 * URL-Hashes setzen.
+		 */
 		updateActiveGameNavigation(
-			null
+			getCurrentGameIdFromHash()
 		);
 
-	} catch (error) {
-		console.error(error);
+	}
+	catch (error) {
+
+		console.error(
+			"Spiele-Navigation konnte nicht geladen werden:",
+			error
+		);
 
 
 		gameNavigation.replaceChildren();
@@ -122,7 +176,9 @@ export async function loadGameNavigation() {
 
 
 		listItem.textContent =
-			getNavigationErrorText();
+			getUiText(
+				"loadFailed"
+			);
 
 
 		gameNavigation.append(
@@ -133,18 +189,135 @@ export async function loadGameNavigation() {
 
 
 /* ---------------------------------------------------------
-   2. Aktives Spiel
+   3. Übersichts-Link erstellen
    --------------------------------------------------------- */
 
 /**
- * Markiert das aktuell ausgewählte Spiel
- * in der Navigation.
+ * Erstellt den Navigationseintrag für
+ * die allgemeine Spieleübersicht.
  *
- * @param {string|null} currentGameId Aktuelle Spiel-ID
+ * @returns {HTMLLIElement}
+ */
+function createGamesOverviewNavigationItem() {
+
+	const listItem =
+		document.createElement(
+			"li"
+		);
+
+
+	const link =
+		document.createElement(
+			"a"
+		);
+
+
+	link.href =
+		"#games";
+
+
+	link.textContent =
+		getUiText(
+			"gamesOverview"
+		);
+
+
+	link.dataset.navigationTarget =
+		"games";
+
+
+	listItem.append(
+		link
+	);
+
+
+	return listItem;
+}
+
+
+/* ---------------------------------------------------------
+   4. Spiel-Link erstellen
+   --------------------------------------------------------- */
+
+/**
+ * Erstellt den Navigationseintrag für
+ * ein einzelnes Spiel.
+ *
+ * @param {Object} game
+ * @returns {HTMLLIElement}
+ */
+function createGameNavigationItem(
+	game
+) {
+
+	const listItem =
+		document.createElement(
+			"li"
+		);
+
+
+	const link =
+		document.createElement(
+			"a"
+		);
+
+
+	link.href =
+		`#game/${encodeURIComponent(game.id)}`;
+
+
+	/*
+	 * Unterstützt sowohl:
+	 *
+	 * "name": "Dark Souls"
+	 *
+	 * als auch:
+	 *
+	 * "name": {
+	 *     "de": "Dark Souls",
+	 *     "en": "Dark Souls"
+	 * }
+	 */
+	link.textContent =
+		getLocalizedText(
+			game.name,
+			game.id
+		);
+
+
+	link.dataset.gameId =
+		game.id;
+
+
+	listItem.append(
+		link
+	);
+
+
+	return listItem;
+}
+
+
+/* ---------------------------------------------------------
+   5. Aktiver Navigationspunkt
+   --------------------------------------------------------- */
+
+/**
+ * Markiert die allgemeine Spieleübersicht
+ * oder das aktuell ausgewählte Spiel.
+ *
+ * currentGameId === null:
+ * Die allgemeine Spieleübersicht ist aktiv.
+ *
+ * currentGameId enthält eine Spiel-ID:
+ * Das entsprechende Spiel ist aktiv.
+ *
+ * @param {string|null} currentGameId
  */
 export function updateActiveGameNavigation(
 	currentGameId = null
 ) {
+
 	const gameNavigation =
 		getGameNavigation();
 
@@ -154,51 +327,159 @@ export function updateActiveGameNavigation(
 	}
 
 
-	const links =
+	/*
+	 * -------------------------------------------------------
+	 * Allgemeine Spieleübersicht
+	 * -------------------------------------------------------
+	 */
+
+	const gamesOverviewLink =
+		gameNavigation.querySelector(
+			'[data-navigation-target="games"]'
+		);
+
+
+	setLinkActiveState(
+		gamesOverviewLink,
+		currentGameId === null
+	);
+
+
+	/*
+	 * -------------------------------------------------------
+	 * Einzelne Spiele
+	 * -------------------------------------------------------
+	 */
+
+	const gameLinks =
 		gameNavigation.querySelectorAll(
 			"[data-game-id]"
 		);
 
 
-	for (const link of links) {
+	for (
+		const link
+		of gameLinks
+	) {
+
 		const isActive =
 			link.dataset.gameId ===
 			currentGameId;
 
 
-		link.classList.toggle(
-			"is-active",
+		setLinkActiveState(
+			link,
 			isActive
 		);
-
-
-		if (isActive) {
-			link.setAttribute(
-				"aria-current",
-				"page"
-			);
-
-		} else {
-			link.removeAttribute(
-				"aria-current"
-			);
-		}
 	}
 }
 
 
 /* ---------------------------------------------------------
-   3. Lokalisierte UI-Texte
+   6. Aktivzustand eines Links
    --------------------------------------------------------- */
 
 /**
- * Gibt die Fehlermeldung für die
- * Spiele-Navigation zurück.
+ * Setzt Klasse und aria-current
+ * eines Navigationslinks.
  *
- * @returns {string}
+ * @param {Element|null} link
+ * @param {boolean} isActive
  */
-function getNavigationErrorText() {
-	return getCurrentLanguage() === "de"
-		? "Spiele konnten nicht geladen werden."
-		: "Games could not be loaded.";
+function setLinkActiveState(
+	link,
+	isActive
+) {
+
+	if (!link) {
+		return;
+	}
+
+
+	link.classList.toggle(
+		"is-active",
+		isActive
+	);
+
+
+	if (isActive) {
+
+		link.setAttribute(
+			"aria-current",
+			"page"
+		);
+
+	}
+	else {
+
+		link.removeAttribute(
+			"aria-current"
+		);
+	}
+}
+
+
+/* ---------------------------------------------------------
+   7. Aktuelles Spiel aus Hash auslesen
+   --------------------------------------------------------- */
+
+/**
+ * Liest die aktuelle Spiel-ID aus dem Hash.
+ *
+ * Beispiele:
+ *
+ * #games
+ * → null
+ *
+ * #game/theDivision2
+ * → theDivision2
+ *
+ * #game/theDivision2/collectibles
+ * → theDivision2
+ *
+ * @returns {string|null}
+ */
+function getCurrentGameIdFromHash() {
+
+	const hash =
+		window.location.hash
+			.replace(/^#/, "");
+
+
+	if (!hash) {
+		return null;
+	}
+
+
+	const routeParts =
+		hash
+			.split("/")
+			.filter(Boolean);
+
+
+	if (
+		routeParts[0] !== "game" ||
+		!routeParts[1]
+	) {
+		return null;
+	}
+
+
+	try {
+
+		return decodeURIComponent(
+			routeParts[1]
+		);
+
+	}
+	catch (error) {
+
+		console.warn(
+			"Spiel-ID im URL-Hash konnte nicht gelesen werden:",
+			error
+		);
+
+
+		return routeParts[1];
+	}
 }
