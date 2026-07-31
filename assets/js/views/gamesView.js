@@ -466,7 +466,8 @@ function createGameCard(
 
 	const mediaElement =
 		createGameMedia(
-			game
+			game,
+			mediaContainer
 		);
 
 
@@ -559,18 +560,16 @@ function createGameCard(
 /**
  * Erstellt das Hintergrundmedium einer Karte.
  *
- * Unterstützt:
- *
- * - statische Bilder
- * - GIF-Dateien
- * - WebM-Videos
- * - MP4-Videos
+ * Falls das Medium nicht geladen werden kann,
+ * wird es entfernt und der Platzhalter angezeigt.
  *
  * @param {Object} game
+ * @param {HTMLElement} mediaContainer
  * @returns {HTMLImageElement|HTMLVideoElement|null}
  */
 function createGameMedia(
-	game
+	game,
+	mediaContainer
 ) {
 
 	const media =
@@ -599,10 +598,6 @@ function createGameMedia(
 			"game-card-media-element";
 
 
-		video.src =
-			media.src;
-
-
 		video.autoplay =
 			true;
 
@@ -629,6 +624,26 @@ function createGameMedia(
 		);
 
 
+		/*
+		 * Fehlerhaften Video-Pfad abfangen.
+		 */
+		video.addEventListener(
+			"error",
+			() => {
+
+				video.remove();
+
+
+				mediaContainer.classList.add(
+					"is-empty"
+				);
+			},
+			{
+				once: true
+			}
+		);
+
+
 		if (
 			typeof media.poster === "string" &&
 			media.poster.trim() !== ""
@@ -645,6 +660,13 @@ function createGameMedia(
 		);
 
 
+		/*
+		 * src erst nach dem Error-Listener setzen.
+		 */
+		video.src =
+			media.src;
+
+
 		return video;
 	}
 
@@ -659,15 +681,6 @@ function createGameMedia(
 		"game-card-media-element";
 
 
-	image.src =
-		media.src;
-
-
-	/*
-	 * Das Bild ist rein dekorativ.
-	 * Der Spielname steht bereits als Text
-	 * innerhalb der Karte.
-	 */
 	image.alt =
 		"";
 
@@ -680,10 +693,37 @@ function createGameMedia(
 		"async";
 
 
+	/*
+	 * Fehlerhaften Bild- oder GIF-Pfad abfangen.
+	 */
+	image.addEventListener(
+		"error",
+		() => {
+
+			image.remove();
+
+
+			mediaContainer.classList.add(
+				"is-empty"
+			);
+		},
+		{
+			once: true
+		}
+	);
+
+
 	applyMediaDisplayOptions(
 		image,
 		media
 	);
+
+
+	/*
+	 * src erst nach dem Error-Listener setzen.
+	 */
+	image.src =
+		media.src;
 
 
 	return image;
@@ -714,6 +754,19 @@ function createGameMedia(
 function getGameMediaConfig(
 	game
 ) {
+
+	/*
+	 * Medium explizit deaktiviert:
+	 * Es wird keine Datei angefragt.
+	 */
+	if (
+		game.media &&
+		typeof game.media === "object" &&
+		game.media.enabled === false
+	) {
+		return null;
+	}
+	
 
 	if (
 		typeof game.media === "string" &&
