@@ -38,8 +38,7 @@ const UI_TEXT = {
 
 
 /**
- * Gibt einen lokalisierten Text
- * der Navigation zurück.
+ * Gibt einen lokalisierten Navigationstext zurück.
  *
  * @param {string} key
  * @returns {string}
@@ -60,7 +59,7 @@ function getUiText(
 
 
 /* ---------------------------------------------------------
-   2. Navigation
+   2. DOM
    --------------------------------------------------------- */
 
 /**
@@ -75,6 +74,24 @@ function getGameNavigation() {
 	);
 }
 
+
+/**
+ * Gibt den Link zur allgemeinen
+ * Spieleübersicht zurück.
+ *
+ * @returns {HTMLAnchorElement|null}
+ */
+function getGamesOverviewLink() {
+
+	return document.getElementById(
+		"games-overview-link"
+	);
+}
+
+
+/* ---------------------------------------------------------
+   3. Navigation laden
+   --------------------------------------------------------- */
 
 /**
  * Erstellt die Spiele-Navigation.
@@ -95,6 +112,13 @@ export async function loadGameNavigation() {
 	}
 
 
+	/*
+	 * Text des vorhandenen Übersichtslinks
+	 * an die aktuelle Sprache anpassen.
+	 */
+	updateGamesOverviewLinkText();
+
+
 	try {
 
 		const games =
@@ -103,23 +127,6 @@ export async function loadGameNavigation() {
 
 		gameNavigation.replaceChildren();
 
-
-		/*
-		 * ---------------------------------------------------
-		 * Allgemeine Spieleübersicht
-		 * ---------------------------------------------------
-		 */
-
-		gameNavigation.append(
-			createGamesOverviewNavigationItem()
-		);
-
-
-		/*
-		 * ---------------------------------------------------
-		 * Einzelne Spiele
-		 * ---------------------------------------------------
-		 */
 
 		const validGames =
 			Array.isArray(
@@ -150,8 +157,8 @@ export async function loadGameNavigation() {
 
 
 		/*
-		 * Aktiven Zustand anhand des aktuellen
-		 * URL-Hashes setzen.
+		 * Aktiven Zustand anhand der
+		 * aktuellen URL setzen.
 		 */
 		updateActiveGameNavigation(
 			getCurrentGameIdFromHash()
@@ -189,59 +196,12 @@ export async function loadGameNavigation() {
 
 
 /* ---------------------------------------------------------
-   3. Übersichts-Link erstellen
-   --------------------------------------------------------- */
-
-/**
- * Erstellt den Navigationseintrag für
- * die allgemeine Spieleübersicht.
- *
- * @returns {HTMLLIElement}
- */
-function createGamesOverviewNavigationItem() {
-
-	const listItem =
-		document.createElement(
-			"li"
-		);
-
-
-	const link =
-		document.createElement(
-			"a"
-		);
-
-
-	link.href =
-		"#games";
-
-
-	link.textContent =
-		getUiText(
-			"gamesOverview"
-		);
-
-
-	link.dataset.navigationTarget =
-		"games";
-
-
-	listItem.append(
-		link
-	);
-
-
-	return listItem;
-}
-
-
-/* ---------------------------------------------------------
    4. Spiel-Link erstellen
    --------------------------------------------------------- */
 
 /**
- * Erstellt den Navigationseintrag für
- * ein einzelnes Spiel.
+ * Erstellt einen Navigationseintrag
+ * für ein einzelnes Spiel.
  *
  * @param {Object} game
  * @returns {HTMLLIElement}
@@ -266,18 +226,6 @@ function createGameNavigationItem(
 		`#game/${encodeURIComponent(game.id)}`;
 
 
-	/*
-	 * Unterstützt sowohl:
-	 *
-	 * "name": "Dark Souls"
-	 *
-	 * als auch:
-	 *
-	 * "name": {
-	 *     "de": "Dark Souls",
-	 *     "en": "Dark Souls"
-	 * }
-	 */
 	link.textContent =
 		getLocalizedText(
 			game.name,
@@ -299,15 +247,15 @@ function createGameNavigationItem(
 
 
 /* ---------------------------------------------------------
-   5. Aktiver Navigationspunkt
+   5. Aktive Navigation
    --------------------------------------------------------- */
 
 /**
- * Markiert die allgemeine Spieleübersicht
+ * Markiert entweder die Spieleübersicht
  * oder das aktuell ausgewählte Spiel.
  *
  * currentGameId === null:
- * Die allgemeine Spieleübersicht ist aktiv.
+ * Die Spieleübersicht ist aktiv.
  *
  * currentGameId enthält eine Spiel-ID:
  * Das entsprechende Spiel ist aktiv.
@@ -322,34 +270,24 @@ export function updateActiveGameNavigation(
 		getGameNavigation();
 
 
-	if (!gameNavigation) {
-		return;
-	}
+	const gamesOverviewLink =
+		getGamesOverviewLink();
 
 
 	/*
-	 * -------------------------------------------------------
-	 * Allgemeine Spieleübersicht
-	 * -------------------------------------------------------
+	 * Der obere Link "Spiele" ist aktiv,
+	 * wenn kein bestimmtes Spiel geöffnet ist.
 	 */
-
-	const gamesOverviewLink =
-		gameNavigation.querySelector(
-			'[data-navigation-target="games"]'
-		);
-
-
 	setLinkActiveState(
 		gamesOverviewLink,
 		currentGameId === null
 	);
 
 
-	/*
-	 * -------------------------------------------------------
-	 * Einzelne Spiele
-	 * -------------------------------------------------------
-	 */
+	if (!gameNavigation) {
+		return;
+	}
+
 
 	const gameLinks =
 		gameNavigation.querySelectorAll(
@@ -376,7 +314,7 @@ export function updateActiveGameNavigation(
 
 
 /* ---------------------------------------------------------
-   6. Aktivzustand eines Links
+   6. Aktivzustand setzen
    --------------------------------------------------------- */
 
 /**
@@ -420,13 +358,47 @@ function setLinkActiveState(
 
 
 /* ---------------------------------------------------------
-   7. Aktuelles Spiel aus Hash auslesen
+   7. Übersichts-Link lokalisieren
+   --------------------------------------------------------- */
+
+/**
+ * Aktualisiert den Text des vorhandenen
+ * Spieleübersichts-Links.
+ */
+function updateGamesOverviewLinkText() {
+
+	const gamesOverviewLink =
+		getGamesOverviewLink();
+
+
+	if (!gamesOverviewLink) {
+
+		console.warn(
+			"Element #games-overview-link wurde nicht gefunden."
+		);
+
+		return;
+	}
+
+
+	gamesOverviewLink.textContent =
+		getUiText(
+			"gamesOverview"
+		);
+}
+
+
+/* ---------------------------------------------------------
+   8. Aktuelles Spiel aus Hash auslesen
    --------------------------------------------------------- */
 
 /**
  * Liest die aktuelle Spiel-ID aus dem Hash.
  *
  * Beispiele:
+ *
+ * kein Hash
+ * → null
  *
  * #games
  * → null
