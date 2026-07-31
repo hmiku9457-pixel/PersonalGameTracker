@@ -17,6 +17,11 @@ import {
 
 
 import {
+	renderGamesOverview
+} from "./views/gamesView.js";
+
+
+import {
 	renderGame
 } from "./views/gameView.js";
 
@@ -43,10 +48,6 @@ import {
 
 const UI_TEXT = {
 	de: {
-		welcome: "Willkommen",
-		welcomeText:
-			"Wähle links ein Spiel aus.",
-
 		noGame:
 			"Es wurde kein Spiel angegeben.",
 
@@ -67,10 +68,6 @@ const UI_TEXT = {
 	},
 
 	en: {
-		welcome: "Welcome",
-		welcomeText:
-			"Select a game on the left.",
-
 		noGame:
 			"No game was specified.",
 
@@ -147,65 +144,31 @@ function getUiText(
 
 
 /* ---------------------------------------------------------
-   2. DOM
-   --------------------------------------------------------- */
-
-const mainContent =
-	document.getElementById(
-		"main-content"
-	);
-
-
-/* ---------------------------------------------------------
-   3. Startseite
+   2. Spieleübersicht
    --------------------------------------------------------- */
 
 /**
- * Rendert die Startseite in der aktuell
- * ausgewählten Sprache.
+ * Rendert die allgemeine Spieleübersicht.
+ *
+ * Diese Ansicht wird angezeigt:
+ *
+ * - wenn kein Hash vorhanden ist
+ * - bei #games
+ * - bei einer unbekannten Route
  */
-function renderHomePage() {
-	mainContent.replaceChildren();
-
-
-	const title =
-		document.createElement(
-			"h2"
-		);
-
-
-	title.textContent =
-		getUiText(
-			"welcome"
-		);
-
-
-	const description =
-		document.createElement(
-			"p"
-		);
-
-
-	description.textContent =
-		getUiText(
-			"welcomeText"
-		);
-
-
-	mainContent.append(
-		title,
-		description
-	);
-
+async function renderHomePage() {
 
 	updateActiveGameNavigation(
 		null
 	);
+
+
+	await renderGamesOverview();
 }
 
 
 /* ---------------------------------------------------------
-   4. Route laden
+   3. Route laden
    --------------------------------------------------------- */
 
 /**
@@ -220,13 +183,29 @@ export async function loadPageFromHash() {
 
 	/*
 	 * Kein Hash:
-	 * normale Startseite anzeigen.
+	 * Spieleübersicht anzeigen.
 	 */
 	if (
 		routeParts.length === 0
 	) {
 
-		renderHomePage();
+		await renderHomePage();
+
+		return;
+	}
+
+
+	/*
+	 * Explizite Spieleübersicht:
+	 *
+	 * #games
+	 */
+	if (
+		routeParts.length === 1 &&
+		routeParts[0] === "games"
+	) {
+
+		await renderHomePage();
 
 		return;
 	}
@@ -234,14 +213,14 @@ export async function loadPageFromHash() {
 
 	/*
 	 * Unbekannte Route:
-	 * ebenfalls Startseite anzeigen.
+	 * ebenfalls Spieleübersicht anzeigen.
 	 */
 	if (
 		routeParts[0] !==
 		"game"
 	) {
 
-		renderHomePage();
+		await renderHomePage();
 
 		return;
 	}
@@ -285,6 +264,10 @@ export async function loadPageFromHash() {
 
 		/*
 		 * Nur das Spiel wurde aufgerufen.
+		 *
+		 * Beispiel:
+		 *
+		 * #game/theDivision2
 		 */
 		if (
 			categoryRoute.length ===
@@ -301,7 +284,14 @@ export async function loadPageFromHash() {
 
 
 		/*
-		 * Unterkategorien / Manifeste auflösen.
+		 * Unterkategorien und Manifeste
+		 * der Route auflösen.
+		 *
+		 * Beispiele:
+		 *
+		 * collectibles
+		 * collectibles/echos
+		 * collectibles/comms
 		 */
 		const resolvedRoute =
 			await resolveGameRoute(
@@ -311,7 +301,8 @@ export async function loadPageFromHash() {
 
 
 		/*
-		 * Ziel ist wieder ein Manifest.
+		 * Das Ziel der Route ist wieder
+		 * ein Manifest.
 		 */
 		if (
 			resolvedRoute.type ===
@@ -347,7 +338,8 @@ export async function loadPageFromHash() {
 
 
 		/*
-		 * Ziel ist eine normale Item-Kategorie.
+		 * Das Ziel der Route ist eine
+		 * normale Item-Kategorie.
 		 */
 		const parentRoute =
 			categoryRoute.slice(
@@ -411,7 +403,7 @@ export async function loadPageFromHash() {
 
 
 /* ---------------------------------------------------------
-   5. Route auflösen
+   4. Route auflösen
    --------------------------------------------------------- */
 
 /**
@@ -425,6 +417,7 @@ export async function loadPageFromHash() {
  *
  * @param {Object} game
  * @param {Array<string>} routeIds
+ * @returns {Promise<Object>}
  */
 async function resolveGameRoute(
 	game,
@@ -561,7 +554,7 @@ async function resolveGameRoute(
 
 
 		/*
-		 * Normale Kategorie darf nur
+		 * Eine normale Kategorie darf nur
 		 * das letzte Element der Route sein.
 		 */
 		if (
@@ -607,7 +600,7 @@ async function resolveGameRoute(
 
 
 /* ---------------------------------------------------------
-   6. Router-Fehler
+   5. Router-Fehler
    --------------------------------------------------------- */
 
 /**
@@ -641,7 +634,7 @@ function createRouterError(
 
 
 /* ---------------------------------------------------------
-   7. Hash auslesen
+   6. Hash auslesen
    --------------------------------------------------------- */
 
 /**
@@ -687,7 +680,7 @@ function getRouteParts() {
 
 
 /* ---------------------------------------------------------
-   8. Hash erzeugen
+   7. Hash erzeugen
    --------------------------------------------------------- */
 
 /**
