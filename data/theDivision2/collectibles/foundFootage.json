@@ -1,8 +1,8 @@
 {
   "id": "foundFootage",
   "name": "Found Footage",
-  "description": "Found Footage aus The Division 2.",
-  "lastUpdated": "2026-07-25",
+  "description": "Videosequenzen aus The Division 2. Die Aufnahmen aus Washington, D.C. und Battle for Brooklyn werden durch den Abschluss bestimmter Storymissionen freigeschaltet. Die beiden Vanguard-Aufnahmen erhältst du als Collectible-Drops in der wiederholbaren Legacy-Manhunt-Mission.",
+  "lastUpdated": "2026-08-01",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 13,
@@ -16,7 +16,7 @@
         {
           "id": "division2.collectible.found-footage.washington-dc.001-hyenas",
           "name": "Hyenas",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „Grand Washington Hotel“ ab. Das Found Footage wird anschließend automatisch in deiner Collectibles-Sammlung freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -31,15 +31,23 @@
               "value": "1 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Grand Washington Hotel"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Eine Gruppe Hyenas greift Zivilisten an und ermordet sie."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.002-hyenas-council",
           "name": "Hyenas Council",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „American History Museum“ ab. Das Found Footage wird anschließend automatisch in deiner Collectibles-Sammlung freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -54,15 +62,23 @@
               "value": "2 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "American History Museum"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Eine versteckte Kamera zeigt einen brutalen Prozess des Hyena Council gegen einen zivilen Anführer."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.003-true-sons",
           "name": "True Sons",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „Air & Space Museum“ ab. Das Found Footage wird anschließend automatisch in deiner Collectibles-Sammlung freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -77,15 +93,23 @@
               "value": "3 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Air & Space Museum"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "True Sons zwingen Zivilisten in einem Arbeitslager zur Unterordnung."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.004-true-sons-leader",
           "name": "True Sons Leader",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „ViewPoint Museum“ ab. Das Found Footage über Antwon Ridgeway wird anschließend automatisch freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -100,15 +124,23 @@
               "value": "4 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "ViewPoint Museum"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Dashcam-Aufnahmen zeigen True-Sons-Anführer Antwon Ridgeway im Gespräch mit einer Ärztin vor der Quarantänezone von Roosevelt Island."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.005-outcast",
           "name": "Outcast",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „Potomac Event Center“ ab. Das Found Footage wird anschließend automatisch in deiner Collectibles-Sammlung freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -123,15 +155,23 @@
               "value": "5 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Potomac Event Center"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Die Aufnahme zeigt einen Angriff der Outcasts, bei dem ein Selbstmordattentäter eingesetzt wird."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.006-outcast-leader",
           "name": "Outcast Leader",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „DCD Headquarters“ ab. Das Found Footage über Emeline Shaw wird anschließend automatisch freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -146,15 +186,23 @@
               "value": "6 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "DCD Headquarters"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Outcast-Anführerin Emeline Shaw verhört einen Zivilisten über die Ereignisse auf Roosevelt Island."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.007-satellite-surveillance",
           "name": "Satellite Surveillance",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „Space Administration HQ“ ab. Das Found Footage wird anschließend automatisch in deiner Collectibles-Sammlung freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -169,15 +217,23 @@
               "value": "7 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Space Administration HQ"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Satellitenaufnahmen dokumentieren einen Angriff der Black Tusk auf eine zivile Siedlung."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.washington-dc.008-helmet-cam-footage",
           "name": "Helmet Cam Footage",
-          "description": "Found Footage aus der Sammlung „Washington, D.C.“.",
+          "description": "Schließe die reguläre Storymission „Jefferson Trade Center“ ab. Das Found Footage wird anschließend automatisch in deiner Collectibles-Sammlung freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -192,8 +248,16 @@
               "value": "8 / 8"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Jefferson Trade Center"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe die Mission in ihrer regulären, nicht invadierten Storyversion ab. Das Video wird automatisch freigeschaltet; in der Spielwelt muss kein separates Objekt eingesammelt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Die Helmkamera eines JTF-Soldaten zeigt, wie JTF-Kräfte und ein Division-Agent von einer Black-Tusk-Einheit überfallen werden."
             }
           ]
         }
@@ -206,7 +270,7 @@
         {
           "id": "division2.collectible.found-footage.manhunt-vanguard.001-haven",
           "name": "Haven",
-          "description": "Found Footage aus der Sammlung „Manhunt: Vanguard“.",
+          "description": "Spiele die Legacy Manhunt „Vanguard“ beziehungsweise „Manhunt: Alani Kelso“ bei der Mission „Stranded Tanker“ mehrfach und sammle die Collectible-Drops der benannten Gegner ein.",
           "details": [
             {
               "label": "Typ",
@@ -221,15 +285,27 @@
               "value": "1 / 2"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Vanguard – Stranded Tanker (Manhunt: Alani Kelso)"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zur Mission „Stranded Tanker“ in New York und stelle den Missionsmodus auf die Alani-Kelso-Manhunt um. Besiege die benannten Gegner, sammle ihre Collectible-Drops ein und schließe die Mission ab. Wiederhole die Manhunt, bis das Video vergeben wurde."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Haven und ECHO sind nicht zuverlässig an einen bestimmten Boss gebunden. Fehlende Vanguard-Collectibles werden nach und nach aus dem gemeinsamen Belohnungspool vergeben, weshalb mehrere vollständige Durchläufe nötig sein können. Der Hunter muss dafür nicht besiegt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Sicherheitsaufnahmen zeigen Alani Kelso bei ihrer Rückkehr nach Haven."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.manhunt-vanguard.002-echo",
           "name": "ECHO",
-          "description": "Found Footage aus der Sammlung „Manhunt: Vanguard“.",
+          "description": "Spiele die Legacy Manhunt „Vanguard“ beziehungsweise „Manhunt: Alani Kelso“ bei der Mission „Stranded Tanker“ mehrfach und sammle die Collectible-Drops der benannten Gegner ein.",
           "details": [
             {
               "label": "Typ",
@@ -244,8 +320,20 @@
               "value": "2 / 2"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Vanguard – Stranded Tanker (Manhunt: Alani Kelso)"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zur Mission „Stranded Tanker“ in New York und stelle den Missionsmodus auf die Alani-Kelso-Manhunt um. Besiege die benannten Gegner, sammle ihre Collectible-Drops ein und schließe die Mission ab. Wiederhole die Manhunt, bis das Video vergeben wurde."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Haven und ECHO sind nicht zuverlässig an einen bestimmten Boss gebunden. Fehlende Vanguard-Collectibles werden nach und nach aus dem gemeinsamen Belohnungspool vergeben, weshalb mehrere vollständige Durchläufe nötig sein können. Der Hunter muss dafür nicht besiegt werden."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Kelso untersucht einen Unterschlupf und aktiviert dort ein ECHO mit einer Nachricht von Aaron Keener."
             }
           ]
         }
@@ -258,7 +346,7 @@
         {
           "id": "division2.collectible.found-footage.battle-for-brooklyn.001-deepfake",
           "name": "Deepfake",
-          "description": "Found Footage aus der Sammlung „Battle for Brooklyn“.",
+          "description": "Schließe die Battle-for-Brooklyn-Mission „DUMBO Skate Park“ ab und untersuche am Ende die gefundene Videodatei. Das Found Footage wird dabei automatisch freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -273,15 +361,27 @@
               "value": "1 / 3"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "DUMBO Skate Park"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Storymission vollständig. Folge nach dem Kampf gegen Hollings dem Missionsziel „Locate video file“ und interagiere mit der Videodatei beziehungsweise der Konsole im Filmstudio."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Battle for Brooklyn muss verfügbar sein und die Mission DUMBO Skate Park muss im Storyverlauf freigeschaltet worden sein."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Matthew Grant und seine Cleaner drehen mithilfe von Simulationstechnik ein manipuliertes Video, das Aaron Keener beim Mord an einem Zivilisten zeigen soll."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.battle-for-brooklyn.002-friends",
           "name": "Friends",
-          "description": "Found Footage aus der Sammlung „Battle for Brooklyn“.",
+          "description": "Schließe die Battle-for-Brooklyn-Mission „Bridge Park Pier“ ab. Das Found Footage wird als Storybelohnung der Mission automatisch freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -296,15 +396,27 @@
               "value": "2 / 3"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Bridge Park Pier"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Storymission vollständig und besiege den Endgegner Bombshell. Das Found Footage wird nach Abschluss der Mission automatisch deiner Sammlung hinzugefügt."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Battle for Brooklyn muss verfügbar sein und die Mission Bridge Park Pier muss im Storyverlauf freigeschaltet worden sein."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Theo Parnell und Sarah Moretti nehmen die Stromversorgung an Pier 3 in Betrieb und sprechen über Theos geplanten Heiratsantrag."
             }
           ]
         },
         {
           "id": "division2.collectible.found-footage.battle-for-brooklyn.003-tech",
           "name": "Tech",
-          "description": "Found Footage aus der Sammlung „Battle for Brooklyn“.",
+          "description": "Schließe die Battle-for-Brooklyn-Mission „Army Terminal“ ab. Das Found Footage wird im Rahmen des Missionsabschlusses automatisch freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -319,8 +431,20 @@
               "value": "3 / 3"
             },
             {
-              "label": "Fundort",
-              "value": "Über die jeweils zugehörigen Story-, Open-World-, Manhunt- oder Battle-for-Brooklyn-Inhalte."
+              "label": "Freischaltung",
+              "value": "Army Terminal"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Storymission „Army Terminal“ vollständig bis zum Missionsabschluss. Das Found Footage wird anschließend automatisch deiner Sammlung hinzugefügt."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Battle for Brooklyn muss verfügbar sein und die Mission Army Terminal muss im Storyverlauf freigeschaltet worden sein."
+            },
+            {
+              "label": "Inhalt",
+              "value": "Sarah Moretti und Richard Danvers übergeben einem Cleaner eine Kiste mit Rogue-SHD-Technologie für den Einsatz bei Meret Estate."
             }
           ]
         }
