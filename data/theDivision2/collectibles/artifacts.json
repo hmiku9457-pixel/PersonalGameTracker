@@ -1,8 +1,8 @@
 {
   "id": "artifacts",
   "name": "Artifacts",
-  "description": "Artifacts aus The Division 2.",
-  "lastUpdated": "2026-07-26",
+  "description": "Fundorte, Freischaltbedingungen und konkrete Wege zu allen Artifacts aus The Division 2.",
+  "lastUpdated": "2026-08-01",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 53,
@@ -16,7 +16,7 @@
         {
           "id": "division2.collectible.artifacts.artwork.001-portrait-of-ginevra-de-benci",
           "name": "Portrait of Ginevra de' Benci",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Erobere den Kontrollpunkt „Ellipse Fuel Depot“ südöstlich des Weißen Hauses und sammle das Gemälde anschließend im geöffneten Vorratsraum ein.",
           "details": [
             {
               "label": "Typ",
@@ -31,15 +31,27 @@
               "value": "1 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "White House"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kontrollpunkt „Ellipse Fuel Depot“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Übernimm den Kontrollpunkt vollständig. Betritt danach den nun zugänglichen Vorratsraum, gehe die Treppe hinunter und folge dem kurzen Gang. Das Gemälde befindet sich im Lagerbereich in der Nähe der gelben Beutekiste."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Der Vorratsraum ist nur zugänglich, wenn der Kontrollpunkt von verbündeten Kräften gehalten wird."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.002-rembrandt-van-rijn-self-portrait",
           "name": "Rembrandt van Rijn - Self Portrait",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Suche im East Mall nordwestlich des Kontrollpunkts „Metro Ruins“ nach einer einzelnen kleinen Hütte; das Gemälde lehnt außen an ihrer Nordwand.",
           "details": [
             {
               "label": "Typ",
@@ -54,15 +66,23 @@
               "value": "2 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "East Mall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kontrollpunkt „Metro Ruins“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Verlasse den unterirdischen Kontrollpunkt an die Oberfläche und gehe nach Nordwesten in die Parkanlage. Suche dort nach einer freistehenden kleinen Hütte beziehungsweise einem Schuppen. Das Gemälde lehnt außen an der nördlichen Gebäudewand."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.003-woman-holding-a-balance",
           "name": "Woman Holding a Balance",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Erobere den Kontrollpunkt „The World’s End“ in Downtown West; das Gemälde hängt in einem der Gebäude des Kontrollpunkts.",
           "details": [
             {
               "label": "Typ",
@@ -77,15 +97,27 @@
               "value": "3 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kontrollpunkt „The World’s End“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Übernimm den Kontrollpunkt. Wenn du im Vorratsraum startest, verlasse ihn in östlicher Richtung und gehe in das gegenüberliegende Gebäude des Kontrollpunkts. Das Gemälde hängt dort an der Wand neben einem umgestürzten Tisch."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Die Innenräume sind am einfachsten zugänglich, während der Kontrollpunkt verbündet ist."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.004-watson-and-the-shark",
           "name": "Watson and the Shark",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Betritt das verschlossene Bürogebäude östlich von „The Nest“ durch ein Fenster mit gelber Plane und öffne über den Schalter beziehungsweise Feueralarm den Weg ins Obergeschoss.",
           "details": [
             {
               "label": "Typ",
@@ -100,15 +132,23 @@
               "value": "4 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Östlich bis südöstlich des Kontrollpunkts „The Nest“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche an der Südseite des Gebäudes ein eingeschlagenes Fenster mit gelber Plane und klettere hinein. Öffne den Zugang zum großen Büroraum, gehe bis zu den Doppeltüren und betätige den Schalter beziehungsweise das Bedienfeld. Dadurch öffnen sich die Türen zum Treppenhaus. Gehe nach oben und folge dem Flur bis zum Gemälde."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.005-the-emperor-napoleon-in-his-study-at-the-tuileries",
           "name": "The Emperor Napoleon in His Study at the Tuileries",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Steige im West Potomac Park westlich von „The Mast“ durch den südlichsten der nahe beieinanderliegenden Untergrundeingänge hinab und suche das Gemälde unter einer Metalltreppe.",
           "details": [
             {
               "label": "Typ",
@@ -123,15 +163,23 @@
               "value": "5 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Westlich des Kontrollpunkts „The Mast“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche die Gruppe aus drei Untergrundeingängen und benutze den südlichsten Zugang. Folge dem Tunnel nach Nord-Nordost bis zum ersten Treppenbereich. Das Gemälde befindet sich im darunterliegenden Raum unter beziehungsweise hinter der zweiten Metalltreppe."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.006-vincent-van-gogh-self-portrait",
           "name": "Vincent van Gogh - Self-Portrait",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Öffne in Foggy Bottom das große Garagentor des Gebäudes direkt östlich des Kontrollpunkts „The Attic“; das Gemälde liegt im Parkhaus.",
           "details": [
             {
               "label": "Typ",
@@ -146,15 +194,27 @@
               "value": "6 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäude direkt östlich des Kontrollpunkts „The Attic“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe zur Westseite des Gebäudes und suche das große, zur Straße gerichtete Garagentor. Tritt direkt an das Tor heran und benutze die Interaktion zum Öffnen. Suche anschließend den zugänglichen Garagenbereich nach dem Gemälde ab."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Das Tor wirkt zunächst wie reine Dekoration, besitzt aus nächster Nähe aber eine Interaktionsaufforderung."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.007-the-boston-massacre",
           "name": "The Boston Massacre",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Betritt im nördlichen Teil von Southwest das Gebäude südlich des Hauptmissionsbereichs und gehe vom Erdgeschoss eine Etage hinunter.",
           "details": [
             {
               "label": "Typ",
@@ -169,15 +229,23 @@
               "value": "7 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Southwest"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäude im nördlichen bis nordöstlichen Teil des Bezirks"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nutze den frei zugänglichen Eingang im Erdgeschoss. Gehe im Inneren die Treppe hinunter und suche den unteren Raum beziehungsweise Flur; dort befindet sich das gerahmte Werk."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.008-st-george-and-the-dragon",
           "name": "St George and the Dragon",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Nutze in Downtown East den Metroeingang an der Kreuzung F St NW und 12th St NW und folge der unterirdischen Passage bis zu einer großen Spielzeugsoldaten- beziehungsweise Nussknackerfigur.",
           "details": [
             {
               "label": "Typ",
@@ -192,15 +260,23 @@
               "value": "8 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Metrozugang an F St NW / 12th St NW, östlich des Kontrollpunkts „Demolition Site“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe die Rolltreppen hinunter und folge der Passage in das angeschlossene Einkaufszentrum. Suche dort nach der großen Spielzeugsoldaten- oder Nussknackerfigur. Das Gemälde lehnt direkt an ihrem Sockel."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.009-judith-leyster-self-portrait",
           "name": "Judith Leyster - Self-Portrait",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Verlasse das Safe House „The 1040“ über den nordöstlichen Ausgang, klettere im Innenhof die lange Leiter hinauf und steige durch ein offenes Fenster.",
           "details": [
             {
               "label": "Typ",
@@ -215,15 +291,23 @@
               "value": "9 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Federal Triangle"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Safe House „The 1040“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nimm den nordöstlichen Ausgang, gehe die Treppe hinauf und betrete den kleinen Innenhof. Klettere die lange Leiter auf das Dach. Wende dich oben nach links, steige durch eines der offenen Fenster und folge dem kurzen Flur zum Gemälde."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.010-hercules-and-the-nemean-lion",
           "name": "Hercules and the Nemean Lion",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Betritt in Downtown East das Gebäude südwestlich des Kontrollpunkts „Red Dragon“ durch den Eingang auf der Ostseite.",
           "details": [
             {
               "label": "Typ",
@@ -238,15 +322,23 @@
               "value": "10 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäude südwestlich des Kontrollpunkts „Red Dragon“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe um den Gebäudeblock zur Ostseite und nutze dort den zugänglichen Eingang. Das Kunstwerk befindet sich im Innenraum neben einer US-Flagge und einer gläsernen Ausstellungsvitrine."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.011-bazille-and-camille",
           "name": "Bazille and Camille",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Nutze in Judiciary Square die Feuerleitern und Dächer eines Gebäudekomplexes östlich der District Union Arena, um ein eingeschlagenes Apartmentfenster zu erreichen.",
           "details": [
             {
               "label": "Typ",
@@ -261,15 +353,23 @@
               "value": "11 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Judiciary Square"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäudekomplex östlich der District Union Arena"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Betritt den verwinkelten Hinterhof beziehungsweise die Gasse und klettere über die Feuerleiter nach oben. Folge den weiteren Treppen und dem Dachweg, steige auf der anderen Seite eine Leiter hinunter und suche das eingeschlagene Fenster. Klettere in das Apartment; das Gemälde befindet sich im Raum."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.012-the-fall-of-phaeton",
           "name": "The Fall of Phaeton",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Sammle das Gemälde in der geheimen Nebenmission „Missing Curators“ ein: Vom Raum mit „Old Glory Flag“ aus geht es durch die rechte Tür und eine Treppe hinunter.",
           "details": [
             {
               "label": "Typ",
@@ -284,15 +384,27 @@
               "value": "12 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "East Mall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Nebenmission „Missing Curators“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Rette zunächst die Kuratoren und erreiche den großen Statuenraum. Gehe von der „Old Glory Flag“ durch die direkt rechts danebenliegende Tür, die Treppe hinunter und in den Raum auf der linken Seite. Das Gemälde liegt in der hinteren linken Ecke neben gestapelten Holzkisten."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Nimm das Artefakt möglichst während der Mission mit. Ist der Bereich später verschlossen, kannst du die Mission im Sitzungskontext eines anderen Spielers erneut betreten; gelegentlich öffnet auch eine dort aktive Kopfgeldjagd den Bereich."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.artwork.013-the-great-red-dragon-and-the-woman-clothed-with-the-sun",
           "name": "The Great Red Dragon and the Woman Clothed with the Sun",
-          "description": "Artifacts aus der Sammlung „Artwork“.",
+          "description": "Gehe hinter den Kontrollpunkt „Overgrowth“ in West End in den Innenhof; das Gemälde hängt dort in einer provisorischen Nische an der Wand.",
           "details": [
             {
               "label": "Typ",
@@ -307,8 +419,16 @@
               "value": "13 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West End"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kontrollpunkt „Overgrowth“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe an der 1st Street westwärts und biege in die erste erreichbare Gasse ein, um hinter den Kontrollpunkt zu gelangen. Folge dem Innenhofweg bis zu einer provisorischen, von Rohren umgebenen Nische. Das Gemälde hängt an der Wand unter einem großen Kreuz."
             }
           ]
         }
@@ -321,7 +441,7 @@
         {
           "id": "division2.collectible.artifacts.founding-fathers.001-benjamin-franklin",
           "name": "Benjamin Franklin",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Durchquere die kontaminierte USDA-Zone südlich des Kontrollpunkts „Metro Ruins“ und klettere über den Aufzugsschacht in das obere Büro.",
           "details": [
             {
               "label": "Typ",
@@ -336,15 +456,27 @@
               "value": "1 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "East Mall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kontaminierte Zone im USDA-Gebäude südlich von „Metro Ruins“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Betritt das Gebäude durch den Biohazard-Zugang. Klettere links durch das zerbrochene Fenster, folge dem Flur und überwinde die Hindernisse bis zum offenen Aufzugsschacht. Klettere am Seil nach oben, verlasse den Schacht und gehe in das Büro; das Porträt hängt an der Wand."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Der Bereich ist mit der Nebenmission „Recover DC-62 Research“ verbunden, kann aber auch als kontaminierte Zone erkundet werden."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.founding-fathers.002-george-washington",
           "name": "George Washington",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Klettere über die rückwärtige Gasse in die oberen Wohnräume der Saints People’s Church am Nordrand des White-House-Bezirks.",
           "details": [
             {
               "label": "Typ",
@@ -359,15 +491,23 @@
               "value": "2 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "White House"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Saints People’s Church bei H St NW / 16th St NW"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe in die Gasse auf der Nord- beziehungsweise linken Seite der Kirche. Überwinde den Zaun und klettere über Paletten oder Gerüstteile zum offenen Zugang im Obergeschoss. Das große Porträt befindet sich direkt in den Wohnräumen."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.founding-fathers.003-james-madison",
           "name": "James Madison",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Betritt in West End die Tiefgaragenrampe westlich des Kontrollpunkts „The World’s End“; das Porträt hängt gleich im abwärtsführenden Bereich.",
           "details": [
             {
               "label": "Typ",
@@ -382,15 +522,23 @@
               "value": "3 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West End"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Parkhaus westlich von „The World’s End“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche die Gasse an der 1st St NW und folge ihr zur Einfahrt des Parkhauses. Gehe die Rampe hinunter. Das Porträt hängt bereits im vorderen Garagenbereich an der Wand."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.founding-fathers.004-john-adams",
           "name": "John Adams",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Betritt in Downtown West das Business-Consulting-Gebäude östlich des Kontrollpunkts „Toxic Alley“; das Porträt hängt offen im Foyer.",
           "details": [
             {
               "label": "Typ",
@@ -405,15 +553,23 @@
               "value": "4 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Geschäftsgebäude östlich von „Toxic Alley“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe durch den zugänglichen Haupteingang in die Lobby. Das Porträt hängt gut sichtbar an der Wand zwischen zwei Pflanzkübeln."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.founding-fathers.005-john-jay",
           "name": "John Jay",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Verlasse das Safe House „Truman“ nach Westen, klettere über einen Hotdog-Stand und eine Markise in den abgeschlossenen Parkplatzbereich.",
           "details": [
             {
               "label": "Typ",
@@ -428,15 +584,23 @@
               "value": "5 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Safe House „Truman“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe westwärts, klettere über den Hotdog-Stand an der Mauer und folge der Straße nach links. Biege am Ende der Backsteinmauer rechts in den Parkplatz ein. Klettere über Müllcontainer und Markise, steige auf der anderen Seite die Leiter hinunter und folge dem Parkplatz. Das Porträt liegt bei einem blauen Schrank und abgestellten weißen Fahrzeugen."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.founding-fathers.006-thomas-jefferson",
           "name": "Thomas Jefferson",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Betritt das Büro „JHM: Jones Hale & Mitchell LLC“ südwestlich des Kontrollpunkts „Haunted House“ und gehe zu den Toiletten.",
           "details": [
             {
               "label": "Typ",
@@ -451,15 +615,23 @@
               "value": "6 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "JHM-Kanzlei südwestlich von „Haunted House“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe durch den Eingang in das Foyer und halte dich rechts in Richtung der Toiletten. Stelle dich vor die Tür der Herrentoilette und drehe dich um; das Porträt hängt an der gegenüberliegenden Wand."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.founding-fathers.007-alexander-hamilton",
           "name": "Alexander Hamilton",
-          "description": "Artifacts aus der Sammlung „Founding Fathers“.",
+          "description": "Suche im West Potomac Park die aus Containern und Behelfsbauten bestehende Unterkunft und betritt sie von Norden.",
           "details": [
             {
               "label": "Typ",
@@ -474,8 +646,16 @@
               "value": "7 / 7"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Provisorische Containerunterkunft im Park"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe zur Nordseite der Behelfsunterkunft und betrete den ebenerdigen Raum beziehungsweise Container. Das Porträt befindet sich dort zusammen mit weiteren Hamilton-Gegenständen."
             }
           ]
         }
@@ -488,7 +668,7 @@
         {
           "id": "division2.collectible.artifacts.relics.001-abraham-lincolns-top-hat",
           "name": "Abraham Lincoln's Top Hat",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Suche im West Potomac Park nordwestlich des Safe Houses nach einer kleinen Statue; Lincolns Zylinder sitzt oben auf der Figur.",
           "details": [
             {
               "label": "Typ",
@@ -503,15 +683,23 @@
               "value": "1 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Parkbereich nordwestlich des Safe Houses"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durchquere den von Bäumen gesäumten Park und halte nach einer kleineren Statue Ausschau. Der schwarze Zylinder befindet sich oben auf dem Kopf beziehungsweise Sockelbereich der Statue und kann direkt eingesammelt werden."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.002-lewis-and-clark-pocket-compass",
           "name": "Lewis and Clark Pocket Compass",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Betritt in Southwest das Gebäude unmittelbar nördlich des Kontrollpunkts „No Hope Hotel“ und suche hinter dem Empfangstresen.",
           "details": [
             {
               "label": "Typ",
@@ -526,15 +714,23 @@
               "value": "2 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Southwest"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäude nördlich von „No Hope Hotel“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe durch die offenen Doppeltüren hinein und wende dich sofort nach rechts. Klettere über den Tresen. Der Kompass liegt auf beziehungsweise neben einer kleinen Pritsche an der Wand."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.003-old-glory-flag",
           "name": "Old Glory Flag",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Sammle die Flagge im großen Statuenraum der geheimen Nebenmission „Missing Curators“ ein.",
           "details": [
             {
               "label": "Typ",
@@ -549,15 +745,27 @@
               "value": "3 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "East Mall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Nebenmission „Missing Curators“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Starte die Mission bei Olivia Vance und spiele bis zu dem Raum, in dem Deon Bailey gerettet wird. Suche im nördlichen Wandbereich des großen Raums mit der goldenen Statue und den US-Flaggen. „Old Glory“ lehnt dort in einer Nische an der Wand."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Nimm die Flagge möglichst während der Mission mit. Ist das Museum später verschlossen, tritt der laufenden Mission eines anderen Spielers bei oder nutze eine Kopfgeldjagd, die den Gebäudebereich öffnet."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.004-plymouth-rock-fragment",
           "name": "Plymouth Rock Fragment",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Sammle das Fragment während der Nebenmission „Judiciary Square Metro Station“ in einem Seitenraum der Metro ein.",
           "details": [
             {
               "label": "Typ",
@@ -572,15 +780,27 @@
               "value": "4 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Judiciary Square"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Nebenmission „Judiciary Square Metro Station“ vom Drone Operator im Weißen Haus"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Mission, bis du Marcela wieder treffen sollst. Betritt vorher den Raum auf der linken Seite. Das Fragment liegt dort auf einem Tisch neben einem Laptop und einem Metroplan."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Dieser Missionsbereich kann nach Abschluss verschlossen sein. Fehlt das Artefakt, ist der zuverlässigste Weg der Beitritt zu einem Spieler, der die Nebenmission noch offen hat. Alternativ kann eine passende Kopfgeldjagd Zugang ermöglichen."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.005-the-bill-of-rights",
           "name": "The Bill of Rights",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Erobere den Kontrollpunkt „Washington Monument“ und suche im unterirdischen Vorratsraum nach der Bill of Rights.",
           "details": [
             {
               "label": "Typ",
@@ -595,15 +815,27 @@
               "value": "5 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kontrollpunkt „Washington Monument“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Übernimm den Kontrollpunkt und betrete den geöffneten Vorratsbereich. Nutze den Zugang beziehungsweise den Aufzugsschacht nach unten. Das Dokument befindet sich im unterirdischen Lagerraum."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Der Vorratsraum ist nur zugänglich, während der Kontrollpunkt verbündet ist."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.006-the-constitution-of-the-united-states",
           "name": "The Constitution of the United States",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Betritt das Gebäude im Südosten von Downtown East über die Rückseite, klettere mit dem Seil aufs Dach und steige durch ein Fenster ein.",
           "details": [
             {
               "label": "Typ",
@@ -618,15 +850,23 @@
               "value": "6 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäude am südöstlichen Rand des Bezirks"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe zur Südseite und überquere den kleinen Wasserbereich. Nutze das Seil an der Rückseite, um auf das Dach zu gelangen, und klettere durch das offene Fenster. Gehe im Gebäude die Treppen hinunter. Die Verfassung liegt hinter dem Empfangstresen."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.007-crystal-skull",
           "name": "Crystal Skull",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Verlasse das Safe House „Final Epiphany“ über den westlichen Ausgang und suche an der Straße neben einem Hotdog-Stand und einer Leiche.",
           "details": [
             {
               "label": "Typ",
@@ -641,15 +881,23 @@
               "value": "7 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Safe House „Final Epiphany“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nimm den Westausgang, gehe durch die Öffnung im Zaun und folge der Gasse links am Safe House entlang. Durchquere Tor und kleinen Innenhof bis zur Straße. Wende dich dort nach rechts; der Schädel liegt neben einer blutigen Leiche bei einem Hotdog-Stand."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.008-teddy-roosevelts-teddy-bear",
           "name": "Teddy Roosevelt's Teddy Bear",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Sammle den Teddy während der Nebenmission „Historic District Attack“ in dem Gebäude ein, in dem sich die Zivilisten verstecken.",
           "details": [
             {
               "label": "Typ",
@@ -664,15 +912,27 @@
               "value": "8 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West End"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Nebenmission „Historic District Attack“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schalte die Mission durch vollständigen Ausbau des Campus frei und spiele bis zum Haus der eingeschlossenen Zivilisten. Betritt das Gebäude und öffne im Inneren den Garagenbereich; dort befindet sich der Teddy."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Nimm das Artefakt während der Mission mit. Fehlt es nach Missionsabschluss und der Zugang ist verschlossen, tritt der Mission eines anderen Spielers bei."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.009-lincolns-pocket-watch",
           "name": "Lincoln's Pocket Watch",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Steige südöstlich des Lincoln Memorials durch einen Gullydeckel in die Kanalisation und durchquere den unterirdischen Abschnitt.",
           "details": [
             {
               "label": "Typ",
@@ -687,15 +947,23 @@
               "value": "9 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Kanalzugang südöstlich des Lincoln Memorials"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nutze einen der zugänglichen Gullydeckel und folge dem Kanalweg durch die unterirdischen Räume. Die Taschenuhr liegt in einem zugänglichen Seitenbereich der Kanalisation."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.010-yamaki-pine",
           "name": "Yamaki Pine",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Klettere in Foggy Bottom über einen weißen Lastwagen an einen verschlossenen Zaun, schieße das Vorhängeschloss ab und nutze innen das Seil.",
           "details": [
             {
               "label": "Typ",
@@ -710,15 +978,23 @@
               "value": "10 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Weißer Lastwagen westlich beziehungsweise gegenüber dem Safe House"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Steige auf den Lastwagen, um den verriegelten Zugang zu erreichen. Schieße das Vorhängeschloss auf der anderen Seite des Tores ab, gehe hinein und klettere am Seil nach oben. Überquere den Bereich zum kleinen Garten; dort steht die Yamaki Pine."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.011-george-washingtons-battle-sword-and-scabbard",
           "name": "George Washington's Battle Sword and Scabbard",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Gehe im sicheren Bereich des Weißen Hauses zum östlichen Ausgang und suche links vor dem letzten Tor bei den frisch ausgehobenen Gräbern.",
           "details": [
             {
               "label": "Typ",
@@ -733,15 +1009,23 @@
               "value": "11 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "White House"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Östlicher beziehungsweise südöstlicher Ausgang der Base of Operations"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Folge dem Weg Richtung Downtown East. Bevor du den letzten umzäunten Ausgang verlässt, wende dich nach links zu den Bäumen. Folge dem schmalen Grasweg zu den Gräbern. Schwert und Scheide liegen neben einer Leiche beziehungsweise direkt am Grab."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.012-greffuhle-stradivarius",
           "name": "Greffuhle Stradivarius",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Betritt in Downtown West nahe einem SHD-Tech-Cache den Innenhof eines Gebäudeblocks und klettere durch ein Fenster in ein Apartment.",
           "details": [
             {
               "label": "Typ",
@@ -756,15 +1040,23 @@
               "value": "12 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Gebäudeblock im südlichen Teil von Downtown West nahe einem SHD-Tech-Cache"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche die Gasse, die in den Innenhof des Blocks führt. Nutze die dortigen Kletterpunkte, Gerüste oder Vorsprünge, um das zugängliche Apartmentfenster zu erreichen. Die Violine befindet sich im Apartment."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.relics.013-thomas-jeffersons-polygraph",
           "name": "Thomas Jefferson's Polygraph",
-          "description": "Artifacts aus der Sammlung „Relics“.",
+          "description": "Sammle das Gerät während der Nebenmission „Outcast Work Camp“ im Gefängnis von Constitution Hall ein.",
           "details": [
             {
               "label": "Typ",
@@ -779,8 +1071,20 @@
               "value": "13 / 13"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Region",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Startpunkt",
+              "value": "Nebenmission „Outcast Work Camp“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schalte die Mission nach „Outcast Propaganda Outpost“ über Arturo Peña im Campus frei. Betritt während der Mission das Gefängnis und folge nach dem Hof dem markierten Weg in das Gebäude. Der Polygraph liegt im durchquerten Korridor auf einem Möbelstück und befindet sich praktisch auf dem normalen Missionsweg."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Das Artefakt ist während der Mission kaum zu übersehen, sollte aber vor dem Verlassen des Gefängnisgebäudes eingesammelt werden."
             }
           ]
         }
@@ -793,7 +1097,7 @@
         {
           "id": "division2.collectible.artifacts.memorabilia.001-quarterback-figurine",
           "name": "Quarterback Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -808,15 +1112,27 @@
               "value": "1 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Früher Kampagnenfortschritt im Weißen Haus"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Figur wird automatisch mit dem Aufbau der D.C. Base of Operations registriert. Es gibt kein separates Objekt in der offenen Welt, das du suchen oder aufnehmen musst."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Manny Ortega und das Weiße Haus."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.002-knight-figurine",
           "name": "Knight Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -831,15 +1147,27 @@
               "value": "2 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Früher Kampagnenfortschritt mit Alani Kelso"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die ersten Storymissionen und die Einführung von Alani Kelso. Die Figur erscheint automatisch in Manny Ortegas Kartenraum; sie ist kein frei aufhebbares Collectible."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Agentin Alani Kelso."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.003-sheriff-figurine",
           "name": "Sheriff Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -854,15 +1182,27 @@
               "value": "3 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Früher Kampagnenfortschritt"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Figur wird automatisch für den Spielercharakter in Manny Ortegas Kartenraum geführt. Du musst keinen Fundort aufsuchen."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für den Division-Agenten beziehungsweise Spielercharakter."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.004-bald-eagle-figurine",
           "name": "Bald Eagle Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -877,15 +1217,27 @@
               "value": "4 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Freischaltung des Theater Settlement"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Besuche das Theater im Storyverlauf und arbeite mit Odessa Sawyer zusammen. Das Memorabilia wird automatisch registriert und liegt nicht als einsammelbares Weltobjekt herum."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Odessa Sawyer und das Theater Settlement."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.005-scarecrow-figurine",
           "name": "Scarecrow Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -900,15 +1252,27 @@
               "value": "5 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Freischaltung des Campus Settlement"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Erreiche den Campus und lerne Henry Hayes im Storyverlauf kennen. Die Figur wird automatisch in Manny Ortegas Kartenraum ergänzt."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Henry Hayes und das Campus Settlement."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.006-cerberus-figurine",
           "name": "Cerberus Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -923,15 +1287,27 @@
               "value": "6 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Hyenas-Handlungsstrang"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele den Hyenas-Handlungsstrang einschließlich der Hauptmissionen und des Strongholds „District Union Arena“ vollständig. Prüfe danach Manny Ortegas Kartenraum; für dieses Memorabilia gibt es keinen separaten Fundort."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für die Hyenas."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.007-nutcracker-figurine",
           "name": "Nutcracker Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -946,15 +1322,27 @@
               "value": "7 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "True-Sons-Handlungsstrang"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele den True-Sons-Handlungsstrang bis einschließlich des Strongholds „Capitol Building“ vollständig. Prüfe danach Manny Ortegas Kartenraum; die Figur ist kein eigenständiges Welt-Pickup."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Antwon Ridgeway, den Anführer der True Sons."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.008-witch-figurine",
           "name": "Witch Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -969,15 +1357,27 @@
               "value": "8 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Outcasts-Handlungsstrang"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele den Outcasts-Handlungsstrang einschließlich der Hauptmissionen und des Strongholds „Roosevelt Island“ vollständig. Prüfe danach Manny Ortegas Kartenraum; das Memorabilia liegt nicht separat in der offenen Welt."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für die Outcasts und Emeline Shaw."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.009-t-rex-figurine",
           "name": "T-Rex Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -992,15 +1392,27 @@
               "value": "9 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Stronghold „Tidal Basin“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe den Stronghold „Tidal Basin“ ab und besiege Wyvern. Prüfe anschließend Manny Ortegas Kartenraum; die Figur ist mit diesem Black-Tusk-Handlungsabschnitt verknüpft und besitzt keinen festen Aufnahmepunkt in der offenen Welt."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Milla „Wyvern“ Radek."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.010-president-wallers-presidential-coin",
           "name": "President Waller's Presidential Coin",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1015,15 +1427,31 @@
               "value": "10 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Automatischer Kampagnenfortschritt"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Gedenkmünze gehört zu den in der D.C. Base of Operations registrierten Memorabilia. Spiele die Hauptkampagne weiter; sie wird nicht über einen normalen Weltfundort eingesammelt."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Ein exakter einzelner Freischalt-Trigger ist in öffentlich verfügbaren Fundort-Guides nicht eindeutig dokumentiert. Entscheidend ist: Dieses Memorabilia ist kein frei aufhebbares Weltobjekt; setze die D.C.-Hauptkampagne und den Ausbau der Base of Operations fort."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für eine Challenge Coin aus der Amtszeit von Präsident Waller."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.011-statue-of-liberty-figurine",
           "name": "Statue of Liberty Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1038,15 +1466,31 @@
               "value": "11 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Automatischer Kampagnenfortschritt"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Figur wird als Dekorations- und Erinnerungsstück in der Base of Operations registriert. Es gibt keinen verlässlichen offenen Weltfundort und keine manuelle Aufnahmehandlung."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Ein exakter einzelner Freischalt-Trigger ist in öffentlich verfügbaren Fundort-Guides nicht eindeutig dokumentiert. Entscheidend ist: Dieses Memorabilia ist kein frei aufhebbares Weltobjekt; setze die D.C.-Hauptkampagne und den Ausbau der Base of Operations fort."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für die Freiheitsstatue in New York."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.012-uncle-sam-bobble-head",
           "name": "Uncle Sam Bobble Head",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1061,15 +1505,31 @@
               "value": "12 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Automatischer Kampagnenfortschritt"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Der Bobble Head wird über den Fortschritt der D.C.-Kampagne in der Memorabilia-Sammlung registriert. Suche nicht nach einem eigenständigen Pickup in der Spielwelt."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Ein exakter einzelner Freischalt-Trigger ist in öffentlich verfügbaren Fundort-Guides nicht eindeutig dokumentiert. Entscheidend ist: Dieses Memorabilia ist kein frei aufhebbares Weltobjekt; setze die D.C.-Hauptkampagne und den Ausbau der Base of Operations fort."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Uncle Sam als Symbol der US-Bundesregierung."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.013-us-capitol-snow-globe",
           "name": "US Capitol Snow Globe",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1084,15 +1544,31 @@
               "value": "13 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Fortschritt im True-Sons- und Capitol-Handlungsstrang"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Hauptkampagne bis zum Capitol Building weiter. Die Schneekugel wird als Memorabilia registriert und muss nicht als sichtbares Weltobjekt aufgenommen werden."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Ein exakter einzelner Freischalt-Trigger ist in öffentlich verfügbaren Fundort-Guides nicht eindeutig dokumentiert. Entscheidend ist: Dieses Memorabilia ist kein frei aufhebbares Weltobjekt; setze die D.C.-Hauptkampagne und den Ausbau der Base of Operations fort."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für das Kapitol der Vereinigten Staaten."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.014-white-house-snow-globe",
           "name": "White House Snow Globe",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1107,15 +1583,31 @@
               "value": "14 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Aufbau der Base of Operations"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Setze die frühe Kampagne und den Ausbau des Weißen Hauses fort. Die Schneekugel wird automatisch registriert; es existiert kein separater Sammelpunkt."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Ein exakter einzelner Freischalt-Trigger ist in öffentlich verfügbaren Fundort-Guides nicht eindeutig dokumentiert. Entscheidend ist: Dieses Memorabilia ist kein frei aufhebbares Weltobjekt; setze die D.C.-Hauptkampagne und den Ausbau der Base of Operations fort."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für das Weiße Haus."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.015-german-shepard-figurine",
           "name": "German Shepard Figurine",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1130,15 +1622,27 @@
               "value": "15 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Hauptmission „Potomac Event Center“"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Schließe den Outcasts-Handlungsabschnitt um Harlan Lloyd im „Potomac Event Center“ ab und prüfe anschließend Manny Ortegas Kartenraum. Die Figur ist kein frei liegendes Collectible."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Harlan Lloyd, den Strategen der Outcasts."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.016-white-chess-piece-king",
           "name": "White Chess Piece King",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1153,15 +1657,27 @@
               "value": "16 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Handlungsstrang um Präsident Ellis"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Hauptmissionen rund um Präsident Ellis, insbesondere „Bank Headquarters“, und setze die Kampagne fort. Prüfe anschließend Manny Ortegas Kartenraum; die Figur wird nicht an einem separaten Weltfundort aufgenommen."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für Präsident Andrew Ellis."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.memorabilia.017-black-chess-piece-rook",
           "name": "Black Chess Piece Rook",
-          "description": "Artifacts aus der Sammlung „Memorabilia“.",
+          "description": "Dieses Memorabilia wird über den Kampagnenfortschritt freigeschaltet und muss nicht als normales Collectible in der offenen Welt gesucht werden.",
           "details": [
             {
               "label": "Typ",
@@ -1176,8 +1692,20 @@
               "value": "17 / 17"
             },
             {
-              "label": "Fundort",
-              "value": "Als historisches oder dekoratives Sammlerstück in der offenen Welt beziehungsweise im zugehörigen Inhalt."
+              "label": "Kampagnenbezug",
+              "value": "Entdeckung des Castle Settlement"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Folge der Hauptkampagne bis zum Castle Settlement. Der schwarze Turm wird automatisch als Kartenmarker-Memorabilia registriert und muss nicht in der offenen Welt gesucht werden."
+            },
+            {
+              "label": "Kein Welt-Pickup",
+              "value": "Das Objekt wird in der D.C. Base of Operations beziehungsweise in Manny Ortegas Kartenraum automatisch registriert."
+            },
+            {
+              "label": "Zuordnung",
+              "value": "Die Figur beziehungsweise das Erinnerungsstück steht für das Castle Settlement."
             }
           ]
         }
@@ -1190,7 +1718,7 @@
         {
           "id": "division2.collectible.artifacts.incursion-paradise-lost.001-novel",
           "name": "Novel",
-          "description": "Artefakt aus der Incursion „Paradise Lost“ im Meret Estate.",
+          "description": "Interagiere in der Incursion „Paradise Lost“ mit dem auffälligen Buch im Meret Estate.",
           "details": [
             {
               "label": "Typ",
@@ -1205,15 +1733,23 @@
               "value": "1 / 3"
             },
             {
-              "label": "Fundort",
-              "value": "In Paradise Lost mit dem Buch interagieren."
+              "label": "Aktivität",
+              "value": "Incursion „Paradise Lost“ – Meret Estate"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Incursion bis in den Innenbereich des Anwesens und untersuche die Bücherregale beziehungsweise Ablagen entlang des normalen Weges. Suche nach dem Buch mit Interaktionsaufforderung und halte die Taste zum Einsammeln gedrückt."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Das Artefakt ist ein fester Interaktionspunkt und kein Boss-Drop. Es kann in einem beliebigen erfolgreichen oder abgebrochenen Durchlauf aufgenommen werden, sobald der Bereich erreicht wurde."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.incursion-paradise-lost.002-drone-kid",
           "name": "Drone Kid",
-          "description": "Artefakt aus der Incursion „Paradise Lost“ im Meret Estate.",
+          "description": "Besiege im Lovebirds-Finale Martinez vor Johnson; das Artefakt wird durch diese festgelegte Tötungsreihenfolge freigeschaltet.",
           "details": [
             {
               "label": "Typ",
@@ -1228,15 +1764,23 @@
               "value": "2 / 3"
             },
             {
-              "label": "Fundort",
-              "value": "Beim Lovebirds-Encounter Martinez vor Johnson eliminieren."
+              "label": "Aktivität",
+              "value": "Incursion „Paradise Lost“ – Lovebirds"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reduziere beide Bosse kontrolliert, konzentriere den finalen Schaden aber zuerst auf Martinez. Töte anschließend Johnson und sammle den erscheinenden Collectible-Drop beziehungsweise die Belohnung ein."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Martinez muss zuerst sterben. Wird Johnson zuerst eliminiert, erhältst du die alternative Lovebirds-Belohnung, aber nicht „Drone Kid“. Bei ausbleibender Vergabe die Incursion mit derselben Reihenfolge erneut abschließen."
             }
           ]
         },
         {
           "id": "division2.collectible.artifacts.incursion-paradise-lost.003-lock-and-key",
           "name": "Lock and Key",
-          "description": "Artefakt aus der Incursion „Paradise Lost“ im Meret Estate.",
+          "description": "Interagiere direkt nach dem Tanker-Encounter mit dem Gemälde im Gebäude, bevor du zum nächsten Kampf weitergehst.",
           "details": [
             {
               "label": "Typ",
@@ -1251,8 +1795,16 @@
               "value": "3 / 3"
             },
             {
-              "label": "Fundort",
-              "value": "Nach dem Tanker-Encounter mit dem entsprechenden Gemälde interagieren."
+              "label": "Aktivität",
+              "value": "Incursion „Paradise Lost“ – nach dem Tanker-Encounter"
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Besiege den Tanker-Boss und gehe anschließend die Treppe hinauf durch den Haupteingang des Gebäudes. Untersuche den Flur unmittelbar nach dem Eingang und interagiere mit dem auffälligen Gemälde an der Wand. Folge gegebenenfalls der dadurch aktivierten Interaktion im selben Korridor, um das Artefakt abzuschließen."
+            },
+            {
+              "label": "Wichtiger Hinweis",
+              "value": "Gehe nicht achtlos zum nächsten Encounter weiter. Die Interaktion muss in diesem Abschnitt des aktuellen Incursion-Durchlaufs ausgeführt werden."
             }
           ]
         }
