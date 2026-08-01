@@ -1,8 +1,8 @@
 {
   "id": "echos",
   "name": "ECHOs",
-  "description": "ECHOs aus The Division 2.",
-  "lastUpdated": "2026-07-26",
+  "description": "Fundorte, Zugangswege und Freischaltbedingungen aller ECHOs aus The Division 2.",
+  "lastUpdated": "2026-08-01",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 50,
@@ -16,7 +16,7 @@
         {
           "id": "division2.collectible.echos.factions.001-agent-down",
           "name": "Agent Down",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Aktiviere dieses ECHO in einer Gasse im Nordwesten von Downtown East.",
           "details": [
             {
               "label": "Typ",
@@ -32,14 +32,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Downtown East"
+              "value": "Downtown East – nordwestliche Ecke des Gebiets."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Begib dich in den Nordwesten von Downtown East und suche die schmale Gasse zwischen den Gebäuden. Das ECHO liegt auf Straßenniveau und benötigt keinen besonderen Zugang."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.002-job-offer",
           "name": "Job Offer",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Dieses ECHO befindet sich auf einem Baustellengelände im Norden von Downtown East.",
           "details": [
             {
               "label": "Typ",
@@ -55,14 +59,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Downtown East"
+              "value": "Downtown East – bei einem Wasser-Ressourcenknoten im nördlichen Gebiet."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nutze den Wasser-Ressourcenknoten als Orientierung und betrete das angrenzende Baustellengelände. Das ECHO steht innerhalb des abgesperrten Arbeitsbereichs."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.003-felony-murder",
           "name": "Felony Murder",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Aktiviere dieses ECHO unmittelbar südwestlich der Theater-Siedlung.",
           "details": [
             {
               "label": "Typ",
@@ -78,14 +86,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Downtown East"
+              "value": "Downtown East – nahe der Grenze zu Federal Triangle, südwestlich des Theaters."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Theater und verlasse die Siedlung in südwestlicher Richtung. Folge der Gebietsgrenze zu Federal Triangle; das ECHO liegt offen im Straßenbereich."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.004-the-last-supper",
           "name": "The Last Supper",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Dieses ECHO liegt in einer Wohnung nördlich des Kontrollpunkts Ivy Tunnel.",
           "details": [
             {
               "label": "Typ",
@@ -101,14 +113,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Constitution Hall"
+              "value": "Constitution Hall – Gebäude nördlich von Ivy Tunnel."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe vom Kontrollpunkt Ivy Tunnel nach Norden. Betritt das Gebäude über den Eingang auf der Nordseite, steige die Treppen hinauf und suche die Wohnung im oberen Stockwerk."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.005-true-sons-trial",
           "name": "True Sons Trial",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Aktiviere dieses ECHO nahe der Hauptstraße östlich des Kontrollpunkts Metro Ruins.",
           "details": [
             {
               "label": "Typ",
@@ -124,14 +140,18 @@
             },
             {
               "label": "Fundort",
-              "value": "East Mall"
+              "value": "East Mall – östlich von Metro Ruins."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Kontrollpunkt Metro Ruins und gehe nach Osten bis zur Hauptstraße. Das ECHO liegt im Gras neben dem Straßenbereich und ist ohne Kletterpassage erreichbar."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.006-lessons",
           "name": "Lessons",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Dieses ECHO befindet sich in einem kleinen Innenhof nordwestlich von Overgrowth.",
           "details": [
             {
               "label": "Typ",
@@ -147,14 +167,18 @@
             },
             {
               "label": "Fundort",
-              "value": "West End"
+              "value": "West End – nordwestlich des Kontrollpunkts Overgrowth."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Verlasse Overgrowth in nordwestlicher Richtung und suche zwischen den Gebäuden nach einem kleinen offenen Innenhof. Das ECHO befindet sich dort auf Bodenniveau."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.007-division-agents",
           "name": "Division Agents",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Aktiviere dieses ECHO nahe einem Pool südöstlich des Kontrollpunkts Sleeping Giant.",
           "details": [
             {
               "label": "Typ",
@@ -170,14 +194,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Foggy Bottom"
+              "value": "Foggy Bottom – südöstlich von Sleeping Giant."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe vom Kontrollpunkt Sleeping Giant nach Südosten. Suche den bepflanzten Hof mit einem Pool; das ECHO liegt direkt in diesem Außenbereich."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.008-promotion",
           "name": "Promotion",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Dieses ECHO befindet sich am Eingang eines Cafés nördlich des Safe Houses von Federal Triangle.",
           "details": [
             {
               "label": "Typ",
@@ -193,14 +221,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Federal Triangle"
+              "value": "Federal Triangle – nördlich des Safe Houses."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Safe House von Federal Triangle und gehe nach Norden. Betritt das zugängliche Gebäude beziehungsweise den Café-Eingangsbereich; das ECHO befindet sich direkt darin."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.009-the-stash",
           "name": "The Stash",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Aktiviere dieses ECHO in einer kleinen Gasse nordwestlich des ViewPoint Museum.",
           "details": [
             {
               "label": "Typ",
@@ -216,14 +248,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Federal Triangle"
+              "value": "Federal Triangle – nordwestlich der Hauptmission ViewPoint Museum."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nutze den Missionsmarker des ViewPoint Museum als Orientierung und gehe nach Nordwesten in den östlichen Teil von Federal Triangle. Das ECHO liegt in einer frei zugänglichen Seitengasse."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.010-frisk",
           "name": "Frisk",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Dieses ECHO liegt in einem abgesperrten Bereich im Nordwesten von Constitution Hall.",
           "details": [
             {
               "label": "Typ",
@@ -239,14 +275,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Constitution Hall"
+              "value": "Constitution Hall – nordwestlich des Safe Houses."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nähere dich von Süden und klettere über den abgestellten Lastwagen in den Bereich. Alternativ kannst du den längeren, ebenerdigen Zugang von Norden benutzen."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.factions.011-under-arrest",
           "name": "Under Arrest",
-          "description": "ECHOs aus der Sammlung „Factions“.",
+          "description": "Aktiviere dieses ECHO bei Zelten nordwestlich des Washington Monument.",
           "details": [
             {
               "label": "Typ",
@@ -262,7 +302,11 @@
             },
             {
               "label": "Fundort",
-              "value": "West Potomac Park"
+              "value": "West Potomac Park – nordwestlich des Kontrollpunkts Washington Monument."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe vom Washington Monument nach Nordwesten. Suche den Lagerbereich mit Zelten und einem Generator; das ECHO befindet sich unmittelbar davor."
             }
           ]
         }
@@ -275,7 +319,7 @@
         {
           "id": "division2.collectible.echos.unknown.001-recon",
           "name": "Recon",
-          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "description": "Dieses ECHO liegt in einem kleinen Garten westlich des Weißen Hauses.",
           "details": [
             {
               "label": "Typ",
@@ -291,14 +335,18 @@
             },
             {
               "label": "Fundort",
-              "value": "White House"
+              "value": "White House – Grünanlage westlich der Basis."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Verlasse den Bereich des Weißen Hauses nach Westen und suche die kleine ummauerte beziehungsweise bepflanzte Gartenfläche. Das ECHO ist dort offen zugänglich."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.unknown.002-coffee",
           "name": "Coffee",
-          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "description": "Aktiviere dieses ECHO im Innenraum eines Restaurants an der Grenze zu Downtown East.",
           "details": [
             {
               "label": "Typ",
@@ -314,14 +362,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Downtown East"
+              "value": "Downtown East – Restaurant nahe der Grenze zum White-House-Gebiet."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche im westlichen Teil von Downtown East nach dem zugänglichen Restaurant. Betritt den Gastraum; das ECHO befindet sich im Inneren."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.unknown.003-secret-service",
           "name": "Secret Service",
-          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "description": "Dieses ECHO befindet sich in einem Gebäude mit Garage westlich des Weißen Hauses.",
           "details": [
             {
               "label": "Typ",
@@ -337,14 +389,18 @@
             },
             {
               "label": "Fundort",
-              "value": "White House"
+              "value": "White House – Gebäude westlich der Basis, bei einem Lastwagen vor der Garage."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe westlich des Weißen Hauses zu dem Gebäude mit dem Lastwagen vor der Garageneinfahrt. Betritt es durch die Garage und folge dem Innenraum bis zur Gebäudemitte."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.unknown.004-network-sabotage",
           "name": "Network Sabotage",
-          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "description": "Aktiviere dieses ECHO im Untergeschoss eines Hauses in West Potomac Park.",
           "details": [
             {
               "label": "Typ",
@@ -360,14 +416,18 @@
             },
             {
               "label": "Fundort",
-              "value": "West Potomac Park"
+              "value": "West Potomac Park – zugängliches Haus an Henry Bacon Drive NW."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Klettere durch das offene Fenster in das Haus, gehe die Treppe hinunter und öffne die Tür. Steige eine weitere Treppe ab; das ECHO befindet sich unten vor den Rohrleitungen."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.unknown.005-interrogation",
           "name": "Interrogation",
-          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "description": "Dieses ECHO liegt in einer unterirdischen Parkgarage westlich des Kontrollpunkts The Choke.",
           "details": [
             {
               "label": "Typ",
@@ -383,14 +443,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Southwest"
+              "value": "Southwest – zwischen The Choke und dem Eingang Dark Zone South CP Bravo."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe vom Kontrollpunkt The Choke nach Westen in Richtung DZ-South-Eingang. Betritt die offene Tiefgarage; das ECHO befindet sich im Garagenbereich."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.unknown.006-antiviral",
           "name": "Antiviral",
-          "description": "ECHOs aus der Sammlung „Unknown“.",
+          "description": "Dieses missionsgebundene ECHO befindet sich in der unterirdischen Gatehouse Facility.",
           "details": [
             {
               "label": "Typ",
@@ -406,14 +470,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Gatehouse Facility"
+              "value": "Gatehouse Facility – unterhalb der Ellipse südlich des Weißen Hauses."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Starte die Nebenmission Gatehouse Facility, fahre mit dem Aufzug hinunter und folge den Tunneln bis zum Labor- und Archivbereich. Aktiviere das ECHO in der gesicherten Anlage, bevor du die Mission abschließt."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Die Gatehouse-Facility-Mission muss verfügbar sein. Der Bereich ist außerhalb des Missionsablaufs teilweise verschlossen; sammle das ECHO daher während der Mission ein."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.unknown.007-pleased-to-meet-you-mr-president",
           "name": "Pleased to Meet You Mr. President",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO wird im Finale der Legacy Manhunt gegen Faye Lau in Camp White Oak gefunden.",
           "details": [
             {
               "label": "Typ",
@@ -429,7 +501,15 @@
             },
             {
               "label": "Fundort",
-              "value": "Camp White Oak"
+              "value": "Camp White Oak – Gebäude beziehungsweise Hütte im späteren Missionsabschnitt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Stelle Camp White Oak über die Missionsoptionen auf die Legacy Manhunt Faye Lau um. Folge dem Missionsweg bis zu dem betretbaren Chalet beziehungsweise Verwaltungsgebäude und aktiviere dort das ECHO."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Der Missionsmodus muss auf das Manhunt-Finale von Faye Lau gestellt sein; in der normalen Version von Camp White Oak erscheint dieses ECHO nicht."
             }
           ]
         }
@@ -442,7 +522,7 @@
         {
           "id": "division2.collectible.echos.world.001-rally",
           "name": "Rally",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO wird während der Aufklärungsmission von Dark Zone West aktiviert.",
           "details": [
             {
               "label": "Typ",
@@ -458,14 +538,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Dark Zone West"
+              "value": "Dark Zone West – innerhalb der DZ-West-Aufklärungsmission."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Einführung beziehungsweise Aufklärungsmission für Dark Zone West und folge den Missionsmarkierungen. Das ECHO liegt direkt auf dem vorgesehenen Missionsweg."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Die Aufklärungsmission für Dark Zone West muss noch verfügbar oder erneut zugänglich sein."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.002-insubordination",
           "name": "Insubordination",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO gehört zur Aufklärungsmission von Dark Zone South.",
           "details": [
             {
               "label": "Typ",
@@ -481,14 +569,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Dark Zone South"
+              "value": "Dark Zone South – innerhalb der DZ-South-Aufklärungsmission."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Starte die Einführung für Dark Zone South und folge dem Missionspfad. Aktiviere das markierte ECHO, bevor du die Aufklärungsmission abschließt."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Aufklärungsmission von Dark Zone South."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.003-emergency-evacuation",
           "name": "Emergency Evacuation",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO wird während der ersten Aufklärungsmission von Dark Zone East gefunden.",
           "details": [
             {
               "label": "Typ",
@@ -504,14 +600,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Dark Zone East"
+              "value": "Dark Zone East – innerhalb der DZ-East-Aufklärungsmission."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Einführung für Dark Zone East und folge den Missionszielen. Das ECHO liegt auf dem regulären Weg und wird im Rahmen der Mission untersucht."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Aufklärungsmission von Dark Zone East."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.004-rogue-agents",
           "name": "Rogue Agents",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Aktiviere dieses ECHO in einer abgesenkten Anlage östlich des Kontrollpunkts The Choke.",
           "details": [
             {
               "label": "Typ",
@@ -527,14 +631,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Southwest"
+              "value": "Southwest – östlich von The Choke, beim nahegelegenen SHD-Tech-Cache."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe von The Choke nach Osten und steige die Treppen zur tieferliegenden Struktur hinab. Das ECHO befindet sich beim SHD-Tech-Cache und ist deutlich sichtbar."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.005-factory-time",
           "name": "Factory Time",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO liegt im Untergeschoss eines zugänglichen Gebäudes am Ostrand von Judiciary Square.",
           "details": [
             {
               "label": "Typ",
@@ -550,14 +658,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Judiciary Square"
+              "value": "Judiciary Square – östlich des Safe Houses an der Gebietsgrenze."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Safe House von Judiciary Square und gehe nach Osten bis nahe an die Gebietsgrenze. Betritt das Gebäude im Erdgeschoss und nutze die Treppe nach unten; das ECHO liegt im unteren Stockwerk."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.006-update-april-kelleher",
           "name": "Update: April Kelleher",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO befindet sich auf einem erhöhten Gebäudebereich nördlich des Safe Houses von Judiciary Square.",
           "details": [
             {
               "label": "Typ",
@@ -573,14 +685,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Judiciary Square"
+              "value": "Judiciary Square – Gebäude direkt nördlich des Safe Houses."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche außen am Gebäude nach dem eingerollten Kletterseil. Schieße auf den gelben Seilmechanismus, klettere hinauf und folge dem Dachweg bis zum ECHO."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.007-update-david-hawkings",
           "name": "Update: David Hawkings",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Aktiviere dieses ECHO auf der Straße südlich des Lincoln Memorial.",
           "details": [
             {
               "label": "Typ",
@@ -596,14 +712,18 @@
             },
             {
               "label": "Fundort",
-              "value": "West Potomac Park"
+              "value": "West Potomac Park – südlich des Lincoln Memorial."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Lincoln Memorial und folge der Straße nach Süden. Das ECHO liegt offen im Straßenbereich und erfordert keinen besonderen Zugang."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.008-emergency-room",
           "name": "Emergency Room",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO liegt im oberen Bereich der kontaminierten Zone von West End.",
           "details": [
             {
               "label": "Typ",
@@ -619,14 +739,22 @@
             },
             {
               "label": "Fundort",
-              "value": "West End"
+              "value": "West End – Contaminated Zone."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Betritt den Nebenraum der kontaminierten Zone und schieße auf den gelben Sicherungskasten, um den Zugang zu öffnen. Nutze den Aufzugsschacht und arbeite dich nach oben; das ECHO steht nach dem Heraussteigen direkt vor dir."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang zur kontaminierten Zone von West End."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.009-orders",
           "name": "Orders",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO befindet sich mitten auf der Straße unmittelbar nördlich des Weißen Hauses.",
           "details": [
             {
               "label": "Typ",
@@ -642,14 +770,18 @@
             },
             {
               "label": "Fundort",
-              "value": "White House"
+              "value": "White House – Straße nördlich der Basis."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Verlasse das Weiße Haus nach Norden und folge der Hauptstraße. Das ECHO liegt gut sichtbar im Straßenbereich."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.010-civil-unrest",
           "name": "Civil Unrest",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Aktiviere dieses ECHO am Kreisverkehr südlich des Capitol-Hill-Eingangs.",
           "details": [
             {
               "label": "Typ",
@@ -665,14 +797,18 @@
             },
             {
               "label": "Fundort",
-              "value": "East Mall"
+              "value": "East Mall – Kreisverkehr südlich von Capitol Hill."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe vom Eingang zum Capitol Hill nach Süden bis zum Kreisverkehr mit der Statue. Das ECHO befindet sich direkt an diesem Platz."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.011-hostile-activity",
           "name": "Hostile Activity",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO liegt vor einem Bibliotheksgebäude südöstlich des Kontrollpunkts The World's End.",
           "details": [
             {
               "label": "Typ",
@@ -688,14 +824,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Downtown West"
+              "value": "Downtown West – südöstlich von The World's End."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Kontrollpunkt The World's End und gehe nach Südosten. Suche den Eingangsbereich der Bibliothek; das ECHO befindet sich davor auf Straßenniveau."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.012-orphan",
           "name": "Orphan",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO befindet sich in einer Wohnung im nordöstlichen Teil von Foggy Bottom.",
           "details": [
             {
               "label": "Typ",
@@ -711,14 +851,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Foggy Bottom"
+              "value": "Foggy Bottom – Apartment nahe der nordöstlichen Gebietsgrenze."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche an der Hauptstraße nach einem Lastwagen. Klettere auf den Lastwagen, folge der Holzplattform und steige durch die Öffnung in die Wohnung; dort befindet sich das ECHO."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.013-panic-room",
           "name": "Panic Room",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Aktiviere dieses ECHO im Erdgeschoss eines Gebäudes im Nordwesten von Judiciary Square.",
           "details": [
             {
               "label": "Typ",
@@ -734,14 +878,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Judiciary Square"
+              "value": "Judiciary Square – nordwestlicher Gebäudeblock."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Betritt das zugängliche Gebäude auf Straßenniveau und durchsuche das Erdgeschoss. Das ECHO liegt im Inneren und benötigt keine Dach- oder Kellerroute."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.014-relocated",
           "name": "Relocated",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO liegt westlich des Startpunkts der Hauptmission Potomac Event Center.",
           "details": [
             {
               "label": "Typ",
@@ -757,14 +905,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Foggy Bottom"
+              "value": "Foggy Bottom – bei einem Bus und einem No-Entry-Schild westlich des Potomac Event Center."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Missionsstart des Potomac Event Center und gehe nach Westen. Das ECHO befindet sich offen an der Straße neben dem Bus und der Absperrung."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.015-vigilantes",
           "name": "Vigilantes",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO befindet sich östlich des Lincoln Memorial bei umgestürzten Bäumen am Wasser.",
           "details": [
             {
               "label": "Typ",
@@ -780,14 +932,18 @@
             },
             {
               "label": "Fundort",
-              "value": "West Potomac Park"
+              "value": "West Potomac Park – östlich des Lincoln Memorial, nahe dem See."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe vom Lincoln Memorial nach Osten zum Uferbereich. Suche die umgestürzten Bäume; das ECHO befindet sich direkt bei ihnen."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.016-memorial",
           "name": "Memorial",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Aktiviere dieses ECHO unmittelbar vor den Stufen des Lincoln Memorial.",
           "details": [
             {
               "label": "Typ",
@@ -803,14 +959,18 @@
             },
             {
               "label": "Fundort",
-              "value": "West Potomac Park"
+              "value": "West Potomac Park – Vorderseite des Lincoln Memorial."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Lincoln Memorial und gehe zur großen Freitreppe an der Vorderseite. Das ECHO liegt offen im Bereich vor den Stufen."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.world.017-interview",
           "name": "Interview",
-          "description": "ECHOs aus der Sammlung „World“.",
+          "description": "Dieses ECHO befindet sich in einer Wohnung im West End.",
           "details": [
             {
               "label": "Typ",
@@ -826,7 +986,11 @@
             },
             {
               "label": "Fundort",
-              "value": "West End"
+              "value": "West End – Gebäudeblock zwischen den drei umliegenden Kontrollpunkten."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche an der Hauptstraße nach dem abgestellten Lastwagen. Klettere darüber auf den erhöhten Zugang und steige in die Wohnung, um das ECHO zu aktivieren."
             }
           ]
         }
@@ -839,7 +1003,7 @@
         {
           "id": "division2.collectible.echos.manhattan.001-pathways",
           "name": "Pathways",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO wird gegen Ende der Hauptmission Hugh Carey Tunnel untersucht.",
           "details": [
             {
               "label": "Typ",
@@ -855,14 +1019,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Battery Park"
+              "value": "Battery Park – Hauptmission Hugh Carey Tunnel."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele Hugh Carey Tunnel bis zum späteren Missionsabschnitt und folge dem linearen Weg. Aktiviere das ECHO, bevor du den Missionsbereich verlässt."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Hugh Carey Tunnel."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.002-compromised",
           "name": "Compromised",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO liegt am Bogen südlich des Kontrollpunkts The Gate.",
           "details": [
             {
               "label": "Typ",
@@ -878,14 +1050,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Civic Center"
+              "value": "Civic Center – bei der großen Bogenkonstruktion südlich von The Gate."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Reise zum Kontrollpunkt The Gate und gehe nach Süden zur markanten Bogenkonstruktion. Das ECHO befindet sich auf Bodenniveau in diesem Bereich."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.003-a-gift",
           "name": "A Gift",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Aktiviere dieses ECHO in einer Gasse zwischen Broadway und Greenwich Street.",
           "details": [
             {
               "label": "Typ",
@@ -901,14 +1077,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Battery Park"
+              "value": "Battery Park – Gasse zwischen Broadway und Greenwich Street."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Gehe in den nördlicheren Teil von Battery Park und suche die schmale Gasse zwischen Broadway und Greenwich Street. Das ECHO liegt unter beziehungsweise nahe einem Gerüst."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.004-respite",
           "name": "Respite",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO wird während der Hauptmission Pathway Park im Respite Shelter gefunden.",
           "details": [
             {
               "label": "Typ",
@@ -924,14 +1104,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Two Bridges"
+              "value": "Two Bridges – Respite Shelter in der Hauptmission Pathway Park."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele Pathway Park bis zum Bereich des Respite Shelter. Folge den Missionsmarkierungen in das Schutzgebäude und aktiviere das dortige ECHO."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Pathway Park."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.005-technician",
           "name": "Technician",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO befindet sich in der Hauptmission Stranded Tanker.",
           "details": [
             {
               "label": "Typ",
@@ -947,14 +1135,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Two Bridges"
+              "value": "Two Bridges – innerhalb der Hauptmission Stranded Tanker."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Folge dem Missionsweg durch den Tanker. Im Verlauf der Mission erreichst du den Bereich mit den gefangenen beziehungsweise getöteten Besatzungsmitgliedern; aktiviere dort das ECHO, bevor du weitergehst."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Stranded Tanker."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.006-delivery",
           "name": "Delivery",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO wird im Wall-Street-Komplex während der Hauptmission Wall Street gefunden.",
           "details": [
             {
               "label": "Typ",
@@ -970,14 +1166,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Financial District"
+              "value": "Financial District – Hauptmission Wall Street."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele Wall Street und folge dem Missionspfad durch Dragovs Anlage. Aktiviere das ECHO im Missionsbereich, bevor du zum nächsten Kampfabschnitt weitergehst."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Wall Street."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.007-instructions",
           "name": "Instructions",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO befindet sich während der Nebenmission Pier 26 im Financial District.",
           "details": [
             {
               "label": "Typ",
@@ -993,14 +1197,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Financial District"
+              "value": "Financial District – Nebenmission Pier 26."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Starte Pier 26 und folge dem Missionsweg durch das Hafengelände. Das ECHO liegt innerhalb des Missionsbereichs und sollte vor Abschluss der Nebenmission aktiviert werden."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Nebenmission Pier 26."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.008-supplies",
           "name": "Supplies",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO wird während der Nebenmission Castle Clinton gefunden.",
           "details": [
             {
               "label": "Typ",
@@ -1016,14 +1228,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Battery Park"
+              "value": "Battery Park – JTF-Stützpunkt Castle Clinton."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Nebenmission Castle Clinton bis in den ehemaligen JTF-Stützpunkt. Aktiviere das ECHO im Bereich der kontaminierten Versorgungskisten, bevor du die Mission beendest."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Nebenmission Castle Clinton."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.009-parts",
           "name": "Parts",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO befindet sich in einer Wohnung an der Kreuzung Chambers Street und Broadway.",
           "details": [
             {
               "label": "Typ",
@@ -1039,14 +1259,18 @@
             },
             {
               "label": "Fundort",
-              "value": "Civic Center"
+              "value": "Civic Center – Chambers Street/Broadway."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Suche an der Kreuzung den abgestellten Lastwagen. Klettere auf den Lastwagen und steige durch das offene Fenster in die Wohnung; das ECHO befindet sich im Inneren."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manhattan.010-keeners-legacy",
           "name": "Keener's Legacy",
-          "description": "ECHOs aus der Sammlung „Manhattan“.",
+          "description": "Dieses ECHO wird im Verlauf der Hauptmission Liberty Island aktiviert.",
           "details": [
             {
               "label": "Typ",
@@ -1062,7 +1286,15 @@
             },
             {
               "label": "Fundort",
-              "value": "Liberty Island"
+              "value": "Liberty Island – innerhalb der gleichnamigen Hauptmission."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele Liberty Island und folge dem linearen Missionsweg bis zum markierten ECHO. Aktiviere und untersuche es vollständig, bevor du den nächsten Missionsabschnitt betrittst."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Liberty Island."
             }
           ]
         }
@@ -1075,7 +1307,7 @@
         {
           "id": "division2.collectible.echos.manning-national-zoo.001-savannah",
           "name": "Savannah",
-          "description": "ECHOs aus der Sammlung „Manning National Zoo“.",
+          "description": "Dieses ECHO wird im Savannah-Ausstellungsbereich der Mission Manning National Zoo untersucht.",
           "details": [
             {
               "label": "Typ",
@@ -1091,14 +1323,22 @@
             },
             {
               "label": "Fundort",
-              "value": "Manning National Zoo"
+              "value": "Manning National Zoo – Savannah Exhibit."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele die Hauptmission bis zum weitläufigen Savannah-Bereich und erledige die dortigen Missionsziele. Folge anschließend dem ECHO-Marker und untersuche die Szene von Emeline und Savannah vollständig."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Manning National Zoo."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.manning-national-zoo.002-crocodile",
           "name": "Crocodile",
-          "description": "ECHOs aus der Sammlung „Manning National Zoo“.",
+          "description": "Dieses ECHO liegt im Krokodilbereich der Mission Manning National Zoo und leitet den Kampf gegen The Devourer ein.",
           "details": [
             {
               "label": "Typ",
@@ -1114,7 +1354,15 @@
             },
             {
               "label": "Fundort",
-              "value": "Manning National Zoo"
+              "value": "Manning National Zoo – Crocodile Exhibit."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Folge der Mission nach dem Savannah-Bereich in das Krokodilgehege. Aktiviere das ECHO bei den Leichen und warte, bis die Szene beendet ist; anschließend erscheint The Devourer."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Zugang über die Hauptmission Manning National Zoo."
             }
           ]
         }
@@ -1127,7 +1375,7 @@
         {
           "id": "division2.collectible.echos.battle-for-brooklyn.001-fire-doors",
           "name": "Fire Doors",
-          "description": "ECHOs aus der Sammlung „Battle for Brooklyn“.",
+          "description": "Dieses ECHO ist ein reguläres Missionsziel in der Battle-for-Brooklyn-Mission CERA Clinic.",
           "details": [
             {
               "label": "Typ",
@@ -1143,14 +1391,22 @@
             },
             {
               "label": "Fundort",
-              "value": "CERA Clinic"
+              "value": "Brooklyn – Hauptmission CERA Clinic."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele CERA Clinic und folge dem linearen Missionspfad. Im späteren Klinikbereich erhältst du das Ziel, das ECHO zu untersuchen; aktiviere es vollständig, bevor du die verbleibenden Gegner ausschaltest."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Battle for Brooklyn und Zugang zur Hauptmission CERA Clinic."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.battle-for-brooklyn.002-born",
           "name": "Born",
-          "description": "ECHOs aus der Sammlung „Battle for Brooklyn“.",
+          "description": "Dieses ECHO befindet sich innerhalb der Battle-for-Brooklyn-Mission The Art Museum.",
           "details": [
             {
               "label": "Typ",
@@ -1166,14 +1422,22 @@
             },
             {
               "label": "Fundort",
-              "value": "The Art Museum"
+              "value": "Brooklyn – Hauptmission The Art Museum."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Spiele The Art Museum und folge dem Missionspfad durch die Ausstellungsräume. Das ECHO erscheint innerhalb des Missionsbereichs; aktiviere es, bevor du den nächsten Abschnitt verlässt."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Battle for Brooklyn und Zugang zur Hauptmission The Art Museum."
             }
           ]
         },
         {
           "id": "division2.collectible.echos.battle-for-brooklyn.003-faye",
           "name": "Faye",
-          "description": "ECHOs aus der Sammlung „Battle for Brooklyn“.",
+          "description": "Dieses versteckte ECHO erscheint erst, nachdem alle 16 Einträge von Danver's Network freigeschaltet wurden.",
           "details": [
             {
               "label": "Typ",
@@ -1189,7 +1453,15 @@
             },
             {
               "label": "Fundort",
-              "value": "DUMBO"
+              "value": "Brooklyn – VTOL-Absturzstelle nahe der Brücke nach Manhattan."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Sammle zuerst alle 16 Danver's-Network-Karten von benannten Open-World-Gegnern. Reise anschließend zur Bridge-Park-Pier-Mission, drehe dich vom Missionsstart weg und gehe zur nordwestlichen Uferseite beziehungsweise VTOL-Absturzstelle nahe der Manhattan-Brücke. Dort erscheint das ECHO auf der Karte."
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Alle 16 Einträge der Database-Sammlung Danver's Network müssen auf demselben Charakter freigeschaltet sein. Benannte Gegner haben ungefähr 30 Minuten Abklingzeit; ein verlässlicher Spawn liegt direkt rechts vom Schnellreisepunkt Bridge Park Pier."
             }
           ]
         }
