@@ -1,12 +1,14 @@
 {
   "id": "fieldData",
   "name": "Field Data",
-  "description": "Field Data aus The Division 2.",
-  "lastUpdated": "2026-07-25",
+  "description": "Field Data aus Expeditionen und Classified Assignments in The Division 2, einschließlich konkreter Fundwege und Zugangsvoraussetzungen.",
+  "lastUpdated": "2026-08-01",
   "dataStatus": {
     "scope": "individual-items",
-    "itemCount": 65,
-    "pendingNameVerification": 6
+    "itemCount": 66,
+    "groupCount": 15,
+    "pendingNameVerification": 0,
+    "note": "Alle Namen wurden verifiziert. Die Gruppe „McMillan Reservoir“ wurde auf den aktuellen Umfang von sechs Field-Data-Einträgen korrigiert."
   },
   "groups": [
     {
@@ -16,7 +18,7 @@
         {
           "id": "division2.collectible.field-data.convoy-comms.001-sitrep-17-00",
           "name": "SitRep 17:00",
-          "description": "Field Data aus der Sammlung „Convoy Comms“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Convoy Comms“.",
           "details": [
             {
               "label": "Typ",
@@ -31,15 +33,27 @@
               "value": "1 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus und Metro Station"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Direkt im äußeren Campusbereich nahe dem Start der Expedition, bei einem Polizeiwagen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Betreten von Kenly College dem ersten Straßenabschnitt folgen. Das Audiolog liegt bei einem toten JTF-Mitglied neben dem Polizeiwagen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.convoy-comms.002-sitrep-19-00",
           "name": "SitRep 19:00",
-          "description": "Field Data aus der Sammlung „Convoy Comms“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Convoy Comms“.",
           "details": [
             {
               "label": "Typ",
@@ -54,15 +68,27 @@
               "value": "2 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus und Metro Station"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Am hinteren Ende des zerstörten Versorgungskonvois auf der Zufahrtsstraße."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Der Straße durch den Campus bis zu den letzten Fahrzeugen des Konvois folgen. Das Audiolog liegt neben einem gefallenen JTF-Mitglied bei den hintersten Lastwagen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.convoy-comms.003-sitrep-8-00",
           "name": "SitRep 8:00",
-          "description": "Field Data aus der Sammlung „Convoy Comms“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Convoy Comms“.",
           "details": [
             {
               "label": "Typ",
@@ -77,8 +103,20 @@
               "value": "3 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus und Metro Station"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Kontrollraum der Kenly Metro Station."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In der Metro Station bis zum Kontrollraum vordringen. Den sichtbaren Tür- beziehungsweise Gitterverschluss abschießen und den Raum betreten."
             }
           ]
         }
@@ -91,7 +129,7 @@
         {
           "id": "division2.collectible.field-data.kenly-college.001-safe",
           "name": "Safe",
-          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly College“.",
           "details": [
             {
               "label": "Typ",
@@ -106,15 +144,27 @@
               "value": "1 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus, College und Student Union"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Außen an der Wand nahe dem Haupteingang des College-Gebäudes."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom zentralen Campus zum College-Eingang gehen und vor dem Betreten die Außenwand absuchen. Das Audiolog befindet sich unmittelbar am Gebäude."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.kenly-college.002-yellow-alert",
           "name": "Yellow Alert",
-          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly College“.",
           "details": [
             {
               "label": "Typ",
@@ -129,15 +179,27 @@
               "value": "2 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus, College und Student Union"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem kleinen Computerraum neben der Bibliothek im College."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im College den Weg in Richtung „The Octagon Main Collections“ nehmen. Durch die angrenzenden Türen in den kleinen Computerraum gehen und dort das Audiolog aufnehmen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.kenly-college.003-derby-ball",
           "name": "Derby Ball",
-          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly College“.",
           "details": [
             {
               "label": "Typ",
@@ -152,15 +214,27 @@
               "value": "3 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus, College und Student Union"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Kontrollraum der Kenly Metro Station, nahe dem Bereich „Filtration Room“."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Metro-Station-Untersuchung starten und dem Weg bis zum Kontrollraum folgen. Das Audiolog liegt am Arbeitsplatz neben dem Zugang zum Filtrationsbereich."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.kenly-college.004-quarantine",
           "name": "Quarantine",
-          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly College“.",
           "details": [
             {
               "label": "Typ",
@@ -175,15 +249,31 @@
               "value": "4 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus, College und Student Union"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Techniklabor im zweiten Stock der Student Union."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In der Student Union zunächst den ersten Kampf der mittleren Untersuchung auslösen. Dadurch wird der Weg über die Treppe in den zweiten Stock zugänglich. Oben das Techniklabor durchsuchen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor dem ersten Untersuchungsgefecht ist der Zugang zum oberen Stockwerk gesperrt."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.kenly-college.005-homecoming",
           "name": "Homecoming",
-          "description": "Field Data aus der Sammlung „Kenly College“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly College“.",
           "details": [
             {
               "label": "Typ",
@@ -198,8 +288,24 @@
               "value": "5 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus, College und Student Union"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Techniklabor im zweiten Stock der Student Union."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Wie bei „Quarantine“ zunächst den ersten Kampf der mittleren Untersuchung auslösen und anschließend die freigegebene Treppe benutzen. Das zweite Audiolog liegt an einem anderen Arbeitsplatz desselben Laborbereichs."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Beide Student-Union-Logs können im selben Durchlauf eingesammelt werden."
             }
           ]
         }
@@ -212,7 +318,7 @@
         {
           "id": "division2.collectible.field-data.kenly-podcast.001-welcome-to-kenlycast",
           "name": "Welcome to Kenlycast",
-          "description": "Field Data aus der Sammlung „Kenly Podcast“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly Podcast“.",
           "details": [
             {
               "label": "Typ",
@@ -227,15 +333,27 @@
               "value": "1 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus und College"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Zentrum des Campus auf einer Bank nahe dem Obelisken."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Expeditionsstart zum zentralen Campusplatz laufen. Die Sitzbänke rund um den Obelisken absuchen und das Aufnahmegerät auf der Bank aufnehmen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.kenly-podcast.002-liberal-arts",
           "name": "Liberal Arts",
-          "description": "Field Data aus der Sammlung „Kenly Podcast“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Kenly Podcast“.",
           "details": [
             {
               "label": "Typ",
@@ -250,15 +368,27 @@
               "value": "2 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus und College"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im College-Gebäude auf einem runden Tisch am Ende eines großen Raums."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Betreten des College links halten und dem Innenbereich bis zum Ende des Raums folgen. Das Audiolog liegt auf dem runden Tisch an der Wand."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.kenly-podcast.003-kenly-podcast-03-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "Kenly Podcast #03 – Name noch nicht öffentlich verifiziert",
-          "description": "Field Data aus der Sammlung „Kenly Podcast“.",
+          "name": "WIP",
+          "description": "Podcast-Aufnahme aus der Kenly-College-Expedition.",
           "details": [
             {
               "label": "Typ",
@@ -273,11 +403,22 @@
               "value": "3 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Kenly College Expedition"
+            },
+            {
+              "label": "Bereich",
+              "value": "Kenly College – Campus und College"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Außen an der Kapelle auf dem Kenly-Campus."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zur Kapelle auf dem Campus gehen und die Außenwand umrunden. Das Podcast-Audiolog befindet sich an der Wand außerhalb des Gebäudes."
             }
-          ],
-          "verificationStatus": "pending-name-verification"
+          ]
         }
       ]
     },
@@ -288,7 +429,7 @@
         {
           "id": "division2.collectible.field-data.aquarium.001-tough-calls",
           "name": "Tough Calls",
-          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Aquarium“.",
           "details": [
             {
               "label": "Typ",
@@ -303,15 +444,27 @@
               "value": "1 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Aquarium Civilian Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Aquarium"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im zweiten Stock auf einer Bank nahe dem Bereich „Behind the Scenes“."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Aufzug in die zweite Etage benutzen. Nach dem Aussteigen links halten und die Bank nahe der Beschilderung „Behind the Scenes“ untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.aquarium.002-options",
           "name": "Options",
-          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Aquarium“.",
           "details": [
             {
               "label": "Typ",
@@ -326,15 +479,27 @@
               "value": "2 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Aquarium Civilian Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Aquarium"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Raum, in dem die Zivilisten gerettet werden, auf der Bar in einer Ecke."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Der Hauptmission bis zur Befreiung der Zivilisten folgen. Vor dem Verlassen des Raums die Bar beziehungsweise den Tresen in der Ecke absuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.aquarium.003-fish-fry",
           "name": "Fish Fry",
-          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Aquarium“.",
           "details": [
             {
               "label": "Typ",
@@ -349,15 +514,27 @@
               "value": "3 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Aquarium Civilian Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Aquarium"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Wartungsbereich unterhalb des Ozone-Chamber-Büros."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den gelben Stromkasten oberhalb des Büros bei der Ozone Chamber abschießen. Anschließend den geöffneten Weg durch den eingezäunten Wartungsbereich nehmen; das Audiolog liegt unten an der Treppe."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.aquarium.004-pools",
           "name": "Pools",
-          "description": "Field Data aus der Sammlung „Aquarium“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Aquarium“.",
           "details": [
             {
               "label": "Typ",
@@ -372,8 +549,24 @@
               "value": "4 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Aquarium Civilian Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Aquarium"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem verschlossenen Laborraum hinter einer Scheibe."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Türverschluss durch das Fenster abschießen, sobald der Laborraum sichtbar ist. Später über den regulären Missionsweg in diesen Bereich zurückkehren und das Audiolog vom Tisch nehmen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Die Leiche im Raum besitzt den Upper Lab Key für den weiteren Nebenweg."
             }
           ]
         }
@@ -386,7 +579,7 @@
         {
           "id": "division2.collectible.field-data.data-center.001-gordon-amherst-recording-118",
           "name": "Gordon Amherst Recording 118",
-          "description": "Field Data aus der Sammlung „Data Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Data Center“.",
           "details": [
             {
               "label": "Typ",
@@ -401,15 +594,31 @@
               "value": "1 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: NSA Security Alert"
+            },
+            {
+              "label": "Bereich",
+              "value": "NSA Site B13 / Data Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Raum „Data Analysis“ im zentralen Hub des NSA Data Centers."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Data Center die Zugangskarten sammeln und mit der Level-7-Keycard den Raum „Data Analysis“ öffnen. Die Aufnahme liegt im gesicherten Arbeitsbereich."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Für diesen Raum ist die höchste Zugangsstufe der Assignment-Keycards erforderlich."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.data-center.002-ivan-grekov-recording-2",
           "name": "Ivan Grekov Recording 2",
-          "description": "Field Data aus der Sammlung „Data Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Data Center“.",
           "details": [
             {
               "label": "Typ",
@@ -424,15 +633,27 @@
               "value": "2 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: NSA Security Alert"
+            },
+            {
+              "label": "Bereich",
+              "value": "NSA Site B13 / Data Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In den Personnel Quarters, Raum 2, auf einem Stuhl."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom zentralen Bereich zu den Personalunterkünften gehen, Raum 2 betreten und den Stuhl im Zimmer untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.data-center.003-erica-gonzalez-recording-42",
           "name": "Erica Gonzalez Recording 42",
-          "description": "Field Data aus der Sammlung „Data Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Data Center“.",
           "details": [
             {
               "label": "Typ",
@@ -447,8 +668,20 @@
               "value": "3 / 3"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: NSA Security Alert"
+            },
+            {
+              "label": "Bereich",
+              "value": "NSA Site B13 / Data Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Communal Area hinter dem Conference Room."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Aktivieren des Generators auf dem Rückweg zum Data Center den Conference Room auf der linken Seite betreten. Von dort in den Gemeinschaftsbereich gehen; die Aufnahme liegt neben einem Laptop auf einem Schreibtisch."
             }
           ]
         }
@@ -461,7 +694,7 @@
         {
           "id": "division2.collectible.field-data.detention-center.001-nsa-wiretap",
           "name": "NSA Wiretap",
-          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Detention Center“.",
           "details": [
             {
               "label": "Typ",
@@ -476,15 +709,27 @@
               "value": "1 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Detention Center Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Detention Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Wachtturm von Cellblock B, auf dem Schreibtisch neben dem montierten Maschinengewehr."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Cellblock B erreichen und in den zentralen Wachtturm steigen. Das Audiolog liegt direkt im Kontrollbereich des Turms."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.detention-center.002-nsa-interrogation",
           "name": "NSA Interrogation",
-          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Detention Center“.",
           "details": [
             {
               "label": "Typ",
@@ -499,15 +744,27 @@
               "value": "2 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Detention Center Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Detention Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Wachtturm von Cellblock A im zweiten Stock."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Bevor der Bereich verlassen wird, den Stromkasten durch das Fenster im zweiten Stock abschießen. Später den dadurch geöffneten Zugang zum Wachtturm benutzen und das Audiolog aufnehmen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.detention-center.003-mass-arrests",
           "name": "Mass Arrests",
-          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Detention Center“.",
           "details": [
             {
               "label": "Typ",
@@ -522,15 +779,27 @@
               "value": "3 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Detention Center Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Detention Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einer verschlossenen Zelle im Laundry Room, neben einem roten Wäschekorb."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Wäschereibereich den Stromkasten an der linken Wand zerstören. Die entriegelte Zelle betreten und das Audiolog neben dem roten Wäschekorb aufnehmen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.detention-center.004-prison-outbreak",
           "name": "Prison Outbreak",
-          "description": "Field Data aus der Sammlung „Detention Center“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Detention Center“.",
           "details": [
             {
               "label": "Typ",
@@ -545,8 +814,20 @@
               "value": "4 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Detention Center Rescue"
+            },
+            {
+              "label": "Bereich",
+              "value": "Detention Center"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Visitation Room auf einem Schreibtisch."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Gym-Eingang den Raum rechts neben den Verkaufsautomaten betreten und den Schlüssel aus einem Spind nehmen. Damit den Visitation Room auf dem Weg zur Sporthalle öffnen."
             }
           ]
         }
@@ -559,7 +840,7 @@
         {
           "id": "division2.collectible.field-data.embassy.001-policy",
           "name": "Policy",
-          "description": "Field Data aus der Sammlung „Embassy“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Embassy“.",
           "details": [
             {
               "label": "Typ",
@@ -574,15 +855,27 @@
               "value": "1 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Embassy Crash Site"
+            },
+            {
+              "label": "Bereich",
+              "value": "Mexikanische Botschaft"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In den Ambassadorial Quarters, in einem Zimmer hinter dem Waschraum, auf einer Kommode."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Quartier den Waschraum betreten, aus dem ein Gegner kommt. Durch den Waschraum in das dahinterliegende Zimmer gehen und die Kommode untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.embassy.002-family",
           "name": "Family",
-          "description": "Field Data aus der Sammlung „Embassy“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Embassy“.",
           "details": [
             {
               "label": "Typ",
@@ -597,15 +890,27 @@
               "value": "2 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Embassy Crash Site"
+            },
+            {
+              "label": "Bereich",
+              "value": "Mexikanische Botschaft"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem verschlossenen oberen Raum des Archivs, auf Kisten."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Archiv zu den großen Doppeltüren zurückblicken und den erhöht angebrachten Türverschluss abschießen. Anschließend über den oberen Weg zurückgehen und den geöffneten Raum betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.embassy.003-activated",
           "name": "Activated",
-          "description": "Field Data aus der Sammlung „Embassy“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Embassy“.",
           "details": [
             {
               "label": "Typ",
@@ -620,15 +925,27 @@
               "value": "3 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Embassy Crash Site"
+            },
+            {
+              "label": "Bereich",
+              "value": "Mexikanische Botschaft"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem durch eine Explosion geöffneten Nebenraum im Erdgeschoss des Atriums."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach der Rettung des Hubschrauberpiloten zum Atrium zurückkehren. Nahe der Tiki-Statue wurde ein Loch in die Wand gesprengt; dort hineinsteigen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.embassy.004-hoodie",
           "name": "Hoodie",
-          "description": "Field Data aus der Sammlung „Embassy“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Embassy“.",
           "details": [
             {
               "label": "Typ",
@@ -643,8 +960,24 @@
               "value": "4 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Embassy Crash Site"
+            },
+            {
+              "label": "Bereich",
+              "value": "Mexikanische Botschaft"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Hinter einer verschlossenen Tür am Eingang des Atriums."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Raum von „Activated“ die Keycard aus den Spinden nehmen. Zum Atrium-Eingang zurückgehen und damit die zuvor verschlossene Tür öffnen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Zuerst „Activated“ aufsuchen, da sich dort die benötigte Keycard befindet."
             }
           ]
         }
@@ -657,7 +990,7 @@
         {
           "id": "division2.collectible.field-data.marina-supply-route.001-skimming",
           "name": "Skimming",
-          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Marina Supply Route“.",
           "details": [
             {
               "label": "Typ",
@@ -672,15 +1005,27 @@
               "value": "1 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Marina Supply Route"
+            },
+            {
+              "label": "Bereich",
+              "value": "Marina und Bootslager"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem eingezäunten Bereich vor dem Passagierterminal."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Terminal links von der Werbung „See the capital by boat“ den Zaunbereich suchen. Den Türverschluss aus dem passenden Winkel abschießen und den Bereich betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.marina-supply-route.002-promise",
           "name": "Promise",
-          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Marina Supply Route“.",
           "details": [
             {
               "label": "Typ",
@@ -695,15 +1040,27 @@
               "value": "2 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Marina Supply Route"
+            },
+            {
+              "label": "Bereich",
+              "value": "Marina und Bootslager"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Hinterzimmer des Geschäfts „Most 24 Shop“."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im oberen Stockwerk den Shop Key an der Bar aufnehmen. Danach zum Geschäft zurückkehren und mit dem Schlüssel das Hinterzimmer öffnen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.marina-supply-route.003-inflation",
           "name": "Inflation",
-          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Marina Supply Route“.",
           "details": [
             {
               "label": "Typ",
@@ -718,15 +1075,27 @@
               "value": "3 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Marina Supply Route"
+            },
+            {
+              "label": "Bereich",
+              "value": "Marina und Bootslager"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Boat Storage hinter dem Verwaltungsrätsel."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor der Kamera mit dem Hinweis „Smile and Wave“ das Winken-Emote benutzen. Danach den Computer im Büro unterhalb des Stromkastens aktivieren, den Verwaltungsraum öffnen, den Door Code aufnehmen und damit das Boat Storage betreten. Das Audiolog liegt auf einer Kiste."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.marina-supply-route.004-value",
           "name": "Value",
-          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Marina Supply Route“.",
           "details": [
             {
               "label": "Typ",
@@ -741,15 +1110,27 @@
               "value": "4 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Marina Supply Route"
+            },
+            {
+              "label": "Bereich",
+              "value": "Marina und Bootslager"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Auf einem Stuhl auf dem Laufsteg oberhalb des Missionsausgangs im Boat Warehouse."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Bootslager nicht sofort zum Ausgang gehen. Den oberen Laufsteg erreichen und den Stuhl direkt oberhalb des Ausgangs untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.marina-supply-route.005-fair",
           "name": "Fair",
-          "description": "Field Data aus der Sammlung „Marina Supply Route“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Marina Supply Route“.",
           "details": [
             {
               "label": "Typ",
@@ -764,8 +1145,20 @@
               "value": "5 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Marina Supply Route"
+            },
+            {
+              "label": "Bereich",
+              "value": "Marina und Bootslager"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im oberen rechten Büro des Bereichs, der nach dem Hochfahren der Rollläden geöffnet wird."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Rollläden im Missionsverlauf öffnen. Im neu zugänglichen Abschnitt nach oben gehen und das Büro aufsuchen, aus dem Scharfschützen erscheinen."
             }
           ]
         }
@@ -778,7 +1171,7 @@
         {
           "id": "division2.collectible.field-data.national-bond-bank.001-logistics",
           "name": "Logistics",
-          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „National Bond Bank“.",
           "details": [
             {
               "label": "Typ",
@@ -793,15 +1186,27 @@
               "value": "1 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: National Bond Armory"
+            },
+            {
+              "label": "Bereich",
+              "value": "National Bond Bank"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Security Office hinter dem Körperscanner."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Durchqueren des Scanners das Sicherheitsbüro betreten und den dortigen Arbeitsplatz untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.national-bond-bank.002-opportunities",
           "name": "Opportunities",
-          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „National Bond Bank“.",
           "details": [
             {
               "label": "Typ",
@@ -816,15 +1221,27 @@
               "value": "2 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: National Bond Armory"
+            },
+            {
+              "label": "Bereich",
+              "value": "National Bond Bank"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Tresorbereich, in einem verschlossenen Raum neben der Dekontaminationskammer."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Vault-Bereich rechts zur Dekontamination gehen. Den Türverschluss des Nebenraums aus dem sichtbaren Winkel abschießen und den Raum betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.national-bond-bank.003-orders-from-corporate",
           "name": "Orders from Corporate",
-          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „National Bond Bank“.",
           "details": [
             {
               "label": "Typ",
@@ -839,15 +1256,27 @@
               "value": "3 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: National Bond Armory"
+            },
+            {
+              "label": "Bereich",
+              "value": "National Bond Bank"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem Büro in der hinteren Ecke der Lobby im Erdgeschoss."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Noch im Lobbybereich die Büroräume am hinteren Rand absuchen. Das Audiolog liegt in einem der zugänglichen Büros."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.national-bond-bank.004-exit-plan",
           "name": "Exit Plan",
-          "description": "Field Data aus der Sammlung „National Bond Bank“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „National Bond Bank“.",
           "details": [
             {
               "label": "Typ",
@@ -862,8 +1291,20 @@
               "value": "4 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: National Bond Armory"
+            },
+            {
+              "label": "Bereich",
+              "value": "National Bond Bank"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im verschlossenen Büro links im letzten Missionsraum."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im finalen Raum den gelben Stromkasten an der linken Wand zerstören. Dadurch öffnet sich das Büro auf der linken Seite."
             }
           ]
         }
@@ -876,7 +1317,7 @@
         {
           "id": "division2.collectible.field-data.nelson-theatre.001-holding",
           "name": "Holding",
-          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Nelson Theatre“.",
           "details": [
             {
               "label": "Typ",
@@ -891,15 +1332,27 @@
               "value": "1 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nelson Theatre Hostages"
+            },
+            {
+              "label": "Bereich",
+              "value": "Nelson Theatre"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem verschlossenen Laden in der Theaterlobby."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Generator bei den Aufzügen und anschließend den zweiten Generator in der oberen Lobby aktivieren. Danach den geöffneten Laden betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.nelson-theatre.002-briefing",
           "name": "Briefing",
-          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Nelson Theatre“.",
           "details": [
             {
               "label": "Typ",
@@ -914,15 +1367,27 @@
               "value": "2 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nelson Theatre Hostages"
+            },
+            {
+              "label": "Bereich",
+              "value": "Nelson Theatre"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Hinter den aufgestemmten Aufzugtüren im Flur auf dem Weg zur Bühne."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Flur zur Bühne den Generator links neben dem Aufzug aktivieren. Die Aufzugtüren öffnen und den zugänglichen Bereich untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.nelson-theatre.003-barricades",
           "name": "Barricades",
-          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Nelson Theatre“.",
           "details": [
             {
               "label": "Typ",
@@ -937,15 +1402,27 @@
               "value": "3 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nelson Theatre Hostages"
+            },
+            {
+              "label": "Bereich",
+              "value": "Nelson Theatre"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In der verschlossenen Toilette vor dem Aufzug zum Backstage-Bereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Backstage-Aufzug den Türverschluss der Toilette aus einem passenden Winkel abschießen und den Raum betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.nelson-theatre.004-hostile-takeover",
           "name": "Hostile Takeover",
-          "description": "Field Data aus der Sammlung „Nelson Theatre“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Nelson Theatre“.",
           "details": [
             {
               "label": "Typ",
@@ -960,8 +1437,24 @@
               "value": "4 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nelson Theatre Hostages"
+            },
+            {
+              "label": "Bereich",
+              "value": "Nelson Theatre"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im oberen Bereich beim Balkon, nach dem Kampf gegen Zero."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Civilian Key aufnehmen und den Boss Zero besiegen. Anschließend oben am Balkon den zugänglichen Raum beziehungsweise den Sitzbereich gegenüber aufsuchen; das Audiolog liegt dort auf einem Möbelstück."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Der Fundort wurde gegenüber einer älteren Version des Assignments in den oberen Balkonbereich verlegt."
             }
           ]
         }
@@ -974,7 +1467,7 @@
         {
           "id": "division2.collectible.field-data.tens-nightclub.001-od-call",
           "name": "OD Call",
-          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Tens Nightclub“.",
           "details": [
             {
               "label": "Typ",
@@ -989,15 +1482,27 @@
               "value": "1 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nightclub Infiltration"
+            },
+            {
+              "label": "Bereich",
+              "value": "Tens Nightclub"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Kontrollraum der Silver Lounge."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In der Silver Lounge den toten Hyena Johnny neben der umgestürzten Neonreklame untersuchen und den Schlüssel nehmen. Damit den Kontrollraum öffnen und dort zusätzlich den Generator aktivieren."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.tens-nightclub.002-are-we-rogue",
           "name": "Are We Rogue?",
-          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Tens Nightclub“.",
           "details": [
             {
               "label": "Typ",
@@ -1012,15 +1517,27 @@
               "value": "2 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nightclub Infiltration"
+            },
+            {
+              "label": "Bereich",
+              "value": "Tens Nightclub"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Security Room neben dem Kontrollraum im oberen Bereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach Abschluss des Hauptkampfs nach oben zum Kontrollraum gehen. Vor der „Staff Only“-Tür den Stromkasten links zerstören, dann im Kontrollraum rechts in den geöffneten Security Room gehen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.tens-nightclub.003-spice-effects",
           "name": "Spice Effects",
-          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Tens Nightclub“.",
           "details": [
             {
               "label": "Typ",
@@ -1035,15 +1552,27 @@
               "value": "3 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nightclub Infiltration"
+            },
+            {
+              "label": "Bereich",
+              "value": "Tens Nightclub"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Hinter den aufgestemmten Aufzugtüren links vom Eingang zum Brass Room."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Brass Room den Aufzug auf der linken Seite öffnen und den dahinterliegenden Schacht- beziehungsweise Wartungsbereich betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.tens-nightclub.004-spice-production",
           "name": "Spice Production",
-          "description": "Field Data aus der Sammlung „Tens Nightclub“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Tens Nightclub“.",
           "details": [
             {
               "label": "Typ",
@@ -1058,8 +1587,20 @@
               "value": "4 / 4"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Nightclub Infiltration"
+            },
+            {
+              "label": "Bereich",
+              "value": "Tens Nightclub"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Raum hinter der Bar des Brass Room."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Brass Room hinter die Bar gehen und den sichtbaren Türverschluss abschießen. Den geöffneten Produktionsraum betreten."
             }
           ]
         }
@@ -1072,7 +1613,7 @@
         {
           "id": "division2.collectible.field-data.library-of-congress.001-the-audit",
           "name": "The Audit",
-          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Library of Congress“.",
           "details": [
             {
               "label": "Typ",
@@ -1087,15 +1628,27 @@
               "value": "1 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Library of Congress"
+            },
+            {
+              "label": "Bereich",
+              "value": "Library of Congress"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im oberen Bibliotheksbereich hinter einer elektrisch verriegelten Tür."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Raum mit der Library-Beschilderung erreichen. Seitlich nach einem freien Sichtwinkel auf den gelben Stromkasten suchen, ihn zerstören und anschließend die entriegelte Tür öffnen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.library-of-congress.002-a-big-bonfire",
           "name": "A Big Bonfire",
-          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Library of Congress“.",
           "details": [
             {
               "label": "Typ",
@@ -1110,15 +1663,27 @@
               "value": "2 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Library of Congress"
+            },
+            {
+              "label": "Bereich",
+              "value": "Library of Congress"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem Nebenraum am unteren Ende des Aufzugschachts."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durch den Aufzugschacht nach unten gelangen und dort den Schalter betätigen. Dadurch öffnet sich die nahegelegene Tür zum Audiolog."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.library-of-congress.003-are-you-testing-me",
           "name": "Are you testing me?",
-          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Library of Congress“.",
           "details": [
             {
               "label": "Typ",
@@ -1133,15 +1698,27 @@
               "value": "3 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Library of Congress"
+            },
+            {
+              "label": "Bereich",
+              "value": "Library of Congress"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem abgetrennten Bereich bei den zwei Aufzügen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den linken Aufzug aufstemmen und nach oben klettern. Von dort den Stromkasten zerstören und anschließend in den nun zugänglichen Bereich des zweiten Aufzugs hinabsteigen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.library-of-congress.004-knowledge",
           "name": "Knowledge",
-          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Library of Congress“.",
           "details": [
             {
               "label": "Typ",
@@ -1156,15 +1733,27 @@
               "value": "4 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Library of Congress"
+            },
+            {
+              "label": "Bereich",
+              "value": "Library of Congress"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Nahe dem Anfang des Assignments, direkt auf dem ersten regulären Weg durch die Bibliothek."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Einstieg durch den südlich des Capitols gelegenen Zugang dem Hauptweg folgen. Das Audiolog liegt bereits im ersten größeren zugänglichen Bibliotheksbereich."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.library-of-congress.005-cui-bono",
           "name": "Cui Bono",
-          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Library of Congress“.",
           "details": [
             {
               "label": "Typ",
@@ -1179,15 +1768,27 @@
               "value": "5 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Library of Congress"
+            },
+            {
+              "label": "Bereich",
+              "value": "Library of Congress"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im geheimen Rare Book Archive hinter dem Bücherregal-Rätsel."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Sergeant Sawya besiegen und den Rare Book Archive Key aufnehmen. Im Archiv die Hinweise mit römischen Zahlen und Symbolen in der richtigen Reihenfolge betätigen. Der geheime Weg hinter dem Bücherregal öffnet sich."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.library-of-congress.006-real-smart-echo",
           "name": "Real Smart (ECHO)",
-          "description": "Field Data aus der Sammlung „Library of Congress“.",
+          "description": "ECHO aus der Sammlung „Library of Congress“, das im zugehörigen Spezialinhalt aktiviert werden muss.",
           "details": [
             {
               "label": "Typ",
@@ -1202,8 +1803,24 @@
               "value": "6 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Library of Congress"
+            },
+            {
+              "label": "Bereich",
+              "value": "Library of Congress"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Archive Directory hinter dem geheimen Bücherregalweg."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den gleichen Archivschlüssel und das Rätsel wie für „Cui Bono“ verwenden. Dem geheimen Weg weiter durch den Lüftungsschacht folgen und das ECHO im Archive Directory aktivieren."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Das ECHO liegt im selben geheimen Nebenbereich wie „Cui Bono“."
             }
           ]
         }
@@ -1216,7 +1833,7 @@
         {
           "id": "division2.collectible.field-data.the-capitol-globe.001-staff-call",
           "name": "Staff Call",
-          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „The Capitol Globe“.",
           "details": [
             {
               "label": "Typ",
@@ -1231,15 +1848,27 @@
               "value": "1 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: The Capitol Globe"
+            },
+            {
+              "label": "Bereich",
+              "value": "Redaktion und Druckerei des Capitol Globe"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Atrium auf der rechten Seite, kurz vor der Tür zu den Main Offices."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Eingangsbereich durch das Atrium gehen und vor dem Betreten der Main Offices den rechten Seitenbereich absuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.the-capitol-globe.002-who-is-your-source",
           "name": "Who is your source?!",
-          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „The Capitol Globe“.",
           "details": [
             {
               "label": "Typ",
@@ -1254,15 +1883,27 @@
               "value": "2 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: The Capitol Globe"
+            },
+            {
+              "label": "Bereich",
+              "value": "Redaktion und Druckerei des Capitol Globe"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Auf einem Seitenweg hinter den Main Offices."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Main Offices sichern. Bevor zum befreiten Hostage zurückgekehrt wird, dem zusätzlichen Seitenweg folgen und das Audiolog aufnehmen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.the-capitol-globe.003-bye-art",
           "name": "Bye, Art",
-          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „The Capitol Globe“.",
           "details": [
             {
               "label": "Typ",
@@ -1277,15 +1918,27 @@
               "value": "3 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: The Capitol Globe"
+            },
+            {
+              "label": "Bereich",
+              "value": "Redaktion und Druckerei des Capitol Globe"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Podcast Studio."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Print Office Access Key aufnehmen. Vom Conference Room aus den Stromkasten durch den gasgefüllten Bereich abschießen und anschließend das geöffnete Podcast Studio betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.the-capitol-globe.004-sixty-seconds",
           "name": "Sixty Seconds",
-          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „The Capitol Globe“.",
           "details": [
             {
               "label": "Typ",
@@ -1300,15 +1953,31 @@
               "value": "4 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: The Capitol Globe"
+            },
+            {
+              "label": "Bereich",
+              "value": "Redaktion und Druckerei des Capitol Globe"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In Storage Room A."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Storage-Room-Zugangscode beschaffen und den Türverschluss abschießen. Im geöffneten Raum sowohl das Audiolog als auch das Server Memory Module aufnehmen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Das Server Memory Module wird später für das ECHO „On My Own“ benötigt."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.the-capitol-globe.005-shaw-would-be-proud",
           "name": "Shaw would be proud",
-          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „The Capitol Globe“.",
           "details": [
             {
               "label": "Typ",
@@ -1323,15 +1992,27 @@
               "value": "5 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: The Capitol Globe"
+            },
+            {
+              "label": "Bereich",
+              "value": "Redaktion und Druckerei des Capitol Globe"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Kontrollraum der Druckerei gegenüber dem Überlastungsschalter."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Print-Office-Sequenz bis zur Überlastung der Presse spielen. Im Kontrollraum die gegenüberliegende Seite des Schalters absuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.the-capitol-globe.006-on-my-own-echo",
           "name": "On My Own (ECHO)",
-          "description": "Field Data aus der Sammlung „The Capitol Globe“.",
+          "description": "ECHO aus der Sammlung „The Capitol Globe“, das im zugehörigen Spezialinhalt aktiviert werden muss.",
           "details": [
             {
               "label": "Typ",
@@ -1346,8 +2027,24 @@
               "value": "6 / 6"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: The Capitol Globe"
+            },
+            {
+              "label": "Bereich",
+              "value": "Redaktion und Druckerei des Capitol Globe"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im verschlossenen Archive Room."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Server Memory Module aus Storage Room A in den Server Room bringen und am Terminal einsetzen. Danach über Lüftung und Generator das Gas aus den drei Conference Suites entfernen und in jedem Raum den Laptop aktivieren. Anschließend öffnet sich der Archive Room mit dem ECHO."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Erfordert „Sixty Seconds“ beziehungsweise das dort gefundene Server Memory Module."
             }
           ]
         }
@@ -1360,7 +2057,7 @@
         {
           "id": "division2.collectible.field-data.conspiracy-zone.001-like-candy",
           "name": "Like Candy",
-          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Conspiracy Zone“.",
           "details": [
             {
               "label": "Typ",
@@ -1375,15 +2072,27 @@
               "value": "1 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Conspiracy Zone"
+            },
+            {
+              "label": "Bereich",
+              "value": "Arcade-, Bowling- und Escape-Room-Komplex"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Briefing Room hinter dem Personalbereich von Lunar Tag."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach Erhalt des Escape Room Key zunächst nicht in den Escape Room gehen. Im Lunar-Tag-Bereich den Verschluss zum Personalbereich abschießen, den Generator aktivieren und anschließend den geöffneten Briefing Room betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.conspiracy-zone.002-we-take",
           "name": "We Take",
-          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Conspiracy Zone“.",
           "details": [
             {
               "label": "Typ",
@@ -1398,15 +2107,27 @@
               "value": "2 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Conspiracy Zone"
+            },
+            {
+              "label": "Bereich",
+              "value": "Arcade-, Bowling- und Escape-Room-Komplex"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem Seitenraum der Arcade, noch vor dem Bereich mit dem Bowling Key."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In der Arcade den Nebenraum betreten und dort sowohl das Audiolog als auch den zugehörigen Stromschalter untersuchen."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.conspiracy-zone.003-youre-twitching",
           "name": "You're Twitching",
-          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Conspiracy Zone“.",
           "details": [
             {
               "label": "Typ",
@@ -1421,15 +2142,27 @@
               "value": "3 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Conspiracy Zone"
+            },
+            {
+              "label": "Bereich",
+              "value": "Arcade-, Bowling- und Escape-Room-Komplex"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Escape Room, erster Stock, Game Room 4."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Mit dem Escape Room Key den Bereich öffnen und bis Game Room 4 vordringen. Das Audiolog dort aufnehmen; den nahegelegenen verbarrikadierten Nebenweg ebenfalls öffnen, da sich dort ein benötigtes Sicherungsteil befindet."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.conspiracy-zone.004-games",
           "name": "Games",
-          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "description": "Audio- beziehungsweise Datenaufzeichnung aus der Sammlung „Conspiracy Zone“.",
           "details": [
             {
               "label": "Typ",
@@ -1444,15 +2177,27 @@
               "value": "4 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Conspiracy Zone"
+            },
+            {
+              "label": "Bereich",
+              "value": "Arcade-, Bowling- und Escape-Room-Komplex"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem Raum hinter der Bowling-Rezeption."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Flake im Bowling-Bereich besiegen. Hinter der Rezeption den Stromkasten zerstören und anschließend den geöffneten Raum betreten."
             }
           ]
         },
         {
           "id": "division2.collectible.field-data.conspiracy-zone.005-conspiracy-zone-echo",
-          "name": "Conspiracy Zone ECHO",
-          "description": "Field Data aus der Sammlung „Conspiracy Zone“.",
+          "name": "Methylamine",
+          "description": "ECHO aus dem Classified Assignment „Conspiracy Zone“.",
           "details": [
             {
               "label": "Typ",
@@ -1467,8 +2212,24 @@
               "value": "5 / 5"
             },
             {
+              "label": "Aktivität",
+              "value": "Classified Assignment: Conspiracy Zone"
+            },
+            {
+              "label": "Bereich",
+              "value": "Arcade-, Bowling- und Escape-Room-Komplex"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im ECHO-Raum hinter der Rezeption."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vier Sicherheitskonsolen reparieren: im Gift Shop gegenüber der Rezeption, im zentralen Bereich, im Lunar-Tag-Lager nach dem Schließen des Wasserventils und im Raum beim Bowling-Bereich. Danach zum ECHO-Raum zurückkehren, den freigeschalteten Code eingeben und das ECHO aktivieren."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle vier Reparaturen müssen im selben Assignment-Durchlauf abgeschlossen werden."
             }
           ]
         }
@@ -1480,8 +2241,8 @@
       "items": [
         {
           "id": "division2.collectible.field-data.mcmillan-reservoir.001-mcmillan-reservoir-01-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "McMillan Reservoir #01 – Name noch nicht öffentlich verifiziert",
-          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "name": "This Is Our Castle Now",
+          "description": "Field Data aus dem Classified Assignment „McMillan Reservoir“.",
           "details": [
             {
               "label": "Typ",
@@ -1493,19 +2254,30 @@
             },
             {
               "label": "Position",
-              "value": "1 / 5"
+              "value": "1 / 6"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Classified Assignment: McMillan Reservoir"
+            },
+            {
+              "label": "Bereich",
+              "value": "McMillan Reservoir und unterirdische Anlage"
             },
             {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem überwucherten Silo hinter dem elektrifizierten Wasser am ersten Kontrollpunkt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den ersten Generator deaktivieren, anschließend auf den Lastwagen klettern und den zweiten Generator ausschalten. Dadurch öffnet sich das Tor im Graben; dem Weg in das überwucherte Silo folgen."
             }
-          ],
-          "verificationStatus": "pending-name-verification"
+          ]
         },
         {
           "id": "division2.collectible.field-data.mcmillan-reservoir.002-mcmillan-reservoir-02-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "McMillan Reservoir #02 – Name noch nicht öffentlich verifiziert",
-          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "name": "Comfort Break",
+          "description": "Field Data aus dem Classified Assignment „McMillan Reservoir“.",
           "details": [
             {
               "label": "Typ",
@@ -1517,19 +2289,30 @@
             },
             {
               "label": "Position",
-              "value": "2 / 5"
+              "value": "2 / 6"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Classified Assignment: McMillan Reservoir"
+            },
+            {
+              "label": "Bereich",
+              "value": "McMillan Reservoir und unterirdische Anlage"
             },
             {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im Kontrollturm des Reservoirs."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Seil des Gegengewichts abschießen und in den Turm klettern. Nach dem Freilegen und Zerstören der Schwachpunkte der Funkanlage nach unten blicken, das Vorhängeschloss am Tor abschießen und anschließend hinabsteigen."
             }
-          ],
-          "verificationStatus": "pending-name-verification"
+          ]
         },
         {
           "id": "division2.collectible.field-data.mcmillan-reservoir.003-mcmillan-reservoir-03-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "McMillan Reservoir #03 – Name noch nicht öffentlich verifiziert",
-          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "name": "Stolen Valor",
+          "description": "Field Data aus dem Classified Assignment „McMillan Reservoir“.",
           "details": [
             {
               "label": "Typ",
@@ -1541,19 +2324,30 @@
             },
             {
               "label": "Position",
-              "value": "3 / 5"
+              "value": "3 / 6"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Classified Assignment: McMillan Reservoir"
+            },
+            {
+              "label": "Bereich",
+              "value": "McMillan Reservoir und unterirdische Anlage"
             },
             {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In einem kleinen Innenhof unmittelbar nach dem Geschützabschnitt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Schwachpunkt des Geschützes durch das Tor zerstören. Danach den geöffneten Weg in den Innenhof nehmen und die Treppe hinaufgehen."
             }
-          ],
-          "verificationStatus": "pending-name-verification"
+          ]
         },
         {
           "id": "division2.collectible.field-data.mcmillan-reservoir.004-mcmillan-reservoir-04-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "McMillan Reservoir #04 – Name noch nicht öffentlich verifiziert",
-          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "name": "To The Walls",
+          "description": "Field Data aus dem Classified Assignment „McMillan Reservoir“.",
           "details": [
             {
               "label": "Typ",
@@ -1565,19 +2359,34 @@
             },
             {
               "label": "Position",
-              "value": "4 / 5"
+              "value": "4 / 6"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Classified Assignment: McMillan Reservoir"
+            },
+            {
+              "label": "Bereich",
+              "value": "McMillan Reservoir und unterirdische Anlage"
             },
             {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "In Silo 28, das nach dem Abschlusskampf geöffnet werden kann."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Bosskampf das Farbrätsel mit den blauen, gelben und grünen Anzeigen lösen. Den Hebel für den Silo-28-Key betätigen, zum letzten Kampfbereich zurückkehren und das Silo öffnen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Wird in der In-Game-Liste als vierter Eintrag geführt, ist praktisch aber erst am Ende erreichbar."
             }
-          ],
-          "verificationStatus": "pending-name-verification"
+          ]
         },
         {
           "id": "division2.collectible.field-data.mcmillan-reservoir.005-mcmillan-reservoir-echo-name-noch-nicht-oeffentlich-verifiziert",
-          "name": "McMillan Reservoir ECHO – Name noch nicht öffentlich verifiziert",
-          "description": "Field Data aus der Sammlung „McMillan Reservoir“.",
+          "name": "Symbolism",
+          "description": "Field Data aus dem Classified Assignment „McMillan Reservoir“.",
           "details": [
             {
               "label": "Typ",
@@ -1589,14 +2398,60 @@
             },
             {
               "label": "Position",
-              "value": "5 / 5"
+              "value": "5 / 6"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Classified Assignment: McMillan Reservoir"
+            },
+            {
+              "label": "Bereich",
+              "value": "McMillan Reservoir und unterirdische Anlage"
             },
             {
               "label": "Fundort",
-              "value": "Im jeweiligen Classified Assignment, der Kenly-Expedition oder dem zugehörigen Spezialinhalt."
+              "value": "Im unteren Pumpenbereich hinter einem elektrifizierten Gitter."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Pump House den Pump Control 01 Key aus dem Wandkasten nehmen und das Rätsel mit den nummerierten Druckanzeigen lösen. Durch einen Spalt im Beton den gelben Stromkasten zerstören, damit das Gitter in Pump Room 1 stromlos wird, und anschließend die Leiter hinabsteigen."
             }
-          ],
-          "verificationStatus": "pending-name-verification"
+          ]
+        },
+        {
+          "id": "division2.collectible.field-data.mcmillan-reservoir.006-chasing-ghosts",
+          "name": "Chasing Ghosts",
+          "description": "Field Data aus dem Classified Assignment „McMillan Reservoir“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Field Data"
+            },
+            {
+              "label": "Sammlung",
+              "value": "McMillan Reservoir"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Classified Assignment: McMillan Reservoir"
+            },
+            {
+              "label": "Bereich",
+              "value": "McMillan Reservoir und unterirdische Anlage"
+            },
+            {
+              "label": "Fundort",
+              "value": "In der unterirdischen Anlage nach dem Absenken des Wasserspiegels."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Ventile betätigen und das Wasser ablassen. Am Bereich mit dem ECHO beziehungsweise der Plattform nicht das Seil rechts nehmen, sondern vorne über die Kante auf den tieferen Weg hinabspringen. Das Audiolog liegt entlang dieses Nebenwegs."
+            }
+          ]
         }
       ]
     }
