@@ -1,0 +1,134 @@
+{
+  "id": "comms",
+  "name": "Comms",
+  "description": "Unterteilte Comms-Sammlungen aus The Division 2. Jede Kategorie lädt nur die jeweils benötigte JSON-Datei.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "split-manifest",
+    "itemCount": 840,
+    "sourceGroupCount": 59,
+    "fileCount": 14,
+    "pendingNameVerification": 4,
+    "contentModifiedDuringSplit": false,
+    "inGameCorrections": [
+      "Manhunt: Shadow Tide -> Manhunt: Jupiter",
+      "Manhunt: End of Watch -> Manhunt: Faye Lau",
+      "Incursion: Paradise Lost -> Incursion: Meret Estate",
+      "Manhunt: Into The Dark -> 9 Einträge"
+    ]
+  },
+  "categories": [
+    {
+      "id": "coreFactionsAndInstitutions",
+      "name": "Fraktionen und Institutionen",
+      "description": "Grundlegende Comms zu Fraktionen, JTF, Division und Regierung in Washington, D.C.",
+      "file": "coreFactionsAndInstitutions.json",
+      "groupCount": 7,
+      "itemCount": 73
+    },
+    {
+      "id": "washingtonWorld",
+      "name": "Washington – Open World",
+      "description": "Comms aus den Dark Zones, kontaminierten Gebieten und Dead Drops in Washington, D.C.",
+      "file": "washingtonWorld.json",
+      "groupCount": 3,
+      "itemCount": 33
+    },
+    {
+      "id": "washingtonSettlements",
+      "name": "Washington – Siedlungen",
+      "description": "Comms aus Campus, Castle und Theater.",
+      "file": "washingtonSettlements.json",
+      "groupCount": 3,
+      "itemCount": 20
+    },
+    {
+      "id": "newYorkWorld",
+      "name": "New York – Welt und Einsätze",
+      "description": "Allgemeine New-York-Comms sowie Aufzeichnungen aus Lower Manhattan und Coney Island.",
+      "file": "newYorkWorld.json",
+      "groupCount": 3,
+      "itemCount": 32
+    },
+    {
+      "id": "washingtonProfiles",
+      "name": "Washington – Profile",
+      "description": "Charakterprofile aus der Washington-Kampagne, darunter Kelso, Ridgeway, Emeline Shaw, Henry Hayes, Odessa Sawyer und President Ellis.",
+      "file": "washingtonProfiles.json",
+      "groupCount": 6,
+      "itemCount": 55
+    },
+    {
+      "id": "specialOperations",
+      "name": "Spezialoperationen",
+      "description": "Langley Reports sowie Comms aus Pentagon, DARPA und Brenner's Orders.",
+      "file": "specialOperations.json",
+      "groupCount": 3,
+      "itemCount": 30
+    },
+    {
+      "id": "newYorkProfiles",
+      "name": "New York – Profile",
+      "description": "Charakterprofile aus Warlords of New York und den damit verbundenen Handlungssträngen.",
+      "file": "newYorkProfiles.json",
+      "groupCount": 9,
+      "itemCount": 86
+    },
+    {
+      "id": "manhuntsLegacy",
+      "name": "Manhunts – Legacy",
+      "description": "Die ersten vier Manhunts: Jupiter, Keener's Legacy, Concealed Agenda und Faye Lau.",
+      "file": "manhuntsLegacy.json",
+      "groupCount": 4,
+      "itemCount": 80
+    },
+    {
+      "id": "manhuntsReconstruction",
+      "name": "Manhunts – Wiederaufbau",
+      "description": "Hidden Alliance, Price of Power, Reign of Fire und Broken Wings.",
+      "file": "manhuntsReconstruction.json",
+      "groupCount": 4,
+      "itemCount": 87
+    },
+    {
+      "id": "manhuntsRogueNetwork",
+      "name": "Manhunts – Rogue Network",
+      "description": "Puppeteers, Vanguard und First Rogue.",
+      "file": "manhuntsRogueNetwork.json",
+      "groupCount": 3,
+      "itemCount": 88
+    },
+    {
+      "id": "manhuntsCurrent",
+      "name": "Manhunts – Aktuelle Handlungsstränge",
+      "description": "Shades of Red, Burden of Truth, Crossroads, The Pact, Mutiny, Rise Up und Into The Dark.",
+      "file": "manhuntsCurrent.json",
+      "groupCount": 7,
+      "itemCount": 101
+    },
+    {
+      "id": "incursionAndBTSU",
+      "name": "Incursion und BTSU",
+      "description": "Comms aus Meret Estate und von BTSU Team 9.",
+      "file": "incursionAndBTSU.json",
+      "groupCount": 2,
+      "itemCount": 15
+    },
+    {
+      "id": "battleForBrooklyn",
+      "name": "Battle for Brooklyn",
+      "description": "Brooklyn-Comms aus den Gruppen Bridge, Friendly, History und Hostiles.",
+      "file": "battleForBrooklyn.json",
+      "groupCount": 4,
+      "itemCount": 35
+    },
+    {
+      "id": "descent",
+      "name": "Descent",
+      "description": "Alle Comms aus dem Spielmodus Descent.",
+      "file": "descent.json",
+      "groupCount": 1,
+      "itemCount": 105
+    }
+  ]
+}
