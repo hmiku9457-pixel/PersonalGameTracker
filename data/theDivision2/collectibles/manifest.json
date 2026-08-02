@@ -14,8 +14,8 @@
 			"id": "comms",
 			"name": "Comms",
 			"description": "Collectibles",
-			"type": "category",
-			"file": "comms.json"
+			"type": "manifest",
+			"file": "comms/manifest.json"
 		},
 		{
 			"id": "artifacts",
