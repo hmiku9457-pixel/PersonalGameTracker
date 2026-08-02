@@ -2,14 +2,16 @@
   "id": "comms-washingtonSettlements",
   "name": "Comms – Washington – Siedlungen",
   "description": "Comms aus Campus, Castle und Theater.",
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-08-02",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 20,
     "groupCount": 3,
     "pendingNameVerification": 0,
     "splitSource": "comms.json",
-    "contentModifiedDuringSplit": false
+    "contentModifiedDuringSplit": true,
+    "locationDetailsCompleted": 20,
+    "note": "Jeder Eintrag enthält nun Fundort beziehungsweise Freischaltquelle und ein konkretes Vorgehen. Bei Manhunt-, Descent-, Retaliation- und Incursion-Belohnungen existiert kein frei aufnehmbares Open-World-Gerät; dort wird die erforderliche Aktivität beschrieben."
   },
   "groups": [
     {
@@ -19,7 +21,7 @@
         {
           "id": "division2.collectible.comms.campus.001-quarantine-staff",
           "name": "Quarantine Staff",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Quarantine Staff“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -34,15 +36,43 @@
               "value": "1 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In beziehungsweise unmittelbar an der Campus-Siedlung im medizinischen Bereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In der Siedlung den Quarantäne-/Sanitätsbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.002-food-scarcity",
           "name": "Food Scarcity",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Food Scarcity“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -57,15 +87,43 @@
               "value": "2 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Versorgungs-/Lebensmittelbereich der Siedlung."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Lager- und Küchenecke innerhalb des Campus absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.003-building-community",
           "name": "Building Community",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Building Community“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -80,15 +138,43 @@
               "value": "3 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im zentralen Gemeinschaftsbereich des Campus."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Schnellreisepunkt zum inneren Platz gehen und die Arbeitsplätze prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.004-help-wanted",
           "name": "Help Wanted",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Help Wanted“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -103,15 +189,43 @@
               "value": "4 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Werkstatt-/Rekrutierungsbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Handwerker- und Rekrutierungsbereich der Siedlung absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.005-mystery-meat",
           "name": "Mystery Meat",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Mystery Meat“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -126,15 +240,43 @@
               "value": "5 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Küchen-/Essensbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Kochstationen und Tische innerhalb des Campus prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.006-grief-counseling",
           "name": "Grief Counseling",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Grief Counseling“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -149,15 +291,43 @@
               "value": "6 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im ruhigen Wohn-/Beratungsbereich der Siedlung."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den oberen beziehungsweise seitlichen Wohnbereich des Campus absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.007-leader-elected",
           "name": "Leader Elected",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Leader Elected“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -172,15 +342,43 @@
               "value": "7 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Verwaltungsbereich der Siedlung."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Leitungs-/Besprechungsbereich gehen und die Tische prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.campus.008-garden-tour",
           "name": "Garden Tour",
-          "description": "Comms aus der Sammlung „Campus“.",
+          "description": "Comm „Garden Tour“ aus der Sammlung „Campus“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -195,8 +393,36 @@
               "value": "8 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Garten- beziehungsweise Pflanzenbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Gartenwege und Gewächshausbereiche der Siedlung ablaufen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -209,7 +435,7 @@
         {
           "id": "division2.collectible.comms.castle.001-castle-treaty",
           "name": "Castle Treaty",
-          "description": "Comms aus der Sammlung „Castle“.",
+          "description": "Comm „Castle Treaty“ aus der Sammlung „Castle“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -224,15 +450,43 @@
               "value": "1 / 4"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Castle Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im beziehungsweise unmittelbar am Castle-Gelände."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das wiederaufgebaute Castle betreten und den zentralen Besprechungsbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.castle.002-questioning-authority",
           "name": "Questioning Authority",
-          "description": "Comms aus der Sammlung „Castle“.",
+          "description": "Comm „Questioning Authority“ aus der Sammlung „Castle“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -247,15 +501,43 @@
               "value": "2 / 4"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Castle Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Verwaltungs-/Besprechungsbereich des Castle."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Innenräume und Tische des Leitungsbereichs prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.castle.003-paying-tribute",
           "name": "Paying Tribute",
-          "description": "Comms aus der Sammlung „Castle“.",
+          "description": "Comm „Paying Tribute“ aus der Sammlung „Castle“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -270,15 +552,43 @@
               "value": "3 / 4"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Castle Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Gedenkbereich des Castle."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Gedenkstätte und angrenzenden Ablagen absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.castle.004-keeping-watch",
           "name": "Keeping Watch",
-          "description": "Comms aus der Sammlung „Castle“.",
+          "description": "Comm „Keeping Watch“ aus der Sammlung „Castle“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -293,8 +603,36 @@
               "value": "4 / 4"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest / East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Jefferson Plaza"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem Anhänger in einem Durchgang nordöstlich von Jefferson Plaza."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im Durchgang das Seil auf der rechten Seite benutzen, nach unten gehen und den Trailer betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -307,7 +645,7 @@
         {
           "id": "division2.collectible.comms.theater.001-settling-down",
           "name": "Settling Down",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Settling Down“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -322,15 +660,43 @@
               "value": "1 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Theater Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Erdgeschoss eines Gebäudes; die SHD-Tech-Cache-Seitenmission führt in denselben Bereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Dem SHD-Tech-Cache-Marker folgen und das zugängliche Erdgeschoss absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.002-firearms-training",
           "name": "Firearms Training",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Firearms Training“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -345,15 +711,43 @@
               "value": "2 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Federal Triangle"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Navy Plaza"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nördlich von Navy Plaza nahe einem Lebensmittel-Ressourcenpunkt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Kontrollpunkt nach Norden zum Ressourcenmarker laufen und den Trainingsbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.003-strategy",
           "name": "Strategy",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Strategy“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -368,15 +762,43 @@
               "value": "3 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Federal Triangle"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Federal Triangle Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einer Plattform an einer Straßensperre im östlichen Federal Triangle."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Barrikade erklimmen und die obere Plattform prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.004-new-crew",
           "name": "New Crew",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „New Crew“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -391,15 +813,43 @@
               "value": "4 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In der Metro unterhalb eines großen Metro-Schilds."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die breite Treppe am Metro-Schild hinuntergehen und dem Tunnel folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.005-hyena-interrogation",
           "name": "Hyena Interrogation",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Hyena Interrogation“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -414,15 +864,43 @@
               "value": "5 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Gasse hinter dem Lebensmittelpunkt Admiral Burger."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Hinter den Laden gehen und die Gasse absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.006-peter-problems",
           "name": "Peter Problems",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Peter Problems“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -437,15 +915,43 @@
               "value": "6 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Gebäude, das über eine östliche Garage betreten wird."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durch die Garage gehen und dem Innenweg bis ganz nach hinten folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.007-addiction",
           "name": "Addiction",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Addiction“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -460,15 +966,43 @@
               "value": "7 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Ebenerdig in einer Gasse."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den markierten Gebäudeblock umrunden und die offene Gasse betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.theater.008-sustainable-power",
           "name": "Sustainable Power",
-          "description": "Comms aus der Sammlung „Theater“.",
+          "description": "Comm „Sustainable Power“ aus der Sammlung „Theater“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -483,8 +1017,36 @@
               "value": "8 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Judiciary Square"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Hotel Infirmary"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südöstlich des Kontrollpunkts Hotel Infirmary."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Kontrollpunkt verlassen und den südöstlichen Straßenblock absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }

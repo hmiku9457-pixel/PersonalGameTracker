@@ -2,14 +2,16 @@
   "id": "comms-newYorkWorld",
   "name": "Comms – New York – Welt und Einsätze",
   "description": "Allgemeine New-York-Comms sowie Aufzeichnungen aus Lower Manhattan und Coney Island.",
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-08-02",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 32,
     "groupCount": 3,
     "pendingNameVerification": 0,
     "splitSource": "comms.json",
-    "contentModifiedDuringSplit": false
+    "contentModifiedDuringSplit": true,
+    "locationDetailsCompleted": 32,
+    "note": "Jeder Eintrag enthält nun Fundort beziehungsweise Freischaltquelle und ein konkretes Vorgehen. Bei Manhunt-, Descent-, Retaliation- und Incursion-Belohnungen existiert kein frei aufnehmbares Open-World-Gerät; dort wird die erforderliche Aktivität beschrieben."
   },
   "groups": [
     {
@@ -19,7 +21,7 @@
         {
           "id": "division2.collectible.comms.new-york.001-second-wave",
           "name": "Second Wave",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Second Wave“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -34,15 +36,43 @@
               "value": "1 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Flooded Levee"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einer Containerstruktur südöstlich des Kontrollpunkts."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Container erklimmen und bis zur obersten Ebene steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.002-nyc-crew",
           "name": "NYC Crew",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „NYC Crew“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -57,15 +87,43 @@
               "value": "2 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Gasse bei einem SHD Cache hinter einem Drahtzaun."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Über den Zaun klettern, den Schlossverschluss abschießen und das Gerät neben dem SHD Cache aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.003-update-cleaners",
           "name": "Update: Cleaners",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Update: Cleaners“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -80,15 +138,43 @@
               "value": "3 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Constitution Hall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einer Terrasse eines Gebäudes."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durch ein Erdgeschossfenster einsteigen, die Türen betätigen, um den Feueralarm auszulösen, die Treppe hochgehen und durch das Flurfenster auf die Terrasse steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.004-update-virus",
           "name": "Update: Virus",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Update: Virus“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -103,15 +189,43 @@
               "value": "4 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Crash Site"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Kinderbereich des Botanischen Gartens südlich von Crash Site."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Botanical Garden betreten und zum Children’s Area gehen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.005-update-keener",
           "name": "Update: Keener",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Update: Keener“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -126,15 +240,43 @@
               "value": "5 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Judiciary Square"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Judiciary Square Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am nordöstlichen Gebietsrand nahe einem SHD-Cache-Ort."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum SHD-Cache-Marker am nordöstlichen Rand laufen und den angrenzenden Bereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.006-turning-point",
           "name": "Turning Point",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Turning Point“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -149,15 +291,43 @@
               "value": "6 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East / Judiciary Square"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "District Union Arena"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Gebäude an der Grenze zu Judiciary Square nahe der Stronghold."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den offenen Eingang benutzen und den Innenraum absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.007-update-lmb",
           "name": "Update: LMB",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Update: LMB“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -172,15 +342,43 @@
               "value": "7 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West End"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "West End Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Apartment über einem kleinen Dach."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Leiter an der Hauptstraße hochklettern, aufs kleine Dach wechseln und das Apartment betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.new-york.008-update-rikers",
           "name": "Update: Rikers",
-          "description": "Comms aus der Sammlung „New York“.",
+          "description": "Comm „Update: Rikers“ aus der Sammlung „New York“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -195,8 +393,36 @@
               "value": "8 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem hohen Gebäude, erreichbar über Plattform, Seil und Lüftungsschacht."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In die Gasse gehen, an Leiche und Kiste hochklettern, das Seil benutzen und durch den Lüftungsschacht zum Comm gelangen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -209,7 +435,7 @@
         {
           "id": "division2.collectible.comms.lower-manhattan.001-closed-off",
           "name": "Closed Off",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Closed Off“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -224,15 +450,43 @@
               "value": "1 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Civic Center"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Gate"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südlich des Kontrollpunkts The Gate in einem abgesperrten Straßenbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Gate schnellreisen, den Kontrollpunkt nach Süden verlassen und den abgesperrten Straßenabschnitt absuchen. Das Audiogerät liegt ebenerdig hinter den Barrikaden."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.002-fallen-soldiers",
           "name": "Fallen Soldiers",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Fallen Soldiers“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -247,15 +501,43 @@
               "value": "2 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Financial District"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Food Bank"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An der Pearl Street hinter einem verschlossenen Gitter."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Von Food Bank in Richtung Pearl Street laufen. Durch das Gitter den gelben Sicherungskasten beziehungsweise Türverschluss abschießen, den geöffneten Bereich betreten und das Gerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.003-red-rings",
           "name": "Red Rings",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Red Rings“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -270,15 +552,47 @@
               "value": "3 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Financial District"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: Wall Street"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Wall Street"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission Wall Street verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Ganz am Anfang der Mission Wall Street auf einer erhöhten Ebene."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Wall Street starten. Unmittelbar nach dem Missionsbeginn links die Leiter nehmen und den oberen Laufweg absuchen, bevor du dem Hauptweg folgst."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; Wall Street wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.004-overheard-whispering",
           "name": "Overheard Whispering",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Overheard Whispering“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -293,15 +607,43 @@
               "value": "4 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Financial District"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Pier 26"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An der South Street westlich von Pier 26."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Pier 26 schnellreisen, westlich entlang der South Street gehen und den Straßenrand beziehungsweise kleinen Aufenthaltsbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.005-promised-land",
           "name": "Promised Land",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Promised Land“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -316,15 +658,43 @@
               "value": "5 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Battery Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Christmas Market"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südlich des Christmas Market auf einem erhöhten Gebäudeteil."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Christmas Market nach Süden laufen, die Leiter am Gebäude hochsteigen, um die Ecke gehen und über die Lüftungsgeräte zum Audiogerät klettern."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.006-night-crossing",
           "name": "Night Crossing",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Night Crossing“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -339,15 +709,43 @@
               "value": "6 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Battery Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Christmas Market"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Westlich des Christmas Market nahe der Uferstraße."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Christmas Market nach Westen in Richtung Wasser laufen und den frei zugänglichen Straßen-/Uferbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.007-hard-right",
           "name": "Hard Right",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Hard Right“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -362,15 +760,43 @@
               "value": "7 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Battery Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Oasis Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Westlich von Oasis Park auf einem Boot beziehungsweise der angrenzenden erhöhten Fläche."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Oasis Park schnellreisen, nach Westen zum Boot gehen, auf das Boot klettern und von dort den erhöhten Fundort erreichen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.008-new-home",
           "name": "New Home",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „New Home“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -385,15 +811,43 @@
               "value": "8 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Civic Center"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Gate"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südlich des Kontrollpunkts The Gate im offenen Straßenblock."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Gate nach Süden verlassen und den angrenzenden Häuserblock absuchen; das Gerät liegt frei zugänglich auf Straßenniveau."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.009-trouble-brewing",
           "name": "Trouble Brewing",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Trouble Brewing“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -408,15 +862,43 @@
               "value": "9 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Civic Center"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Gate"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An der Canal Street westlich von The Gate."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Kontrollpunkt westlich zur Canal Street gehen und den Straßenrand sowie die offenen Ladeneingänge absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.010-terrible-violence",
           "name": "Terrible Violence",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Terrible Violence“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -431,15 +913,43 @@
               "value": "10 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Civic Center"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Columbus Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nördlich des Columbus Park."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Columbus Park laufen und den nördlichen Rand beziehungsweise den angrenzenden Straßenabschnitt absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.011-the-stranger",
           "name": "The Stranger",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „The Stranger“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -454,15 +964,43 @@
               "value": "11 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Civic Center"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Columbus Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Östlich des Columbus Park."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Park nach Osten in den nächsten Straßenblock gehen und dem ISAC-Signal bis zum offen liegenden Gerät folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.012-who-cares",
           "name": "Who Cares",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Who Cares“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -477,15 +1015,43 @@
               "value": "12 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Civic Center"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Gate"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An der Worth Street."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Von The Gate zur Worth Street laufen und die dortige Gasse beziehungsweise den Straßenrand absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.013-somewhere-safe",
           "name": "Somewhere Safe",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Somewhere Safe“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -500,15 +1066,43 @@
               "value": "13 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Two Bridges"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Brooklyn Bridge"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An der Avenue of the Finest nördlich des Kontrollpunkts Brooklyn Bridge."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Brooklyn Bridge schnellreisen und nördlich zur Avenue of the Finest gehen; das Gerät liegt im frei zugänglichen Außenbereich."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.014-decent-people",
           "name": "Decent People",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Decent People“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -523,15 +1117,43 @@
               "value": "14 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Two Bridges"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Brooklyn Bridge"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An der Doyers Street nördlich des Kontrollpunkts Brooklyn Bridge."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Kontrollpunkt nach Norden zur Doyers Street gehen und den engen Straßen-/Gassenbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.lower-manhattan.015-combat-planning",
           "name": "Combat Planning",
-          "description": "Comms aus der Sammlung „Lower Manhattan“.",
+          "description": "Comm „Combat Planning“ aus der Sammlung „Lower Manhattan“.",
           "details": [
             {
               "label": "Typ",
@@ -546,8 +1168,36 @@
               "value": "15 / 15"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Financial District"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Celebration Hotel"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Gasse an der Kreuzung Gold Street und Maiden Lane."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Celebration Hotel zur Kreuzung Gold Street/Maiden Lane laufen, in die Seitengasse gehen und das offen liegende Audiogerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -560,7 +1210,7 @@
         {
           "id": "division2.collectible.comms.coney-island.001-collaboration",
           "name": "Collaboration",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Collaboration“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -575,15 +1225,43 @@
               "value": "1 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einer Kiste neben der Nachfüllkiste kurz vor dem Ausgang zum Boardwalk auf dem Weg zu Dolores Jones."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Dem Missionsweg folgen und vor dem Boardwalk-Ausgang die Kisten neben der Ammo Crate prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.002-new-friends",
           "name": "New Friends",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „New Friends“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -598,15 +1276,43 @@
               "value": "2 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Bowling Alley Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Safe House auf einem umgestürzten Verkaufsautomaten beim Ostausgang."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Bowling Alley Safe House schnellreisen und den umgestürzten Automaten am Ostausgang prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.003-trade-agreement",
           "name": "Trade Agreement",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Trade Agreement“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -621,15 +1327,43 @@
               "value": "3 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im zweiten Arcade-Raum auf einem Sofa neben den Doppeltüren zu den Bumper Cars."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durch die Arcade gehen und im zweiten Raum das Sofa an den Doppeltüren prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.004-are-you-threatening-me",
           "name": "Are You Threatening Me",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Are You Threatening Me“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -644,15 +1378,43 @@
               "value": "4 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nach dem ersten Tor, das von Mörsern beschossen wird, rechts auf Kisten."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Tor passieren, sofort rechts halten und das Gerät auf den Kisten aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.005-speculation",
           "name": "Speculation",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Speculation“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -667,15 +1429,43 @@
               "value": "5 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nach Übernahme der Mörser am Boardwalk-Checkpoint, rechts auf einer Kiste."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Mörsersequenz abschließen, den Boardwalk hinuntergehen und am Checkpoint rechts suchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.006-set-up",
           "name": "Set Up",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Set Up“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -690,15 +1480,43 @@
               "value": "6 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem begehbaren beigefarbenen Shipping Container nach dem Ende des Boardwalks."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Ende des Boardwalks hinabspringen, rechts in den Container gehen und ihn vollständig durchqueren."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.007-ashes-to-ashes",
           "name": "Ashes to Ashes",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Ashes to Ashes“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -713,15 +1531,43 @@
               "value": "7 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem Driver-Arcade-Automaten im Cleaner-Bereich vor der alten Achterbahn."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor der Roller-Coaster-Sequenz die Arcade-Automaten im Cleaner-Bereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.008-as-far-as-you-can-throw-him",
           "name": "As Far As You Can Throw Him",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „As Far As You Can Throw Him“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -736,15 +1582,43 @@
               "value": "8 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem Picknicktisch vor der Treppe hinunter zum Ballpark."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Abstieg anhalten und die Picknicktische prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.coney-island.009-practice-makes-perfect",
           "name": "Practice Makes Perfect",
-          "description": "Comms aus der Sammlung „Coney Island“.",
+          "description": "Comm „Practice Makes Perfect“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -759,8 +1633,36 @@
               "value": "9 / 9"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Trailer gegenüber dem ersten Geschütz auf dem Weg zum Ballpark."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Beim ersten Turret den gegenüberliegenden Trailer betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }

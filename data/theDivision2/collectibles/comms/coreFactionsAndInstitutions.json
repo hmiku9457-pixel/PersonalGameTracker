@@ -2,14 +2,16 @@
   "id": "comms-coreFactionsAndInstitutions",
   "name": "Comms – Fraktionen und Institutionen",
   "description": "Grundlegende Comms zu Fraktionen, JTF, Division und Regierung in Washington, D.C.",
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-08-02",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 73,
     "groupCount": 7,
     "pendingNameVerification": 0,
     "splitSource": "comms.json",
-    "contentModifiedDuringSplit": false
+    "contentModifiedDuringSplit": true,
+    "locationDetailsCompleted": 73,
+    "note": "Jeder Eintrag enthält nun Fundort beziehungsweise Freischaltquelle und ein konkretes Vorgehen. Bei Manhunt-, Descent-, Retaliation- und Incursion-Belohnungen existiert kein frei aufnehmbares Open-World-Gerät; dort wird die erforderliche Aktivität beschrieben."
   },
   "groups": [
     {
@@ -19,7 +21,7 @@
         {
           "id": "division2.collectible.comms.hyenas.001-pi-ata-party",
           "name": "Piñata Party",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Piñata Party“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -34,15 +36,43 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House / Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Theater Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An einem kleinen Straßenstand mit Stuhl nahe der südöstlichen Kartengrenze des White-House-Gebiets in Richtung Theater."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Theater nach Nordwesten in Richtung White House laufen. Den kleinen Stand am Kartenrand absuchen; das Gerät liegt offen bei einem Stuhl."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.002-heavy-load",
           "name": "Heavy Load",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Heavy Load“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -57,15 +87,43 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nordöstlich des Safe Houses bei einem Wasser-Ressourcenpunkt, oben auf einer Plattform."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Wasser-Ressourcenpunkt laufen und die seitliche Treppe auf die erhöhte Plattform nehmen. Das Comm liegt oben offen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.003-special-shipment",
           "name": "Special Shipment",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Special Shipment“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -80,15 +138,43 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "District Union Arena"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Garage nahe dem Eingang zur District Union Arena."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Außenbereich vor der Stronghold absuchen und in die offene Garage gehen. Das Audiogerät liegt im Garageninneren."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.004-assets",
           "name": "Assets",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Assets“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -103,15 +189,47 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Gasse; über einen abgestellten Lkw auf ein niedriges Dach klettern."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Lkw in der Gasse besteigen, auf das kleine Dach wechseln und das Comm aufnehmen. Die Aufnahme wird nach Abschluss von Bank Headquarters vollständig entschlüsselt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Für den entschlüsselten Inhalt Bank Headquarters abschließen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.005-missing-prisoners",
           "name": "Missing Prisoners",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Missing Prisoners“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -126,15 +244,43 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf der Straße vor einem Müllcontainer."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Safe House zum markierten Straßenblock laufen. Das Gerät liegt ebenerdig direkt vor dem Dumpster."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.006-first-council-meeting",
           "name": "First Council Meeting",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „First Council Meeting“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -149,15 +295,43 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Navy Plaza"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Verbindungskorridor zwischen Navy Plaza und dem Versorgungslager."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Navy Plaza sichern beziehungsweise betreten und dem inneren Korridor zum Supply Room folgen. Das Gerät liegt am Weg."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.007-restructuring",
           "name": "Restructuring",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Restructuring“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -172,15 +346,43 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Judiciary Square"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Judiciary Square Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer verschlossenen, eingezäunten Nische in einer Gasse."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In die Gasse gehen und den Vorhängeschloss-/Türverschluss durch den Zaun abschießen. Danach den Zaunbereich betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.008-runners",
           "name": "Runners",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Runners“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -195,15 +397,43 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Fallen Cranes"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Oben auf einem Straßengerüst."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die seitlichen Kisten beziehungsweise Leitern des Gerüsts benutzen und bis zur obersten Ebene klettern. Das Comm liegt auf dem Boden."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.009-spice-instructions",
           "name": "Spice Instructions",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Spice Instructions“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -218,15 +448,43 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Judiciary Square"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Judiciary Square Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem Dach über einer Gasse mit abgestelltem Lkw."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf den Lkw klettern, die Leiter beziehungsweise gelben Klettermarkierungen nutzen und auf das Dach steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.hyenas.010-economics",
           "name": "Economics",
-          "description": "Comms aus der Sammlung „Hyenas“.",
+          "description": "Comm „Economics“ aus der Sammlung „Hyenas“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -241,8 +499,36 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Erdgeschoss eines Gebäudes neben einem Verkaufsautomaten."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den offenen Gebäudeeingang neben dem Automaten benutzen und den Innenraum absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -255,7 +541,7 @@
         {
           "id": "division2.collectible.comms.true-sons.001-relocation-order",
           "name": "Relocation Order",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Relocation Order“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -270,15 +556,43 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Solar Farm"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Befestigungszelt am Kontrollpunkt Solar Farm."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Solar Farm sichern und die Zelte innerhalb des Kontrollpunkts durchsuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.002-roosevelt-supplies",
           "name": "Roosevelt Supplies",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Roosevelt Supplies“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -293,15 +607,43 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Sleeping Giant"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Westlich des Kontrollpunkts Sleeping Giant in einem offenen Außenbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Sleeping Giant verlassen und nach Westen laufen; das Gerät liegt ebenerdig im markierten Bereich."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.003-ridgeway-sentencing",
           "name": "Ridgeway Sentencing",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Ridgeway Sentencing“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -316,15 +658,43 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Solar Farm"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Östlich von Solar Farm und westlich eines Komponenten-Ressourcenpunkts."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Von Solar Farm nach Osten zum Ressourcenpunkt laufen und den Bereich zwischen beiden Markern absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.004-negotiations",
           "name": "Negotiations",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Negotiations“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -339,15 +709,43 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Federal Triangle"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Federal Triangle Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südlich des Safe Houses auf einem abgestellten Auto."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Safe House nach Süden verlassen und die Fahrzeuge am Straßenrand prüfen; das Gerät liegt auf einem Autodach."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.005-weaponized-dc-62",
           "name": "Weaponized DC-62",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Weaponized DC-62“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -362,15 +760,43 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Choke"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südlich des Kontrollpunkts The Choke in einem offenen Straßen-/Hofbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Choke nach Süden verlassen und dem ISAC-Signal in den nächsten Gebäudeblock folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.006-the-castle",
           "name": "The Castle",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „The Castle“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -385,15 +811,43 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Castle Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf dem Friedhof zwischen 12th St Expressway und Jefferson Drive SW."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Castle nach Westen beziehungsweise Nordwesten zum Friedhof laufen und die Grab-/Mauerbereiche absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.007-death-and-taxes",
           "name": "Death and Taxes",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Death and Taxes“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -408,15 +862,43 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "East Mall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Östlich der nördlichen kontaminierten Zone in einem frei zugänglichen Außenbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Safe House zur nördlichen Contaminated Area laufen und den östlich angrenzenden Block absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.008-fortifications",
           "name": "Fortifications",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Fortifications“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -431,15 +913,43 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Metro Ruins"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im zentralen Park zwischen Metro Ruins und The Sinkhole, nördlich des Castle."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Metro-Ruins-Kontrollpunkt durch den Park in Richtung The Sinkhole laufen. Das Gerät liegt im befestigten Parkbereich."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.009-close-encounter",
           "name": "Close Encounter",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Close Encounter“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -454,15 +964,43 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "East Mall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem Spielplatz nördlich des Safe Houses."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Safe House nach Norden verlassen und den kleinen Spielplatz absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.true-sons.010-acceptable-losses",
           "name": "Acceptable Losses",
-          "description": "Comms aus der Sammlung „True Sons“.",
+          "description": "Comm „Acceptable Losses“ aus der Sammlung „True Sons“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -477,8 +1015,40 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "No Hope Hotel"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Gebäude westlich von No Hope Hotel zwischen 7th St SW und Virginia Avenue."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Gebäudeblock betreten und dem Zugang aus der SHD-Tech-Beacon-Seitenmission folgen. Innen das Comm aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Die Seitenmission SHD Tech Beacon erleichtert beziehungsweise öffnet den Zugang."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -491,7 +1061,7 @@
         {
           "id": "division2.collectible.comms.outcasts.001-cistern",
           "name": "Cistern",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Cistern“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -506,15 +1076,43 @@
               "value": "1 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südöstlich des Komponenten-Ressourcenpunkts, oben auf einer Plattform."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die seitliche Treppe beziehungsweise Kletterroute auf die Plattform nehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.002-message-for-henry",
           "name": "Message for Henry",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Message for Henry“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -529,15 +1127,43 @@
               "value": "2 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In der Gasse eines südöstlichen Gebäudekomplexes."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Campus nach Südosten laufen und die innere Gasse des Blocks absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.003-keeping-survivors",
           "name": "Keeping Survivors",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Keeping Survivors“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -552,15 +1178,43 @@
               "value": "3 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Constitution Hall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nördlich des Gebiets hinter einem verriegelten Gitter in einem Gebäude."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Leiter zum oberen Zugang nehmen, den Verschluss am Gitter abschießen und durch das Fenster in den Raum steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.004-rations",
           "name": "Rations",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Rations“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -575,15 +1229,43 @@
               "value": "4 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Foggy Bottom Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am Erdgeschoss eines runden Gebäudes nördlich des Safe Houses."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das runde Gebäude umrunden; das Gerät liegt außen beziehungsweise im offenen Erdgeschoss."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.005-plotting",
           "name": "Plotting",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Plotting“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -598,15 +1280,43 @@
               "value": "5 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Roosevelt Island"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Unter der Brücke auf dem Weg zur Roosevelt-Island-Stronghold."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Dem Zufahrtsweg zur Stronghold folgen und unter der Brückenkonstruktion suchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.006-true-son-captured",
           "name": "True Son Captured",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „True Son Captured“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -621,15 +1331,43 @@
               "value": "6 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West End"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Outcast Work Camp"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im ersten Gebäudeteil der Seitenmission Outcast Work Camp."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Seitenmission starten, die Treppe hochgehen und über den markierten Kletterpunkt in den ersten Stock steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.007-complicit",
           "name": "Complicit",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Complicit“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -644,15 +1382,43 @@
               "value": "7 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Constitution Hall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nordwestlich des Safe Houses in einem kleinen Park, oben auf einer Gerüst-/Dachkonstruktion."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Gerüst im Park erklimmen und bis auf die oberste Plattform steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.008-asymptomatic",
           "name": "Asymptomatic",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Asymptomatic“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -667,15 +1433,43 @@
               "value": "8 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Constitution Hall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Constitution Hall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einer Steinbank an einer Straße."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Safe House dem Straßenverlauf folgen und die Steinbänke am Gehweg prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.009-jtf-interrogation",
           "name": "JTF Interrogation",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „JTF Interrogation“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -690,15 +1484,43 @@
               "value": "9 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem erhöhten Gebäudebereich, erreichbar über einen Lkw."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf den Lkw und von dort in beziehungsweise auf das Gebäude klettern."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.010-condemnation",
           "name": "Condemnation",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Condemnation“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -713,15 +1535,43 @@
               "value": "10 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem kleinen Park nördlich des Campus."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Campus nach Norden verlassen und den Parkbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.011-emelines-end",
           "name": "Emeline's End",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Emeline's End“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -736,15 +1586,43 @@
               "value": "11 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Lincoln Memorial"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südwestlich des Lincoln Memorial in einem offenen Außenbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Lincoln Memorial nach Südwesten laufen und dem ISAC-Signal folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.outcasts.012-humanity",
           "name": "Humanity",
-          "description": "Comms aus der Sammlung „Outcasts“.",
+          "description": "Comm „Humanity“ aus der Sammlung „Outcasts“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -759,8 +1637,36 @@
               "value": "12 / 12"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Lincoln Memorial"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im westlichen Teil von West Potomac bei gestapelten Quarantäneboxen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Container-/Quarantänezone aufsuchen und zwischen den Boxen suchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -773,7 +1679,7 @@
         {
           "id": "division2.collectible.comms.black-tusk.001-puppeteers",
           "name": "Puppeteers",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Puppeteers“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -788,15 +1694,43 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Southwest Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem eingezäunten Spielplatz."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Zaunbereich betreten beziehungsweise den offenen Zugang nutzen und den Spielplatz absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.002-secret-service",
           "name": "Secret Service",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Secret Service“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -811,15 +1745,47 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Rayburn House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Rayburn-House-Gebäude."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die zugehörige Seitenmission spielen, damit das Gebäude zugänglich ist, und dem Missionsweg bis zum Comm folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Ohne die Seitenmission ist der Innenbereich nicht zuverlässig zugänglich."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.003-taking-dc",
           "name": "Taking D.C.",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Taking D.C.“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -834,15 +1800,43 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Solar Farm"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Gebäude nordöstlich von Solar Farm, im Obergeschoss."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Über die offene Kletterroute in das Gebäude gelangen und die Treppe nach oben nehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.004-new-orders",
           "name": "New Orders",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „New Orders“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -857,15 +1851,43 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Tidal Basin"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im westlichen West Potomac nahe dem Zugang zu Tidal Basin."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Stronghold-Eingang den westlich angrenzenden Außenbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.005-paperwork",
           "name": "Paperwork",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Paperwork“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -880,15 +1902,43 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown West"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Campus Settlement"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Gebäude, das von der Südseite betreten wird, am Ende eines Korridors."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den südlichen Eingang nehmen und dem Flur bis zum hinteren Raum folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.006-shd-network",
           "name": "SHD Network",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „SHD Network“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -903,15 +1953,43 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Federal Triangle"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Federal Triangle Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im nordwestlichen Federal Triangle nahe der Grenze zum White-House-Gebiet."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Safe House nach Nordwesten laufen und den Gebäudeblock am Gebietsrand absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.007-antiviral",
           "name": "Antiviral",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Antiviral“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -926,15 +2004,43 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Washington Monument"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem unterirdischen Bereich, erreichbar über Außentreppen in die Kanalisation."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Außentreppe nach unten nehmen und dem kurzen Tunnel bis zum Audiogerät folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.008-progress-report",
           "name": "Progress Report",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Progress Report“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -949,15 +2055,43 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Washington Monument"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Untergeschoss eines Hauses mit außenliegender Kellertreppe."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Außentreppe hinuntergehen und den Kellerraum betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.009-tactics",
           "name": "Tactics",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „Tactics“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -972,15 +2106,43 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im nördlichen Autotunnel hinter einem eingezäunten Bereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Tunnel betreten, außen am Zaun den Türverschluss abschießen und den Bereich öffnen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.black-tusk.010-dc-briefing",
           "name": "D.C. Briefing",
-          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "description": "Comm „D.C. Briefing“ aus der Sammlung „Black Tusk“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -995,8 +2157,36 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Southwest Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem kleinen, ummauerten Balkon im Erdgeschoss."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Gebäudeblock umrunden und den niedrigen Balkon über den offenen Zugang betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -1009,7 +2199,7 @@
         {
           "id": "division2.collectible.comms.jtf.001-ortega-deployed",
           "name": "Ortega Deployed",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „Ortega Deployed“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1024,15 +2214,43 @@
               "value": "1 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Washington Monument"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem JTF-Hilfszelt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Zeltgruppe im Park durchsuchen; das Gerät liegt offen in einem der Aid Tents."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.002-new-assignment",
           "name": "New Assignment",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „New Assignment“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1047,15 +2265,43 @@
               "value": "2 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Flooded Levee"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Innerhalb des Kontrollpunkts Flooded Levee."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Kontrollpunkt sichern und die Innenbereiche beziehungsweise Plattformen durchsuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.003-true-sons-debrief",
           "name": "True Sons Debrief",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „True Sons Debrief“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1070,15 +2316,43 @@
               "value": "3 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im runden Park südlich des White House bei einer mehrstöckigen Containerkonstruktion."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf die erste Ebene der Containerstruktur klettern und das dort liegende Gerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.004-sitrep",
           "name": "SITREP",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „SITREP“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1093,15 +2367,43 @@
               "value": "4 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Gebäude östlich des White House, im zentralen Raum."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den östlichen Eingang benutzen und im Gebäude zum Mittelraum gehen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.005-georgetown-patrol",
           "name": "Georgetown Patrol",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „Georgetown Patrol“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1116,15 +2418,43 @@
               "value": "5 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "East Mall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Garage im südwestlichen Teil des Gebiets."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Garageneingang finden und den Innenbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.006-quarantine",
           "name": "Quarantine",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „Quarantine“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1139,15 +2469,43 @@
               "value": "6 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Sleeping Giant"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Östlich von Sleeping Giant in einem offenen Straßen-/Gebäudebereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Kontrollpunkt nach Osten laufen und dem ISAC-Signal folgen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.007-roosevelt-failure",
           "name": "Roosevelt Failure",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „Roosevelt Failure“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1162,15 +2520,43 @@
               "value": "7 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Taxi Graveyard"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nordöstlich des Kontrollpunkts Taxi Graveyard."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Kontrollpunkt nach Nordosten verlassen und den nächsten Block absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.jtf.008-line-of-succession",
           "name": "Line of Succession",
-          "description": "Comms aus der Sammlung „JTF“.",
+          "description": "Comm „Line of Succession“ aus der Sammlung „JTF“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1185,8 +2571,36 @@
               "value": "8 / 8"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "East Mall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Hilfscontainer in einem Park."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Parkbereich aufsuchen und den geöffneten Aid Container betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -1199,7 +2613,7 @@
         {
           "id": "division2.collectible.comms.division.001-kelso-recruitment",
           "name": "Kelso Recruitment",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Kelso Recruitment“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1214,15 +2628,43 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Washington Monument"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf der östlichen Plattform des Kontrollpunkts Washington Monument."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Kontrollpunkt betreten und die östliche Plattform absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.002-kelsos-apartment",
           "name": "Kelso's Apartment",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Kelso's Apartment“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1237,15 +2679,43 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südwestlich des White House in einem Park, auf einem Auto."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum kleinen Park laufen und das Autodach prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.003-broad-spectrum-antiviral",
           "name": "Broad-Spectrum Antiviral",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Broad-Spectrum Antiviral“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1260,15 +2730,43 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House / Constitution Hall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In der ersten Zeltreihe südöstlich des White House."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Von der Straße in das Zeltlager gehen; das Comm liegt im ersten erreichbaren Zelt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.004-theater-recruitment",
           "name": "Theater Recruitment",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Theater Recruitment“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1283,15 +2781,43 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "East Mall Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "An einem Campingplatz nahe dem westlichen Teich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Teich umrunden und die Zelte auf der Westseite durchsuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.005-agent-awol",
           "name": "Agent AWOL",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Agent AWOL“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1306,15 +2832,43 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Foggy Bottom"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Foggy Bottom Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf beziehungsweise in einem Dachbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf das Dach klettern und von der Ostseite auf die niedrigere Ebene hinabspringen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.006-sawyers-separated",
           "name": "Sawyer's Separated",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Sawyer's Separated“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1329,15 +2883,43 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Downtown East Safe House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einer Gasse hinter einem verschlossenen Zaun."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Zaunverschluss von der Straße aus abschießen und den Bereich betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.007-sawyer-reunited",
           "name": "Sawyer Reunited",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Sawyer Reunited“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1352,15 +2934,43 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "MLK Memorial Library"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Östlich der MLK Library in einer Gasse, neben Matratzen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Schlossverschluss am Gitter abschießen und das Gerät am Boden bei den Matratzen aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.008-odessa-recruited",
           "name": "Odessa Recruited",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Odessa Recruited“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1375,15 +2985,43 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Federal Triangle"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Navy Plaza"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "In einem Apartment nördlich von Navy Plaza."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Gerüst und die Leiter an der Fassade benutzen und durch den offenen Zugang ins Apartment steigen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.009-priority-target-keener",
           "name": "Priority Target: Keener",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Priority Target: Keener“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1398,15 +3036,43 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West Potomac Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Lincoln Memorial"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem gestrandeten Boot östlich des Lincoln Memorial."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Ufer gehen und das begehbare Boot betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.division.010-priority-target-amherst-update",
           "name": "Priority Target: Amherst (Update)",
-          "description": "Comms aus der Sammlung „Division“.",
+          "description": "Comm „Priority Target: Amherst (Update)“ aus der Sammlung „Division“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1421,8 +3087,36 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Downtown East"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Fallen Cranes"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südöstlich von Fallen Cranes in einem kleinen verschlossenen Raum im Obergeschoss."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durch das bodennahe Fenster einsteigen, die Treppe hochgehen und den Türverschluss durch die Wand beziehungsweise Öffnung abschießen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }
@@ -1435,7 +3129,7 @@
         {
           "id": "division2.collectible.comms.government.001-black-friday-briefing",
           "name": "Black Friday Briefing",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Black Friday Briefing“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1450,15 +3144,43 @@
               "value": "1 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf dem Basketballplatz südlich des White House hinter einem verriegelten Tor."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Schlossverschluss am Tor abschießen und den Platz betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.002-directive-51",
           "name": "Directive 51",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Directive 51“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1473,15 +3195,43 @@
               "value": "2 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im West Wing des White House auf einem Tisch."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das White House betreten und den West-Wing-Arbeitsbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.003-border-control",
           "name": "Border Control",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Border Control“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1496,15 +3246,43 @@
               "value": "3 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf dem Schreibtisch im Oval Office."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Oval Office gehen und mit dem Gerät auf dem Schreibtisch interagieren."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.004-dc-62-trials",
           "name": "DC-62 Trials",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „DC-62 Trials“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1519,15 +3297,43 @@
               "value": "4 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "West End"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Potomac Relief Camp"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im südlichen West End nahe dem Start der Seitenmission Potomac Relief Camp."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Missionsstart laufen und den angrenzenden Außenbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.005-25th-amendment",
           "name": "25th Amendment",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „25th Amendment“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1542,15 +3348,43 @@
               "value": "5 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Außerhalb des nördlichen Eingangs des White House."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Gelände durch den Nordausgang verlassen und direkt am Eingang suchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.006-bipartisan-support",
           "name": "Bipartisan Support",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Bipartisan Support“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1565,15 +3399,43 @@
               "value": "6 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südwestlich des White House in einem kleinen Park bei Sitzgelegenheiten und Denkmal."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Park umrunden; das Gerät liegt am Boden nahe den Sitzen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.007-aides-assemble",
           "name": "Aides Assemble",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Aides Assemble“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1588,15 +3450,43 @@
               "value": "7 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Östlich des White House auf einer Gebäudetreppe neben einem Pflanzkübel."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Außentreppe hochgehen und den Pflanzkübelbereich prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.008-raven-rock",
           "name": "Raven Rock",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Raven Rock“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1611,15 +3501,43 @@
               "value": "8 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nördlich des White House in einer Gasse, auf dem Boden."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Gelände nach Norden verlassen und die schmale Gasse absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.009-un-briefing",
           "name": "UN Briefing",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „UN Briefing“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1634,15 +3552,43 @@
               "value": "9 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "DZ South Main Entrance"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Nordwestlich des Haupteingangs zur Dark Zone South."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom DZ-Eingang nach Nordwesten laufen und den Straßenblock absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.010-keener-briefing",
           "name": "Keener Briefing",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Keener Briefing“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1657,15 +3603,43 @@
               "value": "10 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Southwest"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Choke"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Südöstlich von The Choke im zweiten Stock hinter einem Gitter."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In das Gebäude gehen, die Treppe hochnehmen und den Schlossverschluss am Gitter abschießen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.011-possible-subterfuge",
           "name": "Possible Subterfuge",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Possible Subterfuge“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1680,15 +3654,43 @@
               "value": "11 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "White House"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "White House"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Auf einem Tisch neben dem West Wing Garden."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Gartenbereich des White House aufsuchen und die Tische am Rand prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.012-essential-evacuation",
           "name": "Essential Evacuation",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Essential Evacuation“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1703,15 +3705,47 @@
               "value": "12 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Medical Camp Attack"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Suchgebiet der Seitenmission Medical Camp Attack."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Seitenmission starten und während der Suche nach Komponenten den markierten Lager-/Zeltbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Am zuverlässigsten während der Seitenmission einsammeln."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.government.013-black-box",
           "name": "Black Box",
-          "description": "Comms aus der Sammlung „Government“.",
+          "description": "Comm „Black Box“ aus der Sammlung „Government“ mit konkretem Fundweg.",
           "details": [
             {
               "label": "Typ",
@@ -1726,8 +3760,36 @@
               "value": "13 / 13"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "East Mall"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Crash Site"
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Im Frachtraum des abgestürzten Flugzeugs am Kontrollpunkt Crash Site."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Kontrollpunkt betreten und durch das offene Flugzeugheck in den Cargo Hold gehen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
             }
           ]
         }

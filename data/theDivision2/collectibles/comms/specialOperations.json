@@ -2,14 +2,16 @@
   "id": "comms-specialOperations",
   "name": "Comms – Spezialoperationen",
   "description": "Langley Reports sowie Comms aus Pentagon, DARPA und Brenner's Orders.",
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-08-02",
   "dataStatus": {
     "scope": "individual-items",
     "itemCount": 30,
     "groupCount": 3,
     "pendingNameVerification": 0,
     "splitSource": "comms.json",
-    "contentModifiedDuringSplit": false
+    "contentModifiedDuringSplit": true,
+    "locationDetailsCompleted": 30,
+    "note": "Jeder Eintrag enthält nun Fundort beziehungsweise Freischaltquelle und ein konkretes Vorgehen. Bei Manhunt-, Descent-, Retaliation- und Incursion-Belohnungen existiert kein frei aufnehmbares Open-World-Gerät; dort wird die erforderliche Aktivität beschrieben."
   },
   "groups": [
     {
@@ -19,7 +21,7 @@
         {
           "id": "division2.collectible.comms.langley-reports.001-mexican-sitrep",
           "name": "Mexican Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Mexican Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -34,15 +36,51 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.002-canadian-sitrep",
           "name": "Canadian Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Canadian Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -57,15 +95,51 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.003-russian-sitrep",
           "name": "Russian Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Russian Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -80,15 +154,51 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.004-japan-sitrep",
           "name": "Japan Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Japan Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -103,15 +213,51 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.005-indian-sitrep",
           "name": "Indian Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Indian Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -126,15 +272,51 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.006-european-sitrep",
           "name": "European Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „European Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -149,15 +331,51 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.007-middle-eastern-sitrep",
           "name": "Middle Eastern Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Middle Eastern Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -172,15 +390,51 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.008-asian-sitrep",
           "name": "Asian Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „Asian Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -195,15 +449,51 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.009-south-american-sitrep",
           "name": "South American Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „South American Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -218,15 +508,51 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.langley-reports.010-african-sitrep",
           "name": "African Sitrep",
-          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "description": "Langley-Sitrep „African Sitrep“, erhältlich in der Legacy-Manhunt gegen Faye Lau.",
           "details": [
             {
               "label": "Typ",
@@ -241,8 +567,44 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Boss-Drop aus Legacy Manhunt"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Legacy Manhunt: Faye Lau"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Camp White Oak"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Legacy Manhunt: Faye Lau im Missionsmodus auswählen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Am gemeinsamen Comm-Drop-Punkt beziehungsweise von benannten Gegnern der Faye-Lau-Version von Camp White Oak."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Auf der Karte Camp White Oak auswählen und den Missionsmodus auf Legacy Manhunt: Faye Lau umstellen. Die Mission vollständig spielen und alle benannten Gegner sowie den Abschluss-Loot prüfen. Die zehn Langley Reports stammen aus derselben Manhunt; bei fehlenden Einträgen die Mission auf Normal wiederholen, bis der nächste noch fehlende Bericht droppt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; Mission wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Alle zehn Berichte werden über dieselbe Legacy-Manhunt gefarmt; es gibt nicht zehn dauerhaft getrennte Open-World-Pickups."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionsmodus und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         }
@@ -255,7 +617,7 @@
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.001-christmas-party",
           "name": "Christmas Party",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Christmas Party“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -270,15 +632,47 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im frühen Büro-/Personalbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis im frühen Büro-/Personalbereich spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.002-outbreak-response",
           "name": "Outbreak Response",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Outbreak Response“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -293,15 +687,47 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im ersten inneren Pentagon-Komplex."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis im ersten inneren Pentagon-Komplex spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.003-quarantine-measures",
           "name": "Quarantine Measures",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Quarantine Measures“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -316,15 +742,47 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im Quarantäne-/Sicherheitsabschnitt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis im Quarantäne-/Sicherheitsabschnitt spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.004-essential-personnel",
           "name": "Essential Personnel",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Essential Personnel“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -339,15 +797,47 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im Personal-/Bürobereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis im Personal-/Bürobereich spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.005-project-phoenix",
           "name": "Project Phoenix",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Project Phoenix“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -362,15 +852,47 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission DARPA Research Labs verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im Forschungs-/Projektbereich von DARPA."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "DARPA Research Labs im normalen Missionsmodus starten und den Missionsweg bis im Forschungs-/Projektbereich von DARPA spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; DARPA Research Labs wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.006-cafeteria-blues",
           "name": "Cafeteria Blues",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Cafeteria Blues“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -385,15 +907,47 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "in der Cafeteria."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis in der Cafeteria spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.007-first-burial",
           "name": "First Burial",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „First Burial“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -408,15 +962,47 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im improvisierten Bestattungs-/Versorgungsbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis im improvisierten Bestattungs-/Versorgungsbereich spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.008-quiet-contemplation",
           "name": "Quiet Contemplation",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Quiet Contemplation“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -431,15 +1017,47 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: The Pentagon"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission The Pentagon verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im ruhigeren Seiten-/Gedenkbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Pentagon im normalen Missionsmodus starten und den Missionsweg bis im ruhigeren Seiten-/Gedenkbereich spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; The Pentagon wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.009-hopeless-situation",
           "name": "Hopeless Situation",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Hopeless Situation“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -454,15 +1072,47 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission DARPA Research Labs verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im späteren DARPA-Laborabschnitt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "DARPA Research Labs im normalen Missionsmodus starten und den Missionsweg bis im späteren DARPA-Laborabschnitt spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; DARPA Research Labs wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.pentagon-staff-logs.010-final-evacuation",
           "name": "Final Evacuation",
-          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "description": "Missions-Comm „Final Evacuation“ aus den Pentagon Staff Logs.",
           "details": [
             {
               "label": "Typ",
@@ -477,8 +1127,40 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Mission: DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Mission DARPA Research Labs verfügbar."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "im letzten Evakuierungs-/Ausgangsabschnitt von DARPA."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "DARPA Research Labs im normalen Missionsmodus starten und den Missionsweg bis im letzten Evakuierungs-/Ausgangsabschnitt von DARPA spielen. Vor dem nächsten Checkpoint beziehungsweise dem Verlassen des Raums die Schreibtische, Konsolen und Seitenflächen absuchen; das Gerät wird in unmittelbarer Nähe von ISAC gemeldet."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; DARPA Research Labs wiederholen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Mission und konkreter Missionsabschnitt dokumentiert."
             }
           ]
         }
@@ -491,7 +1173,7 @@
         {
           "id": "division2.collectible.comms.brenners-orders.001-brenners-orders",
           "name": "Brenner's Orders",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Brenner's Orders“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -506,15 +1188,51 @@
               "value": "1 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.002-air-support",
           "name": "Air Support",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Air Support“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -529,15 +1247,51 @@
               "value": "2 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.003-darpa-lab",
           "name": "DARPA Lab",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „DARPA Lab“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -552,15 +1306,51 @@
               "value": "3 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.004-plan-b",
           "name": "Plan B",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Plan B“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -575,15 +1365,51 @@
               "value": "4 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.005-assume-control",
           "name": "Assume Control",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Assume Control“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -598,15 +1424,51 @@
               "value": "5 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.006-pentagon-defenses",
           "name": "Pentagon Defenses",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Pentagon Defenses“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -621,15 +1483,51 @@
               "value": "6 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.007-drone-testing",
           "name": "Drone Testing",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Drone Testing“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -644,15 +1542,51 @@
               "value": "7 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.008-hovercraft-landing",
           "name": "Hovercraft Landing",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Hovercraft Landing“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -667,15 +1601,51 @@
               "value": "8 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.009-drill-setup",
           "name": "Drill Setup",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „Drill Setup“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -690,15 +1660,51 @@
               "value": "9 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         },
         {
           "id": "division2.collectible.comms.brenners-orders.010-shd-prototypes",
           "name": "SHD Prototypes",
-          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "description": "Black-Tusk-Aufzeichnung „SHD Prototypes“ aus Brenner’s Orders.",
           "details": [
             {
               "label": "Typ",
@@ -713,8 +1719,44 @@
               "value": "10 / 10"
             },
             {
+              "label": "Erwerbsart",
+              "value": "Missions-/Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Pentagon-Komplex"
+            },
+            {
+              "label": "Aktivität",
+              "value": "The Pentagon oder DARPA Research Labs"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Pentagon / DARPA Research Labs"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Beide Pentagon-Missionen freigeschaltet und die Intro-Mission des Pentagon-Komplexes abgeschlossen."
+            },
+            {
               "label": "Fundort",
-              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+              "value": "Als automatische Comm-Belohnung von Missionsfortschritt beziehungsweise benannten Black-Tusk-Gegnern in den beiden Pentagon-Missionen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zuerst The Pentagon und danach DARPA Research Labs im Storymodus vollständig abschließen. Anschließend beide Missionen wiederholen und jeden benannten Gegner sowie den Missionsabschluss looten. Die Brenner’s-Orders-Aufzeichnungen werden über diese Durchläufe verteilt vergeben; fehlende Einträge durch schnelle Wiederholungen auf Normal farmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nicht dauerhaft verpassbar; beide Missionen wiederholen."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Kein zuverlässiger Open-World-Pickup: entscheidend sind benannte Gegner und Missionsabschlüsse."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Missionskomplex und aktuelle Farmmethode konkret dokumentiert."
             }
           ]
         }

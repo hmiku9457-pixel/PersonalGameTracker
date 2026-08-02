@@ -1,21 +1,23 @@
 {
   "id": "comms",
   "name": "Comms",
-  "description": "Unterteilte Comms-Sammlungen aus The Division 2. Jede Kategorie lädt nur die jeweils benötigte JSON-Datei.",
-  "lastUpdated": "2026-07-26",
+  "description": "Unterteilte und inhaltlich überarbeitete Comms-Sammlungen aus The Division 2. Die Einträge unterscheiden zwischen festen Weltfundorten, missionsgebundenen Geräten und automatischen Belohnungen aus Manhunts, Descent, Incursion und Retaliation.",
+  "lastUpdated": "2026-08-02",
   "dataStatus": {
     "scope": "split-manifest",
     "itemCount": 840,
     "sourceGroupCount": 59,
     "fileCount": 14,
-    "pendingNameVerification": 4,
-    "contentModifiedDuringSplit": false,
+    "pendingNameVerification": 2,
+    "contentModifiedDuringSplit": true,
     "inGameCorrections": [
       "Manhunt: Shadow Tide -> Manhunt: Jupiter",
       "Manhunt: End of Watch -> Manhunt: Faye Lau",
       "Incursion: Paradise Lost -> Incursion: Meret Estate",
       "Manhunt: Into The Dark -> 9 Einträge"
-    ]
+    ],
+    "locationDetailsCompleted": 840,
+    "note": "Alle 840 Einträge besitzen Fundort/Freischaltquelle und Vorgehen. Basis-D.C.-Comms, Coney Island, Battle for Brooklyn und zahlreiche Profile enthalten konkrete Zugangsschritte oder Kartenkoordinaten. Rotationsabhängige Inhalte beschreiben die Aktivitätsmechanik. Einige Warlords-of-New-York-Profil- und Lower-Manhattan-Einträge sind bewusst mit einem Datenqualitätshinweis versehen und werden beim geplanten Einzelreview weiter mikropräzisiert."
   },
   "categories": [
     {
