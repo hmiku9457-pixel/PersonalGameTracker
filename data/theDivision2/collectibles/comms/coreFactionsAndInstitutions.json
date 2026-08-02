@@ -1,0 +1,1737 @@
+{
+  "id": "comms-coreFactionsAndInstitutions",
+  "name": "Comms – Fraktionen und Institutionen",
+  "description": "Grundlegende Comms zu Fraktionen, JTF, Division und Regierung in Washington, D.C.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 73,
+    "groupCount": 7,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-hyenas",
+      "name": "Comms – Hyenas",
+      "items": [
+        {
+          "id": "division2.collectible.comms.hyenas.001-pi-ata-party",
+          "name": "Piñata Party",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.002-heavy-load",
+          "name": "Heavy Load",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.003-special-shipment",
+          "name": "Special Shipment",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.004-assets",
+          "name": "Assets",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.005-missing-prisoners",
+          "name": "Missing Prisoners",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.006-first-council-meeting",
+          "name": "First Council Meeting",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.007-restructuring",
+          "name": "Restructuring",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.008-runners",
+          "name": "Runners",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.009-spice-instructions",
+          "name": "Spice Instructions",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.hyenas.010-economics",
+          "name": "Economics",
+          "description": "Comms aus der Sammlung „Hyenas“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Hyenas"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-true-sons",
+      "name": "Comms – True Sons",
+      "items": [
+        {
+          "id": "division2.collectible.comms.true-sons.001-relocation-order",
+          "name": "Relocation Order",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.002-roosevelt-supplies",
+          "name": "Roosevelt Supplies",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.003-ridgeway-sentencing",
+          "name": "Ridgeway Sentencing",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.004-negotiations",
+          "name": "Negotiations",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.005-weaponized-dc-62",
+          "name": "Weaponized DC-62",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.006-the-castle",
+          "name": "The Castle",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.007-death-and-taxes",
+          "name": "Death and Taxes",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.008-fortifications",
+          "name": "Fortifications",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.009-close-encounter",
+          "name": "Close Encounter",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.true-sons.010-acceptable-losses",
+          "name": "Acceptable Losses",
+          "description": "Comms aus der Sammlung „True Sons“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "True Sons"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-outcasts",
+      "name": "Comms – Outcasts",
+      "items": [
+        {
+          "id": "division2.collectible.comms.outcasts.001-cistern",
+          "name": "Cistern",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.002-message-for-henry",
+          "name": "Message for Henry",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.003-keeping-survivors",
+          "name": "Keeping Survivors",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.004-rations",
+          "name": "Rations",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.005-plotting",
+          "name": "Plotting",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.006-true-son-captured",
+          "name": "True Son Captured",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.007-complicit",
+          "name": "Complicit",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.008-asymptomatic",
+          "name": "Asymptomatic",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.009-jtf-interrogation",
+          "name": "JTF Interrogation",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.010-condemnation",
+          "name": "Condemnation",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.011-emelines-end",
+          "name": "Emeline's End",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.outcasts.012-humanity",
+          "name": "Humanity",
+          "description": "Comms aus der Sammlung „Outcasts“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Outcasts"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 12"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-black-tusk",
+      "name": "Comms – Black Tusk",
+      "items": [
+        {
+          "id": "division2.collectible.comms.black-tusk.001-puppeteers",
+          "name": "Puppeteers",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.002-secret-service",
+          "name": "Secret Service",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.003-taking-dc",
+          "name": "Taking D.C.",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.004-new-orders",
+          "name": "New Orders",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.005-paperwork",
+          "name": "Paperwork",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.006-shd-network",
+          "name": "SHD Network",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.007-antiviral",
+          "name": "Antiviral",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.008-progress-report",
+          "name": "Progress Report",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.009-tactics",
+          "name": "Tactics",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.black-tusk.010-dc-briefing",
+          "name": "D.C. Briefing",
+          "description": "Comms aus der Sammlung „Black Tusk“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Black Tusk"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-jtf",
+      "name": "Comms – JTF",
+      "items": [
+        {
+          "id": "division2.collectible.comms.jtf.001-ortega-deployed",
+          "name": "Ortega Deployed",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.002-new-assignment",
+          "name": "New Assignment",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.003-true-sons-debrief",
+          "name": "True Sons Debrief",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.004-sitrep",
+          "name": "SITREP",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.005-georgetown-patrol",
+          "name": "Georgetown Patrol",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.006-quarantine",
+          "name": "Quarantine",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.007-roosevelt-failure",
+          "name": "Roosevelt Failure",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.jtf.008-line-of-succession",
+          "name": "Line of Succession",
+          "description": "Comms aus der Sammlung „JTF“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "JTF"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-division",
+      "name": "Comms – Division",
+      "items": [
+        {
+          "id": "division2.collectible.comms.division.001-kelso-recruitment",
+          "name": "Kelso Recruitment",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.002-kelsos-apartment",
+          "name": "Kelso's Apartment",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.003-broad-spectrum-antiviral",
+          "name": "Broad-Spectrum Antiviral",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.004-theater-recruitment",
+          "name": "Theater Recruitment",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.005-agent-awol",
+          "name": "Agent AWOL",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.006-sawyers-separated",
+          "name": "Sawyer's Separated",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.007-sawyer-reunited",
+          "name": "Sawyer Reunited",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.008-odessa-recruited",
+          "name": "Odessa Recruited",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.009-priority-target-keener",
+          "name": "Priority Target: Keener",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.division.010-priority-target-amherst-update",
+          "name": "Priority Target: Amherst (Update)",
+          "description": "Comms aus der Sammlung „Division“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Division"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-government",
+      "name": "Comms – Government",
+      "items": [
+        {
+          "id": "division2.collectible.comms.government.001-black-friday-briefing",
+          "name": "Black Friday Briefing",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.002-directive-51",
+          "name": "Directive 51",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.003-border-control",
+          "name": "Border Control",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.004-dc-62-trials",
+          "name": "DC-62 Trials",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.005-25th-amendment",
+          "name": "25th Amendment",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.006-bipartisan-support",
+          "name": "Bipartisan Support",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.007-aides-assemble",
+          "name": "Aides Assemble",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.008-raven-rock",
+          "name": "Raven Rock",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.009-un-briefing",
+          "name": "UN Briefing",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.010-keener-briefing",
+          "name": "Keener Briefing",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.011-possible-subterfuge",
+          "name": "Possible Subterfuge",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.012-essential-evacuation",
+          "name": "Essential Evacuation",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.government.013-black-box",
+          "name": "Black Box",
+          "description": "Comms aus der Sammlung „Government“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Government"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 13"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

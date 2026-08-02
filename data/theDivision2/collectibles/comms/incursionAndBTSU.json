@@ -1,0 +1,373 @@
+{
+  "id": "comms-incursionAndBTSU",
+  "name": "Comms – Incursion und BTSU",
+  "description": "Comms aus Meret Estate und von BTSU Team 9.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 15,
+    "groupCount": 2,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-incursion-paradise-lost",
+      "name": "Comms – Incursion: Meret Estate",
+      "items": [
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.001-setup",
+          "name": "SetUp",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.002-speakeasy",
+          "name": "Speakeasy",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.003-confirm",
+          "name": "Confirm",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.004-honeymoon",
+          "name": "Honeymoon",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.005-outbreak",
+          "name": "Outbreak",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.006-brave",
+          "name": "Brave",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.007-recruitment",
+          "name": "Recruitment",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.008-condolences",
+          "name": "Condolences",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.009-kids",
+          "name": "Kids",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.010-vows",
+          "name": "Vows",
+          "description": "Comms aus der Sammlung „Incursion: Paradise Lost“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-btsu-team-9",
+      "name": "Comms – BTSU Team 9",
+      "items": [
+        {
+          "id": "division2.collectible.comms.btsu-team-9.001-btsu-team-9-overview",
+          "name": "BTSU Team 9 - Overview",
+          "description": "Comms aus der Sammlung „BTSU Team 9“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.002-btsu-team-9-colin-stitch-stachinsky",
+          "name": "BTSU Team 9 - Colin \"Stitch\" Stachinsky",
+          "description": "Comms aus der Sammlung „BTSU Team 9“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.003-btsu-team-9-lucy-car-bomb-jimenez",
+          "name": "BTSU Team 9 - Lucy \"Car Bomb\" Jimenez",
+          "description": "Comms aus der Sammlung „BTSU Team 9“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.004-btsu-team-9-emily-countdown-zero",
+          "name": "BTSU Team 9 - Emily \"Countdown\" Zero",
+          "description": "Comms aus der Sammlung „BTSU Team 9“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.005-btsu-team-9-alivn-clean-hands-tolliver",
+          "name": "BTSU Team 9 - Alivn \"Clean Hands\" Tolliver",
+          "description": "Comms aus der Sammlung „BTSU Team 9“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 5"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

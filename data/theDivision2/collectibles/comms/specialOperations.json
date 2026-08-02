@@ -1,0 +1,724 @@
+{
+  "id": "comms-specialOperations",
+  "name": "Comms – Spezialoperationen",
+  "description": "Langley Reports sowie Comms aus Pentagon, DARPA und Brenner's Orders.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 30,
+    "groupCount": 3,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-langley-reports",
+      "name": "Comms – Langley Reports",
+      "items": [
+        {
+          "id": "division2.collectible.comms.langley-reports.001-mexican-sitrep",
+          "name": "Mexican Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.002-canadian-sitrep",
+          "name": "Canadian Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.003-russian-sitrep",
+          "name": "Russian Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.004-japan-sitrep",
+          "name": "Japan Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.005-indian-sitrep",
+          "name": "Indian Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.006-european-sitrep",
+          "name": "European Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.007-middle-eastern-sitrep",
+          "name": "Middle Eastern Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.008-asian-sitrep",
+          "name": "Asian Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.009-south-american-sitrep",
+          "name": "South American Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.langley-reports.010-african-sitrep",
+          "name": "African Sitrep",
+          "description": "Comms aus der Sammlung „Langley Reports“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Langley Reports"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-pentagon-staff-logs",
+      "name": "Comms – Pentagon Staff Logs",
+      "items": [
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.001-christmas-party",
+          "name": "Christmas Party",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.002-outbreak-response",
+          "name": "Outbreak Response",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.003-quarantine-measures",
+          "name": "Quarantine Measures",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.004-essential-personnel",
+          "name": "Essential Personnel",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.005-project-phoenix",
+          "name": "Project Phoenix",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.006-cafeteria-blues",
+          "name": "Cafeteria Blues",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.007-first-burial",
+          "name": "First Burial",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.008-quiet-contemplation",
+          "name": "Quiet Contemplation",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.009-hopeless-situation",
+          "name": "Hopeless Situation",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.pentagon-staff-logs.010-final-evacuation",
+          "name": "Final Evacuation",
+          "description": "Comms aus der Sammlung „Pentagon Staff Logs“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Pentagon Staff Logs"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-brenners-orders",
+      "name": "Comms – Brenner's Orders",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brenners-orders.001-brenners-orders",
+          "name": "Brenner's Orders",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.002-air-support",
+          "name": "Air Support",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.003-darpa-lab",
+          "name": "DARPA Lab",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.004-plan-b",
+          "name": "Plan B",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.005-assume-control",
+          "name": "Assume Control",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.006-pentagon-defenses",
+          "name": "Pentagon Defenses",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.007-drone-testing",
+          "name": "Drone Testing",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.008-hovercraft-landing",
+          "name": "Hovercraft Landing",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.009-drill-setup",
+          "name": "Drill Setup",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brenners-orders.010-shd-prototypes",
+          "name": "SHD Prototypes",
+          "description": "Comms aus der Sammlung „Brenner's Orders“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brenner's Orders"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

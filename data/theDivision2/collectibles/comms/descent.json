@@ -1,0 +1,2437 @@
+{
+  "id": "comms-descent",
+  "name": "Comms – Descent",
+  "description": "Alle Comms aus dem Spielmodus Descent.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 105,
+    "groupCount": 1,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-descent",
+      "name": "Comms – Descent",
+      "items": [
+        {
+          "id": "division2.collectible.comms.descent.001-new-pitch",
+          "name": "New Pitch",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.002-updates",
+          "name": "Updates",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.003-contracts",
+          "name": "Contracts",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.004-mobile-prototype",
+          "name": "Mobile Prototype",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.005-ordered",
+          "name": "Ordered",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.006-security",
+          "name": "Security",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.007-isac",
+          "name": "ISAC",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.008-alert",
+          "name": "Alert",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.009-new-tech",
+          "name": "New Tech",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.010-walking",
+          "name": "Walking",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.011-new-ai",
+          "name": "New AI",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.012-collaboration",
+          "name": "Collaboration",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.013-field-agent",
+          "name": "Field Agent",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.014-terminated",
+          "name": "Terminated",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.015-hostile-elements",
+          "name": "Hostile Elements",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.016-prototype",
+          "name": "Prototype",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.017-pitch",
+          "name": "Pitch",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.018-integration",
+          "name": "Integration",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.019-warning",
+          "name": "Warning",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.020-anna-second-test",
+          "name": "ANNA Second Test",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.021-relocation",
+          "name": "Relocation",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "21 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.022-use-case",
+          "name": "Use Case",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "22 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.023-mobile-notes",
+          "name": "Mobile Notes",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "23 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.024-trap",
+          "name": "Trap",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "24 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.025-deployed",
+          "name": "Deployed",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "25 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.026-release",
+          "name": "Release",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "26 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.027-field-test",
+          "name": "Field Test",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "27 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.028-automation",
+          "name": "Automation",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "28 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.029-firebrand-notes",
+          "name": "Firebrand Notes",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "29 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.030-anna",
+          "name": "ANNA",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "30 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.031-testing",
+          "name": "Testing",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "31 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.032-assessment",
+          "name": "Assessment",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "32 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.033-priority",
+          "name": "Priority",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "33 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.034-hindsight",
+          "name": "Hindsight",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "34 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.035-version-2",
+          "name": "Version 2",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "35 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.036-question",
+          "name": "Question",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "36 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.037-backup",
+          "name": "Backup",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "37 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.038-secure",
+          "name": "Secure",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "38 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.039-upgrades",
+          "name": "Upgrades",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "39 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.040-firebrand-prototype",
+          "name": "Firebrand Prototype",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "40 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.041-concept",
+          "name": "Concept",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "41 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.042-training",
+          "name": "Training",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "42 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.043-talking",
+          "name": "Talking",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "43 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.044-running",
+          "name": "Running",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "44 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.045-stairs",
+          "name": "Stairs",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "45 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.046-uncomfortable",
+          "name": "Uncomfortable",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "46 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.047-evolution",
+          "name": "Evolution",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "47 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.048-cancelled",
+          "name": "Cancelled",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "48 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.049-proof-of-concept",
+          "name": "Proof of Concept",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "49 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.050-anna-prototype",
+          "name": "ANNA Prototype",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "50 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.051-anna-first-test",
+          "name": "ANNA First Test",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "51 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.052-field-test-50-cal",
+          "name": "Field Test: .50 Cal",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "52 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.053-hoskins",
+          "name": "Hoskins",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "53 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.054-upstate",
+          "name": "Upstate",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "54 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.055-chicago",
+          "name": "Chicago",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "55 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.056-warzone",
+          "name": "Warzone",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "56 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.057-roster",
+          "name": "Roster",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "57 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.058-linc",
+          "name": "LINC",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "58 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.059-next-gen",
+          "name": "Next Gen",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "59 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.060-exploits",
+          "name": "Exploits",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "60 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.061-workaround",
+          "name": "Workaround",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "61 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.062-biometrics",
+          "name": "Biometrics",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "62 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.063-the-squad",
+          "name": "The Squad",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "63 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.064-unwilling",
+          "name": "Unwilling",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "64 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.065-en-route",
+          "name": "En Route",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "65 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.066-secured",
+          "name": "Secured",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "66 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.067-alerted",
+          "name": "Alerted",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "67 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.068-mutated",
+          "name": "Mutated",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "68 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.069-nbc",
+          "name": "NBC",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "69 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.070-ann-arbor",
+          "name": "Ann Arbor",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "70 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.071-mit",
+          "name": "MIT",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "71 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.072-dcd-hq",
+          "name": "DCD HQ",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "72 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.073-brooklyn",
+          "name": "Brooklyn",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "73 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.074-rikers",
+          "name": "Rikers",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "74 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.075-meret-estate",
+          "name": "Meret Estate",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "75 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.076-maral",
+          "name": "Maral",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "76 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.077-moretti",
+          "name": "Moretti",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "77 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.078-birdie",
+          "name": "Birdie",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "78 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.079-lauren",
+          "name": "Lauren",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "79 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.080-mari",
+          "name": "Mari",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "80 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.081-cindy",
+          "name": "Cindy",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "81 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.082-purple-stuff",
+          "name": "Purple Stuff",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "82 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.083-bishop-1",
+          "name": "Bishop 1",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "83 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.084-billings",
+          "name": "Billings",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "84 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.085-bishop-2",
+          "name": "Bishop 2",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "85 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.086-eva",
+          "name": "Eva",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "86 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.087-jack",
+          "name": "Jack",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "87 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.088-mel",
+          "name": "Mel",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "88 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.089-the-sims",
+          "name": "The Sims",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "89 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.090-bardon",
+          "name": "Bardon",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "90 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.091-bridge",
+          "name": "Bridge",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "91 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.092-amherst",
+          "name": "Amherst",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "92 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.093-tchernenko",
+          "name": "Tchernenko",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "93 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.094-the-strategist",
+          "name": "The Strategist",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "94 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.095-tower",
+          "name": "Tower",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "95 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.096-claire",
+          "name": "Claire",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "96 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.097-anna",
+          "name": "ANNA",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "97 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.098-rogue-network",
+          "name": "Rogue Network",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "98 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.099-two-factor",
+          "name": "Two Factor",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "99 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.100-crossed-lines",
+          "name": "Crossed Lines",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "100 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.101-propaganda",
+          "name": "Propaganda",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "101 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.102-castle",
+          "name": "Castle",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "102 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.103-violet-20",
+          "name": "Violet 2.0",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "103 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.104-playtime",
+          "name": "Playtime",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "104 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.descent.105-fetch",
+          "name": "Fetch",
+          "description": "Comms aus der Sammlung „Descent“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Descent"
+            },
+            {
+              "label": "Position",
+              "value": "105 / 105"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

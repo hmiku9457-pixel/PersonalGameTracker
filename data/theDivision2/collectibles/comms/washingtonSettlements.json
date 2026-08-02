@@ -1,0 +1,494 @@
+{
+  "id": "comms-washingtonSettlements",
+  "name": "Comms – Washington – Siedlungen",
+  "description": "Comms aus Campus, Castle und Theater.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 20,
+    "groupCount": 3,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-campus",
+      "name": "Comms – Campus",
+      "items": [
+        {
+          "id": "division2.collectible.comms.campus.001-quarantine-staff",
+          "name": "Quarantine Staff",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.002-food-scarcity",
+          "name": "Food Scarcity",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.003-building-community",
+          "name": "Building Community",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.004-help-wanted",
+          "name": "Help Wanted",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.005-mystery-meat",
+          "name": "Mystery Meat",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.006-grief-counseling",
+          "name": "Grief Counseling",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.007-leader-elected",
+          "name": "Leader Elected",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.campus.008-garden-tour",
+          "name": "Garden Tour",
+          "description": "Comms aus der Sammlung „Campus“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Campus"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-castle",
+      "name": "Comms – Castle",
+      "items": [
+        {
+          "id": "division2.collectible.comms.castle.001-castle-treaty",
+          "name": "Castle Treaty",
+          "description": "Comms aus der Sammlung „Castle“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Castle"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.castle.002-questioning-authority",
+          "name": "Questioning Authority",
+          "description": "Comms aus der Sammlung „Castle“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Castle"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.castle.003-paying-tribute",
+          "name": "Paying Tribute",
+          "description": "Comms aus der Sammlung „Castle“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Castle"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.castle.004-keeping-watch",
+          "name": "Keeping Watch",
+          "description": "Comms aus der Sammlung „Castle“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Castle"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-theater",
+      "name": "Comms – Theater",
+      "items": [
+        {
+          "id": "division2.collectible.comms.theater.001-settling-down",
+          "name": "Settling Down",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.002-firearms-training",
+          "name": "Firearms Training",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.003-strategy",
+          "name": "Strategy",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.004-new-crew",
+          "name": "New Crew",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.005-hyena-interrogation",
+          "name": "Hyena Interrogation",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.006-peter-problems",
+          "name": "Peter Problems",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.007-addiction",
+          "name": "Addiction",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theater.008-sustainable-power",
+          "name": "Sustainable Power",
+          "description": "Comms aus der Sammlung „Theater“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theater"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

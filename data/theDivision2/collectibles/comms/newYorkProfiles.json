@@ -1,0 +1,2048 @@
+{
+  "id": "comms-newYorkProfiles",
+  "name": "Comms – New York – Profile",
+  "description": "Charakterprofile aus Warlords of New York und den damit verbundenen Handlungssträngen.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 86,
+    "groupCount": 9,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-shay",
+      "name": "Comms – Shay",
+      "items": [
+        {
+          "id": "division2.collectible.comms.shay.001-georgetown",
+          "name": "Georgetown",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.002-refugee-camp",
+          "name": "Refugee Camp",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.003-purpose",
+          "name": "Purpose",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.004-making-a-difference",
+          "name": "Making a Difference",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.005-reflective",
+          "name": "Reflective",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.006-capital-station",
+          "name": "Capital Station",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.007-orphans",
+          "name": "Orphans",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.shay.008-haunted",
+          "name": "Haunted",
+          "description": "Comms aus der Sammlung „Shay“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Shay"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-roy-benitez",
+      "name": "Comms – Roy Benitez",
+      "items": [
+        {
+          "id": "division2.collectible.comms.roy-benitez.001-reasons-for-leaving",
+          "name": "Reasons for Leaving",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.002-pep-talk",
+          "name": "Pep Talk",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.003-supply-situation",
+          "name": "Supply Situation",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.004-take-a-break",
+          "name": "Take a Break",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.005-rikers-attack",
+          "name": "Rikers Attack",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.006-loyalty-program",
+          "name": "Loyalty Program",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.007-survivors-guilt",
+          "name": "Survivor's Guilt",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.008-reality-distortion",
+          "name": "Reality Distortion",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.009-last-rites",
+          "name": "Last Rites",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.roy-benitez.010-good-day",
+          "name": "Good Day",
+          "description": "Comms aus der Sammlung „Roy Benitez“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Roy Benitez"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-paul-rhodes",
+      "name": "Comms – Paul Rhodes",
+      "items": [
+        {
+          "id": "division2.collectible.comms.paul-rhodes.001-take-responsibility",
+          "name": "Take Responsibility",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.002-aftermath-assessment",
+          "name": "Aftermath Assessment",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.003-something-new",
+          "name": "Something New",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.004-you-cant-fire-me-i-quit",
+          "name": "You Can't Fire Me, I Quit",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.005-everyones-got-a-role",
+          "name": "Everyone's Got a Role",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.006-room-for-improvement",
+          "name": "Room for Improvement",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.007-get-lost",
+          "name": "Get Lost",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.008-rikers-outside",
+          "name": "Rikers Outside",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.009-storm-brewing",
+          "name": "Storm Brewing",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.paul-rhodes.010-storm-preparations",
+          "name": "Storm Preparations",
+          "description": "Comms aus der Sammlung „Paul Rhodes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Paul Rhodes"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-aaron-keener",
+      "name": "Comms – Aaron Keener",
+      "items": [
+        {
+          "id": "division2.collectible.comms.aaron-keener.001-wall-street",
+          "name": "Wall Street",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.002-wedding-ring",
+          "name": "Wedding Ring",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.003-wildcards",
+          "name": "Wildcards",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.004-rogue-cells",
+          "name": "Rogue Cells",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.005-keeners-psych-evaluation",
+          "name": "Keener's Psych Evaluation",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.006-abandoned",
+          "name": "Abandoned",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.007-the-network",
+          "name": "The Network",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.008-philosophical",
+          "name": "Philosophical",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.009-seeing-things-clearly-now",
+          "name": "Seeing Things Clearly Now",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.aaron-keener.010-keeners-legacy",
+          "name": "Keener's Legacy",
+          "description": "Comms aus der Sammlung „Aaron Keener“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Aaron Keener"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-james-dragov",
+      "name": "Comms – James Dragov",
+      "items": [
+        {
+          "id": "division2.collectible.comms.james-dragov.001-wealth-corrupts",
+          "name": "Wealth Corrupts",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.002-the-stick",
+          "name": "The Stick",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.003-prison-sentence",
+          "name": "Prison Sentence",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.004-recruitment-drive",
+          "name": "Recruitment Drive",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.005-proven-strength",
+          "name": "Proven Strength",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.006-family-matters",
+          "name": "Family Matters",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.007-the-fixer",
+          "name": "The Fixer",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.008-grocery-shopping",
+          "name": "Grocery Shopping",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.009-charging-bull",
+          "name": "Charging Bull",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.james-dragov.010-family-history",
+          "name": "Family History",
+          "description": "Comms aus der Sammlung „James Dragov“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "James Dragov"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-javier-kajika",
+      "name": "Comms – Javier Kajika",
+      "items": [
+        {
+          "id": "division2.collectible.comms.javier-kajika.001-request-denied",
+          "name": "Request Denied",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.002-outsiders",
+          "name": "Outsiders",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.003-accountability",
+          "name": "Accountability",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.004-rogue-agents",
+          "name": "Rogue Agents",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.005-mutual-benefit",
+          "name": "Mutual Benefit",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.006-settling-grievances",
+          "name": "Settling Grievances",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.007-not-the-time",
+          "name": "Not the Time",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.008-non-negotiable",
+          "name": "Non-Negotiable",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.009-nancy",
+          "name": "Nancy",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.javier-kajika.010-kajikas-psych-eval",
+          "name": "Kajika's Psych Eval",
+          "description": "Comms aus der Sammlung „Javier Kajika“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Javier Kajika"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-theo-parnell",
+      "name": "Comms – Theo Parnell",
+      "items": [
+        {
+          "id": "division2.collectible.comms.theo-parnell.001-allegations",
+          "name": "Allegations",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.002-message",
+          "name": "Message",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.003-midterms",
+          "name": "Midterms",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.004-reports",
+          "name": "Reports",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.005-paper-trail",
+          "name": "Paper Trail",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.006-clearance",
+          "name": "Clearance",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.007-power",
+          "name": "Power",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.008-specs",
+          "name": "Specs",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.009-recon",
+          "name": "Recon",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.theo-parnell.010-protection",
+          "name": "Protection",
+          "description": "Comms aus der Sammlung „Theo Parnell“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Theo Parnell"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-vivian-conley",
+      "name": "Comms – Vivian Conley",
+      "items": [
+        {
+          "id": "division2.collectible.comms.vivian-conley.001-crossing-a-line",
+          "name": "Crossing A Line",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.002-vivians-psych-eval",
+          "name": "Vivian's Psych Eval",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.003-in-the-dark-zone",
+          "name": "In The Dark Zone",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.004-found-left-for-dead",
+          "name": "Found Left For Dead",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.005-the-second-in-line",
+          "name": "The Second In Line",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.006-the-start-of-a-beautiful-friendship",
+          "name": "The Start Of A Beautiful Friendship",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.007-fuel-the-fire",
+          "name": "Fuel The Fire",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.vivian-conley.008-the-stranded-crew",
+          "name": "The Stranded Crew",
+          "description": "Comms aus der Sammlung „Vivian Conley“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Vivian Conley"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-faye-lau",
+      "name": "Comms – Faye Lau",
+      "items": [
+        {
+          "id": "division2.collectible.comms.faye-lau.001-network-down",
+          "name": "Network Down",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.002-prisoner-transfer",
+          "name": "Prisoner Transfer",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.003-rogue-discussion",
+          "name": "Rogue Discussion",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.004-no-quit",
+          "name": "No Quit",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.005-between-shifts",
+          "name": "Between Shifts",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.006-corporal-punishment",
+          "name": "Corporal Punishment",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.007-liquid-amnesia",
+          "name": "Liquid Amnesia",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.008-prisoner-interrogation",
+          "name": "Prisoner Interrogation",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.009-combining-forces",
+          "name": "Combining Forces",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.faye-lau.010-off-mission",
+          "name": "Off Mission",
+          "description": "Comms aus der Sammlung „Faye Lau“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

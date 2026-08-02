@@ -1,0 +1,1880 @@
+{
+  "id": "comms-manhuntsLegacy",
+  "name": "Comms – Manhunts – Legacy",
+  "description": "Die ersten vier Manhunts: Jupiter, Keener's Legacy, Concealed Agenda und Faye Lau.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 80,
+    "groupCount": 4,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-manhunt-shadow-tide",
+      "name": "Comms – Manhunt: Jupiter",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.001-midtown-sitrep",
+          "name": "Midtown Sitrep",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.002-without-a-fight",
+          "name": "Without a Fight",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.003-fully-committed",
+          "name": "Fully Committed",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.004-neptune",
+          "name": "Neptune",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.005-backup",
+          "name": "Backup",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.006-respect",
+          "name": "Respect",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.007-took-care-of-it",
+          "name": "Took Care of It",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.008-first-contact",
+          "name": "First Contact",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.009-safehouse",
+          "name": "Safehouse",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.010-care-package",
+          "name": "Care Package",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.011-stay-back",
+          "name": "Stay Back",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.012-conleys-guys",
+          "name": "Conley's Guys",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.013-mistake",
+          "name": "Mistake",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.014-mutual-friend",
+          "name": "Mutual Friend",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.015-strike-team",
+          "name": "Strike Team",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.016-solar-system",
+          "name": "Solar System",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.017-land",
+          "name": "Land",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.018-fuel",
+          "name": "Fuel",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.019-the-room",
+          "name": "The Room",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-shadow-tide.020-testing",
+          "name": "Testing",
+          "description": "Comms aus der Sammlung „Manhunt: Shadow Tide“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Jupiter"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-manhunt-keeners-legacy",
+      "name": "Comms – Manhunt: Keener's Legacy",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.001-test-results",
+          "name": "Test Results",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.002-not-this-time",
+          "name": "Not This Time",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.003-elevator-pitch",
+          "name": "Elevator Pitch",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.004-callsigns",
+          "name": "Callsigns",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.005-regaining-control",
+          "name": "Regaining Control",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.006-encrypted-echos",
+          "name": "Encrypted ECHOs",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.007-lunas-offer",
+          "name": "Luna's Offer",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.008-the-consulate",
+          "name": "The Consulate",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.009-lerouxs-psyche-eval",
+          "name": "Leroux's Psyche Eval",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.010-taking-control",
+          "name": "Taking Control",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.011-sorry-about-bliss",
+          "name": "Sorry About Bliss",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.012-power-play",
+          "name": "Power Play",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.013-emergency-recruitment",
+          "name": "Emergency Recruitment",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.014-checking-out",
+          "name": "Checking Out",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.015-natures-decision",
+          "name": "Nature's Decision",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.016-changing-course",
+          "name": "Changing Course",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.017-setbacks",
+          "name": "SetBacks",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.018-eclipse",
+          "name": "Eclipse",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.019-dying-breath",
+          "name": "Dying Breath",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-keeners-legacy.020-back-from-the-dead",
+          "name": "Back From The Dead",
+          "description": "Comms aus der Sammlung „Manhunt: Keener's Legacy“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Keener's Legacy"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-manhunt-concealed-agenda",
+      "name": "Comms – Manhunt: Concealed Agenda",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.001-destabilization",
+          "name": "Destabilization",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.002-not-today",
+          "name": "Not Today",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.003-meet-up",
+          "name": "Meet Up",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.004-failures",
+          "name": "Failures",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.005-crew",
+          "name": "Crew",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.006-good-boy",
+          "name": "Good Boy",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.007-deadline",
+          "name": "Deadline",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.008-well-done",
+          "name": "Well Done",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.009-everything",
+          "name": "Everything",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.010-supply-drop",
+          "name": "Supply Drop",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.011-face-to-face",
+          "name": "Face to Face",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.012-budgets",
+          "name": "Budgets",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.013-outcast",
+          "name": "Outcast",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.014-hes-my-bitch",
+          "name": "He's My Bitch",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.015-drop-zone",
+          "name": "Drop Zone",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.016-face-to-faye",
+          "name": "Face to Faye",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.017-keener",
+          "name": "Keener",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.018-patriots",
+          "name": "Patriots",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.019-back-up",
+          "name": "Back Up",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-concealed-agenda.020-promotion",
+          "name": "Promotion",
+          "description": "Comms aus der Sammlung „Manhunt: Concealed Agenda“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Concealed Agenda"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-manhunt-end-of-watch",
+      "name": "Comms – Manhunt: Faye Lau",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.001-meet-and-greet",
+          "name": "Meet and Greet",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.002-vipers-task",
+          "name": "Viper's Task",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.003-check-in",
+          "name": "Check In",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.004-familial-ties",
+          "name": "Familial Ties",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.005-kestrels-motivations",
+          "name": "Kestrel's Motivations",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.006-true-loyalties",
+          "name": "True Loyalties",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.007-kestrel-and-viper",
+          "name": "Kestrel and Viper",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.008-speed-and-vision",
+          "name": "Speed and Vision",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.009-the-sandbox",
+          "name": "The Sandbox",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.010-bad-ideas-are-bad",
+          "name": "Bad Ideas Are Bad",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.011-me-too",
+          "name": "Me Too",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.012-usa-usa-usa",
+          "name": "USA, USA, USA",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.013-conversion-conversation",
+          "name": "Conversion Conversation",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.014-the-turn",
+          "name": "The Turn",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.015-scheduling-conflict",
+          "name": "Scheduling Conflict",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.016-failed-ops",
+          "name": "Failed Ops",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.017-meeting-of-the-minds",
+          "name": "Meeting of the Minds",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.018-defection-junction",
+          "name": "Defection Junction",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.019-apology-tour-benitez-edition",
+          "name": "Apology Tour: Benitez Edition",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-end-of-watch.020-apology-tour-rhodes-edition",
+          "name": "Apology Tour: Rhodes Edition",
+          "description": "Comms aus der Sammlung „Manhunt: End of Watch“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Faye Lau"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 20"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

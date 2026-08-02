@@ -1,0 +1,1317 @@
+{
+  "id": "comms-washingtonProfiles",
+  "name": "Comms – Washington – Profile",
+  "description": "Charakterprofile aus der Washington-Kampagne, darunter Kelso, Ridgeway, Emeline Shaw, Henry Hayes, Odessa Sawyer und President Ellis.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 55,
+    "groupCount": 6,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-profile-agent-kelso",
+      "name": "Comms – Profile: Agent Kelso",
+      "items": [
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.001-psych-assessment",
+          "name": "Psych Assessment",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.002-preparations",
+          "name": "Preparations",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.003-network-failure",
+          "name": "Network Failure",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.004-the-moment",
+          "name": "The Moment",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.005-doubts",
+          "name": "Doubts",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.006-malasadas",
+          "name": "Malasadas",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.007-the-sheriff",
+          "name": "The Sheriff",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.008-castle-survivor",
+          "name": "Castle Survivor",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-agent-kelso.009-a-new-enemy",
+          "name": "A New Enemy",
+          "description": "Comms aus der Sammlung „Profile: Agent Kelso“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Agent Kelso"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-profile-antwon-ridgeway",
+      "name": "Comms – Profile: Antwon Ridgeway",
+      "items": [
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.001-a-belief",
+          "name": "A Belief",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.002-logistics",
+          "name": "Logistics",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.003-court-martial",
+          "name": "Court Martial",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.004-superior",
+          "name": "Superior",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.005-greatest-ambition",
+          "name": "Greatest Ambition",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.006-sticking-around",
+          "name": "Sticking Around",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.007-ground-rules",
+          "name": "Ground Rules",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.008-collateral-damage",
+          "name": "Collateral Damage",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.009-liquid-courage",
+          "name": "Liquid Courage",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-antwon-ridgeway.010-the-cause",
+          "name": "The Cause",
+          "description": "Comms aus der Sammlung „Profile: Antwon Ridgeway“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Antwon Ridgeway"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-profile-emeline-shaw",
+      "name": "Comms – Profile: Emeline Shaw",
+      "items": [
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.001-prosecution",
+          "name": "Prosecution",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.002-population-control",
+          "name": "Population Control",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.003-legacy",
+          "name": "Legacy",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.004-making-examples",
+          "name": "Making Examples",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.005-motivation",
+          "name": "Motivation",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.006-controlling-the-narrative",
+          "name": "Controlling the Narrative",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.007-savannah",
+          "name": "Savannah",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-emeline-shaw.008-nightmares",
+          "name": "Nightmares",
+          "description": "Comms aus der Sammlung „Profile: Emeline Shaw“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Emeline Shaw"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-profile-henry-hayes",
+      "name": "Comms – Profile: Henry Hayes",
+      "items": [
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.001-stan",
+          "name": "Stan",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.002-hiding",
+          "name": "Hiding",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.003-downside",
+          "name": "Downside",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.004-systems",
+          "name": "Systems",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.005-overstay",
+          "name": "Overstay",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.006-thursday",
+          "name": "Thursday",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.007-all-you-could",
+          "name": "All You Could",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-henry-hayes.008-anniversary",
+          "name": "Anniversary",
+          "description": "Comms aus der Sammlung „Profile: Henry Hayes“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Henry Hayes"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 8"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-profile-odessa-sawyer",
+      "name": "Comms – Profile: Odessa Sawyer",
+      "items": [
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.001-them",
+          "name": "Them",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.002-back-to-work",
+          "name": "Back to Work",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.003-its-a-trap",
+          "name": "It's a Trap",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.004-lies",
+          "name": "Lies",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.005-regrets",
+          "name": "Regrets",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.006-the-usual",
+          "name": "The Usual",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.007-fourth-of-july",
+          "name": "Fourth of July",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.008-youre-twenty",
+          "name": "You're Twenty",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.009-care-package",
+          "name": "Care Package",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-odessa-sawyer.010-civility",
+          "name": "Civility",
+          "description": "Comms aus der Sammlung „Profile: Odessa Sawyer“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: Odessa Sawyer"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-profile-president-ellis",
+      "name": "Comms – Profile: President Ellis",
+      "items": [
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.001-white-house-gossip",
+          "name": "White House Gossip",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.002-opportunities",
+          "name": "Opportunities",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.003-the-mendez-problem",
+          "name": "The Mendez Problem",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.004-next-in-line",
+          "name": "Next in Line",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.005-introductions",
+          "name": "Introductions",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.006-going-to-dc",
+          "name": "Going to DC",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.007-delegation",
+          "name": "Delegation",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.008-double-play",
+          "name": "Double Play",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.009-facility-access",
+          "name": "Facility Access",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.profile-president-ellis.010-taking-charge",
+          "name": "Taking Charge",
+          "description": "Comms aus der Sammlung „Profile: President Ellis“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Profile: President Ellis"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

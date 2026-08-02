@@ -1,0 +1,845 @@
+{
+  "id": "comms-battleForBrooklyn",
+  "name": "Comms – Battle for Brooklyn",
+  "description": "Brooklyn-Comms aus den Gruppen Bridge, Friendly, History und Hostiles.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 35,
+    "groupCount": 4,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-brooklyn-bridge",
+      "name": "Comms – Brooklyn: Bridge",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.001-resources",
+          "name": "Resources",
+          "description": "Comms aus der Sammlung „Brooklyn: Bridge“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.002-maral",
+          "name": "Maral",
+          "description": "Comms aus der Sammlung „Brooklyn: Bridge“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.003-fishy",
+          "name": "Fishy",
+          "description": "Comms aus der Sammlung „Brooklyn: Bridge“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.004-reunited",
+          "name": "Reunited",
+          "description": "Comms aus der Sammlung „Brooklyn: Bridge“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.005-marauder",
+          "name": "Marauder",
+          "description": "Comms aus der Sammlung „Brooklyn: Bridge“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.006-sarah",
+          "name": "Sarah",
+          "description": "Comms aus der Sammlung „Brooklyn: Bridge“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-brooklyn-friendly",
+      "name": "Comms – Brooklyn: Friendly",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.001-cleaners",
+          "name": "Cleaners",
+          "description": "Comms aus der Sammlung „Brooklyn: Friendly“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.002-sacrifice",
+          "name": "Sacrifice",
+          "description": "Comms aus der Sammlung „Brooklyn: Friendly“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.003-power-stations",
+          "name": "Power Stations",
+          "description": "Comms aus der Sammlung „Brooklyn: Friendly“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.004-expectations",
+          "name": "Expectations",
+          "description": "Comms aus der Sammlung „Brooklyn: Friendly“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-brooklyn-history",
+      "name": "Comms – Brooklyn: History",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-history.001-baby",
+          "name": "Baby",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.002-building-bridges",
+          "name": "Building Bridges",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.003-art",
+          "name": "Art",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.004-free",
+          "name": "Free",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.005-hostages",
+          "name": "Hostages",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.006-police",
+          "name": "Police",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.007-territory",
+          "name": "Territory",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.008-weapons",
+          "name": "Weapons",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.009-ready",
+          "name": "Ready",
+          "description": "Comms aus der Sammlung „Brooklyn: History“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-brooklyn-hostiles",
+      "name": "Comms – Brooklyn: Hostiles",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.001-grant",
+          "name": "Grant",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.002-director",
+          "name": "Director",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.003-sfx",
+          "name": "SFX",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.004-guard-rails",
+          "name": "Guard Rails",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.005-clinic",
+          "name": "Clinic",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.006-meret",
+          "name": "Meret",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.007-attack",
+          "name": "Attack",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.008-collab",
+          "name": "Collab",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.009-exports",
+          "name": "Exports",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.010-success",
+          "name": "Success",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.011-present",
+          "name": "Present",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.012-negotiations",
+          "name": "Negotiations",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.013-tech",
+          "name": "Tech",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.014-new-voice",
+          "name": "New Voice",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.015-mg-update",
+          "name": "MG Update",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.016-rq-update",
+          "name": "RQ Update",
+          "description": "Comms aus der Sammlung „Brooklyn: Hostiles“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 16"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

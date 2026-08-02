@@ -1,0 +1,2058 @@
+{
+  "id": "comms-manhuntsRogueNetwork",
+  "name": "Comms – Manhunts – Rogue Network",
+  "description": "Puppeteers, Vanguard und First Rogue.",
+  "lastUpdated": "2026-07-26",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 88,
+    "groupCount": 3,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": false
+  },
+  "groups": [
+    {
+      "id": "comms-manhunt-puppeteers",
+      "name": "Comms – Manhunt: Puppeteers",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.001-coney-debrief",
+          "name": "Coney Debrief",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.002-coping",
+          "name": "Coping",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.003-reassigned",
+          "name": "Reassigned",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.004-wally",
+          "name": "Wally",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.005-cindy",
+          "name": "Cindy",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.006-kenly",
+          "name": "Kenly",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.007-update",
+          "name": "Update",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.008-reunited",
+          "name": "Reunited",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.009-career-change",
+          "name": "Career Change",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.010-mel",
+          "name": "Mel",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.011-kenly-debrief",
+          "name": "Kenly Debrief",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.012-transmission-1",
+          "name": "Transmission 1",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.013-transmission-2",
+          "name": "Transmission 2",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.014-transmission-3",
+          "name": "Transmission 3",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.015-jack",
+          "name": "Jack",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.016-surrender",
+          "name": "Surrender",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.017-negotiations",
+          "name": "Negotiations",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.018-power",
+          "name": "Power",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.019-bunkers",
+          "name": "Bunkers",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.020-vik",
+          "name": "Vik",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.021-bored",
+          "name": "Bored",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "21 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.022-bro",
+          "name": "Bro",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "22 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.023-grid",
+          "name": "Grid",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "23 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.024-key",
+          "name": "Key",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "24 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.025-birdie",
+          "name": "Birdie",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "25 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.026-reports",
+          "name": "Reports",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "26 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.027-moonshine",
+          "name": "Moonshine",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "27 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.028-recruitment",
+          "name": "Recruitment",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "28 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.029-promotion",
+          "name": "Promotion",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "29 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.030-recruiter-insurance-1",
+          "name": "Recruiter Insurance 1",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "30 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.031-recruiter-insurance-2",
+          "name": "Recruiter Insurance 2",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "31 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.032-recruiter-insurance-3",
+          "name": "Recruiter Insurance 3",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "32 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-puppeteers.033-recruiter-insurance-4",
+          "name": "Recruiter Insurance 4",
+          "description": "Comms aus der Sammlung „Manhunt: Puppeteers“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Puppeteers"
+            },
+            {
+              "label": "Position",
+              "value": "33 / 33"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-manhunt-vanguard",
+      "name": "Comms – Manhunt: Vanguard",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.001-parnell",
+          "name": "Parnell",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.002-keener",
+          "name": "Keener",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.003-dragov",
+          "name": "Dragov",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.004-connections",
+          "name": "Connections",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.005-conley",
+          "name": "Conley",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.006-kajika",
+          "name": "Kajika",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.007-benefit",
+          "name": "Benefit",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.008-offer",
+          "name": "Offer",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.009-bracelets",
+          "name": "Bracelets",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.010-code-name",
+          "name": "Code Name",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.011-breakfast",
+          "name": "Breakfast",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.012-lunch",
+          "name": "Lunch",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.013-the-plan",
+          "name": "The Plan",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.014-the-fallout",
+          "name": "The Fallout",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.015-the-update",
+          "name": "The Update",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.016-drinks",
+          "name": "Drinks",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.017-invitation",
+          "name": "Invitation",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.018-dinner",
+          "name": "Dinner",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.019-dessert",
+          "name": "Dessert",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.020-community",
+          "name": "Community",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.021-ready",
+          "name": "Ready",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "21 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.022-kelso-1",
+          "name": "Kelso 1",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "22 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.023-kelso-2",
+          "name": "Kelso 2",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "23 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.024-kelso-3",
+          "name": "Kelso 3",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "24 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.025-kelso-4",
+          "name": "Kelso 4",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "25 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-vanguard.026-kelso-5",
+          "name": "Kelso 5",
+          "description": "Comms aus der Sammlung „Manhunt: Vanguard“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: Vanguard"
+            },
+            {
+              "label": "Position",
+              "value": "26 / 26"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comms-manhunt-first-rogue",
+      "name": "Comms – Manhunt: First Rogue",
+      "items": [
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.001-daddy",
+          "name": "Daddy",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.002-range",
+          "name": "Range",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.003-ellis",
+          "name": "Ellis",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.004-chickenhawk",
+          "name": "Chickenhawk",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.005-well-done",
+          "name": "Well Done",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.006-friends",
+          "name": "Friends",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.007-welcome-home",
+          "name": "Welcome Home",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.008-lions",
+          "name": "Lions",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.009-hydra",
+          "name": "Hydra",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.010-stable",
+          "name": "Stable",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.011-girdle",
+          "name": "Girdle",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.012-congratulations",
+          "name": "Congratulations",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.013-the-way",
+          "name": "The Way",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.014-antenna",
+          "name": "Antenna",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.015-black",
+          "name": "Black",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.016-diamond",
+          "name": "Diamond",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.017-control",
+          "name": "Control",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "17 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.018-excellent",
+          "name": "Excellent",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "18 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.019-waiting",
+          "name": "Waiting",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "19 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.020-roster",
+          "name": "Roster",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "20 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.021-evolve",
+          "name": "Evolve",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "21 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.022-recruit",
+          "name": "Recruit",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "22 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.023-labor",
+          "name": "Labor",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "23 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.024-status-update",
+          "name": "Status Update",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "24 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.025-epic",
+          "name": "Epic",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "25 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.026-cease-fire",
+          "name": "Cease Fire",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "26 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.027-trust",
+          "name": "Trust",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "27 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.028-terms",
+          "name": "Terms",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "28 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        },
+        {
+          "id": "division2.collectible.comms.manhunt-first-rogue.029-aligned",
+          "name": "Aligned",
+          "description": "Comms aus der Sammlung „Manhunt: First Rogue“.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Manhunt: First Rogue"
+            },
+            {
+              "label": "Position",
+              "value": "29 / 29"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im jeweils zugehörigen Gebiet, Einsatz, Manhunt-, Saison-, Incursion-, Descent- oder DLC-Inhalt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
