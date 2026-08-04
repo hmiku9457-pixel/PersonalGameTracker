@@ -1,0 +1,79 @@
+{
+  "id": "comms-missions",
+  "name": {
+    "de": "Missionen",
+    "en": "Missions"
+  },
+  "description": {
+    "de": "Missions-, Manhunt-, Incursion-, Descent- und weitere aktivitätsgebundene Comms.",
+    "en": "Mission, Manhunt, Incursion, Descent and other activity-bound Comms."
+  },
+  "lastUpdated": "2026-08-04",
+  "view": "list",
+  "map": null,
+  "dataStatus": {
+    "scope": "region-manifest",
+    "itemCount": 515,
+    "groupCount": 25,
+    "fileCount": 8,
+    "coordinatesCompleted": 0
+  },
+  "files": [
+    {
+      "id": "newYorkWorld",
+      "name": "Comms – New York – Welt und Einsätze – Missionen",
+      "file": "newYorkWorld.json",
+      "itemCount": 9,
+      "groupCount": 1
+    },
+    {
+      "id": "specialOperations",
+      "name": "Comms – Spezialoperationen – Missionen",
+      "file": "specialOperations.json",
+      "itemCount": 30,
+      "groupCount": 3
+    },
+    {
+      "id": "manhuntsLegacy",
+      "name": "Comms – Manhunts – Legacy – Missionen",
+      "file": "manhuntsLegacy.json",
+      "itemCount": 80,
+      "groupCount": 4
+    },
+    {
+      "id": "manhuntsReconstruction",
+      "name": "Comms – Manhunts – Wiederaufbau – Missionen",
+      "file": "manhuntsReconstruction.json",
+      "itemCount": 87,
+      "groupCount": 4
+    },
+    {
+      "id": "manhuntsRogueNetwork",
+      "name": "Comms – Manhunts – Rogue Network – Missionen",
+      "file": "manhuntsRogueNetwork.json",
+      "itemCount": 88,
+      "groupCount": 3
+    },
+    {
+      "id": "manhuntsCurrent",
+      "name": "Comms – Manhunts – Aktuelle Handlungsstränge – Missionen",
+      "file": "manhuntsCurrent.json",
+      "itemCount": 101,
+      "groupCount": 7
+    },
+    {
+      "id": "incursionAndBTSU",
+      "name": "Comms – Incursion und BTSU – Missionen",
+      "file": "incursionAndBTSU.json",
+      "itemCount": 15,
+      "groupCount": 2
+    },
+    {
+      "id": "descent",
+      "name": "Comms – Descent – Missionen",
+      "file": "descent.json",
+      "itemCount": 105,
+      "groupCount": 1
+    }
+  ]
+}

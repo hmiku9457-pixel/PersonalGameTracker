@@ -1,0 +1,532 @@
+{
+  "id": "comms-newYorkWorld-missions",
+  "name": "Comms – New York – Welt und Einsätze – Missionen",
+  "description": "Allgemeine New-York-Comms sowie Aufzeichnungen aus Lower Manhattan und Coney Island. Für die neue Bereichsansicht gefiltert: Missionen.",
+  "lastUpdated": "2026-08-04",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 9,
+    "groupCount": 1,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": true,
+    "locationDetailsCompleted": 32,
+    "note": "Jeder Eintrag enthält nun Fundort beziehungsweise Freischaltquelle und ein konkretes Vorgehen. Bei Manhunt-, Descent-, Retaliation- und Incursion-Belohnungen existiert kein frei aufnehmbares Open-World-Gerät; dort wird die erforderliche Aktivität beschrieben.",
+    "migrationVersion": "comms-phase1-v2",
+    "sourceFile": "newYorkWorld.json",
+    "destination": "missions",
+    "coordinatesCompleted": 0
+  },
+  "groups": [
+    {
+      "id": "comms-coney-island",
+      "name": "Comms – Coney Island",
+      "items": [
+        {
+          "id": "division2.collectible.comms.coney-island.001-collaboration",
+          "name": "Collaboration",
+          "description": "Comm „Collaboration“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Fundort",
+              "value": "Auf einer Kiste neben der Nachfüllkiste kurz vor dem Ausgang zum Boardwalk auf dem Weg zu Dolores Jones."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Dem Missionsweg folgen und vor dem Boardwalk-Ausgang die Kisten neben der Ammo Crate prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.002-new-friends",
+          "name": "New Friends",
+          "description": "Comm „New Friends“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Bowling Alley Safe House"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Safe House auf einem umgestürzten Verkaufsautomaten beim Ostausgang."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum Bowling Alley Safe House schnellreisen und den umgestürzten Automaten am Ostausgang prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.003-trade-agreement",
+          "name": "Trade Agreement",
+          "description": "Comm „Trade Agreement“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im zweiten Arcade-Raum auf einem Sofa neben den Doppeltüren zu den Bumper Cars."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Durch die Arcade gehen und im zweiten Raum das Sofa an den Doppeltüren prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.004-are-you-threatening-me",
+          "name": "Are You Threatening Me",
+          "description": "Comm „Are You Threatening Me“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Fundort",
+              "value": "Nach dem ersten Tor, das von Mörsern beschossen wird, rechts auf Kisten."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Tor passieren, sofort rechts halten und das Gerät auf den Kisten aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.005-speculation",
+          "name": "Speculation",
+          "description": "Comm „Speculation“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Fundort",
+              "value": "Nach Übernahme der Mörser am Boardwalk-Checkpoint, rechts auf einer Kiste."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Mörsersequenz abschließen, den Boardwalk hinuntergehen und am Checkpoint rechts suchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.006-set-up",
+          "name": "Set Up",
+          "description": "Comm „Set Up“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem begehbaren beigefarbenen Shipping Container nach dem Ende des Boardwalks."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Ende des Boardwalks hinabspringen, rechts in den Container gehen und ihn vollständig durchqueren."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.007-ashes-to-ashes",
+          "name": "Ashes to Ashes",
+          "description": "Comm „Ashes to Ashes“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Amusement Park"
+            },
+            {
+              "label": "Fundort",
+              "value": "Auf einem Driver-Arcade-Automaten im Cleaner-Bereich vor der alten Achterbahn."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor der Roller-Coaster-Sequenz die Arcade-Automaten im Cleaner-Bereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.008-as-far-as-you-can-throw-him",
+          "name": "As Far As You Can Throw Him",
+          "description": "Comm „As Far As You Can Throw Him“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Fundort",
+              "value": "Auf einem Picknicktisch vor der Treppe hinunter zum Ballpark."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Abstieg anhalten und die Picknicktische prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.coney-island.009-practice-makes-perfect",
+          "name": "Practice Makes Perfect",
+          "description": "Comm „Practice Makes Perfect“ aus der Sammlung „Coney Island“ mit konkretem Fundweg.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Coney Island"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Coney-Island-Mission oder Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Coney Island Ballpark"
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem Trailer gegenüber dem ersten Geschütz auf dem Weg zum Ballpark."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Beim ersten Turret den gegenüberliegenden Trailer betreten."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung des Gebiets erneut erreichbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Fundort und Zugang konkret dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        }
+      ]
+    }
+  ]
+}

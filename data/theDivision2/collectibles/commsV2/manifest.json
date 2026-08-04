@@ -1,0 +1,71 @@
+{
+  "id": "comms",
+  "name": {
+    "de": "Comms",
+    "en": "Comms"
+  },
+  "description": {
+    "de": "Comms nach Washington, New York, Brooklyn und Missionen gegliedert.",
+    "en": "Comms organized into Washington, New York, Brooklyn and Missions."
+  },
+  "lastUpdated": "2026-08-04",
+  "dataStatus": {
+    "scope": "section-manifest",
+    "migrationVersion": "comms-phase1-v2",
+    "sourceItemCount": 840,
+    "itemCount": 840,
+    "sectionCount": 4,
+    "itemIdsPreserved": true,
+    "coordinatesCompleted": 0
+  },
+  "sections": [
+    {
+      "id": "washington",
+      "name": {
+        "de": "Washington, D.C.",
+        "en": "Washington, D.C."
+      },
+      "view": "map",
+      "map": "washington",
+      "manifest": "washington/manifest.json",
+      "itemCount": 181,
+      "groupCount": 19
+    },
+    {
+      "id": "newYork",
+      "name": {
+        "de": "New York",
+        "en": "New York"
+      },
+      "view": "map",
+      "map": "newYork",
+      "manifest": "newYork/manifest.json",
+      "itemCount": 109,
+      "groupCount": 11
+    },
+    {
+      "id": "brooklyn",
+      "name": {
+        "de": "Brooklyn",
+        "en": "Brooklyn"
+      },
+      "view": "map",
+      "map": "brooklyn",
+      "manifest": "brooklyn/manifest.json",
+      "itemCount": 35,
+      "groupCount": 4
+    },
+    {
+      "id": "missions",
+      "name": {
+        "de": "Missionen",
+        "en": "Missions"
+      },
+      "view": "list",
+      "map": null,
+      "manifest": "missions/manifest.json",
+      "itemCount": 515,
+      "groupCount": 25
+    }
+  ]
+}

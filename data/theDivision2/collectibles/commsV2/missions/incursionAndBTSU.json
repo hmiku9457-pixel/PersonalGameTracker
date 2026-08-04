@@ -1,0 +1,970 @@
+{
+  "id": "comms-incursionAndBTSU-missions",
+  "name": "Comms – Incursion und BTSU – Missionen",
+  "description": "Comms aus Meret Estate und von BTSU Team 9. Für die neue Bereichsansicht gefiltert: Missionen.",
+  "lastUpdated": "2026-08-04",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 15,
+    "groupCount": 2,
+    "pendingNameVerification": 0,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": true,
+    "locationDetailsCompleted": 15,
+    "note": "Jeder Eintrag enthält nun Fundort beziehungsweise Freischaltquelle und ein konkretes Vorgehen. Bei Manhunt-, Descent-, Retaliation- und Incursion-Belohnungen existiert kein frei aufnehmbares Open-World-Gerät; dort wird die erforderliche Aktivität beschrieben.",
+    "migrationVersion": "comms-phase1-v2",
+    "sourceFile": "incursionAndBTSU.json",
+    "destination": "missions",
+    "coordinatesCompleted": 0
+  },
+  "groups": [
+    {
+      "id": "comms-incursion-paradise-lost",
+      "name": "Comms – Incursion: Meret Estate",
+      "items": [
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.001-setup",
+          "name": "SetUp",
+          "description": "Incursion-Comm „SetUp“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im ersten zugänglichen Estate-/Vorhofabschnitt vor dem ersten großen Encounter."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach dem Start nicht direkt zum Encounter laufen. Die geöffneten Seitenräume und Tische des Eingangs-/Vorhofbereichs absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.002-speakeasy",
+          "name": "Speakeasy",
+          "description": "Incursion-Comm „Speakeasy“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Speakeasy-/Bar-Nebenbereich des Estate."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den optionalen Seitenweg in den Bar-/Speakeasy-Bereich nehmen und die Theke beziehungsweise Tische absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.003-confirm",
+          "name": "Confirm",
+          "description": "Incursion-Comm „Confirm“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Bedingter Encounter-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Paradise Lost – Wright"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Wright-Encounter erreichen."
+            },
+            {
+              "label": "Fundort",
+              "value": "Automatische Belohnung nach dem Wright-Encounter."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Wright ausschließlich über genau drei Wasserphasen verwundbar machen und ihn in der dritten Phase besiegen. Zusätzliche Wasserphasen vermeiden. Nach dem Kill den Encounter-Loot beziehungsweise die automatische Comm-Belohnung prüfen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Durch erneuten Incursion-Durchlauf nachholbar."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Spezifische Encounter-Bedingung dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.004-honeymoon",
+          "name": "Honeymoon",
+          "description": "Incursion-Comm „Honeymoon“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem verschlossenen Nebenbereich der Incursion."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Schlüssel im vorherigen Abschnitt aufnehmen und die dazugehörige verschlossene Tür öffnen; das Audiogerät liegt im Nebenraum."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.005-outbreak",
+          "name": "Outbreak",
+          "description": "Incursion-Comm „Outbreak“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem festen Seitenbereich der Meret-Estate-Incursion."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach einem Encounter vor dem nächsten Checkpoint alle geöffneten Räume absuchen; das Gerät liegt als fester Pickup und droppt nicht vom Boss."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.006-brave",
+          "name": "Brave",
+          "description": "Incursion-Comm „Brave“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem Seitenraum vor beziehungsweise rund um den Wright-Abschnitt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Betreten des nächsten Encounter-Raums den seitlichen Innenbereich absuchen und das offen liegende Gerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.007-recruitment",
+          "name": "Recruitment",
+          "description": "Incursion-Comm „Recruitment“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem festen Seitenbereich im späteren Estate-Verlauf."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vor dem Übergang zu den Lovebirds die zugänglichen Seitenräume und Arbeitsplätze absuchen; das Gerät als festen Pickup aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.008-condolences",
+          "name": "Condolences",
+          "description": "Incursion-Comm „Condolences“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Fester Incursion-Pickup"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Incursion: Paradise Lost"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Level 40, Warlords of New York und Zugang zur Incursion."
+            },
+            {
+              "label": "Fundort",
+              "value": "Hinter einer verschlossenen Tür, deren Schlüssel in einem früheren Nebenbereich liegt."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Den Schlüssel vor dem Wright-/Estate-Innenabschnitt aufnehmen, später die passende verschlossene Tür öffnen und das Gerät im Raum aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar; Incursion erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Vor jedem Checkpoint alle Nebenräume prüfen, da ein Zurücklaufen nach Encountern eingeschränkt sein kann."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Pickup-Art und konkreter Incursion-Abschnitt dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.009-kids",
+          "name": "Kids",
+          "description": "Incursion-Comm „Kids“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Bedingter Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Paradise Lost – Lovebirds"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Lovebirds-Encounter erreichen."
+            },
+            {
+              "label": "Fundort",
+              "value": "Automatische Belohnung nach dem Lovebirds-Finale."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im finalen Encounter zuerst Martinez töten und danach Johnson. Nach dem Abschluss den Boss-Loot und die automatische Comm-Belohnung prüfen. Für das andere Comm die umgekehrte Kill-Reihenfolge in einem weiteren Durchlauf verwenden."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Durch erneuten Incursion-Durchlauf nachholbar."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Diese Drops waren in einzelnen Updates fehleranfällig; bei korrekter Reihenfolge ohne Drop erneut versuchen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Kill-Reihenfolge als Erwerbsbedingung dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.incursion-paradise-lost.010-vows",
+          "name": "Vows",
+          "description": "Incursion-Comm „Vows“ aus Paradise Lost.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Incursion: Meret Estate"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 10"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Bedingter Boss-Drop"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Meret Estate"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Paradise Lost – Lovebirds"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Paradise Lost / Meret Estate"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Lovebirds-Encounter erreichen."
+            },
+            {
+              "label": "Fundort",
+              "value": "Automatische Belohnung nach dem Lovebirds-Finale."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Im finalen Encounter zuerst Johnson töten und danach Martinez. Nach dem Abschluss den Boss-Loot und die automatische Comm-Belohnung prüfen. Für das andere Comm die umgekehrte Kill-Reihenfolge in einem weiteren Durchlauf verwenden."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Durch erneuten Incursion-Durchlauf nachholbar."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Diese Drops waren in einzelnen Updates fehleranfällig; bei korrekter Reihenfolge ohne Drop erneut versuchen."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Kill-Reihenfolge als Erwerbsbedingung dokumentiert."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "comms-btsu-team-9",
+      "name": "Comms – BTSU Team 9",
+      "items": [
+        {
+          "id": "division2.collectible.comms.btsu-team-9.001-btsu-team-9-overview",
+          "name": "BTSU Team 9 - Overview",
+          "description": "Saisonales Retaliation-Comm zu BTSU Team 9: Overview.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 5"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Automatische Elite-Kill-Squad-Belohnung"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Retaliation"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Retaliation – BTSU Team 9 Kill Squad"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Retaliation-Menü / Base of Operations"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Eine Saison/Rotation, in der BTSU Team 9 als Retaliation-Kill-Squad aktiv ist."
+            },
+            {
+              "label": "Fundort",
+              "value": "Kein physisches Collectible. Das Comm wurde beim Besiegen von BTSU Team 9 in Retaliation automatisch vergeben."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Eine Black-Tusk-Retaliation spielen und die Elite-Kill-Squad BTSU Team 9 vollständig besiegen. Für „Overview“ den entsprechenden Team-9-Durchlauf abschließen; die Aufzeichnung erscheint nach dem Kill automatisch. Falls Team 9 in der aktuellen Saison durch eine andere Kill Squad ersetzt wurde, ist dieser Eintrag derzeit nicht zuverlässig nachholbar."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Saisonal verfügbar; nach Rotation möglicherweise vorübergehend nicht erhältlich."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Ursprüngliche Freischaltmechanik dokumentiert; aktuelle saisonale Verfügbarkeit kann wechseln."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.002-btsu-team-9-colin-stitch-stachinsky",
+          "name": "BTSU Team 9 - Colin \"Stitch\" Stachinsky",
+          "description": "Saisonales Retaliation-Comm zu BTSU Team 9: Colin \"Stitch\" Stachinsky.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 5"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Automatische Elite-Kill-Squad-Belohnung"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Retaliation"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Retaliation – BTSU Team 9 Kill Squad"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Retaliation-Menü / Base of Operations"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Eine Saison/Rotation, in der BTSU Team 9 als Retaliation-Kill-Squad aktiv ist."
+            },
+            {
+              "label": "Fundort",
+              "value": "Kein physisches Collectible. Das Comm wurde beim Besiegen von BTSU Team 9 in Retaliation automatisch vergeben."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Eine Black-Tusk-Retaliation spielen und die Elite-Kill-Squad BTSU Team 9 vollständig besiegen. Für „Colin \"Stitch\" Stachinsky“ den entsprechenden Team-9-Durchlauf abschließen; die Aufzeichnung erscheint nach dem Kill automatisch. Falls Team 9 in der aktuellen Saison durch eine andere Kill Squad ersetzt wurde, ist dieser Eintrag derzeit nicht zuverlässig nachholbar."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Saisonal verfügbar; nach Rotation möglicherweise vorübergehend nicht erhältlich."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Ursprüngliche Freischaltmechanik dokumentiert; aktuelle saisonale Verfügbarkeit kann wechseln."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.003-btsu-team-9-lucy-car-bomb-jimenez",
+          "name": "BTSU Team 9 - Lucy \"Car Bomb\" Jimenez",
+          "description": "Saisonales Retaliation-Comm zu BTSU Team 9: Lucy \"Car Bomb\" Jimenez.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 5"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Automatische Elite-Kill-Squad-Belohnung"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Retaliation"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Retaliation – BTSU Team 9 Kill Squad"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Retaliation-Menü / Base of Operations"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Eine Saison/Rotation, in der BTSU Team 9 als Retaliation-Kill-Squad aktiv ist."
+            },
+            {
+              "label": "Fundort",
+              "value": "Kein physisches Collectible. Das Comm wurde beim Besiegen von BTSU Team 9 in Retaliation automatisch vergeben."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Eine Black-Tusk-Retaliation spielen und die Elite-Kill-Squad BTSU Team 9 vollständig besiegen. Für „Lucy \"Car Bomb\" Jimenez“ den entsprechenden Team-9-Durchlauf abschließen; die Aufzeichnung erscheint nach dem Kill automatisch. Falls Team 9 in der aktuellen Saison durch eine andere Kill Squad ersetzt wurde, ist dieser Eintrag derzeit nicht zuverlässig nachholbar."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Saisonal verfügbar; nach Rotation möglicherweise vorübergehend nicht erhältlich."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Ursprüngliche Freischaltmechanik dokumentiert; aktuelle saisonale Verfügbarkeit kann wechseln."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.004-btsu-team-9-emily-countdown-zero",
+          "name": "BTSU Team 9 - Emily \"Countdown\" Zero",
+          "description": "Saisonales Retaliation-Comm zu BTSU Team 9: Emily \"Countdown\" Zero.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 5"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Automatische Elite-Kill-Squad-Belohnung"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Retaliation"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Retaliation – BTSU Team 9 Kill Squad"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Retaliation-Menü / Base of Operations"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Eine Saison/Rotation, in der BTSU Team 9 als Retaliation-Kill-Squad aktiv ist."
+            },
+            {
+              "label": "Fundort",
+              "value": "Kein physisches Collectible. Das Comm wurde beim Besiegen von BTSU Team 9 in Retaliation automatisch vergeben."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Eine Black-Tusk-Retaliation spielen und die Elite-Kill-Squad BTSU Team 9 vollständig besiegen. Für „Emily \"Countdown\" Zero“ den entsprechenden Team-9-Durchlauf abschließen; die Aufzeichnung erscheint nach dem Kill automatisch. Falls Team 9 in der aktuellen Saison durch eine andere Kill Squad ersetzt wurde, ist dieser Eintrag derzeit nicht zuverlässig nachholbar."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Saisonal verfügbar; nach Rotation möglicherweise vorübergehend nicht erhältlich."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Ursprüngliche Freischaltmechanik dokumentiert; aktuelle saisonale Verfügbarkeit kann wechseln."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.btsu-team-9.005-btsu-team-9-alivn-clean-hands-tolliver",
+          "name": "BTSU Team 9 - Alivn \"Clean Hands\" Tolliver",
+          "description": "Saisonales Retaliation-Comm zu BTSU Team 9: Alivn \"Clean Hands\" Tolliver.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "BTSU Team 9"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 5"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Automatische Elite-Kill-Squad-Belohnung"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Retaliation"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Retaliation – BTSU Team 9 Kill Squad"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Retaliation-Menü / Base of Operations"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Eine Saison/Rotation, in der BTSU Team 9 als Retaliation-Kill-Squad aktiv ist."
+            },
+            {
+              "label": "Fundort",
+              "value": "Kein physisches Collectible. Das Comm wurde beim Besiegen von BTSU Team 9 in Retaliation automatisch vergeben."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Eine Black-Tusk-Retaliation spielen und die Elite-Kill-Squad BTSU Team 9 vollständig besiegen. Für „Alivn \"Clean Hands\" Tolliver“ den entsprechenden Team-9-Durchlauf abschließen; die Aufzeichnung erscheint nach dem Kill automatisch. Falls Team 9 in der aktuellen Saison durch eine andere Kill Squad ersetzt wurde, ist dieser Eintrag derzeit nicht zuverlässig nachholbar."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Saisonal verfügbar; nach Rotation möglicherweise vorübergehend nicht erhältlich."
+            },
+            {
+              "label": "Datenqualität",
+              "value": "Ursprüngliche Freischaltmechanik dokumentiert; aktuelle saisonale Verfügbarkeit kann wechseln."
+            }
+          ],
+          "location": {
+            "region": "missions",
+            "map": null,
+            "coordinates": null
+          }
+        }
+      ]
+    }
+  ]
+}

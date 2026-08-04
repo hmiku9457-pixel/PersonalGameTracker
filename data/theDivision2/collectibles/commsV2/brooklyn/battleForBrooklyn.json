@@ -1,0 +1,2202 @@
+{
+  "id": "comms-battleForBrooklyn-brooklyn",
+  "name": "Comms – Battle for Brooklyn – Brooklyn",
+  "description": "Alle Comms aus Battle for Brooklyn mit konkreten Fundorten, Kartenkoordinaten, Missionszuordnungen und Zugangsschritten. Für die neue Bereichsansicht gefiltert: Brooklyn.",
+  "lastUpdated": "2026-08-04",
+  "dataStatus": {
+    "scope": "individual-items",
+    "itemCount": 35,
+    "groupCount": 4,
+    "pendingNameVerification": 0,
+    "locationDetailsCompleted": 35,
+    "splitSource": "comms.json",
+    "contentModifiedDuringSplit": true,
+    "note": "Open-World-Comms enthalten Kartenkoordinaten und den nächstgelegenen Schnellreisepunkt. Missionsgebundene Comms enthalten die benötigte Mission und den relevanten Missionsabschnitt. Bestehende IDs, Gruppen und Positionsnummern wurden beibehalten.",
+    "migrationVersion": "comms-phase1-v2",
+    "sourceFile": "battleForBrooklyn.json",
+    "destination": "brooklyn",
+    "coordinatesCompleted": 0
+  },
+  "groups": [
+    {
+      "id": "comms-brooklyn-bridge",
+      "name": "Comms – Brooklyn: Bridge",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.001-resources",
+          "name": "Resources",
+          "description": "Open-World-Comm im nordwestlichen Teil der Siedlung The Bridge.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 6"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO – The Bridge"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 101 / Y 1556"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Bridge muss im Verlauf der Battle-for-Brooklyn-Kampagne freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im nordwestlichen Versorgungsbereich der Siedlung, nahe den Lager- und Sanitätsplätzen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Bridge schnellreisen. Innerhalb der Siedlung nach Nordwesten gehen und den oberen Versorgungsbereich absuchen. Das Audiogerät liegt offen auf einer Ablage; es ist kein Rätsel und kein Kampf nötig."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein – nach Freischaltung der Siedlung jederzeit erreichbar."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.002-maral",
+          "name": "Maral",
+          "description": "Open-World-Comm im südlichen Innenbereich der Siedlung The Bridge.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 6"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO – The Bridge"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 137 / Y 1523"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Bridge muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im südlichen Teil der Siedlung, wenige Meter unterhalb des zentralen Aufenthaltsbereichs."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Bridge schnellreisen und vom Spawnpunkt in den südlichen Siedlungsabschnitt gehen. Dem unteren Laufweg folgen und das offen liegende Audiogerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.003-fishy",
+          "name": "Fishy",
+          "description": "Open-World-Comm im nördlichen Innenbereich von The Bridge.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 6"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO – The Bridge"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 113 / Y 1555"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Bridge muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Nördlich des Siedlungszentrums an einem der inneren Laufwege."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Schnellreisepunkt zum nördlichen Innenbereich gehen. ISAC meldet das elektronische Gerät, sobald du dich dem Laufweg näherst. Das Comm liegt frei zugänglich."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.004-reunited",
+          "name": "Reunited",
+          "description": "Open-World-Comm auf der nordöstlichen Seite von The Bridge.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 6"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO – The Bridge"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 139 / Y 1548"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Bridge muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im nordöstlichen Siedlungsbereich, nahe der äußeren Begrenzung."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Nach der Schnellreise rechts beziehungsweise nordöstlich durch die Siedlung gehen. Den äußeren Laufweg absuchen und mit dem Audiogerät interagieren."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.005-marauder",
+          "name": "Marauder",
+          "description": "Open-World-Comm am südwestlichen Rand der Siedlung The Bridge.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 6"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO – The Bridge"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 111 / Y 1491"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Bridge muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Am südwestlichen Außenrand der Siedlung, nahe dem Übergang zur Straße."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Vom Schnellreisepunkt nach Südwesten zum äußeren Siedlungsrand gehen. Das Audiogerät liegt am Rand des bewohnten Bereichs und kann ohne zusätzliche Interaktion aufgenommen werden."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-bridge.006-sarah",
+          "name": "Sarah",
+          "description": "Open-World-Comm im westlichen Innenbereich der Siedlung The Bridge.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Bridge"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 6"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO – The Bridge"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World / Siedlung"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 101 / Y 1542"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Bridge muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Westlich des Siedlungszentrums, zwischen den inneren Arbeits- und Aufenthaltsbereichen."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Bridge schnellreisen und den westlichen Innenbereich absuchen. Das Gerät liegt offen auf einer Ablage und benötigt weder Schlüssel noch Missionsfortschritt."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "comms-brooklyn-friendly",
+      "name": "Comms – Brooklyn: Friendly",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.001-cleaners",
+          "name": "Cleaners",
+          "description": "Open-World-Comm nördlich des ehemaligen Polizei- beziehungsweise Klinikgebäudes in DUMBO.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 4"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Warehouse"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "ungefähr X 63 / Y 1837"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Der frei begehbare DUMBO-Bereich muss verfügbar sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "An der Nordseite des Gebäudekomplexes, in dem Jessica Kandel zu Beginn der Brooklyn-Handlung gerettet wird; westlich des Kontrollpunkts The Warehouse."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Warehouse schnellreisen und nach Westen zum früheren Polizei-/Klinikkomplex laufen. Die Nordseite des Gebäudes umrunden. Das Comm liegt außerhalb beziehungsweise direkt am nördlichen Gebäuderand; keine Mission muss aktiv sein."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Nicht mit dem nahe gelegenen Hostiles-Comm „SFX“ verwechseln, für das ein Gebäude über ein Gerüst betreten werden muss."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.002-sacrifice",
+          "name": "Sacrifice",
+          "description": "Missionsgebundenes Comm innerhalb der World Mission CERA Clinic.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 4"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "World Mission: CERA Clinic"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "CERA Clinic"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Battle for Brooklyn und die World Mission CERA Clinic."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im zugänglichen Klinik- beziehungsweise Rettungsbereich der Mission."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "CERA Clinic starten und dem Missionsweg folgen, bis der innere Klinik-/Rettungsbereich geöffnet ist. Vor dem Abschluss und dem Verlassen des Bereichs die seitlichen Tische und Arbeitsplätze absuchen; ISAC meldet das Comm in unmittelbarer Nähe. Mit dem Audiogerät interagieren, bevor du zum Missionsausgang gehst."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während des Durchlaufs verpassbar. Bei einem Fehlschlag die World Mission erneut starten."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Das Comm gehört nicht zum frei zugänglichen Außenbereich neben der Klinik; dort liegt stattdessen „Clinic“ aus der Hostiles-Gruppe."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.003-power-stations",
+          "name": "Power Stations",
+          "description": "Missionsgebundenes Comm am Ende der World Mission Bridge Park Pier.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 4"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights – Waterfront"
+            },
+            {
+              "label": "Aktivität",
+              "value": "World Mission: Bridge Park Pier"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Bridge Park Pier"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Die World Mission Bridge Park Pier muss verfügbar sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im finalen Pierbereich beziehungsweise am Missionsausgang nach dem Abschluss der World Mission."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Bridge Park Pier vollständig spielen. Nach dem letzten Kampf und dem Missionsabschluss nicht sofort schnellreisen. Den finalen Pier- und Ausgangsbereich absuchen und das dort liegende Audiogerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während beziehungsweise unmittelbar nach der Mission verpassbar. Die Mission kann jederzeit wiederholt werden."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-friendly.004-expectations",
+          "name": "Expectations",
+          "description": "Open-World-Comm im nordwestlichen Teil von Brooklyn Heights.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Friendly"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 4"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Lookout"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 524 / Y 1543"
+            },
+            {
+              "label": "Fundort",
+              "value": "Nordwestlich von The Lookout in Richtung Waterfront, an einem frei zugänglichen Straßen- beziehungsweise Parkbereich."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Lookout schnellreisen und nach Nordwesten in Richtung Wasserfront laufen. Den Wegpunkt auf die Kartenkoordinaten setzen. Das Comm liegt auf Straßenniveau und erfordert kein Rätsel."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "comms-brooklyn-history",
+      "name": "Comms – Brooklyn: History",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-history.001-baby",
+          "name": "Baby",
+          "description": "Comm direkt innerhalb des Safe Houses The Retreat in Nord-DUMBO.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Retreat"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 409 / Y 1899"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Retreat muss entdeckt sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Direkt innerhalb des Safe Houses The Retreat."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Retreat schnellreisen. Das Audiogerät befindet sich bereits im sicheren Innenbereich; den Raum vom Spawnpunkt aus kurz absuchen und mit dem markierten Gerät interagieren."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.002-building-bridges",
+          "name": "Building Bridges",
+          "description": "Comm unmittelbar am Safe House The Lookout in Brooklyn Heights.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Safe House"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Lookout"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 294 / Y 1409"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "The Lookout muss entdeckt sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Direkt im beziehungsweise unmittelbar am Innenbereich von The Lookout."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Lookout schnellreisen. Das Audiogerät befindet sich nur wenige Schritte vom Spawnpunkt entfernt. Den Safe-House-Innenbereich und den direkten Ausgang absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.003-art",
+          "name": "Art",
+          "description": "Missionsgebundenes Comm innerhalb der Hauptmission The Art Museum.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Hauptmission: The Art Museum"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Art Museum"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Die Hauptmission The Art Museum muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Innerhalb des Museums auf dem regulären Missionsweg."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "The Art Museum starten und dem Missionsweg durch die Ausstellungsräume folgen. Vor dem finalen Missionsabschnitt beziehungsweise dem Verlassen des Museums jeden geöffneten Seitenraum absuchen. Das Audiogerät wird von ISAC erkannt, sobald du dich dem richtigen Ausstellungsbereich näherst."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar. Das Museum ist außerhalb der Mission nicht vollständig zugänglich; bei Bedarf die Mission wiederholen."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.004-free",
+          "name": "Free",
+          "description": "Open-World-Comm südöstlich des Kontrollpunkts The Warehouse.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Warehouse"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 267 / Y 1789"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im offenen Stadtblock südöstlich des Kontrollpunkts The Warehouse."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Warehouse schnellreisen und den Kontrollpunkt nach Südosten verlassen. Den Wegpunkt auf die Koordinaten setzen und den frei zugänglichen Straßen-/Hofbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.005-hostages",
+          "name": "Hostages",
+          "description": "Open-World-Comm westlich des Kontrollpunkts Cadman Plaza.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Cadman Plaza"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 111 / Y 1206"
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem Straßen- beziehungsweise Hofbereich westlich von Cadman Plaza."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Cadman Plaza schnellreisen und nach Westen gehen. Den angrenzenden Innenhof und die niedrigen Gebäudebereiche bei den Kartenkoordinaten absuchen. Das Comm liegt frei zugänglich."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.006-police",
+          "name": "Police",
+          "description": "Open-World-Comm südlich des Kontrollpunkts The Farm.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Farm"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 492 / Y 1624"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Stadtblock direkt südlich von The Farm."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Farm schnellreisen und den Kontrollpunkt nach Süden verlassen. Den Straßenrand und den angrenzenden Gebäudebereich an den angegebenen Koordinaten absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.007-territory",
+          "name": "Territory",
+          "description": "Open-World-Comm südwestlich der World Mission Bridge Park Pier.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights – Waterfront"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Bridge Park Pier"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 496 / Y 1223"
+            },
+            {
+              "label": "Fundort",
+              "value": "Südwestlich des Missionsmarkers Bridge Park Pier, nahe dem westlichen Rand des spielbaren Waterfront-Bereichs."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Bridge Park Pier schnellreisen und nach Südwesten entlang der Waterfront gehen. Den Wegpunkt auf die Kartenkoordinaten setzen; das Gerät liegt im frei zugänglichen Außenbereich."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.008-weapons",
+          "name": "Weapons",
+          "description": "Open-World-Comm südwestlich des Kontrollpunkts Fulton Ferry Market.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Fulton Ferry Market"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 307 / Y 1542"
+            },
+            {
+              "label": "Fundort",
+              "value": "Ungefähr 120 Meter beziehungsweise 400 Fuß südwestlich von Fulton Ferry Market."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Fulton Ferry Market schnellreisen und südwestlich in den nächsten Straßenblock laufen. Den Kartenkoordinaten folgen und den offenen Straßen-/Hofbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-history.009-ready",
+          "name": "Ready",
+          "description": "Open-World-Comm zwischen The Lookout und Cadman Plaza.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: History"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 9"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Lookout"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 113 / Y 1397"
+            },
+            {
+              "label": "Fundort",
+              "value": "Östlich bis südöstlich von The Lookout auf dem Weg in Richtung Cadman Plaza."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Lookout schnellreisen und nach Osten beziehungsweise Südosten laufen. Den Kartenwegpunkt setzen und den Straßenbereich zwischen Safe House und Cadman Plaza absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "comms-brooklyn-hostiles",
+      "name": "Comms – Brooklyn: Hostiles",
+      "items": [
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.001-grant",
+          "name": "Grant",
+          "description": "Open-World-Comm auf einem Schreibtisch im Büro eines umzäunten Hofs.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "1 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Farm"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 454 / Y 1514"
+            },
+            {
+              "label": "Fundort",
+              "value": "Auf einem Schreibtisch im kleinen Büro in der hinteren Ecke eines Hofs südwestlich von The Farm."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Farm schnellreisen und nach Südwesten zum markierten Hof laufen. Den Hof betreten, bis ganz nach hinten gehen und das kleine Büro in der Ecke öffnen beziehungsweise betreten. Das Comm liegt auf dem Schreibtisch."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.002-director",
+          "name": "Director",
+          "description": "Open-World-Comm östlich des DUMBO Skate Parks.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "2 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "DUMBO Skate Park"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 702 / Y 1752"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Gebäudeblock östlich bis nordöstlich des DUMBO Skate Parks."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zum DUMBO Skate Park schnellreisen und den Bereich nach Osten verlassen. Den Wegpunkt auf die Koordinaten setzen und den zugänglichen Gebäuderand beziehungsweise Hof absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.003-sfx",
+          "name": "SFX",
+          "description": "Verstecktes Open-World-Comm in einem Gebäude, das über ein Gerüst und ein Fenster betreten wird.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "3 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät mit Kletterweg"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "DUMBO Skate Park"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 594 / Y 1747"
+            },
+            {
+              "label": "Fundort",
+              "value": "In einem Gebäude nordwestlich des DUMBO Skate Parks, auf der Nordseite der Straße."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Das Gerüst an der Gebäudefassade hochklettern. Oben durch das offene Fenster in das Gebäude springen. Im Innenraum nach unten beziehungsweise zum markierten Raum gehen und das Audiogerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Von diesem Innenraum führt eine gelbe Leitung zu einem Abwasserzugang mit zusätzlichem Loot; dies ist für das Comm selbst nicht erforderlich."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.004-guard-rails",
+          "name": "Guard Rails",
+          "description": "Open-World-Comm im nördlichen DUMBO zwischen The Retreat und dem Skate Park.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "4 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Retreat"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 521 / Y 1867"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Straßenblock südöstlich von The Retreat und nordwestlich des DUMBO Skate Parks."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Retreat schnellreisen und nach Südosten laufen. Den Wegpunkt auf die Koordinaten setzen. Falls das ISAC-Symbol über Straßenniveau erscheint, die vorhandenen Container, Treppen oder Gerüste zum erhöhten Laufweg benutzen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.005-clinic",
+          "name": "Clinic",
+          "description": "Open-World-Comm direkt neben der World Mission CERA Clinic.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "5 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "CERA Clinic"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 617 / Y 1609"
+            },
+            {
+              "label": "Fundort",
+              "value": "In einer Ecke des kleinen Lebensmittelsammel- beziehungsweise Versorgungsbereichs direkt neben dem Schnellreisepunkt CERA Clinic."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu CERA Clinic schnellreisen. Nicht die Mission starten, sondern den benachbarten offenen Versorgungsplatz absuchen. Das Comm liegt unauffällig in einer Ecke des Bereichs."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Das Audiogerät liegt außerhalb der Mission."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.006-meret",
+          "name": "Meret",
+          "description": "Verstecktes Open-World-Comm in einem unterirdischen Abwasser-/Technikraum.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "6 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät mit Umgebungsrätsel"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 295 / Y 1520"
+            },
+            {
+              "label": "Fundort",
+              "value": "Südöstlich von The Bridge in einem unterirdischen Raum, der mit einem überfluteten Abwasser-Lootbereich verbunden ist."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "In der Umgebung die gelbe Stromleitung verfolgen. Sie führt in ein betretbares Gebäude zu einem gelben Stromkasten. Den Stromkasten abschießen beziehungsweise deaktivieren und dem geöffneten Weg in den unterirdischen Bereich folgen. In den Raum hinabspringen und das Comm aufnehmen. Zum Verlassen befindet sich auf der gegenüberliegenden Seite eine Leiter."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.007-attack",
+          "name": "Attack",
+          "description": "Open-World-Comm nördlich der CERA Clinic im östlichen DUMBO.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "7 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "CERA Clinic"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 673 / Y 1652"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Straßen- beziehungsweise Hofbereich nördlich der CERA Clinic und westlich des DUMBO Skate Parks."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu CERA Clinic schnellreisen und nach Norden gehen. Den Wegpunkt auf die Koordinaten setzen und den offenen Hof-/Straßenbereich absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.008-collab",
+          "name": "Collab",
+          "description": "Open-World-Comm zwischen The Bridge und The Farm.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "8 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "DUMBO"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "The Bridge"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 326 / Y 1613"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Industrieblock nordöstlich von The Bridge auf dem Weg zu The Farm."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu The Bridge schnellreisen und nach Nordosten gehen. Dem Kartenwegpunkt in den Industrieblock folgen und den frei zugänglichen Hof beziehungsweise Gebäuderand absuchen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.009-exports",
+          "name": "Exports",
+          "description": "Missionsgebundenes Comm im Hafenabschnitt der Hauptmission H5 Refinery.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "9 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Off-Site-Mission"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Hauptmission: H5 Refinery"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "H5 Refinery"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "H5 Refinery muss in der Battle-for-Brooklyn-Kampagne freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Dock-/Hafenabschnitt kurz vor dem Missionsziel „Secure the Docks“."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "H5 Refinery starten und dem Missionsweg bis zum Hafen folgen. Bevor du den nächsten großen Kampf zum Sichern der Docks auslöst, den seitlichen Arbeits- und Containerbereich absuchen. Das Comm liegt dort auf dem regulären Missionsweg."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar. H5 Refinery erneut starten, falls der Hafenabschnitt bereits verlassen wurde."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.010-success",
+          "name": "Success",
+          "description": "Missionsgebundenes Comm im Dockbereich von H5 Refinery nach dem Einsatz des Krans.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "10 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Off-Site-Mission"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Hauptmission: H5 Refinery"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "H5 Refinery"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "H5 Refinery."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Hafenabschnitt nach dem Sichern der Docks beziehungsweise dem Kommando über den Kran, bevor das Boot zerstört wird."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Die Mission bis zum Dockkampf spielen und den Kran bedienen. Bevor du mit dem nächsten Ziel zum Zerstören des Boots fortfährst, den nun gesicherten Dockbereich absuchen und das Audiogerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; Mission bei Bedarf wiederholen."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.011-present",
+          "name": "Present",
+          "description": "Missionsgebundenes Comm in H5 Refinery, unmittelbar vor der Purple-Flame-Werkstatt.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "11 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Off-Site-Mission"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Hauptmission: H5 Refinery"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "H5 Refinery"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "H5 Refinery."
+            },
+            {
+              "label": "Fundort",
+              "value": "In dem Raum direkt vor der Purple Flame Workshop."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Dem Missionsweg bis zur Purple-Flame-Werkstatt folgen. Im unmittelbar davorliegenden Raum anhalten und den Bereich zwischen den violetten Flammen und Arbeitsplätzen absuchen. Das Comm liegt direkt auf dem Missionsweg, ist wegen der Beleuchtung aber leicht zu übersehen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; Mission bei Bedarf wiederholen."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.012-negotiations",
+          "name": "Negotiations",
+          "description": "Open-World-Comm in einem Treppenhaus eines Innenhofs nahe Clark Street.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "12 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Clark Street"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 33 / Y 1096"
+            },
+            {
+              "label": "Fundort",
+              "value": "In den Treppen eines internen Innenhofs südlich von Cadman Plaza beziehungsweise nahe der World Mission Clark Street."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Clark Street oder Cadman Plaza schnellreisen und den Kartenkoordinaten folgen. Durch den Gebäudedurchgang in den Innenhof gehen. Das Comm liegt im dortigen Treppenbereich und ist von der Hauptstraße aus nicht sichtbar."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            },
+            {
+              "label": "Hinweis",
+              "value": "Beim Suchen weit in die Karte hineinzoomen, damit die Koordinaten genauer ablesbar sind."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.013-tech",
+          "name": "Tech",
+          "description": "Open-World-Comm im westlichen Waterfront-Bereich bei Bridge Park Pier.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "13 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights – Waterfront"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Bridge Park Pier"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 572 / Y 1346"
+            },
+            {
+              "label": "Fundort",
+              "value": "Westlich beziehungsweise unmittelbar außerhalb des Missionsbereichs Bridge Park Pier."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Bridge Park Pier schnellreisen und den offenen Waterfront-Bereich in Richtung Westen absuchen. Dem Kartenwegpunkt folgen; die World Mission muss nicht aktiv sein."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.014-new-voice",
+          "name": "New Voice",
+          "description": "Open-World-Comm am südwestlichen Rand von Brooklyn Heights.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "14 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Frei auffindbares Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Brooklyn Heights"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Open World"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Clark Street"
+            },
+            {
+              "label": "Kartenkoordinaten",
+              "value": "X 54 / Y 1945"
+            },
+            {
+              "label": "Fundort",
+              "value": "Im äußersten südwestlichen spielbaren Bereich von Brooklyn Heights, nahe dem südlichen Kartenrand."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Zu Clark Street schnellreisen und nach Südwesten zum Kartenrand laufen. Den Wegpunkt auf die Koordinaten setzen und den zugänglichen Hof-/Gebäudebereich absuchen. Keine Mission muss aktiv sein."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Nein."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.015-mg-update",
+          "name": "MG Update",
+          "description": "Missionsgebundenes Comm im frühen Abschnitt der Hauptmission Army Terminal.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "15 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Off-Site-Mission"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Hauptmission: Army Terminal"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Army Terminal"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Army Terminal muss freigeschaltet sein."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im frühen Außen-/Zugangsabschnitt vor den Turret Defenses und dem eigentlichen Durchbruch in das Terminal."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Army Terminal starten und dem Weg bis zum Bereich vor den automatischen Geschützen folgen. Bevor das Ziel zum Ausschalten beziehungsweise Überwinden der Turret Defenses vollständig begonnen wird, den seitlichen Zugangsbereich absuchen und das Comm aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; Mission bei Bedarf wiederholen."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        },
+        {
+          "id": "division2.collectible.comms.brooklyn-hostiles.016-rq-update",
+          "name": "RQ Update",
+          "description": "Missionsgebundenes Comm im Reaktor-/Kontrollabschnitt von Army Terminal.",
+          "details": [
+            {
+              "label": "Typ",
+              "value": "Comms"
+            },
+            {
+              "label": "Sammlung",
+              "value": "Brooklyn: Hostiles"
+            },
+            {
+              "label": "Position",
+              "value": "16 / 16"
+            },
+            {
+              "label": "Inhalt",
+              "value": "Battle for Brooklyn"
+            },
+            {
+              "label": "Erwerbsart",
+              "value": "Missionsgebundenes Audiogerät"
+            },
+            {
+              "label": "Gebiet",
+              "value": "Off-Site-Mission"
+            },
+            {
+              "label": "Aktivität",
+              "value": "Hauptmission: Army Terminal"
+            },
+            {
+              "label": "Nächster Schnellreisepunkt",
+              "value": "Army Terminal"
+            },
+            {
+              "label": "Voraussetzung",
+              "value": "Army Terminal."
+            },
+            {
+              "label": "Fundort",
+              "value": "Im Inneren des Terminals beim Reaktor- beziehungsweise Kontrollbereich, kurz vor dem Missionsziel „Follow the Power Lines“."
+            },
+            {
+              "label": "Vorgehen",
+              "value": "Army Terminal bis in den Reaktor-/Kontrollabschnitt spielen. Bevor du den Stromleitungen zum nächsten Missionsziel folgst, die Arbeitsplätze und Konsolen des aktuellen Raums absuchen und das Audiogerät aufnehmen."
+            },
+            {
+              "label": "Verpassbarkeit",
+              "value": "Während der Mission verpassbar; Mission bei Bedarf wiederholen."
+            }
+          ],
+          "location": {
+            "region": "brooklyn",
+            "map": "brooklyn",
+            "coordinates": null
+          }
+        }
+      ]
+    }
+  ]
+}

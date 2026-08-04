@@ -1,0 +1,51 @@
+{
+  "id": "comms-washington",
+  "name": {
+    "de": "Washington, D.C.",
+    "en": "Washington, D.C."
+  },
+  "description": {
+    "de": "Frei auffindbare Comms auf der Karte von Washington, D.C..",
+    "en": "Freely discoverable Comms on the Washington, D.C. map."
+  },
+  "lastUpdated": "2026-08-04",
+  "view": "map",
+  "map": "washington",
+  "dataStatus": {
+    "scope": "region-manifest",
+    "itemCount": 181,
+    "groupCount": 19,
+    "fileCount": 4,
+    "coordinatesCompleted": 0
+  },
+  "files": [
+    {
+      "id": "coreFactionsAndInstitutions",
+      "name": "Comms – Fraktionen und Institutionen – Washington, D.C.",
+      "file": "coreFactionsAndInstitutions.json",
+      "itemCount": 73,
+      "groupCount": 7
+    },
+    {
+      "id": "washingtonWorld",
+      "name": "Comms – Washington – Open World – Washington, D.C.",
+      "file": "washingtonWorld.json",
+      "itemCount": 33,
+      "groupCount": 3
+    },
+    {
+      "id": "washingtonSettlements",
+      "name": "Comms – Washington – Siedlungen – Washington, D.C.",
+      "file": "washingtonSettlements.json",
+      "itemCount": 20,
+      "groupCount": 3
+    },
+    {
+      "id": "washingtonProfiles",
+      "name": "Comms – Washington – Profile – Washington, D.C.",
+      "file": "washingtonProfiles.json",
+      "itemCount": 55,
+      "groupCount": 6
+    }
+  ]
+}

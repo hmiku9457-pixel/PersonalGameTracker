@@ -1,0 +1,30 @@
+{
+  "id": "comms-brooklyn",
+  "name": {
+    "de": "Brooklyn",
+    "en": "Brooklyn"
+  },
+  "description": {
+    "de": "Frei auffindbare Comms auf der Karte von Brooklyn.",
+    "en": "Freely discoverable Comms on the Brooklyn map."
+  },
+  "lastUpdated": "2026-08-04",
+  "view": "map",
+  "map": "brooklyn",
+  "dataStatus": {
+    "scope": "region-manifest",
+    "itemCount": 35,
+    "groupCount": 4,
+    "fileCount": 1,
+    "coordinatesCompleted": 0
+  },
+  "files": [
+    {
+      "id": "battleForBrooklyn",
+      "name": "Comms – Battle for Brooklyn – Brooklyn",
+      "file": "battleForBrooklyn.json",
+      "itemCount": 35,
+      "groupCount": 4
+    }
+  ]
+}

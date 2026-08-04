@@ -1,0 +1,37 @@
+{
+  "id": "comms-newYork",
+  "name": {
+    "de": "New York",
+    "en": "New York"
+  },
+  "description": {
+    "de": "Frei auffindbare Comms auf der Karte von New York.",
+    "en": "Freely discoverable Comms on the New York map."
+  },
+  "lastUpdated": "2026-08-04",
+  "view": "map",
+  "map": "newYork",
+  "dataStatus": {
+    "scope": "region-manifest",
+    "itemCount": 109,
+    "groupCount": 11,
+    "fileCount": 2,
+    "coordinatesCompleted": 0
+  },
+  "files": [
+    {
+      "id": "newYorkWorld",
+      "name": "Comms – New York – Welt und Einsätze – New York",
+      "file": "newYorkWorld.json",
+      "itemCount": 23,
+      "groupCount": 2
+    },
+    {
+      "id": "newYorkProfiles",
+      "name": "Comms – New York – Profile – New York",
+      "file": "newYorkProfiles.json",
+      "itemCount": 86,
+      "groupCount": 9
+    }
+  ]
+}
