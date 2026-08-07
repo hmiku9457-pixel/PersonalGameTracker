@@ -160,9 +160,9 @@ async function renderCommsOverview(
 ) {
     showLoading();
 
-    const mainContent = document.getElementById(
-        "mainContent"
-    );
+   const mainContent = document.getElementById(
+       "main-content"
+   );
 
     if (!mainContent) {
         return;
@@ -337,9 +337,9 @@ async function renderCommsMapPlaceholder(
 ) {
     showLoading();
 
-    const mainContent = document.getElementById(
-        "mainContent"
-    );
+   const mainContent = document.getElementById(
+       "main-content"
+   );
 
     if (!mainContent) {
         return;
