@@ -102,6 +102,9 @@ async function validateUnusedFiles() {
             entry =>
                 entry.path !==
                     UNUSED_CONFIG_FILE &&
+                !isTemporaryCleanupFile(
+                    entry.path
+                ) &&
                 entry.content.includes(
                     "supabase-config.js"
                 )
@@ -125,6 +128,9 @@ async function validateUnusedFiles() {
             entry =>
                 entry.path !==
                     UNUSED_TEST_FILE &&
+                !isTemporaryCleanupFile(
+                    entry.path
+                ) &&
                 entry.content.includes(
                     "supabaseTest.js"
                 )
@@ -819,6 +825,29 @@ function relativePath(
             `${ROOT}/`,
             ""
         );
+}
+
+
+/**
+ * Das Cleanup-Skript und sein einmaliger Workflow enthalten
+ * absichtlich die Namen der zu entfernenden Dateien. Sie dürfen
+ * deshalb nicht als produktive Referenzen gewertet werden.
+ */
+function isTemporaryCleanupFile(
+    path
+) {
+    return [
+        resolve(
+            ROOT,
+            "scripts/finalRepositoryCleanup.mjs"
+        ),
+        resolve(
+            ROOT,
+            ".github/workflows/final-repository-cleanup.yml"
+        )
+    ].includes(
+        path
+    );
 }
 
 
