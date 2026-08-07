@@ -4655,35 +4655,45 @@
 }
 
 
-/*
- * Ergänzt eine klare Überschrift, ohne zusätzliches JavaScript.
- */
+/* =========================================================
+   Beschriftung der Gruppensteuerung
+   ========================================================= */
+
 .game-page
-.comms-map-list-content
 .category-group-controls.is-integrated::before {
-    content: "Gruppen:";
+	content: "Gruppen:";
 
-    display: block;
+	flex-shrink: 0;
 
-    margin:
-        0
-        0
-        0.1rem;
+	display: block;
 
-    color: #f3f4f6;
+	margin:
+		0
+		0.15rem
+		0
+		0;
 
-    font-size: 0.85rem;
-    font-weight: 700;
-    line-height: 1.3;
+	color: #f3f4f6;
+
+	font-size: 0.85rem;
+	font-weight: 700;
+	line-height: 1.3;
+
+	white-space: nowrap;
 }
+
 
 html[lang="en"]
 .game-page
-.comms-map-list-content
 .category-group-controls.is-integrated::before {
-    content: "Groups:";
+	content: "Groups:";
 }
 
+.game-page
+.category-controls-lower-row
+.category-group-controls.is-integrated {
+	align-items: center;
+}
 
 .game-page
 .comms-map-list-content
