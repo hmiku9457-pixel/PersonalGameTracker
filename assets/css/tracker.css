@@ -3192,3 +3192,118 @@
     }
 }
 /* === COMMS PHASE 5 VIEWPORT HEIGHT END === */
+
+/* === COMMS BREADCRUMB BANNER START === */
+/* =========================================================
+   Comms – einheitliche Banner mit Navigationspfad
+   ========================================================= */
+
+/*
+ * Kartenüberschriften wie „New York“ mittig ausrichten.
+ */
+.game-page .comms-map-header {
+    text-align: center;
+}
+
+.game-page .comms-map-header h1,
+.game-page .comms-map-header h2,
+.game-page .comms-map-header h3 {
+    margin: 0;
+
+    font-size: clamp(
+        1.05rem,
+        1.25vw,
+        1.45rem
+    );
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+/*
+ * Den vollständigen Pfad vor dem vorhandenen, lokalisierten
+ * Gebietsnamen darstellen.
+ */
+.game-page .comms-map-header h1::before,
+.game-page .comms-map-header h2::before,
+.game-page .comms-map-header h3::before {
+    content: "The Division 2 - Collectibles - Comms - ";
+}
+
+/*
+ * In der speziellen Comms-Missionsansicht wird der allgemeine
+ * Spieltitel nicht zusätzlich angezeigt.
+ */
+.game-page.comms-list-page > .game-header {
+    display: none;
+}
+
+/*
+ * Der bisherige Erklärungstext unter „Missionen“ entfällt.
+ */
+.game-page.comms-list-page
+.category-content-description {
+    display: none;
+}
+
+/*
+ * „Missionen“ erhält denselben kompakten Bannerstil wie die
+ * Kartenregionen.
+ */
+.game-page.comms-list-page
+.category-content-header {
+    margin: 0 0 1rem;
+    padding: 0.95rem 1.15rem;
+
+    text-align: center;
+
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+
+.game-page.comms-list-page
+.category-content-header h1,
+.game-page.comms-list-page
+.category-content-header h2,
+.game-page.comms-list-page
+.category-content-header h3 {
+    margin: 0;
+
+    font-size: clamp(
+        1.05rem,
+        1.25vw,
+        1.45rem
+    );
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.game-page.comms-list-page
+.category-content-header h1::before,
+.game-page.comms-list-page
+.category-content-header h2::before,
+.game-page.comms-list-page
+.category-content-header h3::before {
+    content: "The Division 2 - Collectibles - Comms - ";
+}
+
+@media (max-width: 900px) {
+    .game-page.comms-list-page
+    .category-content-header {
+        padding: 0.85rem 1rem;
+    }
+
+    .game-page .comms-map-header h1,
+    .game-page .comms-map-header h2,
+    .game-page .comms-map-header h3,
+    .game-page.comms-list-page
+    .category-content-header h1,
+    .game-page.comms-list-page
+    .category-content-header h2,
+    .game-page.comms-list-page
+    .category-content-header h3 {
+        font-size: 1rem;
+    }
+}
+/* === COMMS BREADCRUMB BANNER END === */

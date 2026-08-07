@@ -187,6 +187,23 @@ export async function renderCategory(
 			"game-page";
 
 
+		const isCommsMissionList =
+			category.id === "missions" &&
+			typeof category.parentHash === "string" &&
+			category.parentHash.includes(
+				"/collectibles/comms"
+			);
+
+
+		if (
+			isCommsMissionList
+		) {
+			gamePage.classList.add(
+				"comms-list-page"
+			);
+		}
+
+
 		gamePage.dataset.gameId =
 			game.id;
 
