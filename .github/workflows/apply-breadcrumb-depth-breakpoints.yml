@@ -1,0 +1,40 @@
+name: Apply Breadcrumb Depth Breakpoints
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-breakpoints:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Breadcrumb-Depth-Breakpoints anwenden
+        run: node scripts/applyBreadcrumbDepthBreakpoints.mjs
+
+      - name: JavaScript-Syntax prüfen
+        run: node --check assets/js/views/pageBreadcrumbView.js
+
+      - name: Änderungen committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add             assets/js/views/pageBreadcrumbView.js             assets/css/tracker.css
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen vorhanden."
+          else
+            git commit -m "Add depth-aware breadcrumb breakpoints"
+            git push
+          fi
