@@ -36,6 +36,11 @@ import {
 } from "./navigationView.js";
 
 
+import {
+    applyPageBreadcrumbBanner
+} from "./pageBreadcrumbView.js";
+
+
 const COMMS_ROUTE_PREFIX = [
     "collectibles",
     "comms"
@@ -76,11 +81,39 @@ export async function tryRenderCommsRoute(
         COMMS_MANIFEST_FILE
     );
 
+
+    const collectiblesEntry =
+        Array.isArray(
+            game.categories
+        )
+            ? game.categories.find(
+                entry =>
+                    entry.id ===
+                    COMMS_ROUTE_PREFIX[0]
+            )
+            : null;
+
+    const commsBreadcrumbItems = [
+        game.name,
+        collectiblesEntry?.name ??
+        "Collectibles",
+        commsManifest.name ??
+        "Comms"
+    ];
+
     if (routeIds.length === 2) {
         await renderCommsOverview(
             game,
             commsManifest,
             routeIds
+        );
+
+
+        applyPageBreadcrumbBanner(
+            commsBreadcrumbItems,
+            {
+                removeDescriptions: true
+            }
         );
 
         return true;
@@ -134,6 +167,17 @@ export async function tryRenderCommsRoute(
             }
         );
 
+
+        applyPageBreadcrumbBanner(
+            [
+                ...commsBreadcrumbItems,
+                section.name
+            ],
+            {
+                removeDescriptions: true
+            }
+        );
+
         return true;
     }
 
@@ -144,6 +188,17 @@ export async function tryRenderCommsRoute(
         sectionManifest,
         sectionManifestFile,
         routeIds
+    );
+
+
+    applyPageBreadcrumbBanner(
+        [
+            ...commsBreadcrumbItems,
+            section.name
+        ],
+        {
+            removeDescriptions: true
+        }
     );
 
     return true;

@@ -3350,3 +3350,119 @@
     display: none;
 }
 /* === COMMS MAP BANNER ALIGNMENT FIX END === */
+
+/* === UNIVERSAL PAGE BREADCRUMB BANNERS START === */
+/* =========================================================
+   Einheitliche Navigationsbanner
+   ========================================================= */
+
+.game-page .page-breadcrumb-banner {
+    display: block;
+    grid-template-columns: none;
+    align-items: initial;
+
+    width: 100%;
+    min-height: 0;
+    margin: 0 0 1rem;
+    padding: 0.95rem 1.15rem;
+
+    color: #f3f4f6;
+    background-color: #1f2937;
+
+    border: 1px solid #374151;
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 12px
+        rgb(0 0 0 / 15%);
+}
+
+.game-page .page-breadcrumb-title {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    font-size: clamp(
+        1.05rem,
+        1.25vw,
+        1.45rem
+    );
+    font-weight: 700;
+    line-height: 1.35;
+
+    color: #f3f4f6;
+
+    text-align: center;
+}
+
+.game-page .page-breadcrumb-segment {
+    white-space: nowrap;
+}
+
+.game-page .page-breadcrumb-separator {
+    flex: 0 0 auto;
+
+    padding:
+        0
+        0.28rem;
+
+    color: #9ca3af;
+
+    white-space: pre;
+}
+
+/*
+ * Alte, nur für Comms erzeugte Präfixe dürfen den jetzt
+ * vollständig in JavaScript erzeugten Pfad nicht verdoppeln.
+ */
+.game-page .page-breadcrumb-title::before,
+.game-page .page-breadcrumb-title::after,
+.game-page .page-breadcrumb-title *::before,
+.game-page .page-breadcrumb-title *::after {
+    content: none !important;
+}
+
+/*
+ * Die alten Überschriften werden durch JavaScript entfernt.
+ * Diese Regeln verhindern einen kurzen sichtbaren Doppelzustand.
+ */
+.game-page.has-page-breadcrumb-banner
+> .game-header,
+
+.game-page.has-page-breadcrumb-banner
+> .game-title,
+
+.game-page.has-page-breadcrumb-banner
+> .comms-map-header,
+
+.game-page.has-page-breadcrumb-banner
+> .category-content
+> .category-content-header {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .game-page .page-breadcrumb-banner {
+        padding:
+            0.85rem
+            0.8rem;
+    }
+
+    .game-page .page-breadcrumb-title {
+        font-size: 1rem;
+    }
+
+    .game-page .page-breadcrumb-separator {
+        padding:
+            0
+            0.2rem;
+    }
+}
+/* === UNIVERSAL PAGE BREADCRUMB BANNERS END === */

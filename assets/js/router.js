@@ -30,6 +30,11 @@ import {
 	renderCategory
 } from "./views/categoryView.js";
 
+
+import {
+	applyPageBreadcrumbBanner
+} from "./views/pageBreadcrumbView.js";
+
 import {
     tryRenderCommsRoute
 } from "./views/commsOverviewView.js";
@@ -283,6 +288,11 @@ export async function loadPageFromHash() {
 			);
 
 
+			applyPageBreadcrumbBanner(
+				[game.name]
+			);
+
+
 			return;
 		}
 
@@ -347,6 +357,11 @@ export async function loadPageFromHash() {
 			);
 
 
+				applyPageBreadcrumbBanner(
+					resolvedRoute.breadcrumbItems
+				);
+
+
 			return;
 		}
 
@@ -376,6 +391,11 @@ export async function loadPageFromHash() {
 		await renderCategory(
 			game,
 			category
+		);
+
+
+		applyPageBreadcrumbBanner(
+			resolvedRoute.breadcrumbItems
 		);
 
 	}
@@ -450,6 +470,11 @@ async function resolveGameRoute(
 		null;
 
 
+	const breadcrumbItems = [
+		game.name
+	];
+
+
 	for (
 		let index = 0;
 		index < routeIds.length;
@@ -509,6 +534,12 @@ async function resolveGameRoute(
 			entry;
 
 
+		breadcrumbItems.push(
+			entry.name ??
+			entry.id
+		);
+
+
 		const resolvedFile =
 			resolveRelativeFile(
 				currentManifestFile,
@@ -550,7 +581,10 @@ async function resolveGameRoute(
 					manifestFile:
 						resolvedFile,
 
-					entry
+					entry,
+
+
+					breadcrumbItems
 				};
 			}
 
@@ -601,7 +635,10 @@ async function resolveGameRoute(
 			},
 
 			entry:
-				lastEntry
+				lastEntry,
+
+
+			breadcrumbItems
 		};
 	}
 
