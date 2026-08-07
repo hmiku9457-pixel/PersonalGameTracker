@@ -20,16 +20,15 @@ const UI_TEXT = {
 
 
 /**
- * Ersetzt die bisherigen Seitentitel einer Game-Page durch
- * einen einheitlichen Navigationsbanner.
+ * Ersetzt die bisherigen Seitentitel durch einen einheitlichen
+ * Navigationsbanner.
  *
- * Unterstützte Ausgangsansichten:
+ * Eine vorhandene Kategorie-Toolbar wird nicht mehr separat
+ * angezeigt. Ihre Bedienelemente werden in den Banner übernommen:
  *
- * - Spielübersicht
- * - Manifest-/Unterkategorieübersicht
- * - normale Tracking-Kategorie
- * - Comms-Übersicht
- * - Comms-Kartenansicht
+ * - Zurück-Button links
+ * - Breadcrumb mittig
+ * - Fortschritt und weitere Aktionen rechts
  *
  * @param {Array<unknown>} items
  * @param {Object} options
@@ -68,27 +67,28 @@ export function applyPageBreadcrumbBanner(
         );
     }
 
-    const banner = createPageBreadcrumbBanner(
-        segments
-    );
-
     const toolbar = page.querySelector(
         ":scope > .category-toolbar"
     );
 
+    const banner = createPageBreadcrumbBanner(
+        segments
+    );
+
     if (toolbar) {
-        toolbar.after(
-            banner
-        );
-    }
-    else {
-        page.prepend(
+        mergeToolbarIntoBanner(
+            toolbar,
             banner
         );
     }
 
+    page.prepend(
+        banner
+    );
+
     page.classList.add(
-        "has-page-breadcrumb-banner"
+        "has-page-breadcrumb-banner",
+        "has-merged-navigation-banner"
     );
 
     return banner;
@@ -96,7 +96,7 @@ export function applyPageBreadcrumbBanner(
 
 
 /**
- * Erstellt einen eigenständigen Navigationsbanner.
+ * Erstellt den gemeinsamen Navigationsbanner.
  *
  * @param {string[]} segments
  * @returns {HTMLElement}
@@ -120,6 +120,14 @@ export function createPageBreadcrumbBanner(
         UI_TEXT[language]?.navigationPath ??
         UI_TEXT.en.navigationPath
     );
+
+    const left =
+        document.createElement(
+            "div"
+        );
+
+    left.className =
+        "page-breadcrumb-actions page-breadcrumb-actions-left";
 
     const title =
         document.createElement(
@@ -180,11 +188,121 @@ export function createPageBreadcrumbBanner(
         }
     );
 
+    const right =
+        document.createElement(
+            "div"
+        );
+
+    right.className =
+        "page-breadcrumb-actions page-breadcrumb-actions-right";
+
     banner.append(
-        title
+        left,
+        title,
+        right
     );
 
     return banner;
+}
+
+
+/**
+ * Verschiebt die vorhandenen Toolbar-Elemente in den neuen Banner.
+ *
+ * Unterstützt unter anderem:
+ *
+ * - normale Kategorie: Back + Fortschritt
+ * - Untermanifest: Back
+ * - Comms-Karte: Back + Fortschritt + Listen-Schalter
+ *
+ * Event-Listener und bestehende Elementreferenzen bleiben erhalten,
+ * weil die DOM-Elemente verschoben und nicht neu erzeugt werden.
+ *
+ * @param {HTMLElement} toolbar
+ * @param {HTMLElement} banner
+ */
+function mergeToolbarIntoBanner(
+    toolbar,
+    banner
+) {
+    const left = banner.querySelector(
+        ".page-breadcrumb-actions-left"
+    );
+
+    const right = banner.querySelector(
+        ".page-breadcrumb-actions-right"
+    );
+
+    if (
+        !left ||
+        !right
+    ) {
+        toolbar.remove();
+        return;
+    }
+
+    const backControl =
+        toolbar.querySelector(
+            ".back-button"
+        );
+
+    if (backControl) {
+        left.append(
+            backControl
+        );
+    }
+
+    const directChildren = [
+        ...toolbar.children
+    ];
+
+    for (
+        const child
+        of directChildren
+    ) {
+        if (
+            child === backControl ||
+            child.contains(
+                backControl
+            )
+        ) {
+            continue;
+        }
+
+        right.append(
+            child
+        );
+    }
+
+    /*
+     * Falls die Toolbar einen verschachtelten Back-Button enthielt,
+     * aber dessen leerer Wrapper übrig blieb, wird dieser entfernt.
+     */
+    for (
+        const child
+        of [
+            ...toolbar.children
+        ]
+    ) {
+        if (
+            child.childElementCount === 0 &&
+            child.textContent.trim() === ""
+        ) {
+            child.remove();
+        }
+    }
+
+    toolbar.remove();
+
+    banner.classList.toggle(
+        "has-left-actions",
+        left.childElementCount > 0
+    );
+
+    banner.classList.toggle(
+        "has-right-actions",
+        right.childElementCount > 0
+    );
 }
 
 
