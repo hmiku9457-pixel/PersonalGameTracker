@@ -1,0 +1,55 @@
+name: Apply Division 2 Comms Phase 3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-phase-3:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Phase 3 anwenden
+        run: node scripts/applyCommsPhase3.mjs
+
+      - name: JavaScript-Syntax prüfen
+        run: |
+          node --check assets/js/views/categoryView.js
+          node --check assets/js/views/commsOverviewView.js
+          node --check assets/js/views/commsMapView.js
+
+      - name: Änderungen anzeigen
+        run: git status --short
+
+      - name: Änderungen committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            assets/js/views/categoryView.js \
+            assets/js/views/commsOverviewView.js \
+            assets/js/views/commsMapView.js \
+            assets/css/tracker.css \
+            assets/maps/theDivision2 \
+            data/theDivision2/collectibles/commsV2/manifest.json \
+            data/theDivision2/collectibles/commsV2/washington/manifest.json \
+            data/theDivision2/collectibles/commsV2/newYork/manifest.json \
+            data/theDivision2/collectibles/commsV2/brooklyn/manifest.json
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen vorhanden."
+          else
+            git commit -m "Add Comms map layout"
+            git push
+          fi
