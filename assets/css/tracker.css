@@ -3954,7 +3954,7 @@
  * ohne Buttons. Somit bleiben alle Banner innerhalb derselben
  * Bildschirmbreite exakt gleich hoch.
  */
-@media (max-width: 1450px) {
+@media (max-width: 1600px) {
     .game-page
     .page-breadcrumb-banner {
         grid-template-columns:
