@@ -219,161 +219,254 @@ async function renderCommsOverview(
 ) {
     showLoading();
 
-   const mainContent = document.getElementById(
-       "main-content"
-   );
+    const mainContent =
+        document.getElementById(
+            "main-content"
+        );
 
     if (!mainContent) {
         return;
     }
 
-    const language = getCurrentLanguage();
-    const uiText = getUiText(language);
-    const sections = Array.isArray(commsManifest.sections)
-        ? commsManifest.sections
-        : [];
+    const language =
+        getCurrentLanguage();
+
+    const uiText =
+        getUiText(
+            language
+        );
+
+    const sections =
+        Array.isArray(
+            commsManifest.sections
+        )
+            ? commsManifest.sections
+            : [];
 
     mainContent.replaceChildren();
 
-    const page = document.createElement("section");
+    const page =
+        document.createElement(
+            "section"
+        );
+
     page.className =
         "game-page comms-overview-page";
 
-    page.dataset.gameId = game.id;
+    page.dataset.gameId =
+        game.id;
 
-    const toolbar = createToolbar(
-        buildGameHash(
-            game.id,
-            routeIds.slice(0, -1)
-        ),
-        uiText.back
+
+    const toolbar =
+        createToolbar(
+            buildGameHash(
+                game.id,
+                routeIds.slice(
+                    0,
+                    -1
+                )
+            ),
+            uiText.back
+        );
+
+
+    /*
+     * pageBreadcrumbView.js verschiebt alle Toolbar-Elemente
+     * außer dem Zurück-Button auf die rechte Bannerseite.
+     */
+    const overallProgress =
+        document.createElement(
+            "span"
+        );
+
+    overallProgress.className =
+        "category-content-progress manifest-progress-summary comms-overview-progress";
+
+    overallProgress.hidden =
+        true;
+
+    overallProgress.textContent =
+        "0 / 0 · 0 %";
+
+    toolbar.append(
+        overallProgress
     );
 
-    const header = document.createElement("header");
-    header.className = "game-header";
 
-    const title = document.createElement("h2");
-    title.className = "game-title";
-    title.textContent = getLocalizedText(
-        commsManifest.name,
-        language
-    ) || "Comms";
+    const header =
+        document.createElement(
+            "header"
+        );
 
-    const description = document.createElement("p");
-    description.className = "game-description";
-    description.textContent = getLocalizedText(
-        commsManifest.description,
-        language
-    ) || uiText.overviewDescription;
+    header.className =
+        "game-header";
 
-    header.append(title, description);
+    const title =
+        document.createElement(
+            "h2"
+        );
 
-    const grid = document.createElement("div");
-    grid.className = "comms-section-grid";
+    title.className =
+        "game-title";
+
+    title.textContent =
+        getLocalizedText(
+            commsManifest.name,
+            language
+        ) ||
+        "Comms";
+
+    const description =
+        document.createElement(
+            "p"
+        );
+
+    description.className =
+        "game-description";
+
+    description.textContent =
+        getLocalizedText(
+            commsManifest.description,
+            language
+        ) ||
+        uiText.overviewDescription;
+
+    header.append(
+        title,
+        description
+    );
+
+
+    const grid =
+        document.createElement(
+            "div"
+        );
+
+    grid.className =
+        "comms-section-grid";
 
     const progressTargets = [];
 
-    for (const section of sections) {
-        const card = createSectionCard(
-            game,
-            section,
-            routeIds,
-            language,
-            uiText
+    for (
+        const section
+        of sections
+    ) {
+        const card =
+            createSectionCard(
+                game,
+                section,
+                routeIds,
+                language,
+                uiText
+            );
+
+        grid.append(
+            card.element
         );
 
-        grid.append(card.element);
-        progressTargets.push(card);
+        progressTargets.push(
+            card
+        );
     }
 
-    const overallProgress = document.createElement("section");
-    overallProgress.className = "comms-overall-progress";
-    overallProgress.hidden = true;
-
-    const overallLabel = document.createElement("span");
-    overallLabel.textContent = uiText.totalProgress;
-
-    const overallValue = document.createElement("strong");
-    overallValue.textContent = "0 / 0";
-
-    const overallTrack = document.createElement("div");
-    overallTrack.className = "progress-bar";
-
-    const overallFill = document.createElement("div");
-    overallFill.className = "progress-bar-fill";
-    overallFill.style.width = "0%";
-
-    overallTrack.append(overallFill);
-    overallProgress.append(
-        overallLabel,
-        overallValue,
-        overallTrack
-    );
 
     page.append(
         toolbar,
         header,
-        grid,
-        overallProgress
+        grid
     );
 
-    mainContent.append(page);
+    mainContent.append(
+        page
+    );
 
-    updateActiveGameNavigation(game.id);
-
-    const progressData = await loadGameProgressData(
+    updateActiveGameNavigation(
         game.id
     );
+
+
+    const progressData =
+        await loadGameProgressData(
+            game.id
+        );
 
     if (!progressData.available) {
         return;
     }
 
-    const results = await Promise.all(
-        progressTargets.map(
-            async (target) => ({
-                target,
-                progress: await calculateSectionProgress(
-                    game.id,
-                    target.section,
-                    progressData
-                )
-            })
-        )
-    );
+
+    const results =
+        await Promise.all(
+            progressTargets.map(
+                async (
+                    target
+                ) => ({
+                    target,
+                    progress:
+                        await calculateSectionProgress(
+                            game.id,
+                            target.section,
+                            progressData
+                        )
+                })
+            )
+        );
+
 
     let totalItems = 0;
     let totalCompleted = 0;
 
-    for (const result of results) {
+    for (
+        const result
+        of results
+    ) {
         const {
             target,
             progress
         } = result;
 
-        target.progressElement.hidden = false;
+        target.progressElement.hidden =
+            false;
+
         target.progressText.textContent =
             `${progress.completed} / ${progress.total}`;
+
         target.progressFill.style.width =
             `${progress.percentage}%`;
 
-        totalItems += progress.total;
-        totalCompleted += progress.completed;
+        totalItems +=
+            progress.total;
+
+        totalCompleted +=
+            progress.completed;
     }
 
-    const totalPercentage = totalItems > 0
-        ? Math.round(
-            (totalCompleted / totalItems) * 100
-        )
-        : 0;
 
-    overallProgress.hidden = false;
-    overallValue.textContent =
-        `${totalCompleted} / ${totalItems}`;
-    overallFill.style.width =
-        `${totalPercentage}%`;
+    const totalPercentage =
+        totalItems > 0
+            ? Math.round(
+                (
+                    totalCompleted /
+                    totalItems
+                ) *
+                100
+            )
+            : 0;
+
+
+    overallProgress.hidden =
+        false;
+
+    overallProgress.textContent =
+        `${totalCompleted} / ${totalItems} · ${totalPercentage} %`;
+
+    overallProgress.setAttribute(
+        "aria-label",
+        language === "de"
+            ? `Gesamtfortschritt: ${totalCompleted} von ${totalItems}, ${totalPercentage} Prozent`
+            : `Overall progress: ${totalCompleted} of ${totalItems}, ${totalPercentage} percent`
+    );
 }
-
 
 /**
  * Rendert für Phase 2 eine vorbereitete Kartenroute.
@@ -593,99 +686,212 @@ function createSectionCard(
     language,
     uiText
 ) {
-    const link = document.createElement("a");
-    link.className = "comms-section-card";
-    link.href = buildGameHash(
-        game.id,
-        [
-            ...routeIds,
-            section.id
-        ]
+    const link =
+        document.createElement(
+            "a"
+        );
+
+    link.className =
+        "comms-section-card";
+
+    link.href =
+        buildGameHash(
+            game.id,
+            [
+                ...routeIds,
+                section.id
+            ]
+        );
+
+    link.dataset.sectionId =
+        section.id;
+
+    link.dataset.view =
+        section.view;
+
+
+    const top =
+        document.createElement(
+            "div"
+        );
+
+    top.className =
+        "comms-section-card-top";
+
+
+    const title =
+        document.createElement(
+            "h3"
+        );
+
+    title.textContent =
+        getLocalizedText(
+            section.name,
+            language
+        );
+
+    top.append(
+        title
     );
 
-    link.dataset.sectionId = section.id;
-    link.dataset.view = section.view;
 
-    const top = document.createElement("div");
-    top.className = "comms-section-card-top";
+    if (
+        section.view ===
+        "map"
+    ) {
+        const mapIndicator =
+            document.createElement(
+                "span"
+            );
 
-    if (section.view === "map") {
-        const mapIndicator = document.createElement("span");
-        mapIndicator.className = "comms-map-indicator";
-        mapIndicator.textContent = "⌖";
+        mapIndicator.className =
+            "comms-map-indicator";
+
+        mapIndicator.textContent =
+            "⌖";
+
         mapIndicator.setAttribute(
             "aria-label",
             uiText.containsMap
         );
-        mapIndicator.title = uiText.containsMap;
-        top.append(mapIndicator);
+
+        mapIndicator.title =
+            uiText.containsMap;
+
+        top.append(
+            mapIndicator
+        );
     }
 
-    const arrow = document.createElement("span");
-    arrow.className = "comms-section-card-arrow";
-    arrow.setAttribute("aria-hidden", "true");
-    arrow.textContent = "→";
 
-    top.append(arrow);
+    const arrow =
+        document.createElement(
+            "span"
+        );
 
-    const title = document.createElement("h3");
-    title.textContent = getLocalizedText(
-        section.name,
-        language
+    arrow.className =
+        "comms-section-card-arrow";
+
+    arrow.setAttribute(
+        "aria-hidden",
+        "true"
     );
 
-    const description = document.createElement("p");
-    description.textContent = getLocalizedText(
-        section.description,
-        language
+    arrow.textContent =
+        "→";
+
+    top.append(
+        arrow
     );
 
-    const counts = document.createElement("p");
-    counts.className = "comms-section-card-counts";
-    counts.textContent = formatCounts(
-        section.itemCount,
-        section.groupCount,
-        language
-    );
 
-    const progressElement = document.createElement("div");
+    const description =
+        document.createElement(
+            "p"
+        );
+
+    description.textContent =
+        getLocalizedText(
+            section.description,
+            language
+        );
+
+
+    const counts =
+        document.createElement(
+            "p"
+        );
+
+    counts.className =
+        "comms-section-card-counts";
+
+    counts.textContent =
+        formatCounts(
+            section.itemCount,
+            section.groupCount,
+            language
+        );
+
+
+    const progressElement =
+        document.createElement(
+            "div"
+        );
+
     progressElement.className =
         "comms-section-card-progress";
-    progressElement.hidden = true;
 
-    const progressHeader = document.createElement("div");
+    progressElement.hidden =
+        true;
 
-    const progressLabel = document.createElement("span");
-    progressLabel.textContent = uiText.progress;
 
-    const progressText = document.createElement("strong");
-    progressText.textContent = "0 / 0";
+    const progressHeader =
+        document.createElement(
+            "div"
+        );
+
+    const progressLabel =
+        document.createElement(
+            "span"
+        );
+
+    progressLabel.textContent =
+        uiText.progress;
+
+
+    const progressText =
+        document.createElement(
+            "strong"
+        );
+
+    progressText.textContent =
+        "0 / 0";
+
 
     progressHeader.append(
         progressLabel,
         progressText
     );
 
-    const progressTrack = document.createElement("div");
-    progressTrack.className = "progress-bar";
 
-    const progressFill = document.createElement("div");
-    progressFill.className = "progress-bar-fill";
-    progressFill.style.width = "0%";
+    const progressTrack =
+        document.createElement(
+            "div"
+        );
 
-    progressTrack.append(progressFill);
+    progressTrack.className =
+        "progress-bar";
+
+
+    const progressFill =
+        document.createElement(
+            "div"
+        );
+
+    progressFill.className =
+        "progress-bar-fill";
+
+    progressFill.style.width =
+        "0%";
+
+
+    progressTrack.append(
+        progressFill
+    );
+
     progressElement.append(
         progressHeader,
         progressTrack
     );
 
+
     link.append(
         top,
-        title,
         description,
         counts,
         progressElement
     );
+
 
     return {
         element: link,
@@ -695,7 +901,6 @@ function createSectionCard(
         progressFill
     };
 }
-
 
 /**
  * Berechnet den Fortschritt eines Comms-Bereichs.

@@ -4166,3 +4166,76 @@
     display: none !important;
 }
 /* === MANIFEST PROGRESS BANNER END === */
+
+/* === COMMS OVERVIEW POLISH START === */
+/* =========================================================
+   Comms-Übersicht – Fortschritt und kompakte Kartenköpfe
+   ========================================================= */
+
+.game-page
+.comms-overview-progress {
+    flex-shrink: 0;
+
+    min-width: max-content;
+
+    font-variant-numeric:
+        tabular-nums;
+
+    text-align: center;
+}
+
+.game-page
+.comms-overview-progress[hidden] {
+    display: none !important;
+}
+
+
+/*
+ * Titel, Kartenkennzeichnung und Pfeil liegen in derselben Zeile.
+ */
+.comms-section-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 0.65rem;
+
+    min-width: 0;
+}
+
+.comms-section-card-top h3 {
+    min-width: 0;
+    margin: 0;
+}
+
+.comms-section-card-top
+.comms-map-indicator {
+    flex:
+        0
+        0
+        1.75rem;
+
+    width: 1.75rem;
+    height: 1.75rem;
+
+    font-size: 0.95rem;
+}
+
+.comms-section-card-top
+.comms-section-card-arrow {
+    flex-shrink: 0;
+
+    margin-left: auto;
+}
+
+
+/*
+ * Der alte separate Gesamtfortschrittsblock wird nicht mehr
+ * gerendert. Die Regel verhindert bei alten Browser-Caches
+ * einen kurzzeitigen Doppelzustand.
+ */
+.comms-overview-page
+> .comms-overall-progress {
+    display: none !important;
+}
+/* === COMMS OVERVIEW POLISH END === */
