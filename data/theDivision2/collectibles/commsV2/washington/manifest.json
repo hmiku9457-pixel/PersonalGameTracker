@@ -5,10 +5,10 @@
     "en": "Washington, D.C."
   },
   "description": {
-    "de": "Comms der offenen Welt in Washington, D.C. Die Kartenansicht wird in Phase 3 ergänzt.",
-    "en": "Open-world Comms in Washington, D.C. The map view will be added in Phase 3."
+    "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
+    "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
   },
-  "lastUpdated": "2026-08-04",
+  "lastUpdated": "2026-08-07",
   "view": "map",
   "map": "washington",
   "dataStatus": {
@@ -97,5 +97,11 @@
       "itemCount": 55,
       "groupCount": 6
     }
-  ]
+  ],
+  "mapImage": "assets/maps/theDivision2/washington.svg",
+  "mapImageAlt": {
+    "de": "Gebietskarte von Washington, D.C.",
+    "en": "Area map of Washington, D.C."
+  },
+  "panelDefaultOpen": true
 }

@@ -8,7 +8,7 @@
     "de": "Comms nach Washington, New York, Brooklyn und Missionen geordnet.",
     "en": "Comms organized by Washington, New York, Brooklyn and missions."
   },
-  "lastUpdated": "2026-08-04",
+  "lastUpdated": "2026-08-07",
   "dataStatus": {
     "scope": "section-manifest",
     "migrationVersion": "comms-phase1-v2",
@@ -31,8 +31,13 @@
       "itemCount": 181,
       "groupCount": 19,
       "description": {
-        "de": "Comms der offenen Welt in Washington, D.C. Die Kartenansicht wird in Phase 3 ergänzt.",
-        "en": "Open-world Comms in Washington, D.C. The map view will be added in Phase 3."
+        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
+      },
+      "mapImage": "assets/maps/theDivision2/washington.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Washington, D.C.",
+        "en": "Area map of Washington, D.C."
       }
     },
     {
@@ -47,8 +52,13 @@
       "itemCount": 109,
       "groupCount": 11,
       "description": {
-        "de": "Comms der offenen Welt in Lower Manhattan. Die Kartenansicht wird in Phase 3 ergänzt.",
-        "en": "Open-world Comms in Lower Manhattan. The map view will be added in Phase 3."
+        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
+      },
+      "mapImage": "assets/maps/theDivision2/newYork.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Lower Manhattan",
+        "en": "Area map of Lower Manhattan"
       }
     },
     {
@@ -63,8 +73,13 @@
       "itemCount": 35,
       "groupCount": 4,
       "description": {
-        "de": "Comms der offenen Welt in Brooklyn. Die Kartenansicht wird in Phase 3 ergänzt.",
-        "en": "Open-world Comms in Brooklyn. The map view will be added in Phase 3."
+        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
+      },
+      "mapImage": "assets/maps/theDivision2/brooklyn.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Brooklyn",
+        "en": "Area map of Brooklyn"
       }
     },
     {
@@ -92,15 +107,20 @@
         "en": "Washington, D.C."
       },
       "description": {
-        "de": "Comms der offenen Welt in Washington, D.C. Die Kartenansicht wird in Phase 3 ergänzt.",
-        "en": "Open-world Comms in Washington, D.C. The map view will be added in Phase 3."
+        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
       },
       "type": "manifest",
       "file": "washington/manifest.json",
       "view": "map",
       "map": "washington",
       "itemCount": 181,
-      "groupCount": 19
+      "groupCount": 19,
+      "mapImage": "assets/maps/theDivision2/washington.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Washington, D.C.",
+        "en": "Area map of Washington, D.C."
+      }
     },
     {
       "id": "newYork",
@@ -109,15 +129,20 @@
         "en": "New York"
       },
       "description": {
-        "de": "Comms der offenen Welt in Lower Manhattan. Die Kartenansicht wird in Phase 3 ergänzt.",
-        "en": "Open-world Comms in Lower Manhattan. The map view will be added in Phase 3."
+        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
       },
       "type": "manifest",
       "file": "newYork/manifest.json",
       "view": "map",
       "map": "newYork",
       "itemCount": 109,
-      "groupCount": 11
+      "groupCount": 11,
+      "mapImage": "assets/maps/theDivision2/newYork.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Lower Manhattan",
+        "en": "Area map of Lower Manhattan"
+      }
     },
     {
       "id": "brooklyn",
@@ -126,15 +151,20 @@
         "en": "Brooklyn"
       },
       "description": {
-        "de": "Comms der offenen Welt in Brooklyn. Die Kartenansicht wird in Phase 3 ergänzt.",
-        "en": "Open-world Comms in Brooklyn. The map view will be added in Phase 3."
+        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
       },
       "type": "manifest",
       "file": "brooklyn/manifest.json",
       "view": "map",
       "map": "brooklyn",
       "itemCount": 35,
-      "groupCount": 4
+      "groupCount": 4,
+      "mapImage": "assets/maps/theDivision2/brooklyn.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Brooklyn",
+        "en": "Area map of Brooklyn"
+      }
     },
     {
       "id": "missions",

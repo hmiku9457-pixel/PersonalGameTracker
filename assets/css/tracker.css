@@ -2473,3 +2473,448 @@
         text-align: left;
     }
 }
+
+
+/* BEGIN COMMS PHASE 3 */
+/* =========================================================
+   Comms Phase 3 – Kartenansicht mit Tracking-Panel
+   ========================================================= */
+
+.comms-map-page {
+    width: 100%;
+}
+
+.comms-map-toolbar {
+    align-items: center;
+    gap: 1rem;
+}
+
+.comms-map-toolbar-actions {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    margin-left: auto;
+}
+
+.comms-map-panel-toggle,
+.comms-map-panel-close {
+    appearance: none;
+    border: 1px solid #4b5563;
+    color: #f3f4f6;
+    cursor: pointer;
+    font: inherit;
+}
+
+.comms-map-panel-toggle {
+    background: #1f2937;
+    border-radius: 7px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding: 0.62rem 0.85rem;
+    white-space: nowrap;
+}
+
+.comms-map-panel-toggle:hover,
+.comms-map-panel-toggle:focus-visible,
+.comms-map-panel-close:hover,
+.comms-map-panel-close:focus-visible {
+    background: #2a374a;
+    border-color: #6b7280;
+}
+
+.comms-map-panel-toggle:focus-visible,
+.comms-map-panel-close:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+.comms-map-header {
+    margin-bottom: 1.25rem;
+}
+
+.comms-map-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 27rem);
+    min-height: clamp(38rem, 72vh, 58rem);
+    overflow: hidden;
+    position: relative;
+    transition: grid-template-columns 0.25s ease;
+}
+
+.comms-map-layout:not(.is-panel-open) {
+    grid-template-columns: minmax(0, 1fr) 0;
+}
+
+.comms-map-area {
+    background: #0b1220;
+    border: 1px solid #29364a;
+    border-radius: 12px 0 0 12px;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.comms-map-layout:not(.is-panel-open) .comms-map-area {
+    border-radius: 12px;
+}
+
+.comms-map-viewport {
+    align-items: center;
+    background:
+        radial-gradient(circle at 50% 35%, rgb(36 48 65 / 55%), transparent 58%),
+        #070d17;
+    display: flex;
+    justify-content: center;
+    min-height: 0;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+}
+
+.comms-map-canvas {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    min-height: 28rem;
+    position: relative;
+    width: 100%;
+}
+
+.comms-map-image {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    user-select: none;
+    width: 100%;
+}
+
+.comms-map-image[hidden],
+.comms-map-empty-state[hidden],
+.comms-map-panel-backdrop[hidden] {
+    display: none;
+}
+
+.comms-map-marker-layer {
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.comms-map-empty-state {
+    align-items: center;
+    background: rgb(17 24 39 / 82%);
+    border: 1px dashed #4b5563;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    max-width: 34rem;
+    padding: 1.25rem 1.4rem;
+}
+
+.comms-map-empty-state h3,
+.comms-map-empty-state p {
+    margin: 0;
+}
+
+.comms-map-empty-state p {
+    color: #aab4c3;
+    line-height: 1.5;
+    margin-top: 0.35rem;
+}
+
+.comms-map-empty-icon {
+    align-items: center;
+    background: rgb(255 136 0 / 14%);
+    border: 1px solid rgb(255 136 0 / 34%);
+    border-radius: 50%;
+    color: #ff9f2e;
+    display: inline-flex;
+    flex: 0 0 3.5rem;
+    font-size: 2rem;
+    height: 3.5rem;
+    justify-content: center;
+}
+
+.comms-map-footer {
+    align-items: center;
+    background: #111a2a;
+    border-top: 1px solid #29364a;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.9rem 1rem;
+}
+
+.comms-map-marker-info {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.comms-map-marker-info strong {
+    color: #e5e7eb;
+    font-size: 0.85rem;
+}
+
+.comms-map-marker-info span {
+    color: #9ca3af;
+    font-size: 0.78rem;
+    line-height: 1.35;
+}
+
+.comms-map-item-count {
+    background: #1e3a5f;
+    border: 1px solid #315d8a;
+    border-radius: 999px;
+    color: #dbeafe;
+    flex: 0 0 auto;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.35rem 0.65rem;
+}
+
+.comms-map-list-panel {
+    background: #101827;
+    border: 1px solid #29364a;
+    border-left: 0;
+    border-radius: 0 12px 12px 0;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    min-width: 0;
+    overflow: hidden;
+    transform: translateX(0);
+    transition:
+        opacity 0.2s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.comms-map-layout:not(.is-panel-open) .comms-map-list-panel {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.comms-map-list-header {
+    align-items: center;
+    background: #162033;
+    border-bottom: 1px solid #29364a;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.comms-map-list-header h3,
+.comms-map-list-header p {
+    margin: 0;
+}
+
+.comms-map-list-header h3 {
+    font-size: 1.05rem;
+}
+
+.comms-map-list-header p {
+    color: #9ca3af;
+    font-size: 0.78rem;
+    margin-top: 0.2rem;
+}
+
+.comms-map-panel-close {
+    align-items: center;
+    background: transparent;
+    border-radius: 7px;
+    display: inline-flex;
+    flex: 0 0 2.35rem;
+    font-size: 1.4rem;
+    height: 2.35rem;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.comms-map-list-scroll {
+    min-height: 0;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+}
+
+.game-page .comms-map-list-content {
+    background: transparent;
+    padding: 0.85rem;
+}
+
+.game-page .comms-map-list-content .category-list-controls {
+    margin-bottom: 0.85rem;
+}
+
+.game-page .comms-map-list-content .category-filter-sort-row {
+    padding: 0.75rem;
+}
+
+.game-page .comms-map-list-content .category-status-filter,
+.game-page .comms-map-list-content .category-sort {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.game-page .comms-map-list-content .category-status-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.game-page .comms-map-list-content .category-status-button,
+.game-page .comms-map-list-content .category-sort-select {
+    width: 100%;
+}
+
+.game-page .comms-map-list-content .category-group-controls {
+    justify-content: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.game-page .comms-map-list-content .category-group {
+    margin-top: 0.7rem;
+}
+
+.game-page .comms-map-list-content .category-group-header {
+    gap: 0.65rem;
+    padding: 0.75rem 0.8rem;
+}
+
+.game-page .comms-map-list-content .category-group-title {
+    font-size: 0.94rem;
+}
+
+.game-page .comms-map-list-content .category-group-progress {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.game-page .comms-map-list-content .category-group-body {
+    padding-top: 0.65rem;
+}
+
+.game-page .comms-map-list-content .tracker-list {
+    gap: 0.65rem;
+}
+
+.game-page .comms-map-list-content .tracker-item {
+    gap: 0.65rem;
+    grid-template-columns: 24px minmax(0, 1fr);
+    padding: 0.75rem;
+}
+
+.game-page .comms-map-list-content .tracker-item-status {
+    height: 24px;
+    width: 24px;
+}
+
+.game-page .comms-map-list-content .tracker-toggle {
+    grid-column: 1 / -1;
+    justify-self: stretch;
+    width: 100%;
+}
+
+.game-page .comms-map-list-content .tracker-item-name {
+    font-size: 0.95rem;
+}
+
+.game-page .comms-map-list-content .tracker-item-description {
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.comms-map-panel-backdrop {
+    background: rgb(0 0 0 / 58%);
+    border: 0;
+    cursor: pointer;
+    inset: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 998;
+}
+
+@media (max-width: 900px) {
+    .comms-map-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .comms-map-toolbar-actions {
+        justify-content: space-between;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .comms-map-layout,
+    .comms-map-layout:not(.is-panel-open) {
+        display: block;
+        min-height: clamp(34rem, 68vh, 52rem);
+    }
+
+    .comms-map-area,
+    .comms-map-layout:not(.is-panel-open) .comms-map-area {
+        border-radius: 12px;
+        height: 100%;
+        min-height: clamp(34rem, 68vh, 52rem);
+    }
+
+    .comms-map-list-panel {
+        border: 1px solid #374151;
+        border-radius: 12px 0 0 12px;
+        bottom: 0;
+        box-shadow: -12px 0 35px rgb(0 0 0 / 38%);
+        max-width: 28rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: min(92vw, 28rem);
+        z-index: 999;
+    }
+
+    .comms-map-layout:not(.is-panel-open) .comms-map-list-panel {
+        display: grid;
+    }
+}
+
+@media (max-width: 560px) {
+    .comms-map-toolbar-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .comms-map-panel-toggle {
+        width: 100%;
+    }
+
+    .comms-map-viewport {
+        padding: 0.45rem;
+    }
+
+    .comms-map-canvas {
+        min-height: 25rem;
+    }
+
+    .comms-map-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .comms-map-empty-state {
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0.75rem;
+    }
+}
+/* END COMMS PHASE 3 */

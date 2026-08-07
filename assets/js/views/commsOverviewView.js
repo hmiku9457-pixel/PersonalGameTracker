@@ -28,6 +28,10 @@ import {
 } from "./categoryView.js";
 
 import {
+    renderCommsMapView
+} from "./commsMapView.js";
+
+import {
     updateActiveGameNavigation
 } from "./navigationView.js";
 
@@ -133,7 +137,7 @@ export async function tryRenderCommsRoute(
         return true;
     }
 
-    await renderCommsMapPlaceholder(
+    await renderCommsMapView(
         game,
         commsManifest,
         section,

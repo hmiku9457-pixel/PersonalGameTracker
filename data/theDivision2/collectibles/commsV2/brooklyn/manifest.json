@@ -5,10 +5,10 @@
     "en": "Brooklyn"
   },
   "description": {
-    "de": "Comms der offenen Welt in Brooklyn. Die Kartenansicht wird in Phase 3 ergänzt.",
-    "en": "Open-world Comms in Brooklyn. The map view will be added in Phase 3."
+    "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
+    "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
   },
-  "lastUpdated": "2026-08-04",
+  "lastUpdated": "2026-08-07",
   "view": "map",
   "map": "brooklyn",
   "dataStatus": {
@@ -40,5 +40,11 @@
       "itemCount": 35,
       "groupCount": 4
     }
-  ]
+  ],
+  "mapImage": "assets/maps/theDivision2/brooklyn.svg",
+  "mapImageAlt": {
+    "de": "Gebietskarte von Brooklyn",
+    "en": "Area map of Brooklyn"
+  },
+  "panelDefaultOpen": true
 }

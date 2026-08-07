@@ -497,7 +497,7 @@ export async function renderCategory(
  * @param {Object|Array} data
  * @param {Object} progressData
  */
-function renderCategoryData(
+export function renderCategoryData(
 	container,
 	data,
 	progressData
@@ -1810,7 +1810,7 @@ function findItemById(
  * @param {Object|Array} data
  * @param {Object} progressData
  */
-function registerProgressToggleHandler(
+export function registerProgressToggleHandler(
 	container,
 	gameId,
 	categoryId,
