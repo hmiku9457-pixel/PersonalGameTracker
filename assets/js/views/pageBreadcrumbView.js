@@ -126,6 +126,23 @@ export function createPageBreadcrumbBanner(
     banner.className =
         "page-breadcrumb-banner";
 
+
+    const breadcrumbDepth = Math.max(
+        0,
+        segments.length - 1
+    );
+
+    banner.dataset.breadcrumbDepth =
+        String(
+            breadcrumbDepth
+        );
+
+    banner.classList.add(
+        breadcrumbDepth >= 3
+            ? "breadcrumb-depth-3-plus"
+            : `breadcrumb-depth-${breadcrumbDepth}`
+    );
+
     banner.setAttribute(
         "aria-label",
         UI_TEXT[language]?.navigationPath ??

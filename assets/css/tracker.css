@@ -3946,43 +3946,6 @@
 }
 
 /*
- * Bei schmaleren Desktop- und Tabletansichten wird der Breadcrumb
- * in eine eigene Zeile gelegt. Dadurch kann er niemals mit den
- * seitlichen Bedienelementen überlappen.
- *
- * Die zweite Zeile besitzt immer dieselbe Höhe – auch auf Seiten
- * ohne Buttons. Somit bleiben alle Banner innerhalb derselben
- * Bildschirmbreite exakt gleich hoch.
- */
-@media (max-width: 1600px) {
-    .game-page
-    .page-breadcrumb-banner {
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
-
-        grid-template-rows:
-            auto
-            38px;
-
-        grid-template-areas:
-            "title title"
-            "left right";
-
-        min-height: 104px;
-
-        row-gap: 0.65rem;
-    }
-
-    .game-page
-    .page-breadcrumb-title {
-        width: 100%;
-
-        justify-self: stretch;
-    }
-}
-
-/*
  * Auf Smartphones dürfen die rechten Aktionen umbrechen.
  */
 @media (max-width: 700px) {
@@ -4059,3 +4022,120 @@
     }
 }
 /* === NAVIGATION BANNER POLISH END === */
+
+/* === BREADCRUMB DEPTH BREAKPOINTS START === */
+/* =========================================================
+   Breadcrumb-Umbruch abhängig von der Navigationstiefe
+   ========================================================= */
+
+/*
+ * Depth 3 und tiefer:
+ *
+ * The Division 2 - Collectibles - Comms - New York
+ */
+@media (max-width: 1600px) {
+    .game-page
+    .page-breadcrumb-banner.breadcrumb-depth-3-plus {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        grid-template-rows:
+            auto
+            38px;
+
+        grid-template-areas:
+            "title title"
+            "left right";
+
+        min-height: 104px;
+
+        row-gap: 0.65rem;
+    }
+
+    .game-page
+    .page-breadcrumb-banner.breadcrumb-depth-3-plus
+    .page-breadcrumb-title {
+        width: 100%;
+
+        justify-self: stretch;
+    }
+}
+
+
+/*
+ * Depth 2:
+ *
+ * The Division 2 - Collectibles - Comms
+ */
+@media (max-width: 1350px) {
+    .game-page
+    .page-breadcrumb-banner.breadcrumb-depth-2 {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        grid-template-rows:
+            auto
+            38px;
+
+        grid-template-areas:
+            "title title"
+            "left right";
+
+        min-height: 104px;
+
+        row-gap: 0.65rem;
+    }
+
+    .game-page
+    .page-breadcrumb-banner.breadcrumb-depth-2
+    .page-breadcrumb-title {
+        width: 100%;
+
+        justify-self: stretch;
+    }
+}
+
+
+/*
+ * Depth 1:
+ *
+ * The Division 2 - Exotics
+ */
+@media (max-width: 1100px) {
+    .game-page
+    .page-breadcrumb-banner.breadcrumb-depth-1 {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        grid-template-rows:
+            auto
+            38px;
+
+        grid-template-areas:
+            "title title"
+            "left right";
+
+        min-height: 104px;
+
+        row-gap: 0.65rem;
+    }
+
+    .game-page
+    .page-breadcrumb-banner.breadcrumb-depth-1
+    .page-breadcrumb-title {
+        width: 100%;
+
+        justify-self: stretch;
+    }
+}
+
+
+/*
+ * Depth 0 besteht nur aus dem Spielnamen und benötigt keinen
+ * eigenen Desktop-Breakpoint. Das vorhandene mobile Layout bleibt
+ * unverändert.
+ */
+/* === BREADCRUMB DEPTH BREAKPOINTS END === */
