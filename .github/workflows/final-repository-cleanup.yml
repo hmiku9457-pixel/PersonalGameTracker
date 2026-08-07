@@ -1,0 +1,85 @@
+name: Final Repository Cleanup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Letzten Datei-Cleanup ausführen
+        run: node scripts/finalRepositoryCleanup.mjs
+
+      - name: JavaScript prüfen
+        shell: bash
+        run: |
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find assets/js -type f -name '*.js' -print0)
+
+      - name: Cleanup-Ergebnis prüfen
+        shell: bash
+        run: |
+          test -f 404.html
+          test ! -e config/supabase-config.js
+          test ! -e assets/js/supabase/supabaseTest.js
+
+          grep -q 'Personal Game Tracker' 404.html
+          grep -q 'FINAL REPOSITORY GITIGNORE' .gitignore
+
+          if git grep -n -I \
+            -e 'supabase-config.js' \
+            -e 'supabaseTest.js' \
+            -- \
+            ':!scripts/finalRepositoryCleanup.mjs' \
+            ':!.github/workflows/final-repository-cleanup.yml'
+          then
+            echo "Es bestehen weiterhin Referenzen auf entfernte Dateien."
+            exit 1
+          fi
+
+          git diff --check
+
+      - name: Änderungen anzeigen
+        shell: bash
+        run: |
+          git status --short
+          echo
+          git diff --stat
+
+      - name: Temporäre Cleanup-Dateien entfernen
+        shell: bash
+        run: |
+          rm -f scripts/finalRepositoryCleanup.mjs
+          rmdir scripts 2>/dev/null || true
+
+          rm -f .github/workflows/final-repository-cleanup.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+
+      - name: Cleanup committen
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen vorhanden."
+          else
+            git commit -m "Complete repository file cleanup"
+            git push
+          fi
