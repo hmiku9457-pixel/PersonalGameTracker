@@ -20,15 +20,18 @@ const UI_TEXT = {
 
 
 /**
- * Ersetzt die bisherigen Seitentitel durch einen einheitlichen
+ * Ersetzt die bisherigen Seitentitel durch einen gemeinsamen
  * Navigationsbanner.
  *
- * Eine vorhandene Kategorie-Toolbar wird nicht mehr separat
- * angezeigt. Ihre Bedienelemente werden in den Banner übernommen:
+ * Vorhandene Toolbar-Elemente werden in den Banner verschoben:
  *
  * - Zurück-Button links
  * - Breadcrumb mittig
- * - Fortschritt und weitere Aktionen rechts
+ * - Fortschritt und Zusatzaktionen rechts
+ *
+ * Beschreibende Untertexte unter dem Banner werden grundsätzlich
+ * entfernt, da die nachfolgenden Kacheln beziehungsweise Listen den
+ * Inhalt bereits ausreichend erklären.
  *
  * @param {Array<unknown>} items
  * @param {Object} options
@@ -38,7 +41,7 @@ const UI_TEXT = {
 export function applyPageBreadcrumbBanner(
     items,
     {
-        removeDescriptions = false
+        removeDescriptions = true
     } = {}
 ) {
     const page = document.querySelector(
@@ -61,7 +64,15 @@ export function applyPageBreadcrumbBanner(
         page
     );
 
-    if (removeDescriptions) {
+    /*
+     * Die Option bleibt aus Kompatibilitätsgründen erhalten.
+     * Untertexte werden im neuen einheitlichen Design jedoch
+     * grundsätzlich entfernt.
+     */
+    if (
+        removeDescriptions ||
+        removeDescriptions === false
+    ) {
         removePageDescriptions(
             page
         );
@@ -207,16 +218,11 @@ export function createPageBreadcrumbBanner(
 
 
 /**
- * Verschiebt die vorhandenen Toolbar-Elemente in den neuen Banner.
+ * Verschiebt die vorhandenen Toolbar-Elemente in den Banner.
  *
- * Unterstützt unter anderem:
- *
- * - normale Kategorie: Back + Fortschritt
- * - Untermanifest: Back
- * - Comms-Karte: Back + Fortschritt + Listen-Schalter
- *
- * Event-Listener und bestehende Elementreferenzen bleiben erhalten,
- * weil die DOM-Elemente verschoben und nicht neu erzeugt werden.
+ * Der Comms-Zurück-Link verwendete ursprünglich eine eigene Klasse.
+ * Beide Varianten werden deshalb als Zurück-Navigation erkannt und
+ * anschließend mit dem gemeinsamen Button-Stil versehen.
  *
  * @param {HTMLElement} toolbar
  * @param {HTMLElement} banner
@@ -243,10 +249,14 @@ function mergeToolbarIntoBanner(
 
     const backControl =
         toolbar.querySelector(
-            ".back-button"
+            ".back-button, .category-back-link"
         );
 
     if (backControl) {
+        backControl.classList.add(
+            "back-button"
+        );
+
         left.append(
             backControl
         );
@@ -274,10 +284,6 @@ function mergeToolbarIntoBanner(
         );
     }
 
-    /*
-     * Falls die Toolbar einen verschachtelten Back-Button enthielt,
-     * aber dessen leerer Wrapper übrig blieb, wird dieser entfernt.
-     */
     for (
         const child
         of [
@@ -400,8 +406,7 @@ function removePreviousPageTitles(
 
 
 /**
- * Entfernt optionale Einführungstexte auf Ansichten,
- * die bewusst nur den kompakten Banner verwenden sollen.
+ * Entfernt beschreibende Untertexte direkt unter dem Seitenbanner.
  *
  * @param {HTMLElement} page
  */
@@ -410,6 +415,7 @@ function removePageDescriptions(
 ) {
     const selectors = [
         ":scope > .game-description",
+        ":scope > .game-header > .game-description",
         ":scope > .category-content > .category-content-description"
     ];
 

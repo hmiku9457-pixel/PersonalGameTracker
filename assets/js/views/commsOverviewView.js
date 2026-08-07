@@ -785,7 +785,7 @@ function createToolbar(href, label) {
         "category-toolbar comms-toolbar";
 
     const backLink = document.createElement("a");
-    backLink.className = "category-back-link";
+    backLink.className = "back-button category-back-link";
     backLink.href = href;
     backLink.textContent = `← ${label}`;
 
