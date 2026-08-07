@@ -472,31 +472,52 @@ function compareIdSets(
     right,
     message
 ) {
+    /*
+     * Die normalen Abschnittssammlungen werden als Set geführt.
+     * readCategoryCollection() liefert seine IDs dagegen als Array.
+     * Für den Vergleich werden deshalb beide Eingaben einheitlich
+     * in Sets umgewandelt.
+     */
+    const leftSet =
+        left instanceof Set
+            ? left
+            : new Set(
+                left ?? []
+            );
+
+    const rightSet =
+        right instanceof Set
+            ? right
+            : new Set(
+                right ?? []
+            );
+
+
     if (
-        left.size !==
-        right.size
+        leftSet.size !==
+        rightSet.size
     ) {
         throw new Error(
-            `${message} Anzahl: ${left.size} / ${right.size}.`
+            `${message} Anzahl: ${leftSet.size} / ${rightSet.size}.`
         );
     }
 
     const missing =
         [
-            ...left
+            ...leftSet
         ].filter(
             id =>
-                !right.has(
+                !rightSet.has(
                     id
                 )
         );
 
     const unexpected =
         [
-            ...right
+            ...rightSet
         ].filter(
             id =>
-                !left.has(
+                !leftSet.has(
                     id
                 )
         );
