@@ -138,14 +138,47 @@ function patchMapView(source) {
         );
     }
 
-    if (!result.includes("createCommsMapController({")) {
-        result = replaceOnce(
-            result,
-            `        panelState.applyInitialState();\n        await loadMapImage(\n            mapArea.image,\n            mapArea.emptyState,\n            sectionManifest.mapImage ?? section.mapImage ?? "",\n            activeViewController.signal\n        );`,
-            `        panelState.applyInitialState();\n\n        const mapController = createCommsMapController({\n            sectionId: section.id,\n            area: mapArea.element,\n            viewport: mapArea.viewport,\n            canvas: mapArea.canvas,\n            uiText,\n            signal: activeViewController.signal\n        });\n\n        const mapLoaded = await loadMapImage(\n            mapArea.image,\n            mapArea.emptyState,\n            sectionManifest.mapImage ?? section.mapImage ?? "",\n            activeViewController.signal\n        );\n        mapController.setMapAvailable(mapLoaded);`,
-            "Initialisierung der Kartensteuerung"
-        );
-    }
+   if (!result.includes("createCommsMapController({")) {
+       const initializationPattern =
+           /^([ \t]*)panelState\.applyInitialState\(\);[ \t]*\r?\n(?:[ \t]*\r?\n)?[ \t]*await loadMapImage\(\s*mapArea\.image,\s*mapArea\.emptyState,\s*sectionManifest\.mapImage\s*\?\?\s*section\.mapImage\s*\?\?\s*"",\s*activeViewController\.signal\s*\);/m;
+   
+       const initializationMatch =
+           result.match(initializationPattern);
+   
+       if (!initializationMatch) {
+           throw new Error(
+               "Initialisierung der Kartensteuerung konnte nicht gefunden werden."
+           );
+       }
+   
+       const indent = initializationMatch[1];
+   
+       const replacement = [
+           `${indent}panelState.applyInitialState();`,
+           "",
+           `${indent}const mapController = createCommsMapController({`,
+           `${indent}    sectionId: section.id,`,
+           `${indent}    area: mapArea.element,`,
+           `${indent}    viewport: mapArea.viewport,`,
+           `${indent}    canvas: mapArea.canvas,`,
+           `${indent}    uiText,`,
+           `${indent}    signal: activeViewController.signal`,
+           `${indent}});`,
+           "",
+           `${indent}const mapLoaded = await loadMapImage(`,
+           `${indent}    mapArea.image,`,
+           `${indent}    mapArea.emptyState,`,
+           `${indent}    sectionManifest.mapImage ?? section.mapImage ?? "",`,
+           `${indent}    activeViewController.signal`,
+           `${indent});`,
+           `${indent}mapController.setMapAvailable(mapLoaded);`
+       ].join("\n");
+   
+       result = result.replace(
+           initializationPattern,
+           replacement
+       );
+   }
 
     if (!result.includes("viewport.tabIndex = 0;")) {
         result = replaceOnce(
