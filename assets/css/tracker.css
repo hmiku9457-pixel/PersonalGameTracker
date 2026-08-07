@@ -3147,3 +3147,48 @@
     }
 }
 /* === COMMS PHASE 5 DESIGN END === */
+
+/* === COMMS PHASE 5 VIEWPORT HEIGHT START === */
+/* =========================================================
+   Comms Phase 5 – vertikale Viewport-Begrenzung
+   ========================================================= */
+
+@media (min-width: 901px) {
+    .game-page.comms-map-page
+    .comms-map-layout {
+        height: var(
+            --comms-map-layout-height,
+            calc(100dvh - 18rem)
+        );
+        min-height: 0;
+        max-height: var(
+            --comms-map-layout-height,
+            calc(100dvh - 18rem)
+        );
+    }
+
+    .game-page.comms-map-page
+    .comms-map-area,
+    .game-page.comms-map-page
+    .comms-map-list-panel {
+        height: 100%;
+        min-height: 0;
+    }
+
+    .game-page.comms-map-page
+    .comms-map-viewport,
+    .game-page.comms-map-page
+    .comms-map-canvas {
+        min-height: 0;
+    }
+
+    .game-page.comms-map-page
+    .comms-map-list-scroll {
+        height: 100%;
+        min-height: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+    }
+}
+/* === COMMS PHASE 5 VIEWPORT HEIGHT END === */

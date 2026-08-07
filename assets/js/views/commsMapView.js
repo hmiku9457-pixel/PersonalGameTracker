@@ -214,6 +214,11 @@ export async function renderCommsMapView(
         );
 
         mainContent.replaceChildren(page);
+
+        registerCommsMapHeightController(
+            layout,
+            activeViewController.signal
+        );
         updateActiveGameNavigation(game.id);
 
         const panelState = createPanelStateController({
@@ -820,6 +825,169 @@ function createPanelStateController({
     };
 }
 
+
+
+/**
+ * Begrenzt die Desktop-Kartenansicht auf die tatsächlich
+ * verfügbare Höhe des Browserfensters.
+ *
+ * Die Toolbar und der Gebiets-Banner bleiben oberhalb sichtbar.
+ * Innerhalb der Kartenansicht scrollt ausschließlich das
+ * Tracking-Panel.
+ *
+ * @param {HTMLElement} layout
+ * @param {AbortSignal} signal
+ */
+function registerCommsMapHeightController(
+    layout,
+    signal
+) {
+    if (!(layout instanceof HTMLElement)) {
+        return;
+    }
+
+    let animationFrameId = 0;
+
+    const updateHeight = () => {
+        window.cancelAnimationFrame(
+            animationFrameId
+        );
+
+        animationFrameId = window.requestAnimationFrame(
+            () => {
+                if (
+                    window.innerWidth <= PANEL_BREAKPOINT ||
+                    document.fullscreenElement
+                ) {
+                    layout.style.removeProperty(
+                        "--comms-map-layout-height"
+                    );
+                    return;
+                }
+
+                const page = layout.closest(
+                    ".comms-map-page"
+                );
+                const main = layout.closest("main");
+                const footer = document.querySelector(
+                    "body > footer"
+                );
+
+                const layoutTop =
+                    layout.getBoundingClientRect().top;
+                const pageBottomPadding =
+                    getElementPixelValue(
+                        page,
+                        "paddingBottom"
+                    );
+                const mainBottomPadding =
+                    getElementPixelValue(
+                        main,
+                        "paddingBottom"
+                    );
+                const footerHeight = footer
+                    ? footer.getBoundingClientRect().height
+                    : 0;
+
+                const availableHeight = Math.floor(
+                    window.innerHeight -
+                    layoutTop -
+                    pageBottomPadding -
+                    mainBottomPadding -
+                    footerHeight -
+                    2
+                );
+
+                layout.style.setProperty(
+                    "--comms-map-layout-height",
+                    String(
+                        Math.max(
+                            300,
+                            availableHeight
+                        )
+                    ) + "px"
+                );
+            }
+        );
+    };
+
+    const observedElements = [
+        layout.previousElementSibling,
+        layout.previousElementSibling
+            ?.previousElementSibling,
+        document.querySelector("body > footer")
+    ].filter(
+        (element) => element instanceof HTMLElement
+    );
+
+    const resizeObserver =
+        typeof ResizeObserver === "function"
+            ? new ResizeObserver(updateHeight)
+            : null;
+
+    for (const element of observedElements) {
+        resizeObserver?.observe(element);
+    }
+
+    window.addEventListener(
+        "resize",
+        updateHeight,
+        { signal }
+    );
+    window.addEventListener(
+        "orientationchange",
+        updateHeight,
+        { signal }
+    );
+    document.addEventListener(
+        "fullscreenchange",
+        updateHeight,
+        { signal }
+    );
+    window.visualViewport?.addEventListener(
+        "resize",
+        updateHeight,
+        { signal }
+    );
+
+    signal.addEventListener(
+        "abort",
+        () => {
+            window.cancelAnimationFrame(
+                animationFrameId
+            );
+            resizeObserver?.disconnect();
+        },
+        { once: true }
+    );
+
+    updateHeight();
+}
+
+
+/**
+ * Liest einen berechneten CSS-Pixelwert sicher aus.
+ *
+ * @param {Element|null} element
+ * @param {string} property
+ * @returns {number}
+ */
+function getElementPixelValue(
+    element,
+    property
+) {
+    if (!(element instanceof Element)) {
+        return 0;
+    }
+
+    const value = Number.parseFloat(
+        window.getComputedStyle(element)[property]
+    );
+
+    return Number.isFinite(value)
+        ? value
+        : 0;
+}
 
 async function loadMapImage(
     image,
