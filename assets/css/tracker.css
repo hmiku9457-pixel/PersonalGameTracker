@@ -4485,7 +4485,7 @@
 
 	grid-template-columns:
 		minmax(0, 1fr)
-		max-content;
+		minmax(8rem, max-content);
 
 	grid-template-areas:
 		"status group-buttons"
@@ -4494,14 +4494,13 @@
 	align-items: start;
 
 	column-gap: 0.75rem;
-	row-gap: 0.65rem;
+	row-gap: 0.75rem;
 }
 
 
 /*
- * Status und Sortierung liegen normalerweise gemeinsam
- * in diesem Wrapper. display: contents erlaubt es, beide
- * Elemente direkt im äußeren Grid anzuordnen.
+ * Statusfilter und Sortierung werden direkt im äußeren
+ * Grid positioniert.
  */
 .game-page
 .comms-map-list-content
@@ -4520,25 +4519,34 @@
 }
 
 
-/* Rechts oben */
+/*
+ * Rechts oben:
+ * „Alle öffnen“ und „Alle schließen“ untereinander.
+ */
 .game-page
 .comms-map-list-content
 .category-group-controls.is-integrated {
 	grid-area: group-buttons;
 
-	width: auto;
+	width: 100%;
 	margin: 0;
 
 	display: grid;
-	grid-template-columns:
-		repeat(
-			2,
-			max-content
-		);
-
-	justify-content: end;
+	grid-template-columns: 1fr;
 
 	gap: 0.5rem;
+}
+
+
+/*
+ * Beide Buttons nutzen dieselbe Breite wie der
+ * Sortierungsbereich darunter.
+ */
+.game-page
+.comms-map-list-content
+.category-group-controls.is-integrated
+.category-group-control-button {
+	width: 100%;
 }
 
 
@@ -4549,14 +4557,11 @@
 	grid-area: sort;
 
 	width: 100%;
-
-	justify-self: stretch;
 }
 
 
 /*
- * Sortierauswahl an der Breite der beiden oberen
- * Schaltflächen ausrichten.
+ * Auswahlfeld über die gesamte rechte Spalte.
  */
 .game-page
 .comms-map-list-content
