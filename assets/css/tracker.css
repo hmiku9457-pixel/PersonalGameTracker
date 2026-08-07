@@ -2244,12 +2244,21 @@
 
 .comms-section-card:hover,
 .comms-section-card:focus-visible {
-    border-color: rgba(255, 136, 0, 0.7);
-    transform: translateY(-2px);
+    background: #273449;
+    border-color: #60a5fa;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px
+        rgb(0 0 0 / 25%);
 }
 
 .comms-section-card:focus-visible {
-    outline: 2px solid rgba(255, 136, 0, 0.9);
+    outline:
+        2px solid
+        #60a5fa;
+
     outline-offset: 3px;
 }
 
