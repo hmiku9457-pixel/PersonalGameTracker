@@ -4139,3 +4139,30 @@
  * unverändert.
  */
 /* === BREADCRUMB DEPTH BREAKPOINTS END === */
+
+/* === MANIFEST PROGRESS BANNER START === */
+/* =========================================================
+   Gesamtfortschritt auf Manifestübersichten
+   ========================================================= */
+
+/*
+ * Die Anzeige verwendet grundsätzlich denselben Pill-Stil wie
+ * der Fortschritt einer finalen Tracking-Liste.
+ */
+.game-page
+.manifest-progress-summary {
+    flex-shrink: 0;
+
+    min-width: max-content;
+
+    font-variant-numeric:
+        tabular-nums;
+
+    text-align: center;
+}
+
+.game-page
+.manifest-progress-summary[hidden] {
+    display: none !important;
+}
+/* === MANIFEST PROGRESS BANNER END === */

@@ -117,19 +117,25 @@ export async function renderGame(
 
 
 	/*
-	 * Bei Untermanifesten einen
+	 * Gemeinsame Toolbar für Spiel- und Manifestübersichten.
+	 *
+	 * pageBreadcrumbView.js verschiebt ihre Elemente später
+	 * in den gemeinsamen Navigationsbanner.
+	 */
+	const toolbar =
+		document.createElement(
+			"div"
+		);
+
+	toolbar.className =
+		"category-toolbar";
+
+
+	/*
+	 * Bei Untermanifesten zusätzlich einen
 	 * Zurück-Button anzeigen.
 	 */
 	if (routeIds.length > 0) {
-
-		const toolbar =
-			document.createElement(
-				"div"
-			);
-
-		toolbar.className =
-			"category-toolbar";
-
 
 		const backButton =
 			document.createElement(
@@ -169,13 +175,20 @@ export async function renderGame(
 		toolbar.append(
 			backButton
 		);
-
-
-		gamePage.append(
-			toolbar
-		);
 	}
 
+
+	const manifestProgress =
+		createManifestProgressSummary();
+
+	toolbar.append(
+		manifestProgress
+	);
+
+
+	gamePage.append(
+		toolbar
+	);
 
 	/*
 	 * Titel
@@ -262,18 +275,6 @@ export async function renderGame(
 		categoryGrid
 	);
 
-
-	/*
-	 * Gesamtfortschritt
-	 */
-
-	const gameProgress =
-		createGameProgress();
-
-
-	gamePage.append(
-		gameProgress
-	);
 
 
 	mainContent.append(
@@ -448,106 +449,32 @@ function createCategoryCard(
  *
  * @returns {HTMLElement}
  */
-function createGameProgress() {
+function createManifestProgressSummary() {
 
-	const container =
-		document.createElement(
-			"div"
-		);
-
-	container.className =
-		"game-progress";
-
-
-	const header =
-		document.createElement(
-			"div"
-		);
-
-	header.className =
-		"game-progress-header";
-
-
-	const label =
+	const progress =
 		document.createElement(
 			"span"
 		);
 
-	label.textContent =
-		getTotalProgressText();
+	progress.className =
+		"category-content-progress manifest-progress-summary";
 
+	progress.id =
+		"manifest-progress-summary";
 
-	const count =
-		document.createElement(
-			"span"
-		);
+	progress.textContent =
+		"0 / 0 · 0 %";
 
-	count.id =
-		"game-progress-count";
-
-	count.textContent =
-		"0 / 0";
-
-
-	header.append(
-		label,
-		count
+	progress.setAttribute(
+		"aria-label",
+		getCurrentLanguage() === "de"
+			? "Gesamtfortschritt: 0 von 0, 0 Prozent"
+			: "Overall progress: 0 of 0, 0 percent"
 	);
 
 
-	const progressBar =
-		document.createElement(
-			"div"
-		);
-
-	progressBar.className =
-		"progress-bar";
-
-
-	const progressFill =
-		document.createElement(
-			"div"
-		);
-
-	progressFill.className =
-		"progress-bar-fill";
-
-	progressFill.id =
-		"game-progress-fill";
-
-
-	progressBar.append(
-		progressFill
-	);
-
-
-	const percent =
-		document.createElement(
-			"div"
-		);
-
-	percent.className =
-		"game-progress-percent";
-
-	percent.id =
-		"game-progress-percent";
-
-	percent.textContent =
-		"0 %";
-
-
-	container.append(
-		header,
-		progressBar,
-		percent
-	);
-
-
-	return container;
-}
-
-
-/* ---------------------------------------------------------
+	return progress;
+}/* ---------------------------------------------------------
    4. Fortschrittsberechnung
    --------------------------------------------------------- */
 
@@ -821,7 +748,6 @@ function updateTotalProgress(
 			0
 		);
 
-
 	const total =
 		progresses.reduce(
 			(sum, progress) =>
@@ -840,47 +766,25 @@ function updateTotalProgress(
 			: 0;
 
 
-	const countElement =
+	const progressElement =
 		document.getElementById(
-			"game-progress-count"
+			"manifest-progress-summary"
 		);
 
 
-	const fillElement =
-		document.getElementById(
-			"game-progress-fill"
+	if (progressElement) {
+
+		progressElement.textContent =
+			`${completed} / ${total} · ${percent} %`;
+
+		progressElement.setAttribute(
+			"aria-label",
+			getCurrentLanguage() === "de"
+				? `Gesamtfortschritt: ${completed} von ${total}, ${percent} Prozent`
+				: `Overall progress: ${completed} of ${total}, ${percent} percent`
 		);
-
-
-	const percentElement =
-		document.getElementById(
-			"game-progress-percent"
-		);
-
-
-	if (countElement) {
-
-		countElement.textContent =
-			`${completed} / ${total}`;
 	}
-
-
-	if (fillElement) {
-
-		fillElement.style.width =
-			`${percent}%`;
-	}
-
-
-	if (percentElement) {
-
-		percentElement.textContent =
-			`${percent} %`;
-	}
-}
-
-
-/**
+}/**
  * Blendet persönliche Fortschrittsanzeigen
  * aus, wenn kein Benutzer angemeldet ist.
  *
@@ -890,14 +794,13 @@ function hideProgressElements(
 	container
 ) {
 
-	const gameProgress =
+	const manifestProgress =
 		container.querySelector(
-			".game-progress"
+			".manifest-progress-summary"
 		);
 
-
-	if (gameProgress) {
-		gameProgress.hidden = true;
+	if (manifestProgress) {
+		manifestProgress.hidden = true;
 	}
 
 
@@ -911,13 +814,9 @@ function hideProgressElements(
 		const element
 		of categoryProgressElements
 	) {
-
 		element.hidden = true;
 	}
-}
-
-
-/* ---------------------------------------------------------
+}/* ---------------------------------------------------------
    6. Lokalisierte UI-Texte
    --------------------------------------------------------- */
 
@@ -931,20 +830,6 @@ function getBackButtonText() {
 		? "← Zurück"
 		: "← Back";
 }
-
-
-/**
- * Gibt die Beschriftung des
- * Gesamtfortschritts zurück.
- *
- * @returns {string}
- */
-function getTotalProgressText() {
-	return getCurrentLanguage() === "de"
-		? "Gesamtfortschritt"
-		: "Overall progress";
-}
-
 
 /* ---------------------------------------------------------
    7. Routing
