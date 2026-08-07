@@ -2195,3 +2195,281 @@
 	}
 
 }
+
+
+/* =========================================================
+   Comms Phase 2
+   ========================================================= */
+
+.comms-overview-page,
+.comms-map-placeholder-page {
+    width: 100%;
+}
+
+.comms-toolbar {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.comms-section-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.5rem;
+}
+
+.comms-section-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.015)
+        );
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 0.9rem;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    min-height: 16rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition:
+        border-color 160ms ease,
+        transform 160ms ease,
+        background-color 160ms ease;
+}
+
+.comms-section-card:hover,
+.comms-section-card:focus-visible {
+    border-color: rgba(255, 136, 0, 0.7);
+    transform: translateY(-2px);
+}
+
+.comms-section-card:focus-visible {
+    outline: 2px solid rgba(255, 136, 0, 0.9);
+    outline-offset: 3px;
+}
+
+.comms-section-card-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comms-view-badge {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    display: inline-flex;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.65rem;
+    text-transform: uppercase;
+}
+
+.comms-view-badge-map {
+    background: rgba(255, 136, 0, 0.12);
+}
+
+.comms-view-badge-list {
+    background: rgba(86, 156, 214, 0.12);
+}
+
+.comms-section-card-arrow {
+    font-size: 1.35rem;
+    opacity: 0.7;
+    transition: transform 160ms ease;
+}
+
+.comms-section-card:hover .comms-section-card-arrow,
+.comms-section-card:focus-visible .comms-section-card-arrow {
+    transform: translateX(0.25rem);
+}
+
+.comms-section-card h3 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    margin: 0;
+}
+
+.comms-section-card > p {
+    line-height: 1.55;
+    margin: 0;
+}
+
+.comms-section-card-counts {
+    font-size: 0.9rem;
+    margin-top: auto !important;
+    opacity: 0.7;
+}
+
+.comms-section-card-progress {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.comms-section-card-progress[hidden] {
+    display: none;
+}
+
+.comms-section-card-progress > div:first-child,
+.comms-overall-progress {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comms-overall-progress {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    margin-top: 1rem;
+    padding: 1rem 1.15rem;
+}
+
+.comms-overall-progress[hidden] {
+    display: none;
+}
+
+.comms-overall-progress .progress-bar {
+    flex-basis: 100%;
+}
+
+.comms-section-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.35rem;
+    opacity: 0.65;
+    text-transform: uppercase;
+}
+
+.comms-map-placeholder {
+    align-items: center;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 136, 0, 0.08),
+            rgba(255, 255, 255, 0.025)
+        );
+    border: 1px dashed rgba(255, 136, 0, 0.45);
+    border-radius: 0.9rem;
+    display: flex;
+    gap: 1.1rem;
+    margin-top: 1.5rem;
+    min-height: 10rem;
+    padding: 1.5rem;
+}
+
+.comms-map-placeholder-icon {
+    align-items: center;
+    background: rgba(255, 136, 0, 0.14);
+    border-radius: 50%;
+    display: inline-flex;
+    flex: 0 0 3.5rem;
+    font-size: 2rem;
+    height: 3.5rem;
+    justify-content: center;
+}
+
+.comms-map-placeholder h3,
+.comms-map-placeholder p {
+    margin: 0;
+}
+
+.comms-map-placeholder p {
+    line-height: 1.55;
+    margin-top: 0.45rem;
+    opacity: 0.78;
+}
+
+.comms-source-summary {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.9rem;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.comms-source-summary-header,
+.comms-source-item {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.comms-source-summary-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1rem 1.15rem;
+}
+
+.comms-source-summary-header h3 {
+    margin: 0;
+}
+
+.comms-source-summary-header span,
+.comms-source-item span:last-child {
+    font-size: 0.85rem;
+    opacity: 0.68;
+    text-align: right;
+}
+
+.comms-source-list {
+    display: grid;
+}
+
+.comms-source-item {
+    padding: 0.85rem 1.15rem;
+}
+
+.comms-source-item + .comms-source-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.comms-section-progress {
+    min-width: min(18rem, 42vw);
+}
+
+@media (max-width: 780px) {
+    .comms-section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comms-section-card {
+        min-height: 13rem;
+    }
+
+    .comms-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .comms-section-progress {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .comms-map-placeholder {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .comms-source-summary-header,
+    .comms-source-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .comms-source-summary-header span,
+    .comms-source-item span:last-child {
+        text-align: left;
+    }
+}

@@ -5,8 +5,8 @@
     "en": "Comms"
   },
   "description": {
-    "de": "Comms nach Washington, New York, Brooklyn und Missionen gegliedert.",
-    "en": "Comms organized into Washington, New York, Brooklyn and Missions."
+    "de": "Comms nach Washington, New York, Brooklyn und Missionen geordnet.",
+    "en": "Comms organized by Washington, New York, Brooklyn and missions."
   },
   "lastUpdated": "2026-08-04",
   "dataStatus": {
@@ -29,7 +29,11 @@
       "map": "washington",
       "manifest": "washington/manifest.json",
       "itemCount": 181,
-      "groupCount": 19
+      "groupCount": 19,
+      "description": {
+        "de": "Comms der offenen Welt in Washington, D.C. Die Kartenansicht wird in Phase 3 ergänzt.",
+        "en": "Open-world Comms in Washington, D.C. The map view will be added in Phase 3."
+      }
     },
     {
       "id": "newYork",
@@ -41,7 +45,11 @@
       "map": "newYork",
       "manifest": "newYork/manifest.json",
       "itemCount": 109,
-      "groupCount": 11
+      "groupCount": 11,
+      "description": {
+        "de": "Comms der offenen Welt in Lower Manhattan. Die Kartenansicht wird in Phase 3 ergänzt.",
+        "en": "Open-world Comms in Lower Manhattan. The map view will be added in Phase 3."
+      }
     },
     {
       "id": "brooklyn",
@@ -53,7 +61,11 @@
       "map": "brooklyn",
       "manifest": "brooklyn/manifest.json",
       "itemCount": 35,
-      "groupCount": 4
+      "groupCount": 4,
+      "description": {
+        "de": "Comms der offenen Welt in Brooklyn. Die Kartenansicht wird in Phase 3 ergänzt.",
+        "en": "Open-world Comms in Brooklyn. The map view will be added in Phase 3."
+      }
     },
     {
       "id": "missions",
@@ -64,6 +76,80 @@
       "view": "list",
       "map": null,
       "manifest": "missions/manifest.json",
+      "itemCount": 515,
+      "groupCount": 25,
+      "description": {
+        "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
+        "en": "Mission- and activity-bound Comms in one combined tracking list."
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "washington",
+      "name": {
+        "de": "Washington, D.C.",
+        "en": "Washington, D.C."
+      },
+      "description": {
+        "de": "Comms der offenen Welt in Washington, D.C. Die Kartenansicht wird in Phase 3 ergänzt.",
+        "en": "Open-world Comms in Washington, D.C. The map view will be added in Phase 3."
+      },
+      "type": "manifest",
+      "file": "washington/manifest.json",
+      "view": "map",
+      "map": "washington",
+      "itemCount": 181,
+      "groupCount": 19
+    },
+    {
+      "id": "newYork",
+      "name": {
+        "de": "New York",
+        "en": "New York"
+      },
+      "description": {
+        "de": "Comms der offenen Welt in Lower Manhattan. Die Kartenansicht wird in Phase 3 ergänzt.",
+        "en": "Open-world Comms in Lower Manhattan. The map view will be added in Phase 3."
+      },
+      "type": "manifest",
+      "file": "newYork/manifest.json",
+      "view": "map",
+      "map": "newYork",
+      "itemCount": 109,
+      "groupCount": 11
+    },
+    {
+      "id": "brooklyn",
+      "name": {
+        "de": "Brooklyn",
+        "en": "Brooklyn"
+      },
+      "description": {
+        "de": "Comms der offenen Welt in Brooklyn. Die Kartenansicht wird in Phase 3 ergänzt.",
+        "en": "Open-world Comms in Brooklyn. The map view will be added in Phase 3."
+      },
+      "type": "manifest",
+      "file": "brooklyn/manifest.json",
+      "view": "map",
+      "map": "brooklyn",
+      "itemCount": 35,
+      "groupCount": 4
+    },
+    {
+      "id": "missions",
+      "name": {
+        "de": "Missionen",
+        "en": "Missions"
+      },
+      "description": {
+        "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
+        "en": "Mission- and activity-bound Comms in one combined tracking list."
+      },
+      "type": "category",
+      "file": "missions/allMissions.json",
+      "view": "list",
+      "map": null,
       "itemCount": 515,
       "groupCount": 25
     }

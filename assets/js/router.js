@@ -30,6 +30,10 @@ import {
 	renderCategory
 } from "./views/categoryView.js";
 
+import {
+    tryRenderCommsRoute
+} from "./views/commsOverviewView.js";
+
 
 import {
 	showError,
@@ -293,8 +297,18 @@ export async function loadPageFromHash() {
 		 * collectibles/echos
 		 * collectibles/comms
 		 */
+		const commsRouteHandled =
+		    await tryRenderCommsRoute(
+		        game,
+		        categoryRoute
+		    );
+
+		if (commsRouteHandled) {
+		    return;
+		}
+
 		const resolvedRoute =
-			await resolveGameRoute(
+		    await resolveGameRoute(
 				game,
 				categoryRoute
 			);

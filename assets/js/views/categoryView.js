@@ -1925,9 +1925,14 @@ function registerProgressToggleHandler(
 			try {
 
 				await setItemCompleted(
-					gameId,
-					categoryId,
-					item,
+                    gameId,
+                    (
+                        typeof item.progressCategoryId === "string" &&
+                        item.progressCategoryId.trim() !== ""
+                            ? item.progressCategoryId
+                            : categoryId
+                    ),
+                    item,
 					newState,
 					progressData
 				);

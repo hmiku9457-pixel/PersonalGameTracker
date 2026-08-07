@@ -5,8 +5,8 @@
     "en": "New York"
   },
   "description": {
-    "de": "Frei auffindbare Comms auf der Karte von New York.",
-    "en": "Freely discoverable Comms on the New York map."
+    "de": "Comms der offenen Welt in Lower Manhattan. Die Kartenansicht wird in Phase 3 ergänzt.",
+    "en": "Open-world Comms in Lower Manhattan. The map view will be added in Phase 3."
   },
   "lastUpdated": "2026-08-04",
   "view": "map",
@@ -29,6 +29,32 @@
     {
       "id": "newYorkProfiles",
       "name": "Comms – New York – Profile – New York",
+      "file": "newYorkProfiles.json",
+      "itemCount": 86,
+      "groupCount": 9
+    }
+  ],
+  "categories": [
+    {
+      "id": "newYorkWorld",
+      "name": "Comms – New York – Welt und Einsätze – New York",
+      "description": {
+        "de": "23 Comms in dieser Sammlung.",
+        "en": "23 Comms in this collection."
+      },
+      "type": "category",
+      "file": "newYorkWorld.json",
+      "itemCount": 23,
+      "groupCount": 2
+    },
+    {
+      "id": "newYorkProfiles",
+      "name": "Comms – New York – Profile – New York",
+      "description": {
+        "de": "86 Comms in dieser Sammlung.",
+        "en": "86 Comms in this collection."
+      },
+      "type": "category",
       "file": "newYorkProfiles.json",
       "itemCount": 86,
       "groupCount": 9

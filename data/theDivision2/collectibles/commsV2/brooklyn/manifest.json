@@ -5,8 +5,8 @@
     "en": "Brooklyn"
   },
   "description": {
-    "de": "Frei auffindbare Comms auf der Karte von Brooklyn.",
-    "en": "Freely discoverable Comms on the Brooklyn map."
+    "de": "Comms der offenen Welt in Brooklyn. Die Kartenansicht wird in Phase 3 ergänzt.",
+    "en": "Open-world Comms in Brooklyn. The map view will be added in Phase 3."
   },
   "lastUpdated": "2026-08-04",
   "view": "map",
@@ -22,6 +22,20 @@
     {
       "id": "battleForBrooklyn",
       "name": "Comms – Battle for Brooklyn – Brooklyn",
+      "file": "battleForBrooklyn.json",
+      "itemCount": 35,
+      "groupCount": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": "battleForBrooklyn",
+      "name": "Comms – Battle for Brooklyn – Brooklyn",
+      "description": {
+        "de": "35 Comms in dieser Sammlung.",
+        "en": "35 Comms in this collection."
+      },
+      "type": "category",
       "file": "battleForBrooklyn.json",
       "itemCount": 35,
       "groupCount": 4

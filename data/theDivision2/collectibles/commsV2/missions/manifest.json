@@ -5,8 +5,8 @@
     "en": "Missions"
   },
   "description": {
-    "de": "Missions-, Manhunt-, Incursion-, Descent- und weitere aktivitätsgebundene Comms.",
-    "en": "Mission, Manhunt, Incursion, Descent and other activity-bound Comms."
+    "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
+    "en": "Mission- and activity-bound Comms in one combined tracking list."
   },
   "lastUpdated": "2026-08-04",
   "view": "list",
@@ -71,6 +71,104 @@
     {
       "id": "descent",
       "name": "Comms – Descent – Missionen",
+      "file": "descent.json",
+      "itemCount": 105,
+      "groupCount": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "newYorkWorld",
+      "name": "Comms – New York – Welt und Einsätze – Missionen",
+      "description": {
+        "de": "9 Comms in dieser Sammlung.",
+        "en": "9 Comms in this collection."
+      },
+      "type": "category",
+      "file": "newYorkWorld.json",
+      "itemCount": 9,
+      "groupCount": 1
+    },
+    {
+      "id": "specialOperations",
+      "name": "Comms – Spezialoperationen – Missionen",
+      "description": {
+        "de": "30 Comms in dieser Sammlung.",
+        "en": "30 Comms in this collection."
+      },
+      "type": "category",
+      "file": "specialOperations.json",
+      "itemCount": 30,
+      "groupCount": 3
+    },
+    {
+      "id": "manhuntsLegacy",
+      "name": "Comms – Manhunts – Legacy – Missionen",
+      "description": {
+        "de": "80 Comms in dieser Sammlung.",
+        "en": "80 Comms in this collection."
+      },
+      "type": "category",
+      "file": "manhuntsLegacy.json",
+      "itemCount": 80,
+      "groupCount": 4
+    },
+    {
+      "id": "manhuntsReconstruction",
+      "name": "Comms – Manhunts – Wiederaufbau – Missionen",
+      "description": {
+        "de": "87 Comms in dieser Sammlung.",
+        "en": "87 Comms in this collection."
+      },
+      "type": "category",
+      "file": "manhuntsReconstruction.json",
+      "itemCount": 87,
+      "groupCount": 4
+    },
+    {
+      "id": "manhuntsRogueNetwork",
+      "name": "Comms – Manhunts – Rogue Network – Missionen",
+      "description": {
+        "de": "88 Comms in dieser Sammlung.",
+        "en": "88 Comms in this collection."
+      },
+      "type": "category",
+      "file": "manhuntsRogueNetwork.json",
+      "itemCount": 88,
+      "groupCount": 3
+    },
+    {
+      "id": "manhuntsCurrent",
+      "name": "Comms – Manhunts – Aktuelle Handlungsstränge – Missionen",
+      "description": {
+        "de": "101 Comms in dieser Sammlung.",
+        "en": "101 Comms in this collection."
+      },
+      "type": "category",
+      "file": "manhuntsCurrent.json",
+      "itemCount": 101,
+      "groupCount": 7
+    },
+    {
+      "id": "incursionAndBTSU",
+      "name": "Comms – Incursion und BTSU – Missionen",
+      "description": {
+        "de": "15 Comms in dieser Sammlung.",
+        "en": "15 Comms in this collection."
+      },
+      "type": "category",
+      "file": "incursionAndBTSU.json",
+      "itemCount": 15,
+      "groupCount": 2
+    },
+    {
+      "id": "descent",
+      "name": "Comms – Descent – Missionen",
+      "description": {
+        "de": "105 Comms in dieser Sammlung.",
+        "en": "105 Comms in this collection."
+      },
+      "type": "category",
       "file": "descent.json",
       "itemCount": 105,
       "groupCount": 1

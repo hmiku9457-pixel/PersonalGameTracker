@@ -1,49 +1,49 @@
 {
-	"id": "theDivision2-collectibles",
-	"name": "The Division 2 - Collectibles",
-
-	"categories": [
-		{
-			"id": "foundFootage",
-			"name": "Found Footage",
-			"description": "Collectibles",
-			"type": "category",
-			"file": "foundFootage.json"
-		},
-		{
-			"id": "comms",
-			"name": "Comms",
-			"description": "Collectibles",
-			"type": "manifest",
-			"file": "comms/manifest.json"
-		},
-		{
-			"id": "artifacts",
-			"name": "Artifacts",
-			"description": "Collectibles",
-			"type": "category",
-			"file": "artifacts.json"
-		},
-		{
-			"id": "echos",
-			"name": "ECHOs",
-			"description": "Collectibles",
-			"type": "category",
-			"file": "echos.json"
-		},
-		{
-			"id": "fieldData",
-			"name": "Field Data",
-			"description": "Collectibles",
-			"type": "category",
-			"file": "fieldData.json"
-		},
-		{
-			"id": "database",
-			"name": "Database",
-			"description": "Collectibles",
-			"type": "category",
-			"file": "database.json"
-		}
-	]
+  "id": "theDivision2-collectibles",
+  "name": "The Division 2 - Collectibles",
+  "categories": [
+    {
+      "id": "foundFootage",
+      "name": "Found Footage",
+      "description": "Collectibles",
+      "type": "category",
+      "file": "foundFootage.json"
+    },
+    {
+      "id": "comms",
+      "name": "Comms",
+      "description": "Collectibles",
+      "type": "manifest",
+      "file": "commsV2/manifest.json",
+      "legacyFile": "comms/manifest.json"
+    },
+    {
+      "id": "artifacts",
+      "name": "Artifacts",
+      "description": "Collectibles",
+      "type": "category",
+      "file": "artifacts.json"
+    },
+    {
+      "id": "echos",
+      "name": "ECHOs",
+      "description": "Collectibles",
+      "type": "category",
+      "file": "echos.json"
+    },
+    {
+      "id": "fieldData",
+      "name": "Field Data",
+      "description": "Collectibles",
+      "type": "category",
+      "file": "fieldData.json"
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "description": "Collectibles",
+      "type": "category",
+      "file": "database.json"
+    }
+  ]
 }

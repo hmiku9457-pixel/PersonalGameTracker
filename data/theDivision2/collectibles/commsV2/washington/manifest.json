@@ -5,8 +5,8 @@
     "en": "Washington, D.C."
   },
   "description": {
-    "de": "Frei auffindbare Comms auf der Karte von Washington, D.C..",
-    "en": "Freely discoverable Comms on the Washington, D.C. map."
+    "de": "Comms der offenen Welt in Washington, D.C. Die Kartenansicht wird in Phase 3 ergänzt.",
+    "en": "Open-world Comms in Washington, D.C. The map view will be added in Phase 3."
   },
   "lastUpdated": "2026-08-04",
   "view": "map",
@@ -43,6 +43,56 @@
     {
       "id": "washingtonProfiles",
       "name": "Comms – Washington – Profile – Washington, D.C.",
+      "file": "washingtonProfiles.json",
+      "itemCount": 55,
+      "groupCount": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": "coreFactionsAndInstitutions",
+      "name": "Comms – Fraktionen und Institutionen – Washington, D.C.",
+      "description": {
+        "de": "73 Comms in dieser Sammlung.",
+        "en": "73 Comms in this collection."
+      },
+      "type": "category",
+      "file": "coreFactionsAndInstitutions.json",
+      "itemCount": 73,
+      "groupCount": 7
+    },
+    {
+      "id": "washingtonWorld",
+      "name": "Comms – Washington – Open World – Washington, D.C.",
+      "description": {
+        "de": "33 Comms in dieser Sammlung.",
+        "en": "33 Comms in this collection."
+      },
+      "type": "category",
+      "file": "washingtonWorld.json",
+      "itemCount": 33,
+      "groupCount": 3
+    },
+    {
+      "id": "washingtonSettlements",
+      "name": "Comms – Washington – Siedlungen – Washington, D.C.",
+      "description": {
+        "de": "20 Comms in dieser Sammlung.",
+        "en": "20 Comms in this collection."
+      },
+      "type": "category",
+      "file": "washingtonSettlements.json",
+      "itemCount": 20,
+      "groupCount": 3
+    },
+    {
+      "id": "washingtonProfiles",
+      "name": "Comms – Washington – Profile – Washington, D.C.",
+      "description": {
+        "de": "55 Comms in dieser Sammlung.",
+        "en": "55 Comms in this collection."
+      },
+      "type": "category",
       "file": "washingtonProfiles.json",
       "itemCount": 55,
       "groupCount": 6
