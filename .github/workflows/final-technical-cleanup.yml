@@ -1,0 +1,139 @@
+name: Final Technical Cleanup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Technischen Cleanup ausführen
+        run: node scripts/finalTechnicalCleanup.mjs
+
+      - name: JavaScript vollständig prüfen
+        shell: bash
+        run: |
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find assets/js -type f -name '*.js' -print0)
+
+      - name: JSON vollständig prüfen
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import {
+            readFile,
+            readdir
+          } from "node:fs/promises";
+
+          import {
+            join
+          } from "node:path";
+
+          async function validateDirectory(directory) {
+            for (const entry of await readdir(
+              directory,
+              {
+                withFileTypes: true
+              }
+            )) {
+              const path = join(
+                directory,
+                entry.name
+              );
+
+              if (entry.isDirectory()) {
+                await validateDirectory(path);
+                continue;
+              }
+
+              if (!entry.name.endsWith(".json")) {
+                continue;
+              }
+
+              JSON.parse(
+                await readFile(
+                  path,
+                  "utf8"
+                )
+              );
+            }
+          }
+
+          await validateDirectory("data");
+          await validateDirectory("config");
+
+          console.log("Alle JSON-Dateien sind gültig.");
+          NODE
+
+      - name: Temporäre Cleanup-Dateien entfernen
+        shell: bash
+        run: |
+          rm -f scripts/finalTechnicalCleanup.mjs
+          rmdir scripts 2>/dev/null || true
+
+          rm -f .github/workflows/final-technical-cleanup.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+
+      - name: Altlasten ausschließen
+        shell: bash
+        run: |
+          forbidden="$(
+            git grep -n -I \
+              -e 'commsV2' \
+              -e 'legacyFile' \
+              -e 'renderCommsMapPlaceholder' \
+              -e 'COMMS BREADCRUMB BANNER' \
+              -e 'UNIVERSAL PAGE BREADCRUMB BANNERS' \
+              -e 'MERGED NAVIGATION BANNER' \
+              -e 'COMMS MAP BANNER ALIGNMENT FIX' \
+              -- \
+              ':!.git/**' \
+              2>/dev/null || true
+          )"
+
+          if [ -n "$forbidden" ]; then
+            echo "Es wurden noch technische Altlasten gefunden:"
+            echo "$forbidden"
+            exit 1
+          fi
+
+          test ! -e data/theDivision2/collectibles/commsV2
+          test ! -e data/theDivision2/collectibles/comms/migration-report.json
+
+          git diff --check
+
+      - name: Änderungen anzeigen
+        shell: bash
+        run: |
+          git status --short
+          echo
+          git diff --stat
+
+      - name: Cleanup committen
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen vorhanden."
+          else
+            git commit -m "Consolidate Comms production structure"
+            git push
+          fi
