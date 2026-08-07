@@ -159,6 +159,27 @@ export function renderCategoryControls(
 
 
 	if (existingControls) {
+
+		const existingIntegratedGroupControls =
+			existingControls.querySelector(
+				".category-group-controls"
+			);
+
+
+		if (
+			existingIntegratedGroupControls
+		) {
+			existingIntegratedGroupControls
+				.classList.remove(
+					"is-integrated"
+				);
+
+			existingControls.before(
+				existingIntegratedGroupControls
+			);
+		}
+
+
 		existingControls.remove();
 	}
 
@@ -601,9 +622,41 @@ export function renderCategoryControls(
 	 * =====================================================
 	 */
 
+	const lowerRow =
+		document.createElement(
+			"div"
+		);
+
+
+	lowerRow.className =
+		"category-controls-lower-row";
+
+
+	const groupControls =
+		container.querySelector(
+			":scope > .category-group-controls"
+		);
+
+
+	lowerRow.append(
+		filterSortRow
+	);
+
+
+	if (groupControls) {
+		groupControls.classList.add(
+			"is-integrated"
+		);
+
+		lowerRow.append(
+			groupControls
+		);
+	}
+
+
 	controls.append(
 		searchContainer,
-		filterSortRow,
+		lowerRow,
 		emptyMessage
 	);
 
@@ -615,7 +668,6 @@ export function renderCategoryControls(
 	const firstCategoryElement =
 		container.querySelector(
 			[
-				".category-group-controls",
 				".category-group",
 				".tracker-list"
 			].join(", ")
