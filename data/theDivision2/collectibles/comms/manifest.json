@@ -1,136 +1,187 @@
 {
   "id": "comms",
-  "name": "Comms",
-  "description": "Unterteilte und inhaltlich überarbeitete Comms-Sammlungen aus The Division 2. Die Einträge unterscheiden zwischen festen Weltfundorten, missionsgebundenen Geräten und automatischen Belohnungen aus Manhunts, Descent, Incursion und Retaliation.",
-  "lastUpdated": "2026-08-02",
-  "dataStatus": {
-    "scope": "split-manifest",
-    "itemCount": 840,
-    "sourceGroupCount": 59,
-    "fileCount": 14,
-    "pendingNameVerification": 2,
-    "contentModifiedDuringSplit": true,
-    "inGameCorrections": [
-      "Manhunt: Shadow Tide -> Manhunt: Jupiter",
-      "Manhunt: End of Watch -> Manhunt: Faye Lau",
-      "Incursion: Paradise Lost -> Incursion: Meret Estate",
-      "Manhunt: Into The Dark -> 9 Einträge"
-    ],
-    "locationDetailsCompleted": 840,
-    "note": "Alle 840 Einträge besitzen Fundort/Freischaltquelle und Vorgehen. Basis-D.C.-Comms, Coney Island, Battle for Brooklyn und zahlreiche Profile enthalten konkrete Zugangsschritte oder Kartenkoordinaten. Rotationsabhängige Inhalte beschreiben die Aktivitätsmechanik. Einige Warlords-of-New-York-Profil- und Lower-Manhattan-Einträge sind bewusst mit einem Datenqualitätshinweis versehen und werden beim geplanten Einzelreview weiter mikropräzisiert."
+  "name": {
+    "de": "Comms",
+    "en": "Comms"
   },
+  "description": {
+    "de": "Comms nach Washington, New York, Brooklyn und Missionen geordnet.",
+    "en": "Comms organized by Washington, New York, Brooklyn and missions."
+  },
+  "lastUpdated": "2026-08-07",
+  "dataStatus": {
+    "scope": "section-manifest",
+    "migrationVersion": "comms-phase1-v2",
+    "sourceItemCount": 840,
+    "itemCount": 840,
+    "sectionCount": 4,
+    "itemIdsPreserved": true,
+    "coordinatesCompleted": 0
+  },
+  "sections": [
+    {
+      "id": "washington",
+      "name": {
+        "de": "Washington, D.C.",
+        "en": "Washington, D.C."
+      },
+      "view": "map",
+      "map": "washington",
+      "manifest": "washington/manifest.json",
+      "itemCount": 181,
+      "groupCount": 19,
+      "description": {
+        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
+      },
+      "mapImage": "assets/maps/theDivision2/washington.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Washington, D.C.",
+        "en": "Area map of Washington, D.C."
+      }
+    },
+    {
+      "id": "newYork",
+      "name": {
+        "de": "New York",
+        "en": "New York"
+      },
+      "view": "map",
+      "map": "newYork",
+      "manifest": "newYork/manifest.json",
+      "itemCount": 109,
+      "groupCount": 11,
+      "description": {
+        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
+      },
+      "mapImage": "assets/maps/theDivision2/newYork.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Lower Manhattan",
+        "en": "Area map of Lower Manhattan"
+      }
+    },
+    {
+      "id": "brooklyn",
+      "name": {
+        "de": "Brooklyn",
+        "en": "Brooklyn"
+      },
+      "view": "map",
+      "map": "brooklyn",
+      "manifest": "brooklyn/manifest.json",
+      "itemCount": 35,
+      "groupCount": 4,
+      "description": {
+        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
+      },
+      "mapImage": "assets/maps/theDivision2/brooklyn.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Brooklyn",
+        "en": "Area map of Brooklyn"
+      }
+    },
+    {
+      "id": "missions",
+      "name": {
+        "de": "Missionen",
+        "en": "Missions"
+      },
+      "view": "list",
+      "map": null,
+      "manifest": "missions/manifest.json",
+      "itemCount": 515,
+      "groupCount": 25,
+      "description": {
+        "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
+        "en": "Mission- and activity-bound Comms in one combined tracking list."
+      }
+    }
+  ],
   "categories": [
     {
-      "id": "coreFactionsAndInstitutions",
-      "name": "Fraktionen und Institutionen",
-      "description": "Grundlegende Comms zu Fraktionen, JTF, Division und Regierung in Washington, D.C.",
-      "file": "coreFactionsAndInstitutions.json",
-      "groupCount": 7,
-      "itemCount": 73
+      "id": "washington",
+      "name": {
+        "de": "Washington, D.C.",
+        "en": "Washington, D.C."
+      },
+      "description": {
+        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
+      },
+      "type": "manifest",
+      "file": "washington/manifest.json",
+      "view": "map",
+      "map": "washington",
+      "itemCount": 181,
+      "groupCount": 19,
+      "mapImage": "assets/maps/theDivision2/washington.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Washington, D.C.",
+        "en": "Area map of Washington, D.C."
+      }
     },
     {
-      "id": "washingtonWorld",
-      "name": "Washington – Open World",
-      "description": "Comms aus den Dark Zones, kontaminierten Gebieten und Dead Drops in Washington, D.C.",
-      "file": "washingtonWorld.json",
-      "groupCount": 3,
-      "itemCount": 33
+      "id": "newYork",
+      "name": {
+        "de": "New York",
+        "en": "New York"
+      },
+      "description": {
+        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
+      },
+      "type": "manifest",
+      "file": "newYork/manifest.json",
+      "view": "map",
+      "map": "newYork",
+      "itemCount": 109,
+      "groupCount": 11,
+      "mapImage": "assets/maps/theDivision2/newYork.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Lower Manhattan",
+        "en": "Area map of Lower Manhattan"
+      }
     },
     {
-      "id": "washingtonSettlements",
-      "name": "Washington – Siedlungen",
-      "description": "Comms aus Campus, Castle und Theater.",
-      "file": "washingtonSettlements.json",
-      "groupCount": 3,
-      "itemCount": 20
-    },
-    {
-      "id": "newYorkWorld",
-      "name": "New York – Welt und Einsätze",
-      "description": "Allgemeine New-York-Comms sowie Aufzeichnungen aus Lower Manhattan und Coney Island.",
-      "file": "newYorkWorld.json",
-      "groupCount": 3,
-      "itemCount": 32
-    },
-    {
-      "id": "washingtonProfiles",
-      "name": "Washington – Profile",
-      "description": "Charakterprofile aus der Washington-Kampagne, darunter Kelso, Ridgeway, Emeline Shaw, Henry Hayes, Odessa Sawyer und President Ellis.",
-      "file": "washingtonProfiles.json",
-      "groupCount": 6,
-      "itemCount": 55
-    },
-    {
-      "id": "specialOperations",
-      "name": "Spezialoperationen",
-      "description": "Langley Reports sowie Comms aus Pentagon, DARPA und Brenner's Orders.",
-      "file": "specialOperations.json",
-      "groupCount": 3,
-      "itemCount": 30
-    },
-    {
-      "id": "newYorkProfiles",
-      "name": "New York – Profile",
-      "description": "Charakterprofile aus Warlords of New York und den damit verbundenen Handlungssträngen.",
-      "file": "newYorkProfiles.json",
-      "groupCount": 9,
-      "itemCount": 86
-    },
-    {
-      "id": "manhuntsLegacy",
-      "name": "Manhunts – Legacy",
-      "description": "Die ersten vier Manhunts: Jupiter, Keener's Legacy, Concealed Agenda und Faye Lau.",
-      "file": "manhuntsLegacy.json",
+      "id": "brooklyn",
+      "name": {
+        "de": "Brooklyn",
+        "en": "Brooklyn"
+      },
+      "description": {
+        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
+      },
+      "type": "manifest",
+      "file": "brooklyn/manifest.json",
+      "view": "map",
+      "map": "brooklyn",
+      "itemCount": 35,
       "groupCount": 4,
-      "itemCount": 80
+      "mapImage": "assets/maps/theDivision2/brooklyn.svg",
+      "mapImageAlt": {
+        "de": "Gebietskarte von Brooklyn",
+        "en": "Area map of Brooklyn"
+      }
     },
     {
-      "id": "manhuntsReconstruction",
-      "name": "Manhunts – Wiederaufbau",
-      "description": "Hidden Alliance, Price of Power, Reign of Fire und Broken Wings.",
-      "file": "manhuntsReconstruction.json",
-      "groupCount": 4,
-      "itemCount": 87
-    },
-    {
-      "id": "manhuntsRogueNetwork",
-      "name": "Manhunts – Rogue Network",
-      "description": "Puppeteers, Vanguard und First Rogue.",
-      "file": "manhuntsRogueNetwork.json",
-      "groupCount": 3,
-      "itemCount": 88
-    },
-    {
-      "id": "manhuntsCurrent",
-      "name": "Manhunts – Aktuelle Handlungsstränge",
-      "description": "Shades of Red, Burden of Truth, Crossroads, The Pact, Mutiny, Rise Up und Into The Dark.",
-      "file": "manhuntsCurrent.json",
-      "groupCount": 7,
-      "itemCount": 101
-    },
-    {
-      "id": "incursionAndBTSU",
-      "name": "Incursion und BTSU",
-      "description": "Comms aus Meret Estate und von BTSU Team 9.",
-      "file": "incursionAndBTSU.json",
-      "groupCount": 2,
-      "itemCount": 15
-    },
-    {
-      "id": "battleForBrooklyn",
-      "name": "Battle for Brooklyn",
-      "description": "Brooklyn-Comms aus den Gruppen Bridge, Friendly, History und Hostiles.",
-      "file": "battleForBrooklyn.json",
-      "groupCount": 4,
-      "itemCount": 35
-    },
-    {
-      "id": "descent",
-      "name": "Descent",
-      "description": "Alle Comms aus dem Spielmodus Descent.",
-      "file": "descent.json",
-      "groupCount": 1,
-      "itemCount": 105
+      "id": "missions",
+      "name": {
+        "de": "Missionen",
+        "en": "Missions"
+      },
+      "description": {
+        "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
+        "en": "Mission- and activity-bound Comms in one combined tracking list."
+      },
+      "type": "category",
+      "file": "missions/allMissions.json",
+      "view": "list",
+      "map": null,
+      "itemCount": 515,
+      "groupCount": 25
     }
   ]
 }

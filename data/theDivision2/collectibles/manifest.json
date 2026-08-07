@@ -14,8 +14,7 @@
       "name": "Comms",
       "description": "Collectibles",
       "type": "manifest",
-      "file": "commsV2/manifest.json",
-      "legacyFile": "comms/manifest.json"
+      "file": "comms/manifest.json"
     },
     {
       "id": "artifacts",

@@ -47,7 +47,7 @@ const COMMS_ROUTE_PREFIX = [
 ];
 
 const COMMS_MANIFEST_FILE =
-    "collectibles/commsV2/manifest.json";
+    "collectibles/comms/manifest.json";
 
 
 /**
@@ -469,208 +469,6 @@ async function renderCommsOverview(
 }
 
 /**
- * Rendert für Phase 2 eine vorbereitete Kartenroute.
- * Die eigentliche Karte folgt in Phase 3.
- *
- * @param {object} game
- * @param {object} commsManifest
- * @param {object} section
- * @param {object} sectionManifest
- * @param {string} sectionManifestFile
- * @param {string[]} routeIds
- */
-async function renderCommsMapPlaceholder(
-    game,
-    commsManifest,
-    section,
-    sectionManifest,
-    sectionManifestFile,
-    routeIds
-) {
-    showLoading();
-
-   const mainContent = document.getElementById(
-       "main-content"
-   );
-
-    if (!mainContent) {
-        return;
-    }
-
-    const language = getCurrentLanguage();
-    const uiText = getUiText(language);
-    const files = Array.isArray(sectionManifest.files)
-        ? sectionManifest.files
-        : [];
-
-    mainContent.replaceChildren();
-
-    const page = document.createElement("section");
-    page.className =
-        "game-page comms-map-placeholder-page";
-
-    page.dataset.gameId = game.id;
-    page.dataset.commsSection = section.id;
-
-    const toolbar = createToolbar(
-        buildGameHash(
-            game.id,
-            routeIds.slice(0, -1)
-        ),
-        uiText.backToComms
-    );
-
-    const progress = document.createElement("div");
-    progress.className =
-        "category-content-progress comms-section-progress";
-    progress.hidden = true;
-
-    const progressText = document.createElement("span");
-    progressText.textContent = "0 / 0";
-
-    const progressTrack = document.createElement("div");
-    progressTrack.className = "progress-bar";
-
-    const progressFill = document.createElement("div");
-    progressFill.className = "progress-bar-fill";
-    progressFill.style.width = "0%";
-
-    progressTrack.append(progressFill);
-    progress.append(progressText, progressTrack);
-    toolbar.append(progress);
-
-    const header = document.createElement("header");
-    header.className = "game-header";
-
-    const eyebrow = document.createElement("p");
-    eyebrow.className = "comms-section-eyebrow";
-    eyebrow.textContent = getLocalizedText(
-        commsManifest.name,
-        language
-    ) || "Comms";
-
-    const title = document.createElement("h2");
-    title.className = "game-title";
-    title.textContent = getLocalizedText(
-        section.name,
-        language
-    );
-
-    const description = document.createElement("p");
-    description.className = "game-description";
-    description.textContent = getLocalizedText(
-        section.description ?? sectionManifest.description,
-        language
-    );
-
-    header.append(eyebrow, title, description);
-
-    const placeholder = document.createElement("section");
-    placeholder.className = "comms-map-placeholder";
-
-    const icon = document.createElement("div");
-    icon.className = "comms-map-placeholder-icon";
-    icon.setAttribute("aria-hidden", "true");
-    icon.textContent = "⌖";
-
-    const placeholderText = document.createElement("div");
-
-    const placeholderTitle = document.createElement("h3");
-    placeholderTitle.textContent = uiText.mapPrepared;
-
-    const placeholderDescription =
-        document.createElement("p");
-    placeholderDescription.textContent =
-        uiText.mapPhaseThree;
-
-    placeholderText.append(
-        placeholderTitle,
-        placeholderDescription
-    );
-
-    placeholder.append(icon, placeholderText);
-
-    const summary = document.createElement("section");
-    summary.className = "comms-source-summary";
-
-    const summaryHeader = document.createElement("div");
-    summaryHeader.className =
-        "comms-source-summary-header";
-
-    const summaryTitle = document.createElement("h3");
-    summaryTitle.textContent = uiText.includedCollections;
-
-    const summaryCount = document.createElement("span");
-    summaryCount.textContent = formatCounts(
-        section.itemCount,
-        section.groupCount,
-        language
-    );
-
-    summaryHeader.append(summaryTitle, summaryCount);
-
-    const sourceList = document.createElement("div");
-    sourceList.className = "comms-source-list";
-
-    for (const file of files) {
-        const item = document.createElement("div");
-        item.className = "comms-source-item";
-
-        const itemName = document.createElement("span");
-        itemName.textContent = getLocalizedText(
-            file.name,
-            language
-        );
-
-        const itemCount = document.createElement("span");
-        itemCount.textContent = formatCounts(
-            file.itemCount,
-            file.groupCount,
-            language
-        );
-
-        item.append(itemName, itemCount);
-        sourceList.append(item);
-    }
-
-    summary.append(summaryHeader, sourceList);
-
-    page.append(
-        toolbar,
-        header,
-        placeholder,
-        summary
-    );
-
-    mainContent.append(page);
-
-    updateActiveGameNavigation(game.id);
-
-    const progressData = await loadGameProgressData(
-        game.id
-    );
-
-    if (!progressData.available) {
-        return;
-    }
-
-    const sectionProgress = await calculateSectionProgress(
-        game.id,
-        section,
-        progressData,
-        sectionManifest,
-        sectionManifestFile
-    );
-
-    progress.hidden = false;
-    progressText.textContent =
-        `${sectionProgress.completed} / ${sectionProgress.total}`;
-    progressFill.style.width =
-        `${sectionProgress.percentage}%`;
-}
-
-
-/**
  * Erstellt eine Gebietskarte für die Übersicht.
  *
  * @param {object} game
@@ -1067,34 +865,18 @@ function getUiText(language) {
     if (language === "en") {
         return {
             back: "Back",
-            backToComms: "Back to Comms",
             overviewDescription:
                 "Choose a region or open the mission-only tracking list.",
-            mapView: "Map view",
-            listView: "List view",
             containsMap: "Contains a map",
-            progress: "Progress",
-            totalProgress: "Total progress",
-            mapPrepared: "Map route prepared",
-            mapPhaseThree:
-                "The interactive map and the collapsible tracking panel will be added in Phase 3.",
-            includedCollections: "Included collections"
+            progress: "Progress"
         };
     }
 
     return {
         back: "Zurück",
-        backToComms: "Zurück zu Comms",
         overviewDescription:
             "Wähle ein Gebiet oder öffne die reine Missions-Tracking-Liste.",
-        mapView: "Kartenansicht",
-        listView: "Listenansicht",
         containsMap: "Enthält eine Karte",
-        progress: "Fortschritt",
-        totalProgress: "Gesamtfortschritt",
-        mapPrepared: "Kartenroute vorbereitet",
-        mapPhaseThree:
-            "Die interaktive Karte und das ein- und ausklappbare Tracking-Panel folgen in Phase 3.",
-        includedCollections: "Enthaltene Sammlungen"
+        progress: "Fortschritt"
     };
 }

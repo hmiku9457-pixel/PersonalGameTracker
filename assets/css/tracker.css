@@ -2197,12 +2197,12 @@
 }
 
 
+/* === COMMS OVERVIEW START === */
 /* =========================================================
-   Comms Phase 2
+   Comms-Übersicht
    ========================================================= */
 
-.comms-overview-page,
-.comms-map-placeholder-page {
+.comms-overview-page {
     width: 100%;
 }
 
@@ -2216,7 +2216,11 @@
 .comms-section-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
     margin-top: 1.5rem;
 }
 
@@ -2224,22 +2228,35 @@
     background:
         linear-gradient(
             145deg,
-            rgba(255, 255, 255, 0.055),
-            rgba(255, 255, 255, 0.015)
+            rgb(255 255 255 / 5.5%),
+            rgb(255 255 255 / 1.5%)
         );
-    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    border:
+        1px
+        solid
+        rgb(255 255 255 / 11%);
+
     border-radius: 0.9rem;
+
     color: inherit;
+
     display: flex;
     flex-direction: column;
+
     gap: 0.85rem;
+
     min-height: 16rem;
+
     padding: 1.25rem;
+
     text-decoration: none;
+
     transition:
+        background-color 160ms ease,
         border-color 160ms ease,
-        transform 160ms ease,
-        background-color 160ms ease;
+        box-shadow 160ms ease,
+        transform 160ms ease;
 }
 
 .comms-section-card:hover,
@@ -2247,7 +2264,10 @@
     background: #273449;
     border-color: #60a5fa;
 
-    transform: translateY(-4px);
+    transform:
+        translateY(
+            -4px
+        );
 
     box-shadow:
         0 8px 20px
@@ -2256,51 +2276,62 @@
 
 .comms-section-card:focus-visible {
     outline:
-        2px solid
+        2px
+        solid
         #60a5fa;
 
     outline-offset: 3px;
 }
 
 .comms-section-card-top {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 0.65rem;
+
+    min-width: 0;
+    min-height: 2rem;
 }
 
-.comms-view-badge {
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 999px;
-    display: inline-flex;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    padding: 0.35rem 0.65rem;
-    text-transform: uppercase;
-}
-
-.comms-view-badge-map {
-    background: rgba(255, 136, 0, 0.12);
-}
-
-.comms-view-badge-list {
-    background: rgba(86, 156, 214, 0.12);
+.comms-section-card-top h3 {
+    min-width: 0;
+    margin: 0;
 }
 
 .comms-section-card-arrow {
+    flex-shrink: 0;
+
+    margin-left: auto;
+
     font-size: 1.35rem;
     opacity: 0.7;
-    transition: transform 160ms ease;
+
+    transition:
+        color 160ms ease,
+        transform 160ms ease;
 }
 
-.comms-section-card:hover .comms-section-card-arrow,
-.comms-section-card:focus-visible .comms-section-card-arrow {
-    transform: translateX(0.25rem);
+.comms-section-card:hover
+.comms-section-card-arrow,
+
+.comms-section-card:focus-visible
+.comms-section-card-arrow {
+    color: #93c5fd;
+
+    transform:
+        translateX(
+            0.25rem
+        );
 }
 
 .comms-section-card h3 {
-    font-size: clamp(1.25rem, 2vw, 1.65rem);
-    margin: 0;
+    font-size:
+        clamp(
+            1.25rem,
+            2vw,
+            1.65rem
+        );
 }
 
 .comms-section-card > p {
@@ -2309,8 +2340,9 @@
 }
 
 .comms-section-card-counts {
-    font-size: 0.9rem;
     margin-top: auto !important;
+
+    font-size: 0.9rem;
     opacity: 0.7;
 }
 
@@ -2319,129 +2351,56 @@
     gap: 0.5rem;
 }
 
-.comms-section-card-progress[hidden] {
-    display: none;
+.comms-section-card-progress[hidden],
+.comms-overview-progress[hidden] {
+    display: none !important;
 }
 
-.comms-section-card-progress > div:first-child,
-.comms-overall-progress {
-    align-items: center;
+.comms-section-card-progress
+> div:first-child {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.comms-overall-progress {
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0.75rem;
-    flex-wrap: wrap;
-    gap: 0.75rem 1rem;
-    margin-top: 1rem;
-    padding: 1rem 1.15rem;
+.comms-overview-progress {
+    flex-shrink: 0;
+
+    min-width: max-content;
+
+    font-variant-numeric:
+        tabular-nums;
+
+    text-align: center;
 }
 
-.comms-overall-progress[hidden] {
-    display: none;
-}
-
-.comms-overall-progress .progress-bar {
-    flex-basis: 100%;
-}
-
-.comms-section-eyebrow {
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    margin: 0 0 0.35rem;
-    opacity: 0.65;
-    text-transform: uppercase;
-}
-
-.comms-map-placeholder {
-    align-items: center;
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255, 136, 0, 0.08),
-            rgba(255, 255, 255, 0.025)
-        );
-    border: 1px dashed rgba(255, 136, 0, 0.45);
-    border-radius: 0.9rem;
-    display: flex;
-    gap: 1.1rem;
-    margin-top: 1.5rem;
-    min-height: 10rem;
-    padding: 1.5rem;
-}
-
-.comms-map-placeholder-icon {
-    align-items: center;
-    background: rgba(255, 136, 0, 0.14);
-    border-radius: 50%;
+.comms-map-indicator {
     display: inline-flex;
-    flex: 0 0 3.5rem;
-    font-size: 2rem;
-    height: 3.5rem;
-    justify-content: center;
-}
-
-.comms-map-placeholder h3,
-.comms-map-placeholder p {
-    margin: 0;
-}
-
-.comms-map-placeholder p {
-    line-height: 1.55;
-    margin-top: 0.45rem;
-    opacity: 0.78;
-}
-
-.comms-source-summary {
-    background: rgba(255, 255, 255, 0.025);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0.9rem;
-    margin-top: 1rem;
-    overflow: hidden;
-}
-
-.comms-source-summary-header,
-.comms-source-item {
     align-items: center;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-}
+    justify-content: center;
 
-.comms-source-summary-header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 1rem 1.15rem;
-}
+    flex:
+        0
+        0
+        1.75rem;
 
-.comms-source-summary-header h3 {
-    margin: 0;
-}
+    width: 1.75rem;
+    height: 1.75rem;
 
-.comms-source-summary-header span,
-.comms-source-item span:last-child {
-    font-size: 0.85rem;
-    opacity: 0.68;
-    text-align: right;
-}
+    color: #ffb45c;
+    background:
+        rgb(255 136 0 / 12%);
 
-.comms-source-list {
-    display: grid;
-}
+    border:
+        1px
+        solid
+        rgb(255 136 0 / 34%);
 
-.comms-source-item {
-    padding: 0.85rem 1.15rem;
-}
+    border-radius: 50%;
 
-.comms-source-item + .comms-source-item {
-    border-top: 1px solid rgba(255, 255, 255, 0.055);
-}
-
-.comms-section-progress {
-    min-width: min(18rem, 42vw);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
 }
 
 @media (max-width: 780px) {
@@ -2457,36 +2416,12 @@
         align-items: stretch;
         flex-direction: column;
     }
-
-    .comms-section-progress {
-        min-width: 0;
-        width: 100%;
-    }
 }
+/* === COMMS OVERVIEW END === */
 
-@media (max-width: 520px) {
-    .comms-map-placeholder {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .comms-source-summary-header,
-    .comms-source-item {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0.35rem;
-    }
-
-    .comms-source-summary-header span,
-    .comms-source-item span:last-child {
-        text-align: left;
-    }
-}
-
-
-/* BEGIN COMMS PHASE 3 */
+/* === COMMS MAP VIEW START === */
 /* =========================================================
-   Comms Phase 3 – Kartenansicht mit Tracking-Panel
+   Comms-Kartenansicht mit Tracking-Panel
    ========================================================= */
 
 .comms-map-page {
@@ -2926,7 +2861,7 @@
         margin: 0.75rem;
     }
 }
-/* END COMMS PHASE 3 */
+/* === COMMS MAP VIEW END === */
 
 /* === COMMS PHASE 4 START === */
 /* =========================================================
@@ -3074,74 +3009,56 @@
 }
 /* === COMMS PHASE 4 HOTFIX END === */
 
-/* === COMMS PHASE 5 DESIGN START === */
+/* === COMMS MAP LAYOUT DESIGN START === */
 /* =========================================================
-   Comms Phase 5 – Design und Ultrawide-Layout
+   Comms-Karte – Breiten- und Höhenlayout
    ========================================================= */
 
-/* Die Kartenansicht darf die gesamte verfügbare Inhaltsbreite nutzen. */
 .game-page.comms-map-page {
     max-width: none;
+
     margin-right: 0;
     margin-left: 0;
-    padding-right: clamp(1rem, 1.5vw, 2.5rem);
-    padding-left: clamp(1rem, 1.5vw, 2.5rem);
+
+    padding-right:
+        clamp(
+            1rem,
+            1.5vw,
+            2.5rem
+        );
+
+    padding-left:
+        clamp(
+            1rem,
+            1.5vw,
+            2.5rem
+        );
 }
 
-/* Einheitlicher, kompakter Kategorien-Banner ohne Beschreibung. */
-.game-page .comms-map-header {
-    margin: 0 0 1rem;
-    padding: 0.95rem 1.15rem;
-    text-align: left;
-    background-color: #1f2937;
-    border: 1px solid #374151;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
-}
-
-.game-page .comms-map-header .game-title {
-    font-size: clamp(1.35rem, 1.5vw, 1.75rem);
-    line-height: 1.25;
-}
-
-/* Alte Text-Tags ausblenden, falls noch zwischengespeichertes Markup existiert. */
-.comms-view-badge {
-    display: none;
-}
-
-.comms-section-card-top {
-    min-height: 2rem;
-}
-
-/* Kleine, rein visuelle Kennzeichnung für Kategorien mit Karte. */
-.comms-map-indicator {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    color: #ffb45c;
-    background: rgb(255 136 0 / 12%);
-    border: 1px solid rgb(255 136 0 / 34%);
-    border-radius: 50%;
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.comms-section-card-arrow {
-    margin-left: auto;
-}
-
-/* Mehr nutzbare Kartenfläche, ohne andere Kategorien zu verändern. */
 .comms-map-layout {
-    min-height: clamp(40rem, calc(100dvh - 14rem), 72rem);
+    min-height:
+        clamp(
+            40rem,
+            calc(100dvh - 14rem),
+            72rem
+        );
 }
 
 @media (min-width: 1500px) {
     .game-page.comms-map-page {
-        padding-right: clamp(1.25rem, 2vw, 3rem);
-        padding-left: clamp(1.25rem, 2vw, 3rem);
+        padding-right:
+            clamp(
+                1.25rem,
+                2vw,
+                3rem
+            );
+
+        padding-left:
+            clamp(
+                1.25rem,
+                2vw,
+                3rem
+            );
     }
 }
 
@@ -3150,16 +3067,12 @@
         padding-right: 1rem;
         padding-left: 1rem;
     }
-
-    .game-page .comms-map-header {
-        padding: 0.85rem 1rem;
-    }
 }
-/* === COMMS PHASE 5 DESIGN END === */
+/* === COMMS MAP LAYOUT DESIGN END === */
 
-/* === COMMS PHASE 5 VIEWPORT HEIGHT START === */
+/* === COMMS MAP VIEWPORT HEIGHT START === */
 /* =========================================================
-   Comms Phase 5 – vertikale Viewport-Begrenzung
+   Comms-Karte – vertikale Viewport-Begrenzung
    ========================================================= */
 
 @media (min-width: 901px) {
@@ -3200,522 +3113,9 @@
         overscroll-behavior-y: contain;
     }
 }
-/* === COMMS PHASE 5 VIEWPORT HEIGHT END === */
+/* === COMMS MAP VIEWPORT HEIGHT END === */
 
-/* === COMMS BREADCRUMB BANNER START === */
-/* =========================================================
-   Comms – einheitliche Banner mit Navigationspfad
-   ========================================================= */
-
-/*
- * Kartenüberschriften wie „New York“ mittig ausrichten.
- */
-.game-page .comms-map-header {
-    text-align: center;
-}
-
-.game-page .comms-map-header h1,
-.game-page .comms-map-header h2,
-.game-page .comms-map-header h3 {
-    margin: 0;
-
-    font-size: clamp(
-        1.05rem,
-        1.25vw,
-        1.45rem
-    );
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-}
-
-/*
- * Den vollständigen Pfad vor dem vorhandenen, lokalisierten
- * Gebietsnamen darstellen.
- */
-.game-page .comms-map-header h1::before,
-.game-page .comms-map-header h2::before,
-.game-page .comms-map-header h3::before {
-    content: "The Division 2 - Collectibles - Comms - ";
-}
-
-/*
- * In der speziellen Comms-Missionsansicht wird der allgemeine
- * Spieltitel nicht zusätzlich angezeigt.
- */
-.game-page.comms-list-page > .game-header {
-    display: none;
-}
-
-/*
- * Der bisherige Erklärungstext unter „Missionen“ entfällt.
- */
-.game-page.comms-list-page
-.category-content-description {
-    display: none;
-}
-
-/*
- * „Missionen“ erhält denselben kompakten Bannerstil wie die
- * Kartenregionen.
- */
-.game-page.comms-list-page
-.category-content-header {
-    margin: 0 0 1rem;
-    padding: 0.95rem 1.15rem;
-
-    text-align: center;
-
-    background-color: #1f2937;
-    border: 1px solid #374151;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
-}
-
-.game-page.comms-list-page
-.category-content-header h1,
-.game-page.comms-list-page
-.category-content-header h2,
-.game-page.comms-list-page
-.category-content-header h3 {
-    margin: 0;
-
-    font-size: clamp(
-        1.05rem,
-        1.25vw,
-        1.45rem
-    );
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-}
-
-.game-page.comms-list-page
-.category-content-header h1::before,
-.game-page.comms-list-page
-.category-content-header h2::before,
-.game-page.comms-list-page
-.category-content-header h3::before {
-    content: "The Division 2 - Collectibles - Comms - ";
-}
-
-@media (max-width: 900px) {
-    .game-page.comms-list-page
-    .category-content-header {
-        padding: 0.85rem 1rem;
-    }
-
-    .game-page .comms-map-header h1,
-    .game-page .comms-map-header h2,
-    .game-page .comms-map-header h3,
-    .game-page.comms-list-page
-    .category-content-header h1,
-    .game-page.comms-list-page
-    .category-content-header h2,
-    .game-page.comms-list-page
-    .category-content-header h3 {
-        font-size: 1rem;
-    }
-}
-/* === COMMS BREADCRUMB BANNER END === */
-
-/* === COMMS MAP BANNER ALIGNMENT FIX START === */
-/*
- * Das globale Website-Header-Layout verwendet drei Grid-Spalten.
- * Der Kartenbanner ist ebenfalls ein <header> und würde dieses
- * Layout sonst übernehmen.
- */
-.game-page.comms-map-page
-.comms-map-header {
-    display: block;
-    grid-template-columns: none;
-    align-items: initial;
-
-    width: 100%;
-    min-height: 0;
-
-    text-align: center;
-}
-
-.game-page.comms-map-page
-.comms-map-header .game-title {
-    grid-column: auto;
-    justify-self: auto;
-
-    width: 100%;
-    max-width: none;
-    margin: 0;
-
-    text-align: center;
-    white-space: normal;
-}
-
-/*
- * Diese Elemente gehören nicht mehr zum kompakten
- * Navigationsbanner.
- */
-.game-page.comms-map-page
-.comms-map-header .comms-section-eyebrow,
-.game-page.comms-map-page
-.comms-map-header .game-description {
-    display: none;
-}
-/* === COMMS MAP BANNER ALIGNMENT FIX END === */
-
-/* === UNIVERSAL PAGE BREADCRUMB BANNERS START === */
-/* =========================================================
-   Einheitliche Navigationsbanner
-   ========================================================= */
-
-.game-page .page-breadcrumb-banner {
-    display: block;
-    grid-template-columns: none;
-    align-items: initial;
-
-    width: 100%;
-    min-height: 0;
-    margin: 0 0 1rem;
-    padding: 0.95rem 1.15rem;
-
-    color: #f3f4f6;
-    background-color: #1f2937;
-
-    border: 1px solid #374151;
-    border-radius: 10px;
-
-    text-align: center;
-
-    box-shadow:
-        0 4px 12px
-        rgb(0 0 0 / 15%);
-}
-
-.game-page .page-breadcrumb-title {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    font-size: clamp(
-        1.05rem,
-        1.25vw,
-        1.45rem
-    );
-    font-weight: 700;
-    line-height: 1.35;
-
-    color: #f3f4f6;
-
-    text-align: center;
-}
-
-.game-page .page-breadcrumb-segment {
-    white-space: nowrap;
-}
-
-.game-page .page-breadcrumb-separator {
-    flex: 0 0 auto;
-
-    padding:
-        0
-        0.28rem;
-
-    color: #9ca3af;
-
-    white-space: pre;
-}
-
-/*
- * Alte, nur für Comms erzeugte Präfixe dürfen den jetzt
- * vollständig in JavaScript erzeugten Pfad nicht verdoppeln.
- */
-.game-page .page-breadcrumb-title::before,
-.game-page .page-breadcrumb-title::after,
-.game-page .page-breadcrumb-title *::before,
-.game-page .page-breadcrumb-title *::after {
-    content: none !important;
-}
-
-/*
- * Die alten Überschriften werden durch JavaScript entfernt.
- * Diese Regeln verhindern einen kurzen sichtbaren Doppelzustand.
- */
-.game-page.has-page-breadcrumb-banner
-> .game-header,
-
-.game-page.has-page-breadcrumb-banner
-> .game-title,
-
-.game-page.has-page-breadcrumb-banner
-> .comms-map-header,
-
-.game-page.has-page-breadcrumb-banner
-> .category-content
-> .category-content-header {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    .game-page .page-breadcrumb-banner {
-        padding:
-            0.85rem
-            0.8rem;
-    }
-
-    .game-page .page-breadcrumb-title {
-        font-size: 1rem;
-    }
-
-    .game-page .page-breadcrumb-separator {
-        padding:
-            0
-            0.2rem;
-    }
-}
-/* === UNIVERSAL PAGE BREADCRUMB BANNERS END === */
-
-/* === MERGED NAVIGATION BANNER START === */
-/* =========================================================
-   Zusammengeführter Navigationsbanner
-   ========================================================= */
-
-/*
- * Eine Kopfzeile für:
- *
- * [ Zurück ] [ Navigationspfad ] [ Fortschritt / Aktionen ]
- *
- * Die beiden äußeren Spalten sind gleich breit. Dadurch bleibt
- * der Breadcrumb unabhängig von der Breite der Aktionen exakt
- * in der verfügbaren Gesamtfläche zentriert.
- */
-.game-page
-.page-breadcrumb-banner {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-
-    display: grid;
-    grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, auto)
-        minmax(0, 1fr);
-    grid-template-areas:
-        "left title right";
-
-    align-items: center;
-
-    gap: 1rem;
-
-    margin:
-        0
-        0
-        1rem;
-
-    padding:
-        0.8rem
-        0.9rem;
-
-    background-color: #1f2937;
-    border: 1px solid #374151;
-    border-radius: 10px;
-
-    box-shadow:
-        0 6px 16px
-        rgb(0 0 0 / 22%);
-}
-
-.game-page
-.page-breadcrumb-title {
-    grid-area: title;
-
-    min-width: 0;
-    width: auto;
-    max-width: 100%;
-
-    justify-self: center;
-
-    margin: 0;
-
-    text-align: center;
-}
-
-.game-page
-.page-breadcrumb-actions {
-    min-width: 0;
-
-    display: flex;
-    align-items: center;
-
-    gap: 0.75rem;
-}
-
-.game-page
-.page-breadcrumb-actions-left {
-    grid-area: left;
-
-    justify-self: start;
-    justify-content: flex-start;
-}
-
-.game-page
-.page-breadcrumb-actions-right {
-    grid-area: right;
-
-    justify-self: end;
-    justify-content: flex-end;
-}
-
-/*
- * Die Action-Gruppe der Kartenansicht bleibt kompakt und wird
- * vollständig in die rechte Bannerseite übernommen.
- */
-.game-page
-.page-breadcrumb-actions-right
-.comms-map-toolbar-actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    gap: 0.75rem;
-}
-
-/*
- * Die alte Toolbar wird durch JavaScript entfernt.
- * Diese Regel verhindert ein kurzes Aufblitzen vor dem Umbau.
- */
-.game-page.has-merged-navigation-banner
-> .category-toolbar {
-    display: none;
-}
-
-/*
- * In dem neuen dunkleren Banner sollen die bestehenden Buttons
- * etwas stärker mit dem Banner verschmelzen.
- */
-.game-page
-.page-breadcrumb-banner
-.back-button,
-
-.game-page
-.page-breadcrumb-banner
-.comms-map-panel-toggle {
-    background-color:
-        rgb(17 24 39 / 62%);
-
-    border-color: #4b5563;
-}
-
-.game-page
-.page-breadcrumb-banner
-.back-button:hover,
-
-.game-page
-.page-breadcrumb-banner
-.comms-map-panel-toggle:hover {
-    background-color: #111827;
-}
-
-/*
- * Mittelgroße Ansichten:
- * Der Pfad bleibt oben zentriert, Bedienelemente liegen darunter
- * weiterhin innerhalb desselben Banners.
- */
-@media (max-width: 900px) {
-    .game-page
-    .page-breadcrumb-banner {
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
-
-        grid-template-areas:
-            "title title"
-            "left right";
-
-        row-gap: 0.75rem;
-    }
-
-    .game-page
-    .page-breadcrumb-title {
-        width: 100%;
-    }
-}
-
-/*
- * Smartphones:
- * Aktionen dürfen umbrechen. Der Zurück-Button bleibt links,
- * Fortschritt und Zusatzaktion rechts beziehungsweise darunter.
- */
-@media (max-width: 600px) {
-    .game-page
-    .page-breadcrumb-banner {
-        padding:
-            0.75rem
-            0.7rem;
-
-        gap: 0.65rem;
-    }
-
-    .game-page
-    .page-breadcrumb-actions {
-        flex-wrap: wrap;
-    }
-
-    .game-page
-    .page-breadcrumb-actions-right {
-        justify-content: flex-end;
-    }
-
-    .game-page
-    .page-breadcrumb-actions-right
-    .comms-map-toolbar-actions {
-        flex-wrap: wrap;
-    }
-}
-
-/*
- * Sehr schmale Displays:
- * Alle Bereiche werden untereinander dargestellt, bleiben aber
- * Teil desselben Banners.
- */
-@media (max-width: 430px) {
-    .game-page
-    .page-breadcrumb-banner {
-        grid-template-columns: 1fr;
-
-        grid-template-areas:
-            "title"
-            "left"
-            "right";
-    }
-
-    .game-page
-    .page-breadcrumb-actions-left,
-    .game-page
-    .page-breadcrumb-actions-right {
-        width: 100%;
-
-        justify-self: stretch;
-    }
-
-    .game-page
-    .page-breadcrumb-actions-left
-    .back-button {
-        width: 100%;
-    }
-
-    .game-page
-    .page-breadcrumb-actions-right,
-    .game-page
-    .page-breadcrumb-actions-right
-    .comms-map-toolbar-actions {
-        justify-content: space-between;
-    }
-}
-/* === MERGED NAVIGATION BANNER END === */
-
-/* === NAVIGATION BANNER POLISH START === */
+/* === NAVIGATION BANNER START === */
 /* =========================================================
    Navigationsbanner – abschließende Vereinheitlichung
    ========================================================= */
@@ -4030,7 +3430,7 @@
         justify-content: space-between;
     }
 }
-/* === NAVIGATION BANNER POLISH END === */
+/* === NAVIGATION BANNER END === */
 
 /* === BREADCRUMB DEPTH BREAKPOINTS START === */
 /* =========================================================
@@ -4149,7 +3549,7 @@
  */
 /* === BREADCRUMB DEPTH BREAKPOINTS END === */
 
-/* === MANIFEST PROGRESS BANNER START === */
+/* === MANIFEST PROGRESS START === */
 /* =========================================================
    Gesamtfortschritt auf Manifestübersichten
    ========================================================= */
@@ -4174,82 +3574,9 @@
 .manifest-progress-summary[hidden] {
     display: none !important;
 }
-/* === MANIFEST PROGRESS BANNER END === */
+/* === MANIFEST PROGRESS END === */
 
-/* === COMMS OVERVIEW POLISH START === */
-/* =========================================================
-   Comms-Übersicht – Fortschritt und kompakte Kartenköpfe
-   ========================================================= */
-
-.game-page
-.comms-overview-progress {
-    flex-shrink: 0;
-
-    min-width: max-content;
-
-    font-variant-numeric:
-        tabular-nums;
-
-    text-align: center;
-}
-
-.game-page
-.comms-overview-progress[hidden] {
-    display: none !important;
-}
-
-
-/*
- * Titel, Kartenkennzeichnung und Pfeil liegen in derselben Zeile.
- */
-.comms-section-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 0.65rem;
-
-    min-width: 0;
-}
-
-.comms-section-card-top h3 {
-    min-width: 0;
-    margin: 0;
-}
-
-.comms-section-card-top
-.comms-map-indicator {
-    flex:
-        0
-        0
-        1.75rem;
-
-    width: 1.75rem;
-    height: 1.75rem;
-
-    font-size: 0.95rem;
-}
-
-.comms-section-card-top
-.comms-section-card-arrow {
-    flex-shrink: 0;
-
-    margin-left: auto;
-}
-
-
-/*
- * Der alte separate Gesamtfortschrittsblock wird nicht mehr
- * gerendert. Die Regel verhindert bei alten Browser-Caches
- * einen kurzzeitigen Doppelzustand.
- */
-.comms-overview-page
-> .comms-overall-progress {
-    display: none !important;
-}
-/* === COMMS OVERVIEW POLISH END === */
-
-/* === CATEGORY CONTROLS BANNER START === */
+/* === CATEGORY CONTROLS START === */
 /* =========================================================
    Gemeinsamer Banner für Kategorie-Bedienelemente
    ========================================================= */
@@ -4481,105 +3808,9 @@
         width: 100%;
     }
 }
-/* === CATEGORY CONTROLS BANNER END === */
+/* === CATEGORY CONTROLS END === */
 
-/* =========================================================
-   Comms-Kartenansicht – kompakter Bedienbereich
-   ========================================================= */
-
-.game-page
-.comms-map-list-content
-.category-controls-lower-row {
-	display: grid;
-
-	grid-template-columns:
-		minmax(0, 1fr)
-		minmax(8rem, max-content);
-
-	grid-template-areas:
-		"status group-buttons"
-		"status sort";
-
-	align-items: start;
-
-	column-gap: 0.75rem;
-	row-gap: 0.75rem;
-}
-
-
-/*
- * Statusfilter und Sortierung werden direkt im äußeren
- * Grid positioniert.
- */
-.game-page
-.comms-map-list-content
-.category-filter-sort-row {
-	display: contents;
-}
-
-
-/* Linke Spalte */
-.game-page
-.comms-map-list-content
-.category-status-filter {
-	grid-area: status;
-
-	width: 100%;
-}
-
-
-/*
- * Rechts oben:
- * „Alle öffnen“ und „Alle schließen“ untereinander.
- */
-.game-page
-.comms-map-list-content
-.category-group-controls.is-integrated {
-	grid-area: group-buttons;
-
-	width: 100%;
-	margin: 0;
-
-	display: grid;
-	grid-template-columns: 1fr;
-
-	gap: 0.5rem;
-}
-
-
-/*
- * Beide Buttons nutzen dieselbe Breite wie der
- * Sortierungsbereich darunter.
- */
-.game-page
-.comms-map-list-content
-.category-group-controls.is-integrated
-.category-group-control-button {
-	width: 100%;
-}
-
-
-/* Rechts unten */
-.game-page
-.comms-map-list-content
-.category-sort {
-	grid-area: sort;
-
-	width: 100%;
-}
-
-
-/*
- * Auswahlfeld über die gesamte rechte Spalte.
- */
-.game-page
-.comms-map-list-content
-.category-sort-select {
-	width: 100%;
-	min-width: 0;
-}
-
-/* === COMMS MAP CONTROLS REFINEMENT START === */
+/* === COMMS MAP LIST CONTROLS START === */
 /* =========================================================
    Comms-Kartenansicht – gegliederter Bedienbereich
    ========================================================= */
@@ -4812,4 +4043,4 @@ html[lang="en"]
             #374151;
     }
 }
-/* === COMMS MAP CONTROLS REFINEMENT END === */
+/* === COMMS MAP LIST CONTROLS END === */
