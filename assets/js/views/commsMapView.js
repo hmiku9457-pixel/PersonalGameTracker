@@ -36,6 +36,10 @@ import {
     updateActiveGameNavigation
 } from "./navigationView.js";
 
+import {
+    createCommsMapController
+} from "./commsMapController.js";
+
 
 const PANEL_BREAKPOINT = 900;
 const PANEL_STORAGE_PREFIX = "pgt.commsMap.panel.";
@@ -57,6 +61,13 @@ const UI_TEXT = {
         markerStatus: "Kartenpositionen",
         markerPending:
             "Noch keine Koordinaten hinterlegt. Die Marker folgen in einer späteren Phase.",
+        zoomIn: "Karte vergrößern",
+        zoomOut: "Karte verkleinern",
+        resetMap: "Kartenansicht zurücksetzen",
+        enterFullscreen: "Vollbild öffnen",
+        exitFullscreen: "Vollbild schließen",
+        mapInstructions:
+            "Karte mit Mausrad oder Tasten zoomen und durch Ziehen verschieben.",
         loadError:
             "Die Kartenansicht konnte nicht geladen werden."
     },
@@ -73,6 +84,13 @@ const UI_TEXT = {
         markerStatus: "Map positions",
         markerPending:
             "No coordinates have been added yet. Markers will follow in a later phase.",
+        zoomIn: "Zoom in",
+        zoomOut: "Zoom out",
+        resetMap: "Reset map view",
+        enterFullscreen: "Open fullscreen",
+        exitFullscreen: "Exit fullscreen",
+        mapInstructions:
+            "Zoom with the mouse wheel or keyboard and drag to move the map.",
         loadError:
             "The map view could not be loaded."
     }
@@ -212,12 +230,22 @@ export async function renderCommsMapView(
 
         panelState.applyInitialState();
 
-        await loadMapImage(
+        const mapController = createCommsMapController({
+            sectionId: section.id,
+            area: mapArea.element,
+            viewport: mapArea.viewport,
+            canvas: mapArea.canvas,
+            uiText,
+            signal: activeViewController.signal
+        });
+
+        const mapLoaded = await loadMapImage(
             mapArea.image,
             mapArea.emptyState,
             sectionManifest.mapImage ?? section.mapImage ?? "",
             activeViewController.signal
         );
+        mapController.setMapAvailable(mapLoaded);
     }
     catch (error) {
         console.error(
@@ -489,6 +517,11 @@ function createMapArea(
 
     const viewport = document.createElement("div");
     viewport.className = "comms-map-viewport";
+    viewport.tabIndex = 0;
+    viewport.setAttribute(
+        "aria-label",
+        uiText.mapInstructions
+    );
 
     const canvas = document.createElement("div");
     canvas.className = "comms-map-canvas";
@@ -496,6 +529,7 @@ function createMapArea(
     const image = document.createElement("img");
     image.className = "comms-map-image";
     image.hidden = true;
+    image.draggable = false;
     image.alt = getLocalizedText(
         sectionManifest.mapImageAlt ?? section.mapImageAlt,
         language
@@ -569,6 +603,8 @@ function createMapArea(
 
     return {
         element: area,
+        viewport,
+        canvas,
         image,
         emptyState
     };
@@ -816,7 +852,7 @@ async function loadMapImage(
     ) {
         image.hidden = true;
         emptyState.hidden = false;
-        return;
+        return false;
     }
 
     try {
@@ -836,10 +872,22 @@ async function loadMapImage(
         image.src = activeMapObjectUrl;
         image.hidden = false;
         emptyState.hidden = true;
+
+        try {
+            await image.decode();
+        }
+        catch (error) {
+            console.debug(
+                "Kartenbild wurde ohne decode()-Bestätigung angezeigt.",
+                error
+            );
+        }
+
+        return true;
     }
     catch (error) {
         if (error?.name === "AbortError") {
-            return;
+            return false;
         }
 
         console.warn(
@@ -850,6 +898,7 @@ async function loadMapImage(
 
         image.hidden = true;
         emptyState.hidden = false;
+        return false;
     }
 }
 
