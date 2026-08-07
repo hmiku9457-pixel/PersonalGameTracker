@@ -3048,3 +3048,19 @@
     }
 }
 /* === COMMS PHASE 4 END === */
+
+/* === COMMS PHASE 4 HOTFIX START === */
+/* Bedienleiste ist kein Teil der verschiebbaren Kartenfläche. */
+.comms-map-controls {
+    cursor: default;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+/* Native Browser-Drag-Gesten dürfen die eigene Pan-Logik nicht übernehmen. */
+.comms-map-canvas,
+.comms-map-image {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+/* === COMMS PHASE 4 HOTFIX END === */

@@ -25,7 +25,7 @@ export function createCommsMapController({
     signal
 }) {
     const controls = createMapControls(
-        viewport,
+        area,
         uiText
     );
     const storageKey =
@@ -289,6 +289,11 @@ export function createCommsMapController({
     );
 
     viewport.addEventListener(
+        "dragstart",
+        (event) => event.preventDefault(),
+        { signal }
+    );
+    viewport.addEventListener(
         "dblclick",
         (event) => {
             event.preventDefault();
@@ -314,6 +319,7 @@ export function createCommsMapController({
                 return;
             }
 
+            event.preventDefault();
             viewport.setPointerCapture(event.pointerId);
             pointers.set(
                 event.pointerId,
@@ -443,6 +449,11 @@ export function createCommsMapController({
 
     viewport.addEventListener(
         "pointercancel",
+        finishPointer,
+        { signal }
+    );
+    viewport.addEventListener(
+        "lostpointercapture",
         finishPointer,
         { signal }
     );
