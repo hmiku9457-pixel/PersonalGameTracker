@@ -474,13 +474,6 @@ function createHeader(
     const header = document.createElement("header");
     header.className = "game-header comms-map-header";
 
-    const eyebrow = document.createElement("p");
-    eyebrow.className = "comms-section-eyebrow";
-    eyebrow.textContent = getLocalizedText(
-        commsManifest.name,
-        language
-    ) || "Comms";
-
     const title = document.createElement("h2");
     title.className = "game-title";
     title.textContent = getLocalizedText(
@@ -488,22 +481,10 @@ function createHeader(
         language
     );
 
-    const description = document.createElement("p");
-    description.className = "game-description";
-    description.textContent = getLocalizedText(
-        section.description ?? sectionManifest.description,
-        language
-    );
-
-    header.append(
-        eyebrow,
-        title,
-        description
-    );
+    header.append(title);
 
     return header;
 }
-
 
 function createMapArea(
     section,

@@ -554,19 +554,24 @@ function createSectionCard(
     const top = document.createElement("div");
     top.className = "comms-section-card-top";
 
-    const badge = document.createElement("span");
-    badge.className =
-        `comms-view-badge comms-view-badge-${section.view}`;
-    badge.textContent = section.view === "map"
-        ? uiText.mapView
-        : uiText.listView;
+    if (section.view === "map") {
+        const mapIndicator = document.createElement("span");
+        mapIndicator.className = "comms-map-indicator";
+        mapIndicator.textContent = "⌖";
+        mapIndicator.setAttribute(
+            "aria-label",
+            uiText.containsMap
+        );
+        mapIndicator.title = uiText.containsMap;
+        top.append(mapIndicator);
+    }
 
     const arrow = document.createElement("span");
     arrow.className = "comms-section-card-arrow";
     arrow.setAttribute("aria-hidden", "true");
     arrow.textContent = "→";
 
-    top.append(badge, arrow);
+    top.append(arrow);
 
     const title = document.createElement("h3");
     title.textContent = getLocalizedText(
@@ -807,6 +812,7 @@ function getUiText(language) {
                 "Choose a region or open the mission-only tracking list.",
             mapView: "Map view",
             listView: "List view",
+            containsMap: "Contains a map",
             progress: "Progress",
             totalProgress: "Total progress",
             mapPrepared: "Map route prepared",
@@ -823,6 +829,7 @@ function getUiText(language) {
             "Wähle ein Gebiet oder öffne die reine Missions-Tracking-Liste.",
         mapView: "Kartenansicht",
         listView: "Listenansicht",
+        containsMap: "Enthält eine Karte",
         progress: "Fortschritt",
         totalProgress: "Gesamtfortschritt",
         mapPrepared: "Kartenroute vorbereitet",

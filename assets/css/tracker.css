@@ -3064,3 +3064,86 @@
     user-select: none;
 }
 /* === COMMS PHASE 4 HOTFIX END === */
+
+/* === COMMS PHASE 5 DESIGN START === */
+/* =========================================================
+   Comms Phase 5 – Design und Ultrawide-Layout
+   ========================================================= */
+
+/* Die Kartenansicht darf die gesamte verfügbare Inhaltsbreite nutzen. */
+.game-page.comms-map-page {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: clamp(1rem, 1.5vw, 2.5rem);
+    padding-left: clamp(1rem, 1.5vw, 2.5rem);
+}
+
+/* Einheitlicher, kompakter Kategorien-Banner ohne Beschreibung. */
+.game-page .comms-map-header {
+    margin: 0 0 1rem;
+    padding: 0.95rem 1.15rem;
+    text-align: left;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+
+.game-page .comms-map-header .game-title {
+    font-size: clamp(1.35rem, 1.5vw, 1.75rem);
+    line-height: 1.25;
+}
+
+/* Alte Text-Tags ausblenden, falls noch zwischengespeichertes Markup existiert. */
+.comms-view-badge {
+    display: none;
+}
+
+.comms-section-card-top {
+    min-height: 2rem;
+}
+
+/* Kleine, rein visuelle Kennzeichnung für Kategorien mit Karte. */
+.comms-map-indicator {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: #ffb45c;
+    background: rgb(255 136 0 / 12%);
+    border: 1px solid rgb(255 136 0 / 34%);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.comms-section-card-arrow {
+    margin-left: auto;
+}
+
+/* Mehr nutzbare Kartenfläche, ohne andere Kategorien zu verändern. */
+.comms-map-layout {
+    min-height: clamp(40rem, calc(100dvh - 14rem), 72rem);
+}
+
+@media (min-width: 1500px) {
+    .game-page.comms-map-page {
+        padding-right: clamp(1.25rem, 2vw, 3rem);
+        padding-left: clamp(1.25rem, 2vw, 3rem);
+    }
+}
+
+@media (max-width: 900px) {
+    .game-page.comms-map-page {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .game-page .comms-map-header {
+        padding: 0.85rem 1rem;
+    }
+}
+/* === COMMS PHASE 5 DESIGN END === */
