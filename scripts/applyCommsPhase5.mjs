@@ -93,7 +93,7 @@ async function patchOverviewView() {
 async function patchMapView() {
     let source = await fs.readFile(mapViewPath, "utf8");
 
-    const functionPattern = /function createHeader\([\s\S]*?\n}\r?\n\r?\nfunction createMapArea\(/;
+    const functionPattern = /function createHeader\([\s\S]*?\n}\s*function createMapArea\(/;
     const replacement = `function createHeader(
     commsManifest,
     section,
