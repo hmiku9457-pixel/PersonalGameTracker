@@ -4473,3 +4473,94 @@
     }
 }
 /* === CATEGORY CONTROLS BANNER END === */
+
+/* =========================================================
+   Comms-Kartenansicht – kompakter Bedienbereich
+   ========================================================= */
+
+.game-page
+.comms-map-list-content
+.category-controls-lower-row {
+	display: grid;
+
+	grid-template-columns:
+		minmax(0, 1fr)
+		max-content;
+
+	grid-template-areas:
+		"status group-buttons"
+		"status sort";
+
+	align-items: start;
+
+	column-gap: 0.75rem;
+	row-gap: 0.65rem;
+}
+
+
+/*
+ * Status und Sortierung liegen normalerweise gemeinsam
+ * in diesem Wrapper. display: contents erlaubt es, beide
+ * Elemente direkt im äußeren Grid anzuordnen.
+ */
+.game-page
+.comms-map-list-content
+.category-filter-sort-row {
+	display: contents;
+}
+
+
+/* Linke Spalte */
+.game-page
+.comms-map-list-content
+.category-status-filter {
+	grid-area: status;
+
+	width: 100%;
+}
+
+
+/* Rechts oben */
+.game-page
+.comms-map-list-content
+.category-group-controls.is-integrated {
+	grid-area: group-buttons;
+
+	width: auto;
+	margin: 0;
+
+	display: grid;
+	grid-template-columns:
+		repeat(
+			2,
+			max-content
+		);
+
+	justify-content: end;
+
+	gap: 0.5rem;
+}
+
+
+/* Rechts unten */
+.game-page
+.comms-map-list-content
+.category-sort {
+	grid-area: sort;
+
+	width: 100%;
+
+	justify-self: stretch;
+}
+
+
+/*
+ * Sortierauswahl an der Breite der beiden oberen
+ * Schaltflächen ausrichten.
+ */
+.game-page
+.comms-map-list-content
+.category-sort-select {
+	width: 100%;
+	min-width: 0;
+}
