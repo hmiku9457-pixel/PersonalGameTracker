@@ -687,10 +687,13 @@ async function patchCommsOverviewView() {
         );
 
     source =
-        source.replace(
-            /\n{4,}/g,
-            "\n\n\n"
-        );
+        source
+            .replace(
+                /\n{4,}/g,
+                "\n\n\n"
+            )
+            .trimEnd() +
+            "\n";
 
     assert(
         !source.includes(
