@@ -10,95 +10,14 @@
   },
   "lastUpdated": "2026-08-07",
   "dataStatus": {
-    "scope": "section-manifest",
-    "migrationVersion": "comms-phase1-v2",
+    "scope": "category-manifest",
+    "migrationVersion": "comms-phase2-v1",
     "sourceItemCount": 840,
     "itemCount": 840,
     "sectionCount": 4,
     "itemIdsPreserved": true,
     "coordinatesCompleted": 0
   },
-  "sections": [
-    {
-      "id": "washington",
-      "name": {
-        "de": "Washington, D.C.",
-        "en": "Washington, D.C."
-      },
-      "view": "map",
-      "map": "washington",
-      "manifest": "washington/manifest.json",
-      "itemCount": 181,
-      "groupCount": 19,
-      "description": {
-        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
-        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
-      },
-      "mapImage": "assets/maps/theDivision2/washington.svg",
-      "mapImageAlt": {
-        "de": "Gebietskarte von Washington, D.C.",
-        "en": "Area map of Washington, D.C."
-      }
-    },
-    {
-      "id": "newYork",
-      "name": {
-        "de": "New York",
-        "en": "New York"
-      },
-      "view": "map",
-      "map": "newYork",
-      "manifest": "newYork/manifest.json",
-      "itemCount": 109,
-      "groupCount": 11,
-      "description": {
-        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
-        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
-      },
-      "mapImage": "assets/maps/theDivision2/newYork.svg",
-      "mapImageAlt": {
-        "de": "Gebietskarte von Lower Manhattan",
-        "en": "Area map of Lower Manhattan"
-      }
-    },
-    {
-      "id": "brooklyn",
-      "name": {
-        "de": "Brooklyn",
-        "en": "Brooklyn"
-      },
-      "view": "map",
-      "map": "brooklyn",
-      "manifest": "brooklyn/manifest.json",
-      "itemCount": 35,
-      "groupCount": 4,
-      "description": {
-        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
-        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
-      },
-      "mapImage": "assets/maps/theDivision2/brooklyn.svg",
-      "mapImageAlt": {
-        "de": "Gebietskarte von Brooklyn",
-        "en": "Area map of Brooklyn"
-      }
-    },
-    {
-      "id": "missions",
-      "name": {
-        "de": "Missionen",
-        "en": "Missions"
-      },
-      "view": "list",
-      "map": null,
-      "manifest": "missions/manifest.json",
-      "itemCount": 515,
-      "groupCount": 25,
-      "description": {
-        "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
-        "en": "Mission- and activity-bound Comms in one combined tracking list."
-      }
-    }
-  ],
   "categories": [
     {
       "id": "washington",
@@ -106,21 +25,21 @@
         "de": "Washington, D.C.",
         "en": "Washington, D.C."
       },
-      "description": {
-        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
-        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
-      },
-      "type": "manifest",
-      "file": "washington/manifest.json",
       "view": "map",
       "map": "washington",
       "itemCount": 181,
       "groupCount": 19,
+      "description": {
+        "de": "Comms der offenen Welt in Washington, D.C. mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Washington, D.C. with an area map and collapsible tracking list."
+      },
       "mapImage": "assets/maps/theDivision2/washington.svg",
       "mapImageAlt": {
         "de": "Gebietskarte von Washington, D.C.",
         "en": "Area map of Washington, D.C."
-      }
+      },
+      "type": "manifest",
+      "file": "washington/manifest.json"
     },
     {
       "id": "newYork",
@@ -128,21 +47,21 @@
         "de": "New York",
         "en": "New York"
       },
-      "description": {
-        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
-        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
-      },
-      "type": "manifest",
-      "file": "newYork/manifest.json",
       "view": "map",
       "map": "newYork",
       "itemCount": 109,
       "groupCount": 11,
+      "description": {
+        "de": "Comms der offenen Welt in Lower Manhattan mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Lower Manhattan with an area map and collapsible tracking list."
+      },
       "mapImage": "assets/maps/theDivision2/newYork.svg",
       "mapImageAlt": {
         "de": "Gebietskarte von Lower Manhattan",
         "en": "Area map of Lower Manhattan"
-      }
+      },
+      "type": "manifest",
+      "file": "newYork/manifest.json"
     },
     {
       "id": "brooklyn",
@@ -150,21 +69,21 @@
         "de": "Brooklyn",
         "en": "Brooklyn"
       },
-      "description": {
-        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
-        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
-      },
-      "type": "manifest",
-      "file": "brooklyn/manifest.json",
       "view": "map",
       "map": "brooklyn",
       "itemCount": 35,
       "groupCount": 4,
+      "description": {
+        "de": "Comms der offenen Welt in Brooklyn mit Gebietskarte und einklappbarer Tracking-Liste.",
+        "en": "Open-world Comms in Brooklyn with an area map and collapsible tracking list."
+      },
       "mapImage": "assets/maps/theDivision2/brooklyn.svg",
       "mapImageAlt": {
         "de": "Gebietskarte von Brooklyn",
         "en": "Area map of Brooklyn"
-      }
+      },
+      "type": "manifest",
+      "file": "brooklyn/manifest.json"
     },
     {
       "id": "missions",
@@ -172,16 +91,19 @@
         "de": "Missionen",
         "en": "Missions"
       },
+      "view": "list",
+      "map": null,
+      "itemCount": 515,
+      "groupCount": 25,
       "description": {
         "de": "Missions- und aktivitätsgebundene Comms in einer gemeinsamen Tracking-Liste.",
         "en": "Mission- and activity-bound Comms in one combined tracking list."
       },
-      "type": "category",
-      "file": "missions/allMissions.json",
-      "view": "list",
-      "map": null,
-      "itemCount": 515,
-      "groupCount": 25
+      "type": "manifest",
+      "file": "missions/manifest.json",
+      "dataFile": "allMissions.json"
     }
-  ]
+  ],
+  "view": "comms-overview",
+  "itemCount": 840
 }

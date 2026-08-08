@@ -1,35 +1,39 @@
 {
-	"id": "theDivision2",
-	"name": "The Division 2",
-
-	"categories": [
-		{
-			"id": "collectibles",
-			"name": "Collectibles",
-			"description": "ECHOs, Comms, Found Footage und weitere Sammelobjekte",
-			"type": "manifest",
-			"file": "collectibles/manifest.json"
-		},
-		{
-			"id": "exotics",
-			"name": "Exotics",
-			"description": "Exotische Waffen und Ausrüstung",
-			"type": "category",
-			"file": "exotics.json"
-		},
-		{
-			"id": "blueprints",
-			"name": "Blaupausen",
-			"description": "Freigeschaltete und fehlende Blaupausen",
-			"type": "category",
-			"file": "blueprints.json"
-		},
-		{
-			"id": "achievements",
-			"name": "Achievements",
-			"description": "Erfolge und Herausforderungen",
-			"type": "category",
-			"file": "achievements.json"
-		}
-	]
+  "id": "theDivision2",
+  "name": "The Division 2",
+  "categories": [
+    {
+      "id": "collectibles",
+      "name": "Collectibles",
+      "description": "ECHOs, Comms, Found Footage und weitere Sammelobjekte",
+      "type": "manifest",
+      "file": "collectibles/manifest.json",
+      "itemCount": 1233
+    },
+    {
+      "id": "exotics",
+      "name": "Exotics",
+      "description": "Exotische Waffen und Ausrüstung",
+      "type": "category",
+      "file": "exotics.json",
+      "itemCount": 74
+    },
+    {
+      "id": "blueprints",
+      "name": "Blaupausen",
+      "description": "Freigeschaltete und fehlende Blaupausen",
+      "type": "category",
+      "file": "blueprints.json",
+      "itemCount": 73
+    },
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "description": "Erfolge und Herausforderungen",
+      "type": "category",
+      "file": "achievements.json",
+      "itemCount": 67
+    }
+  ],
+  "itemCount": 1447
 }

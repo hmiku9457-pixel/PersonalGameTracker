@@ -6,15 +6,18 @@
       "id": "achievements",
       "name": "Achievements",
       "description": "Steam-Erfolge aus dem Hauptspiel",
-			"type": "category",
-      "file": "achievements.json"
+      "type": "category",
+      "file": "achievements.json",
+      "itemCount": 54
     },
     {
       "id": "quests",
       "name": "Quests",
       "description": "Alle Quests des Spiels",
-			"type": "category",
-      "file": "quests.json"
+      "type": "category",
+      "file": "quests.json",
+      "itemCount": 81
     }
-  ]
+  ],
+  "itemCount": 135
 }

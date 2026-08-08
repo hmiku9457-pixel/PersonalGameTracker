@@ -4,6 +4,7 @@
    ========================================================= */
 
 import {
+	beginJsonRequestScope,
 	loadGameManifest,
 	loadManifest,
 	resolveRelativeFile
@@ -73,7 +74,10 @@ const UI_TEXT = {
 			"Die angeforderte Kategorie konnte nicht geladen werden.",
 
 		pageLoadFailed:
-			"Die Seite konnte nicht geladen werden."
+			"Die Seite konnte nicht geladen werden.",
+
+		routeNotFound:
+			"Die angeforderte Seite wurde nicht gefunden."
 	},
 
 	en: {
@@ -93,7 +97,10 @@ const UI_TEXT = {
 			"The requested category could not be loaded.",
 
 		pageLoadFailed:
-			"The page could not be loaded."
+			"The page could not be loaded.",
+
+		routeNotFound:
+			"The requested page was not found."
 	}
 };
 
@@ -186,6 +193,8 @@ async function renderHomePage() {
  */
 export async function loadPageFromHash() {
 
+	beginJsonRequestScope();
+
 	const routeParts =
 		getRouteParts();
 
@@ -222,14 +231,21 @@ export async function loadPageFromHash() {
 
 	/*
 	 * Unbekannte Route:
-	 * ebenfalls Spieleübersicht anzeigen.
+	 * kontrollierte In-App-404 anzeigen.
 	 */
 	if (
 		routeParts[0] !==
 		"game"
 	) {
+		updateActiveGameNavigation(
+			null
+		);
 
-		await renderHomePage();
+		showError(
+			getUiText(
+				"routeNotFound"
+			)
+		);
 
 		return;
 	}
@@ -400,6 +416,10 @@ export async function loadPageFromHash() {
 
 	}
 	catch (error) {
+		if (error?.name === "AbortError") {
+			return;
+		}
+
 
 		console.error(
 			"Route konnte nicht geladen werden:",
@@ -722,10 +742,16 @@ function getRouteParts() {
 		.split("/")
 		.filter(Boolean)
 		.map(
-			part =>
-				decodeURIComponent(
-					part
-				)
+			part => {
+				try {
+					return decodeURIComponent(
+						part
+					);
+				}
+				catch {
+					return part;
+				}
+			}
 		);
 }
 

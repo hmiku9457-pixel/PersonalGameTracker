@@ -64,15 +64,7 @@ export function applyPageBreadcrumbBanner(
         page
     );
 
-    /*
-     * Die Option bleibt aus Kompatibilitätsgründen erhalten.
-     * Untertexte werden im neuen einheitlichen Design jedoch
-     * grundsätzlich entfernt.
-     */
-    if (
-        removeDescriptions ||
-        removeDescriptions === false
-    ) {
+    if (removeDescriptions) {
         removePageDescriptions(
             page
         );

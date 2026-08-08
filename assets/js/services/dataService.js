@@ -1,6 +1,48 @@
 const DATA_ROOT = "data";
 
 const jsonCache = new Map();
+const jsonRequestCache = new Map();
+
+let activeJsonRequestController = null;
+
+/**
+ * Beginnt einen neuen Request-Bereich für die aktuelle Route.
+ * Noch laufende JSON-Requests der vorherigen Route werden abgebrochen.
+ *
+ * @returns {AbortSignal}
+ */
+export function beginJsonRequestScope() {
+	if (activeJsonRequestController) {
+		activeJsonRequestController.abort();
+	}
+
+	activeJsonRequestController =
+		new AbortController();
+
+	return activeJsonRequestController.signal;
+}
+
+function getActiveJsonRequestSignal() {
+	return activeJsonRequestController?.signal ?? null;
+}
+
+function getPendingJsonRequest(cacheKey, signal) {
+	const entry = jsonRequestCache.get(cacheKey);
+
+	if (!entry) {
+		return null;
+	}
+
+	if (
+		entry.signal === signal &&
+		!entry.signal?.aborted
+	) {
+		return entry.promise;
+	}
+
+	jsonRequestCache.delete(cacheKey);
+	return null;
+}
 
 
 /**
@@ -13,27 +55,70 @@ const jsonCache = new Map();
  * @returns {Promise<any>}
  */
 export async function loadJson(path) {
-
 	if (jsonCache.has(path)) {
 		return jsonCache.get(path);
 	}
 
+	const signal =
+		getActiveJsonRequestSignal();
 
-	const response = await fetch(path);
+	const cacheKey =
+		`required:${path}`;
 
-
-	if (!response.ok) {
-		throw new Error(
-			`JSON konnte nicht geladen werden: ${path} (${response.status})`
+	const pendingRequest =
+		getPendingJsonRequest(
+			cacheKey,
+			signal
 		);
+
+	if (pendingRequest) {
+		return pendingRequest;
 	}
 
+	const request = (async () => {
+		const response = await fetch(
+			path,
+			signal
+				? { signal }
+				: undefined
+		);
 
-	const data = await response.json();
+		if (!response.ok) {
+			throw new Error(
+				`JSON konnte nicht geladen werden: ${path} (${response.status})`
+			);
+		}
 
-	jsonCache.set(path, data);
+		const data =
+			await response.json();
 
-	return data;
+		jsonCache.set(path, data);
+		return data;
+	})();
+
+	jsonRequestCache.set(
+		cacheKey,
+		{
+			promise: request,
+			signal
+		}
+	);
+
+	try {
+		return await request;
+	}
+	finally {
+		const entry =
+			jsonRequestCache.get(
+				cacheKey
+			);
+
+		if (entry?.promise === request) {
+			jsonRequestCache.delete(
+				cacheKey
+			);
+		}
+	}
 }
 
 
@@ -46,16 +131,37 @@ export async function loadJson(path) {
  * @returns {Promise<any|null>}
  */
 export async function loadOptionalJson(path) {
+	if (jsonCache.has(path)) {
+		return jsonCache.get(path);
+	}
 
-	try {
+	const signal =
+		getActiveJsonRequestSignal();
 
-		const response = await fetch(path);
+	const cacheKey =
+		`optional:${path}`;
 
+	const pendingRequest =
+		getPendingJsonRequest(
+			cacheKey,
+			signal
+		);
+
+	if (pendingRequest) {
+		return pendingRequest;
+	}
+
+	const request = (async () => {
+		const response = await fetch(
+			path,
+			signal
+				? { signal }
+				: undefined
+		);
 
 		if (response.status === 404) {
 			return null;
 		}
-
 
 		if (!response.ok) {
 			throw new Error(
@@ -63,17 +169,35 @@ export async function loadOptionalJson(path) {
 			);
 		}
 
+		const data =
+			await response.json();
 
-		return await response.json();
+		jsonCache.set(path, data);
+		return data;
+	})();
 
-	} catch (error) {
+	jsonRequestCache.set(
+		cacheKey,
+		{
+			promise: request,
+			signal
+		}
+	);
 
-		console.warn(
-			`Optionale JSON-Datei konnte nicht geladen werden: ${path}`,
-			error
-		);
+	try {
+		return await request;
+	}
+	finally {
+		const entry =
+			jsonRequestCache.get(
+				cacheKey
+			);
 
-		return null;
+		if (entry?.promise === request) {
+			jsonRequestCache.delete(
+				cacheKey
+			);
+		}
 	}
 }
 

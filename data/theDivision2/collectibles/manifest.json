@@ -7,42 +7,49 @@
       "name": "Found Footage",
       "description": "Collectibles",
       "type": "category",
-      "file": "foundFootage.json"
+      "file": "foundFootage.json",
+      "itemCount": 13
     },
     {
       "id": "comms",
       "name": "Comms",
       "description": "Collectibles",
       "type": "manifest",
-      "file": "comms/manifest.json"
+      "file": "comms/manifest.json",
+      "itemCount": 840
     },
     {
       "id": "artifacts",
       "name": "Artifacts",
       "description": "Collectibles",
       "type": "category",
-      "file": "artifacts.json"
+      "file": "artifacts.json",
+      "itemCount": 53
     },
     {
       "id": "echos",
       "name": "ECHOs",
       "description": "Collectibles",
       "type": "category",
-      "file": "echos.json"
+      "file": "echos.json",
+      "itemCount": 50
     },
     {
       "id": "fieldData",
       "name": "Field Data",
       "description": "Collectibles",
       "type": "category",
-      "file": "fieldData.json"
+      "file": "fieldData.json",
+      "itemCount": 66
     },
     {
       "id": "database",
       "name": "Database",
       "description": "Collectibles",
       "type": "category",
-      "file": "database.json"
+      "file": "database.json",
+      "itemCount": 211
     }
-  ]
+  ],
+  "itemCount": 1233
 }

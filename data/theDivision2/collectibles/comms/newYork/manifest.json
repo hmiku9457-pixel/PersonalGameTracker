@@ -18,22 +18,6 @@
     "fileCount": 2,
     "coordinatesCompleted": 0
   },
-  "files": [
-    {
-      "id": "newYorkWorld",
-      "name": "Comms – New York – Welt und Einsätze – New York",
-      "file": "newYorkWorld.json",
-      "itemCount": 23,
-      "groupCount": 2
-    },
-    {
-      "id": "newYorkProfiles",
-      "name": "Comms – New York – Profile – New York",
-      "file": "newYorkProfiles.json",
-      "itemCount": 86,
-      "groupCount": 9
-    }
-  ],
   "categories": [
     {
       "id": "newYorkWorld",
@@ -65,5 +49,6 @@
     "de": "Gebietskarte von Lower Manhattan",
     "en": "Area map of Lower Manhattan"
   },
-  "panelDefaultOpen": true
+  "panelDefaultOpen": true,
+  "itemCount": 109
 }

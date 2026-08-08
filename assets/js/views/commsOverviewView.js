@@ -126,9 +126,9 @@ export async function tryRenderCommsRoute(
     const sectionId = routeIds[2];
 
     const section = Array.isArray(
-        commsManifest.sections
+        commsManifest.categories
     )
-        ? commsManifest.sections.find(
+        ? commsManifest.categories.find(
             (entry) => entry.id === sectionId
         )
         : null;
@@ -139,7 +139,7 @@ export async function tryRenderCommsRoute(
 
     const sectionManifestFile = resolveRelativeFile(
         COMMS_MANIFEST_FILE,
-        section.manifest
+        section.file
     );
 
     const sectionManifest = await loadManifest(
@@ -158,6 +158,7 @@ export async function tryRenderCommsRoute(
                     section.description,
                 file: resolveRelativeFile(
                     sectionManifestFile,
+                    section.dataFile ??
                     "allMissions.json"
                 ),
                 parentHash: buildGameHash(
@@ -238,9 +239,9 @@ async function renderCommsOverview(
 
     const sections =
         Array.isArray(
-            commsManifest.sections
+            commsManifest.categories
         )
-            ? commsManifest.sections
+            ? commsManifest.categories
             : [];
 
     mainContent.replaceChildren();
@@ -721,7 +722,7 @@ async function calculateSectionProgress(
         suppliedManifestFile ??
         resolveRelativeFile(
             COMMS_MANIFEST_FILE,
-            section.manifest
+            section.file
         );
 
     const sectionManifest =
@@ -731,8 +732,8 @@ async function calculateSectionProgress(
             sectionManifestFile
         );
 
-    const files = Array.isArray(sectionManifest.files)
-        ? sectionManifest.files
+    const files = Array.isArray(sectionManifest.categories)
+        ? sectionManifest.categories
         : [];
 
     const categoryResults = await Promise.all(

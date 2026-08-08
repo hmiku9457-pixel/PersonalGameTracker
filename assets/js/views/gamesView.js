@@ -766,7 +766,7 @@ function getGameMediaConfig(
 	) {
 		return null;
 	}
-	
+
 
 	if (
 		typeof game.media === "string" &&
@@ -1032,19 +1032,19 @@ async function loadGameCardProgress(
 	game,
 	card
 ) {
-
 	try {
-
-		const progressData =
-			await loadGameProgressData(
+		const [
+			progressData,
+			manifest
+		] = await Promise.all([
+			loadGameProgressData(
 				game.id
-			);
+			),
+			loadGameManifest(
+				game.id
+			)
+		]);
 
-
-		/*
-		 * Ohne Anmeldung werden keine persönlichen
-		 * Fortschrittswerte angezeigt.
-		 */
 		if (
 			!progressData ||
 			!progressData.available
@@ -1052,30 +1052,58 @@ async function loadGameCardProgress(
 			return;
 		}
 
-
-		const manifest =
-			await loadGameManifest(
-				game.id
+		const manifestItemCount =
+			Number(
+				manifest?.itemCount
 			);
 
+		let progress;
 
-		const progress =
-			await calculateManifestProgress(
-				game.id,
-				manifest,
-				"manifest.json",
-				progressData
-			);
+		if (
+			Number.isFinite(
+				manifestItemCount
+			) &&
+			manifestItemCount >= 0
+		) {
+			const completed =
+				Object.values(
+					progressData.progress ?? {}
+				).filter(Boolean).length;
 
+			progress = {
+				completed:
+					Math.min(
+						completed,
+						manifestItemCount
+					),
+				total:
+					manifestItemCount
+			};
+		}
+		else {
+			/*
+			 * Rückwärtskompatibler Fallback für noch nicht
+			 * angereicherte Manifeste.
+			 */
+			progress =
+				await calculateManifestProgress(
+					game.id,
+					manifest,
+					"manifest.json",
+					progressData
+				);
+		}
 
 		updateGameCardProgress(
 			card,
 			game,
 			progress
 		);
-
 	}
 	catch (error) {
+		if (error?.name === "AbortError") {
+			return;
+		}
 
 		console.error(
 			`Gesamtfortschritt für Spiel "${game.id}" konnte nicht geladen werden.`,

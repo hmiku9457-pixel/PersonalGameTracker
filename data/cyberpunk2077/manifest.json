@@ -6,8 +6,10 @@
       "id": "achievements",
       "name": "Achievements",
       "description": "Steam-Erfolge aus dem Hauptspiel und Phantom Liberty.",
-			"type": "category",
-      "file": "achievements.json"
+      "type": "category",
+      "file": "achievements.json",
+      "itemCount": 57
     }
-  ]
+  ],
+  "itemCount": 57
 }

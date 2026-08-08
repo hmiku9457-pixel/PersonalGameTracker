@@ -6,8 +6,10 @@
       "id": "achievements",
       "name": "Achievements",
       "description": "Steam-Erfolge aus dem Hauptspiel",
-			"type": "category",
-      "file": "achievements.json"
+      "type": "category",
+      "file": "achievements.json",
+      "itemCount": 38
     }
-  ]
+  ],
+  "itemCount": 38
 }

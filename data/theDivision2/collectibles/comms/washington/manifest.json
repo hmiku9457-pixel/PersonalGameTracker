@@ -18,36 +18,6 @@
     "fileCount": 4,
     "coordinatesCompleted": 0
   },
-  "files": [
-    {
-      "id": "coreFactionsAndInstitutions",
-      "name": "Comms – Fraktionen und Institutionen – Washington, D.C.",
-      "file": "coreFactionsAndInstitutions.json",
-      "itemCount": 73,
-      "groupCount": 7
-    },
-    {
-      "id": "washingtonWorld",
-      "name": "Comms – Washington – Open World – Washington, D.C.",
-      "file": "washingtonWorld.json",
-      "itemCount": 33,
-      "groupCount": 3
-    },
-    {
-      "id": "washingtonSettlements",
-      "name": "Comms – Washington – Siedlungen – Washington, D.C.",
-      "file": "washingtonSettlements.json",
-      "itemCount": 20,
-      "groupCount": 3
-    },
-    {
-      "id": "washingtonProfiles",
-      "name": "Comms – Washington – Profile – Washington, D.C.",
-      "file": "washingtonProfiles.json",
-      "itemCount": 55,
-      "groupCount": 6
-    }
-  ],
   "categories": [
     {
       "id": "coreFactionsAndInstitutions",
@@ -103,5 +73,6 @@
     "de": "Gebietskarte von Washington, D.C.",
     "en": "Area map of Washington, D.C."
   },
-  "panelDefaultOpen": true
+  "panelDefaultOpen": true,
+  "itemCount": 181
 }
