@@ -5,7 +5,8 @@ const ENHANCED_ATTRIBUTE = 'data-progress-card-enhanced';
 const OBSERVED_ATTRIBUTE = 'data-progress-card-observed';
 const SOURCE_HIDDEN_CLASS = 'pgt-progress-card-source-hidden';
 const UNIFIED_CARD_CLASS = 'pgt-overview-card-unified';
-let mainObserver = null;
+const APPLIED_TO_LAYOUT_CLASS = 'pgt-overview-layout-unified';
+let layoutObserver = null;
 let scheduled = false;
 
 function getProgressLabel() {
@@ -19,88 +20,75 @@ function scheduleEnhancement() {
   }
 
   scheduled = true;
-
   requestAnimationFrame(() => {
     scheduled = false;
-    enhanceNewProgressCards();
+    enhanceProgressCards();
   });
 }
 
-function enhanceNewProgressCards() {
-  const mainContent = document.querySelector(MAIN_CONTENT_SELECTOR);
-  if (!mainContent) {
-    return;
-  }
-
-  const cards = mainContent.querySelectorAll(
-    CARD_SELECTOR + ':not([' + ENHANCED_ATTRIBUTE + '="true"])'
-  );
+function enhanceProgressCards(root = document) {
+  const cards = root.querySelectorAll(CARD_SELECTOR);
 
   for (const card of cards) {
-    enhanceProgressCard(card);
+    enhanceCard(card);
   }
 }
 
-function enhanceProgressCard(card) {
-  if (card.closest('.tracker-item')) {
-    card.setAttribute(ENHANCED_ATTRIBUTE, 'true');
+function enhanceCard(card) {
+  if (!card || card.closest('.tracker-item')) {
     return;
   }
 
-  card.classList.add(UNIFIED_CARD_CLASS);
+  card.classList.add(UNIFIED_CARD_CLASS, APPLIED_TO_LAYOUT_CLASS);
 
-  const section = ensureUnifiedSection(card);
   const state = getCardState(card);
-
-  if (state) {
-    updateSection(section, state);
-    hideLegacyProgressUi(card, state);
-    attachSourceObservers(card, section);
+  if (!state) {
+    return;
   }
 
+  const section = ensureUnifiedSection(card);
+  updateSection(section, state);
+  hideLegacyProgressUi(card, state);
+  observeStateSources(card, section);
   card.setAttribute(ENHANCED_ATTRIBUTE, 'true');
 }
 
 function getCardState(card) {
-  const sourceElements = findCountSourceElements(card);
-  const sourceElement = sourceElements[0] || null;
-
-  if (sourceElement) {
-    const parsedState = parseProgressText(sourceElement.textContent);
-    if (parsedState) {
-      return {
-        ...parsedState,
-        sourceElement,
-        sourceElements
-      };
-    }
+  const datasetState = extractStateFromDataset(card);
+  if (datasetState) {
+    return datasetState;
   }
 
+  return extractStateFromText(card);
+}
+
+function extractStateFromDataset(card) {
   const completed = Number(card.dataset.progressCompleted);
   const total = Number(card.dataset.progressTotal);
 
-  if (
-    Number.isFinite(completed) &&
-    Number.isFinite(total) &&
-    total >= 0
-  ) {
-    return {
-      completed,
-      total,
-      percent: calculatePercent(completed, total),
-      sourceElement,
-      sourceElements
-    };
+  if (!Number.isFinite(completed) || !Number.isFinite(total) || total < 0) {
+    return null;
   }
 
-  return null;
+  const sourceElements = findCountSourceElements(card);
+
+  return {
+    completed,
+    total,
+    sourceElements,
+    percent: calculatePercent(completed, total)
+  };
 }
 
-function parseProgressText(value) {
-  const match = String(value || '')
-    .trim()
-    .match(/^(\d+)\s*\/\s*(\d+)$/);
+function extractStateFromText(card) {
+  const sourceElements = findCountSourceElements(card);
+  const source = sourceElements[0] || null;
 
+  if (!source) {
+    return null;
+  }
+
+  const match = normalizeCountText(source.textContent).match(/^(\d+)\s*\/\s*(\d+)$/);
   if (!match) {
     return null;
   }
@@ -111,30 +99,29 @@ function parseProgressText(value) {
   return {
     completed,
     total,
+    sourceElements,
     percent: calculatePercent(completed, total)
   };
+}
+
+function normalizeCountText(text) {
+  return String(text || '').replace(/ /g, ' ').trim();
 }
 
 function findCountSourceElements(card) {
   const candidates = Array.from(
     card.querySelectorAll(
-      '[data-category-progress], ' +
-      '[data-manifest-progress], ' +
-      '[data-comms-progress], ' +
-      '.comms-section-progress strong, ' +
-      '.section-progress strong, ' +
-      'strong, p, span, small'
+      '[data-category-progress], [data-manifest-progress], .comms-section-card-progress strong, strong, p, span, div, small'
     )
   );
 
   return candidates.filter((element) => {
-    if (element.closest('.pgt-progress-card-section')) {
+    if (!element || element.closest('.pgt-progress-card-section')) {
       return false;
     }
 
-    return /^\d+\s*\/\s*\d+$/.test(
-      (element.textContent || '').trim()
-    );
+    const text = normalizeCountText(element.textContent);
+    return /^\d+\s*\/\s*\d+$/.test(text);
   });
 }
 
@@ -143,15 +130,11 @@ function calculatePercent(completed, total) {
     return 0;
   }
 
-  return Math.max(
-    0,
-    Math.min(100, (completed / total) * 100)
-  );
+  return Math.max(0, Math.min(100, (completed / total) * 100));
 }
 
 function ensureUnifiedSection(card) {
   let section = card.querySelector('.pgt-progress-card-section');
-
   if (section) {
     return section;
   }
@@ -184,17 +167,16 @@ function ensureUnifiedSection(card) {
   bar.append(fill, overlay);
   section.append(label, bar);
 
-  findSectionInsertionTarget(card).append(section);
+  const insertionTarget = findInsertionTarget(card);
+  insertionTarget.append(section);
 
   return section;
 }
 
-function findSectionInsertionTarget(card) {
+function findInsertionTarget(card) {
   return (
     card.querySelector(
-      '.category-card-content, ' +
-      '.manifest-card-content, ' +
-      '.comms-section-card-content'
+      '.category-card-content, .manifest-card-content, .comms-section-card-content, .card-content'
     ) || card
   );
 }
@@ -204,104 +186,76 @@ function updateSection(section, state) {
   const percentage = section.querySelector('.pgt-progress-card-percent');
   const fill = section.querySelector('.pgt-progress-card-fill');
   const bar = section.querySelector('.pgt-progress-card-bar');
-
-  if (!count || !percentage || !fill || !bar) {
-    return;
-  }
+  const label = section.querySelector('.pgt-progress-card-label');
 
   const percent = calculatePercent(state.completed, state.total);
-  const nextCount = state.completed + ' / ' + state.total;
-  const nextPercentage = Math.round(percent) + ' %';
-  const nextWidth = percent.toFixed(2) + '%';
+  const countText = state.completed + ' / ' + state.total;
+  const percentageText = Math.round(percent) + ' %';
 
-  if (count.textContent !== nextCount) {
-    count.textContent = nextCount;
+  if (label && label.textContent !== getProgressLabel()) {
+    label.textContent = getProgressLabel();
+    bar.setAttribute('aria-label', getProgressLabel());
   }
 
-  if (percentage.textContent !== nextPercentage) {
-    percentage.textContent = nextPercentage;
+  if (count.textContent !== countText) {
+    count.textContent = countText;
   }
 
-  if (fill.style.width !== nextWidth) {
-    fill.style.width = nextWidth;
+  if (percentage.textContent !== percentageText) {
+    percentage.textContent = percentageText;
   }
 
-  setAttributeIfChanged(bar, 'aria-valuemin', '0');
-  setAttributeIfChanged(bar, 'aria-valuemax', String(state.total));
-  setAttributeIfChanged(bar, 'aria-valuenow', String(state.completed));
-
-  section.classList.toggle('is-empty', state.total <= 0);
-}
-
-function setAttributeIfChanged(element, name, value) {
-  if (element.getAttribute(name) !== value) {
-    element.setAttribute(name, value);
+  const widthValue = percent.toFixed(2) + '%';
+  if (fill.style.width !== widthValue) {
+    fill.style.width = widthValue;
   }
+
+  bar.setAttribute('aria-valuemin', '0');
+  bar.setAttribute('aria-valuemax', String(state.total));
+  bar.setAttribute('aria-valuenow', String(state.completed));
 }
 
 function hideLegacyProgressUi(card, state) {
-  const legacyContainers = new Set(
-    findLegacyProgressContainers(state.sourceElements)
-  );
+  const sourceElements = state?.sourceElements || [];
+  const containers = new Set();
 
-  const nativeCommsProgress = card.querySelector(
-    '.comms-section-card-progress'
-  );
+  for (const element of sourceElements) {
+    if (!element) {
+      continue;
+    }
 
-  if (nativeCommsProgress) {
-    legacyContainers.add(nativeCommsProgress);
+    if (element.matches('[data-category-progress], [data-manifest-progress]')) {
+      containers.add(element);
+      continue;
+    }
+
+    const container = element.closest(
+      '.category-progress-wrapper, .manifest-progress-wrapper, .comms-section-card-progress, .comms-section-card-progress strong, .progress-container, .progress-wrapper, .card-progress, .section-progress'
+    );
+
+    if (container) {
+      containers.add(container);
+    }
   }
 
-  for (const container of legacyContainers) {
+  for (const container of containers) {
     container.classList.add(SOURCE_HIDDEN_CLASS);
     container.setAttribute('aria-hidden', 'true');
   }
 }
 
-function findLegacyProgressContainers(sourceElements) {
-  const containers = new Set();
-
-  for (const element of sourceElements || []) {
-    if (!element) {
-      continue;
-    }
-
-    const nearbyContainer = element.closest(
-      '.category-progress-wrapper, ' +
-      '.manifest-progress-wrapper, ' +
-      '.comms-section-card-progress, ' +
-      '.comms-section-progress, ' +
-      '.progress-container, ' +
-      '.progress-wrapper, ' +
-      '.card-progress, ' +
-      '.section-progress'
-    );
-
-    if (nearbyContainer) {
-      containers.add(nearbyContainer);
-      continue;
-    }
-
-    containers.add(element);
-  }
-
-  return Array.from(containers);
-}
-
-function attachSourceObservers(card, section) {
+function observeStateSources(card, section) {
   if (card.getAttribute(OBSERVED_ATTRIBUTE) === 'true') {
     return;
   }
 
-  const targets = findCountSourceElements(card);
-
-  if (targets.length === 0) {
+  const sourceElements = findCountSourceElements(card);
+  if (sourceElements.length === 0) {
     return;
   }
 
-  const sourceObserver = new MutationObserver(() => {
+  const observer = new MutationObserver(() => {
     const nextState = getCardState(card);
-
     if (!nextState) {
       return;
     }
@@ -310,64 +264,64 @@ function attachSourceObservers(card, section) {
     hideLegacyProgressUi(card, nextState);
   });
 
-  for (const target of targets) {
-    sourceObserver.observe(target, {
+  for (const sourceElement of sourceElements) {
+    observer.observe(sourceElement, {
       childList: true,
       characterData: true,
-      subtree: true
+      subtree: true,
+      attributes: true
     });
   }
 
   card.setAttribute(OBSERVED_ATTRIBUTE, 'true');
 }
 
-function mutationContainsNewCard(mutation) {
-  for (const node of mutation.addedNodes) {
-    if (!(node instanceof Element)) {
-      continue;
-    }
-
-    if (node.matches(CARD_SELECTOR)) {
-      return true;
-    }
-
-    if (node.querySelector(CARD_SELECTOR)) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function setupMainObserver() {
+function setupLayoutObserver() {
   const mainContent = document.querySelector(MAIN_CONTENT_SELECTOR);
-
   if (!mainContent) {
     return;
   }
 
-  mainObserver?.disconnect();
+  layoutObserver?.disconnect();
+  layoutObserver = new MutationObserver((mutationList) => {
+    let shouldRun = false;
 
-  mainObserver = new MutationObserver((mutations) => {
-    if (mutations.some(mutationContainsNewCard)) {
+    for (const mutation of mutationList) {
+      for (const addedNode of mutation.addedNodes) {
+        if (!(addedNode instanceof HTMLElement)) {
+          continue;
+        }
+
+        if (addedNode.matches?.(CARD_SELECTOR) || addedNode.querySelector?.(CARD_SELECTOR)) {
+          shouldRun = true;
+          break;
+        }
+      }
+
+      if (shouldRun) {
+        break;
+      }
+    }
+
+    if (shouldRun) {
       scheduleEnhancement();
     }
   });
 
-  mainObserver.observe(mainContent, {
+  layoutObserver.observe(mainContent, {
     childList: true,
     subtree: true
   });
 }
 
-function initialize() {
-  setupMainObserver();
-  scheduleEnhancement();
-}
-
-window.addEventListener('DOMContentLoaded', initialize);
-window.addEventListener('load', scheduleEnhancement);
-window.addEventListener('hashchange', () => {
-  setupMainObserver();
+window.addEventListener('DOMContentLoaded', () => {
+  setupLayoutObserver();
   scheduleEnhancement();
 });
+
+window.addEventListener('hashchange', () => {
+  setupLayoutObserver();
+  scheduleEnhancement();
+});
+
+window.addEventListener('load', scheduleEnhancement);

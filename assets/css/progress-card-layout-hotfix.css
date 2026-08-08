@@ -3,13 +3,13 @@
   position: relative;
   overflow: hidden;
   border-radius: 1.15rem;
-  border: 1px solid rgba(96, 165, 250, 0.18);
+  border: 1px solid rgba(59, 130, 246, 0.28);
   background:
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.08), transparent 32%),
-    linear-gradient(135deg, rgba(28, 40, 66, 0.96), rgba(16, 24, 43, 0.96));
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.10), transparent 34%),
+    linear-gradient(120deg, rgba(26, 38, 64, 0.98), rgba(16, 24, 43, 0.98));
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 18px 38px rgba(0, 0, 0, 0.22);
+    0 16px 34px rgba(0, 0, 0, 0.20);
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -19,10 +19,58 @@
 .pgt-overview-card-unified:hover,
 .pgt-overview-card-unified:focus-within {
   transform: translateY(-2px);
-  border-color: rgba(96, 165, 250, 0.34);
+  border-color: rgba(96, 165, 250, 0.42);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
-    0 22px 44px rgba(0, 0, 0, 0.26);
+    0 22px 42px rgba(0, 0, 0, 0.25);
+}
+
+.pgt-overview-card-unified:not(.comms-section-card)::before {
+  content: '';
+  position: absolute;
+  top: 1.08rem;
+  right: 2.45rem;
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 999px;
+  background: #d97706;
+  box-shadow: 0 0 0 0.18rem rgba(217, 119, 6, 0.15);
+  pointer-events: none;
+}
+
+.pgt-overview-card-unified:not(.comms-section-card)::after {
+  content: '→';
+  position: absolute;
+  top: 0.92rem;
+  right: 1.05rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(226, 232, 240, 0.78);
+  pointer-events: none;
+}
+
+.pgt-overview-card-unified .category-card-title,
+.pgt-overview-card-unified .manifest-card-title,
+.pgt-overview-card-unified .comms-section-card-title,
+.pgt-overview-card-unified h2,
+.pgt-overview-card-unified h3 {
+  color: #f8fafc;
+}
+
+.pgt-overview-card-unified .category-card-description,
+.pgt-overview-card-unified .manifest-card-description,
+.pgt-overview-card-unified .comms-section-card-description,
+.pgt-overview-card-unified p {
+  color: rgba(248, 250, 252, 0.96);
+}
+
+.pgt-overview-card-unified .category-card-meta,
+.pgt-overview-card-unified .manifest-card-meta,
+.pgt-overview-card-unified .comms-section-meta,
+.pgt-overview-card-unified .category-card-subtitle,
+.pgt-overview-card-unified .manifest-card-subtitle,
+.pgt-overview-card-unified small {
+  color: rgba(203, 213, 225, 0.78);
 }
 
 .pgt-progress-card-source-hidden {
@@ -37,13 +85,8 @@
   border: 0 !important;
 }
 
-.pgt-overview-card-unified > .comms-section-card-progress,
-.pgt-overview-card-unified .comms-section-card-progress:not(.pgt-progress-card-section) {
-  display: none !important;
-}
-
 .pgt-progress-card-section {
-  margin-top: 1.15rem;
+  margin-top: 1.2rem;
   display: grid;
   gap: 0.6rem;
   width: 100%;
@@ -59,7 +102,7 @@
 .pgt-progress-card-bar {
   position: relative;
   overflow: hidden;
-  min-height: 1.7rem;
+  min-height: 1.72rem;
   border-radius: 999px;
   background: rgba(148, 163, 184, 0.18);
   border: 1px solid rgba(148, 163, 184, 0.14);
@@ -76,13 +119,13 @@
 .pgt-progress-card-overlay {
   position: relative;
   z-index: 1;
-  min-height: 1.7rem;
-  padding: 0.22rem 0.8rem;
+  min-height: 1.72rem;
+  padding: 0.22rem 0.82rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.85rem;
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   font-weight: 700;
   color: #eff6ff;
 }
@@ -92,18 +135,24 @@
   white-space: nowrap;
 }
 
-.pgt-progress-card-section.is-empty {
-  opacity: 0.92;
-}
-
 @media (max-width: 640px) {
-  .pgt-progress-card-overlay {
-    min-height: 1.55rem;
-    padding-inline: 0.65rem;
-    font-size: 0.84rem;
+  .pgt-overview-card-unified:not(.comms-section-card)::before {
+    top: 0.98rem;
+    right: 2.2rem;
   }
 
-  .pgt-progress-card-bar {
-    min-height: 1.55rem;
+  .pgt-overview-card-unified:not(.comms-section-card)::after {
+    top: 0.83rem;
+    right: 0.9rem;
+  }
+
+  .pgt-progress-card-bar,
+  .pgt-progress-card-overlay {
+    min-height: 1.58rem;
+  }
+
+  .pgt-progress-card-overlay {
+    font-size: 0.84rem;
+    padding-inline: 0.65rem;
   }
 }
