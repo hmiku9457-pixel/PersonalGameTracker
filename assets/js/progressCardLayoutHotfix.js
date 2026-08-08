@@ -2,9 +2,10 @@
 const MAIN_CONTENT_SELECTOR = '#main-content';
 const CARD_SELECTOR = '.category-card, .manifest-card, .comms-section-card';
 const ENHANCED_ATTRIBUTE = 'data-progress-card-enhanced';
+const OBSERVED_ATTRIBUTE = 'data-progress-card-observed';
 const SOURCE_HIDDEN_CLASS = 'pgt-progress-card-source-hidden';
 const UNIFIED_CARD_CLASS = 'pgt-overview-card-unified';
-let observer = null;
+let mainObserver = null;
 let scheduled = false;
 
 function getProgressLabel() {
@@ -18,78 +19,88 @@ function scheduleEnhancement() {
   }
 
   scheduled = true;
+
   requestAnimationFrame(() => {
     scheduled = false;
-    enhanceProgressCards();
+    enhanceNewProgressCards();
   });
 }
 
-function enhanceProgressCards() {
+function enhanceNewProgressCards() {
   const mainContent = document.querySelector(MAIN_CONTENT_SELECTOR);
   if (!mainContent) {
     return;
   }
 
-  const cards = mainContent.querySelectorAll(CARD_SELECTOR);
+  const cards = mainContent.querySelectorAll(
+    CARD_SELECTOR + ':not([' + ENHANCED_ATTRIBUTE + '="true"])'
+  );
 
   for (const card of cards) {
-    if (!shouldProcessCard(card)) {
-      continue;
-    }
-
-    card.classList.add(UNIFIED_CARD_CLASS);
-
-    const state = getCardState(card);
-    if (!state) {
-      continue;
-    }
-
-    const section = ensureUnifiedSection(card);
-    updateSection(section, state);
-    hideLegacyProgressUi(card, state);
-    attachSourceObservers(card, state, section);
-    card.setAttribute(ENHANCED_ATTRIBUTE, 'true');
+    enhanceProgressCard(card);
   }
 }
 
-function shouldProcessCard(card) {
-  return !card.closest('.tracker-item');
+function enhanceProgressCard(card) {
+  if (card.closest('.tracker-item')) {
+    card.setAttribute(ENHANCED_ATTRIBUTE, 'true');
+    return;
+  }
+
+  card.classList.add(UNIFIED_CARD_CLASS);
+
+  const section = ensureUnifiedSection(card);
+  const state = getCardState(card);
+
+  if (state) {
+    updateSection(section, state);
+    hideLegacyProgressUi(card, state);
+    attachSourceObservers(card, section);
+  }
+
+  card.setAttribute(ENHANCED_ATTRIBUTE, 'true');
 }
 
 function getCardState(card) {
-  const datasetState = extractStateFromDataset(card);
-  if (datasetState) {
-    return datasetState;
+  const sourceElements = findCountSourceElements(card);
+  const sourceElement = sourceElements[0] || null;
+
+  if (sourceElement) {
+    const parsedState = parseProgressText(sourceElement.textContent);
+    if (parsedState) {
+      return {
+        ...parsedState,
+        sourceElement,
+        sourceElements
+      };
+    }
   }
 
-  return extractStateFromText(card);
-}
-
-function extractStateFromDataset(card) {
   const completed = Number(card.dataset.progressCompleted);
   const total = Number(card.dataset.progressTotal);
-  if (!Number.isFinite(completed) || !Number.isFinite(total) || total < 0) {
-    return null;
+
+  if (
+    Number.isFinite(completed) &&
+    Number.isFinite(total) &&
+    total >= 0
+  ) {
+    return {
+      completed,
+      total,
+      percent: calculatePercent(completed, total),
+      sourceElement,
+      sourceElements
+    };
   }
 
-  const sourceElement = findCountSourceElement(card);
-  return {
-    completed,
-    total,
-    sourceElement,
-    sourceElements: sourceElement ? [sourceElement] : [],
-    percent: calculatePercent(completed, total)
-  };
+  return null;
 }
 
-function extractStateFromText(card) {
-  const sourceElements = findCountSourceElements(card);
-  const bestSource = sourceElements[0] || null;
-  if (!bestSource) {
-    return null;
-  }
+function parseProgressText(value) {
+  const match = String(value || '')
+    .trim()
+    .match(/^(\d+)\s*\/\s*(\d+)$/);
 
-  const match = (bestSource.textContent || '').trim().match(/^(\d+)\s*\/\s*(\d+)$/);
   if (!match) {
     return null;
   }
@@ -100,27 +111,31 @@ function extractStateFromText(card) {
   return {
     completed,
     total,
-    sourceElement: bestSource,
-    sourceElements,
     percent: calculatePercent(completed, total)
   };
 }
 
 function findCountSourceElements(card) {
-  const candidates = Array.from(card.querySelectorAll('[data-category-progress], [data-manifest-progress], strong, p, span, div, small'));
+  const candidates = Array.from(
+    card.querySelectorAll(
+      '[data-category-progress], ' +
+      '[data-manifest-progress], ' +
+      '[data-comms-progress], ' +
+      '.comms-section-progress strong, ' +
+      '.section-progress strong, ' +
+      'strong, p, span, small'
+    )
+  );
 
   return candidates.filter((element) => {
     if (element.closest('.pgt-progress-card-section')) {
       return false;
     }
 
-    const text = (element.textContent || '').trim();
-    return /^\d+\s*\/\s*\d+$/.test(text);
+    return /^\d+\s*\/\s*\d+$/.test(
+      (element.textContent || '').trim()
+    );
   });
-}
-
-function findCountSourceElement(card) {
-  return findCountSourceElements(card)[0] || null;
 }
 
 function calculatePercent(completed, total) {
@@ -128,11 +143,15 @@ function calculatePercent(completed, total) {
     return 0;
   }
 
-  return Math.max(0, Math.min(100, (completed / total) * 100));
+  return Math.max(
+    0,
+    Math.min(100, (completed / total) * 100)
+  );
 }
 
 function ensureUnifiedSection(card) {
   let section = card.querySelector('.pgt-progress-card-section');
+
   if (section) {
     return section;
   }
@@ -165,19 +184,19 @@ function ensureUnifiedSection(card) {
   bar.append(fill, overlay);
   section.append(label, bar);
 
-  const insertionTarget = findSectionInsertionTarget(card);
-  insertionTarget.append(section);
+  findSectionInsertionTarget(card).append(section);
 
   return section;
 }
 
 function findSectionInsertionTarget(card) {
-  const mainContent = card.querySelector('.category-card-content, .manifest-card-content, .comms-section-card-content');
-  if (mainContent) {
-    return mainContent;
-  }
-
-  return card;
+  return (
+    card.querySelector(
+      '.category-card-content, ' +
+      '.manifest-card-content, ' +
+      '.comms-section-card-content'
+    ) || card
+  );
 }
 
 function updateSection(section, state) {
@@ -186,30 +205,48 @@ function updateSection(section, state) {
   const fill = section.querySelector('.pgt-progress-card-fill');
   const bar = section.querySelector('.pgt-progress-card-bar');
 
-  const percent = calculatePercent(state.completed, state.total);
-  count.textContent = state.completed + ' / ' + state.total;
-  percentage.textContent = Math.round(percent) + ' %';
-  fill.style.width = percent.toFixed(2) + '%';
-  bar.setAttribute('aria-valuemin', '0');
-  bar.setAttribute('aria-valuemax', String(state.total));
-  bar.setAttribute('aria-valuenow', String(state.completed));
+  if (!count || !percentage || !fill || !bar) {
+    return;
+  }
 
-  if (state.total <= 0) {
-    section.classList.add('is-empty');
-  } else {
-    section.classList.remove('is-empty');
+  const percent = calculatePercent(state.completed, state.total);
+  const nextCount = state.completed + ' / ' + state.total;
+  const nextPercentage = Math.round(percent) + ' %';
+  const nextWidth = percent.toFixed(2) + '%';
+
+  if (count.textContent !== nextCount) {
+    count.textContent = nextCount;
+  }
+
+  if (percentage.textContent !== nextPercentage) {
+    percentage.textContent = nextPercentage;
+  }
+
+  if (fill.style.width !== nextWidth) {
+    fill.style.width = nextWidth;
+  }
+
+  setAttributeIfChanged(bar, 'aria-valuemin', '0');
+  setAttributeIfChanged(bar, 'aria-valuemax', String(state.total));
+  setAttributeIfChanged(bar, 'aria-valuenow', String(state.completed));
+
+  section.classList.toggle('is-empty', state.total <= 0);
+}
+
+function setAttributeIfChanged(element, name, value) {
+  if (element.getAttribute(name) !== value) {
+    element.setAttribute(name, value);
   }
 }
 
 function hideLegacyProgressUi(card, state) {
-  const legacyContainers = findLegacyProgressContainers(card, state.sourceElements);
-  for (const container of legacyContainers) {
+  for (const container of findLegacyProgressContainers(state.sourceElements)) {
     container.classList.add(SOURCE_HIDDEN_CLASS);
     container.setAttribute('aria-hidden', 'true');
   }
 }
 
-function findLegacyProgressContainers(card, sourceElements) {
+function findLegacyProgressContainers(sourceElements) {
   const containers = new Set();
 
   for (const element of sourceElements || []) {
@@ -217,40 +254,45 @@ function findLegacyProgressContainers(card, sourceElements) {
       continue;
     }
 
-    if (element.matches('[data-category-progress], [data-manifest-progress]')) {
-      containers.add(element);
-      continue;
-    }
+    const nearbyContainer = element.closest(
+      '.category-progress-wrapper, ' +
+      '.manifest-progress-wrapper, ' +
+      '.comms-section-progress, ' +
+      '.progress-container, ' +
+      '.progress-wrapper, ' +
+      '.card-progress, ' +
+      '.section-progress'
+    );
 
-    const nearbyContainer = element.closest('.category-progress-wrapper, .manifest-progress-wrapper, .comms-section-progress, .progress-container, .progress-wrapper, .card-progress, .section-progress');
     if (nearbyContainer) {
       containers.add(nearbyContainer);
       continue;
     }
 
-    if (element.tagName.toLowerCase() === 'strong') {
-      containers.add(element);
-    }
+    containers.add(element);
   }
 
   return Array.from(containers);
 }
 
-function attachSourceObservers(card, state, section) {
-  if (card.dataset.progressCardObserved === 'true') {
+function attachSourceObservers(card, section) {
+  if (card.getAttribute(OBSERVED_ATTRIBUTE) === 'true') {
     return;
   }
 
-  const targets = (state.sourceElements || []).filter(Boolean);
+  const targets = findCountSourceElements(card);
+
   if (targets.length === 0) {
     return;
   }
 
   const sourceObserver = new MutationObserver(() => {
     const nextState = getCardState(card);
+
     if (!nextState) {
       return;
     }
+
     updateSection(section, nextState);
     hideLegacyProgressUi(card, nextState);
   });
@@ -259,38 +301,60 @@ function attachSourceObservers(card, state, section) {
     sourceObserver.observe(target, {
       childList: true,
       characterData: true,
-      subtree: true,
-      attributes: true
+      subtree: true
     });
   }
 
-  card.dataset.progressCardObserved = 'true';
+  card.setAttribute(OBSERVED_ATTRIBUTE, 'true');
 }
 
-function setupObserver() {
+function mutationContainsNewCard(mutation) {
+  for (const node of mutation.addedNodes) {
+    if (!(node instanceof Element)) {
+      continue;
+    }
+
+    if (node.matches(CARD_SELECTOR)) {
+      return true;
+    }
+
+    if (node.querySelector(CARD_SELECTOR)) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function setupMainObserver() {
   const mainContent = document.querySelector(MAIN_CONTENT_SELECTOR);
+
   if (!mainContent) {
     return;
   }
 
-  observer?.disconnect();
-  observer = new MutationObserver(() => {
-    scheduleEnhancement();
+  mainObserver?.disconnect();
+
+  mainObserver = new MutationObserver((mutations) => {
+    if (mutations.some(mutationContainsNewCard)) {
+      scheduleEnhancement();
+    }
   });
 
-  observer.observe(mainContent, {
+  mainObserver.observe(mainContent, {
     childList: true,
     subtree: true
   });
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  setupObserver();
+function initialize() {
+  setupMainObserver();
   scheduleEnhancement();
-});
+}
 
+window.addEventListener('DOMContentLoaded', initialize);
+window.addEventListener('load', scheduleEnhancement);
 window.addEventListener('hashchange', () => {
-  setupObserver();
+  setupMainObserver();
   scheduleEnhancement();
 });
-window.addEventListener('load', scheduleEnhancement);

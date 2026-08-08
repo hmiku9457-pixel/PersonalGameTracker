@@ -25,30 +25,6 @@
     0 22px 44px rgba(0, 0, 0, 0.26);
 }
 
-.pgt-overview-card-unified::after {
-  content: '→';
-  position: absolute;
-  top: 1.15rem;
-  right: 1.2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: rgba(226, 232, 240, 0.82);
-  pointer-events: none;
-}
-
-.pgt-overview-card-unified::before {
-  content: '';
-  position: absolute;
-  top: 1.18rem;
-  right: 2.6rem;
-  width: 0.58rem;
-  height: 0.58rem;
-  border-radius: 999px;
-  background: #d97706;
-  box-shadow: 0 0 0 0.18rem rgba(217, 119, 6, 0.14);
-  pointer-events: none;
-}
-
 .pgt-progress-card-source-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -116,26 +92,13 @@
 }
 
 @media (max-width: 640px) {
-  .pgt-overview-card-unified::after {
-    top: 1rem;
-    right: 1rem;
-  }
-
-  .pgt-overview-card-unified::before {
-    top: 1.03rem;
-    right: 2.35rem;
-  }
-
   .pgt-progress-card-overlay {
-    font-size: 0.84rem;
+    min-height: 1.55rem;
     padding-inline: 0.65rem;
+    font-size: 0.84rem;
   }
 
   .pgt-progress-card-bar {
-    min-height: 1.55rem;
-  }
-
-  .pgt-progress-card-overlay {
     min-height: 1.55rem;
   }
 }
