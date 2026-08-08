@@ -1,0 +1,92 @@
+name: Apply system optimizations
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-system-optimizations
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Update anwenden
+        run: node scripts/applySystemOptimizationPackage.mjs
+
+      - name: Abhängigkeiten installieren
+        run: npm install --ignore-scripts
+
+      - name: Chromium für Playwright installieren
+        run: npx playwright install --with-deps chromium
+
+      - name: Repository validieren
+        run: npm run validate:data
+
+      - name: JavaScript-Syntax prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find assets scripts tests -type f \( -name '*.js' -o -name '*.mjs' \) -print0)
+
+      - name: Browser-Smoke-Tests ausführen
+        run: npm run test:e2e
+
+      - name: Workflow-Dateien unverändert prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- .github/workflows; then
+            echo "Das Apply-Skript darf keine Workflow-Dateien verändern."
+            git diff -- .github/workflows
+            exit 1
+          fi
+
+      - name: Whitespace prüfen
+        run: git diff --check
+
+      - name: Einmaliges Apply-Skript entfernen
+        shell: bash
+        run: |
+          rm -f scripts/applySystemOptimizationPackage.mjs
+          rm -f README-PACKAGE.md
+
+      - name: Änderungen committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A -- ':!.github/workflows'
+
+          if git diff --cached --quiet; then
+            echo "Keine commitfähigen Änderungen außerhalb der Workflows."
+            exit 0
+          fi
+
+          git commit -m "Optimize tracker system architecture"
+          git push

@@ -5,23 +5,19 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - ".github/workflows/apply-site-optimizations.yml"
-      - "scripts/applyOptimizationPackage.mjs"
-      - "scripts/validateRepository.mjs"
-      - "README-PACKAGE.md"
   pull_request:
 
 permissions:
   contents: read
 
+concurrency:
+  group: repository-quality-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  apply:
-    name: Apply and validate optimizations
-    if: github.event_name == 'workflow_dispatch'
+  validate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 20
 
     steps:
       - name: Repository auschecken
@@ -29,128 +25,59 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Node.js einrichten
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Optimierungspaket anwenden
+      - name: Prüfen, ob das Update noch aussteht
+        id: update_state
         shell: bash
         run: |
-          if [[ -f scripts/applyOptimizationPackage.mjs ]]; then
-            node scripts/applyOptimizationPackage.mjs
+          if [[ -f scripts/applySystemOptimizationPackage.mjs ]]; then
+            echo "pending=true" >> "$GITHUB_OUTPUT"
+            echo "Das Systemupdate wurde noch nicht angewendet. Die Qualitätsprüfung wird bis dahin übersprungen."
           else
-            echo "Das Optimierungspaket wurde bereits angewendet. Es wird nur validiert."
+            echo "pending=false" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Abschließende Leerzeichen bereinigen
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          import subprocess
-
-          commands = [
-              ["git", "diff", "--name-only", "-z"],
-              ["git", "ls-files", "--others", "--exclude-standard", "-z"],
-          ]
-
-          paths = set()
-          for command in commands:
-              result = subprocess.run(
-                  command,
-                  check=True,
-                  stdout=subprocess.PIPE,
-              )
-              paths.update(
-                  entry.decode("utf-8")
-                  for entry in result.stdout.split(b"\0")
-                  if entry
-              )
-
-          text_extensions = {
-              ".css", ".html", ".js", ".json", ".md",
-              ".mjs", ".txt", ".yaml", ".yml",
-          }
-
-          for relative_path in sorted(paths):
-              file = Path(relative_path)
-              if not file.is_file() or file.suffix.lower() not in text_extensions:
-                  continue
-
-              content = file.read_bytes()
-              normalized = re.sub(
-                  rb"[ \t]+(?=\r?$)",
-                  b"",
-                  content,
-                  flags=re.MULTILINE,
-              )
-
-              if normalized != content:
-                  file.write_bytes(normalized)
-                  print(f"Bereinigt: {relative_path}")
-          PY
-
-      - name: Daten und Referenzen validieren
-        run: node scripts/validateRepository.mjs
-
-      - name: JavaScript-Syntax prüfen
-        shell: bash
-        run: |
-          while IFS= read -r -d '' file; do
-            node --check "$file"
-          done < <(find assets/js scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0)
-
-      - name: Diff prüfen
-        run: git diff --check
-
-      - name: Änderungen committen
-        shell: bash
-        run: |
-          if git diff --quiet && git diff --cached --quiet; then
-            echo "Keine Änderungen erforderlich."
-            exit 0
-          fi
-
-          if ! git diff --quiet -- .github/workflows; then
-            echo "Fehler: Der Apply-Lauf darf keine Workflow-Dateien verändern."
-            git diff -- .github/workflows
-            exit 1
-          fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
-          git commit -m "Optimize tracker architecture and data validation"
-          git push
-
-  validate:
-    name: Validate tracker repository
-    if: github.event_name != 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-
-    steps:
-      - name: Repository auschecken
-        uses: actions/checkout@v4
 
       - name: Node.js einrichten
+        if: steps.update_state.outputs.pending == 'false'
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: 22
+          cache: npm
 
-      - name: Daten und Referenzen validieren
-        run: node scripts/validateRepository.mjs
+      - name: Abhängigkeiten installieren
+        if: steps.update_state.outputs.pending == 'false'
+        run: npm ci --ignore-scripts
+
+      - name: Chromium für Playwright installieren
+        if: steps.update_state.outputs.pending == 'false'
+        run: npx playwright install --with-deps chromium
+
+      - name: Repository validieren
+        if: steps.update_state.outputs.pending == 'false'
+        run: npm run validate:data
 
       - name: JavaScript-Syntax prüfen
+        if: steps.update_state.outputs.pending == 'false'
         shell: bash
         run: |
+          set -euo pipefail
           while IFS= read -r -d '' file; do
             node --check "$file"
-          done < <(find assets/js scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0)
+          done < <(find assets scripts tests -type f \( -name '*.js' -o -name '*.mjs' \) -print0)
 
-      - name: Whitespace-Fehler prüfen
-        run: git diff --check
+      - name: Browser-Smoke-Tests ausführen
+        if: steps.update_state.outputs.pending == 'false'
+        run: npm run test:e2e
+
+      - name: Whitespace des Pushes prüfen
+        if: >-
+          steps.update_state.outputs.pending == 'false' &&
+          github.event_name == 'push'
+        shell: bash
+        run: git show --check --oneline --no-renames HEAD
+
+      - name: Whitespace des Pull Requests prüfen
+        if: >-
+          steps.update_state.outputs.pending == 'false' &&
+          github.event_name == 'pull_request'
+        shell: bash
+        run: git diff --check "${{ github.event.pull_request.base.sha }}...${{ github.sha }}"
