@@ -1,0 +1,68 @@
+name: Apply overview card metadata
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Apply-Skript prüfen
+        run: node --check scripts/applyOverviewCardMetadata.mjs
+
+      - name: Kartenmetadaten anwenden
+        run: node scripts/applyOverviewCardMetadata.mjs
+
+      - name: JavaScript-Syntax prüfen
+        run: |
+          node --check assets/js/views/overviewCardView.js
+          node --check assets/js/views/gameView.js
+          node --check scripts/validateOverviewCardMetadata.mjs
+          node --check scripts/validateRepository.mjs
+          node --check tests/e2e/overview-card-metadata.spec.mjs
+
+      - name: Repository validieren
+        run: node scripts/validateRepository.mjs
+
+      - name: Browser-Abhängigkeiten installieren
+        if: hashFiles('package-lock.json') != ''
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Browser-Smoke-Tests ausführen
+        if: hashFiles('package-lock.json') != ''
+        run: npm run test:e2e
+
+      - name: Diff prüfen
+        run: git diff --check
+
+      - name: Einmaliges Apply-Skript entfernen
+        run: rm -f scripts/applyOverviewCardMetadata.mjs
+
+      - name: Änderungen committen und pushen
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add metadata to overview cards"
+          git push
