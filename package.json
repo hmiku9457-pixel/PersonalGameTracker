@@ -4,7 +4,9 @@
   "scripts": {
     "validate:data": "node scripts/validateRepository.mjs",
     "test:e2e": "playwright test",
-    "measure:performance": "node scripts/measurePerformance.mjs"
+    "measure:performance": "node scripts/measurePerformance.mjs",
+    "generate:progress-index": "node scripts/generateProgressIndex.mjs",
+    "check:progress-index": "node scripts/generateProgressIndex.mjs --check"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1"

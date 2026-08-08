@@ -12,10 +12,15 @@ import {
     getCompletedCountForCategory
 } from "./progressService.js";
 
+import {
+    getProgressItemIds
+} from "./progressIndexService.js";
+
 /**
- * Berechnet den Fortschritt eines Manifest-Eintrags ausschließlich
- * aus Manifest-Metadaten und dem Kategorieindex des Fortschritts.
- * Vollständige Item-JSON-Dateien werden dafür nicht geladen.
+ * Berechnet den Fortschritt eines Manifest-Eintrags aus Manifest-Metadaten
+ * und einem statischen Item-ID-Index. Dadurch müssen die großen
+ * Kategorie-JSONs nicht geladen werden, während historische category_id-
+ * Werte in Supabase die Anzeige nicht mehr verfälschen.
  *
  * @param {string} gameId
  * @param {object} entry
@@ -33,31 +38,61 @@ export async function calculateManifestEntryProgress(
         return emptyProgress();
     }
 
-    if (entry.type === "manifest") {
-        const manifestFile =
-            resolveRelativeFile(
-                parentManifestFile,
-                entry.file
-            );
+    const resolvedFile =
+        resolveRelativeFile(
+            parentManifestFile,
+            entry.file
+        );
 
+    if (entry.type === "manifest") {
         const manifest =
             await loadManifest(
                 gameId,
-                manifestFile
+                resolvedFile
             );
 
         return calculateManifestProgressFromMetadata(
             gameId,
             manifest,
-            manifestFile,
+            resolvedFile,
             progressData
         );
     }
 
-    const total =
-        normalizeCount(
-            entry.itemCount
+    const declaredTotal =
+        normalizeCount(entry.itemCount);
+
+    const indexedItemIds =
+        await getProgressItemIds(
+            gameId,
+            resolvedFile
         );
+
+    if (indexedItemIds) {
+        const total =
+            declaredTotal ??
+            indexedItemIds.length;
+
+        const completed =
+            Math.min(
+                total,
+                countCompletedItemIds(
+                    progressData,
+                    indexedItemIds
+                )
+            );
+
+        return {
+            completed,
+            total
+        };
+    }
+
+    /*
+     * Rückwärtskompatibler Fallback für Spiele ohne Index.
+     */
+    const total =
+        declaredTotal ?? 0;
 
     const completed =
         Math.min(
@@ -76,7 +111,7 @@ export async function calculateManifestEntryProgress(
 
 /**
  * Berechnet den Fortschritt eines vollständigen Manifests rekursiv.
- * Es werden nur weitere Manifeste geladen.
+ * Es werden nur kleine Manifest- und Indexdateien geladen.
  *
  * @param {string} gameId
  * @param {object} manifest
@@ -91,22 +126,19 @@ export async function calculateManifestProgressFromMetadata(
     progressData
 ) {
     const categories =
-        Array.isArray(
-            manifest?.categories
-        )
+        Array.isArray(manifest?.categories)
             ? manifest.categories
             : [];
 
     const results =
         await Promise.all(
-            categories.map(
-                entry =>
-                    calculateManifestEntryProgress(
-                        gameId,
-                        entry,
-                        manifestFile,
-                        progressData
-                    )
+            categories.map(entry =>
+                calculateManifestEntryProgress(
+                    gameId,
+                    entry,
+                    manifestFile,
+                    progressData
+                )
             )
         );
 
@@ -115,7 +147,6 @@ export async function calculateManifestProgressFromMetadata(
             completed:
                 summary.completed +
                 progress.completed,
-
             total:
                 summary.total +
                 progress.total
@@ -124,14 +155,32 @@ export async function calculateManifestProgressFromMetadata(
     );
 }
 
+function countCompletedItemIds(
+    progressData,
+    itemIds
+) {
+    if (!progressData?.progress) {
+        return 0;
+    }
+
+    let completed = 0;
+
+    for (const itemId of itemIds) {
+        if (progressData.progress[itemId]) {
+            completed++;
+        }
+    }
+
+    return completed;
+}
+
 function normalizeCount(value) {
-    const count =
-        Number(value);
+    const count = Number(value);
 
     return Number.isInteger(count) &&
         count >= 0
             ? count
-            : 0;
+            : null;
 }
 
 function emptyProgress() {
