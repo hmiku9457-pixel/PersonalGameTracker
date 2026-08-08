@@ -25,6 +25,55 @@ jobs:
       - name: Optimierungspaket anwenden
         run: node scripts/applyOptimizationPackage.mjs
 
+      - name: Abschließende Leerzeichen bereinigen
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import subprocess
+
+          commands = [
+              ["git", "diff", "--name-only", "-z"],
+              ["git", "ls-files", "--others", "--exclude-standard", "-z"],
+          ]
+
+          paths = set()
+          for command in commands:
+              result = subprocess.run(
+                  command,
+                  check=True,
+                  stdout=subprocess.PIPE,
+              )
+              paths.update(
+                  entry.decode("utf-8")
+                  for entry in result.stdout.split(b"\0")
+                  if entry
+              )
+
+          text_extensions = {
+              ".css", ".html", ".js", ".json", ".md",
+              ".mjs", ".txt", ".yaml", ".yml",
+          }
+
+          for relative_path in sorted(paths):
+              file = Path(relative_path)
+              if not file.is_file() or file.suffix.lower() not in text_extensions:
+                  continue
+
+              content = file.read_bytes()
+              normalized = re.sub(
+                  rb"[ \t]+(?=\r?$)",
+                  b"",
+                  content,
+                  flags=re.MULTILINE,
+              )
+
+              if normalized != content:
+                  file.write_bytes(normalized)
+                  print(f"Bereinigt: {relative_path}")
+          PY
+
       - name: Daten und Referenzen validieren
         run: node scripts/validateRepository.mjs
 
