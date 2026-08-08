@@ -1,0 +1,44 @@
+name: Apply progress card layout hotfix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-hotfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Hotfix anwenden
+        run: node scripts/applyProgressCardLayoutHotfix.mjs
+
+      - name: JavaScript-Syntax prüfen
+        run: |
+          node --check assets/js/progressCardLayoutHotfix.js
+          node --check scripts/applyProgressCardLayoutHotfix.mjs
+
+      - name: Geänderte Dateien prüfen
+        run: git diff --check
+
+      - name: Änderungen committen und pushen
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Unify progress card layout across overview pages"
+          git push
