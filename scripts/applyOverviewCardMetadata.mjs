@@ -102,32 +102,13 @@ async function patchGameView() {
     const relativePath = "assets/js/views/gameView.js";
     let source = await readText(relativePath);
 
-    if (!source.includes('from "./overviewCardView.js"')) {
-        throw new Error(
-            "Die native Übersichtskarten-Komponente wurde in gameView.js nicht gefunden."
-        );
-    }
-
-    source = source.replace(
-        /import\s*\{([\s\S]*?)\}\s*from\s*"\.\/overviewCardView\.js";/,
-        (fullMatch, imports) => {
-            const names = imports
-                .split(",")
-                .map(value => value.trim())
-                .filter(Boolean);
-
-            for (const name of [
-                "createOverviewMeta",
-                "createOverviewProgress",
-                "updateOverviewProgress"
-            ]) {
-                if (!names.includes(name)) {
-                    names.push(name);
-                }
-            }
-
-            return `import {\n\t${names.join(",\n\t")}\n} from "./overviewCardView.js";`;
-        }
+    source = mergeOverviewCardImports(
+        source,
+        [
+            "createOverviewMeta",
+            "createOverviewProgress",
+            "updateOverviewProgress"
+        ]
     );
 
     const range = findFunctionRange(
@@ -429,6 +410,8 @@ async function verifyResult() {
 
     const checks = [
         [gameView.includes("createOverviewMeta"), "gameView.js rendert keine Kartenmetadaten"],
+        [countOverviewCardImports(gameView) === 1, "gameView.js enthält nicht genau einen Overview-Card-Import"],
+        [countImportedBinding(gameView, "createOverviewProgress") === 1, "createOverviewProgress ist in gameView.js nicht genau einmal importiert"],
         [overviewView.includes("overview-card-meta"), "Die gemeinsame Kartenkomponente enthält keine Metazeile"],
         [!overviewView.includes("MutationObserver"), "Die Kartenkomponente enthält unerwartet einen MutationObserver"],
         [!gamesData.includes("itemLabel"), "data/games.json wurde unerwartet verändert"],
@@ -843,6 +826,120 @@ async function installSupabaseMock(page) {
     );
 }
 `;
+}
+
+function countOverviewCardImports(source) {
+    return [
+        ...source.matchAll(
+            /import\s*\{[\s\S]*?\}\s*from\s*["']\.\/overviewCardView\.js["'];?/g
+        )
+    ].length;
+}
+
+function countImportedBinding(source, bindingName) {
+    const importPattern =
+        /import\s*\{([\s\S]*?)\}\s*from\s*["']\.\/overviewCardView\.js["'];?/g;
+    let count = 0;
+
+    for (const match of source.matchAll(importPattern)) {
+        const entries = match[1]
+            .split(",")
+            .map(value => value.replace(/\s+/g, " ").trim())
+            .filter(Boolean);
+
+        for (const entry of entries) {
+            const aliasMatch = entry.match(
+                /\bas\s+([A-Za-z_$][\w$]*)$/
+            );
+            const localBinding = aliasMatch
+                ? aliasMatch[1]
+                : entry;
+
+            if (localBinding === bindingName) {
+                count += 1;
+            }
+        }
+    }
+
+    return count;
+}
+
+function mergeOverviewCardImports(source, requiredNames) {
+    const importPattern =
+        /import\s*\{([\s\S]*?)\}\s*from\s*["']\.\/overviewCardView\.js["'];?/g;
+
+    const matches = [
+        ...source.matchAll(importPattern)
+    ];
+
+    const importNames = [];
+    const localBindings = new Set();
+
+    for (const match of matches) {
+        const entries = match[1]
+            .split(",")
+            .map(value => value.replace(/\s+/g, " ").trim())
+            .filter(Boolean);
+
+        for (const entry of entries) {
+            const aliasMatch = entry.match(
+                /\bas\s+([A-Za-z_$][\w$]*)$/
+            );
+            const localBinding = aliasMatch
+                ? aliasMatch[1]
+                : entry;
+
+            if (localBindings.has(localBinding)) {
+                continue;
+            }
+
+            localBindings.add(localBinding);
+            importNames.push(entry);
+        }
+    }
+
+    for (const requiredName of requiredNames) {
+        if (!localBindings.has(requiredName)) {
+            localBindings.add(requiredName);
+            importNames.push(requiredName);
+        }
+    }
+
+    const importBlock =
+        `import {\n\t${importNames.join(",\n\t")}\n} from "./overviewCardView.js";`;
+
+    if (matches.length === 0) {
+        const languageImportPattern =
+            /import\s*\{[\s\S]*?\}\s*from\s*["']\.\.\/services\/languageService\.js["'];?/;
+        const languageImport = source.match(
+            languageImportPattern
+        );
+
+        if (!languageImport) {
+            throw new Error(
+                "Kein geeigneter Import-Anker in gameView.js gefunden."
+            );
+        }
+
+        return source.replace(
+            languageImportPattern,
+            languageImport[0] + "\n\n" + importBlock
+        );
+    }
+
+    let inserted = false;
+
+    return source.replace(
+        importPattern,
+        () => {
+            if (inserted) {
+                return "";
+            }
+
+            inserted = true;
+            return importBlock;
+        }
+    );
 }
 
 function findFunctionRange(source, signature) {
