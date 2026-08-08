@@ -37,6 +37,11 @@
   border: 0 !important;
 }
 
+.pgt-overview-card-unified > .comms-section-card-progress,
+.pgt-overview-card-unified .comms-section-card-progress:not(.pgt-progress-card-section) {
+  display: none !important;
+}
+
 .pgt-progress-card-section {
   margin-top: 1.15rem;
   display: grid;

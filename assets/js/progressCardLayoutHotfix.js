@@ -240,7 +240,19 @@ function setAttributeIfChanged(element, name, value) {
 }
 
 function hideLegacyProgressUi(card, state) {
-  for (const container of findLegacyProgressContainers(state.sourceElements)) {
+  const legacyContainers = new Set(
+    findLegacyProgressContainers(state.sourceElements)
+  );
+
+  const nativeCommsProgress = card.querySelector(
+    '.comms-section-card-progress'
+  );
+
+  if (nativeCommsProgress) {
+    legacyContainers.add(nativeCommsProgress);
+  }
+
+  for (const container of legacyContainers) {
     container.classList.add(SOURCE_HIDDEN_CLASS);
     container.setAttribute('aria-hidden', 'true');
   }
@@ -257,6 +269,7 @@ function findLegacyProgressContainers(sourceElements) {
     const nearbyContainer = element.closest(
       '.category-progress-wrapper, ' +
       '.manifest-progress-wrapper, ' +
+      '.comms-section-card-progress, ' +
       '.comms-section-progress, ' +
       '.progress-container, ' +
       '.progress-wrapper, ' +
