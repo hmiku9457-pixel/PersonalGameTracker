@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const PACKAGE_VERSION = "2026-08-08.3";
+const PACKAGE_VERSION = "2026-08-08.4";
 const APPLY_WORKFLOW = ".github/workflows/apply-site-optimizations.yml";
 const APPLY_SCRIPT = "scripts/applyOptimizationPackage.mjs";
 const touchedFiles = new Set();
@@ -583,38 +583,52 @@ async function patchCommsOverviewView() {
     const file = "assets/js/views/commsOverviewView.js";
     let source = await readText(file);
 
-    source = replaceAllRequired(
+    /*
+     * Diese Migration arbeitet absichtlich ohne feste Trefferzahlen.
+     * Die View hat während der Entwicklung mehrere nahezu identische
+     * Zugriffsstellen erhalten. Entscheidend ist nur, dass nach dem
+     * Patch keine veralteten Manifestfelder mehr verwendet werden.
+     */
+    source = replaceLegacyToken(
         source,
         "commsManifest.sections",
         "commsManifest.categories",
-        2,
         "Comms-Kategorien"
     );
 
-    source = replaceAllRequired(
+    source = replaceLegacyToken(
         source,
         "section.manifest",
         "section.file",
-        2,
         "Comms-Manifestpfade"
     );
 
-    source = replaceOnce(
-        source,
-        `                    "allMissions.json"`,
-        `                    section.dataFile ??
-                    "allMissions.json"`,
-        "Missions-Datendatei"
+    source = ensureMissionsDataFileFallback(
+        source
     );
 
-    source = replaceOnce(
+    source = replaceLegacyToken(
         source,
-        `const files = Array.isArray(sectionManifest.files)
-        ? sectionManifest.files
-        : [];`,
-        `const files = Array.isArray(sectionManifest.categories)
-        ? sectionManifest.categories
-        : [];`,
+        "sectionManifest.files",
+        "sectionManifest.categories",
+        "Comms-Unterkategorien"
+    );
+
+    assertMissingLegacyToken(
+        source,
+        "commsManifest.sections",
+        "Comms-Kategorien"
+    );
+
+    assertMissingLegacyToken(
+        source,
+        "section.manifest",
+        "Comms-Manifestpfade"
+    );
+
+    assertMissingLegacyToken(
+        source,
+        "sectionManifest.files",
         "Comms-Unterkategorien"
     );
 
@@ -1084,16 +1098,86 @@ function replaceRegexOnce(source, regex, replacement, label) {
     return source.replace(regex, replacement);
 }
 
-function replaceAllRequired(source, search, replacement, expectedCount, label) {
-    const count = source.split(search).length - 1;
+function replaceLegacyToken(
+    source,
+    legacyToken,
+    currentToken,
+    label
+) {
+    const legacyCount =
+        source.split(legacyToken).length - 1;
 
-    if (count !== expectedCount) {
+    if (legacyCount > 0) {
+        console.log(
+            `${label}: ${legacyCount} veraltete Verwendung(en) werden ersetzt.`
+        );
+
+        return source
+            .split(legacyToken)
+            .join(currentToken);
+    }
+
+    if (source.includes(currentToken)) {
+        console.log(
+            `${label}: bereits auf dem aktuellen Stand.`
+        );
+
+        return source;
+    }
+
+    throw new Error(
+        `Weder alte noch neue Codepassage gefunden: ${label}`
+    );
+}
+
+function ensureMissionsDataFileFallback(source) {
+    if (source.includes("section.dataFile ??")) {
+        console.log(
+            "Missions-Datendatei: bereits auf dem aktuellen Stand."
+        );
+
+        return source;
+    }
+
+    const standaloneMissionFile =
+        /^(\s*)"allMissions\.json"(?=\s*[,)]?\s*$)/gm;
+
+    const matches = [
+        ...source.matchAll(
+            standaloneMissionFile
+        )
+    ];
+
+    if (matches.length === 0) {
         throw new Error(
-            `Unerwartete Anzahl für "${label}": erwartet ${expectedCount}, gefunden ${count}`
+            "Erwartete Codepassage nicht gefunden: Missions-Datendatei"
         );
     }
 
-    return source.split(search).join(replacement);
+    console.log(
+        `Missions-Datendatei: ${matches.length} Fallback-Stelle(n) werden erweitert.`
+    );
+
+    return source.replace(
+        standaloneMissionFile,
+        (match, indent) =>
+            `${indent}section.dataFile ??\n${indent}"allMissions.json"`
+    );
+}
+
+function assertMissingLegacyToken(
+    source,
+    legacyToken,
+    label
+) {
+    const remaining =
+        source.split(legacyToken).length - 1;
+
+    if (remaining > 0) {
+        throw new Error(
+            `${label}: nach dem Patch sind noch ${remaining} veraltete Verwendung(en) vorhanden.`
+        );
+    }
 }
 
 async function readText(relativeFile) {
