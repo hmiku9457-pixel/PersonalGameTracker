@@ -1,44 +1,55 @@
 # Personal Game Tracker
 
-Ein statischer, zweisprachiger Web-Tracker für Achievements, Collectibles, Ausrüstung und weitere Spielinhalte. Die Anwendung läuft ohne Build-Schritt auf GitHub Pages und verwendet Vanilla JavaScript, JSON-Manifeste und optional Supabase für den persönlichen Fortschritt.
+Ein statischer, zweisprachiger Web-Tracker für Achievements, Collectibles, Ausrüstung und weitere Spielinhalte. Die Anwendung läuft ohne Produktions-Build direkt auf GitHub Pages und verwendet Vanilla JavaScript, JSON-Manifeste und optional Supabase für den persönlichen Fortschritt.
 
 ## Funktionen
 
 - Spieleübersicht mit Gesamtfortschritt
 - beliebig tiefe Manifest- und Kategorienavigation
+- einheitliche Übersichtskarten mit Inhaltsmetadaten und Fortschrittsbalken
 - deutsche und englische Inhalte
 - Suche, Statusfilter und Sortierung innerhalb großer Listen
 - persönliche Fortschrittsspeicherung über Supabase
 - spezielle Karten- und Listenansichten für die Comms aus *The Division 2*
 - responsive Darstellung für Desktop und Mobilgeräte
-- automatische Daten- und Referenzprüfung über GitHub Actions
+- automatisierte Daten-, Syntax- und Browserprüfung über GitHub Actions
 
 ## Projektstruktur
 
 ```text
 assets/
-  css/                 Stylesheets
-  js/                  Router, Views und Services
-  maps/                Karten für spezielle Tracker-Ansichten
-  thumbnails/          Spielkacheln
+  css/                    allgemeine und komponentenspezifische Stylesheets
+  js/                     Router, Views und Services
+  maps/                   Karten für spezielle Tracker-Ansichten
+  thumbnails/             Spielkacheln
 data/
-  games.json           globale Spieleliste
-  <gameId>/            Manifest und Kategoriedaten eines Spiels
+  games.json              globale Spieleliste
+  <gameId>/               Manifest, Fortschrittsindex und Kategoriedaten
 scripts/
+  generateProgressIndex.mjs
+  measurePerformance.mjs
+  serveStatic.mjs
+  validateOverviewCardMetadata.mjs
   validateRepository.mjs
+tests/e2e/                Playwright-Smoke- und Regressionstests
+package.json              Entwicklungs- und Prüfkommandos
+playwright.config.mjs     Browser-Testkonfiguration
 index.html
 404.html
 ```
 
 ## Lokal starten
 
-Da die Anwendung JSON-Dateien mit `fetch()` lädt, sollte sie über einen lokalen Webserver geöffnet werden.
+Nach der Installation der Entwicklungsabhängigkeiten:
 
 ```bash
-python -m http.server 8000
+npm ci
+node scripts/serveStatic.mjs
 ```
 
-Danach: `http://localhost:8000`
+Danach ist die Anwendung unter `http://127.0.0.1:4173` erreichbar.
+
+Alternativ kann für einen einfachen manuellen Test auch ein anderer statischer Webserver verwendet werden.
 
 ## Datenmodell
 
@@ -47,36 +58,54 @@ Jedes Spiel besitzt ein `manifest.json`. Ein Manifest-Eintrag verweist entweder 
 ```json
 {
   "id": "achievements",
-  "name": "Achievements",
+  "name": {
+    "de": "Erfolge",
+    "en": "Achievements"
+  },
+  "description": {
+    "de": "Alle im Spiel verfügbaren Erfolge.",
+    "en": "All achievements available in the game."
+  },
   "type": "category",
   "file": "achievements.json",
-  "itemCount": 41
+  "itemCount": 41,
+  "itemLabel": {
+    "de": "Erfolge",
+    "en": "achievements"
+  }
 }
 ```
 
-`itemCount` wird durch das Repository-Prüfskript verifiziert und dient der schnellen Fortschrittsberechnung auf der Spieleübersicht. Die eigentlichen Itemdateien müssen dafür nicht vollständig in den Browser geladen werden.
+`itemCount` wird automatisch geprüft. Die Übersichtskarten verwenden zusätzliche Metadaten wie `itemLabel`, `groupCount` und `groupLabel`.
 
-## Prüfung ausführen
+## Entwicklungs- und Prüfkommandos
 
 ```bash
-node scripts/validateRepository.mjs
+npm run generate:progress-index
+npm run check:progress-index
+npm run validate:data
+npm run test:e2e
+npm run measure:performance
 ```
 
-Die Prüfung kontrolliert unter anderem:
+Die Repository-Prüfung kontrolliert unter anderem:
 
 - gültige JSON-Syntax
-- vorhandene Manifest-Referenzen
+- vorhandene und sichere Manifestreferenzen
 - korrekte `itemCount`-Werte
+- aktuelle Fortschrittsindizes
+- zweisprachige Übersichtskarten-Metadaten
 - die vereinheitlichte Comms-Manifeststruktur
-- lokale Datei-Referenzen aus `index.html` und `404.html`
-- doppelte Item-IDs als Warnung
+- lokale HTML- und Assetreferenzen
+- doppelte Item-IDs
+- verwaiste JSON-Dateien und Assets als Warnung
 
-Der Workflow `Repository quality` läuft automatisch bei Pushes und Pull Requests.
+Der Workflow **Repository quality** läuft automatisch bei Pushes und Pull Requests und kann zusätzlich manuell gestartet werden.
 
 ## Fortschritt und Supabase
 
-Die bestehende Supabase-Integration und das Datenbankmodell werden durch die Repository-Optimierung nicht verändert. Der öffentliche Browser-Key ist kein Service-Role-Key; der Zugriff auf Benutzerdaten muss weiterhin über korrekt konfigurierte Row-Level-Security-Regeln abgesichert sein.
+Die Supabase-Integration speichert den persönlichen Fortschritt angemeldeter Benutzer. Der öffentliche Browser-Key ist kein Service-Role-Key; der Zugriff auf Benutzerdaten muss weiterhin durch korrekt konfigurierte Row-Level-Security-Regeln abgesichert sein.
 
 ## Deployment
 
-Die Seite kann direkt über GitHub Pages aus dem `main`-Branch ausgeliefert werden. Es ist kein npm-Build und kein Bundler erforderlich.
+Die Seite wird direkt aus dem `main`-Branch über GitHub Pages ausgeliefert. npm und Playwright werden nur für Entwicklung und Qualitätssicherung verwendet; für das Deployment ist kein Bundler erforderlich.
