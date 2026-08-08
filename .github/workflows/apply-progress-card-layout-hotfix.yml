@@ -20,13 +20,17 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Apply-Skript prüfen
+        run: node --check scripts/applyProgressCardLayoutHotfix.mjs
+
       - name: Hotfix anwenden
         run: node scripts/applyProgressCardLayoutHotfix.mjs
 
-      - name: JavaScript-Syntax prüfen
-        run: |
-          node --check assets/js/progressCardLayoutHotfix.js
-          node --check scripts/applyProgressCardLayoutHotfix.mjs
+      - name: Erzeugtes JavaScript prüfen
+        run: node --check assets/js/progressCardLayoutHotfix.js
+
+      - name: Einmaliges Apply-Skript entfernen
+        run: rm -f scripts/applyProgressCardLayoutHotfix.mjs
 
       - name: Geänderte Dateien prüfen
         run: git diff --check
