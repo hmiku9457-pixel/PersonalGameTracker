@@ -4,6 +4,13 @@
    ========================================================= */
 
 import {
+	getActiveViewScope,
+	isViewScopeCurrent,
+	registerViewCleanup
+} from "../services/viewScopeService.js";
+
+
+import {
     loadCategoryData,
     resolveRelativeFile
 } from "../services/dataService.js";
@@ -44,7 +51,6 @@ import {
 const PANEL_BREAKPOINT = 900;
 const PANEL_STORAGE_PREFIX = "pgt.commsMap.panel.";
 
-let activeViewController = null;
 let activeMapObjectUrl = null;
 
 const UI_TEXT = {
@@ -115,6 +121,36 @@ export async function renderCommsMapView(
     sectionManifestFile,
     routeIds
 ) {
+	/* Map-Ressourcen beim Routenwechsel freigeben. */
+	registerViewCleanup(
+		() => {
+			if (activeMapObjectUrl) {
+				URL.revokeObjectURL(
+					activeMapObjectUrl
+				);
+
+				activeMapObjectUrl =
+					null;
+			}
+		},
+		getActiveViewScope()
+	);
+
+	const viewScope =
+		getActiveViewScope();
+
+	const fallbackController =
+		new AbortController();
+
+	const signal =
+		viewScope?.signal ??
+		fallbackController.signal;
+
+	registerViewCleanup(
+		() => fallbackController.abort(),
+		viewScope
+	);
+
     const mainContent = document.getElementById(
         "main-content"
     );
@@ -126,8 +162,7 @@ export async function renderCommsMapView(
         return;
     }
 
-    activeViewController?.abort();
-    activeViewController = new AbortController();
+
 
     if (activeMapObjectUrl) {
         URL.revokeObjectURL(activeMapObjectUrl);
@@ -213,11 +248,18 @@ export async function renderCommsMapView(
             layout
         );
 
-        mainContent.replaceChildren(page);
+        if (
+		viewScope &&
+		!isViewScopeCurrent(viewScope)
+	) {
+		return;
+	}
+
+	mainContent.replaceChildren(page);
 
         registerCommsMapHeightController(
             layout,
-            activeViewController.signal
+            signal
         );
         updateActiveGameNavigation(game.id);
 
@@ -230,7 +272,7 @@ export async function renderCommsMapView(
             closeButton: listPanel.closeButton,
             sectionId: section.id,
             uiText,
-            signal: activeViewController.signal
+            signal: signal
         });
 
         panelState.applyInitialState();
@@ -241,18 +283,27 @@ export async function renderCommsMapView(
             viewport: mapArea.viewport,
             canvas: mapArea.canvas,
             uiText,
-            signal: activeViewController.signal
+            signal: signal
         });
 
         const mapLoaded = await loadMapImage(
             mapArea.image,
             mapArea.emptyState,
             sectionManifest.mapImage ?? section.mapImage ?? "",
-            activeViewController.signal
+            signal
         );
         mapController.setMapAvailable(mapLoaded);
     }
     catch (error) {
+		/* View-Abbruch durch Routenwechsel */
+		if (
+			error?.name === "AbortError" ||
+			(viewScope &&
+				!isViewScopeCurrent(viewScope))
+		) {
+			return;
+		}
+
         console.error(
             "[Comms Map] Kartenansicht konnte nicht geladen werden:",
             error

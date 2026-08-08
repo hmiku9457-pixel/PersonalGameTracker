@@ -116,5 +116,6 @@
       "groupCount": 1
     }
   ],
-  "itemCount": 515
+  "itemCount": 515,
+  "renderer": "comms"
 }

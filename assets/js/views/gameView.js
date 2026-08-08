@@ -4,6 +4,16 @@
    ========================================================= */
 
 import {
+	calculateManifestEntryProgress
+} from "../services/progressSummaryService.js";
+
+import {
+	getActiveViewScope,
+	isViewScopeCurrent
+} from "../services/viewScopeService.js";
+
+
+import {
 	loadCategoryData,
 	loadManifest,
 	resolveRelativeFile
@@ -52,6 +62,16 @@ export async function renderGame(
 	game,
 	options = {}
 ) {
+	const viewScope =
+		getActiveViewScope();
+
+	if (
+		viewScope &&
+		!isViewScopeCurrent(viewScope)
+	) {
+		return;
+	}
+
 
 	const manifest =
 		options.manifest ||
@@ -495,6 +515,8 @@ async function loadManifestProgress(
 	manifestFile,
 	progressData
 ) {
+	const viewScope =
+		getActiveViewScope();
 
 	const categories =
 		Array.isArray(
@@ -503,14 +525,11 @@ async function loadManifestProgress(
 			? manifest.categories
 			: [];
 
-
 	const results =
 		await Promise.all(
 			categories.map(
 				async (category) => {
-
 					try {
-
 						const progress =
 							await calculateEntryProgress(
 								game.id,
@@ -519,34 +538,51 @@ async function loadManifestProgress(
 								progressData
 							);
 
+						if (
+							viewScope &&
+							!isViewScopeCurrent(
+								viewScope
+							)
+						) {
+							return progress;
+						}
 
 						updateCategoryProgress(
 							category.id,
 							progress
 						);
 
-
 						return progress;
-
-					} catch (error) {
+					}
+					catch (error) {
+						if (
+							error?.name ===
+								"AbortError" ||
+							(viewScope &&
+								!isViewScopeCurrent(
+									viewScope
+								))
+						) {
+							return {
+								completed: 0,
+								total: 0
+							};
+						}
 
 						console.error(
 							`Fortschritt für Kategorie "${category.id}" konnte nicht geladen werden.`,
 							error
 						);
 
-
 						const progress = {
 							completed: 0,
 							total: 0
 						};
 
-
 						updateCategoryProgress(
 							category.id,
 							progress
 						);
-
 
 						return progress;
 					}
@@ -554,6 +590,12 @@ async function loadManifestProgress(
 			)
 		);
 
+	if (
+		viewScope &&
+		!isViewScopeCurrent(viewScope)
+	) {
+		return;
+	}
 
 	updateTotalProgress(
 		results
@@ -583,58 +625,10 @@ async function calculateEntryProgress(
 	parentManifestFile,
 	progressData
 ) {
-
-	const resolvedFile =
-		resolveRelativeFile(
-			parentManifestFile,
-			entry.file
-		);
-
-
-	/*
-	 * Untermanifest
-	 */
-
-	if (
-		entry.type ===
-		"manifest"
-	) {
-
-		const childManifest =
-			await loadManifest(
-				gameId,
-				resolvedFile
-			);
-
-
-		return calculateManifestProgress(
-			gameId,
-			childManifest,
-			resolvedFile,
-			progressData
-		);
-	}
-
-
-	/*
-	 * Normale Kategorie
-	 */
-
-	const resolvedCategory = {
-		...entry,
-		file: resolvedFile
-	};
-
-
-	const data =
-		await loadCategoryData(
-			gameId,
-			resolvedCategory
-		);
-
-
-	return calculateCategoryProgress(
-		data,
+	return calculateManifestEntryProgress(
+		gameId,
+		entry,
+		parentManifestFile,
 		progressData
 	);
 }

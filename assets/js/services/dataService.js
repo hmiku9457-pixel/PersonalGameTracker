@@ -1,9 +1,63 @@
+import {
+	getActiveViewScope
+} from "./viewScopeService.js";
+
+
 const DATA_ROOT = "data";
 
 const jsonCache = new Map();
-const jsonRequestCache = new Map();
 
-let activeJsonRequestController = null;
+/* Laufende JSON-Requests werden pro View-Scope geteilt. */
+const viewJsonRequestCache =
+	new Map();
+const DEVELOPMENT_HOSTS =
+	new Set([
+		"localhost",
+		"127.0.0.1",
+		"[::1]"
+	]);
+
+/**
+ * Friert geladene JSON-Daten nur in der lokalen Entwicklung ein.
+ * Dadurch werden unbeabsichtigte Mutationen gecachter Daten sichtbar.
+ *
+ * @param {*} value
+ * @returns {*}
+ */
+function prepareJsonForCache(value) {
+	const hostname =
+		globalThis.location?.hostname ??
+		"";
+
+	return DEVELOPMENT_HOSTS.has(hostname)
+		? deepFreeze(value)
+		: value;
+}
+
+function deepFreeze(value, visited = new WeakSet()) {
+	if (
+		!value ||
+		typeof value !== "object" ||
+		visited.has(value)
+	) {
+		return value;
+	}
+
+	visited.add(value);
+
+	for (
+		const nestedValue
+		of Object.values(value)
+	) {
+		deepFreeze(
+			nestedValue,
+			visited
+		);
+	}
+
+	return Object.freeze(value);
+}
+
 
 /**
  * Beginnt einen neuen Request-Bereich für die aktuelle Route.
@@ -11,38 +65,11 @@ let activeJsonRequestController = null;
  *
  * @returns {AbortSignal}
  */
-export function beginJsonRequestScope() {
-	if (activeJsonRequestController) {
-		activeJsonRequestController.abort();
-	}
 
-	activeJsonRequestController =
-		new AbortController();
 
-	return activeJsonRequestController.signal;
-}
 
-function getActiveJsonRequestSignal() {
-	return activeJsonRequestController?.signal ?? null;
-}
 
-function getPendingJsonRequest(cacheKey, signal) {
-	const entry = jsonRequestCache.get(cacheKey);
 
-	if (!entry) {
-		return null;
-	}
-
-	if (
-		entry.signal === signal &&
-		!entry.signal?.aborted
-	) {
-		return entry.promise;
-	}
-
-	jsonRequestCache.delete(cacheKey);
-	return null;
-}
 
 
 /**
@@ -54,71 +81,99 @@ function getPendingJsonRequest(cacheKey, signal) {
  * @param {string} path
  * @returns {Promise<any>}
  */
-export async function loadJson(path) {
-	if (jsonCache.has(path)) {
-		return jsonCache.get(path);
+/**
+ * Führt einen JSON-Request im aktuellen View-Scope aus.
+ * Ein Routenwechsel bricht noch laufende Fetches ab.
+ *
+ * @param {string} path
+ * @param {object} options
+ * @param {boolean} options.optional
+ * @returns {Promise<any|null>}
+ */
+async function requestJson(
+	path,
+	{
+		optional = false
+	} = {}
+) {
+	const viewScope =
+		getActiveViewScope();
+
+	const requestKey =
+		`${optional ? "optional" : "required"}:${viewScope?.id ?? "global"}:${path}`;
+
+	if (
+		viewJsonRequestCache.has(
+			requestKey
+		)
+	) {
+		return viewJsonRequestCache.get(
+			requestKey
+		);
 	}
 
-	const signal =
-		getActiveJsonRequestSignal();
+	const request =
+		(async () => {
+			const response =
+				await fetch(
+					path,
+					{
+						signal:
+							viewScope?.signal
+					}
+				);
 
-	const cacheKey =
-		`required:${path}`;
+			if (
+				optional &&
+				response.status === 404
+			) {
+				return null;
+			}
 
-	const pendingRequest =
-		getPendingJsonRequest(
-			cacheKey,
-			signal
-		);
+			if (!response.ok) {
+				throw new Error(
+					`JSON konnte nicht geladen werden: ${path} (${response.status})`
+				);
+			}
 
-	if (pendingRequest) {
-		return pendingRequest;
-	}
-
-	const request = (async () => {
-		const response = await fetch(
-			path,
-			signal
-				? { signal }
-				: undefined
-		);
-
-		if (!response.ok) {
-			throw new Error(
-				`JSON konnte nicht geladen werden: ${path} (${response.status})`
+			return prepareJsonForCache(
+				await response.json()
 			);
-		}
+		})();
 
-		const data =
-			await response.json();
-
-		jsonCache.set(path, data);
-		return data;
-	})();
-
-	jsonRequestCache.set(
-		cacheKey,
-		{
-			promise: request,
-			signal
-		}
+	viewJsonRequestCache.set(
+		requestKey,
+		request
 	);
 
 	try {
 		return await request;
 	}
 	finally {
-		const entry =
-			jsonRequestCache.get(
-				cacheKey
-			);
-
-		if (entry?.promise === request) {
-			jsonRequestCache.delete(
-				cacheKey
+		if (
+			viewJsonRequestCache.get(
+				requestKey
+			) === request
+		) {
+			viewJsonRequestCache.delete(
+				requestKey
 			);
 		}
 	}
+}
+
+
+export async function loadJson(path) {
+	if (jsonCache.has(path)) {
+		return jsonCache.get(path);
+	}
+
+	const data =
+		await requestJson(path);
+
+	jsonCache.set(path, data);
+
+	return data;
 }
 
 
@@ -135,70 +190,19 @@ export async function loadOptionalJson(path) {
 		return jsonCache.get(path);
 	}
 
-	const signal =
-		getActiveJsonRequestSignal();
-
-	const cacheKey =
-		`optional:${path}`;
-
-	const pendingRequest =
-		getPendingJsonRequest(
-			cacheKey,
-			signal
-		);
-
-	if (pendingRequest) {
-		return pendingRequest;
-	}
-
-	const request = (async () => {
-		const response = await fetch(
+	const data =
+		await requestJson(
 			path,
-			signal
-				? { signal }
-				: undefined
+			{
+				optional: true
+			}
 		);
 
-		if (response.status === 404) {
-			return null;
-		}
-
-		if (!response.ok) {
-			throw new Error(
-				`JSON konnte nicht geladen werden: ${path} (${response.status})`
-			);
-		}
-
-		const data =
-			await response.json();
-
+	if (data !== null) {
 		jsonCache.set(path, data);
-		return data;
-	})();
-
-	jsonRequestCache.set(
-		cacheKey,
-		{
-			promise: request,
-			signal
-		}
-	);
-
-	try {
-		return await request;
 	}
-	finally {
-		const entry =
-			jsonRequestCache.get(
-				cacheKey
-			);
 
-		if (entry?.promise === request) {
-			jsonRequestCache.delete(
-				cacheKey
-			);
-		}
-	}
+	return data;
 }
 
 

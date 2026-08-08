@@ -4,6 +4,16 @@
    ========================================================= */
 
 import {
+    calculateManifestProgressFromMetadata
+} from "../services/progressSummaryService.js";
+
+import {
+    getActiveViewScope,
+    isViewScopeCurrent
+} from "../services/viewScopeService.js";
+
+
+import {
     loadCategoryData,
     loadManifest,
     resolveRelativeFile
@@ -41,15 +51,6 @@ import {
 } from "./pageBreadcrumbView.js";
 
 
-const COMMS_ROUTE_PREFIX = [
-    "collectibles",
-    "comms"
-];
-
-const COMMS_MANIFEST_FILE =
-    "collectibles/comms/manifest.json";
-
-
 /**
  * Übernimmt die speziellen Comms-Routen.
  *
@@ -68,86 +69,46 @@ const COMMS_MANIFEST_FILE =
  * @param {string[]} routeIds
  * @returns {Promise<boolean>}
  */
-export async function tryRenderCommsRoute(
+export async function renderConfiguredCommsView({
     game,
+    resolvedRoute,
     routeIds
-) {
-    if (!isCommsRoute(routeIds)) {
-        return false;
-    }
+}) {
+    const view =
+        resolvedRoute.entry?.view ??
+        resolvedRoute.manifest?.view;
 
-    const commsManifest = await loadManifest(
-        game.id,
-        COMMS_MANIFEST_FILE
-    );
+    const breadcrumbItems =
+        resolvedRoute.breadcrumbItems;
 
-
-    const collectiblesEntry =
-        Array.isArray(
-            game.categories
-        )
-            ? game.categories.find(
-                entry =>
-                    entry.id ===
-                    COMMS_ROUTE_PREFIX[0]
-            )
-            : null;
-
-    const commsBreadcrumbItems = [
-        game.name,
-        collectiblesEntry?.name ??
-        "Collectibles",
-        commsManifest.name ??
-        "Comms"
-    ];
-
-    if (routeIds.length === 2) {
+    if (view === "comms-overview") {
         await renderCommsOverview(
             game,
-            commsManifest,
-            routeIds
+            resolvedRoute.manifest,
+            routeIds,
+            resolvedRoute.manifestFile
         );
 
-
         applyPageBreadcrumbBanner(
-            commsBreadcrumbItems,
+            breadcrumbItems,
             {
                 removeDescriptions: true
             }
         );
 
-        return true;
+        return;
     }
 
-    if (routeIds.length !== 3) {
-        return false;
-    }
+    const section =
+        resolvedRoute.entry ?? {};
 
-    const sectionId = routeIds[2];
+    const sectionManifest =
+        resolvedRoute.manifest;
 
-    const section = Array.isArray(
-        commsManifest.categories
-    )
-        ? commsManifest.categories.find(
-            (entry) => entry.id === sectionId
-        )
-        : null;
+    const sectionManifestFile =
+        resolvedRoute.manifestFile;
 
-    if (!section) {
-        return false;
-    }
-
-    const sectionManifestFile = resolveRelativeFile(
-        COMMS_MANIFEST_FILE,
-        section.file
-    );
-
-    const sectionManifest = await loadManifest(
-        game.id,
-        sectionManifestFile
-    );
-
-    if (section.view === "list") {
+    if (view === "list") {
         await renderCategory(
             game,
             {
@@ -158,6 +119,7 @@ export async function tryRenderCommsRoute(
                     section.description,
                 file: resolveRelativeFile(
                     sectionManifestFile,
+                    sectionManifest.dataFile ??
                     section.dataFile ??
                     "allMissions.json"
                 ),
@@ -168,41 +130,40 @@ export async function tryRenderCommsRoute(
             }
         );
 
-
         applyPageBreadcrumbBanner(
-            [
-                ...commsBreadcrumbItems,
-                section.name
-            ],
+            breadcrumbItems,
             {
                 removeDescriptions: true
             }
         );
 
-        return true;
+        return;
     }
 
-    await renderCommsMapView(
-        game,
-        commsManifest,
-        section,
-        sectionManifest,
-        sectionManifestFile,
-        routeIds
+    if (view === "map") {
+        await renderCommsMapView(
+            game,
+            resolvedRoute.parentManifest ??
+            sectionManifest,
+            section,
+            sectionManifest,
+            sectionManifestFile,
+            routeIds
+        );
+
+        applyPageBreadcrumbBanner(
+            breadcrumbItems,
+            {
+                removeDescriptions: true
+            }
+        );
+
+        return;
+    }
+
+    throw new Error(
+        "Unbekannte Comms-Ansicht: " + view
     );
-
-
-    applyPageBreadcrumbBanner(
-        [
-            ...commsBreadcrumbItems,
-            section.name
-        ],
-        {
-            removeDescriptions: true
-        }
-    );
-
-    return true;
 }
 
 
@@ -216,8 +177,12 @@ export async function tryRenderCommsRoute(
 async function renderCommsOverview(
     game,
     commsManifest,
-    routeIds
+    routeIds,
+    manifestFile
 ) {
+    const viewScope =
+        getActiveViewScope();
+
     showLoading();
 
     const mainContent =
@@ -241,10 +206,23 @@ async function renderCommsOverview(
         Array.isArray(
             commsManifest.categories
         )
-            ? commsManifest.categories
+            ? commsManifest.categories.map(
+                section => ({
+                    ...section,
+                    parentManifestFile:
+                        manifestFile
+                })
+            )
             : [];
 
-    mainContent.replaceChildren();
+    if (
+		viewScope &&
+		!isViewScopeCurrent(viewScope)
+	) {
+		return;
+	}
+
+	mainContent.replaceChildren();
 
     const page =
         document.createElement(
@@ -412,6 +390,14 @@ async function renderCommsOverview(
                 })
             )
         );
+
+    /* Comms-Fortschritt nach Promise.all */
+    if (
+        viewScope &&
+        !isViewScopeCurrent(viewScope)
+    ) {
+        return;
+    }
 
 
     let totalItems = 0;
@@ -718,10 +704,22 @@ async function calculateSectionProgress(
     suppliedManifest = null,
     suppliedManifestFile = null
 ) {
+    const parentManifestFile =
+        section.parentManifestFile;
+
+    if (
+        !suppliedManifestFile &&
+        typeof parentManifestFile !== "string"
+    ) {
+        throw new Error(
+            "Kein Parent-Manifest für Comms-Bereich '" + section.id + "' vorhanden."
+        );
+    }
+
     const sectionManifestFile =
         suppliedManifestFile ??
         resolveRelativeFile(
-            COMMS_MANIFEST_FILE,
+            parentManifestFile,
             section.file
         );
 
@@ -732,46 +730,24 @@ async function calculateSectionProgress(
             sectionManifestFile
         );
 
-    const files = Array.isArray(sectionManifest.categories)
-        ? sectionManifest.categories
-        : [];
-
-    const categoryResults = await Promise.all(
-        files.map(async (file) => {
-            const categoryData = await loadCategoryData(
-                gameId,
-                {
-                    ...file,
-                    file: resolveRelativeFile(
-                        sectionManifestFile,
-                        file.file
-                    )
-                }
-            );
-
-            return calculateCategoryProgress(
-                categoryData,
-                progressData
-            );
-        })
-    );
-
-    const total = categoryResults.reduce(
-        (sum, entry) => sum + entry.total,
-        0
-    );
-
-    const completed = categoryResults.reduce(
-        (sum, entry) => sum + entry.completed,
-        0
-    );
+    const progress =
+        await calculateManifestProgressFromMetadata(
+            gameId,
+            sectionManifest,
+            sectionManifestFile,
+            progressData
+        );
 
     return {
-        total,
-        completed,
-        percentage: total > 0
-            ? Math.round((completed / total) * 100)
-            : 0
+        ...progress,
+        percentage:
+            progress.total > 0
+                ? Math.round(
+                    (progress.completed /
+                        progress.total) *
+                    100
+                )
+                : 0
     };
 }
 
@@ -805,12 +781,7 @@ function createToolbar(href, label) {
  * @param {string[]} routeIds
  * @returns {boolean}
  */
-function isCommsRoute(routeIds) {
-    return Array.isArray(routeIds) &&
-        routeIds.length >= 2 &&
-        routeIds[0] === COMMS_ROUTE_PREFIX[0] &&
-        routeIds[1] === COMMS_ROUTE_PREFIX[1];
-}
+
 
 
 /**

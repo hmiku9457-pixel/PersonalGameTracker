@@ -74,5 +74,6 @@
     "en": "Area map of Washington, D.C."
   },
   "panelDefaultOpen": true,
-  "itemCount": 181
+  "itemCount": 181,
+  "renderer": "comms"
 }

@@ -5,6 +5,12 @@
 
 
 import {
+	getActiveViewScope,
+	registerViewCleanup
+} from "../services/viewScopeService.js";
+
+
+import {
 	getCurrentLanguage,
 	getCurrentLocale
 } from "../services/languageService.js";
@@ -859,6 +865,24 @@ export function renderCategoryControls(
 				"class"
 			]
 		}
+	);
+
+	const observerForViewScope =
+		activeItemStateObserver;
+
+	registerViewCleanup(
+		() => {
+			observerForViewScope.disconnect();
+
+			if (
+				activeItemStateObserver ===
+				observerForViewScope
+			) {
+				activeItemStateObserver =
+					null;
+			}
+		},
+		getActiveViewScope()
 	);
 
 

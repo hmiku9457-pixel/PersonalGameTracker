@@ -39,7 +39,8 @@
         "en": "Area map of Washington, D.C."
       },
       "type": "manifest",
-      "file": "washington/manifest.json"
+      "file": "washington/manifest.json",
+      "renderer": "comms"
     },
     {
       "id": "newYork",
@@ -61,7 +62,8 @@
         "en": "Area map of Lower Manhattan"
       },
       "type": "manifest",
-      "file": "newYork/manifest.json"
+      "file": "newYork/manifest.json",
+      "renderer": "comms"
     },
     {
       "id": "brooklyn",
@@ -83,7 +85,8 @@
         "en": "Area map of Brooklyn"
       },
       "type": "manifest",
-      "file": "brooklyn/manifest.json"
+      "file": "brooklyn/manifest.json",
+      "renderer": "comms"
     },
     {
       "id": "missions",
@@ -101,9 +104,11 @@
       },
       "type": "manifest",
       "file": "missions/manifest.json",
-      "dataFile": "allMissions.json"
+      "dataFile": "allMissions.json",
+      "renderer": "comms"
     }
   ],
   "view": "comms-overview",
-  "itemCount": 840
+  "itemCount": 840,
+  "renderer": "comms"
 }

@@ -5,6 +5,13 @@
 
 
 import {
+	getActiveViewScope,
+	isViewScopeCurrent,
+	registerViewCleanup
+} from "../services/viewScopeService.js";
+
+
+import {
 	loadCategoryData
 } from "../services/dataService.js";
 
@@ -142,6 +149,21 @@ export async function renderCategory(
 	game,
 	category
 ) {
+	const viewScope =
+		getActiveViewScope();
+
+	const fallbackController =
+		new AbortController();
+
+	const signal =
+		viewScope?.signal ??
+		fallbackController.signal;
+
+	registerViewCleanup(
+		() => fallbackController.abort(),
+		viewScope
+	);
+
 	const mainContent =
 		getMainContent();
 
@@ -174,7 +196,14 @@ export async function renderCategory(
 		]);
 
 
-		mainContent.replaceChildren();
+		if (
+		viewScope &&
+		!isViewScopeCurrent(viewScope)
+	) {
+		return;
+	}
+
+	mainContent.replaceChildren();
 
 
 		const gamePage =
@@ -478,6 +507,15 @@ export async function renderCategory(
 
 	}
 	catch (error) {
+		/* View-Abbruch durch Routenwechsel */
+		if (
+			error?.name === "AbortError" ||
+			(viewScope &&
+				!isViewScopeCurrent(viewScope))
+		) {
+			return;
+		}
+
 		console.error(
 			"[Category] Kategorie konnte nicht geladen werden:",
 			error

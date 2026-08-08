@@ -50,5 +50,6 @@
     "en": "Area map of Lower Manhattan"
   },
   "panelDefaultOpen": true,
-  "itemCount": 109
+  "itemCount": 109,
+  "renderer": "comms"
 }

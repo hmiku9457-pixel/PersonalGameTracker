@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:data": "node scripts/validateRepository.mjs",
+    "test:e2e": "playwright test",
+    "measure:performance": "node scripts/measurePerformance.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

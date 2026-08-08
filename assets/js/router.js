@@ -4,8 +4,18 @@
    ========================================================= */
 
 import {
-	beginJsonRequestScope,
-	loadGameManifest,
+	tryRenderManifestView
+} from "./views/manifestViewRegistry.js";
+
+import {
+	beginViewScope,
+	completeViewRender,
+	isViewScopeCurrent
+} from "./services/viewScopeService.js";
+
+
+import {
+loadGameManifest,
 	loadManifest,
 	resolveRelativeFile
 } from "./services/dataService.js";
@@ -35,11 +45,6 @@ import {
 import {
 	applyPageBreadcrumbBanner
 } from "./views/pageBreadcrumbView.js";
-
-import {
-    tryRenderCommsRoute
-} from "./views/commsOverviewView.js";
-
 
 import {
 	showError,
@@ -192,10 +197,10 @@ async function renderHomePage() {
  * des URL-Hashes.
  */
 export async function loadPageFromHash() {
+	const viewScope =
+		beginViewScope();
 
-	beginJsonRequestScope();
-
-	const routeParts =
+const routeParts =
 		getRouteParts();
 
 
@@ -208,6 +213,10 @@ export async function loadPageFromHash() {
 	) {
 
 		await renderHomePage();
+
+		completeViewRender(
+			viewScope
+		);
 
 		return;
 	}
@@ -224,6 +233,10 @@ export async function loadPageFromHash() {
 	) {
 
 		await renderHomePage();
+
+		completeViewRender(
+			viewScope
+		);
 
 		return;
 	}
@@ -309,6 +322,10 @@ export async function loadPageFromHash() {
 			);
 
 
+			completeViewRender(
+				viewScope
+			);
+
 			return;
 		}
 
@@ -323,21 +340,34 @@ export async function loadPageFromHash() {
 		 * collectibles/echos
 		 * collectibles/comms
 		 */
-		const commsRouteHandled =
-		    await tryRenderCommsRoute(
-		        game,
-		        categoryRoute
-		    );
 
-		if (commsRouteHandled) {
-		    return;
-		}
-
-		const resolvedRoute =
+const resolvedRoute =
 		    await resolveGameRoute(
 				game,
 				categoryRoute
 			);
+
+
+		const configuredViewHandled =
+			await tryRenderManifestView({
+				game,
+				resolvedRoute,
+				routeIds:
+					categoryRoute,
+				viewScope
+			});
+
+		if (configuredViewHandled) {
+			if (!isViewScopeCurrent(viewScope)) {
+				return;
+			}
+
+			completeViewRender(
+				viewScope
+			);
+
+			return;
+		}
 
 
 		/*
@@ -378,6 +408,10 @@ export async function loadPageFromHash() {
 				);
 
 
+			completeViewRender(
+				viewScope
+			);
+
 			return;
 		}
 
@@ -414,8 +448,22 @@ export async function loadPageFromHash() {
 			resolvedRoute.breadcrumbItems
 		);
 
+		/* Finaler Kategorie-Render abgeschlossen. */
+		completeViewRender(
+			viewScope
+		);
+
 	}
 	catch (error) {
+		/* Router-Abbruch durch Routenwechsel */
+		if (
+			error?.name === "AbortError" ||
+			(viewScope &&
+				!isViewScopeCurrent(viewScope))
+		) {
+			return;
+		}
+
 		if (error?.name === "AbortError") {
 			return;
 		}
@@ -484,6 +532,12 @@ async function resolveGameRoute(
 
 	let currentManifestFile =
 		"manifest.json";
+
+	let parentManifest =
+		null;
+
+	let parentManifestFile =
+		null;
 
 
 	let lastEntry =
@@ -580,6 +634,13 @@ async function resolveGameRoute(
 			"manifest"
 		) {
 
+			parentManifest =
+				currentManifest;
+
+			parentManifestFile =
+				currentManifestFile;
+
+
 			const childManifest =
 				await loadManifest(
 					game.id,
@@ -602,6 +663,10 @@ async function resolveGameRoute(
 						resolvedFile,
 
 					entry,
+
+					parentManifest,
+
+					parentManifestFile,
 
 
 					breadcrumbItems
@@ -727,32 +792,27 @@ function createRouterError(
  * @returns {Array<string>}
  */
 function getRouteParts() {
-
 	const hash =
 		window.location.hash
 			.replace(/^#/, "");
-
 
 	if (!hash) {
 		return [];
 	}
 
-
 	return hash
 		.split("/")
 		.filter(Boolean)
-		.map(
-			part => {
-				try {
-					return decodeURIComponent(
-						part
-					);
-				}
-				catch {
-					return part;
-				}
+		.map(part => {
+			try {
+				return decodeURIComponent(
+					part
+				);
 			}
-		);
+			catch {
+				return part;
+			}
+		});
 }
 
 

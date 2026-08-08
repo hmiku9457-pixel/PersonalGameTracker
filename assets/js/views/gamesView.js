@@ -4,6 +4,18 @@
    ========================================================= */
 
 import {
+	getActiveViewScope,
+	isViewScopeCurrent,
+	registerViewCleanup
+} from "../services/viewScopeService.js";
+
+
+import {
+	calculateManifestProgressFromMetadata
+} from "../services/progressSummaryService.js";
+
+
+import {
 	loadCategoryData,
 	loadGameManifest,
 	loadGames,
@@ -153,6 +165,21 @@ function getMainContent() {
  * als anklickbare Karten.
  */
 export async function renderGamesOverview() {
+	const viewScope =
+		getActiveViewScope();
+
+	const fallbackController =
+		new AbortController();
+
+	const signal =
+		viewScope?.signal ??
+		fallbackController.signal;
+
+	registerViewCleanup(
+		() => fallbackController.abort(),
+		viewScope
+	);
+
 
 	const mainContent =
 		getMainContent();
@@ -177,7 +204,14 @@ export async function renderGamesOverview() {
 			await loadGames();
 
 
-		mainContent.replaceChildren();
+		if (
+		viewScope &&
+		!isViewScopeCurrent(viewScope)
+	) {
+		return;
+	}
+
+	mainContent.replaceChildren();
 
 
 		const gamesPage =
@@ -384,6 +418,15 @@ export async function renderGamesOverview() {
 
 	}
 	catch (error) {
+		/* View-Abbruch durch Routenwechsel */
+		if (
+			error?.name === "AbortError" ||
+			(viewScope &&
+				!isViewScopeCurrent(viewScope))
+		) {
+			return;
+		}
+
 
 		console.error(
 			"Spieleübersicht konnte nicht geladen werden:",
@@ -1136,65 +1179,11 @@ async function calculateManifestProgress(
 	manifestFile,
 	progressData
 ) {
-
-	const categories =
-		Array.isArray(
-			manifest.categories
-		)
-			? manifest.categories
-			: [];
-
-
-	const results =
-		await Promise.all(
-			categories.map(
-				async (category) => {
-
-					try {
-
-						return await calculateEntryProgress(
-							gameId,
-							category,
-							manifestFile,
-							progressData
-						);
-
-					}
-					catch (error) {
-
-						console.error(
-							`Fortschritt für Kategorie "${category.id}" in Spiel "${gameId}" konnte nicht geladen werden.`,
-							error
-						);
-
-
-						return {
-							completed: 0,
-							total: 0
-						};
-					}
-				}
-			)
-		);
-
-
-	return results.reduce(
-		(totalProgress, progress) => {
-
-			totalProgress.completed +=
-				progress.completed;
-
-
-			totalProgress.total +=
-				progress.total;
-
-
-			return totalProgress;
-		},
-		{
-			completed: 0,
-			total: 0
-		}
+	return calculateManifestProgressFromMetadata(
+		gameId,
+		manifest,
+		manifestFile,
+		progressData
 	);
 }
 

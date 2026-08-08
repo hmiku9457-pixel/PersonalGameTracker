@@ -107,6 +107,16 @@ const progressCache =
 	new Map();
 
 
+/* Laufende Requests desselben Spiels teilen sich ein Promise. */
+const progressRequestCache =
+	new Map();
+
+
+/* Verhindert, dass alte Requests einen geleerten Cache erneut füllen. */
+let progressCacheGeneration =
+	0;
+
+
 /* ---------------------------------------------------------
    3. Fortschrittsstruktur
    --------------------------------------------------------- */
@@ -132,7 +142,9 @@ function createEmptyProgressData(
 		authenticated,
 		available,
 
-		progress: {}
+		progress: {},
+
+		completedByCategory: {}
 	};
 }
 
@@ -169,6 +181,21 @@ function convertRowsToProgressData(
 		progressData.progress[
 			row.item_id
 		] = true;
+
+
+		const categoryId =
+			typeof row.category_id === "string"
+				? row.category_id.trim()
+				: "";
+
+
+		if (categoryId) {
+			progressData.completedByCategory[
+				categoryId
+			] =
+				(progressData.completedByCategory[categoryId] ?? 0) +
+				1;
+		}
 	}
 
 
@@ -205,18 +232,12 @@ export async function loadGameProgressData(
 				)
 			);
 
-
 		error.code =
 			"INVALID_GAME_ID";
-
 
 		throw error;
 	}
 
-
-	/*
-	 * Cache verwenden
-	 */
 	if (
 		!force &&
 		progressCache.has(gameId)
@@ -226,56 +247,87 @@ export async function loadGameProgressData(
 		);
 	}
 
-
-	try {
-
-		const {
-			authenticated,
-			rows
-		} = await fetchGameProgressRows(
+	if (
+		!force &&
+		progressRequestCache.has(gameId)
+	) {
+		return progressRequestCache.get(
 			gameId
 		);
-
-
-		const progressData =
-			convertRowsToProgressData(
-				gameId,
-				rows,
-				authenticated
-			);
-
-
-		progressCache.set(
-			gameId,
-			progressData
-		);
-
-
-		console.info(
-			`[Progress] ${rows.length} Einträge für "${gameId}" geladen.`
-		);
-
-
-		return progressData;
-
 	}
-	catch (error) {
 
-		console.error(
-			`[Progress] Fortschritt für "${gameId}" konnte nicht geladen werden:`,
-			error
-		);
+	const requestGeneration =
+		progressCacheGeneration;
 
+	const request =
+		(async () => {
+			try {
+				const {
+					authenticated,
+					rows
+				} = await fetchGameProgressRows(
+					gameId
+				);
 
-		return {
-			...createEmptyProgressData(
-				gameId,
-				false,
-				false
-			),
+				const progressData =
+					convertRowsToProgressData(
+						gameId,
+						rows,
+						authenticated
+					);
 
-			error
-		};
+				if (
+					requestGeneration ===
+					progressCacheGeneration &&
+					progressRequestCache.get(gameId) ===
+					request
+				) {
+					progressCache.set(
+						gameId,
+						progressData
+					);
+				}
+
+				console.info(
+					`[Progress] ${rows.length} Einträge für "${gameId}" geladen.`
+				);
+
+				return progressData;
+			}
+			catch (error) {
+				console.error(
+					`[Progress] Fortschritt für "${gameId}" konnte nicht geladen werden:`,
+					error
+				);
+
+				return {
+					...createEmptyProgressData(
+						gameId,
+						false,
+						false
+					),
+					error
+				};
+			}
+		})();
+
+	progressRequestCache.set(
+		gameId,
+		request
+	);
+
+	try {
+		return await request;
+	}
+	finally {
+		if (
+			progressRequestCache.get(gameId) ===
+			request
+		) {
+			progressRequestCache.delete(
+				gameId
+			);
+		}
 	}
 }
 
@@ -294,19 +346,57 @@ export async function loadGameProgressData(
 export function clearProgressCache(
 	gameId = null
 ) {
+	progressCacheGeneration++;
+
 	if (gameId) {
 		progressCache.delete(
+			gameId
+		);
+
+		progressRequestCache.delete(
 			gameId
 		);
 
 		return;
 	}
 
-
 	progressCache.clear();
+	progressRequestCache.clear();
 }
 
 
+/**
+ * Gibt die Anzahl erledigter Items einer Kategorie zurück.
+ * Dieser zusätzliche Index ändert weder Datenbank noch bisherigen
+ * item_id-basierten Statuscache.
+ *
+ * @param {object|null} progressData
+ * @param {string} categoryId
+ * @returns {number}
+ */
+export function getCompletedCountForCategory(
+	progressData,
+	categoryId
+) {
+	if (
+		typeof categoryId !== "string" ||
+		!progressData?.completedByCategory
+	) {
+		return 0;
+	}
+
+	const value =
+		Number(
+			progressData.completedByCategory[
+				categoryId
+			]
+		);
+
+	return Number.isInteger(value) &&
+		value > 0
+			? value
+			: 0;
+}
 /* ---------------------------------------------------------
    6. Item-Status
    --------------------------------------------------------- */
@@ -805,6 +895,29 @@ export async function setItemCompleted(
 	}
 
 
+	/*
+	 * Kategorieindex nach erfolgreichem Request aktualisieren.
+	 */
+	progressData.completedByCategory ??= {};
+
+	const previousCategoryCount =
+		getCompletedCountForCategory(
+			progressData,
+			categoryId
+		);
+
+	/*
+	 * currentState wurde vor dem erfolgreichen Supabase-Request ermittelt.
+	 * Nach dem Early Return oben ist sicher, dass sich der Zustand ändert.
+	 */
+	progressData.completedByCategory[
+		categoryId
+	] = targetState
+		? previousCategoryCount + 1
+		: Math.max(
+			0,
+			previousCategoryCount - 1
+		);
 	/*
 	 * Cache aktualisieren.
 	 */
