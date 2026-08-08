@@ -15,6 +15,7 @@ await writeFile(
 
 await patchGameView();
 await patchCommsOverviewView();
+await patchProgressSummaryTest();
 await removeRuntimeHotfix();
 await verifyResult();
 
@@ -237,6 +238,55 @@ async function patchCommsOverviewView() {
     await writeFile(relativePath, source);
 }
 
+async function patchProgressSummaryTest() {
+    const relativePath =
+        "tests/e2e/progress-summary.spec.mjs";
+
+    let source =
+        await readFile(relativePath);
+
+    source = source
+        .replaceAll(
+            ".pgt-progress-card-count",
+            ".overview-card-progress-count"
+        )
+        .replaceAll(
+            ".pgt-progress-card-percent",
+            ".overview-card-progress-percent"
+        );
+
+    if (
+        source.includes(
+            ".pgt-progress-card-count"
+        ) ||
+        source.includes(
+            ".pgt-progress-card-percent"
+        )
+    ) {
+        throw new Error(
+            "Veraltete Progress-Card-Selektoren im Browser-Test konnten nicht vollständig ersetzt werden."
+        );
+    }
+
+    if (
+        !source.includes(
+            ".overview-card-progress-count"
+        ) ||
+        !source.includes(
+            ".overview-card-progress-percent"
+        )
+    ) {
+        throw new Error(
+            "Native Progress-Card-Selektoren fehlen im Browser-Test."
+        );
+    }
+
+    await writeFile(
+        relativePath,
+        source
+    );
+}
+
 async function removeRuntimeHotfix() {
     for (const relativePath of ["index.html", "404.html"]) {
         let source = await readFile(relativePath);
@@ -273,6 +323,9 @@ async function verifyResult() {
     const sharedModule = await readFile(
         "assets/js/views/overviewCardView.js"
     );
+    const progressSummaryTest = await readFile(
+        "tests/e2e/progress-summary.spec.mjs"
+    );
 
     const checks = [
         [gameView.includes("category-card overview-card"), "gameView nutzt keine gemeinsame Kartenklasse"],
@@ -281,7 +334,10 @@ async function verifyResult() {
         [commsView.includes("updateOverviewProgress"), "Comms nutzt keine gemeinsame Fortschrittsaktualisierung"],
         [!index.includes("progressCardLayoutHotfix.js"), "index.html lädt noch den Observer-Hotfix"],
         [!html404.includes("progressCardLayoutHotfix.js"), "404.html lädt noch den Observer-Hotfix"],
-        [!sharedModule.includes("new MutationObserver"), "Die native Kartenkomponente enthält noch einen aktiven DOM-Observer"]
+        [!sharedModule.includes("new MutationObserver"), "Die native Kartenkomponente enthält noch einen aktiven DOM-Observer"],
+        [progressSummaryTest.includes(".overview-card-progress-count"), "Der Fortschritts-Test verwendet nicht den nativen Zähler-Selektor"],
+        [progressSummaryTest.includes(".overview-card-progress-percent"), "Der Fortschritts-Test verwendet nicht den nativen Prozent-Selektor"],
+        [!progressSummaryTest.includes(".pgt-progress-card-"), "Der Fortschritts-Test enthält noch Selektoren des entfernten Observer-Hotfixes"]
     ];
 
     for (const [condition, message] of checks) {
