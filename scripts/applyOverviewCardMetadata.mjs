@@ -717,11 +717,19 @@ function createBrowserTest() {
 } from "@playwright/test";
 
 test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => {
+        localStorage.setItem(
+            "personalGameTracker.language",
+            "de"
+        );
+    });
+
     await installSupabaseMock(page);
 });
 
 test("Übersichtskarten zeigen Manifest-Metadaten, Spielkarten bleiben unverändert", async ({ page }) => {
     await page.goto("/#game/theDivision2");
+    await expect(page.locator("html")).toHaveAttribute("lang", "de");
 
     const collectibles = page.locator(
         '.category-card[data-category-id="collectibles"]'
