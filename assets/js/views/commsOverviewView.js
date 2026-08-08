@@ -12,7 +12,6 @@ import {
     isViewScopeCurrent
 } from "../services/viewScopeService.js";
 
-
 import {
     loadCategoryData,
     loadManifest,
@@ -45,11 +44,14 @@ import {
     updateActiveGameNavigation
 } from "./navigationView.js";
 
-
 import {
     applyPageBreadcrumbBanner
 } from "./pageBreadcrumbView.js";
 
+import {
+    createOverviewProgress,
+    updateOverviewProgress
+} from "./overviewCardView.js";
 
 /**
  * Übernimmt die speziellen Comms-Routen.
@@ -166,7 +168,6 @@ export async function renderConfiguredCommsView({
     );
 }
 
-
 /**
  * Rendert die vier Comms-Bereiche.
  *
@@ -235,7 +236,6 @@ async function renderCommsOverview(
     page.dataset.gameId =
         game.id;
 
-
     const toolbar =
         createToolbar(
             buildGameHash(
@@ -247,7 +247,6 @@ async function renderCommsOverview(
             ),
             uiText.back
         );
-
 
     /*
      * pageBreadcrumbView.js verschiebt alle Toolbar-Elemente
@@ -270,7 +269,6 @@ async function renderCommsOverview(
     toolbar.append(
         overallProgress
     );
-
 
     const header =
         document.createElement(
@@ -315,7 +313,6 @@ async function renderCommsOverview(
         description
     );
 
-
     const grid =
         document.createElement(
             "div"
@@ -348,7 +345,6 @@ async function renderCommsOverview(
         );
     }
 
-
     page.append(
         toolbar,
         header,
@@ -363,7 +359,6 @@ async function renderCommsOverview(
         game.id
     );
 
-
     const progressData =
         await loadGameProgressData(
             game.id
@@ -372,7 +367,6 @@ async function renderCommsOverview(
     if (!progressData.available) {
         return;
     }
-
 
     const results =
         await Promise.all(
@@ -399,7 +393,6 @@ async function renderCommsOverview(
         return;
     }
 
-
     let totalItems = 0;
     let totalCompleted = 0;
 
@@ -412,14 +405,10 @@ async function renderCommsOverview(
             progress
         } = result;
 
-        target.progressElement.hidden =
-            false;
-
-        target.progressText.textContent =
-            `${progress.completed} / ${progress.total}`;
-
-        target.progressFill.style.width =
-            `${progress.percentage}%`;
+        updateOverviewProgress(
+            target.progress,
+            progress
+        );
 
         totalItems +=
             progress.total;
@@ -427,7 +416,6 @@ async function renderCommsOverview(
         totalCompleted +=
             progress.completed;
     }
-
 
     const totalPercentage =
         totalItems > 0
@@ -439,7 +427,6 @@ async function renderCommsOverview(
                 100
             )
             : 0;
-
 
     overallProgress.hidden =
         false;
@@ -477,7 +464,7 @@ function createSectionCard(
         );
 
     link.className =
-        "comms-section-card";
+        "comms-section-card overview-card";
 
     link.href =
         buildGameHash(
@@ -494,15 +481,13 @@ function createSectionCard(
     link.dataset.view =
         section.view;
 
-
     const top =
         document.createElement(
             "div"
         );
 
     top.className =
-        "comms-section-card-top";
-
+        "comms-section-card-top overview-card-top";
 
     const title =
         document.createElement(
@@ -518,7 +503,6 @@ function createSectionCard(
     top.append(
         title
     );
-
 
     if (
         section.view ===
@@ -548,14 +532,13 @@ function createSectionCard(
         );
     }
 
-
     const arrow =
         document.createElement(
             "span"
         );
 
     arrow.className =
-        "comms-section-card-arrow";
+        "comms-section-card-arrow overview-card-arrow";
 
     arrow.setAttribute(
         "aria-hidden",
@@ -569,11 +552,13 @@ function createSectionCard(
         arrow
     );
 
-
     const description =
         document.createElement(
             "p"
         );
+
+    description.className =
+        "overview-card-description";
 
     description.textContent =
         getLocalizedText(
@@ -581,14 +566,13 @@ function createSectionCard(
             language
         );
 
-
     const counts =
         document.createElement(
             "p"
         );
 
     counts.className =
-        "comms-section-card-counts";
+        "comms-section-card-counts overview-card-meta";
 
     counts.textContent =
         formatCounts(
@@ -597,93 +581,23 @@ function createSectionCard(
             language
         );
 
-
-    const progressElement =
-        document.createElement(
-            "div"
-        );
-
-    progressElement.className =
-        "comms-section-card-progress";
-
-    progressElement.hidden =
-        true;
-
-
-    const progressHeader =
-        document.createElement(
-            "div"
-        );
-
-    const progressLabel =
-        document.createElement(
-            "span"
-        );
-
-    progressLabel.textContent =
-        uiText.progress;
-
-
-    const progressText =
-        document.createElement(
-            "strong"
-        );
-
-    progressText.textContent =
-        "0 / 0";
-
-
-    progressHeader.append(
-        progressLabel,
-        progressText
-    );
-
-
-    const progressTrack =
-        document.createElement(
-            "div"
-        );
-
-    progressTrack.className =
-        "progress-bar";
-
-
-    const progressFill =
-        document.createElement(
-            "div"
-        );
-
-    progressFill.className =
-        "progress-bar-fill";
-
-    progressFill.style.width =
-        "0%";
-
-
-    progressTrack.append(
-        progressFill
-    );
-
-    progressElement.append(
-        progressHeader,
-        progressTrack
-    );
-
+    const progress =
+        createOverviewProgress({
+            label: uiText.progress,
+            hidden: true
+        });
 
     link.append(
         top,
         description,
         counts,
-        progressElement
+        progress.element
     );
-
 
     return {
         element: link,
         section,
-        progressElement,
-        progressText,
-        progressFill
+        progress
     };
 }
 
@@ -751,7 +665,6 @@ async function calculateSectionProgress(
     };
 }
 
-
 /**
  * Erstellt die obere Zurück-Navigation.
  *
@@ -774,15 +687,12 @@ function createToolbar(href, label) {
     return toolbar;
 }
 
-
 /**
  * Prüft, ob es sich um eine Comms-Route handelt.
  *
  * @param {string[]} routeIds
  * @returns {boolean}
  */
-
-
 
 /**
  * Baut einen Hash für eine Spielroute.
@@ -801,7 +711,6 @@ function buildGameHash(gameId, routeIds = []) {
         ? `#game/${encodedGameId}/${encodedRoute}`
         : `#game/${encodedGameId}`;
 }
-
 
 /**
  * Formatiert Item- und Gruppenzahlen.
@@ -825,7 +734,6 @@ function formatCounts(
 
     return `${items} Comms · ${groups} Sammlungen`;
 }
-
 
 /**
  * UI-Texte der Comms-Ansicht.

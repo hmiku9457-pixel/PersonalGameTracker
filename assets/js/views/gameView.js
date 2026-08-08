@@ -12,31 +12,31 @@ import {
 	isViewScopeCurrent
 } from "../services/viewScopeService.js";
 
-
 import {
 	loadCategoryData,
 	loadManifest,
 	resolveRelativeFile
 } from "../services/dataService.js";
 
-
 import {
 	calculateCategoryProgress,
 	loadGameProgressData
 } from "../services/progressService.js";
-
 
 import {
 	getCurrentLanguage,
 	getLocalizedText
 } from "../services/languageService.js";
 
+import {
+	createOverviewProgress,
+	updateOverviewProgress
+} from "./overviewCardView.js";
 
 const mainContent =
 	document.getElementById(
 		"main-content"
 	);
-
 
 /* ---------------------------------------------------------
    1. Spielansicht
@@ -72,22 +72,18 @@ export async function renderGame(
 		return;
 	}
 
-
 	const manifest =
 		options.manifest ||
 		game;
-
 
 	const manifestFile =
 		options.manifestFile ||
 		"manifest.json";
 
-
 	const routeIds =
 		Array.isArray(options.routeIds)
 			? options.routeIds
 			: [];
-
 
 	/*
 	 * Titel ermitteln.
@@ -111,7 +107,6 @@ export async function renderGame(
 			game.id
 		);
 
-
 	/*
 	 * Beschreibung ermitteln.
 	 */
@@ -123,9 +118,7 @@ export async function renderGame(
 			""
 		);
 
-
 	mainContent.innerHTML = "";
-
 
 	const gamePage =
 		document.createElement(
@@ -134,7 +127,6 @@ export async function renderGame(
 
 	gamePage.className =
 		"game-page";
-
 
 	/*
 	 * Gemeinsame Toolbar für Spiel- und Manifestübersichten.
@@ -149,7 +141,6 @@ export async function renderGame(
 
 	toolbar.className =
 		"category-toolbar";
-
 
 	/*
 	 * Bei Untermanifesten zusätzlich einen
@@ -171,7 +162,6 @@ export async function renderGame(
 		backButton.textContent =
 			getBackButtonText();
 
-
 		backButton.addEventListener(
 			"click",
 			() => {
@@ -182,7 +172,6 @@ export async function renderGame(
 						-1
 					);
 
-
 				window.location.hash =
 					buildGameHash(
 						game.id,
@@ -191,12 +180,10 @@ export async function renderGame(
 			}
 		);
 
-
 		toolbar.append(
 			backButton
 		);
 	}
-
 
 	const manifestProgress =
 		createManifestProgressSummary();
@@ -204,7 +191,6 @@ export async function renderGame(
 	toolbar.append(
 		manifestProgress
 	);
-
 
 	gamePage.append(
 		toolbar
@@ -225,11 +211,9 @@ export async function renderGame(
 	titleElement.textContent =
 		title;
 
-
 	gamePage.append(
 		titleElement
 	);
-
 
 	/*
 	 * Optionale Beschreibung
@@ -248,12 +232,10 @@ export async function renderGame(
 		descriptionElement.textContent =
 			description;
 
-
 		gamePage.append(
 			descriptionElement
 		);
 	}
-
 
 	/*
 	 * Kategorie-Kacheln
@@ -267,14 +249,12 @@ export async function renderGame(
 	categoryGrid.className =
 		"category-grid";
 
-
 	const categories =
 		Array.isArray(
 			manifest.categories
 		)
 			? manifest.categories
 			: [];
-
 
 	for (
 		const category
@@ -290,17 +270,13 @@ export async function renderGame(
 		);
 	}
 
-
 	gamePage.append(
 		categoryGrid
 	);
 
-
-
 	mainContent.append(
 		gamePage
 	);
-
 
 	/*
 	 * Benutzerfortschritt laden.
@@ -310,7 +286,6 @@ export async function renderGame(
 		await loadGameProgressData(
 			game.id
 		);
-
 
 	/*
 	 * Ohne Anmeldung keinen persönlichen
@@ -329,7 +304,6 @@ export async function renderGame(
 		return;
 	}
 
-
 	await loadManifestProgress(
 		game,
 		manifest,
@@ -337,7 +311,6 @@ export async function renderGame(
 		progressData
 	);
 }
-
 
 /* ---------------------------------------------------------
    2. Kategorie-Kacheln
@@ -366,17 +339,15 @@ function createCategoryCard(
 		"button";
 
 	button.className =
-		"category-card";
+		"category-card overview-card";
 
 	button.dataset.categoryId =
 		category.id;
-
 
 	const title =
 		document.createElement(
 			"h3"
 		);
-
 
 	title.textContent =
 		getLocalizedText(
@@ -384,18 +355,42 @@ function createCategoryCard(
 			category.id
 		);
 
+	const top =
+		document.createElement(
+			"div"
+		);
 
-	button.append(
-		title
+	top.className =
+		"overview-card-top";
+
+	const arrow =
+		document.createElement(
+			"span"
+		);
+
+	arrow.className =
+		"overview-card-arrow";
+	arrow.textContent =
+		"→";
+	arrow.setAttribute(
+		"aria-hidden",
+		"true"
 	);
 
+	top.append(
+		title,
+		arrow
+	);
+
+	button.append(
+		top
+	);
 
 	const localizedDescription =
 		getLocalizedText(
 			category.description,
 			""
 		);
-
 
 	if (localizedDescription) {
 
@@ -405,37 +400,27 @@ function createCategoryCard(
 			);
 
 		description.className =
-			"category-description";
+			"category-description overview-card-description";
 
 		description.textContent =
 			localizedDescription;
-
 
 		button.append(
 			description
 		);
 	}
 
-
 	const progress =
-		document.createElement(
-			"span"
-		);
+		createOverviewProgress({
+			hidden: true
+		});
 
-	progress.className =
-		"category-progress";
-
-	progress.dataset.categoryProgress =
+	progress.element.dataset.categoryProgress =
 		category.id;
 
-	progress.textContent =
-		"0 / 0";
-
-
 	button.append(
-		progress
+		progress.element
 	);
-
 
 	button.addEventListener(
 		"click",
@@ -446,7 +431,6 @@ function createCategoryCard(
 				category.id
 			];
 
-
 			window.location.hash =
 				buildGameHash(
 					game.id,
@@ -455,10 +439,8 @@ function createCategoryCard(
 		}
 	);
 
-
 	return button;
 }
-
 
 /* ---------------------------------------------------------
    3. Gesamtfortschritt
@@ -491,7 +473,6 @@ function createManifestProgressSummary() {
 			? "Gesamtfortschritt: 0 von 0, 0 Prozent"
 			: "Overall progress: 0 of 0, 0 percent"
 	);
-
 
 	return progress;
 }/* ---------------------------------------------------------
@@ -602,7 +583,6 @@ async function loadManifestProgress(
 	);
 }
 
-
 /**
  * Berechnet den Fortschritt eines einzelnen
  * Manifest-Eintrags.
@@ -633,7 +613,6 @@ async function calculateEntryProgress(
 	);
 }
 
-
 /**
  * Berechnet rekursiv den Fortschritt
  * eines kompletten Manifests.
@@ -658,7 +637,6 @@ async function calculateManifestProgress(
 			? manifest.categories
 			: [];
 
-
 	const results =
 		await Promise.all(
 			categories.map(
@@ -672,7 +650,6 @@ async function calculateManifestProgress(
 			)
 		);
 
-
 	return results.reduce(
 		(totalProgress, progress) => {
 
@@ -682,7 +659,6 @@ async function calculateManifestProgress(
 			totalProgress.total +=
 				progress.total;
 
-
 			return totalProgress;
 		},
 		{
@@ -691,7 +667,6 @@ async function calculateManifestProgress(
 		}
 	);
 }
-
 
 /* ---------------------------------------------------------
    5. Fortschrittsanzeige
@@ -714,16 +689,15 @@ function updateCategoryProgress(
 			`[data-category-progress="${CSS.escape(categoryId)}"]`
 		);
 
-
 	if (!element) {
 		return;
 	}
 
-
-	element.textContent =
-		`${progress.completed} / ${progress.total}`;
+	updateOverviewProgress(
+		element,
+		progress
+	);
 }
-
 
 /**
  * Aktualisiert den Gesamtfortschritt.
@@ -750,7 +724,6 @@ function updateTotalProgress(
 			0
 		);
 
-
 	const percent =
 		total > 0
 			? Math.round(
@@ -759,12 +732,10 @@ function updateTotalProgress(
 			)
 			: 0;
 
-
 	const progressElement =
 		document.getElementById(
 			"manifest-progress-summary"
 		);
-
 
 	if (progressElement) {
 
@@ -797,12 +768,10 @@ function hideProgressElements(
 		manifestProgress.hidden = true;
 	}
 
-
 	const categoryProgressElements =
 		container.querySelectorAll(
-			".category-progress"
+			".overview-card-progress[data-category-progress]"
 		);
-
 
 	for (
 		const element
@@ -846,7 +815,6 @@ function buildGameHash(
 			gameId
 		);
 
-
 	const encodedRoute =
 		routeIds.map(
 			routeId =>
@@ -855,13 +823,11 @@ function buildGameHash(
 				)
 		);
 
-
 	const parts = [
 		"game",
 		encodedGameId,
 		...encodedRoute
 	];
-
 
 	return `#${parts.join("/")}`;
 }

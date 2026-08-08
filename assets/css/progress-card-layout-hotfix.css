@@ -1,158 +1,205 @@
+/* =========================================================
+   Personal Game Tracker
+   Unified Overview Cards
+   ========================================================= */
 
-.pgt-overview-card-unified {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.15rem;
-  border: 1px solid rgba(59, 130, 246, 0.28);
-  background:
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.10), transparent 34%),
-    linear-gradient(120deg, rgba(26, 38, 64, 0.98), rgba(16, 24, 43, 0.98));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 16px 34px rgba(0, 0, 0, 0.20);
-  transition:
-    transform 180ms ease,
-    border-color 180ms ease,
-    box-shadow 180ms ease;
+/* Beide Übersichtsraster verwenden dasselbe zweispaltige Layout. */
+.game-page .category-grid,
+.game-page .comms-section-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.5rem auto 60px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
 }
 
-.pgt-overview-card-unified:hover,
-.pgt-overview-card-unified:focus-within {
-  transform: translateY(-2px);
-  border-color: rgba(96, 165, 250, 0.42);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.06),
-    0 22px 42px rgba(0, 0, 0, 0.25);
+/* Eine gemeinsame Kartenbasis für normale und Comms-Übersichten. */
+.game-page .overview-card {
+    appearance: none;
+    width: 100%;
+    max-width: none;
+    min-height: 16rem;
+    margin: 0;
+    padding: 1.25rem;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.85rem;
+    position: relative;
+    overflow: hidden;
+    color: #e5e7eb;
+    background:
+        linear-gradient(
+            145deg,
+            rgb(255 255 255 / 5.5%),
+            rgb(255 255 255 / 1.5%)
+        );
+    border: 1px solid rgb(255 255 255 / 11%);
+    border-radius: 0.9rem;
+    box-shadow: none;
+    font: inherit;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        background-color 160ms ease,
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        transform 160ms ease;
 }
 
-.pgt-overview-card-unified:not(.comms-section-card)::before {
-  content: '';
-  position: absolute;
-  top: 1.08rem;
-  right: 2.45rem;
-  width: 0.56rem;
-  height: 0.56rem;
-  border-radius: 999px;
-  background: #d97706;
-  box-shadow: 0 0 0 0.18rem rgba(217, 119, 6, 0.15);
-  pointer-events: none;
+.game-page .overview-card:hover,
+.game-page .overview-card:focus-visible {
+    color: #e5e7eb;
+    background: #273449;
+    border-color: #60a5fa;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
 }
 
-.pgt-overview-card-unified:not(.comms-section-card)::after {
-  content: '→';
-  position: absolute;
-  top: 0.92rem;
-  right: 1.05rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: rgba(226, 232, 240, 0.78);
-  pointer-events: none;
+.game-page .overview-card:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 3px;
 }
 
-.pgt-overview-card-unified .category-card-title,
-.pgt-overview-card-unified .manifest-card-title,
-.pgt-overview-card-unified .comms-section-card-title,
-.pgt-overview-card-unified h2,
-.pgt-overview-card-unified h3 {
-  color: #f8fafc;
+.game-page .overview-card:active {
+    transform: translateY(-1px);
 }
 
-.pgt-overview-card-unified .category-card-description,
-.pgt-overview-card-unified .manifest-card-description,
-.pgt-overview-card-unified .comms-section-card-description,
-.pgt-overview-card-unified p {
-  color: rgba(248, 250, 252, 0.96);
+.game-page .overview-card-top {
+    min-width: 0;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.65rem;
 }
 
-.pgt-overview-card-unified .category-card-meta,
-.pgt-overview-card-unified .manifest-card-meta,
-.pgt-overview-card-unified .comms-section-meta,
-.pgt-overview-card-unified .category-card-subtitle,
-.pgt-overview-card-unified .manifest-card-subtitle,
-.pgt-overview-card-unified small {
-  color: rgba(203, 213, 225, 0.78);
+.game-page .overview-card h2,
+.game-page .overview-card h3 {
+    min-width: 0;
+    margin: 0;
+    color: #f3f4f6;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-weight: 700;
+    line-height: 1.25;
 }
 
-.pgt-progress-card-source-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+.game-page .overview-card-arrow {
+    flex-shrink: 0;
+    margin-left: auto;
+    color: inherit;
+    font-size: 1.35rem;
+    opacity: 0.7;
+    transition:
+        color 160ms ease,
+        transform 160ms ease;
 }
 
-.pgt-progress-card-section {
-  margin-top: 1.2rem;
-  display: grid;
-  gap: 0.6rem;
-  width: 100%;
+.game-page .overview-card:hover .overview-card-arrow,
+.game-page .overview-card:focus-visible .overview-card-arrow {
+    color: #93c5fd;
+    transform: translateX(0.25rem);
 }
 
-.pgt-progress-card-label {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #f8fafc;
-  text-align: left;
+.game-page .overview-card-description {
+    max-width: none;
+    margin: 0;
+    color: #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    text-align: left;
 }
 
-.pgt-progress-card-bar {
-  position: relative;
-  overflow: hidden;
-  min-height: 1.72rem;
-  border-radius: 999px;
-  background: rgba(148, 163, 184, 0.18);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+.game-page .overview-card-meta {
+    margin: auto 0 0;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
-.pgt-progress-card-fill {
-  position: absolute;
-  inset: 0 auto 0 0;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+/* Gemeinsame native Fortschrittskomponente. */
+.game-page .overview-card-progress {
+    width: 100%;
+    margin-top: auto;
+    display: grid;
+    gap: 0.6rem;
 }
 
-.pgt-progress-card-overlay {
-  position: relative;
-  z-index: 1;
-  min-height: 1.72rem;
-  padding: 0.22rem 0.82rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.85rem;
-  font-size: 0.93rem;
-  font-weight: 700;
-  color: #eff6ff;
+.game-page .overview-card-progress[hidden] {
+    display: none !important;
 }
 
-.pgt-progress-card-count,
-.pgt-progress-card-percent {
-  white-space: nowrap;
+.game-page .overview-card-progress-label {
+    color: #f8fafc;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.game-page .overview-card-progress-bar {
+    min-height: 1.72rem;
+    position: relative;
+    overflow: hidden;
+    background: rgba(148, 163, 184, 0.18);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 999px;
+}
+
+.game-page .overview-card-progress-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    height: 100%;
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+    border-radius: inherit;
+    transition: width 180ms ease;
+}
+
+.game-page .overview-card-progress-overlay {
+    min-height: 1.72rem;
+    padding: 0.22rem 0.82rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.85rem;
+    color: #eff6ff;
+    font-size: 0.93rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.game-page .overview-card-progress-count,
+.game-page .overview-card-progress-percent {
+    white-space: nowrap;
+}
+
+@media (max-width: 780px) {
+    .game-page .category-grid,
+    .game-page .comms-section-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .game-page .overview-card {
+        min-height: 13rem;
+        padding: 1.1rem;
+    }
 }
 
 @media (max-width: 640px) {
-  .pgt-overview-card-unified:not(.comms-section-card)::before {
-    top: 0.98rem;
-    right: 2.2rem;
-  }
+    .game-page .overview-card-progress-bar,
+    .game-page .overview-card-progress-overlay {
+        min-height: 1.58rem;
+    }
 
-  .pgt-overview-card-unified:not(.comms-section-card)::after {
-    top: 0.83rem;
-    right: 0.9rem;
-  }
-
-  .pgt-progress-card-bar,
-  .pgt-progress-card-overlay {
-    min-height: 1.58rem;
-  }
-
-  .pgt-progress-card-overlay {
-    font-size: 0.84rem;
-    padding-inline: 0.65rem;
-  }
+    .game-page .overview-card-progress-overlay {
+        padding-inline: 0.65rem;
+        font-size: 0.84rem;
+    }
 }

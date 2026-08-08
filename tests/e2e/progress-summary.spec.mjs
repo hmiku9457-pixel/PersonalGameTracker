@@ -53,13 +53,13 @@ test(
 
         await expect(
             foundFootageCard.locator(
-                ".pgt-progress-card-count"
+                ".overview-card-progress-count"
             )
         ).toHaveText("11 / 13");
 
         await expect(
             foundFootageCard.locator(
-                ".pgt-progress-card-percent"
+                ".overview-card-progress-percent"
             )
         ).toHaveText("85 %");
     }
