@@ -16,9 +16,6 @@ await ensureFile(
 await injectIntoHtml('index.html');
 await injectIntoHtml('404.html', { optional: true });
 
-// Einmaliges Apply-Skript im Repo belassen? Nein, nach erfolgreichem Lauf entfernen.
-await safeDelete('scripts/applyProgressCardLayoutHotfix.mjs');
-
 console.log('Progress-Card-Layout-Hotfix erfolgreich angewendet.');
 
 async function injectIntoHtml(relativePath, { optional = false } = {}) {
@@ -77,16 +74,6 @@ async function ensureFile(relativePath, content) {
   await writeNormalized(absolutePath, content);
 }
 
-async function safeDelete(relativePath) {
-  const absolutePath = path.join(repoRoot, relativePath);
-  try {
-    await fs.unlink(absolutePath);
-  } catch (error) {
-    if (error.code !== 'ENOENT') {
-      throw error;
-    }
-  }
-}
 
 async function writeNormalized(absolutePath, content) {
   const normalized = String(content)
