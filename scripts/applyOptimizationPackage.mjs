@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const PACKAGE_VERSION = "2026-08-08.4";
+const PACKAGE_VERSION = "2026-08-08.5";
 const APPLY_WORKFLOW = ".github/workflows/apply-site-optimizations.yml";
 const APPLY_SCRIPT = "scripts/applyOptimizationPackage.mjs";
 const touchedFiles = new Set();
@@ -1189,15 +1189,27 @@ async function readText(relativeFile) {
 
 async function writeText(relativeFile, content) {
     const absoluteFile = resolvePath(relativeFile);
+
+    /*
+     * Generierte Leerzeilen dürfen keine Tabs oder Spaces enthalten.
+     * Dadurch bleibt jede vom Paket geschriebene Textdatei kompatibel
+     * mit `git diff --check`.
+     */
+    const normalizedContent =
+        content.replace(
+            /[ \t]+(?=\r?\n|$)/g,
+            ""
+        );
+
     await fs.mkdir(
         path.dirname(absoluteFile),
         { recursive: true }
     );
     await fs.writeFile(
         absoluteFile,
-        content.endsWith("\n")
-            ? content
-            : `${content}\n`,
+        normalizedContent.endsWith("\n")
+            ? normalizedContent
+            : `${normalizedContent}\n`,
         "utf8"
     );
     touchedFiles.add(relativeFile);
