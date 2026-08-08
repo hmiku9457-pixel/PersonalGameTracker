@@ -25,13 +25,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Prüfen, ob das Update noch aussteht
+      - name: Prüfen, ob ein Update noch aussteht
         id: update_state
         shell: bash
         run: |
-          if [[ -f scripts/applySystemOptimizationPackage.mjs ]]; then
+          if [[ -f scripts/applySystemOptimizationPackage.mjs || \
+                -f scripts/applyProgressSummaryFix.mjs ]]; then
             echo "pending=true" >> "$GITHUB_OUTPUT"
-            echo "Das Systemupdate wurde noch nicht angewendet. Die Qualitätsprüfung wird bis dahin übersprungen."
+            echo "Ein Update-Paket wurde noch nicht angewendet. Die Qualitätsprüfung wird bis dahin übersprungen."
           else
             echo "pending=false" >> "$GITHUB_OUTPUT"
           fi
@@ -50,6 +51,10 @@ jobs:
       - name: Chromium für Playwright installieren
         if: steps.update_state.outputs.pending == 'false'
         run: npx playwright install --with-deps chromium
+
+      - name: Fortschrittsindizes prüfen
+        if: steps.update_state.outputs.pending == 'false'
+        run: npm run check:progress-index
 
       - name: Repository validieren
         if: steps.update_state.outputs.pending == 'false'
