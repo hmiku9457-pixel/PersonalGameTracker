@@ -2349,30 +2349,33 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("wichtigste Routen rendern erwartete Inhalte", async ({ page }) => {
+    const mainContent =
+        page.locator("#main-content");
+
     await page.goto(\`/\${ROUTES.games}\`);
     await expect(
-        page.locator(
-            'a[href="#game/theDivision2"]'
+        mainContent.locator(
+            '.game-card[data-game-id="theDivision2"]'
         )
     ).toBeVisible();
 
     await navigate(page, ROUTES.division);
     await expect(
-        page.locator(
-            'a[href="#game/theDivision2/collectibles"]'
+        mainContent.locator(
+            '.category-card[data-category-id="collectibles"]'
         )
     ).toBeVisible();
 
     await navigate(page, ROUTES.collectibles);
     await expect(
-        page.locator(
-            'a[href="#game/theDivision2/collectibles/comms"]'
+        mainContent.locator(
+            '.category-card[data-category-id="comms"]'
         )
     ).toBeVisible();
 
     await navigate(page, ROUTES.comms);
     await expect(
-        page.locator(
+        mainContent.locator(
             ".comms-section-card"
         )
     ).toHaveCount(4);
