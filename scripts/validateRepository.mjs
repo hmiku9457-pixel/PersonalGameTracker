@@ -858,7 +858,6 @@ function resolveReferenceCandidates(
     return null;
 }
 
-
 function resolveReference(
     parentFile,
     reference,
@@ -957,3 +956,7 @@ function formatPath(parts) {
         ? parts.join(".")
         : "<root>";
 }
+
+await import(
+    "./validateOverviewCardMetadata.mjs"
+);

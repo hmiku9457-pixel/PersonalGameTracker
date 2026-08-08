@@ -5,50 +5,122 @@
     {
       "id": "foundFootage",
       "name": "Found Footage",
-      "description": "Collectibles",
+      "description": {
+        "de": "Gefundene Videoaufzeichnungen aus der offenen Welt, Missionen und Erweiterungsgebieten.",
+        "en": "Recovered video recordings from the open world, missions and expansion areas."
+      },
       "type": "category",
       "file": "foundFootage.json",
-      "itemCount": 13
+      "itemCount": 13,
+      "itemLabel": {
+        "de": "Videos",
+        "en": "videos"
+      },
+      "groupCount": 3,
+      "groupLabel": {
+        "de": "Sammlungen",
+        "en": "collections"
+      }
     },
     {
       "id": "comms",
       "name": "Comms",
-      "description": "Collectibles",
+      "description": {
+        "de": "Audioprotokolle und Kommunikationsaufzeichnungen aus Regionen, Missionen und saisonalen Inhalten.",
+        "en": "Audio logs and communication recordings from regions, missions and seasonal content."
+      },
       "type": "manifest",
       "file": "comms/manifest.json",
-      "itemCount": 840
+      "itemCount": 840,
+      "itemLabel": {
+        "de": "Aufzeichnungen",
+        "en": "recordings"
+      },
+      "groupCount": 4,
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "artifacts",
       "name": "Artifacts",
-      "description": "Collectibles",
+      "description": {
+        "de": "Kunstwerke, Relikte und weitere Artefakte, die über die verschiedenen Spielgebiete verteilt sind.",
+        "en": "Artwork, relics and other artifacts distributed throughout the different game areas."
+      },
       "type": "category",
       "file": "artifacts.json",
-      "itemCount": 53
+      "itemCount": 53,
+      "itemLabel": {
+        "de": "Artefakte",
+        "en": "artifacts"
+      },
+      "groupCount": 5,
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "echos",
       "name": "ECHOs",
-      "description": "Collectibles",
+      "description": {
+        "de": "Rekonstruierte Szenen und holografische Momentaufnahmen wichtiger Ereignisse und Begegnungen.",
+        "en": "Reconstructed scenes and holographic snapshots of important events and encounters."
+      },
       "type": "category",
       "file": "echos.json",
-      "itemCount": 50
+      "itemCount": 50,
+      "itemLabel": {
+        "de": "ECHOs",
+        "en": "ECHOs"
+      },
+      "groupCount": 6,
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "fieldData",
       "name": "Field Data",
-      "description": "Collectibles",
+      "description": {
+        "de": "Feldberichte, Profile und Dokumente mit zusätzlichen Informationen zu Personen und Fraktionen.",
+        "en": "Field reports, profiles and documents with additional information about people and factions."
+      },
       "type": "category",
       "file": "fieldData.json",
-      "itemCount": 66
+      "itemCount": 66,
+      "itemLabel": {
+        "de": "Datensätze",
+        "en": "records"
+      },
+      "groupCount": 15,
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "database",
       "name": "Database",
-      "description": "Collectibles",
+      "description": {
+        "de": "Datenbankeinträge, Dossiers und Informationssammlungen aus unterschiedlichen Themenbereichen.",
+        "en": "Database entries, dossiers and information collections covering a range of subjects."
+      },
       "type": "category",
       "file": "database.json",
-      "itemCount": 211
+      "itemCount": 211,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupCount": 18,
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     }
   ],
   "itemCount": 1233

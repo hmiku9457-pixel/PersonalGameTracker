@@ -40,7 +40,15 @@
       },
       "type": "manifest",
       "file": "washington/manifest.json",
-      "renderer": "comms"
+      "renderer": "comms",
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "items"
+      },
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "newYork",
@@ -63,7 +71,15 @@
       },
       "type": "manifest",
       "file": "newYork/manifest.json",
-      "renderer": "comms"
+      "renderer": "comms",
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "items"
+      },
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "brooklyn",
@@ -86,7 +102,15 @@
       },
       "type": "manifest",
       "file": "brooklyn/manifest.json",
-      "renderer": "comms"
+      "renderer": "comms",
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "items"
+      },
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "missions",
@@ -105,7 +129,15 @@
       "type": "manifest",
       "file": "missions/manifest.json",
       "dataFile": "allMissions.json",
-      "renderer": "comms"
+      "renderer": "comms",
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "items"
+      },
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     }
   ],
   "view": "comms-overview",

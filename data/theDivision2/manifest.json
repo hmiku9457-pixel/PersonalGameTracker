@@ -5,34 +5,82 @@
     {
       "id": "collectibles",
       "name": "Collectibles",
-      "description": "ECHOs, Comms, Found Footage und weitere Sammelobjekte",
+      "description": {
+        "de": "Sammelobjekte, Aufzeichnungen und ergänzende Hintergrundinformationen aus der Spielwelt.",
+        "en": "Collectibles, recordings and additional background information found throughout the game world."
+      },
       "type": "manifest",
       "file": "collectibles/manifest.json",
-      "itemCount": 1233
+      "itemCount": 1233,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "items"
+      },
+      "groupCount": 6,
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "exotics",
       "name": "Exotics",
-      "description": "Exotische Waffen und Ausrüstung",
+      "description": {
+        "de": "Exotische Waffen und Ausrüstungsteile mit besonderen Talenten und eigenen Freischaltbedingungen.",
+        "en": "Exotic weapons and gear pieces with unique talents and individual unlock requirements."
+      },
       "type": "category",
       "file": "exotics.json",
-      "itemCount": 74
+      "itemCount": 74,
+      "itemLabel": {
+        "de": "Exotics",
+        "en": "exotics"
+      },
+      "groupCount": 13,
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "blueprints",
       "name": "Blaupausen",
-      "description": "Freigeschaltete und fehlende Blaupausen",
+      "description": {
+        "de": "Blaupausen für Waffen, Ausrüstung und Mods sowie die jeweiligen Wege zu ihrer Freischaltung.",
+        "en": "Blueprints for weapons, gear and mods together with their respective unlock methods."
+      },
       "type": "category",
       "file": "blueprints.json",
-      "itemCount": 73
+      "itemCount": 73,
+      "itemLabel": {
+        "de": "Blaupausen",
+        "en": "blueprints"
+      },
+      "groupCount": 11,
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     },
     {
       "id": "achievements",
       "name": "Achievements",
-      "description": "Erfolge und Herausforderungen",
+      "description": {
+        "de": "Erfolge und Herausforderungen, die den vollständigen Spielfortschritt und besondere Aufgaben dokumentieren.",
+        "en": "Achievements and challenges that document full game completion and special objectives."
+      },
       "type": "category",
       "file": "achievements.json",
-      "itemCount": 67
+      "itemCount": 67,
+      "itemLabel": {
+        "de": "Erfolge",
+        "en": "achievements"
+      },
+      "groupCount": 7,
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     }
   ],
   "itemCount": 1447

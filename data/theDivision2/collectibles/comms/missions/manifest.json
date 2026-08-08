@@ -29,7 +29,15 @@
       "type": "category",
       "file": "newYorkWorld.json",
       "itemCount": 9,
-      "groupCount": 1
+      "groupCount": 1,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "specialOperations",
@@ -41,7 +49,15 @@
       "type": "category",
       "file": "specialOperations.json",
       "itemCount": 30,
-      "groupCount": 3
+      "groupCount": 3,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "manhuntsLegacy",
@@ -53,7 +69,15 @@
       "type": "category",
       "file": "manhuntsLegacy.json",
       "itemCount": 80,
-      "groupCount": 4
+      "groupCount": 4,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "manhuntsReconstruction",
@@ -65,7 +89,15 @@
       "type": "category",
       "file": "manhuntsReconstruction.json",
       "itemCount": 87,
-      "groupCount": 4
+      "groupCount": 4,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "manhuntsRogueNetwork",
@@ -77,7 +109,15 @@
       "type": "category",
       "file": "manhuntsRogueNetwork.json",
       "itemCount": 88,
-      "groupCount": 3
+      "groupCount": 3,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "manhuntsCurrent",
@@ -89,7 +129,15 @@
       "type": "category",
       "file": "manhuntsCurrent.json",
       "itemCount": 101,
-      "groupCount": 7
+      "groupCount": 7,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "incursionAndBTSU",
@@ -101,7 +149,15 @@
       "type": "category",
       "file": "incursionAndBTSU.json",
       "itemCount": 15,
-      "groupCount": 2
+      "groupCount": 2,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "descent",
@@ -113,7 +169,15 @@
       "type": "category",
       "file": "descent.json",
       "itemCount": 105,
-      "groupCount": 1
+      "groupCount": 1,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     }
   ],
   "itemCount": 515,

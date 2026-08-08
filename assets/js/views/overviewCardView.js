@@ -4,8 +4,60 @@
    ========================================================= */
 
 import {
-    getCurrentLanguage
+    getCurrentLanguage,
+    getLocalizedText
 } from "../services/languageService.js";
+
+/**
+ * Erstellt die gemeinsame Metazeile einer Übersichtskarte.
+ *
+ * Beispiel:
+ * 13 Videos · 3 Sammlungen
+ *
+ * @param {Object} entry
+ * @returns {HTMLElement|null}
+ */
+export function createOverviewMeta(entry = {}) {
+    const itemCount = Number(entry.itemCount);
+
+    if (!Number.isInteger(itemCount) || itemCount < 0) {
+        return null;
+    }
+
+    const language = getCurrentLanguage();
+    const locale = language === "en"
+        ? "en-US"
+        : "de-DE";
+    const numberFormatter = new Intl.NumberFormat(locale);
+
+    const itemLabel = getLocalizedText(
+        entry.itemLabel,
+        language === "en" ? "items" : "Einträge"
+    );
+
+    const parts = [
+        numberFormatter.format(itemCount) + " " + itemLabel
+    ];
+
+    const groupCount = Number(entry.groupCount);
+
+    if (Number.isInteger(groupCount) && groupCount > 0) {
+        const groupLabel = getLocalizedText(
+            entry.groupLabel,
+            language === "en" ? "groups" : "Gruppen"
+        );
+
+        parts.push(
+            numberFormatter.format(groupCount) + " " + groupLabel
+        );
+    }
+
+    const element = document.createElement("p");
+    element.className = "overview-card-meta";
+    element.textContent = parts.join(" · ");
+
+    return element;
+}
 
 /**
  * Erstellt die gemeinsame Fortschrittsanzeige aller Übersichtskarten.

@@ -5,10 +5,17 @@
     {
       "id": "achievements",
       "name": "Achievements",
-      "description": "Steam-Erfolge aus dem Hauptspiel",
+      "description": {
+        "de": "Erfolge und Herausforderungen, die den vollständigen Spielfortschritt und besondere Aufgaben dokumentieren.",
+        "en": "Achievements and challenges that document full game completion and special objectives."
+      },
       "type": "category",
       "file": "achievements.json",
-      "itemCount": 43
+      "itemCount": 43,
+      "itemLabel": {
+        "de": "Erfolge",
+        "en": "achievements"
+      }
     }
   ],
   "itemCount": 43

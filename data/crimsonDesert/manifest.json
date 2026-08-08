@@ -5,18 +5,32 @@
     {
       "id": "achievements",
       "name": "Achievements",
-      "description": "Steam-Erfolge aus dem Hauptspiel",
+      "description": {
+        "de": "Erfolge und Herausforderungen, die den vollständigen Spielfortschritt und besondere Aufgaben dokumentieren.",
+        "en": "Achievements and challenges that document full game completion and special objectives."
+      },
       "type": "category",
       "file": "achievements.json",
-      "itemCount": 34
+      "itemCount": 34,
+      "itemLabel": {
+        "de": "Erfolge",
+        "en": "achievements"
+      }
     },
     {
       "id": "equipmentSets",
       "name": "Equipment Sets",
-      "description": "Equipment Sets",
+      "description": {
+        "de": "Ausrüstungssets und ihre Bestandteile für die gezielte Planung einer vollständigen Sammlung.",
+        "en": "Equipment sets and their individual pieces for planning and completing the full collection."
+      },
       "type": "category",
       "file": "equipmentSets.json",
-      "itemCount": 61
+      "itemCount": 61,
+      "itemLabel": {
+        "de": "Ausrüstungssets",
+        "en": "equipment sets"
+      }
     }
   ],
   "itemCount": 95

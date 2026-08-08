@@ -5,10 +5,22 @@
     {
       "id": "achievements",
       "name": "Achievements",
-      "description": "Steam-Erfolge aus dem Hauptspiel und Phantom Liberty.",
+      "description": {
+        "de": "Erfolge und Herausforderungen, die den vollständigen Spielfortschritt und besondere Aufgaben dokumentieren.",
+        "en": "Achievements and challenges that document full game completion and special objectives."
+      },
       "type": "category",
       "file": "achievements.json",
-      "itemCount": 57
+      "itemCount": 57,
+      "itemLabel": {
+        "de": "Erfolge",
+        "en": "achievements"
+      },
+      "groupCount": 2,
+      "groupLabel": {
+        "de": "Kategorien",
+        "en": "categories"
+      }
     }
   ],
   "itemCount": 57

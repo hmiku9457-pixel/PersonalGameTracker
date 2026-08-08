@@ -30,7 +30,8 @@ import {
 
 import {
 	createOverviewProgress,
-	updateOverviewProgress
+	updateOverviewProgress,
+	createOverviewMeta
 } from "./overviewCardView.js";
 
 const mainContent =
@@ -407,6 +408,17 @@ function createCategoryCard(
 
 		button.append(
 			description
+		);
+	}
+
+	const meta =
+		createOverviewMeta(
+			category
+		);
+
+	if (meta) {
+		button.append(
+			meta
 		);
 	}
 

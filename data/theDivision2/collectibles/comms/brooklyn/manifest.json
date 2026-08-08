@@ -29,7 +29,15 @@
       "type": "category",
       "file": "battleForBrooklyn.json",
       "itemCount": 35,
-      "groupCount": 4
+      "groupCount": 4,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     }
   ],
   "mapImage": "assets/maps/theDivision2/brooklyn.svg",

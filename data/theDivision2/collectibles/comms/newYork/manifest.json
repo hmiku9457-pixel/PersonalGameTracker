@@ -29,7 +29,15 @@
       "type": "category",
       "file": "newYorkWorld.json",
       "itemCount": 23,
-      "groupCount": 2
+      "groupCount": 2,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "newYorkProfiles",
@@ -41,7 +49,15 @@
       "type": "category",
       "file": "newYorkProfiles.json",
       "itemCount": 86,
-      "groupCount": 9
+      "groupCount": 9,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     }
   ],
   "mapImage": "assets/maps/theDivision2/newYork.svg",

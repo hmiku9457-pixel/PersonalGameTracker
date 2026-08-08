@@ -5,18 +5,32 @@
     {
       "id": "achievements",
       "name": "Achievements",
-      "description": "Steam-Erfolge aus dem Hauptspiel",
+      "description": {
+        "de": "Erfolge und Herausforderungen, die den vollständigen Spielfortschritt und besondere Aufgaben dokumentieren.",
+        "en": "Achievements and challenges that document full game completion and special objectives."
+      },
       "type": "category",
       "file": "achievements.json",
-      "itemCount": 54
+      "itemCount": 54,
+      "itemLabel": {
+        "de": "Erfolge",
+        "en": "achievements"
+      }
     },
     {
       "id": "quests",
       "name": "Quests",
-      "description": "Alle Quests des Spiels",
+      "description": {
+        "de": "Haupt-, Neben- und optionale Quests mit ihren Aufgaben, Voraussetzungen und Abschlusszielen.",
+        "en": "Main, side and optional quests with their objectives, requirements and completion goals."
+      },
       "type": "category",
       "file": "quests.json",
-      "itemCount": 81
+      "itemCount": 81,
+      "itemLabel": {
+        "de": "Quests",
+        "en": "quests"
+      }
     }
   ],
   "itemCount": 135

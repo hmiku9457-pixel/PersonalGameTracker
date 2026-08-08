@@ -29,7 +29,15 @@
       "type": "category",
       "file": "coreFactionsAndInstitutions.json",
       "itemCount": 73,
-      "groupCount": 7
+      "groupCount": 7,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "washingtonWorld",
@@ -41,7 +49,15 @@
       "type": "category",
       "file": "washingtonWorld.json",
       "itemCount": 33,
-      "groupCount": 3
+      "groupCount": 3,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "washingtonSettlements",
@@ -53,7 +69,15 @@
       "type": "category",
       "file": "washingtonSettlements.json",
       "itemCount": 20,
-      "groupCount": 3
+      "groupCount": 3,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     },
     {
       "id": "washingtonProfiles",
@@ -65,7 +89,15 @@
       "type": "category",
       "file": "washingtonProfiles.json",
       "itemCount": 55,
-      "groupCount": 6
+      "groupCount": 6,
+      "itemLabel": {
+        "de": "Einträge",
+        "en": "entries"
+      },
+      "groupLabel": {
+        "de": "Gruppen",
+        "en": "groups"
+      }
     }
   ],
   "mapImage": "assets/maps/theDivision2/washington.svg",
