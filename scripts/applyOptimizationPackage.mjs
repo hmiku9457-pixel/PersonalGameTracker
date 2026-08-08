@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
+const PACKAGE_VERSION = "2026-08-08.2";
 const APPLY_WORKFLOW = ".github/workflows/apply-site-optimizations.yml";
 const APPLY_SCRIPT = "scripts/applyOptimizationPackage.mjs";
 const touchedFiles = new Set();
@@ -18,7 +19,7 @@ await writePermanentValidation();
 await writeReadme();
 await removeTemporaryPackageFiles();
 
-console.log("\nOptimierungspaket erfolgreich angewendet.");
+console.log(`\nOptimierungspaket ${PACKAGE_VERSION} erfolgreich angewendet.`);
 console.log(`Geänderte oder erzeugte Dateien: ${touchedFiles.size}`);
 for (const file of [...touchedFiles].sort()) {
     console.log(`- ${file}`);
@@ -352,17 +353,8 @@ async function patchRouter() {
         "unbekannte Route"
     );
 
-    source = replaceOnce(
-        source,
-        `\tcatch (error) {
-\t\tconsole.error(`,
-        `\tcatch (error) {
-\t\tif (error?.name === "AbortError") {
-\t\t\treturn;
-\t\t}
-
-\t\tconsole.error(`,
-        "AbortError-Behandlung"
+    source = insertAbortErrorHandling(
+        source
     );
 
     source = replaceRegexOnce(
@@ -919,6 +911,49 @@ async function removeTemporaryPackageFiles() {
             }
         }
     }
+}
+
+
+function insertAbortErrorHandling(source) {
+    if (
+        source.includes(
+            'error?.name === "AbortError"'
+        )
+    ) {
+        return source;
+    }
+
+    const regex =
+        /^([ \t]*)catch \(error\) \{\r?\n([ \t]*)console\.error\(/m;
+
+    const matches = [
+        ...source.matchAll(
+            new RegExp(
+                regex.source,
+                "gm"
+            )
+        )
+    ];
+
+    if (matches.length !== 1) {
+        throw new Error(
+            `Erwartet wurde genau eine Codepassage für "AbortError-Behandlung", gefunden: ${matches.length}`
+        );
+    }
+
+    return source.replace(
+        regex,
+        (
+            match,
+            catchIndent,
+            bodyIndent
+        ) => {
+            const nestedIndent =
+                `${bodyIndent}\t`;
+
+            return `${catchIndent}catch (error) {\n${bodyIndent}if (error?.name === "AbortError") {\n${nestedIndent}return;\n${bodyIndent}}\n\n${bodyIndent}console.error(`;
+        }
+    );
 }
 
 function replaceOnce(source, search, replacement, label) {
