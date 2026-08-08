@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const PACKAGE_VERSION = "2026-08-08.2";
+const PACKAGE_VERSION = "2026-08-08.3";
 const APPLY_WORKFLOW = ".github/workflows/apply-site-optimizations.yml";
 const APPLY_SCRIPT = "scripts/applyOptimizationPackage.mjs";
 const touchedFiles = new Set();
@@ -923,36 +923,132 @@ function insertAbortErrorHandling(source) {
         return source;
     }
 
-    const regex =
-        /^([ \t]*)catch \(error\) \{\r?\n([ \t]*)console\.error\(/m;
+    const functionStart =
+        source.indexOf(
+            "export async function loadPageFromHash"
+        );
+
+    if (functionStart === -1) {
+        throw new Error(
+            'Router-Funktion "loadPageFromHash" wurde nicht gefunden.'
+        );
+    }
+
+    const functionEndCandidates = [
+        source.indexOf(
+            "async function resolveGameRoute",
+            functionStart
+        ),
+        source.indexOf(
+            "function resolveGameRoute",
+            functionStart
+        )
+    ].filter(index => index > functionStart);
+
+    const functionEnd =
+        functionEndCandidates.length > 0
+            ? Math.min(...functionEndCandidates)
+            : source.length;
+
+    const functionSource =
+        source.slice(
+            functionStart,
+            functionEnd
+        );
+
+    const catchRegex =
+        /catch\s*\(\s*error\s*\)\s*\{/g;
 
     const matches = [
-        ...source.matchAll(
-            new RegExp(
-                regex.source,
-                "gm"
-            )
+        ...functionSource.matchAll(
+            catchRegex
         )
     ];
 
     if (matches.length !== 1) {
         throw new Error(
-            `Erwartet wurde genau eine Codepassage für "AbortError-Behandlung", gefunden: ${matches.length}`
+            `Im Funktionsbereich von "loadPageFromHash" wurde genau ein Catch-Block erwartet, gefunden: ${matches.length}`
         );
     }
 
-    return source.replace(
-        regex,
-        (
-            match,
-            catchIndent,
-            bodyIndent
-        ) => {
-            const nestedIndent =
-                `${bodyIndent}\t`;
+    const catchMatch =
+        matches[0];
 
-            return `${catchIndent}catch (error) {\n${bodyIndent}if (error?.name === "AbortError") {\n${nestedIndent}return;\n${bodyIndent}}\n\n${bodyIndent}console.error(`;
-        }
+    const catchStart =
+        functionStart +
+        catchMatch.index;
+
+    const catchOpeningEnd =
+        catchStart +
+        catchMatch[0].length;
+
+    const lineStart =
+        source.lastIndexOf(
+            "\n",
+            catchStart
+        ) + 1;
+
+    const catchIndentMatch =
+        source.slice(
+            lineStart,
+            catchStart
+        ).match(/^[ \t]*/);
+
+    const catchIndent =
+        catchIndentMatch?.[0] ?? "";
+
+    const afterOpening =
+        source.slice(
+            catchOpeningEnd
+        );
+
+    const existingLineStart =
+        afterOpening.match(
+            /^(\r?\n)([ \t]*)/
+        );
+
+    const newline =
+        existingLineStart?.[1] ??
+        (source.includes("\r\n")
+            ? "\r\n"
+            : "\n");
+
+    let bodyIndent =
+        existingLineStart?.[2] ?? "";
+
+    if (!bodyIndent) {
+        const indentUnit =
+            catchIndent.includes("\t")
+                ? "\t"
+                : "    ";
+
+        bodyIndent =
+            `${catchIndent}${indentUnit}`;
+    }
+
+    const nestedIndent =
+        bodyIndent.includes("\t")
+            ? `${bodyIndent}\t`
+            : `${bodyIndent}    `;
+
+    const replacementPrefix =
+        `${newline}${bodyIndent}if (error?.name === "AbortError") {` +
+        `${newline}${nestedIndent}return;` +
+        `${newline}${bodyIndent}}` +
+        `${newline}${newline}${bodyIndent}`;
+
+    const existingPrefixLength =
+        existingLineStart?.[0].length ?? 0;
+
+    return (
+        source.slice(
+            0,
+            catchOpeningEnd
+        ) +
+        replacementPrefix +
+        afterOpening.slice(
+            existingPrefixLength
+        )
     );
 }
 
