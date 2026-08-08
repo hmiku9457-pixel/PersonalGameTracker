@@ -828,34 +828,58 @@ async function installSupabaseMock(page) {
 `;
 }
 
-function countOverviewCardImports(source) {
+function getOverviewCardImportMatches(source) {
+    const importPattern =
+        /^[ \t]*import\s*\{([^}]*)\}\s*from\s*["']\.\/overviewCardView\.js["'];?[ \t]*$/gm;
+
     return [
-        ...source.matchAll(
-            /import\s*\{[\s\S]*?\}\s*from\s*["']\.\/overviewCardView\.js["'];?/g
+        ...source.matchAll(importPattern)
+    ];
+}
+
+function parseImportEntries(specifierBlock) {
+    return String(specifierBlock)
+        .split(",")
+        .map(value =>
+            value
+                .replace(/\/\*[\s\S]*?\*\//g, "")
+                .replace(/\/\/.*$/gm, "")
+                .replace(/\s+/g, " ")
+                .trim()
         )
-    ].length;
+        .filter(Boolean);
+}
+
+function getLocalImportBinding(entry) {
+    const aliasMatch = entry.match(
+        /\bas\s+([A-Za-z_$][\w$]*)$/
+    );
+
+    if (aliasMatch) {
+        return aliasMatch[1];
+    }
+
+    const identifierMatch = entry.match(
+        /^([A-Za-z_$][\w$]*)$/
+    );
+
+    return identifierMatch
+        ? identifierMatch[1]
+        : null;
+}
+
+function countOverviewCardImports(source) {
+    return getOverviewCardImportMatches(source).length;
 }
 
 function countImportedBinding(source, bindingName) {
-    const importPattern =
-        /import\s*\{([\s\S]*?)\}\s*from\s*["']\.\/overviewCardView\.js["'];?/g;
     let count = 0;
 
-    for (const match of source.matchAll(importPattern)) {
-        const entries = match[1]
-            .split(",")
-            .map(value => value.replace(/\s+/g, " ").trim())
-            .filter(Boolean);
+    for (const match of getOverviewCardImportMatches(source)) {
+        const entries = parseImportEntries(match[1]);
 
         for (const entry of entries) {
-            const aliasMatch = entry.match(
-                /\bas\s+([A-Za-z_$][\w$]*)$/
-            );
-            const localBinding = aliasMatch
-                ? aliasMatch[1]
-                : entry;
-
-            if (localBinding === bindingName) {
+            if (getLocalImportBinding(entry) === bindingName) {
                 count += 1;
             }
         }
@@ -865,52 +889,44 @@ function countImportedBinding(source, bindingName) {
 }
 
 function mergeOverviewCardImports(source, requiredNames) {
-    const importPattern =
-        /import\s*\{([\s\S]*?)\}\s*from\s*["']\.\/overviewCardView\.js["'];?/g;
-
-    const matches = [
-        ...source.matchAll(importPattern)
-    ];
-
-    const importNames = [];
+    const matches = getOverviewCardImportMatches(source);
+    const importEntries = [];
     const localBindings = new Set();
 
     for (const match of matches) {
-        const entries = match[1]
-            .split(",")
-            .map(value => value.replace(/\s+/g, " ").trim())
-            .filter(Boolean);
+        for (const entry of parseImportEntries(match[1])) {
+            const localBinding = getLocalImportBinding(entry);
 
-        for (const entry of entries) {
-            const aliasMatch = entry.match(
-                /\bas\s+([A-Za-z_$][\w$]*)$/
-            );
-            const localBinding = aliasMatch
-                ? aliasMatch[1]
-                : entry;
+            if (!localBinding) {
+                throw new Error(
+                    `Nicht unterstützter Overview-Card-Import: ${entry}`
+                );
+            }
 
             if (localBindings.has(localBinding)) {
                 continue;
             }
 
             localBindings.add(localBinding);
-            importNames.push(entry);
+            importEntries.push(entry);
         }
     }
 
     for (const requiredName of requiredNames) {
-        if (!localBindings.has(requiredName)) {
-            localBindings.add(requiredName);
-            importNames.push(requiredName);
+        if (localBindings.has(requiredName)) {
+            continue;
         }
+
+        localBindings.add(requiredName);
+        importEntries.push(requiredName);
     }
 
     const importBlock =
-        `import {\n\t${importNames.join(",\n\t")}\n} from "./overviewCardView.js";`;
+        `import {\n\t${importEntries.join(",\n\t")}\n} from "./overviewCardView.js";`;
 
     if (matches.length === 0) {
         const languageImportPattern =
-            /import\s*\{[\s\S]*?\}\s*from\s*["']\.\.\/services\/languageService\.js["'];?/;
+            /import\s*\{[^}]*\}\s*from\s*["']\.\.\/services\/languageService\.js["'];?/;
         const languageImport = source.match(
             languageImportPattern
         );
@@ -927,19 +943,24 @@ function mergeOverviewCardImports(source, requiredNames) {
         );
     }
 
-    let inserted = false;
+    const firstImportIndex = matches[0].index;
+    let updatedSource = source;
 
-    return source.replace(
-        importPattern,
-        () => {
-            if (inserted) {
-                return "";
-            }
+    for (const match of [...matches].reverse()) {
+        const start = match.index;
+        const end = start + match[0].length;
 
-            inserted = true;
-            return importBlock;
-        }
-    );
+        updatedSource =
+            updatedSource.slice(0, start) +
+            updatedSource.slice(end);
+    }
+
+    updatedSource =
+        updatedSource.slice(0, firstImportIndex) +
+        importBlock +
+        updatedSource.slice(firstImportIndex);
+
+    return updatedSource;
 }
 
 function findFunctionRange(source, signature) {
