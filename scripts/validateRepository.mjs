@@ -10,6 +10,7 @@ const countMemo = new Map();
 await validateAllJson();
 await validateManifests();
 await validateCommsShape();
+await validateCommsRuntimeReferences();
 await validateHtmlReferences();
 await inspectDuplicateItemIds();
 
@@ -190,6 +191,54 @@ async function validateCommsShape() {
             errors.push(
                 `${relative(file)}: files ist nach der Konsolidierung nicht mehr zulässig.`
             );
+        }
+    }
+}
+
+async function validateCommsRuntimeReferences() {
+    const checks = [
+        {
+            file: "assets/js/views/commsMapView.js",
+            forbidden: [
+                "sectionManifest.files"
+            ]
+        },
+        {
+            file: "assets/js/views/commsOverviewView.js",
+            forbidden: [
+                "commsManifest.sections",
+                "section.manifest",
+                "sectionManifest.files"
+            ]
+        }
+    ];
+
+    for (const check of checks) {
+        const absolute = path.resolve(
+            ROOT,
+            check.file
+        );
+        let source;
+
+        try {
+            source = await fs.readFile(
+                absolute,
+                "utf8"
+            );
+        }
+        catch (error) {
+            errors.push(
+                `${check.file}: Datei konnte nicht gelesen werden (${error.message}).`
+            );
+            continue;
+        }
+
+        for (const forbidden of check.forbidden) {
+            if (source.includes(forbidden)) {
+                errors.push(
+                    `${check.file}: veraltete Comms-Manifest-Referenz "${forbidden}".`
+                );
+            }
         }
     }
 }

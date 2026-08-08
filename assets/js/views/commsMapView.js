@@ -281,8 +281,8 @@ async function loadCombinedSectionData(
     sectionManifest,
     sectionManifestFile
 ) {
-    const files = Array.isArray(sectionManifest.files)
-        ? sectionManifest.files
+    const files = Array.isArray(sectionManifest.categories)
+        ? sectionManifest.categories
         : [];
 
     const loadedFiles = await Promise.all(
