@@ -1,9 +1,24 @@
+.pgt-progress-card-source {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
 .pgt-progress-card-section {
   margin-top: 1rem;
   display: grid;
   gap: 0.5rem;
   width: 100%;
+}
+
+.pgt-progress-card-section[hidden] {
+  display: none !important;
 }
 
 .pgt-progress-card-label {
@@ -28,6 +43,7 @@
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  transition: width 180ms ease;
 }
 
 .pgt-progress-card-overlay {
@@ -53,5 +69,11 @@
   .pgt-progress-card-overlay {
     font-size: 0.78rem;
     padding-inline: 0.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pgt-progress-card-fill {
+    transition: none;
   }
 }
