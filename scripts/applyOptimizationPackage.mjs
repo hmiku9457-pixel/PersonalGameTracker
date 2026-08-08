@@ -2,9 +2,9 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const PACKAGE_VERSION = "2026-08-08.5";
-const APPLY_WORKFLOW = ".github/workflows/apply-site-optimizations.yml";
+const PACKAGE_VERSION = "2026-08-08.6";
 const APPLY_SCRIPT = "scripts/applyOptimizationPackage.mjs";
+const PACKAGE_README = "README-PACKAGE.md";
 const touchedFiles = new Set();
 
 await assertRepositoryRoot();
@@ -15,7 +15,6 @@ await patchGamesView();
 await consolidateCommsManifests();
 await patchCommsOverviewView();
 await enrichAllManifestCounts();
-await writePermanentValidation();
 await writeReadme();
 await removeTemporaryPackageFiles();
 
@@ -777,54 +776,6 @@ function countItems(value) {
     return 0;
 }
 
-async function writePermanentValidation() {
-    const workflowFile =
-        ".github/workflows/repository-quality.yml";
-
-    const workflow = `name: Repository quality
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-  workflow_dispatch:
-
-permissions:
-  contents: read
-
-jobs:
-  validate:
-    name: Validate tracker repository
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Repository auschecken
-        uses: actions/checkout@v4
-
-      - name: Node.js einrichten
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Daten und Referenzen validieren
-        run: node scripts/validateRepository.mjs
-
-      - name: JavaScript-Syntax prüfen
-        shell: bash
-        run: |
-          while IFS= read -r -d '' file; do
-            node --check "$file"
-          done < <(find assets/js scripts -type f \\( -name '*.js' -o -name '*.mjs' \\) -print0)
-
-      - name: Whitespace-Fehler prüfen
-        run: git diff --check
-`;
-
-    await writeText(workflowFile, workflow);
-
-}
-
 async function writeReadme() {
     const readme = `# Personal Game Tracker
 
@@ -914,7 +865,14 @@ Die Seite kann direkt über GitHub Pages aus dem \`main\`-Branch ausgeliefert we
 }
 
 async function removeTemporaryPackageFiles() {
-    for (const file of [APPLY_WORKFLOW, APPLY_SCRIPT]) {
+    /*
+     * Workflow-Dateien bleiben bewusst unangetastet. Der von GitHub Actions
+     * bereitgestellte Token besitzt keine Workflows-Berechtigung und darf
+     * deshalb keine Dateien unter .github/workflows erstellen, ändern oder
+     * löschen. Der bereits manuell eingecheckte Workflow übernimmt nach dem
+     * einmaligen Apply-Lauf dauerhaft die Repository-Prüfung.
+     */
+    for (const file of [APPLY_SCRIPT, PACKAGE_README]) {
         try {
             await fs.rm(resolvePath(file));
             touchedFiles.add(file);
