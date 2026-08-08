@@ -1,15 +1,27 @@
-name: Apply site optimizations
+name: Repository quality
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ".github/workflows/apply-site-optimizations.yml"
+      - "scripts/applyOptimizationPackage.mjs"
+      - "scripts/validateRepository.mjs"
+      - "README-PACKAGE.md"
+  pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   apply:
     name: Apply and validate optimizations
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Repository auschecken
@@ -23,7 +35,13 @@ jobs:
           node-version: "22"
 
       - name: Optimierungspaket anwenden
-        run: node scripts/applyOptimizationPackage.mjs
+        shell: bash
+        run: |
+          if [[ -f scripts/applyOptimizationPackage.mjs ]]; then
+            node scripts/applyOptimizationPackage.mjs
+          else
+            echo "Das Optimierungspaket wurde bereits angewendet. Es wird nur validiert."
+          fi
 
       - name: Abschließende Leerzeichen bereinigen
         shell: bash
@@ -95,9 +113,44 @@ jobs:
             exit 0
           fi
 
+          if ! git diff --quiet -- .github/workflows; then
+            echo "Fehler: Der Apply-Lauf darf keine Workflow-Dateien verändern."
+            git diff -- .github/workflows
+            exit 1
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
           git commit -m "Optimize tracker architecture and data validation"
           git push
+
+  validate:
+    name: Validate tracker repository
+    if: github.event_name != 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Daten und Referenzen validieren
+        run: node scripts/validateRepository.mjs
+
+      - name: JavaScript-Syntax prüfen
+        shell: bash
+        run: |
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find assets/js scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0)
+
+      - name: Whitespace-Fehler prüfen
+        run: git diff --check
