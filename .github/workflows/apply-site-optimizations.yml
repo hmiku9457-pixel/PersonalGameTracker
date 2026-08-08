@@ -1,0 +1,54 @@
+name: Apply site optimizations
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    name: Apply and validate optimizations
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Optimierungspaket anwenden
+        run: node scripts/applyOptimizationPackage.mjs
+
+      - name: Daten und Referenzen validieren
+        run: node scripts/validateRepository.mjs
+
+      - name: JavaScript-Syntax prüfen
+        shell: bash
+        run: |
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find assets/js scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0)
+
+      - name: Diff prüfen
+        run: git diff --check
+
+      - name: Änderungen committen
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Optimize tracker architecture and data validation"
+          git push
