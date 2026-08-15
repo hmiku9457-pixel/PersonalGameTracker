@@ -1270,7 +1270,7 @@ jobs:
                   names: ascending,
                   language
               } =
-                  await getFirstMultiItemListState(
+                  await getConeyIslandListState(
                       page
                   );
 
@@ -1291,7 +1291,7 @@ jobs:
               const {
                   names: descending
               } =
-                  await getFirstMultiItemListState(
+                  await getConeyIslandListState(
                       page
                   );
 
@@ -1366,10 +1366,32 @@ jobs:
                   0
               );
 
-              const toggle =
+              const coneyIslandGroup =
                   page.locator(
+                      '.category-group[data-group-id="comms-coney-island"]'
+                  );
+
+              await expect(
+                  coneyIslandGroup
+              ).toHaveCount(
+                  1
+              );
+
+              await coneyIslandGroup.evaluate(
+                  group => {
+                      group.open =
+                          true;
+                  }
+              );
+
+              const toggle =
+                  coneyIslandGroup.locator(
                       ".tracker-item:not([hidden]) .tracker-toggle:not([disabled])"
                   ).first();
+
+              await expect(
+                  toggle
+              ).toBeVisible();
 
               const itemId =
                   await toggle.getAttribute(
@@ -1437,22 +1459,33 @@ jobs:
           }
 
 
-          async function getFirstMultiItemListState(
+          async function getConeyIslandListState(
               page
           ) {
               return page.evaluate(
                   () => {
-                      const list =
-                          Array.from(
-                              document.querySelectorAll(
-                                  ".tracker-list"
-                              )
-                          ).find(
-                              candidate =>
-                                  candidate.querySelectorAll(
-                                      ":scope > .tracker-item"
-                                  ).length > 1
+                      const group =
+                          document.querySelector(
+                              '.category-group[data-group-id="comms-coney-island"]'
                           );
+
+                      const list =
+                          group?.querySelector(
+                              ".tracker-list"
+                          ) ??
+                          null;
+
+                      const itemElements =
+                          list
+                              ? Array.from(
+                                  list.children
+                              ).filter(
+                                  element =>
+                                      element.classList.contains(
+                                          "tracker-item"
+                                      )
+                              )
+                              : [];
 
                       return {
                           language:
@@ -1460,17 +1493,13 @@ jobs:
                               "de",
 
                           names:
-                              list
-                                  ? Array.from(
-                                      list.querySelectorAll(
-                                          ":scope > .tracker-item .tracker-item-name"
-                                      )
-                                  ).map(
-                                      element =>
-                                          element.textContent?.trim() ??
-                                          ""
-                                  )
-                                  : []
+                              itemElements.map(
+                                  item =>
+                                      item.querySelector(
+                                          ".tracker-item-name"
+                                      )?.textContent?.trim() ??
+                                      ""
+                              )
                       };
                   }
               );
