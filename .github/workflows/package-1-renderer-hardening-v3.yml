@@ -1,0 +1,1053 @@
+name: Package 1 - Renderer hardening v3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Fragile Spezialpatches im alten Installer deaktivieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          installer = Path(
+              "scripts/applyManifestRendererHardening.mjs"
+          )
+
+          if not installer.is_file():
+              raise SystemExit(
+                  "Der Paket-1-Installer wurde nicht gefunden."
+              )
+
+          source = installer.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          )
+
+          replacements = {
+              "await patchCommsMap();":
+                  "// commsMapView wird vom finalen Bootstrap robust gepatcht.",
+              "await patchValidator();":
+                  "// validateRepository wird vom finalen Bootstrap robust gepatcht.",
+              "await patchQualityWorkflow();":
+                  "// repository-quality wird vom finalen Bootstrap robust gepatcht."
+          }
+
+          for old, new in replacements.items():
+              if old in source:
+                  source = source.replace(
+                      old,
+                      new,
+                      1
+                  )
+                  print(
+                      f"[OK] Deaktiviert: {old}"
+                  )
+              elif new in source:
+                  print(
+                      f"[SKIP] Bereits deaktiviert: {old}"
+                  )
+              else:
+                  raise SystemExit(
+                      f"Installer-Aufruf nicht gefunden: {old}"
+                  )
+
+          # Idempotenzfehler des ursprünglichen replaceOnce beheben:
+          # Erst nach dem Ausgangsblock suchen. Nur wenn dieser nicht
+          # mehr existiert, darf der Zieltext als bereits angewendet gelten.
+          old_helper = '''    if (
+                  after &&
+                  source.includes(
+                      after
+                  )
+              ) {
+                  console.info(
+                      `[SKIP] ${relativeFile}: Änderung bereits vorhanden.`
+                  );
+
+                  return;
+              }
+
+              const firstIndex =
+                  source.indexOf(
+                      before
+                  );
+
+              if (firstIndex < 0) {
+                  throw new Error(
+                      `${relativeFile}: erwarteter Ausgangsblock wurde nicht gefunden. Paket passt nicht zum aktuellen Repository-Stand.`
+                  );
+              }
+          '''
+
+          new_helper = '''    const firstIndex =
+                  source.indexOf(
+                      before
+                  );
+
+              if (firstIndex < 0) {
+                  if (
+                      after &&
+                      source.includes(
+                          after
+                      )
+                  ) {
+                      console.info(
+                          `[SKIP] ${relativeFile}: Änderung bereits vorhanden.`
+                      );
+
+                      return;
+                  }
+
+                  throw new Error(
+                      `${relativeFile}: erwarteter Ausgangsblock wurde nicht gefunden. Paket passt nicht zum aktuellen Repository-Stand.`
+                  );
+              }
+          '''
+
+          if old_helper in source:
+              source = source.replace(
+                  old_helper,
+                  new_helper,
+                  1
+              )
+              print(
+                  "[OK] replaceOnce-Idempotenz korrigiert."
+              )
+          elif new_helper in source:
+              print(
+                  "[SKIP] replaceOnce-Idempotenz bereits korrigiert."
+              )
+          else:
+              raise SystemExit(
+                  "replaceOnce-Implementierung im Installer "
+                  "entspricht nicht dem erwarteten Stand."
+              )
+
+          installer.write_text(
+              source,
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Paket-Skript prüfen
+        run: node --check scripts/applyManifestRendererHardening.mjs
+
+      - name: Stabilen Teil von Paket 1 anwenden
+        run: node scripts/applyManifestRendererHardening.mjs
+
+      - name: Comms-Map zeilenbasiert aktualisieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          target = Path(
+              "assets/js/views/commsMapView.js"
+          )
+
+          lines = target.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          ).splitlines()
+
+          if any(
+              "suppliedViewScope = null" in line
+              for line in lines
+          ):
+              print(
+                  "[SKIP] commsMapView.js bereits aktualisiert."
+              )
+              raise SystemExit(0)
+
+          function_start = next(
+              (
+                  index
+                  for index, line in enumerate(lines)
+                  if line.strip() ==
+                  "export async function renderCommsMapView("
+              ),
+              None
+          )
+
+          if function_start is None:
+              raise SystemExit(
+                  "renderCommsMapView()-Start wurde nicht gefunden."
+              )
+
+          signature_end = next(
+              (
+                  index
+                  for index in range(
+                      function_start + 1,
+                      min(
+                          function_start + 20,
+                          len(lines)
+                      )
+                  )
+                  if lines[index].strip() == ") {"
+              ),
+              None
+          )
+
+          if signature_end is None:
+              raise SystemExit(
+                  "Ende der renderCommsMapView()-Signatur "
+                  "wurde nicht gefunden."
+              )
+
+          route_ids_index = next(
+              (
+                  index
+                  for index in range(
+                      function_start + 1,
+                      signature_end
+                  )
+                  if lines[index].strip() ==
+                  "routeIds"
+              ),
+              None
+          )
+
+          if route_ids_index is None:
+              raise SystemExit(
+                  "Parameter routeIds wurde nicht gefunden."
+              )
+
+          lines[
+              route_ids_index
+          ] = (
+              lines[
+                  route_ids_index
+              ].rstrip()
+              + ","
+          )
+
+          lines.insert(
+              route_ids_index + 1,
+              "    suppliedViewScope = null"
+          )
+
+          signature_end += 1
+
+          scope_start = next(
+              (
+                  index
+                  for index in range(
+                      signature_end + 1,
+                      min(
+                          signature_end + 40,
+                          len(lines)
+                      )
+                  )
+                  if lines[index].strip() ==
+                  "const viewScope ="
+              ),
+              None
+          )
+
+          if scope_start is None:
+              raise SystemExit(
+                  "Bisheriger viewScope-Block wurde nicht gefunden."
+              )
+
+          if (
+              scope_start + 1 >= len(lines) or
+              lines[
+                  scope_start + 1
+              ].strip() !=
+              "getActiveViewScope();"
+          ):
+              raise SystemExit(
+                  "Bisheriger viewScope-Block besitzt "
+                  "einen unerwarteten Aufbau."
+              )
+
+          # Alten Scope-Block entfernen.
+          del lines[
+              scope_start:
+              scope_start + 2
+          ]
+
+          # Eventuelle direkt folgende Leerzeile entfernen.
+          if (
+              scope_start < len(lines) and
+              lines[scope_start].strip() == ""
+          ):
+              del lines[
+                  scope_start
+              ]
+
+          # Neuen Scope direkt am Funktionsanfang einsetzen.
+          insertion_index = (
+              signature_end + 1
+          )
+
+          lines[
+              insertion_index:
+              insertion_index
+          ] = [
+              "\tconst viewScope =",
+              "\t\tsuppliedViewScope ??",
+              "\t\tgetActiveViewScope();",
+              ""
+          ]
+
+          # Im ersten Cleanup-Aufruf den aktiven globalen Scope
+          # durch den explizit aufgelösten Scope ersetzen.
+          cleanup_start = next(
+              (
+                  index
+                  for index in range(
+                      insertion_index + 4,
+                      min(
+                          insertion_index + 40,
+                          len(lines)
+                      )
+                  )
+                  if lines[index].strip() ==
+                  "registerViewCleanup("
+              ),
+              None
+          )
+
+          if cleanup_start is None:
+              raise SystemExit(
+                  "Erster registerViewCleanup()-Aufruf "
+                  "wurde nicht gefunden."
+              )
+
+          cleanup_scope_index = next(
+              (
+                  index
+                  for index in range(
+                      cleanup_start + 1,
+                      min(
+                          cleanup_start + 25,
+                          len(lines)
+                      )
+                  )
+                  if lines[index].strip() ==
+                  "getActiveViewScope()"
+              ),
+              None
+          )
+
+          if cleanup_scope_index is None:
+              raise SystemExit(
+                  "Cleanup-getActiveViewScope() wurde "
+                  "nicht gefunden."
+              )
+
+          indent = (
+              lines[
+                  cleanup_scope_index
+              ][
+                  :len(
+                      lines[
+                          cleanup_scope_index
+                      ]
+                  ) -
+                  len(
+                      lines[
+                          cleanup_scope_index
+                      ].lstrip()
+                  )
+              ]
+          )
+
+          lines[
+              cleanup_scope_index
+          ] = (
+              indent
+              + "viewScope"
+          )
+
+          target.write_text(
+              "\n".join(lines) + "\n",
+              encoding="utf-8"
+          )
+
+          print(
+              "[OK] commsMapView.js zeilenbasiert aktualisiert."
+          )
+          PY
+
+      - name: Repository-Validator zeilenbasiert aktualisieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          target = Path(
+              "scripts/validateRepository.mjs"
+          )
+
+          lines = target.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          ).splitlines()
+
+          def find_exact(
+              value,
+              start=0,
+              end=None
+          ):
+              if end is None:
+                  end = len(lines)
+
+              for index in range(
+                  start,
+                  end
+              ):
+                  if lines[index] == value:
+                      return index
+
+              return None
+
+          # -------------------------------------------------
+          # 1. Gemeinsame Renderer-Konfiguration importieren
+          # -------------------------------------------------
+          if not any(
+              "resolveManifestRendererConfiguration" in line
+              for line in lines
+          ):
+              node_path_end = find_exact(
+                  '} from "node:path";'
+              )
+
+              if node_path_end is None:
+                  raise SystemExit(
+                      'node:path-Importende wurde nicht gefunden.'
+                  )
+
+              lines[
+                  node_path_end + 1:
+                  node_path_end + 1
+              ] = [
+                  "",
+                  "import {",
+                  "    resolveManifestRendererConfiguration",
+                  '} from "../assets/js/config/manifestRendererConfig.js";'
+              ]
+
+              print(
+                  "[OK] Renderer-Konfiguration importiert."
+              )
+
+          # -------------------------------------------------
+          # 2. validateManifestTree um Routenkontext ergänzen
+          # -------------------------------------------------
+          function_start = find_exact(
+              "async function validateManifestTree({"
+          )
+
+          if function_start is None:
+              raise SystemExit(
+                  "validateManifestTree()-Start wurde nicht gefunden."
+              )
+
+          signature_end = next(
+              (
+                  index
+                  for index in range(
+                      function_start + 1,
+                      min(
+                          function_start + 12,
+                          len(lines)
+                      )
+                  )
+                  if lines[index].strip() == "}) {"
+              ),
+              None
+          )
+
+          if signature_end is None:
+              raise SystemExit(
+                  "validateManifestTree()-Signaturende "
+                  "wurde nicht gefunden."
+              )
+
+          signature_text = "\n".join(
+              lines[
+                  function_start:
+                  signature_end + 1
+              ]
+          )
+
+          if (
+              "routeEntry = null"
+              not in signature_text
+          ):
+              stack_index = next(
+                  (
+                      index
+                      for index in range(
+                          function_start + 1,
+                          signature_end
+                      )
+                      if lines[index].strip() ==
+                      "stack"
+                  ),
+                  None
+              )
+
+              if stack_index is None:
+                  raise SystemExit(
+                      "stack-Parameter wurde nicht gefunden."
+                  )
+
+              lines[
+                  stack_index
+              ] = (
+                  lines[
+                      stack_index
+                  ].rstrip()
+                  + ","
+              )
+
+              lines[
+                  stack_index + 1:
+                  stack_index + 1
+              ] = [
+                  "    routeEntry = null,",
+                  "    routeEntryFile = null"
+              ]
+
+              signature_end += 2
+
+              print(
+                  "[OK] validateManifestTree()-Routenkontext ergänzt."
+              )
+
+          # -------------------------------------------------
+          # 3. Zentrale Renderer-Prüfung nach validateObjectId
+          # -------------------------------------------------
+          if not any(
+              line.strip() ==
+              "const rendererConfiguration ="
+              for line in lines
+          ):
+              manifest_id_index = find_exact(
+                  '    validateObjectId(manifest, manifestFile, "Manifest", false);'
+              )
+
+              if manifest_id_index is None:
+                  raise SystemExit(
+                      "Manifest-validateObjectId()-Anker "
+                      "wurde nicht gefunden."
+                  )
+
+              renderer_block = [
+                  "",
+                  "    const rendererConfiguration =",
+                  "        resolveManifestRendererConfiguration({",
+                  "            entry:",
+                  "                routeEntry,",
+                  "            manifest",
+                  "        });",
+                  "",
+                  "    for (",
+                  "        const issue",
+                  "        of rendererConfiguration.issues",
+                  "    ) {",
+                  "        const routeSource =",
+                  "            routeEntryFile",
+                  "                ? ` (Route aus ${display(routeEntryFile)})`",
+                  '                : "";',
+                  "",
+                  "        errors.push(",
+                  "            `${display(manifestFile)}${routeSource}: ${issue.message}`",
+                  "        );",
+                  "    }",
+                  "",
+                  "    if (",
+                  "        rendererConfiguration.rendererName ===",
+                  '        "comms"',
+                  "    ) {",
+                  "        validateCommsManifest(",
+                  "            manifest,",
+                  "            manifestFile",
+                  "        );",
+                  "    }"
+              ]
+
+              lines[
+                  manifest_id_index + 1:
+                  manifest_id_index + 1
+              ] = renderer_block
+
+              print(
+                  "[OK] Zentrale Renderer-Prüfung ergänzt."
+              )
+
+          # -------------------------------------------------
+          # 4. Routeneintrag rekursiv weiterreichen
+          # -------------------------------------------------
+          recursive_start = next(
+              (
+                  index
+                  for index, line in enumerate(lines)
+                  if line.strip() ==
+                  "const childTotal = await validateManifestTree({"
+              ),
+              None
+          )
+
+          if recursive_start is None:
+              raise SystemExit(
+                  "Rekursiver Manifest-Aufruf wurde nicht gefunden."
+              )
+
+          recursive_end = next(
+              (
+                  index
+                  for index in range(
+                      recursive_start + 1,
+                      min(
+                          recursive_start + 15,
+                          len(lines)
+                      )
+                  )
+                  if lines[index].strip() == "});"
+              ),
+              None
+          )
+
+          if recursive_end is None:
+              raise SystemExit(
+                  "Ende des rekursiven Manifest-Aufrufs "
+                  "wurde nicht gefunden."
+              )
+
+          recursive_text = "\n".join(
+              lines[
+                  recursive_start:
+                  recursive_end + 1
+              ]
+          )
+
+          if "routeEntry:" not in recursive_text:
+              stack_line = next(
+                  (
+                      index
+                      for index in range(
+                          recursive_start + 1,
+                          recursive_end
+                      )
+                      if lines[index].strip().startswith(
+                          "stack:"
+                      )
+                  ),
+                  None
+              )
+
+              if stack_line is None:
+                  raise SystemExit(
+                      "stack:-Zeile im rekursiven Aufruf "
+                      "wurde nicht gefunden."
+                  )
+
+              if not lines[
+                  stack_line
+              ].rstrip().endswith(","):
+                  lines[
+                      stack_line
+                  ] = (
+                      lines[
+                          stack_line
+                      ].rstrip()
+                      + ","
+                  )
+
+              lines[
+                  stack_line + 1:
+                  stack_line + 1
+              ] = [
+                  "                routeEntry:",
+                  "                    category,",
+                  "                routeEntryFile:",
+                  "                    manifestFile"
+              ]
+
+              print(
+                  "[OK] Routeneintrag wird rekursiv weitergereicht."
+              )
+
+          # -------------------------------------------------
+          # 5. Alte direkte renderer===comms-Prüfung entfernen
+          # -------------------------------------------------
+          direct_renderer_line = next(
+              (
+                  index
+                  for index, line in enumerate(lines)
+                  if line.strip() ==
+                  'typeof manifest.renderer === "string"'
+              ),
+              None
+          )
+
+          if direct_renderer_line is not None:
+              block_start = direct_renderer_line
+
+              while (
+                  block_start > 0 and
+                  lines[
+                      block_start
+                  ].strip() != "if ("
+              ):
+                  block_start -= 1
+
+              if lines[
+                  block_start
+              ].strip() != "if (":
+                  raise SystemExit(
+                      "Beginn der alten direkten Renderer-Prüfung "
+                      "wurde nicht gefunden."
+                  )
+
+              block_end = next(
+                  (
+                      index
+                      for index in range(
+                          direct_renderer_line,
+                          min(
+                              direct_renderer_line + 15,
+                              len(lines)
+                          )
+                      )
+                      if lines[index].strip() == "}"
+                  ),
+                  None
+              )
+
+              if block_end is None:
+                  raise SystemExit(
+                      "Ende der alten direkten Renderer-Prüfung "
+                      "wurde nicht gefunden."
+                  )
+
+              block_text = "\n".join(
+                  lines[
+                      block_start:
+                      block_end + 1
+                  ]
+              )
+
+              if (
+                  "validateCommsManifest"
+                  not in block_text
+              ):
+                  raise SystemExit(
+                      "Gefundener Renderer-Block war nicht "
+                      "die erwartete Comms-Prüfung."
+                  )
+
+              del lines[
+                  block_start:
+                  block_end + 1
+              ]
+
+              if (
+                  block_start < len(lines) and
+                  lines[
+                      block_start
+                  ].strip() == ""
+              ):
+                  del lines[
+                      block_start
+                  ]
+
+              print(
+                  "[OK] Alte direkte Comms-Renderer-Prüfung entfernt."
+              )
+
+          # -------------------------------------------------
+          # 6. validateCommsManifest auf Legacy-Felder reduzieren
+          # -------------------------------------------------
+          comms_start = find_exact(
+              "function validateCommsManifest(manifest, file) {"
+          )
+
+          declared_start = find_exact(
+              "function validateDeclaredCount(",
+              (
+                  comms_start + 1
+                  if comms_start is not None
+                  else 0
+              )
+          )
+
+          if (
+              comms_start is None or
+              declared_start is None
+          ):
+              raise SystemExit(
+                  "validateCommsManifest()-Funktionsgrenzen "
+                  "wurden nicht gefunden."
+              )
+
+          new_comms_function = [
+              "function validateCommsManifest(manifest, file) {",
+              "    if (Array.isArray(manifest.sections)) {",
+              "        errors.push(",
+              "            `${display(file)} verwendet weiterhin das entfernte sections-Feld.`",
+              "        );",
+              "    }",
+              "",
+              "    if (Array.isArray(manifest.files)) {",
+              "        errors.push(",
+              "            `${display(file)} verwendet weiterhin das entfernte files-Feld.`",
+              "        );",
+              "    }",
+              "",
+              "    for (const category of manifest.categories ?? []) {",
+              '        if (typeof category?.manifest === "string") {',
+              "            errors.push(",
+              '                `${display(file)}: Comms-Eintrag "${category.id}" verwendet weiterhin manifest statt file.`',
+              "            );",
+              "        }",
+              "    }",
+              "}",
+              ""
+          ]
+
+          current_comms_text = "\n".join(
+              lines[
+                  comms_start:
+                  declared_start
+              ]
+          )
+
+          if "const allowedViews" in current_comms_text:
+              lines[
+                  comms_start:
+                  declared_start
+              ] = new_comms_function
+
+              print(
+                  "[OK] Comms-Validator auf Legacy-Prüfungen reduziert."
+              )
+
+          # -------------------------------------------------
+          # 7. Runtime-Schutz gegen allMissions-Fallback
+          # -------------------------------------------------
+          if not any(
+              "stillen allMissions-Fallback" in line
+              for line in lines
+          ):
+              overview_rule_index = next(
+                  (
+                      index
+                      for index, line in enumerate(lines)
+                      if line.strip() ==
+                      'text: "sectionManifest.files",'
+                  ),
+                  None
+              )
+
+              if overview_rule_index is None:
+                  raise SystemExit(
+                      "Comms-Overview-Runtimeregel "
+                      "wurde nicht gefunden."
+                  )
+
+              rule_end = next(
+                  (
+                      index
+                      for index in range(
+                          overview_rule_index,
+                          min(
+                              overview_rule_index + 8,
+                              len(lines)
+                          )
+                      )
+                      if lines[index].strip() == "},"
+                  ),
+                  None
+              )
+
+              if rule_end is None:
+                  raise SystemExit(
+                      "Ende der Comms-Overview-Runtimeregel "
+                      "wurde nicht gefunden."
+                  )
+
+              lines[
+                  rule_end + 1:
+                  rule_end + 1
+              ] = [
+                  "        {",
+                  '            file: "assets/js/views/commsOverviewView.js",',
+                  '            text: "\\"allMissions.json\\"",',
+                  '            message: "Comms-View enthält weiterhin den stillen allMissions-Fallback."',
+                  "        },"
+              ]
+
+              print(
+                  "[OK] allMissions-Runtimeschutz ergänzt."
+              )
+
+          # -------------------------------------------------
+          # 8. Neue Systemdateien verpflichtend machen
+          # -------------------------------------------------
+          required_insertions = [
+              (
+                  "assets/js/services/progressSummaryService.js",
+                  "assets/js/config/manifestRendererConfig.js"
+              ),
+              (
+                  "assets/js/views/manifestViewRegistry.js",
+                  "tests/unit/manifestRendererConfig.test.mjs"
+              ),
+              (
+                  "tests/unit/manifestRendererConfig.test.mjs",
+                  "tests/e2e/manifest-renderer-contract.spec.mjs"
+              )
+          ]
+
+          for after_file, new_file in required_insertions:
+              if any(
+                  f'"{new_file}"' in line
+                  for line in lines
+              ):
+                  continue
+
+              anchor_index = next(
+                  (
+                      index
+                      for index, line in enumerate(lines)
+                      if line.strip() ==
+                      f'"{after_file}",'
+                  ),
+                  None
+              )
+
+              if anchor_index is None:
+                  raise SystemExit(
+                      f"Required-Anker fehlt: {after_file}"
+                  )
+
+              lines.insert(
+                  anchor_index + 1,
+                  f'        "{new_file}",'
+              )
+
+          target.write_text(
+              "\n".join(lines) + "\n",
+              encoding="utf-8"
+          )
+
+          print(
+              "[OK] validateRepository.mjs zeilenbasiert aktualisiert."
+          )
+          PY
+
+      - name: Abhängigkeiten installieren
+        run: npm ci --ignore-scripts
+
+      - name: Chromium für Playwright installieren
+        run: npx playwright install --with-deps chromium
+
+      - name: Fortschrittsindizes prüfen
+        run: npm run check:progress-index
+
+      - name: Repository validieren
+        run: npm run validate:data
+
+      - name: Unit-Tests ausführen
+        run: npm run test:unit
+
+      - name: JavaScript-Syntax prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(
+            find assets scripts tests \
+              -type f \
+              \( -name '*.js' -o -name '*.mjs' \) \
+              -print0
+          )
+
+      - name: Browser-Tests ausführen
+        run: npm run test:e2e
+
+      - name: Temporären Installer aufräumen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          rm -f \
+            scripts/applyManifestRendererHardening.mjs
+
+      - name: Diff prüfen
+        run: git diff --check
+
+      - name: Änderungen gesammelt committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            assets \
+            scripts \
+            tests \
+            package.json
+
+          if git diff --cached --quiet; then
+            echo "Keine pushbaren Paket-1-Änderungen vorhanden."
+            exit 0
+          fi
+
+          echo "Gestagte Dateien:"
+          git diff --cached --name-status
+
+          if git diff --cached --name-only | grep -q '^\.github/workflows/'; then
+            echo "FEHLER: Workflow-Datei wurde versehentlich gestagt."
+            exit 1
+          fi
+
+          git commit -m "Harden manifest renderer contract"
+          git push
