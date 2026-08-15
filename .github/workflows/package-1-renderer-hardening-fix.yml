@@ -1,0 +1,395 @@
+name: Package 1 - Renderer hardening fix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Paket-1-Installer robust machen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          installer = Path(
+              "scripts/applyManifestRendererHardening.mjs"
+          )
+
+          if not installer.is_file():
+              raise SystemExit(
+                  "Der vorhandene Paket-1-Installer wurde nicht gefunden."
+              )
+
+          source = installer.read_text(
+              encoding="utf-8"
+          )
+
+          # commsMapView wird separat mit einem whitespace-toleranten
+          # Patch aktualisiert. Der alte zeichengetreue Patch wird
+          # deshalb im Installer deaktiviert.
+          old_call = "await patchCommsMap();"
+          new_call = (
+              "// commsMapView wird vom Bootstrap robust gepatcht."
+          )
+
+          if old_call in source:
+              source = source.replace(
+                  old_call,
+                  new_call,
+                  1
+              )
+              print(
+                  "[FIX] Alter commsMapView-Exact-Patch deaktiviert."
+              )
+          elif new_call in source:
+              print(
+                  "[SKIP] Alter commsMapView-Exact-Patch war bereits deaktiviert."
+              )
+          else:
+              raise SystemExit(
+                  "Der Aufruf von patchCommsMap() wurde "
+                  "im Installer nicht gefunden."
+              )
+
+          # Idempotenz korrekt behandeln:
+          # Erst den Ausgangsblock suchen. Erst wenn dieser nicht
+          # mehr existiert, darf 'after' als bereits angewendet gelten.
+          old_helper = '''    if (
+                  after &&
+                  source.includes(
+                      after
+                  )
+              ) {
+                  console.info(
+                      `[SKIP] ${relativeFile}: Änderung bereits vorhanden.`
+                  );
+
+                  return;
+              }
+
+              const firstIndex =
+                  source.indexOf(
+                      before
+                  );
+
+              if (firstIndex < 0) {
+                  throw new Error(
+                      `${relativeFile}: erwarteter Ausgangsblock wurde nicht gefunden. Paket passt nicht zum aktuellen Repository-Stand.`
+                  );
+              }
+          '''
+
+          new_helper = '''    const firstIndex =
+                  source.indexOf(
+                      before
+                  );
+
+              if (firstIndex < 0) {
+                  if (
+                      after &&
+                      source.includes(
+                          after
+                      )
+                  ) {
+                      console.info(
+                          `[SKIP] ${relativeFile}: Änderung bereits vorhanden.`
+                      );
+
+                      return;
+                  }
+
+                  throw new Error(
+                      `${relativeFile}: erwarteter Ausgangsblock wurde nicht gefunden. Paket passt nicht zum aktuellen Repository-Stand.`
+                  );
+              }
+          '''
+
+          if old_helper in source:
+              source = source.replace(
+                  old_helper,
+                  new_helper,
+                  1
+              )
+              print(
+                  "[FIX] replaceOnce-Idempotenz korrigiert."
+              )
+          elif new_helper in source:
+              print(
+                  "[SKIP] replaceOnce-Idempotenz war bereits korrigiert."
+              )
+          else:
+              raise SystemExit(
+                  "Die erwartete replaceOnce-Implementierung wurde "
+                  "im Installer nicht gefunden."
+              )
+
+          installer.write_text(
+              source,
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Comms-Map whitespace-tolerant aktualisieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          target = Path(
+              "assets/js/views/commsMapView.js"
+          )
+
+          source = target.read_bytes().decode(
+              "utf-8"
+          )
+
+          if (
+              "suppliedViewScope = null" in source and
+              "\t\tviewScope\n\t);" in source
+          ):
+              print(
+                  "[SKIP] commsMapView war bereits aktualisiert."
+              )
+              raise SystemExit(0)
+
+          newline = (
+              "\r\n"
+              if "\r\n" in source
+              else "\n"
+          )
+
+          pattern = re.compile(
+              r'''(?P<signature>
+                  export\ async\ function\ renderCommsMapView\(
+                  \s*game,
+                  \s*commsManifest,
+                  \s*section,
+                  \s*sectionManifest,
+                  \s*sectionManifestFile,
+                  \s*routeIds
+              )
+              \s*\)\s*\{\s*
+              (?P<cleanup>
+                  /\*\ Map-Ressourcen\ beim\ Routenwechsel\ freigeben\.\ \*/
+                  \s*
+                  registerViewCleanup\(
+                  [\s\S]*?
+                  getActiveViewScope\(\)
+                  \s*\);
+              )
+              \s*
+              const\ viewScope
+              \s*=\s*
+              getActiveViewScope\(\);
+              \s*
+              const\ fallbackController
+              \s*=
+              ''',
+              re.VERBOSE
+          )
+
+          match = pattern.search(
+              source
+          )
+
+          if not match:
+              raise SystemExit(
+                  "Der erwartete renderCommsMapView-Block wurde "
+                  "nicht gefunden. Datei wurde nicht verändert."
+              )
+
+          cleanup = (
+              match.group("cleanup")
+              .replace(
+                  "getActiveViewScope()",
+                  "viewScope"
+              )
+              .lstrip()
+          )
+
+          replacement = (
+              match.group("signature")
+              + ","
+              + newline
+              + "    suppliedViewScope = null"
+              + newline
+              + ") {"
+              + newline
+              + "\tconst viewScope ="
+              + newline
+              + "\t\tsuppliedViewScope ??"
+              + newline
+              + "\t\tgetActiveViewScope();"
+              + newline
+              + newline
+              + "\t"
+              + cleanup
+              + newline
+              + newline
+              + "\tconst fallbackController ="
+          )
+
+          updated = (
+              source[:match.start()]
+              + replacement
+              + source[match.end():]
+          )
+
+          target.write_bytes(
+              updated.encode(
+                  "utf-8"
+              )
+          )
+
+          print(
+              "[OK] commsMapView.js aktualisiert."
+          )
+          PY
+
+      - name: Paket-Skript prüfen
+        run: node --check scripts/applyManifestRendererHardening.mjs
+
+      - name: Paket 1 anwenden
+        run: node scripts/applyManifestRendererHardening.mjs
+
+      - name: Bootstrap-Uploads künftig von Push-Quality ausnehmen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          workflow = Path(
+              ".github/workflows/repository-quality.yml"
+          )
+
+          source = workflow.read_text(
+              encoding="utf-8"
+          )
+
+          old = '''  push:
+              branches:
+                - main
+            pull_request:
+          '''
+
+          new = '''  push:
+              branches:
+                - main
+              paths-ignore:
+                - ".github/workflows/package-*.yml"
+                - "tools/update-packages/**"
+            pull_request:
+          '''
+
+          if old in source:
+              source = source.replace(
+                  old,
+                  new,
+                  1
+              )
+
+              workflow.write_text(
+                  source,
+                  encoding="utf-8"
+              )
+
+              print(
+                  "[OK] Package-Bootstrap-Pfade aus Push-Quality ausgenommen."
+              )
+          elif new in source:
+              print(
+                  "[SKIP] Package-Bootstrap-Pfade waren bereits ausgenommen."
+              )
+          else:
+              raise SystemExit(
+                  "Der Triggerblock von repository-quality.yml "
+                  "entspricht nicht dem erwarteten Stand."
+              )
+          PY
+
+      - name: Abhängigkeiten installieren
+        run: npm ci --ignore-scripts
+
+      - name: Chromium für Playwright installieren
+        run: npx playwright install --with-deps chromium
+
+      - name: Fortschrittsindizes prüfen
+        run: npm run check:progress-index
+
+      - name: Repository validieren
+        run: npm run validate:data
+
+      - name: Unit-Tests ausführen
+        run: npm run test:unit
+
+      - name: JavaScript-Syntax prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(
+            find assets scripts tests \
+              -type f \
+              \( -name '*.js' -o -name '*.mjs' \) \
+              -print0
+          )
+
+      - name: Browser-Tests ausführen
+        run: npm run test:e2e
+
+      - name: Paketdateien aufräumen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          rm -f \
+            scripts/applyManifestRendererHardening.mjs \
+            .github/workflows/manifest-renderer-hardening.yml \
+            .github/workflows/package-1-renderer-hardening-fix.yml
+
+      - name: Diff prüfen
+        run: git diff --check
+
+      - name: Änderungen gesammelt committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Harden manifest renderer contract"
+          git push
