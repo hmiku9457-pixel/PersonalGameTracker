@@ -1266,6 +1266,14 @@ jobs:
                   `/${MISSIONS_ROUTE}`
               );
 
+              await expect(
+                  page.locator(
+                      ".tracker-item"
+                  )
+              ).toHaveCount(
+                  515
+              );
+
               const {
                   names: ascending,
                   language
