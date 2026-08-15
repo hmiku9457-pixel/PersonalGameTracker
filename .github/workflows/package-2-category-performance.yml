@@ -95,8 +95,8 @@ jobs:
               )
           else:
               import_block = '''import {
-          	getActiveViewScope,
-          	registerViewCleanup
+          \tgetActiveViewScope,
+          \tregisterViewCleanup
           } from "../services/viewScopeService.js";
 
 
@@ -149,7 +149,7 @@ jobs:
            * benötigten DOM-Referenzen können daher gecacht werden.
            */
           const categoryElementCache =
-          	new WeakMap();
+          \tnew WeakMap();
 
 
           /*
@@ -158,7 +158,7 @@ jobs:
            * zusammengefasst.
            */
           const scheduledCategoryUpdateFrames =
-          	new WeakMap();
+          \tnew WeakMap();
 
 
           /*
@@ -166,7 +166,7 @@ jobs:
            * ersetzen wir den vorherigen Status-Listener sauber.
            */
           const categoryStateChangeHandlers =
-          	new WeakMap();
+          \tnew WeakMap();
 
 
           '''
@@ -177,15 +177,15 @@ jobs:
                   + controls[controls_start:]
               )
 
-              cleanup_start_marker = '''	/*
-          	 * Eventuell bestehenden Observer einer
-          	 * vorherigen Kategorie beenden.
-          	 */
+              cleanup_start_marker = '''\t/*
+          \t * Eventuell bestehenden Observer einer
+          \t * vorherigen Kategorie beenden.
+          \t */
           '''
 
-              cleanup_end_marker = '''	/*
-          	 * Doppelte Bedienelemente verhindern.
-          	 */
+              cleanup_end_marker = '''\t/*
+          \t * Doppelte Bedienelemente verhindern.
+          \t */
           '''
 
               cleanup_start = controls.find(
@@ -206,44 +206,44 @@ jobs:
                       "abgegrenzt werden."
                   )
 
-              new_render_reset = '''	const pendingUpdateFrame =
-          		scheduledCategoryUpdateFrames.get(
-          			container
-          		);
+              new_render_reset = '''\tconst pendingUpdateFrame =
+          \t\tscheduledCategoryUpdateFrames.get(
+          \t\t\tcontainer
+          \t\t);
 
-          	if (
-          		pendingUpdateFrame !==
-          		undefined
-          	) {
-          		cancelAnimationFrame(
-          			pendingUpdateFrame
-          		);
-          	}
+          \tif (
+          \t\tpendingUpdateFrame !==
+          \t\tundefined
+          \t) {
+          \t\tcancelAnimationFrame(
+          \t\t\tpendingUpdateFrame
+          \t\t);
+          \t}
 
-          	scheduledCategoryUpdateFrames.delete(
-          		container
-          	);
+          \tscheduledCategoryUpdateFrames.delete(
+          \t\tcontainer
+          \t);
 
-          	categoryElementCache.delete(
-          		container
-          	);
+          \tcategoryElementCache.delete(
+          \t\tcontainer
+          \t);
 
 
-          	const previousStateChangeHandler =
-          		categoryStateChangeHandlers.get(
-          			container
-          		);
+          \tconst previousStateChangeHandler =
+          \t\tcategoryStateChangeHandlers.get(
+          \t\t\tcontainer
+          \t\t);
 
-          	if (previousStateChangeHandler) {
-          		container.removeEventListener(
-          			"tracker-item-state-changed",
-          			previousStateChangeHandler
-          		);
+          \tif (previousStateChangeHandler) {
+          \t\tcontainer.removeEventListener(
+          \t\t\t"tracker-item-state-changed",
+          \t\t\tpreviousStateChangeHandler
+          \t\t);
 
-          		categoryStateChangeHandlers.delete(
-          			container
-          		);
-          	}
+          \t\tcategoryStateChangeHandlers.delete(
+          \t\t\tcontainer
+          \t\t);
+          \t}
 
 
           '''
@@ -256,14 +256,14 @@ jobs:
 
               controls = replace_once(
                   controls,
-                  '''		sort: "asc",
+                  '''\t\tsort: "asc",
 
-          		searchActive: false,
+          \t\tsearchActive: false,
           ''',
-                  '''		sort: "asc",
-          		sortDirty: true,
+                  '''\t\tsort: "asc",
+          \t\tsortDirty: true,
 
-          		searchActive: false,
+          \t\tsearchActive: false,
           ''',
                   "controlState.sortDirty"
               )
@@ -355,34 +355,34 @@ jobs:
               # Sortierung als dirty markieren.
               controls = replace_once(
                   controls,
-                  '''			controlState.sort =
-          				sortSelect.value;
+                  '''\t\t\tcontrolState.sort =
+          \t\t\t\tsortSelect.value;
 
 
-          			applyCategoryControls(
+          \t\t\tapplyCategoryControls(
           ''',
-                  '''			controlState.sort =
-          				sortSelect.value;
+                  '''\t\t\tcontrolState.sort =
+          \t\t\t\tsortSelect.value;
 
-          			controlState.sortDirty =
-          				true;
+          \t\t\tcontrolState.sortDirty =
+          \t\t\t\ttrue;
 
 
-          			applyCategoryControls(
+          \t\t\tapplyCategoryControls(
           ''',
                   "Sortier-Event"
               )
 
               # MutationObserver durch gezieltes Event ersetzen.
-              observer_event_marker = '''	/*
-          	 * =====================================================
-          	 * Änderung eines Tracker-Status beobachten
-          	 * =====================================================
-          	 */
+              observer_event_marker = '''\t/*
+          \t * =====================================================
+          \t * Änderung eines Tracker-Status beobachten
+          \t * =====================================================
+          \t */
           '''
 
-              initial_marker = '''	/*
-          	 * Initial anwenden.
+              initial_marker = '''\t/*
+          \t * Initial anwenden.
           '''
 
               event_start = controls.find(
@@ -402,41 +402,41 @@ jobs:
                       "MutationObserver-Block konnte nicht abgegrenzt werden."
                   )
 
-              targeted_event = '''	/*
-          	 * =====================================================
-          	 * Gezielt auf geänderten Tracker-Status reagieren
-          	 * =====================================================
-          	 */
-          	const stateChangeHandler =
-          		() => {
-          			/*
-          			 * Ohne aktiven Statusfilter ändert ein
-          			 * Fortschrittswechsel die sichtbare Menge nicht.
-          			 */
-          			if (
-          				controlState.status ===
-          				"all"
-          			) {
-          				return;
-          			}
+              targeted_event = '''\t/*
+          \t * =====================================================
+          \t * Gezielt auf geänderten Tracker-Status reagieren
+          \t * =====================================================
+          \t */
+          \tconst stateChangeHandler =
+          \t\t() => {
+          \t\t\t/*
+          \t\t\t * Ohne aktiven Statusfilter ändert ein
+          \t\t\t * Fortschrittswechsel die sichtbare Menge nicht.
+          \t\t\t */
+          \t\t\tif (
+          \t\t\t\tcontrolState.status ===
+          \t\t\t\t"all"
+          \t\t\t) {
+          \t\t\t\treturn;
+          \t\t\t}
 
-          			applyCategoryControls(
-          				container,
-          				controlState,
-          				resultCount,
-          				emptyMessage
-          			);
-          		};
+          \t\t\tapplyCategoryControls(
+          \t\t\t\tcontainer,
+          \t\t\t\tcontrolState,
+          \t\t\t\tresultCount,
+          \t\t\t\temptyMessage
+          \t\t\t);
+          \t\t};
 
-          	container.addEventListener(
-          		"tracker-item-state-changed",
-          		stateChangeHandler
-          	);
+          \tcontainer.addEventListener(
+          \t\t"tracker-item-state-changed",
+          \t\tstateChangeHandler
+          \t);
 
-          	categoryStateChangeHandlers.set(
-          		container,
-          		stateChangeHandler
-          	);
+          \tcategoryStateChangeHandlers.set(
+          \t\tcontainer,
+          \t\tstateChangeHandler
+          \t);
 
 
           '''
@@ -490,90 +490,90 @@ jobs:
            * @returns {object}
            */
           function getCategoryElements(
-          	container
+          \tcontainer
           ) {
-          	const cached =
-          		categoryElementCache.get(
-          			container
-          		);
+          \tconst cached =
+          \t\tcategoryElementCache.get(
+          \t\t\tcontainer
+          \t\t);
 
-          	if (cached) {
-          		return cached;
-          	}
-
-
-          	const items =
-          		Array.from(
-          			container.querySelectorAll(
-          				".tracker-item"
-          			)
-          		);
-
-          	const lists =
-          		Array.from(
-          			container.querySelectorAll(
-          				".tracker-list"
-          			)
-          		);
-
-          	const groups =
-          		Array.from(
-          			container.querySelectorAll(
-          				".category-group"
-          			)
-          		);
+          \tif (cached) {
+          \t\treturn cached;
+          \t}
 
 
-          	const listItems =
-          		new Map();
+          \tconst items =
+          \t\tArray.from(
+          \t\t\tcontainer.querySelectorAll(
+          \t\t\t\t".tracker-item"
+          \t\t\t)
+          \t\t);
 
-          	for (
-          		const list
-          		of lists
-          	) {
-          		listItems.set(
-          			list,
-          			Array.from(
-          				list.querySelectorAll(
-          					":scope > .tracker-item"
-          				)
-          			)
-          		);
-          	}
+          \tconst lists =
+          \t\tArray.from(
+          \t\t\tcontainer.querySelectorAll(
+          \t\t\t\t".tracker-list"
+          \t\t\t)
+          \t\t);
 
-
-          	const groupItems =
-          		new Map();
-
-          	for (
-          		const group
-          		of groups
-          	) {
-          		groupItems.set(
-          			group,
-          			Array.from(
-          				group.querySelectorAll(
-          					".tracker-item"
-          				)
-          			)
-          		);
-          	}
+          \tconst groups =
+          \t\tArray.from(
+          \t\t\tcontainer.querySelectorAll(
+          \t\t\t\t".category-group"
+          \t\t\t)
+          \t\t);
 
 
-          	const result = {
-          		items,
-          		lists,
-          		groups,
-          		listItems,
-          		groupItems
-          	};
+          \tconst listItems =
+          \t\tnew Map();
 
-          	categoryElementCache.set(
-          		container,
-          		result
-          	);
+          \tfor (
+          \t\tconst list
+          \t\tof lists
+          \t) {
+          \t\tlistItems.set(
+          \t\t\tlist,
+          \t\t\tArray.from(
+          \t\t\t\tlist.querySelectorAll(
+          \t\t\t\t\t":scope > .tracker-item"
+          \t\t\t\t)
+          \t\t\t)
+          \t\t);
+          \t}
 
-          	return result;
+
+          \tconst groupItems =
+          \t\tnew Map();
+
+          \tfor (
+          \t\tconst group
+          \t\tof groups
+          \t) {
+          \t\tgroupItems.set(
+          \t\t\tgroup,
+          \t\t\tArray.from(
+          \t\t\t\tgroup.querySelectorAll(
+          \t\t\t\t\t".tracker-item"
+          \t\t\t\t)
+          \t\t\t)
+          \t\t);
+          \t}
+
+
+          \tconst result = {
+          \t\titems,
+          \t\tlists,
+          \t\tgroups,
+          \t\tlistItems,
+          \t\tgroupItems
+          \t};
+
+          \tcategoryElementCache.set(
+          \t\tcontainer,
+          \t\tresult
+          \t);
+
+          \treturn result;
           }
 
 
@@ -587,52 +587,52 @@ jobs:
            * @param {HTMLElement} emptyMessage
            */
           function scheduleCategoryControlsUpdate(
-          	container,
-          	state,
-          	resultCount,
-          	emptyMessage
+          \tcontainer,
+          \tstate,
+          \tresultCount,
+          \temptyMessage
           ) {
-          	const previousFrame =
-          		scheduledCategoryUpdateFrames.get(
-          			container
-          		);
+          \tconst previousFrame =
+          \t\tscheduledCategoryUpdateFrames.get(
+          \t\t\tcontainer
+          \t\t);
 
-          	if (
-          		previousFrame !==
-          		undefined
-          	) {
-          		cancelAnimationFrame(
-          			previousFrame
-          		);
-          	}
+          \tif (
+          \t\tpreviousFrame !==
+          \t\tundefined
+          \t) {
+          \t\tcancelAnimationFrame(
+          \t\t\tpreviousFrame
+          \t\t);
+          \t}
 
 
-          	const frame =
-          		requestAnimationFrame(
-          			() => {
-          				scheduledCategoryUpdateFrames.delete(
-          					container
-          				);
+          \tconst frame =
+          \t\trequestAnimationFrame(
+          \t\t\t() => {
+          \t\t\t\tscheduledCategoryUpdateFrames.delete(
+          \t\t\t\t\tcontainer
+          \t\t\t\t);
 
-          				if (
-          					!container.isConnected
-          				) {
-          					return;
-          				}
+          \t\t\t\tif (
+          \t\t\t\t\t!container.isConnected
+          \t\t\t\t) {
+          \t\t\t\t\treturn;
+          \t\t\t\t}
 
-          				applyCategoryControls(
-          					container,
-          					state,
-          					resultCount,
-          					emptyMessage
-          				);
-          			}
-          		);
+          \t\t\t\tapplyCategoryControls(
+          \t\t\t\t\tcontainer,
+          \t\t\t\t\tstate,
+          \t\t\t\t\tresultCount,
+          \t\t\t\t\temptyMessage
+          \t\t\t\t);
+          \t\t\t}
+          \t\t);
 
-          	scheduledCategoryUpdateFrames.set(
-          		container,
-          		frame
-          	);
+          \tscheduledCategoryUpdateFrames.set(
+          \t\tcontainer,
+          \t\tframe
+          \t);
           }
 
 
@@ -648,61 +648,61 @@ jobs:
            * @param {string} direction
            */
           function sortCategoryItems(
-          	categoryElements,
-          	direction
+          \tcategoryElements,
+          \tdirection
           ) {
-          	const locale =
-          		getCurrentLocale();
+          \tconst locale =
+          \t\tgetCurrentLocale();
 
-          	for (
-          		const list
-          		of categoryElements.lists
-          	) {
-          		const items =
-          			categoryElements.listItems.get(
-          				list
-          			) ?? [];
+          \tfor (
+          \t\tconst list
+          \t\tof categoryElements.lists
+          \t) {
+          \t\tconst items =
+          \t\t\tcategoryElements.listItems.get(
+          \t\t\t\tlist
+          \t\t\t) ?? [];
 
-          		items.sort(
-          			(first, second) => {
-          				const firstName =
-          					getItemSortName(
-          						first
-          					);
+          \t\titems.sort(
+          \t\t\t(first, second) => {
+          \t\t\t\tconst firstName =
+          \t\t\t\t\tgetItemSortName(
+          \t\t\t\t\t\tfirst
+          \t\t\t\t\t);
 
-          				const secondName =
-          					getItemSortName(
-          						second
-          					);
+          \t\t\t\tconst secondName =
+          \t\t\t\t\tgetItemSortName(
+          \t\t\t\t\t\tsecond
+          \t\t\t\t\t);
 
-          				const comparison =
-          					firstName.localeCompare(
-          						secondName,
-          						locale,
-          						{
-          							sensitivity:
-          								"base",
+          \t\t\t\tconst comparison =
+          \t\t\t\t\tfirstName.localeCompare(
+          \t\t\t\t\t\tsecondName,
+          \t\t\t\t\t\tlocale,
+          \t\t\t\t\t\t{
+          \t\t\t\t\t\t\tsensitivity:
+          \t\t\t\t\t\t\t\t"base",
 
-          							numeric:
-          								true
-          						}
-          					);
+          \t\t\t\t\t\t\tnumeric:
+          \t\t\t\t\t\t\t\ttrue
+          \t\t\t\t\t\t}
+          \t\t\t\t\t);
 
-          				return direction ===
-          					"desc"
-          					? -comparison
-          					: comparison;
-          			}
-          		);
+          \t\t\t\treturn direction ===
+          \t\t\t\t\t"desc"
+          \t\t\t\t\t? -comparison
+          \t\t\t\t\t: comparison;
+          \t\t\t}
+          \t\t);
 
-          		/*
-          		 * Ein DOM-Append pro Liste statt eines
-          		 * einzelnen Appends pro Item.
-          		 */
-          		list.append(
-          			...items
-          		);
-          	}
+          \t\t/*
+          \t\t * Ein DOM-Append pro Liste statt eines
+          \t\t * einzelnen Appends pro Item.
+          \t\t */
+          \t\tlist.append(
+          \t\t\t...items
+          \t\t);
+          \t}
           }
 
 
@@ -723,249 +723,249 @@ jobs:
            * @param {HTMLElement} emptyMessage
            */
           function applyCategoryControls(
-          	container,
-          	state,
-          	resultCount,
-          	emptyMessage
+          \tcontainer,
+          \tstate,
+          \tresultCount,
+          \temptyMessage
           ) {
-          	/*
-          	 * Ein direkt ausgelöstes Update ersetzt eine
-          	 * eventuell noch ausstehende Suchberechnung.
-          	 */
-          	const pendingFrame =
-          		scheduledCategoryUpdateFrames.get(
-          			container
-          		);
+          \t/*
+          \t * Ein direkt ausgelöstes Update ersetzt eine
+          \t * eventuell noch ausstehende Suchberechnung.
+          \t */
+          \tconst pendingFrame =
+          \t\tscheduledCategoryUpdateFrames.get(
+          \t\t\tcontainer
+          \t\t);
 
-          	if (
-          		pendingFrame !==
-          		undefined
-          	) {
-          		cancelAnimationFrame(
-          			pendingFrame
-          		);
+          \tif (
+          \t\tpendingFrame !==
+          \t\tundefined
+          \t) {
+          \t\tcancelAnimationFrame(
+          \t\t\tpendingFrame
+          \t\t);
 
-          		scheduledCategoryUpdateFrames.delete(
-          			container
-          		);
-          	}
-
-
-          	const categoryElements =
-          		getCategoryElements(
-          			container
-          		);
-
-          	const query =
-          		normalizeSearchText(
-          			state.query
-          		);
-
-          	const searchTerms =
-          		query
-          			.split(/\\s+/)
-          			.filter(Boolean);
-
-          	const searchIsActive =
-          		searchTerms.length > 0;
-
-          	const statusIsActive =
-          		state.status !==
-          			"all";
-
-          	const groups =
-          		categoryElements.groups;
+          \t\tscheduledCategoryUpdateFrames.delete(
+          \t\t\tcontainer
+          \t\t);
+          \t}
 
 
-          	/*
-          	 * Suche beginnt:
-          	 * Accordion-Zustand sichern.
-          	 */
-          	if (
-          		searchIsActive &&
-          		!state.searchActive
-          	) {
-          		state.searchActive =
-          			true;
+          \tconst categoryElements =
+          \t\tgetCategoryElements(
+          \t\t\tcontainer
+          \t\t);
 
-          		state.groupOpenState.clear();
+          \tconst query =
+          \t\tnormalizeSearchText(
+          \t\t\tstate.query
+          \t\t);
 
-          		for (
-          			const group
-          			of groups
-          		) {
-          			state.groupOpenState.set(
-          				group,
-          				group.open
-          			);
-          		}
-          	}
+          \tconst searchTerms =
+          \t\tquery
+          \t\t\t.split(/\\s+/)
+          \t\t\t.filter(Boolean);
 
+          \tconst searchIsActive =
+          \t\tsearchTerms.length > 0;
 
-          	/*
-          	 * Suche endet:
-          	 * ursprünglichen Accordion-Zustand herstellen.
-          	 */
-          	if (
-          		!searchIsActive &&
-          		state.searchActive
-          	) {
-          		for (
-          			const group
-          			of groups
-          		) {
-          			if (
-          				state.groupOpenState.has(
-          					group
-          				)
-          			) {
-          				group.open =
-          					state.groupOpenState.get(
-          						group
-          					);
-          			}
-          		}
+          \tconst statusIsActive =
+          \t\tstate.status !==
+          \t\t\t"all";
 
-          		state.groupOpenState.clear();
-
-          		state.searchActive =
-          			false;
-          	}
+          \tconst groups =
+          \t\tcategoryElements.groups;
 
 
-          	if (state.sortDirty) {
-          		sortCategoryItems(
-          			categoryElements,
-          			state.sort
-          		);
+          \t/*
+          \t * Suche beginnt:
+          \t * Accordion-Zustand sichern.
+          \t */
+          \tif (
+          \t\tsearchIsActive &&
+          \t\t!state.searchActive
+          \t) {
+          \t\tstate.searchActive =
+          \t\t\ttrue;
 
-          		state.sortDirty =
-          			false;
-          	}
+          \t\tstate.groupOpenState.clear();
 
-
-          	let visibleItemCount =
-          		0;
-
-          	for (
-          		const item
-          		of categoryElements.items
-          	) {
-          		const searchText =
-          			getItemSearchText(
-          				item
-          			);
-
-          		const matchesSearch =
-          			searchTerms.every(
-          				term =>
-          					searchText.includes(
-          						term
-          					)
-          			);
-
-          		const matchesStatus =
-          			matchesStatusFilter(
-          				item,
-          				state.status
-          			);
-
-          		const visible =
-          			matchesSearch &&
-          			matchesStatus;
-
-          		item.hidden =
-          			!visible;
-
-          		if (visible) {
-          			visibleItemCount++;
-          		}
-          	}
+          \t\tfor (
+          \t\t\tconst group
+          \t\t\tof groups
+          \t\t) {
+          \t\t\tstate.groupOpenState.set(
+          \t\t\t\tgroup,
+          \t\t\t\tgroup.open
+          \t\t\t);
+          \t\t}
+          \t}
 
 
-          	for (
-          		const list
-          		of categoryElements.lists
-          	) {
-          		const listEntries =
-          			categoryElements.listItems.get(
-          				list
-          			) ?? [];
+          \t/*
+          \t * Suche endet:
+          \t * ursprünglichen Accordion-Zustand herstellen.
+          \t */
+          \tif (
+          \t\t!searchIsActive &&
+          \t\tstate.searchActive
+          \t) {
+          \t\tfor (
+          \t\t\tconst group
+          \t\t\tof groups
+          \t\t) {
+          \t\t\tif (
+          \t\t\t\tstate.groupOpenState.has(
+          \t\t\t\t\tgroup
+          \t\t\t\t)
+          \t\t\t) {
+          \t\t\t\tgroup.open =
+          \t\t\t\t\tstate.groupOpenState.get(
+          \t\t\t\t\t\tgroup
+          \t\t\t\t\t);
+          \t\t\t}
+          \t\t}
 
-          		list.hidden =
-          			!listEntries.some(
-          				item =>
-          					!item.hidden
-          			);
-          	}
+          \t\tstate.groupOpenState.clear();
 
-
-          	for (
-          		const group
-          		of groups
-          	) {
-          		const groupEntries =
-          			categoryElements.groupItems.get(
-          				group
-          			) ?? [];
-
-          		const hasVisibleItem =
-          			groupEntries.some(
-          				item =>
-          					!item.hidden
-          			);
-
-          		group.hidden =
-          			!hasVisibleItem;
-
-          		if (
-          			searchIsActive &&
-          			hasVisibleItem
-          		) {
-          			group.open =
-          				true;
-          		}
-          	}
+          \t\tstate.searchActive =
+          \t\t\tfalse;
+          \t}
 
 
-          	if (searchIsActive) {
-          		resultCount.textContent =
-          			getResultCountText(
-          				visibleItemCount,
-          				true
-          			);
+          \tif (state.sortDirty) {
+          \t\tsortCategoryItems(
+          \t\t\tcategoryElements,
+          \t\t\tstate.sort
+          \t\t);
 
-          		resultCount.hidden =
-          			false;
-          	}
-          	else if (statusIsActive) {
-          		resultCount.textContent =
-          			getResultCountText(
-          				visibleItemCount,
-          				false
-          			);
-
-          		resultCount.hidden =
-          			false;
-          	}
-          	else {
-          		resultCount.textContent =
-          			"";
-
-          		resultCount.hidden =
-          			true;
-          	}
+          \t\tstate.sortDirty =
+          \t\t\tfalse;
+          \t}
 
 
-          	const filteringIsActive =
-          		searchIsActive ||
-          		statusIsActive;
+          \tlet visibleItemCount =
+          \t\t0;
 
-          	emptyMessage.hidden =
-          		!(
-          			filteringIsActive &&
-          			visibleItemCount === 0
-          		);
+          \tfor (
+          \t\tconst item
+          \t\tof categoryElements.items
+          \t) {
+          \t\tconst searchText =
+          \t\t\tgetItemSearchText(
+          \t\t\t\titem
+          \t\t\t);
+
+          \t\tconst matchesSearch =
+          \t\t\tsearchTerms.every(
+          \t\t\t\tterm =>
+          \t\t\t\t\tsearchText.includes(
+          \t\t\t\t\t\tterm
+          \t\t\t\t\t)
+          \t\t\t);
+
+          \t\tconst matchesStatus =
+          \t\t\tmatchesStatusFilter(
+          \t\t\t\titem,
+          \t\t\t\tstate.status
+          \t\t\t);
+
+          \t\tconst visible =
+          \t\t\tmatchesSearch &&
+          \t\t\tmatchesStatus;
+
+          \t\titem.hidden =
+          \t\t\t!visible;
+
+          \t\tif (visible) {
+          \t\t\tvisibleItemCount++;
+          \t\t}
+          \t}
+
+
+          \tfor (
+          \t\tconst list
+          \t\tof categoryElements.lists
+          \t) {
+          \t\tconst listEntries =
+          \t\t\tcategoryElements.listItems.get(
+          \t\t\t\tlist
+          \t\t\t) ?? [];
+
+          \t\tlist.hidden =
+          \t\t\t!listEntries.some(
+          \t\t\t\titem =>
+          \t\t\t\t\t!item.hidden
+          \t\t\t);
+          \t}
+
+
+          \tfor (
+          \t\tconst group
+          \t\tof groups
+          \t) {
+          \t\tconst groupEntries =
+          \t\t\tcategoryElements.groupItems.get(
+          \t\t\t\tgroup
+          \t\t\t) ?? [];
+
+          \t\tconst hasVisibleItem =
+          \t\t\tgroupEntries.some(
+          \t\t\t\titem =>
+          \t\t\t\t\t!item.hidden
+          \t\t\t);
+
+          \t\tgroup.hidden =
+          \t\t\t!hasVisibleItem;
+
+          \t\tif (
+          \t\t\tsearchIsActive &&
+          \t\t\thasVisibleItem
+          \t\t) {
+          \t\t\tgroup.open =
+          \t\t\t\ttrue;
+          \t\t}
+          \t}
+
+
+          \tif (searchIsActive) {
+          \t\tresultCount.textContent =
+          \t\t\tgetResultCountText(
+          \t\t\t\tvisibleItemCount,
+          \t\t\t\ttrue
+          \t\t\t);
+
+          \t\tresultCount.hidden =
+          \t\t\tfalse;
+          \t}
+          \telse if (statusIsActive) {
+          \t\tresultCount.textContent =
+          \t\t\tgetResultCountText(
+          \t\t\t\tvisibleItemCount,
+          \t\t\t\tfalse
+          \t\t\t);
+
+          \t\tresultCount.hidden =
+          \t\t\tfalse;
+          \t}
+          \telse {
+          \t\tresultCount.textContent =
+          \t\t\t"";
+
+          \t\tresultCount.hidden =
+          \t\t\ttrue;
+          \t}
+
+
+          \tconst filteringIsActive =
+          \t\tsearchIsActive ||
+          \t\tstatusIsActive;
+
+          \temptyMessage.hidden =
+          \t\t!(
+          \t\t\tfilteringIsActive &&
+          \t\t\tvisibleItemCount === 0
+          \t\t);
           }
 
 
@@ -1057,10 +1057,10 @@ jobs:
                       "registerProgressToggleHandler() wurde nicht gefunden."
                   )
 
-              progress_anchor = '''				updateCurrentCategoryProgress(
-          					data,
-          					progressData
-          				);
+              progress_anchor = '''\t\t\t\tupdateCurrentCategoryProgress(
+          \t\t\t\t\tdata,
+          \t\t\t\t\tprogressData
+          \t\t\t\t);
           '''
 
               progress_pos = category.find(
@@ -1083,27 +1083,27 @@ jobs:
 
               event_block = '''
 
-          				/*
-          				 * Kategorie-Controls gezielt über den
-          				 * erfolgreich gespeicherten Statuswechsel
-          				 * informieren.
-          				 */
-          				if (listItem) {
-          					container.dispatchEvent(
-          						new CustomEvent(
-          							"tracker-item-state-changed",
-          							{
-          								detail: {
-          									itemId:
-          										item.id,
+          \t\t\t\t/*
+          \t\t\t\t * Kategorie-Controls gezielt über den
+          \t\t\t\t * erfolgreich gespeicherten Statuswechsel
+          \t\t\t\t * informieren.
+          \t\t\t\t */
+          \t\t\t\tif (listItem) {
+          \t\t\t\t\tcontainer.dispatchEvent(
+          \t\t\t\t\t\tnew CustomEvent(
+          \t\t\t\t\t\t\t"tracker-item-state-changed",
+          \t\t\t\t\t\t\t{
+          \t\t\t\t\t\t\t\tdetail: {
+          \t\t\t\t\t\t\t\t\titemId:
+          \t\t\t\t\t\t\t\t\t\titem.id,
 
-          									completed:
-          										newState
-          								}
-          							}
-          						)
-          					);
-          				}
+          \t\t\t\t\t\t\t\t\tcompleted:
+          \t\t\t\t\t\t\t\t\t\tnewState
+          \t\t\t\t\t\t\t\t}
+          \t\t\t\t\t\t\t}
+          \t\t\t\t\t\t)
+          \t\t\t\t\t);
+          \t\t\t\t}
           '''
 
               category = (
