@@ -1,0 +1,1711 @@
+name: Package 2 - Category performance
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Kategorie-Performance optimieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          CONTROLS_FILE = Path(
+              "assets/js/views/categoryControlsView.js"
+          )
+
+          CATEGORY_FILE = Path(
+              "assets/js/views/categoryView.js"
+          )
+
+          TEST_FILE = Path(
+              "tests/e2e/category-controls.spec.mjs"
+          )
+
+          controls = CONTROLS_FILE.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          )
+
+          category = CATEGORY_FILE.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          )
+
+
+          def replace_once(
+              source,
+              old,
+              new,
+              label
+          ):
+              count = source.count(
+                  old
+              )
+
+              if count != 1:
+                  raise SystemExit(
+                      f"{label}: erwartete genau eine Fundstelle, "
+                      f"gefunden: {count}"
+                  )
+
+              return source.replace(
+                  old,
+                  new,
+                  1
+              )
+
+
+          # =========================================================
+          # categoryControlsView.js
+          # =========================================================
+
+          if (
+              "const categoryElementCache =" in controls
+              and "tracker-item-state-changed" in controls
+              and "new MutationObserver(" not in controls
+          ):
+              print(
+                  "[SKIP] categoryControlsView.js ist bereits optimiert."
+              )
+          else:
+              import_block = '''import {
+          	getActiveViewScope,
+          	registerViewCleanup
+          } from "../services/viewScopeService.js";
+
+
+          '''
+
+              controls = replace_once(
+                  controls,
+                  import_block,
+                  "",
+                  "ViewScope-Import"
+              )
+
+              observer_section = (
+                  "/* ---------------------------------------------------------\n"
+                  "   2. Observer\n"
+                  "   --------------------------------------------------------- */"
+              )
+
+              controls_section = (
+                  "/* ---------------------------------------------------------\n"
+                  "   3. Kategorie-Controls\n"
+                  "   --------------------------------------------------------- */"
+              )
+
+              observer_start = controls.find(
+                  observer_section
+              )
+
+              controls_start = controls.find(
+                  controls_section
+              )
+
+              if (
+                  observer_start < 0
+                  or controls_start < 0
+                  or controls_start <= observer_start
+              ):
+                  raise SystemExit(
+                      "Observer-/Controls-Abschnitt konnte nicht "
+                      "eindeutig abgegrenzt werden."
+                  )
+
+              performance_state = '''/* ---------------------------------------------------------
+             2. Performance-Zustand
+             --------------------------------------------------------- */
+
+          /*
+           * Die Item-Struktur einer gerenderten Kategorie bleibt
+           * während ihrer Lebensdauer unverändert. Die dafür
+           * benötigten DOM-Referenzen können daher gecacht werden.
+           */
+          const categoryElementCache =
+          	new WeakMap();
+
+
+          /*
+           * Schnelle Eingaben in der Volltextsuche werden auf
+           * maximal eine Filterberechnung pro Browser-Frame
+           * zusammengefasst.
+           */
+          const scheduledCategoryUpdateFrames =
+          	new WeakMap();
+
+
+          /*
+           * Wird dieselbe Kategorie-View erneut initialisiert,
+           * ersetzen wir den vorherigen Status-Listener sauber.
+           */
+          const categoryStateChangeHandlers =
+          	new WeakMap();
+
+
+          '''
+
+              controls = (
+                  controls[:observer_start]
+                  + performance_state
+                  + controls[controls_start:]
+              )
+
+              cleanup_start_marker = '''	/*
+          	 * Eventuell bestehenden Observer einer
+          	 * vorherigen Kategorie beenden.
+          	 */
+          '''
+
+              cleanup_end_marker = '''	/*
+          	 * Doppelte Bedienelemente verhindern.
+          	 */
+          '''
+
+              cleanup_start = controls.find(
+                  cleanup_start_marker
+              )
+
+              cleanup_end = controls.find(
+                  cleanup_end_marker,
+                  cleanup_start + 1
+              )
+
+              if (
+                  cleanup_start < 0
+                  or cleanup_end < 0
+              ):
+                  raise SystemExit(
+                      "Alte Observer-Aufräumlogik konnte nicht "
+                      "abgegrenzt werden."
+                  )
+
+              new_render_reset = '''	const pendingUpdateFrame =
+          		scheduledCategoryUpdateFrames.get(
+          			container
+          		);
+
+          	if (
+          		pendingUpdateFrame !==
+          		undefined
+          	) {
+          		cancelAnimationFrame(
+          			pendingUpdateFrame
+          		);
+          	}
+
+          	scheduledCategoryUpdateFrames.delete(
+          		container
+          	);
+
+          	categoryElementCache.delete(
+          		container
+          	);
+
+
+          	const previousStateChangeHandler =
+          		categoryStateChangeHandlers.get(
+          			container
+          		);
+
+          	if (previousStateChangeHandler) {
+          		container.removeEventListener(
+          			"tracker-item-state-changed",
+          			previousStateChangeHandler
+          		);
+
+          		categoryStateChangeHandlers.delete(
+          			container
+          		);
+          	}
+
+
+          '''
+
+              controls = (
+                  controls[:cleanup_start]
+                  + new_render_reset
+                  + controls[cleanup_end:]
+              )
+
+              controls = replace_once(
+                  controls,
+                  '''		sort: "asc",
+
+          		searchActive: false,
+          ''',
+                  '''		sort: "asc",
+          		sortDirty: true,
+
+          		searchActive: false,
+          ''',
+                  "controlState.sortDirty"
+              )
+
+              # Live-Suche bündeln.
+              live_start = controls.find(
+                  "\t * Live-Suche\n"
+              )
+
+              escape_start = controls.find(
+                  "\t * ESC leert ausschließlich die Suche.\n",
+                  live_start + 1
+              )
+
+              if (
+                  live_start < 0
+                  or escape_start < 0
+              ):
+                  raise SystemExit(
+                      "Live-Suchabschnitt konnte nicht abgegrenzt werden."
+                  )
+
+              live_block = controls[
+                  live_start:
+                  escape_start
+              ]
+
+              if live_block.count(
+                  "applyCategoryControls("
+              ) != 1:
+                  raise SystemExit(
+                      "Live-Suchaufruf ist nicht eindeutig."
+                  )
+
+              live_block = live_block.replace(
+                  "applyCategoryControls(",
+                  "scheduleCategoryControlsUpdate(",
+                  1
+              )
+
+              controls = (
+                  controls[:live_start]
+                  + live_block
+                  + controls[escape_start:]
+              )
+
+              # Escape-Suche ebenfalls bündeln.
+              escape_start = controls.find(
+                  "\t * ESC leert ausschließlich die Suche.\n"
+              )
+
+              sort_event_start = controls.find(
+                  "\t * Sortierung\n",
+                  escape_start + 1
+              )
+
+              if (
+                  escape_start < 0
+                  or sort_event_start < 0
+              ):
+                  raise SystemExit(
+                      "Escape-/Sortierabschnitt konnte nicht abgegrenzt werden."
+                  )
+
+              escape_block = controls[
+                  escape_start:
+                  sort_event_start
+              ]
+
+              if escape_block.count(
+                  "applyCategoryControls("
+              ) != 1:
+                  raise SystemExit(
+                      "Escape-Suchaufruf ist nicht eindeutig."
+                  )
+
+              escape_block = escape_block.replace(
+                  "applyCategoryControls(",
+                  "scheduleCategoryControlsUpdate(",
+                  1
+              )
+
+              controls = (
+                  controls[:escape_start]
+                  + escape_block
+                  + controls[sort_event_start:]
+              )
+
+              # Sortierung als dirty markieren.
+              controls = replace_once(
+                  controls,
+                  '''			controlState.sort =
+          				sortSelect.value;
+
+
+          			applyCategoryControls(
+          ''',
+                  '''			controlState.sort =
+          				sortSelect.value;
+
+          			controlState.sortDirty =
+          				true;
+
+
+          			applyCategoryControls(
+          ''',
+                  "Sortier-Event"
+              )
+
+              # MutationObserver durch gezieltes Event ersetzen.
+              observer_event_marker = '''	/*
+          	 * =====================================================
+          	 * Änderung eines Tracker-Status beobachten
+          	 * =====================================================
+          	 */
+          '''
+
+              initial_marker = '''	/*
+          	 * Initial anwenden.
+          '''
+
+              event_start = controls.find(
+                  observer_event_marker
+              )
+
+              initial_start = controls.find(
+                  initial_marker,
+                  event_start + 1
+              )
+
+              if (
+                  event_start < 0
+                  or initial_start < 0
+              ):
+                  raise SystemExit(
+                      "MutationObserver-Block konnte nicht abgegrenzt werden."
+                  )
+
+              targeted_event = '''	/*
+          	 * =====================================================
+          	 * Gezielt auf geänderten Tracker-Status reagieren
+          	 * =====================================================
+          	 */
+          	const stateChangeHandler =
+          		() => {
+          			/*
+          			 * Ohne aktiven Statusfilter ändert ein
+          			 * Fortschrittswechsel die sichtbare Menge nicht.
+          			 */
+          			if (
+          				controlState.status ===
+          				"all"
+          			) {
+          				return;
+          			}
+
+          			applyCategoryControls(
+          				container,
+          				controlState,
+          				resultCount,
+          				emptyMessage
+          			);
+          		};
+
+          	container.addEventListener(
+          		"tracker-item-state-changed",
+          		stateChangeHandler
+          	);
+
+          	categoryStateChangeHandlers.set(
+          		container,
+          		stateChangeHandler
+          	);
+
+
+          '''
+
+              controls = (
+                  controls[:event_start]
+                  + targeted_event
+                  + controls[initial_start:]
+              )
+
+              # Sortier-/Filterkern vollständig über klar definierte
+              # Abschnittsgrenzen ersetzen.
+              sort_section_marker = (
+                  "/* ---------------------------------------------------------\n"
+                  "   9. Sortierung\n"
+                  "   --------------------------------------------------------- */"
+              )
+
+              result_section_marker = (
+                  "/* ---------------------------------------------------------\n"
+                  "   11. Treffertext\n"
+                  "   --------------------------------------------------------- */"
+              )
+
+              sort_section_start = controls.find(
+                  sort_section_marker
+              )
+
+              result_section_start = controls.find(
+                  result_section_marker,
+                  sort_section_start + 1
+              )
+
+              if (
+                  sort_section_start < 0
+                  or result_section_start < 0
+              ):
+                  raise SystemExit(
+                      "Sortier-/Controls-Kern konnte nicht abgegrenzt werden."
+                  )
+
+              optimized_core = '''/* ---------------------------------------------------------
+             9. DOM-Cache
+             --------------------------------------------------------- */
+
+          /**
+           * Erfasst die für Suche, Filterung und Sortierung
+           * benötigten DOM-Elemente einmal pro Kategorie.
+           *
+           * @param {HTMLElement} container
+           * @returns {object}
+           */
+          function getCategoryElements(
+          	container
+          ) {
+          	const cached =
+          		categoryElementCache.get(
+          			container
+          		);
+
+          	if (cached) {
+          		return cached;
+          	}
+
+
+          	const items =
+          		Array.from(
+          			container.querySelectorAll(
+          				".tracker-item"
+          			)
+          		);
+
+          	const lists =
+          		Array.from(
+          			container.querySelectorAll(
+          				".tracker-list"
+          			)
+          		);
+
+          	const groups =
+          		Array.from(
+          			container.querySelectorAll(
+          				".category-group"
+          			)
+          		);
+
+
+          	const listItems =
+          		new Map();
+
+          	for (
+          		const list
+          		of lists
+          	) {
+          		listItems.set(
+          			list,
+          			Array.from(
+          				list.querySelectorAll(
+          					":scope > .tracker-item"
+          				)
+          			)
+          		);
+          	}
+
+
+          	const groupItems =
+          		new Map();
+
+          	for (
+          		const group
+          		of groups
+          	) {
+          		groupItems.set(
+          			group,
+          			Array.from(
+          				group.querySelectorAll(
+          					".tracker-item"
+          				)
+          			)
+          		);
+          	}
+
+
+          	const result = {
+          		items,
+          		lists,
+          		groups,
+          		listItems,
+          		groupItems
+          	};
+
+          	categoryElementCache.set(
+          		container,
+          		result
+          	);
+
+          	return result;
+          }
+
+
+          /**
+           * Bündelt schnelle Suchänderungen auf maximal
+           * eine Filterberechnung pro Browser-Frame.
+           *
+           * @param {HTMLElement} container
+           * @param {Object} state
+           * @param {HTMLElement} resultCount
+           * @param {HTMLElement} emptyMessage
+           */
+          function scheduleCategoryControlsUpdate(
+          	container,
+          	state,
+          	resultCount,
+          	emptyMessage
+          ) {
+          	const previousFrame =
+          		scheduledCategoryUpdateFrames.get(
+          			container
+          		);
+
+          	if (
+          		previousFrame !==
+          		undefined
+          	) {
+          		cancelAnimationFrame(
+          			previousFrame
+          		);
+          	}
+
+
+          	const frame =
+          		requestAnimationFrame(
+          			() => {
+          				scheduledCategoryUpdateFrames.delete(
+          					container
+          				);
+
+          				if (
+          					!container.isConnected
+          				) {
+          					return;
+          				}
+
+          				applyCategoryControls(
+          					container,
+          					state,
+          					resultCount,
+          					emptyMessage
+          				);
+          			}
+          		);
+
+          	scheduledCategoryUpdateFrames.set(
+          		container,
+          		frame
+          	);
+          }
+
+
+          /* ---------------------------------------------------------
+             10. Sortierung
+             --------------------------------------------------------- */
+
+          /**
+           * Sortiert die gecachten Items innerhalb aller
+           * Tracker-Listen.
+           *
+           * @param {object} categoryElements
+           * @param {string} direction
+           */
+          function sortCategoryItems(
+          	categoryElements,
+          	direction
+          ) {
+          	const locale =
+          		getCurrentLocale();
+
+          	for (
+          		const list
+          		of categoryElements.lists
+          	) {
+          		const items =
+          			categoryElements.listItems.get(
+          				list
+          			) ?? [];
+
+          		items.sort(
+          			(first, second) => {
+          				const firstName =
+          					getItemSortName(
+          						first
+          					);
+
+          				const secondName =
+          					getItemSortName(
+          						second
+          					);
+
+          				const comparison =
+          					firstName.localeCompare(
+          						secondName,
+          						locale,
+          						{
+          							sensitivity:
+          								"base",
+
+          							numeric:
+          								true
+          						}
+          					);
+
+          				return direction ===
+          					"desc"
+          					? -comparison
+          					: comparison;
+          			}
+          		);
+
+          		/*
+          		 * Ein DOM-Append pro Liste statt eines
+          		 * einzelnen Appends pro Item.
+          		 */
+          		list.append(
+          			...items
+          		);
+          	}
+          }
+
+
+          /* ---------------------------------------------------------
+             11. Controls anwenden
+             --------------------------------------------------------- */
+
+          /**
+           * Wendet Suche und Statusfilter auf die gecachten
+           * Kategorieelemente an.
+           *
+           * Sortiert wird ausschließlich beim initialen Rendern
+           * oder nach einer Änderung der Sortierauswahl.
+           *
+           * @param {HTMLElement} container
+           * @param {Object} state
+           * @param {HTMLElement} resultCount
+           * @param {HTMLElement} emptyMessage
+           */
+          function applyCategoryControls(
+          	container,
+          	state,
+          	resultCount,
+          	emptyMessage
+          ) {
+          	/*
+          	 * Ein direkt ausgelöstes Update ersetzt eine
+          	 * eventuell noch ausstehende Suchberechnung.
+          	 */
+          	const pendingFrame =
+          		scheduledCategoryUpdateFrames.get(
+          			container
+          		);
+
+          	if (
+          		pendingFrame !==
+          		undefined
+          	) {
+          		cancelAnimationFrame(
+          			pendingFrame
+          		);
+
+          		scheduledCategoryUpdateFrames.delete(
+          			container
+          		);
+          	}
+
+
+          	const categoryElements =
+          		getCategoryElements(
+          			container
+          		);
+
+          	const query =
+          		normalizeSearchText(
+          			state.query
+          		);
+
+          	const searchTerms =
+          		query
+          			.split(/\\s+/)
+          			.filter(Boolean);
+
+          	const searchIsActive =
+          		searchTerms.length > 0;
+
+          	const statusIsActive =
+          		state.status !==
+          			"all";
+
+          	const groups =
+          		categoryElements.groups;
+
+
+          	/*
+          	 * Suche beginnt:
+          	 * Accordion-Zustand sichern.
+          	 */
+          	if (
+          		searchIsActive &&
+          		!state.searchActive
+          	) {
+          		state.searchActive =
+          			true;
+
+          		state.groupOpenState.clear();
+
+          		for (
+          			const group
+          			of groups
+          		) {
+          			state.groupOpenState.set(
+          				group,
+          				group.open
+          			);
+          		}
+          	}
+
+
+          	/*
+          	 * Suche endet:
+          	 * ursprünglichen Accordion-Zustand herstellen.
+          	 */
+          	if (
+          		!searchIsActive &&
+          		state.searchActive
+          	) {
+          		for (
+          			const group
+          			of groups
+          		) {
+          			if (
+          				state.groupOpenState.has(
+          					group
+          				)
+          			) {
+          				group.open =
+          					state.groupOpenState.get(
+          						group
+          					);
+          			}
+          		}
+
+          		state.groupOpenState.clear();
+
+          		state.searchActive =
+          			false;
+          	}
+
+
+          	if (state.sortDirty) {
+          		sortCategoryItems(
+          			categoryElements,
+          			state.sort
+          		);
+
+          		state.sortDirty =
+          			false;
+          	}
+
+
+          	let visibleItemCount =
+          		0;
+
+          	for (
+          		const item
+          		of categoryElements.items
+          	) {
+          		const searchText =
+          			getItemSearchText(
+          				item
+          			);
+
+          		const matchesSearch =
+          			searchTerms.every(
+          				term =>
+          					searchText.includes(
+          						term
+          					)
+          			);
+
+          		const matchesStatus =
+          			matchesStatusFilter(
+          				item,
+          				state.status
+          			);
+
+          		const visible =
+          			matchesSearch &&
+          			matchesStatus;
+
+          		item.hidden =
+          			!visible;
+
+          		if (visible) {
+          			visibleItemCount++;
+          		}
+          	}
+
+
+          	for (
+          		const list
+          		of categoryElements.lists
+          	) {
+          		const listEntries =
+          			categoryElements.listItems.get(
+          				list
+          			) ?? [];
+
+          		list.hidden =
+          			!listEntries.some(
+          				item =>
+          					!item.hidden
+          			);
+          	}
+
+
+          	for (
+          		const group
+          		of groups
+          	) {
+          		const groupEntries =
+          			categoryElements.groupItems.get(
+          				group
+          			) ?? [];
+
+          		const hasVisibleItem =
+          			groupEntries.some(
+          				item =>
+          					!item.hidden
+          			);
+
+          		group.hidden =
+          			!hasVisibleItem;
+
+          		if (
+          			searchIsActive &&
+          			hasVisibleItem
+          		) {
+          			group.open =
+          				true;
+          		}
+          	}
+
+
+          	if (searchIsActive) {
+          		resultCount.textContent =
+          			getResultCountText(
+          				visibleItemCount,
+          				true
+          			);
+
+          		resultCount.hidden =
+          			false;
+          	}
+          	else if (statusIsActive) {
+          		resultCount.textContent =
+          			getResultCountText(
+          				visibleItemCount,
+          				false
+          			);
+
+          		resultCount.hidden =
+          			false;
+          	}
+          	else {
+          		resultCount.textContent =
+          			"";
+
+          		resultCount.hidden =
+          			true;
+          	}
+
+
+          	const filteringIsActive =
+          		searchIsActive ||
+          		statusIsActive;
+
+          	emptyMessage.hidden =
+          		!(
+          			filteringIsActive &&
+          			visibleItemCount === 0
+          		);
+          }
+
+
+          '''
+
+              controls = (
+                  controls[:sort_section_start]
+                  + optimized_core
+                  + controls[result_section_start:]
+              )
+
+              controls = replace_once(
+                  controls,
+                  '''/* ---------------------------------------------------------
+             11. Treffertext
+             --------------------------------------------------------- */''',
+                  '''/* ---------------------------------------------------------
+             12. Treffertext
+             --------------------------------------------------------- */''',
+                  "Treffertext-Nummerierung"
+              )
+
+              if "new MutationObserver(" in controls:
+                  raise SystemExit(
+                      "MutationObserver ist nach dem Patch "
+                      "weiterhin vorhanden."
+                  )
+
+              if (
+                  "getActiveViewScope" in controls
+                  or "registerViewCleanup" in controls
+                  or "activeItemStateObserver" in controls
+              ):
+                  raise SystemExit(
+                      "Alte Observer-/ViewScope-Abhängigkeit ist "
+                      "nach dem Patch weiterhin vorhanden."
+                  )
+
+              required_tokens = [
+                  "const categoryElementCache =",
+                  "const scheduledCategoryUpdateFrames =",
+                  "const categoryStateChangeHandlers =",
+                  "sortDirty: true",
+                  "scheduleCategoryControlsUpdate(",
+                  '"tracker-item-state-changed"',
+                  "categoryElements.listItems.get(",
+                  "categoryElements.groupItems.get("
+              ]
+
+              missing = [
+                  token
+                  for token in required_tokens
+                  if token not in controls
+              ]
+
+              if missing:
+                  raise SystemExit(
+                      "Optimierter Controls-Code ist unvollständig: "
+                      + ", ".join(missing)
+                  )
+
+              CONTROLS_FILE.write_text(
+                  controls,
+                  encoding="utf-8"
+              )
+
+              print(
+                  "[OK] categoryControlsView.js optimiert."
+              )
+
+
+          # =========================================================
+          # categoryView.js
+          # =========================================================
+
+          if (
+              '"tracker-item-state-changed"' in category
+          ):
+              print(
+                  "[SKIP] categoryView.js sendet das Status-Event bereits."
+              )
+          else:
+              handler_start = category.find(
+                  "export function registerProgressToggleHandler("
+              )
+
+              if handler_start < 0:
+                  raise SystemExit(
+                      "registerProgressToggleHandler() wurde nicht gefunden."
+                  )
+
+              progress_anchor = '''				updateCurrentCategoryProgress(
+          					data,
+          					progressData
+          				);
+          '''
+
+              progress_pos = category.find(
+                  progress_anchor,
+                  handler_start
+              )
+
+              if progress_pos < 0:
+                  raise SystemExit(
+                      "Erfolgreicher Kategorie-Fortschrittsblock "
+                      "wurde nicht gefunden."
+                  )
+
+              insertion_pos = (
+                  progress_pos
+                  + len(
+                      progress_anchor
+                  )
+              )
+
+              event_block = '''
+
+          				/*
+          				 * Kategorie-Controls gezielt über den
+          				 * erfolgreich gespeicherten Statuswechsel
+          				 * informieren.
+          				 */
+          				if (listItem) {
+          					container.dispatchEvent(
+          						new CustomEvent(
+          							"tracker-item-state-changed",
+          							{
+          								detail: {
+          									itemId:
+          										item.id,
+
+          									completed:
+          										newState
+          								}
+          							}
+          						)
+          					);
+          				}
+          '''
+
+              category = (
+                  category[:insertion_pos]
+                  + event_block
+                  + category[insertion_pos:]
+              )
+
+              CATEGORY_FILE.write_text(
+                  category,
+                  encoding="utf-8"
+              )
+
+              print(
+                  "[OK] categoryView.js sendet gezieltes Status-Event."
+              )
+
+
+          # =========================================================
+          # E2E-Regressionstests
+          # =========================================================
+
+          TEST_FILE.parent.mkdir(
+              parents=True,
+              exist_ok=True
+          )
+
+          TEST_FILE_CONTENT = r'''import {
+              expect,
+              test
+          } from "@playwright/test";
+
+          const MISSIONS_ROUTE =
+              "#game/theDivision2/collectibles/comms/missions";
+
+
+          test.beforeEach(async ({ page }) => {
+              await installAuthenticatedSupabaseMock(
+                  page
+              );
+          });
+
+
+          test("Live-Suche filtert ohne erneute DOM-Sortierung", async ({ page }) => {
+              await page.goto(
+                  `/${MISSIONS_ROUTE}`
+              );
+
+              await expect(
+                  page.locator(
+                      ".tracker-item"
+                  )
+              ).toHaveCount(
+                  515
+              );
+
+              const firstItemId =
+                  await page
+                      .locator(
+                          ".tracker-item[data-item-id]"
+                      )
+                      .first()
+                      .getAttribute(
+                          "data-item-id"
+                      );
+
+              expect(
+                  firstItemId
+              ).toBeTruthy();
+
+              await page.evaluate(() => {
+                  const originalAppend =
+                      Element.prototype.append;
+
+                  window.__trackerListAppendCalls =
+                      0;
+
+                  Element.prototype.append =
+                      function (...nodes) {
+                          if (
+                              this.classList?.contains(
+                                  "tracker-list"
+                              )
+                          ) {
+                              window.__trackerListAppendCalls++;
+                          }
+
+                          return originalAppend.apply(
+                              this,
+                              nodes
+                          );
+                      };
+              });
+
+              await page
+                  .locator(
+                      ".category-search-input"
+                  )
+                  .fill(
+                      firstItemId
+                  );
+
+              await expect.poll(
+                  () =>
+                      getUnhiddenItemCount(
+                          page
+                      )
+              ).toBeGreaterThan(
+                  0
+              );
+
+              await expect.poll(
+                  () =>
+                      getUnhiddenItemCount(
+                          page
+                      )
+              ).toBeLessThan(
+                  515
+              );
+
+              expect(
+                  await page.evaluate(
+                      () =>
+                          window.__trackerListAppendCalls
+                  )
+              ).toBe(
+                  0
+              );
+
+              await page
+                  .locator(
+                      ".category-search-input"
+                  )
+                  .press(
+                      "Escape"
+                  );
+
+              await expect.poll(
+                  () =>
+                      getUnhiddenItemCount(
+                          page
+                      )
+              ).toBe(
+                  515
+              );
+
+              expect(
+                  await page.evaluate(
+                      () =>
+                          window.__trackerListAppendCalls
+                  )
+              ).toBe(
+                  0
+              );
+          });
+
+
+          test("Sortierwechsel sortiert weiterhin korrekt Z-A", async ({ page }) => {
+              await page.goto(
+                  `/${MISSIONS_ROUTE}`
+              );
+
+              const {
+                  names: ascending,
+                  language
+              } =
+                  await getFirstMultiItemListState(
+                      page
+                  );
+
+              expect(
+                  ascending.length
+              ).toBeGreaterThan(
+                  1
+              );
+
+              await page
+                  .locator(
+                      ".category-sort-select"
+                  )
+                  .selectOption(
+                      "desc"
+                  );
+
+              const {
+                  names: descending
+              } =
+                  await getFirstMultiItemListState(
+                      page
+                  );
+
+              const locale =
+                  language === "en"
+                      ? "en-US"
+                      : "de-DE";
+
+              const collator =
+                  new Intl.Collator(
+                      locale,
+                      {
+                          sensitivity:
+                              "base",
+
+                          numeric:
+                              true
+                      }
+                  );
+
+              const expectedAscending =
+                  [...ascending].sort(
+                      (first, second) =>
+                          collator.compare(
+                              first,
+                              second
+                          )
+                  );
+
+              const expectedDescending =
+                  [...ascending].sort(
+                      (first, second) =>
+                          -collator.compare(
+                              first,
+                              second
+                          )
+                  );
+
+              expect(
+                  ascending
+              ).toEqual(
+                  expectedAscending
+              );
+
+              expect(
+                  descending
+              ).toEqual(
+                  expectedDescending
+              );
+          });
+
+
+          test("Statusfilter reagiert gezielt auf erfolgreich gespeicherten Fortschritt", async ({ page }) => {
+              await page.goto(
+                  `/${MISSIONS_ROUTE}`
+              );
+
+              await page
+                  .locator(
+                      '[data-status-filter="incomplete"]'
+                  )
+                  .click();
+
+              const initialIncompleteCount =
+                  await getUnhiddenItemCount(
+                      page
+                  );
+
+              expect(
+                  initialIncompleteCount
+              ).toBeGreaterThan(
+                  0
+              );
+
+              const toggle =
+                  page.locator(
+                      ".tracker-item:not([hidden]) .tracker-toggle:not([disabled])"
+                  ).first();
+
+              const itemId =
+                  await toggle.getAttribute(
+                      "data-item-id"
+                  );
+
+              expect(
+                  itemId
+              ).toBeTruthy();
+
+              await toggle.click();
+
+              await expect.poll(
+                  async () =>
+                      page.evaluate(
+                          id => {
+                              const itemElement =
+                                  document.querySelector(
+                                      `.tracker-item[data-item-id="${CSS.escape(id)}"]`
+                                  );
+
+                              return {
+                                  completed:
+                                      itemElement?.classList.contains(
+                                          "is-completed"
+                                      ) ?? false,
+
+                                  hidden:
+                                      itemElement?.hidden ??
+                                      false
+                              };
+                          },
+                          itemId
+                      )
+              ).toEqual({
+                  completed: true,
+                  hidden: true
+              });
+
+              await expect.poll(
+                  () =>
+                      getUnhiddenItemCount(
+                          page
+                      )
+              ).toBe(
+                  initialIncompleteCount - 1
+              );
+          });
+
+
+          async function getUnhiddenItemCount(
+              page
+          ) {
+              return page.evaluate(
+                  () =>
+                      Array.from(
+                          document.querySelectorAll(
+                              ".tracker-item"
+                          )
+                      ).filter(
+                          item =>
+                              !item.hidden
+                      ).length
+              );
+          }
+
+
+          async function getFirstMultiItemListState(
+              page
+          ) {
+              return page.evaluate(
+                  () => {
+                      const list =
+                          Array.from(
+                              document.querySelectorAll(
+                                  ".tracker-list"
+                              )
+                          ).find(
+                              candidate =>
+                                  candidate.querySelectorAll(
+                                      ":scope > .tracker-item"
+                                  ).length > 1
+                          );
+
+                      return {
+                          language:
+                              document.documentElement.lang ||
+                              "de",
+
+                          names:
+                              list
+                                  ? Array.from(
+                                      list.querySelectorAll(
+                                          ":scope > .tracker-item .tracker-item-name"
+                                      )
+                                  ).map(
+                                      element =>
+                                          element.textContent?.trim() ??
+                                          ""
+                                  )
+                                  : []
+                      };
+                  }
+              );
+          }
+
+
+          async function installAuthenticatedSupabaseMock(
+              page
+          ) {
+              await page.addInitScript(() => {
+                  function result(
+                      data = []
+                  ) {
+                      const query = {
+                          select() {
+                              return query;
+                          },
+
+                          eq() {
+                              return query;
+                          },
+
+                          order() {
+                              return query;
+                          },
+
+                          range() {
+                              return query;
+                          },
+
+                          insert() {
+                              return query;
+                          },
+
+                          delete() {
+                              return query;
+                          },
+
+                          maybeSingle() {
+                              return Promise.resolve({
+                                  data:
+                                      data[0] ??
+                                      null,
+
+                                  error:
+                                      null
+                              });
+                          },
+
+                          then(resolve) {
+                              return Promise.resolve({
+                                  data,
+                                  error:
+                                      null
+                              }).then(
+                                  resolve
+                              );
+                          }
+                      };
+
+                      return query;
+                  }
+
+                  window.supabase = {
+                      createClient() {
+                          return {
+                              auth: {
+                                  async getSession() {
+                                      return {
+                                          data: {
+                                              session: {
+                                                  user: {
+                                                      id:
+                                                          "test-user",
+
+                                                      email:
+                                                          "test@example.invalid"
+                                                  }
+                                              }
+                                          },
+
+                                          error:
+                                              null
+                                      };
+                                  },
+
+                                  onAuthStateChange() {
+                                      return {
+                                          data: {
+                                              subscription: {
+                                                  unsubscribe() {}
+                                              }
+                                          }
+                                      };
+                                  },
+
+                                  async signInWithPassword() {
+                                      return {
+                                          data: {},
+                                          error:
+                                              null
+                                      };
+                                  },
+
+                                  async signUp() {
+                                      return {
+                                          data: {},
+                                          error:
+                                              null
+                                      };
+                                  },
+
+                                  async signOut() {
+                                      return {
+                                          error:
+                                              null
+                                      };
+                                  }
+                              },
+
+                              from() {
+                                  return result([]);
+                              }
+                          };
+                      }
+                  };
+              });
+
+              await page.route(
+                  "https://cdn.jsdelivr.net/**",
+                  route =>
+                      route.abort()
+              );
+          }
+          '''
+
+          TEST_FILE.write_text(
+              TEST_FILE_CONTENT,
+              encoding="utf-8"
+          )
+
+          print(
+              "[WRITE] tests/e2e/category-controls.spec.mjs"
+          )
+          PY
+
+      - name: Patch-Struktur prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          grep -q 'const categoryElementCache =' \
+            assets/js/views/categoryControlsView.js
+
+          grep -q 'const scheduledCategoryUpdateFrames =' \
+            assets/js/views/categoryControlsView.js
+
+          grep -q 'sortDirty: true' \
+            assets/js/views/categoryControlsView.js
+
+          grep -q '"tracker-item-state-changed"' \
+            assets/js/views/categoryControlsView.js
+
+          grep -q '"tracker-item-state-changed"' \
+            assets/js/views/categoryView.js
+
+          if grep -q 'new MutationObserver(' \
+            assets/js/views/categoryControlsView.js; then
+            echo "MutationObserver ist unerwartet noch vorhanden."
+            exit 1
+          fi
+
+          if grep -q 'getActiveViewScope' \
+            assets/js/views/categoryControlsView.js; then
+            echo "Veraltete ViewScope-Abhängigkeit ist noch vorhanden."
+            exit 1
+          fi
+
+      - name: Geänderte JavaScript-Dateien syntaktisch prüfen
+        run: |
+          node --check assets/js/views/categoryControlsView.js
+          node --check assets/js/views/categoryView.js
+          node --check tests/e2e/category-controls.spec.mjs
+
+      - name: Abhängigkeiten installieren
+        run: npm ci --ignore-scripts
+
+      - name: Chromium für Playwright installieren
+        run: npx playwright install --with-deps chromium
+
+      - name: Fortschrittsindizes prüfen
+        run: npm run check:progress-index
+
+      - name: Repository validieren
+        run: npm run validate:data
+
+      - name: Unit-Tests ausführen
+        run: npm run test:unit
+
+      - name: Alle Browser-Tests ausführen
+        run: npm run test:e2e
+
+      - name: Whitespace prüfen
+        run: git diff --check
+
+      - name: Änderungen anzeigen
+        run: |
+          git diff --stat
+          git diff -- \
+            assets/js/views/categoryControlsView.js \
+            assets/js/views/categoryView.js \
+            tests/e2e/category-controls.spec.mjs
+
+      - name: Änderungen gesammelt committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            assets/js/views/categoryControlsView.js \
+            assets/js/views/categoryView.js \
+            tests/e2e/category-controls.spec.mjs
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen erforderlich."
+            exit 0
+          fi
+
+          if git diff --cached --name-only | grep -q '^\.github/workflows/'; then
+            echo "FEHLER: Eine Workflow-Datei wurde versehentlich gestagt."
+            exit 1
+          fi
+
+          git commit -m "Optimize category controls performance"
+          git push
