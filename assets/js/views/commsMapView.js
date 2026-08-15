@@ -119,8 +119,13 @@ export async function renderCommsMapView(
     section,
     sectionManifest,
     sectionManifestFile,
-    routeIds
+    routeIds,
+    suppliedViewScope = null
 ) {
+	const viewScope =
+		suppliedViewScope ??
+		getActiveViewScope();
+
 	/* Map-Ressourcen beim Routenwechsel freigeben. */
 	registerViewCleanup(
 		() => {
@@ -133,11 +138,8 @@ export async function renderCommsMapView(
 					null;
 			}
 		},
-		getActiveViewScope()
+		viewScope
 	);
-
-	const viewScope =
-		getActiveViewScope();
 
 	const fallbackController =
 		new AbortController();

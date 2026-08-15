@@ -13,6 +13,10 @@ import {
     sep
 } from "node:path";
 
+import {
+    resolveManifestRendererConfiguration
+} from "../assets/js/config/manifestRendererConfig.js";
+
 const ROOT = process.cwd();
 const DATA_ROOT = resolve(ROOT, "data");
 const ASSET_ROOTS = [
@@ -133,7 +137,9 @@ async function validateGameManifests() {
 async function validateManifestTree({
     gameId,
     manifestFile,
-    stack
+    stack,
+    routeEntry = null,
+    routeEntryFile = null
 }) {
     assertInside(
         manifestFile,
@@ -159,6 +165,37 @@ async function validateManifestTree({
 
     reachableJson.add(manifestFile);
     validateObjectId(manifest, manifestFile, "Manifest", false);
+
+    const rendererConfiguration =
+        resolveManifestRendererConfiguration({
+            entry:
+                routeEntry,
+            manifest
+        });
+
+    for (
+        const issue
+        of rendererConfiguration.issues
+    ) {
+        const routeSource =
+            routeEntryFile
+                ? ` (Route aus ${display(routeEntryFile)})`
+                : "";
+
+        errors.push(
+            `${display(manifestFile)}${routeSource}: ${issue.message}`
+        );
+    }
+
+    if (
+        rendererConfiguration.rendererName ===
+        "comms"
+    ) {
+        validateCommsManifest(
+            manifest,
+            manifestFile
+        );
+    }
 
     const categories = Array.isArray(manifest.categories)
         ? manifest.categories
@@ -211,7 +248,11 @@ async function validateManifestTree({
             const childTotal = await validateManifestTree({
                 gameId,
                 manifestFile: target,
-                stack: [...stack, manifestFile]
+                stack: [...stack, manifestFile],
+                routeEntry:
+                    category,
+                routeEntryFile:
+                    manifestFile
             });
 
             validateDeclaredCount(
@@ -392,43 +433,10 @@ function validateCommsManifest(manifest, file) {
         );
     }
 
-    const allowedViews = new Set([
-        "comms-overview",
-        "map",
-        "list"
-    ]);
-
-    if (
-        typeof manifest.view === "string" &&
-        !allowedViews.has(manifest.view)
-    ) {
-        errors.push(
-            `${display(file)} verwendet die unbekannte Comms-View "${manifest.view}".`
-        );
-    }
-
-    if (
-        allowedViews.has(manifest.view) &&
-        manifest.renderer !== "comms"
-    ) {
-        errors.push(
-            `${display(file)} benötigt für die View "${manifest.view}" renderer "comms".`
-        );
-    }
-
     for (const category of manifest.categories ?? []) {
         if (typeof category?.manifest === "string") {
             errors.push(
                 `${display(file)}: Comms-Eintrag "${category.id}" verwendet weiterhin manifest statt file.`
-            );
-        }
-
-        if (
-            allowedViews.has(category?.view) &&
-            category.renderer !== "comms"
-        ) {
-            errors.push(
-                `${display(file)}: Comms-Eintrag "${category.id}" benötigt renderer "comms".`
             );
         }
     }
@@ -672,6 +680,11 @@ async function validateRuntimeReferences() {
             message: "Comms-View verwendet das entfernte files-Feld."
         },
         {
+            file: "assets/js/views/commsOverviewView.js",
+            text: "\"allMissions.json\"",
+            message: "Comms-View enthält weiterhin den stillen allMissions-Fallback."
+        },
+        {
             file: "assets/js/views/commsMapView.js",
             text: "sectionManifest.files",
             message: "Comms-Map verwendet das entfernte files-Feld."
@@ -720,7 +733,10 @@ async function validateRuntimeReferences() {
     const required = [
         "assets/js/services/viewScopeService.js",
         "assets/js/services/progressSummaryService.js",
+        "assets/js/config/manifestRendererConfig.js",
         "assets/js/views/manifestViewRegistry.js",
+        "tests/unit/manifestRendererConfig.test.mjs",
+        "tests/e2e/manifest-renderer-contract.spec.mjs",
         "tests/e2e/tracker.smoke.spec.mjs",
         "playwright.config.mjs"
     ];

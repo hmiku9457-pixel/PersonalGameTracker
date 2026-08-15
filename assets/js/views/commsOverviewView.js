@@ -8,7 +8,6 @@ import {
 } from "../services/progressSummaryService.js";
 
 import {
-    getActiveViewScope,
     isViewScopeCurrent
 } from "../services/viewScopeService.js";
 
@@ -54,27 +53,20 @@ import {
 } from "./overviewCardView.js";
 
 /**
- * Übernimmt die speziellen Comms-Routen.
+ * Rendert eine über renderer "comms" konfigurierte Manifestansicht.
  *
- * Unterstützt:
+ * Die zulässigen Views und Pflichtfelder werden zentral durch
+ * manifestRendererConfig.js definiert und bereits vor diesem
+ * Renderer validiert.
  *
- * #game/theDivision2/collectibles/comms
- * #game/theDivision2/collectibles/comms/washington
- * #game/theDivision2/collectibles/comms/newYork
- * #game/theDivision2/collectibles/comms/brooklyn
- * #game/theDivision2/collectibles/comms/missions
- *
- * Tiefere Routen werden absichtlich wieder an den generischen
- * Router übergeben.
- *
- * @param {object} game
- * @param {string[]} routeIds
- * @returns {Promise<boolean>}
+ * @param {object} context
+ * @returns {Promise<void>}
  */
 export async function renderConfiguredCommsView({
     game,
     resolvedRoute,
-    routeIds
+    routeIds,
+    viewScope
 }) {
     const view =
         resolvedRoute.entry?.view ??
@@ -88,7 +80,8 @@ export async function renderConfiguredCommsView({
             game,
             resolvedRoute.manifest,
             routeIds,
-            resolvedRoute.manifestFile
+            resolvedRoute.manifestFile,
+            viewScope
         );
 
         applyPageBreadcrumbBanner(
@@ -111,6 +104,19 @@ export async function renderConfiguredCommsView({
         resolvedRoute.manifestFile;
 
     if (view === "list") {
+        const dataFile =
+            sectionManifest.dataFile ??
+            section.dataFile;
+
+        if (
+            typeof dataFile !== "string" ||
+            dataFile.trim() === ""
+        ) {
+            throw new Error(
+                `Für die Comms-Listenansicht "${section.id ?? "?"}" fehlt dataFile.`
+            );
+        }
+
         await renderCategory(
             game,
             {
@@ -121,9 +127,7 @@ export async function renderConfiguredCommsView({
                     section.description,
                 file: resolveRelativeFile(
                     sectionManifestFile,
-                    sectionManifest.dataFile ??
-                    section.dataFile ??
-                    "allMissions.json"
+                    dataFile
                 ),
                 parentHash: buildGameHash(
                     game.id,
@@ -150,7 +154,8 @@ export async function renderConfiguredCommsView({
             section,
             sectionManifest,
             sectionManifestFile,
-            routeIds
+            routeIds,
+            viewScope
         );
 
         applyPageBreadcrumbBanner(
@@ -179,11 +184,9 @@ async function renderCommsOverview(
     game,
     commsManifest,
     routeIds,
-    manifestFile
+    manifestFile,
+    viewScope
 ) {
-    const viewScope =
-        getActiveViewScope();
-
     showLoading();
 
     const mainContent =
@@ -686,13 +689,6 @@ function createToolbar(href, label) {
 
     return toolbar;
 }
-
-/**
- * Prüft, ob es sich um eine Comms-Route handelt.
- *
- * @param {string[]} routeIds
- * @returns {boolean}
- */
 
 /**
  * Baut einen Hash für eine Spielroute.
