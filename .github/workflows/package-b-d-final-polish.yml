@@ -1,0 +1,467 @@
+name: Priority B-D - Final polish
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Prioritaet B bis D anwenden
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          GAMES_VIEW = Path(
+              "assets/js/views/gamesView.js"
+          )
+          GAME_VIEW = Path(
+              "assets/js/views/gameView.js"
+          )
+          RENDERER_CONFIG = Path(
+              "assets/js/config/manifestRendererConfig.js"
+          )
+          GITIGNORE = Path(
+              ".gitignore"
+          )
+
+
+          def read(path):
+              return path.read_text(
+                  encoding="utf-8"
+              ).replace(
+                  "\r\n",
+                  "\n"
+              )
+
+
+          def write(path, content):
+              path.write_text(
+                  content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+              print(
+                  f"[WRITE] {path}"
+              )
+
+
+          def replace_once(
+              source,
+              old,
+              new,
+              label
+          ):
+              count = source.count(
+                  old
+              )
+
+              if count != 1:
+                  raise SystemExit(
+                      f"{label}: erwartete genau eine Fundstelle, "
+                      f"gefunden: {count}"
+                  )
+
+              return source.replace(
+                  old,
+                  new,
+                  1
+              )
+
+
+          def remove_section(
+              source,
+              start_marker,
+              end_marker,
+              label
+          ):
+              start = source.find(
+                  start_marker
+              )
+
+              end = source.find(
+                  end_marker,
+                  start + len(start_marker)
+              )
+
+              if (
+                  start < 0 or
+                  end < 0 or
+                  end <= start
+              ):
+                  raise SystemExit(
+                      f"{label}: Abschnitt konnte nicht abgegrenzt werden."
+                  )
+
+              return (
+                  source[:start]
+                  + source[end:]
+              )
+
+
+          # =========================================================
+          # B. Spiele-Gesamtfortschritt konsistent über Item-IDs
+          # =========================================================
+
+          games_view = read(
+              GAMES_VIEW
+          )
+
+          old_data_import = '''import {
+          \tloadCategoryData,
+          \tloadGameManifest,
+          \tloadGames,
+          \tloadManifest,
+          \tresolveRelativeFile
+          } from "../services/dataService.js";
+          '''
+
+          new_data_import = '''import {
+          \tloadGameManifest,
+          \tloadGames
+          } from "../services/dataService.js";
+          '''
+
+          if old_data_import in games_view:
+              games_view = replace_once(
+                  games_view,
+                  old_data_import,
+                  new_data_import,
+                  "gamesView dataService-Import"
+              )
+          elif new_data_import not in games_view:
+              raise SystemExit(
+                  "gamesView: dataService-Import besitzt einen unerwarteten Zustand."
+              )
+
+
+          old_progress_import = '''import {
+          \tcalculateCategoryProgress,
+          \tloadGameProgressData
+          } from "../services/progressService.js";
+          '''
+
+          new_progress_import = '''import {
+          \tloadGameProgressData
+          } from "../services/progressService.js";
+          '''
+
+          if old_progress_import in games_view:
+              games_view = replace_once(
+                  games_view,
+                  old_progress_import,
+                  new_progress_import,
+                  "gamesView progressService-Import"
+              )
+          elif new_progress_import not in games_view:
+              raise SystemExit(
+                  "gamesView: progressService-Import besitzt einen unerwarteten Zustand."
+              )
+
+
+          route_import = '''import {
+          \tbuildGameHash
+          } from "../services/routeHashService.js";
+
+
+          '''
+
+          if route_import not in games_view:
+              progress_summary_import = '''import {
+          \tcalculateManifestProgressFromMetadata
+          } from "../services/progressSummaryService.js";
+
+
+          '''
+
+              games_view = replace_once(
+                  games_view,
+                  progress_summary_import,
+                  progress_summary_import
+                  + route_import,
+                  "gamesView routeHashService-Import"
+              )
+
+
+          progress_start = '''\t\tconst manifestItemCount =
+          '''
+
+          progress_end = '''\n\n\t\tupdateGameCardProgress(
+          '''
+
+          start = games_view.find(
+              progress_start
+          )
+
+          end = games_view.find(
+              progress_end,
+              start
+          )
+
+          if (
+              start >= 0 and
+              end > start
+          ):
+              replacement = '''\t\tconst progress =
+          \t\t\tawait calculateManifestProgressFromMetadata(
+          \t\t\t\tgame.id,
+          \t\t\t\tmanifest,
+          \t\t\t\t"manifest.json",
+          \t\t\t\tprogressData
+          \t\t\t);
+          '''
+
+              games_view = (
+                  games_view[:start]
+                  + replacement
+                  + games_view[end:]
+              )
+          else:
+              load_progress_start = games_view.find(
+                  "async function loadGameCardProgress("
+              )
+
+              load_progress_end = games_view.find(
+                  "function updateGameCardProgress(",
+                  load_progress_start
+              )
+
+              current_progress_block = games_view[
+                  load_progress_start:
+                  load_progress_end
+              ]
+
+              if (
+                  'await calculateManifestProgressFromMetadata('
+                  not in current_progress_block
+              ):
+                  raise SystemExit(
+                      "gamesView: Gesamtfortschrittsblock konnte nicht aktualisiert werden."
+                  )
+
+
+          old_progress_section = '''/* ---------------------------------------------------------
+             8. Fortschrittsberechnung
+             --------------------------------------------------------- */
+          '''
+
+          next_progress_section = '''/* ---------------------------------------------------------
+             9. Fortschrittsanzeige aktualisieren
+             --------------------------------------------------------- */
+          '''
+
+          if old_progress_section in games_view:
+              games_view = remove_section(
+                  games_view,
+                  old_progress_section,
+                  next_progress_section,
+                  "gamesView alter Fortschritts-Fallback"
+              )
+
+
+          games_view = games_view.replace(
+              '''/* ---------------------------------------------------------
+             9. Fortschrittsanzeige aktualisieren
+             --------------------------------------------------------- */''',
+              '''/* ---------------------------------------------------------
+             8. Fortschrittsanzeige aktualisieren
+             --------------------------------------------------------- */''',
+              1
+          )
+
+
+          # =========================================================
+          # C. Zentrale Hash-Routen verwenden
+          # =========================================================
+
+          games_route_section = '''/* ---------------------------------------------------------
+             10. Spielroute erzeugen
+             --------------------------------------------------------- */
+          '''
+
+          if games_route_section in games_view:
+              games_view = (
+                  games_view[
+                      :games_view.find(
+                          games_route_section
+                      )
+                  ].rstrip()
+                  + "\n"
+              )
+
+          for stale_token in [
+              "function calculateEntryProgress(",
+              "function calculateManifestProgress(",
+              "function buildGameHash("
+          ]:
+              if stale_token in games_view:
+                  raise SystemExit(
+                      "gamesView enthält weiterhin Altlogik: "
+                      + stale_token
+                  )
+
+          write(
+              GAMES_VIEW,
+              games_view
+          )
+
+
+          game_view = read(
+              GAME_VIEW
+          )
+
+          game_route_import = '''import {
+          \tbuildGameHash
+          } from "../services/routeHashService.js";
+
+
+          '''
+
+          if game_route_import not in game_view:
+              scope_import = '''import {
+          \tgetActiveViewScope,
+          \tisViewScopeCurrent
+          } from "../services/viewScopeService.js";
+
+
+          '''
+
+              game_view = replace_once(
+                  game_view,
+                  scope_import,
+                  scope_import
+                  + game_route_import,
+                  "gameView routeHashService-Import"
+              )
+
+
+          game_route_section = '''/* ---------------------------------------------------------
+             7. Routing
+             --------------------------------------------------------- */
+          '''
+
+          if game_route_section in game_view:
+              game_view = (
+                  game_view[
+                      :game_view.find(
+                          game_route_section
+                      )
+                  ].rstrip()
+                  + "\n"
+              )
+
+          if "function buildGameHash(" in game_view:
+              raise SystemExit(
+                  "gameView enthält weiterhin eine lokale buildGameHash()-Funktion."
+              )
+
+          write(
+              GAME_VIEW,
+              game_view
+          )
+
+
+          # =========================================================
+          # D. Kosmetische Altlasten entfernen
+          # =========================================================
+
+          renderer_config = read(
+              RENDERER_CONFIG
+          )
+
+          old_renderer_comment = '''/**
+           * Zentrale Definition aller spezialisierten Manifest-Renderer.
+           *
+           * Diese Datei enthält absichtlich ausschließlich browser- und
+           * Node-kompatible Datenlogik. Dadurch verwenden Runtime und
+           * Repository-Validator denselben Renderer-Vertrag.
+           */
+          '''
+
+          new_renderer_comment = '''/**
+           * Zentrale Definition aller spezialisierten Manifest-Renderer.
+           *
+           * Die Konfiguration hält den Renderer-Vertrag an einer
+           * gemeinsamen Stelle für die Runtime fest.
+           */
+          '''
+
+          if old_renderer_comment in renderer_config:
+              renderer_config = replace_once(
+                  renderer_config,
+                  old_renderer_comment,
+                  new_renderer_comment,
+                  "manifestRendererConfig Kommentar"
+              )
+          elif "Repository-Validator" in renderer_config:
+              raise SystemExit(
+                  "manifestRendererConfig: Validator-Kommentar besitzt einen unerwarteten Zustand."
+              )
+
+          write(
+              RENDERER_CONFIG,
+              renderer_config
+          )
+
+
+          gitignore = read(
+              GITIGNORE
+          )
+
+          obsolete_block = '''# Playwright und Performance-Messungen
+          playwright-report/
+          test-results/
+          artifacts/
+          '''
+
+          if obsolete_block in gitignore:
+              gitignore = gitignore.replace(
+                  obsolete_block,
+                  "",
+                  1
+              )
+
+          write(
+              GITIGNORE,
+              gitignore
+          )
+
+
+          print(
+              "Priorität B-D angewendet."
+          )
+          PY
+
+      - name: Aenderungen committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            .gitignore \
+            assets/js/views/gamesView.js \
+            assets/js/views/gameView.js \
+            assets/js/config/manifestRendererConfig.js
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen erforderlich."
+            exit 0
+          fi
+
+          git commit -m "Polish progress routing and cleanup [skip ci]"
+          git push
