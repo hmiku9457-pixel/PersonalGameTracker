@@ -6,9 +6,8 @@
 /**
  * Zentrale Definition aller spezialisierten Manifest-Renderer.
  *
- * Diese Datei enthält absichtlich ausschließlich browser- und
- * Node-kompatible Datenlogik. Dadurch verwenden Runtime und
- * Repository-Validator denselben Renderer-Vertrag.
+ * Die Konfiguration hält den Renderer-Vertrag an einer
+ * gemeinsamen Stelle für die Runtime fest.
  */
 export const MANIFEST_RENDERER_DEFINITIONS =
     Object.freeze({

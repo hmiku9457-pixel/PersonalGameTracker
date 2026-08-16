@@ -4,28 +4,10 @@
    ========================================================= */
 
 import {
-	getActiveViewScope,
-	isViewScopeCurrent,
-	registerViewCleanup
-} from "../services/viewScopeService.js";
-
+	buildGameHash
+} from "../services/routeHashService.js";
 
 import {
-	calculateManifestProgressFromMetadata
-} from "../services/progressSummaryService.js";
-
-
-import {
-	loadCategoryData,
-	loadGameManifest,
-	loadGames,
-	loadManifest,
-	resolveRelativeFile
-} from "../services/dataService.js";
-
-
-import {
-	calculateCategoryProgress,
 	loadGameProgressData
 } from "../services/progressService.js";
 
@@ -1095,47 +1077,13 @@ async function loadGameCardProgress(
 			return;
 		}
 
-		const manifestItemCount =
-			Number(
-				manifest?.itemCount
+		const progress =
+			await calculateManifestProgressFromMetadata(
+				game.id,
+				manifest,
+				"manifest.json",
+				progressData
 			);
-
-		let progress;
-
-		if (
-			Number.isFinite(
-				manifestItemCount
-			) &&
-			manifestItemCount >= 0
-		) {
-			const completed =
-				Object.values(
-					progressData.progress ?? {}
-				).filter(Boolean).length;
-
-			progress = {
-				completed:
-					Math.min(
-						completed,
-						manifestItemCount
-					),
-				total:
-					manifestItemCount
-			};
-		}
-		else {
-			/*
-			 * Rückwärtskompatibler Fallback für noch nicht
-			 * angereicherte Manifeste.
-			 */
-			progress =
-				await calculateManifestProgress(
-					game.id,
-					manifest,
-					"manifest.json",
-					progressData
-				);
-		}
 
 		updateGameCardProgress(
 			card,
@@ -1157,130 +1105,7 @@ async function loadGameCardProgress(
 
 
 /* ---------------------------------------------------------
-   8. Fortschrittsberechnung
-   --------------------------------------------------------- */
-
-/**
- * Berechnet rekursiv den Fortschritt
- * eines kompletten Manifests.
- *
- * Untermanifeste werden ebenfalls vollständig
- * durchlaufen.
- *
- * @param {string} gameId
- * @param {Object} manifest
- * @param {string} manifestFile
- * @param {Object} progressData
- * @returns {Promise<{completed:number,total:number}>}
- */
-async function calculateManifestProgress(
-	gameId,
-	manifest,
-	manifestFile,
-	progressData
-) {
-	return calculateManifestProgressFromMetadata(
-		gameId,
-		manifest,
-		manifestFile,
-		progressData
-	);
-}
-
-
-/**
- * Berechnet den Fortschritt eines einzelnen
- * Manifest-Eintrags.
- *
- * @param {string} gameId
- * @param {Object} entry
- * @param {string} parentManifestFile
- * @param {Object} progressData
- * @returns {Promise<{completed:number,total:number}>}
- */
-async function calculateEntryProgress(
-	gameId,
-	entry,
-	parentManifestFile,
-	progressData
-) {
-
-	if (
-		!entry ||
-		typeof entry.file !== "string" ||
-		entry.file.trim() === ""
-	) {
-
-		throw new Error(
-			`Für Eintrag "${entry?.id || "unknown"}" wurde keine Datei angegeben.`
-		);
-	}
-
-
-	const resolvedFile =
-		resolveRelativeFile(
-			parentManifestFile,
-			entry.file
-		);
-
-
-	/*
-	 * -----------------------------------------------------
-	 * Untermanifest
-	 * -----------------------------------------------------
-	 */
-
-	if (
-		entry.type ===
-		"manifest"
-	) {
-
-		const childManifest =
-			await loadManifest(
-				gameId,
-				resolvedFile
-			);
-
-
-		return calculateManifestProgress(
-			gameId,
-			childManifest,
-			resolvedFile,
-			progressData
-		);
-	}
-
-
-	/*
-	 * -----------------------------------------------------
-	 * Normale Kategorie
-	 * -----------------------------------------------------
-	 */
-
-	const resolvedCategory = {
-		...entry,
-
-		file:
-			resolvedFile
-	};
-
-
-	const data =
-		await loadCategoryData(
-			gameId,
-			resolvedCategory
-		);
-
-
-	return calculateCategoryProgress(
-		data,
-		progressData
-	);
-}
-
-
-/* ---------------------------------------------------------
-   9. Fortschrittsanzeige aktualisieren
+   8. Fortschrittsanzeige aktualisieren
    --------------------------------------------------------- */
 
 /**
@@ -1411,32 +1236,4 @@ function updateGameCardProgress(
 		String(
 			percent
 		);
-}
-
-
-/* ---------------------------------------------------------
-   10. Spielroute erzeugen
-   --------------------------------------------------------- */
-
-/**
- * Erzeugt den Hash für eine Spieleseite.
- *
- * Beispiel:
- *
- * theDivision2
- *
- * wird:
- *
- * #game/theDivision2
- *
- * @param {string} gameId
- * @returns {string}
- */
-function buildGameHash(
-	gameId
-) {
-
-	return (
-		`#game/${encodeURIComponent(gameId)}`
-	);
 }

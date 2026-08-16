@@ -4,6 +4,10 @@
    ========================================================= */
 
 import {
+	buildGameHash
+} from "../services/routeHashService.js";
+
+import {
 	calculateManifestEntryProgress
 } from "../services/progressSummaryService.js";
 
@@ -804,42 +808,4 @@ function getBackButtonText() {
 	return getCurrentLanguage() === "de"
 		? "← Zurück"
 		: "← Back";
-}
-
-/* ---------------------------------------------------------
-   7. Routing
-   --------------------------------------------------------- */
-
-/**
- * Erzeugt einen Hash für eine Spielroute.
- *
- * @param {string} gameId
- * @param {Array<string>} routeIds
- * @returns {string}
- */
-function buildGameHash(
-	gameId,
-	routeIds = []
-) {
-
-	const encodedGameId =
-		encodeURIComponent(
-			gameId
-		);
-
-	const encodedRoute =
-		routeIds.map(
-			routeId =>
-				encodeURIComponent(
-					routeId
-				)
-		);
-
-	const parts = [
-		"game",
-		encodedGameId,
-		...encodedRoute
-	];
-
-	return `#${parts.join("/")}`;
 }
