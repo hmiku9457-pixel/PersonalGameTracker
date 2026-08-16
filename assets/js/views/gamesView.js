@@ -4,6 +4,24 @@
    ========================================================= */
 
 import {
+	getActiveViewScope,
+	isViewScopeCurrent,
+	registerViewCleanup
+} from "../services/viewScopeService.js";
+
+
+import {
+	calculateManifestProgressFromMetadata
+} from "../services/progressSummaryService.js";
+
+
+import {
+	loadGameManifest,
+	loadGames
+} from "../services/dataService.js";
+
+
+import {
 	buildGameHash
 } from "../services/routeHashService.js";
 
