@@ -1,0 +1,384 @@
+name: Hotfix - Division 2 lists and auth
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hotfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Listen und Auth reparieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          INDEX_HTML = Path(
+              "index.html"
+          )
+          AUTH_VIEW = Path(
+              "assets/js/views/authView.js"
+          )
+          MAIN_CSS = Path(
+              "assets/css/main.css"
+          )
+          COMMS_VIEW = Path(
+              "assets/js/views/commsOverviewView.js"
+          )
+          CONTROLS_VIEW = Path(
+              "assets/js/views/categoryControlsView.js"
+          )
+          CONTROLS_ENGINE = Path(
+              "assets/js/views/categoryControlsEngine.js"
+          )
+
+
+          def read(path):
+              return path.read_text(
+                  encoding="utf-8"
+              ).replace(
+                  "\r\n",
+                  "\n"
+              )
+
+
+          def write(path, content):
+              path.write_text(
+                  content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+
+              print(
+                  f"[WRITE] {path}"
+              )
+
+
+          def replace_once(
+              source,
+              old,
+              new,
+              label
+          ):
+              count = source.count(
+                  old
+              )
+
+              if count != 1:
+                  raise SystemExit(
+                      f"{label}: erwartete genau eine Fundstelle, "
+                      f"gefunden: {count}"
+                  )
+
+              return source.replace(
+                  old,
+                  new,
+                  1
+              )
+
+
+          # =========================================================
+          # 1. Account-Markup reparieren
+          # =========================================================
+
+          index_html = read(
+              INDEX_HTML
+          )
+
+          broken_account = '''\t\t\t<!-- Account -->
+          \t\t\t<div class="account-module">
+
+          \t\t\t\t<!-- Nicht eingeloggt -->
+          \t\t\t\t<div id="account-logged-out">
+
+          \t\t\t\t\t<button
+          \t\t\t\t\t\ttype="button"
+          \t\t\t\t\t\tid="logout-button"
+          \t\t\t\t\t>
+          \t\t\t\t\t\tAbmelden
+          \t\t\t\t\t</button>
+          \t\t\t\t</div>
+
+          \t\t\t</div>
+          '''
+
+          fixed_account = '''\t\t\t<!-- Account -->
+          \t\t\t<div class="account-module">
+
+          \t\t\t\t<!-- Nicht eingeloggt -->
+          \t\t\t\t<div id="account-logged-out">
+          \t\t\t\t\t<button
+          \t\t\t\t\t\ttype="button"
+          \t\t\t\t\t\tid="login-button"
+          \t\t\t\t\t>
+          \t\t\t\t\t\tAnmelden
+          \t\t\t\t\t</button>
+          \t\t\t\t</div>
+
+          \t\t\t\t<!-- Eingeloggt -->
+          \t\t\t\t<div
+          \t\t\t\t\tid="account-logged-in"
+          \t\t\t\t\thidden
+          \t\t\t\t>
+          \t\t\t\t\t<span id="account-username">
+          \t\t\t\t\t\tBenutzer
+          \t\t\t\t\t</span>
+
+          \t\t\t\t\t<button
+          \t\t\t\t\t\ttype="button"
+          \t\t\t\t\t\tid="logout-button"
+          \t\t\t\t\t>
+          \t\t\t\t\t\tAbmelden
+          \t\t\t\t\t</button>
+          \t\t\t\t</div>
+
+          \t\t\t</div>
+          '''
+
+          if broken_account in index_html:
+              index_html = replace_once(
+                  index_html,
+                  broken_account,
+                  fixed_account,
+                  "Account-Markup"
+              )
+          elif (
+              'id="login-button"' in index_html
+              and 'id="account-logged-in"' in index_html
+          ):
+              print(
+                  "[SKIP] Account-Markup ist bereits repariert."
+              )
+          else:
+              raise SystemExit(
+                  "Account-Markup besitzt einen unerwarteten Zustand."
+              )
+
+          write(
+              INDEX_HTML,
+              index_html
+          )
+
+
+          # =========================================================
+          # 2. Auth-View vollständig durch saubere Version ersetzen
+          # =========================================================
+
+          AUTH_VIEW_CONTENT = '/* =========================================================\n   Personal Game Tracker\n   Auth View\n   ========================================================= */\n\nimport {\n    getCurrentLanguage,\n    LANGUAGE_CHANGE_EVENT\n} from "../services/languageService.js";\n\n\nconst UI_TEXT = {\n    de: {\n        login: "Anmelden",\n        register: "Registrieren",\n        email: "E-Mail-Adresse",\n        password: "Passwort",\n        passwordRepeat: "Passwort wiederholen",\n        createAccount: "Account erstellen",\n        logout: "Abmelden",\n        user: "Benutzer",\n        close: "Anmeldung schließen",\n        passwordMismatch:\n            "Die Passwörter stimmen nicht überein.",\n        accountCreated:\n            "Account erstellt. Bitte bestätige gegebenenfalls noch deine E-Mail-Adresse.",\n        logoutFailed:\n            "Abmelden fehlgeschlagen."\n    },\n\n    en: {\n        login: "Sign in",\n        register: "Register",\n        email: "Email address",\n        password: "Password",\n        passwordRepeat: "Repeat password",\n        createAccount: "Create account",\n        logout: "Sign out",\n        user: "User",\n        close: "Close sign-in dialog",\n        passwordMismatch:\n            "The passwords do not match.",\n        accountCreated:\n            "Account created. Please confirm your email address if required.",\n        logoutFailed:\n            "Sign out failed."\n    }\n};\n\n\nlet currentSession =\n    null;\n\nlet currentAuthMode =\n    "login";\n\n\nfunction getUiText(\n    key\n) {\n    const language =\n        getCurrentLanguage();\n\n    return (\n        UI_TEXT[language]?.[key] ??\n        UI_TEXT.en?.[key] ??\n        key\n    );\n}\n\n\nconst loggedOutContainer =\n    document.getElementById(\n        "account-logged-out"\n    );\n\nconst loggedInContainer =\n    document.getElementById(\n        "account-logged-in"\n    );\n\nconst loginButton =\n    document.getElementById(\n        "login-button"\n    );\n\nconst logoutButton =\n    document.getElementById(\n        "logout-button"\n    );\n\nconst accountUsername =\n    document.getElementById(\n        "account-username"\n    );\n\nconst authDialog =\n    document.getElementById(\n        "auth-dialog"\n    );\n\nconst authDialogTitle =\n    document.getElementById(\n        "auth-dialog-title"\n    );\n\nconst authCloseButton =\n    document.getElementById(\n        "auth-close-button"\n    );\n\nconst authTabs =\n    Array.from(\n        document.querySelectorAll(\n            ".auth-tab"\n        )\n    );\n\nconst loginForm =\n    document.getElementById(\n        "login-form"\n    );\n\nconst registerForm =\n    document.getElementById(\n        "register-form"\n    );\n\nconst loginEmail =\n    document.getElementById(\n        "login-email"\n    );\n\nconst loginPassword =\n    document.getElementById(\n        "login-password"\n    );\n\nconst registerEmail =\n    document.getElementById(\n        "register-email"\n    );\n\nconst registerPassword =\n    document.getElementById(\n        "register-password"\n    );\n\nconst registerPasswordRepeat =\n    document.getElementById(\n        "register-password-repeat"\n    );\n\nconst authMessage =\n    document.getElementById(\n        "auth-message"\n    );\n\n\nfunction validateDependencies() {\n    const missing = [];\n\n    const requiredElements = {\n        loggedOutContainer,\n        loggedInContainer,\n        loginButton,\n        logoutButton,\n        accountUsername,\n        authDialog,\n        authDialogTitle,\n        authCloseButton,\n        loginForm,\n        registerForm,\n        loginEmail,\n        loginPassword,\n        registerEmail,\n        registerPassword,\n        registerPasswordRepeat,\n        authMessage\n    };\n\n    for (\n        const [\n            name,\n            element\n        ]\n        of Object.entries(\n            requiredElements\n        )\n    ) {\n        if (!element) {\n            missing.push(\n                name\n            );\n        }\n    }\n\n    if (\n        authTabs.length !==\n        2\n    ) {\n        missing.push(\n            "authTabs"\n        );\n    }\n\n    if (\n        !window.authService\n    ) {\n        missing.push(\n            "authService"\n        );\n    }\n\n    if (\n        missing.length >\n        0\n    ) {\n        throw new Error(\n            "Auth-Abhängigkeiten fehlen: " +\n            missing.join(", ")\n        );\n    }\n}\n\n\nfunction clearMessage() {\n    authMessage.hidden =\n        true;\n\n    authMessage.textContent =\n        "";\n\n    authMessage.removeAttribute(\n        "data-type"\n    );\n\n    delete authMessage.dataset\n        .messageKey;\n}\n\n\nfunction showMessage(\n    text,\n    type = "info"\n) {\n    authMessage.textContent =\n        text;\n\n    authMessage.dataset.type =\n        type;\n\n    authMessage.hidden =\n        false;\n}\n\n\nfunction showUiMessage(\n    key,\n    type = "info"\n) {\n    authMessage.dataset.messageKey =\n        key;\n\n    showMessage(\n        getUiText(\n            key\n        ),\n        type\n    );\n}\n\n\nfunction setFormBusy(\n    form,\n    busy\n) {\n    for (\n        const element\n        of form.elements\n    ) {\n        element.disabled =\n            busy;\n    }\n}\n\n\nfunction setAuthMode(\n    mode\n) {\n    clearMessage();\n\n    currentAuthMode =\n        mode === "register"\n            ? "register"\n            : "login";\n\n    const isLogin =\n        currentAuthMode ===\n        "login";\n\n    loginForm.hidden =\n        !isLogin;\n\n    registerForm.hidden =\n        isLogin;\n\n    authDialogTitle.textContent =\n        isLogin\n            ? getUiText(\n                "login"\n            )\n            : getUiText(\n                "register"\n            );\n\n    for (\n        const tab\n        of authTabs\n    ) {\n        const active =\n            tab.dataset.authMode ===\n            currentAuthMode;\n\n        tab.classList.toggle(\n            "active",\n            active\n        );\n    }\n}\n\n\nfunction openAuthDialog() {\n    setAuthMode(\n        "login"\n    );\n\n    if (\n        !authDialog.open\n    ) {\n        authDialog.showModal();\n    }\n\n    window.setTimeout(\n        () => {\n            loginEmail.focus();\n        },\n        0\n    );\n}\n\n\nfunction closeAuthDialog() {\n    if (\n        authDialog.open\n    ) {\n        authDialog.close();\n    }\n\n    clearMessage();\n\n    loginPassword.value =\n        "";\n\n    registerPassword.value =\n        "";\n\n    registerPasswordRepeat.value =\n        "";\n}\n\n\nfunction renderSession(\n    session\n) {\n    currentSession =\n        session ?? null;\n\n    const user =\n        currentSession?.user ??\n        null;\n\n    const isLoggedIn =\n        Boolean(\n            user\n        );\n\n    loggedOutContainer.hidden =\n        isLoggedIn;\n\n    loggedInContainer.hidden =\n        !isLoggedIn;\n\n    accountUsername.textContent =\n        isLoggedIn\n            ? (\n                user.email ??\n                getUiText(\n                    "user"\n                )\n            )\n            : getUiText(\n                "user"\n            );\n}\n\n\nfunction updateAuthUiText() {\n    loginButton.textContent =\n        getUiText(\n            "login"\n        );\n\n    logoutButton.textContent =\n        getUiText(\n            "logout"\n        );\n\n    authCloseButton.setAttribute(\n        "aria-label",\n        getUiText(\n            "close"\n        )\n    );\n\n    for (\n        const tab\n        of authTabs\n    ) {\n        tab.textContent =\n            getUiText(\n                tab.dataset.authMode ===\n                "register"\n                    ? "register"\n                    : "login"\n            );\n    }\n\n    const loginLabels =\n        loginForm.querySelectorAll(\n            "label"\n        );\n\n    if (\n        loginLabels[0]\n    ) {\n        loginLabels[0].textContent =\n            getUiText(\n                "email"\n            );\n    }\n\n    if (\n        loginLabels[1]\n    ) {\n        loginLabels[1].textContent =\n            getUiText(\n                "password"\n            );\n    }\n\n    const registerLabels =\n        registerForm.querySelectorAll(\n            "label"\n        );\n\n    if (\n        registerLabels[0]\n    ) {\n        registerLabels[0].textContent =\n            getUiText(\n                "email"\n            );\n    }\n\n    if (\n        registerLabels[1]\n    ) {\n        registerLabels[1].textContent =\n            getUiText(\n                "password"\n            );\n    }\n\n    if (\n        registerLabels[2]\n    ) {\n        registerLabels[2].textContent =\n            getUiText(\n                "passwordRepeat"\n            );\n    }\n\n    const loginSubmit =\n        loginForm.querySelector(\n            \'.auth-submit-button\'\n        );\n\n    if (\n        loginSubmit\n    ) {\n        loginSubmit.textContent =\n            getUiText(\n                "login"\n            );\n    }\n\n    const registerSubmit =\n        registerForm.querySelector(\n            \'.auth-submit-button\'\n        );\n\n    if (\n        registerSubmit\n    ) {\n        registerSubmit.textContent =\n            getUiText(\n                "createAccount"\n            );\n    }\n\n    setAuthMode(\n        currentAuthMode\n    );\n\n    renderSession(\n        currentSession\n    );\n}\n\n\nasync function handleLogin(\n    event\n) {\n    event.preventDefault();\n\n    clearMessage();\n\n    setFormBusy(\n        loginForm,\n        true\n    );\n\n    try {\n        await window.authService.signIn(\n            loginEmail.value,\n            loginPassword.value\n        );\n\n        loginForm.reset();\n\n        closeAuthDialog();\n    }\n    catch (error) {\n        console.error(\n            "[Auth] Login fehlgeschlagen:",\n            error\n        );\n\n        showMessage(\n            window.authService\n                .getErrorMessage(\n                    error\n                ),\n            "error"\n        );\n    }\n    finally {\n        setFormBusy(\n            loginForm,\n            false\n        );\n    }\n}\n\n\nasync function handleRegistration(\n    event\n) {\n    event.preventDefault();\n\n    clearMessage();\n\n    const password =\n        registerPassword.value;\n\n    if (\n        password !==\n        registerPasswordRepeat.value\n    ) {\n        showUiMessage(\n            "passwordMismatch",\n            "error"\n        );\n\n        return;\n    }\n\n    setFormBusy(\n        registerForm,\n        true\n    );\n\n    try {\n        const data =\n            await window.authService.signUp(\n                registerEmail.value,\n                password\n            );\n\n        registerForm.reset();\n\n        if (\n            data.session\n        ) {\n            closeAuthDialog();\n            return;\n        }\n\n        showUiMessage(\n            "accountCreated",\n            "success"\n        );\n    }\n    catch (error) {\n        console.error(\n            "[Auth] Registrierung fehlgeschlagen:",\n            error\n        );\n\n        showMessage(\n            window.authService\n                .getErrorMessage(\n                    error\n                ),\n            "error"\n        );\n    }\n    finally {\n        setFormBusy(\n            registerForm,\n            false\n        );\n    }\n}\n\n\nasync function handleLogout() {\n    logoutButton.disabled =\n        true;\n\n    try {\n        await window.authService\n            .signOut();\n    }\n    catch (error) {\n        console.error(\n            "[Auth] Logout fehlgeschlagen:",\n            error\n        );\n\n        window.alert(\n            getUiText(\n                "logoutFailed"\n            )\n        );\n    }\n    finally {\n        logoutButton.disabled =\n            false;\n    }\n}\n\n\nfunction handleAuthStateChange(\n    event,\n    session\n) {\n    renderSession(\n        session\n    );\n\n    if (\n        event === "SIGNED_IN" ||\n        event === "SIGNED_OUT"\n    ) {\n        window.setTimeout(\n            () => {\n                window.dispatchEvent(\n                    new CustomEvent(\n                        "auth-session-changed",\n                        {\n                            detail: {\n                                event,\n                                session\n                            }\n                        }\n                    )\n                );\n            },\n            0\n        );\n    }\n}\n\n\nfunction registerEventListeners() {\n    loginButton.addEventListener(\n        "click",\n        openAuthDialog\n    );\n\n    logoutButton.addEventListener(\n        "click",\n        handleLogout\n    );\n\n    authCloseButton.addEventListener(\n        "click",\n        closeAuthDialog\n    );\n\n    loginForm.addEventListener(\n        "submit",\n        handleLogin\n    );\n\n    registerForm.addEventListener(\n        "submit",\n        handleRegistration\n    );\n\n    for (\n        const tab\n        of authTabs\n    ) {\n        tab.addEventListener(\n            "click",\n            () => {\n                setAuthMode(\n                    tab.dataset.authMode\n                );\n            }\n        );\n    }\n\n    authDialog.addEventListener(\n        "click",\n        event => {\n            if (\n                event.target ===\n                authDialog\n            ) {\n                closeAuthDialog();\n            }\n        }\n    );\n\n    window.addEventListener(\n        LANGUAGE_CHANGE_EVENT,\n        updateAuthUiText\n    );\n}\n\n\nasync function initialize() {\n    try {\n        validateDependencies();\n\n        registerEventListeners();\n\n        updateAuthUiText();\n\n        const session =\n            await window.authService\n                .getSession();\n\n        renderSession(\n            session\n        );\n\n        window.authService\n            .onAuthStateChange(\n                handleAuthStateChange\n            );\n\n        console.info(\n            "[Auth] Authentifizierung initialisiert."\n        );\n    }\n    catch (error) {\n        console.error(\n            "[Auth] Initialisierung fehlgeschlagen:",\n            error\n        );\n    }\n}\n\n\ninitialize();\n'
+
+          write(
+              AUTH_VIEW,
+              AUTH_VIEW_CONTENT
+          )
+
+
+          # =========================================================
+          # 3. CSS-Selektor aus Priorität C korrigieren
+          # =========================================================
+
+          main_css = read(
+              MAIN_CSS
+          )
+
+          if (
+              ".auth-dialog-.site-header"
+              in main_css
+          ):
+              main_css = main_css.replace(
+                  ".auth-dialog-.site-header",
+                  ".auth-dialog-header"
+              )
+
+          write(
+              MAIN_CSS,
+              main_css
+          )
+
+
+          # =========================================================
+          # 4. Comms-Listenmetadaten wirklich weiterreichen
+          # =========================================================
+
+          comms_view = read(
+              COMMS_VIEW
+          )
+
+          old_comms = '''                description:
+                              sectionManifest.description ??
+                              section.description,
+                          file: resolveRelativeFile(
+          '''
+
+          new_comms = '''                description:
+                              sectionManifest.description ??
+                              section.description,
+                          pageClass:
+                              sectionManifest.pageClass ??
+                              section.pageClass,
+                          file: resolveRelativeFile(
+          '''
+
+          list_start = comms_view.find(
+              'if (view === "list")'
+          )
+
+          map_start = comms_view.find(
+              'if (view === "map")',
+              list_start + 1
+          )
+
+          if (
+              list_start < 0 or
+              map_start < 0
+          ):
+              raise SystemExit(
+                  "Comms-List-Abschnitt konnte nicht abgegrenzt werden."
+              )
+
+          list_block = comms_view[
+              list_start:
+              map_start
+          ]
+
+          if (
+              "pageClass:" not in list_block
+          ):
+              comms_view = replace_once(
+                  comms_view,
+                  old_comms,
+                  new_comms,
+                  "Comms pageClass"
+              )
+
+          write(
+              COMMS_VIEW,
+              comms_view
+          )
+
+
+          # =========================================================
+          # 5. Fehlenden Formatter im Statusfilter ergänzen
+          # =========================================================
+
+          controls_view = read(
+              CONTROLS_VIEW
+          )
+
+          old_status_call = '''\t\t\t\tapplyCategoryControls(
+          \t\t\t\t\tcontainer,
+          \t\t\t\t\tcontrolState,
+          \t\t\t\t\tresultCount,
+          \t\t\t\t\temptyMessage
+          \t\t\t\t);
+          '''
+
+          new_status_call = '''\t\t\t\tapplyCategoryControls(
+          \t\t\t\t\tcontainer,
+          \t\t\t\t\tcontrolState,
+          \t\t\t\t\tresultCount,
+          \t\t\t\t\temptyMessage,
+          \t\t\t\t\tgetResultCountText
+          \t\t\t\t);
+          '''
+
+          if old_status_call in controls_view:
+              controls_view = replace_once(
+                  controls_view,
+                  old_status_call,
+                  new_status_call,
+                  "Statusfilter-Control-Aufruf"
+              )
+
+          write(
+              CONTROLS_VIEW,
+              controls_view
+          )
+
+
+          # =========================================================
+          # 6. Große Listen: Suchtext nur bei aktiver Suche erzeugen
+          # =========================================================
+
+          controls_engine = read(
+              CONTROLS_ENGINE
+          )
+
+          old_search_loop = '''        const searchText =
+                      getItemSearchText(
+                          item
+                      );
+
+                  const matchesSearch =
+                      searchTerms.every(
+                          term =>
+                              searchText.includes(
+                                  term
+                              )
+                      );
+          '''
+
+          new_search_loop = '''        const matchesSearch =
+                      !searchIsActive ||
+                      searchTerms.every(
+                          term =>
+                              getItemSearchText(
+                                  item
+                              ).includes(
+                                  term
+                              )
+                      );
+          '''
+
+          if old_search_loop in controls_engine:
+              controls_engine = replace_once(
+                  controls_engine,
+                  old_search_loop,
+                  new_search_loop,
+                  "Lazy Search-Index"
+              )
+
+          write(
+              CONTROLS_ENGINE,
+              controls_engine
+          )
+
+
+          print(
+              "Hotfix angewendet."
+          )
+          PY
+
+      - name: Aenderungen committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            index.html \
+            assets/css/main.css \
+            assets/js/views/authView.js \
+            assets/js/views/commsOverviewView.js \
+            assets/js/views/categoryControlsView.js \
+            assets/js/views/categoryControlsEngine.js
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen erforderlich."
+            exit 0
+          fi
+
+          git commit -m "Fix Division 2 lists and authentication [skip ci]"
+          git push
