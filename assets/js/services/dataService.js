@@ -60,28 +60,6 @@ function deepFreeze(value, visited = new WeakSet()) {
 
 
 /**
- * Beginnt einen neuen Request-Bereich für die aktuelle Route.
- * Noch laufende JSON-Requests der vorherigen Route werden abgebrochen.
- *
- * @returns {AbortSignal}
- */
-
-
-
-
-
-
-
-/**
- * Lädt eine JSON-Datei.
- *
- * Bereits geladene Dateien werden während der aktuellen
- * Sitzung aus dem Cache gelesen.
- *
- * @param {string} path
- * @returns {Promise<any>}
- */
-/**
  * Führt einen JSON-Request im aktuellen View-Scope aus.
  * Ein Routenwechsel bricht noch laufende Fetches ab.
  *
@@ -163,6 +141,15 @@ async function requestJson(
 }
 
 
+/**
+ * Lädt eine JSON-Datei.
+ *
+ * Bereits geladene Dateien werden während der aktuellen
+ * Sitzung aus dem Cache gelesen.
+ *
+ * @param {string} path
+ * @returns {Promise<any>}
+ */
 export async function loadJson(path) {
 	if (jsonCache.has(path)) {
 		return jsonCache.get(path);

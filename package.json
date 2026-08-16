@@ -2,14 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate:data": "node scripts/validateRepository.mjs",
-    "test:e2e": "playwright test",
-    "measure:performance": "node scripts/measurePerformance.mjs",
-    "generate:progress-index": "node scripts/generateProgressIndex.mjs",
-    "check:progress-index": "node scripts/generateProgressIndex.mjs --check",
-    "test:unit": "node --test tests/unit/*.test.mjs"
-  },
-  "devDependencies": {
-    "@playwright/test": "1.62.1"
+    "serve": "node scripts/serveStatic.mjs",
+    "generate:progress-index": "node scripts/generateProgressIndex.mjs"
   }
 }
