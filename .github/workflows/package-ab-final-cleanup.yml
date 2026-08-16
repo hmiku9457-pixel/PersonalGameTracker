@@ -594,16 +594,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A -- \
-            README.md \
-            index.html \
-            package.json \
-            package-lock.json \
-            playwright.config.mjs \
-            scripts \
-            tests \
-            assets/js/views/authView.js \
-            assets/js/services/dataService.js
+          git add -A
+
+          if git diff --cached --name-only | grep -q '^\.github/workflows/'; then
+            echo "FEHLER: Eine Workflow-Datei wurde unerwartet gestagt."
+            exit 1
+          fi
 
           if git diff --cached --quiet; then
             echo "Keine Aenderungen erforderlich."
