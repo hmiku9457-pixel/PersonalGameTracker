@@ -1,0 +1,614 @@
+name: Priority A+B - Final cleanup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Final Cleanup anwenden
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+          import shutil
+
+          INDEX_HTML = Path("index.html")
+          AUTH_VIEW = Path("assets/js/views/authView.js")
+          DATA_SERVICE = Path("assets/js/services/dataService.js")
+          PACKAGE_JSON = Path("package.json")
+          PACKAGE_LOCK = Path("package-lock.json")
+          PLAYWRIGHT_CONFIG = Path("playwright.config.mjs")
+          README = Path("README.md")
+
+          REMOVE_SCRIPTS = [
+              Path("scripts/measurePerformance.mjs"),
+              Path("scripts/validateOverviewCardMetadata.mjs"),
+              Path("scripts/validateRepository.mjs")
+          ]
+
+          TESTS_DIR = Path("tests")
+
+
+          def read(path):
+              return path.read_text(
+                  encoding="utf-8"
+              ).replace(
+                  "\r\n",
+                  "\n"
+              )
+
+
+          def write(path, content):
+              path.write_text(
+                  content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+
+              print(
+                  f"[WRITE] {path}"
+              )
+
+
+          def remove_file(path):
+              if path.exists():
+                  path.unlink()
+                  print(
+                      f"[DELETE] {path}"
+                  )
+              else:
+                  print(
+                      f"[SKIP] {path} existiert nicht."
+                  )
+
+
+          # =========================================================
+          # A1. Alte Test-/Validator-Infrastruktur entfernen
+          # =========================================================
+
+          if TESTS_DIR.exists():
+              shutil.rmtree(
+                  TESTS_DIR
+              )
+              print(
+                  "[DELETE] tests/"
+              )
+          else:
+              print(
+                  "[SKIP] tests/ existiert nicht."
+              )
+
+          remove_file(
+              PLAYWRIGHT_CONFIG
+          )
+
+          for script in REMOVE_SCRIPTS:
+              remove_file(
+                  script
+              )
+
+          remove_file(
+              PACKAGE_LOCK
+          )
+
+
+          # =========================================================
+          # A2. package.json auf echte Wartungswerkzeuge reduzieren
+          # =========================================================
+
+          package_data = {
+              "private": True,
+              "type": "module",
+              "scripts": {
+                  "serve":
+                      "node scripts/serveStatic.mjs",
+                  "generate:progress-index":
+                      "node scripts/generateProgressIndex.mjs"
+              }
+          }
+
+          PACKAGE_JSON.write_text(
+              json.dumps(
+                  package_data,
+                  indent=2,
+                  ensure_ascii=False
+              ) + "\n",
+              encoding="utf-8"
+          )
+
+          print(
+              "[WRITE] package.json"
+          )
+
+
+          # =========================================================
+          # B1. Unbenutzten Account-Button entfernen
+          # =========================================================
+
+          index_html = read(
+              INDEX_HTML
+          )
+
+          account_button_pattern = re.compile(
+              r'''
+              \n[ \t]*
+              <button
+              [\s\S]*?
+              id="account-button"
+              [\s\S]*?
+              </button>
+              ''',
+              re.VERBOSE
+          )
+
+          index_html, account_count = (
+              account_button_pattern.subn(
+                  "",
+                  index_html,
+                  count=1
+              )
+          )
+
+          if account_count == 1:
+              print(
+                  "[OK] account-button entfernt."
+              )
+          elif (
+              'id="account-button"'
+              not in index_html
+          ):
+              print(
+                  "[SKIP] account-button war bereits entfernt."
+              )
+          else:
+              raise SystemExit(
+                  "account-button konnte nicht eindeutig entfernt werden."
+              )
+
+
+          # =========================================================
+          # B2. Auth-Umschalter als normale Buttons behandeln
+          # =========================================================
+
+          index_html = re.sub(
+              r'\n[ \t]*role="tablist"',
+              "",
+              index_html,
+              count=1
+          )
+
+          index_html = re.sub(
+              r'\n[ \t]*aria-label="Benutzerkonto"',
+              "",
+              index_html,
+              count=1
+          )
+
+          write(
+              INDEX_HTML,
+              index_html
+          )
+
+
+          auth_view = read(
+              AUTH_VIEW
+          )
+
+          auth_view = re.sub(
+              r'\n[ \t]*accountNavigation:[ \t]*"Benutzerkonto",',
+              "",
+              auth_view,
+              count=1
+          )
+
+          auth_view = re.sub(
+              r'\n[ \t]*accountNavigation:[ \t]*"User account",',
+              "",
+              auth_view,
+              count=1
+          )
+
+          auth_tabs_container_pattern = re.compile(
+              r'''
+              \n[ \t]*
+              const[ \t]+authTabsContainer
+              [ \t]*=
+              [ \t\n]*
+              document\.querySelector\(
+              [ \t\n]*
+              "\.auth-tabs"
+              [ \t\n]*
+              \);
+              ''',
+              re.VERBOSE
+          )
+
+          auth_view = auth_tabs_container_pattern.sub(
+              "",
+              auth_view,
+              count=1
+          )
+
+          tab_label_block_pattern = re.compile(
+              r'''
+              \n[ \t]*/\*
+              [\s\S]*?
+              Tab-Leiste
+              [\s\S]*?
+              \*/
+              [ \t\n]*
+              if[ \t]*\(authTabsContainer\)[ \t]*\{
+              [\s\S]*?
+              \n[ \t]*\}
+              (?=
+              [ \t\n]*for[ \t]*\(
+              )
+              ''',
+              re.VERBOSE
+          )
+
+          auth_view = tab_label_block_pattern.sub(
+              "\n",
+              auth_view,
+              count=1
+          )
+
+          aria_selected_pattern = re.compile(
+              r'''
+              \n[ \t]*
+              tab\.setAttribute\(
+              [ \t\n]*
+              "aria-selected",
+              [ \t\n]*
+              String\(tabIsActive\)
+              [ \t\n]*
+              \);
+              ''',
+              re.VERBOSE
+          )
+
+          auth_view = aria_selected_pattern.sub(
+              "",
+              auth_view,
+              count=1
+          )
+
+          for stale_token in [
+              "accountNavigation",
+              "authTabsContainer",
+              '"aria-selected"'
+          ]:
+              if stale_token in auth_view:
+                  raise SystemExit(
+                      "authView enthält weiterhin Altlogik: "
+                      + stale_token
+                  )
+
+          write(
+              AUTH_VIEW,
+              auth_view
+          )
+
+
+          # =========================================================
+          # B3. Verwaiste JSDoc-Blöcke in dataService.js bereinigen
+          # =========================================================
+
+          data_service = read(
+              DATA_SERVICE
+          )
+
+          stale_docs_pattern = re.compile(
+              r'''
+              /\*\*
+              \n[ \t]*\*[ \t]*Beginnt[^\n]*
+              [\s\S]*?
+              \*/
+              [ \t\n]*
+              /\*\*
+              \n[ \t]*\*[ \t]*Lädt[ \t]+eine[ \t]+JSON-Datei\.
+              [\s\S]*?
+              \*/
+              [ \t\n]*
+              (?=/\*\*
+              \n[ \t]*\*[ \t]*Führt[ \t]+einen[ \t]+JSON-Request)
+              ''',
+              re.VERBOSE
+          )
+
+          data_service, stale_docs_count = (
+              stale_docs_pattern.subn(
+                  "",
+                  data_service,
+                  count=1
+              )
+          )
+
+          if stale_docs_count == 1:
+              print(
+                  "[OK] Verwaiste requestJson-JSDocs entfernt."
+              )
+          elif (
+              "Beginnt einen neuen Request-Bereich"
+              not in data_service
+          ):
+              print(
+                  "[SKIP] Verwaiste requestJson-JSDocs waren bereits entfernt."
+              )
+          else:
+              raise SystemExit(
+                  "Verwaiste JSDoc-Blöcke konnten nicht eindeutig entfernt werden."
+              )
+
+
+          load_json_doc = '''/**
+           * Lädt eine JSON-Datei.
+           *
+           * Bereits geladene Dateien werden während der aktuellen
+           * Sitzung aus dem Cache gelesen.
+           *
+           * @param {string} path
+           * @returns {Promise<any>}
+           */
+          '''
+
+          load_json_anchor = (
+              "export async function loadJson(path) {"
+          )
+
+          if (
+              load_json_doc
+              not in data_service
+          ):
+              if (
+                  load_json_anchor
+                  not in data_service
+              ):
+                  raise SystemExit(
+                      "loadJson()-Anker wurde nicht gefunden."
+                  )
+
+              data_service = data_service.replace(
+                  load_json_anchor,
+                  load_json_doc
+                  + load_json_anchor,
+                  1
+              )
+
+          write(
+              DATA_SERVICE,
+              data_service
+          )
+
+
+          # =========================================================
+          # A3. README auf den tatsächlichen Projektablauf aktualisieren
+          # =========================================================
+
+          readme = r'''# Personal Game Tracker
+
+          Ein statischer, zweisprachiger Web-Tracker für Achievements, Collectibles,
+          Ausrüstung und weitere Spielinhalte. Die Anwendung läuft ohne Produktions-Build
+          direkt auf GitHub Pages und verwendet Vanilla JavaScript, JSON-Manifeste und
+          optional Supabase für den persönlichen Fortschritt.
+
+          ## Funktionen
+
+          - Spieleübersicht mit Gesamtfortschritt
+          - beliebig tiefe Manifest- und Kategorienavigation
+          - einheitliche Übersichtskarten mit Inhaltsmetadaten und Fortschrittsbalken
+          - deutsche und englische Inhalte
+          - Suche, Statusfilter und Sortierung innerhalb großer Listen
+          - persönliche Fortschrittsspeicherung über Supabase
+          - spezielle Karten- und Listenansichten für die Comms aus *The Division 2*
+          - responsive Darstellung für Desktop und Mobilgeräte
+
+          ## Projektstruktur
+
+          ```text
+          assets/
+            css/                    Stylesheets
+            js/                     Router, Views und Services
+            maps/                   Karten für spezielle Tracker-Ansichten
+            thumbnails/             Spielkacheln
+          data/
+            games.json              globale Spieleliste
+            <gameId>/               Manifest, Fortschrittsindex und Kategoriedaten
+          scripts/
+            generateProgressIndex.mjs
+            serveStatic.mjs
+          .github/workflows/
+            deploy-pages.yml        manueller GitHub-Pages-Deploy
+          index.html
+          404.html
+          package.json
+          ```
+
+          ## Entwicklungsprinzip
+
+          Der Personal Game Tracker ist ein privates Projekt. Änderungen werden bewusst
+          nicht durch eine umfangreiche automatische Test- oder Validator-Pipeline
+          abgesichert.
+
+          Der normale Ablauf ist:
+
+          1. Dateien und Daten ändern.
+          2. Bei Änderungen an Item- oder Manifestdaten den Fortschrittsindex neu erzeugen.
+          3. Änderungen committen.
+          4. Den GitHub-Pages-Workflow manuell starten.
+          5. Die betroffenen Funktionen auf der veröffentlichten Seite selbst prüfen.
+
+          Dadurch bleibt das Repository einfach und der Wartungsaufwand gering.
+
+          ## Lokal starten
+
+          Für einen lokalen statischen Webserver ist keine Installation von
+          Abhängigkeiten erforderlich.
+
+          ```bash
+          npm run serve
+          ```
+
+          Alternativ:
+
+          ```bash
+          node scripts/serveStatic.mjs
+          ```
+
+          Danach ist die Anwendung unter `http://127.0.0.1:4173` erreichbar.
+
+          ## Datenmodell
+
+          Jedes Spiel besitzt ein `manifest.json`. Ein Manifest-Eintrag verweist
+          entweder auf ein weiteres Manifest oder auf eine konkrete Kategoriedatei.
+
+          Beispiel:
+
+          ```json
+          {
+            "id": "achievements",
+            "name": {
+              "de": "Erfolge",
+              "en": "Achievements"
+            },
+            "description": {
+              "de": "Alle im Spiel verfügbaren Erfolge.",
+              "en": "All achievements available in the game."
+            },
+            "type": "category",
+            "file": "achievements.json",
+            "itemCount": 41,
+            "itemLabel": {
+              "de": "Erfolge",
+              "en": "achievements"
+            }
+          }
+          ```
+
+          Übersichtskarten können zusätzliche Metadaten wie `itemLabel`, `groupCount`
+          und `groupLabel` verwenden. Spezielle Ansichten können über die dafür
+          vorgesehenen Manifest-Metadaten konfiguriert werden.
+
+          ## Fortschrittsindex
+
+          Die Übersichten verwenden `progressIndex.json`, damit Fortschritte über
+          stabile Item-IDs berechnet werden können, ohne für jede Karte alle großen
+          Datendateien zu laden.
+
+          Nach Änderungen an:
+
+          - Item-IDs
+          - neuen oder entfernten Items
+          - Manifestreferenzen
+          - Kategorien oder Datendateien
+
+          sollte der Index neu erzeugt werden:
+
+          ```bash
+          npm run generate:progress-index
+          ```
+
+          oder direkt:
+
+          ```bash
+          node scripts/generateProgressIndex.mjs
+          ```
+
+          Die erzeugten `progressIndex.json`-Dateien werden anschließend normal mit
+          den übrigen Änderungen committed.
+
+          ## Fortschritt und Supabase
+
+          Die Supabase-Integration speichert den persönlichen Fortschritt angemeldeter
+          Benutzer. Der öffentliche Browser-Key ist kein Service-Role-Key.
+
+          Der Schutz der Benutzerdaten erfolgt über die in Supabase konfigurierten
+          Row-Level-Security-Regeln. Diese Policies müssen sicherstellen, dass ein
+          Benutzer ausschließlich auf seine eigenen Fortschrittsdaten zugreifen kann.
+
+          ## Deployment
+
+          Unter **Settings → Pages → Build and deployment** ist als Source
+          **GitHub Actions** konfiguriert.
+
+          Das Deployment wird nicht bei jedem Commit automatisch gestartet.
+
+          Nach abgeschlossenen Änderungen:
+
+          1. **Actions** öffnen.
+          2. **Deploy GitHub Pages** auswählen.
+          3. **Run workflow** starten.
+          4. Nach dem Deployment die geänderten Funktionen manuell prüfen.
+
+          Der Deployment-Workflow veröffentlicht ausschließlich die für die statische
+          Seite benötigten Dateien. Es ist kein npm-Build, Bundler oder Framework
+          erforderlich.
+
+          ## Wartung
+
+          Für dieses Projekt gilt bewusst:
+
+          - keine automatischen Browsertests
+          - keine Repository-Validatoren
+          - keine Performance-Testpipeline
+          - keine Build-Pipeline
+          - manuelles Deployment
+          - manuelle Funktionsprüfung nach Änderungen
+
+          Einmalige `package-*.yml`-Workflows dienen nur zum Anwenden größerer
+          Update-Pakete und sollten nach erfolgreicher Verwendung wieder aus
+          `.github/workflows/` entfernt werden.
+          '''
+
+          write(
+              README,
+              readme
+          )
+
+
+          print(
+              "Priorität A+B angewendet."
+          )
+          PY
+
+      - name: Aenderungen gesammelt committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A -- \
+            README.md \
+            index.html \
+            package.json \
+            package-lock.json \
+            playwright.config.mjs \
+            scripts \
+            tests \
+            assets/js/views/authView.js \
+            assets/js/services/dataService.js
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen erforderlich."
+            exit 0
+          fi
+
+          git commit -m "Finalize private-project cleanup [skip ci]"
+          git push
