@@ -16,7 +16,6 @@ import {
 } from "../services/dataService.js";
 
 import {
-	calculateCategoryProgress,
 	isItemCompleted,
 	loadGameProgressData,
 	setItemCompleted,
@@ -40,6 +39,13 @@ import {
 import {
 	renderCategoryControls
 } from "./categoryControlsView.js";
+
+
+import {
+	updateAllCategoryGroupProgress,
+	updateCategoryGroupProgress,
+	updateCurrentCategoryProgress
+} from "./categoryProgressView.js";
 
 
 /* ---------------------------------------------------------
@@ -1633,133 +1639,7 @@ function updateTrackerToggle(
 
 
 /* ---------------------------------------------------------
-   11. Gruppenfortschritt
-   --------------------------------------------------------- */
-
-/**
- * Aktualisiert den Fortschritt einer
- * sichtbaren Kategoriegruppe anhand
- * der gerenderten Tracker-Items.
- *
- * @param {HTMLElement|null} groupElement
- */
-function updateCategoryGroupProgress(
-	groupElement
-) {
-	if (!groupElement) {
-		return;
-	}
-
-
-	const progressElement =
-		groupElement.querySelector(
-			".category-group-progress"
-		);
-
-
-	if (!progressElement) {
-		return;
-	}
-
-
-	const items =
-		groupElement.querySelectorAll(
-			".tracker-item"
-		);
-
-
-	const completedItems =
-		groupElement.querySelectorAll(
-			".tracker-item.is-completed"
-		);
-
-
-	progressElement.textContent =
-		`${completedItems.length} / ${items.length}`;
-}
-
-
-/**
- * Aktualisiert den Fortschritt aller
- * sichtbaren Kategoriegruppen.
- *
- * @param {HTMLElement} container
- */
-function updateAllCategoryGroupProgress(
-	container
-) {
-	if (!container) {
-		return;
-	}
-
-
-	const groups =
-		container.querySelectorAll(
-			".category-group"
-		);
-
-
-	for (
-		const group of groups
-	) {
-		updateCategoryGroupProgress(
-			group
-		);
-	}
-}
-
-
-/* ---------------------------------------------------------
-   12. Kategorie-Fortschritt
-   --------------------------------------------------------- */
-
-/**
- * Aktualisiert den Fortschritt der aktuell
- * geöffneten Kategorie.
- *
- * @param {Object|Array} categoryData
- * @param {Object} progressData
- */
-function updateCurrentCategoryProgress(
-	categoryData,
-	progressData
-) {
-	const element =
-		document.querySelector(
-			"[data-current-category-progress]"
-		);
-
-
-	if (!element) {
-		return;
-	}
-
-
-	const progress =
-		calculateCategoryProgress(
-			categoryData,
-			progressData
-		);
-
-
-	const percent =
-		progress.total > 0
-			? Math.round(
-				(
-					progress.completed /
-					progress.total
-				) * 100
-			)
-			: 0;
-
-
-	element.textContent =
-		`${progress.completed} / ${progress.total} · ${percent} %`;
-}
-
-
-/* ---------------------------------------------------------
-   13. Item-Suche
+   11. Item-Suche
    --------------------------------------------------------- */
 
 /**
@@ -1850,7 +1730,7 @@ function findItemById(
 
 
 /* ---------------------------------------------------------
-   14. Fortschrittsbuttons
+   12. Fortschrittsbuttons
    --------------------------------------------------------- */
 
 /**

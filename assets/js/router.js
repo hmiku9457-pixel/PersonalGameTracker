@@ -15,6 +15,12 @@ import {
 
 
 import {
+	buildGameHash,
+	getRouteParts
+} from "./services/routeHashService.js";
+
+
+import {
 loadGameManifest,
 	loadManifest,
 	resolveRelativeFile
@@ -200,7 +206,7 @@ export async function loadPageFromHash() {
 	const viewScope =
 		beginViewScope();
 
-const routeParts =
+	const routeParts =
 		getRouteParts();
 
 
@@ -463,11 +469,6 @@ const resolvedRoute =
 		) {
 			return;
 		}
-
-		if (error?.name === "AbortError") {
-			return;
-		}
-
 
 		console.error(
 			"Route konnte nicht geladen werden:",
@@ -766,87 +767,4 @@ function createRouterError(
 
 
 	return error;
-}
-
-
-/* ---------------------------------------------------------
-   6. Hash auslesen
-   --------------------------------------------------------- */
-
-/**
- * Zerlegt den aktuellen Hash.
- *
- * Beispiel:
- *
- * #game/theDivision2/collectibles/echos
- *
- * wird:
- *
- * [
- *   "game",
- *   "theDivision2",
- *   "collectibles",
- *   "echos"
- * ]
- *
- * @returns {Array<string>}
- */
-function getRouteParts() {
-	const hash =
-		window.location.hash
-			.replace(/^#/, "");
-
-	if (!hash) {
-		return [];
-	}
-
-	return hash
-		.split("/")
-		.filter(Boolean)
-		.map(part => {
-			try {
-				return decodeURIComponent(
-					part
-				);
-			}
-			catch {
-				return part;
-			}
-		});
-}
-
-
-/* ---------------------------------------------------------
-   7. Hash erzeugen
-   --------------------------------------------------------- */
-
-/**
- * Baut eine Spielroute.
- *
- * @param {string} gameId
- * @param {Array<string>} routeIds
- * @returns {string}
- */
-function buildGameHash(
-	gameId,
-	routeIds = []
-) {
-
-	const parts = [
-		"game",
-
-		encodeURIComponent(
-			gameId
-		),
-
-		...routeIds.map(
-			routeId =>
-				encodeURIComponent(
-					routeId
-				)
-		)
-	];
-
-
-	return `#${parts.join("/")}`;
 }
