@@ -40,7 +40,7 @@ body {
    2. Header
    --------------------------------------------------------- */
 
-header {
+.site-header {
 	min-height: 70px;
 	padding: 20px 30px;
 
@@ -55,7 +55,7 @@ header {
 	border-bottom: 1px solid #374151;
 }
 
-header h1 {
+.site-header h1 {
 	grid-column: 2;
 
 	margin: 0;
@@ -339,7 +339,7 @@ header h1 {
    5. Hauptinhalt
    --------------------------------------------------------- */
 
-main {
+.site-main {
 	flex: 1;
 
 	min-width: 0;
@@ -348,13 +348,13 @@ main {
 	background-color: #111827;
 }
 
-main h1,
-main h2,
-main h3 {
+.site-main h1,
+.site-main h2,
+.site-main h3 {
 	margin-top: 0;
 }
 
-main h1 {
+.site-main h1 {
 	font-size: 2rem;
 }
 
@@ -363,7 +363,7 @@ main h1 {
    6. Footer
    --------------------------------------------------------- */
 
-footer {
+.site-footer {
 	padding: 15px 30px;
 
 	color: #9ca3af;
@@ -375,7 +375,7 @@ footer {
 	font-size: 0.9rem;
 }
 
-footer p {
+.site-footer p {
 	margin: 0;
 }
 
@@ -428,7 +428,7 @@ button:disabled {
 	padding: 24px;
 }
 
-.auth-dialog-header {
+.auth-dialog-.site-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -667,7 +667,7 @@ button:disabled {
 
 @media (max-width: 768px) {
 
-	header {
+	.site-header {
 		padding: 16px 20px;
 
 		display: flex;
@@ -676,7 +676,7 @@ button:disabled {
 		gap: 12px;
 	}
 
-	header h1 {
+	.site-header h1 {
 		font-size: 1.35rem;
 		white-space: normal;
 	}
@@ -746,18 +746,18 @@ button:disabled {
 
 	/* Hauptinhalt */
 
-	main {
+	.site-main {
 		padding: 20px;
 	}
 
-	main h1 {
+	.site-main h1 {
 		font-size: 1.7rem;
 	}
 
 
 	/* Footer */
 
-	footer {
+	.site-footer {
 		padding: 15px 20px;
 	}
 }
@@ -769,7 +769,7 @@ button:disabled {
 
 @media (max-width: 480px) {
 
-	header {
+	.site-header {
 		padding-right: 16px;
 		padding-left: 16px;
 	}
@@ -817,7 +817,7 @@ button:disabled {
 
 	/* Hauptinhalt */
 
-	main {
+	.site-main {
 		padding: 16px;
 	}
 

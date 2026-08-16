@@ -125,6 +125,9 @@ export async function renderConfiguredCommsView({
                 description:
                     sectionManifest.description ??
                     section.description,
+                pageClass:
+                    sectionManifest.pageClass ??
+                    section.pageClass,
                 file: resolveRelativeFile(
                     sectionManifestFile,
                     dataFile

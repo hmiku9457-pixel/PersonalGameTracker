@@ -222,19 +222,16 @@ export async function renderCategory(
 			"game-page";
 
 
-		const isCommsMissionList =
-			category.id === "missions" &&
-			typeof category.parentHash === "string" &&
-			category.parentHash.includes(
-				"/collectibles/comms"
-			);
+		const pageClass =
+			typeof category.pageClass ===
+				"string"
+				? category.pageClass.trim()
+				: "";
 
 
-		if (
-			isCommsMissionList
-		) {
+		if (pageClass) {
 			gamePage.classList.add(
-				"comms-list-page"
+				pageClass
 			);
 		}
 

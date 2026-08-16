@@ -23,11 +23,11 @@
 
 
 /*
- * Die gamesView.js verwendet ein <header>-Element.
+ * Eigener Seitenkopf der Spieleübersicht.
  *
- * Diese Regeln überschreiben gezielt die allgemeinen
- * Header-Styles aus der main.css, damit der Seitenkopf
- * der Spieleübersicht nicht wie der Hauptheader aussieht.
+ * Der globale Seitenkopf wird in main.css über
+ * .site-header gescoped und beeinflusst diesen
+ * internen <header> daher nicht mehr.
  */
 .games-page .games-header {
 	min-height: 0;
