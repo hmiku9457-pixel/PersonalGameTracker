@@ -1,0 +1,458 @@
+name: Priority C - Presentation metadata and CSS scope
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Prioritaet C anwenden
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          CATEGORY_VIEW = Path(
+              "assets/js/views/categoryView.js"
+          )
+          COMMS_VIEW = Path(
+              "assets/js/views/commsOverviewView.js"
+          )
+          MISSIONS_MANIFEST = Path(
+              "data/theDivision2/collectibles/comms/missions/manifest.json"
+          )
+          INDEX_HTML = Path(
+              "index.html"
+          )
+          MAIN_CSS = Path(
+              "assets/css/main.css"
+          )
+          TRACKER_CSS = Path(
+              "assets/css/tracker.css"
+          )
+
+
+          def read(path):
+              return path.read_text(
+                  encoding="utf-8"
+              ).replace(
+                  "\r\n",
+                  "\n"
+              )
+
+
+          def write(path, content):
+              path.write_text(
+                  content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+
+              print(
+                  f"[WRITE] {path}"
+              )
+
+
+          def replace_once(
+              source,
+              old,
+              new,
+              label
+          ):
+              count = source.count(
+                  old
+              )
+
+              if count != 1:
+                  raise SystemExit(
+                      f"{label}: erwartete genau eine Fundstelle, "
+                      f"gefunden: {count}"
+                  )
+
+              return source.replace(
+                  old,
+                  new,
+                  1
+              )
+
+
+          # =========================================================
+          # 1. Comms-Missionsdarstellung explizit konfigurieren
+          # =========================================================
+
+          manifest = read(
+              MISSIONS_MANIFEST
+          )
+
+          if (
+              '"pageClass": "comms-list-page"'
+              not in manifest
+          ):
+              manifest = replace_once(
+                  manifest,
+                  '''  "view": "list",
+            "map": null,''',
+                  '''  "view": "list",
+            "pageClass": "comms-list-page",
+            "map": null,''',
+                  "Missions-Manifest pageClass"
+              )
+
+              write(
+                  MISSIONS_MANIFEST,
+                  manifest
+              )
+          else:
+              print(
+                  "[SKIP] Missions-Manifest besitzt pageClass bereits."
+              )
+
+
+          # =========================================================
+          # 2. Comms-Renderer reicht Präsentationsmetadaten weiter
+          # =========================================================
+
+          comms_view = read(
+              COMMS_VIEW
+          )
+
+          list_start = comms_view.find(
+              'if (view === "list")'
+          )
+
+          map_start = comms_view.find(
+              'if (view === "map")',
+              list_start + 1
+          )
+
+          if (
+              list_start < 0 or
+              map_start < 0
+          ):
+              raise SystemExit(
+                  "Comms-Renderer: list/map-Abschnitte fehlen."
+              )
+
+          list_block = comms_view[
+              list_start:
+              map_start
+          ]
+
+          if "pageClass:" not in list_block:
+              comms_view = replace_once(
+                  comms_view,
+                  '''                description:
+                              sectionManifest.description ??
+                              section.description,
+                          file: resolveRelativeFile(''',
+                  '''                description:
+                              sectionManifest.description ??
+                              section.description,
+                          pageClass:
+                              sectionManifest.pageClass ??
+                              section.pageClass,
+                          file: resolveRelativeFile(''',
+                  "Comms-Renderer pageClass"
+              )
+
+              write(
+                  COMMS_VIEW,
+                  comms_view
+              )
+          else:
+              print(
+                  "[SKIP] Comms-Renderer reicht pageClass bereits weiter."
+              )
+
+
+          # =========================================================
+          # 3. Category View von Comms-Pfaden entkoppeln
+          # =========================================================
+
+          category_view = read(
+              CATEGORY_VIEW
+          )
+
+          legacy_block = '''\t\tconst isCommsMissionList =
+          \t\t\tcategory.id === "missions" &&
+          \t\t\ttypeof category.parentHash === "string" &&
+          \t\t\tcategory.parentHash.includes(
+          \t\t\t\t"/collectibles/comms"
+          \t\t\t);
+
+
+          \t\tif (
+          \t\t\tisCommsMissionList
+          \t\t) {
+          \t\t\tgamePage.classList.add(
+          \t\t\t\t"comms-list-page"
+          \t\t\t);
+          \t\t}
+
+
+          '''
+
+          generic_block = '''\t\tconst pageClass =
+          \t\t\ttypeof category.pageClass ===
+          \t\t\t\t"string"
+          \t\t\t\t? category.pageClass.trim()
+          \t\t\t\t: "";
+
+
+          \t\tif (pageClass) {
+          \t\t\tgamePage.classList.add(
+          \t\t\t\tpageClass
+          \t\t\t);
+          \t\t}
+
+
+          '''
+
+          if legacy_block in category_view:
+              category_view = replace_once(
+                  category_view,
+                  legacy_block,
+                  generic_block,
+                  "Category View Präsentationsmetadaten"
+              )
+
+              write(
+                  CATEGORY_VIEW,
+                  category_view
+              )
+          elif (
+              "typeof category.pageClass ==="
+              in category_view
+          ):
+              print(
+                  "[SKIP] Category View verwendet bereits pageClass."
+              )
+          else:
+              raise SystemExit(
+                  "Category View: weder Legacy-Comms-Erkennung "
+                  "noch neue pageClass-Logik gefunden."
+              )
+
+
+          # =========================================================
+          # 4. Echte Seitenbereiche erhalten eigene CSS-Klassen
+          # =========================================================
+
+          index_html = read(
+              INDEX_HTML
+          )
+
+          html_replacements = [
+              (
+                  "\t\t<header>",
+                  '\t\t<header class="site-header">',
+                  "Site Header"
+              ),
+              (
+                  '\t\t\t<main id="main-content">',
+                  '\t\t\t<main id="main-content" class="site-main">',
+                  "Site Main"
+              ),
+              (
+                  "\t\t<footer>",
+                  '\t\t<footer class="site-footer">',
+                  "Site Footer"
+              )
+          ]
+
+          changed_index = False
+
+          for old, new, label in html_replacements:
+              if new in index_html:
+                  continue
+
+              index_html = replace_once(
+                  index_html,
+                  old,
+                  new,
+                  label
+              )
+
+              changed_index = True
+
+          if changed_index:
+              write(
+                  INDEX_HTML,
+                  index_html
+              )
+          else:
+              print(
+                  "[SKIP] Site-Klassen sind im HTML bereits vorhanden."
+              )
+
+
+          # =========================================================
+          # 5. Globale Layout-Selektoren in main.css scopen
+          # =========================================================
+
+          main_css = read(
+              MAIN_CSS
+          )
+
+          selector_replacements = [
+              (
+                  "header h1",
+                  ".site-header h1"
+              ),
+              (
+                  "header {",
+                  ".site-header {"
+              ),
+              (
+                  "main h1,",
+                  ".site-main h1,"
+              ),
+              (
+                  "main h2,",
+                  ".site-main h2,"
+              ),
+              (
+                  "main h3 {",
+                  ".site-main h3 {"
+              ),
+              (
+                  "main h1 {",
+                  ".site-main h1 {"
+              ),
+              (
+                  "main {",
+                  ".site-main {"
+              ),
+              (
+                  "footer p",
+                  ".site-footer p"
+              ),
+              (
+                  "footer {",
+                  ".site-footer {"
+              )
+          ]
+
+          changed_css = False
+
+          for old, new in selector_replacements:
+              if old in main_css:
+                  main_css = main_css.replace(
+                      old,
+                      new
+                  )
+                  changed_css = True
+
+          for line in main_css.splitlines():
+              stripped = line.strip()
+
+              if (
+                  stripped.startswith("header ") or
+                  stripped == "header {" or
+                  stripped.startswith("main ") or
+                  stripped == "main {" or
+                  stripped.startswith("footer ") or
+                  stripped == "footer {"
+              ):
+                  raise SystemExit(
+                      "main.css enthält weiterhin einen globalen "
+                      f"Layout-Selektor: {stripped}"
+                  )
+
+          if changed_css:
+              write(
+                  MAIN_CSS,
+                  main_css
+              )
+          else:
+              print(
+                  "[SKIP] main.css ist bereits auf site-* gescoped."
+              )
+
+
+          # =========================================================
+          # 6. Veralteten Override-Kommentar korrigieren
+          # =========================================================
+
+          tracker_css = read(
+              TRACKER_CSS
+          )
+
+          old_comment = '''/*
+           * Die gamesView.js verwendet ein <header>-Element.
+           *
+           * Diese Regeln überschreiben gezielt die allgemeinen
+           * Header-Styles aus der main.css, damit der Seitenkopf
+           * der Spieleübersicht nicht wie der Hauptheader aussieht.
+           */'''
+
+          new_comment = '''/*
+           * Eigener Seitenkopf der Spieleübersicht.
+           *
+           * Der globale Seitenkopf wird in main.css über
+           * .site-header gescoped und beeinflusst diesen
+           * internen <header> daher nicht mehr.
+           */'''
+
+          if old_comment in tracker_css:
+              tracker_css = replace_once(
+                  tracker_css,
+                  old_comment,
+                  new_comment,
+                  "Tracker-CSS Header-Kommentar"
+              )
+
+              write(
+                  TRACKER_CSS,
+                  tracker_css
+              )
+          elif new_comment in tracker_css:
+              print(
+                  "[SKIP] Tracker-CSS-Kommentar ist bereits aktuell."
+              )
+          else:
+              raise SystemExit(
+                  "Tracker-CSS: erwarteter Header-Kommentar fehlt."
+              )
+
+
+          print(
+              "Priorität C angewendet."
+          )
+          PY
+
+      - name: Aenderungen gesammelt committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            index.html \
+            assets/css/main.css \
+            assets/css/tracker.css \
+            assets/js/views/categoryView.js \
+            assets/js/views/commsOverviewView.js \
+            data/theDivision2/collectibles/comms/missions/manifest.json
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen erforderlich."
+            exit 0
+          fi
+
+          git commit -m "Decouple presentation metadata and scope site CSS [skip ci]"
+          git push
