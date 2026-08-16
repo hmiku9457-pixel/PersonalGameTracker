@@ -5,12 +5,6 @@
 
 
 import {
-	getActiveViewScope,
-	registerViewCleanup
-} from "../services/viewScopeService.js";
-
-
-import {
 	getCurrentLanguage,
 	getCurrentLocale
 } from "../services/languageService.js";
@@ -88,18 +82,33 @@ function getUiText(key) {
 
 
 /* ---------------------------------------------------------
-   2. Observer
+   2. Performance-Zustand
    --------------------------------------------------------- */
 
 /*
- * Es soll immer nur ein Observer für die aktuell
- * dargestellte Kategorie aktiv sein.
- *
- * Beim Wechsel der Kategorie wird der alte Observer
- * beendet und durch einen neuen ersetzt.
+ * Die Item-Struktur einer gerenderten Kategorie bleibt
+ * während ihrer Lebensdauer unverändert. Die dafür
+ * benötigten DOM-Referenzen können daher gecacht werden.
  */
-let activeItemStateObserver =
-	null;
+const categoryElementCache =
+	new WeakMap();
+
+
+/*
+ * Schnelle Eingaben in der Volltextsuche werden auf
+ * maximal eine Filterberechnung pro Browser-Frame
+ * zusammengefasst.
+ */
+const scheduledCategoryUpdateFrames =
+	new WeakMap();
+
+
+/*
+ * Wird dieselbe Kategorie-View erneut initialisiert,
+ * ersetzen wir den vorherigen Status-Listener sauber.
+ */
+const categoryStateChangeHandlers =
+	new WeakMap();
 
 
 /* ---------------------------------------------------------
@@ -143,15 +152,43 @@ export function renderCategoryControls(
 	}
 
 
-	/*
-	 * Eventuell bestehenden Observer einer
-	 * vorherigen Kategorie beenden.
-	 */
-	if (activeItemStateObserver) {
-		activeItemStateObserver.disconnect();
+	const pendingUpdateFrame =
+		scheduledCategoryUpdateFrames.get(
+			container
+		);
 
-		activeItemStateObserver =
-			null;
+	if (
+		pendingUpdateFrame !==
+		undefined
+	) {
+		cancelAnimationFrame(
+			pendingUpdateFrame
+		);
+	}
+
+	scheduledCategoryUpdateFrames.delete(
+		container
+	);
+
+	categoryElementCache.delete(
+		container
+	);
+
+
+	const previousStateChangeHandler =
+		categoryStateChangeHandlers.get(
+			container
+		);
+
+	if (previousStateChangeHandler) {
+		container.removeEventListener(
+			"tracker-item-state-changed",
+			previousStateChangeHandler
+		);
+
+		categoryStateChangeHandlers.delete(
+			container
+		);
 	}
 
 
@@ -213,6 +250,7 @@ export function renderCategoryControls(
 		query: "",
 		status: "all",
 		sort: "asc",
+		sortDirty: true,
 
 		searchActive: false,
 
@@ -714,7 +752,7 @@ export function renderCategoryControls(
 				searchInput.value;
 
 
-			applyCategoryControls(
+			scheduleCategoryControlsUpdate(
 				container,
 				controlState,
 				resultCount,
@@ -758,7 +796,7 @@ export function renderCategoryControls(
 				"";
 
 
-			applyCategoryControls(
+			scheduleCategoryControlsUpdate(
 				container,
 				controlState,
 				resultCount,
@@ -782,6 +820,9 @@ export function renderCategoryControls(
 			controlState.sort =
 				sortSelect.value;
 
+			controlState.sortDirty =
+				true;
+
 
 			applyCategoryControls(
 				container,
@@ -796,93 +837,38 @@ export function renderCategoryControls(
 
 	/*
 	 * =====================================================
-	 * Änderung eines Tracker-Status beobachten
+	 * Gezielt auf geänderten Tracker-Status reagieren
 	 * =====================================================
 	 */
-
-	let updateScheduled =
-		false;
-
-
-	activeItemStateObserver =
-		new MutationObserver(
-			mutations => {
-
-				const itemStateChanged =
-					mutations.some(
-						mutation =>
-							mutation.type ===
-								"attributes" &&
-							mutation.attributeName ===
-								"class" &&
-							mutation.target instanceof
-								Element &&
-							mutation.target.matches(
-								".tracker-item"
-							)
-					);
-
-
-				if (
-					!itemStateChanged ||
-					updateScheduled
-				) {
-					return;
-				}
-
-
-				updateScheduled =
-					true;
-
-
-				queueMicrotask(
-					() => {
-
-						updateScheduled =
-							false;
-
-
-						applyCategoryControls(
-							container,
-							controlState,
-							resultCount,
-							emptyMessage
-						);
-
-					}
-				);
-
+	const stateChangeHandler =
+		() => {
+			/*
+			 * Ohne aktiven Statusfilter ändert ein
+			 * Fortschrittswechsel die sichtbare Menge nicht.
+			 */
+			if (
+				controlState.status ===
+				"all"
+			) {
+				return;
 			}
-		);
 
+			applyCategoryControls(
+				container,
+				controlState,
+				resultCount,
+				emptyMessage
+			);
+		};
 
-	activeItemStateObserver.observe(
-		container,
-		{
-			subtree: true,
-			attributes: true,
-			attributeFilter: [
-				"class"
-			]
-		}
+	container.addEventListener(
+		"tracker-item-state-changed",
+		stateChangeHandler
 	);
 
-	const observerForViewScope =
-		activeItemStateObserver;
-
-	registerViewCleanup(
-		() => {
-			observerForViewScope.disconnect();
-
-			if (
-				activeItemStateObserver ===
-				observerForViewScope
-			) {
-				activeItemStateObserver =
-					null;
-			}
-		},
-		getActiveViewScope()
+	categoryStateChangeHandlers.set(
+		container,
+		stateChangeHandler
 	);
 
 
@@ -1205,61 +1191,201 @@ function matchesStatusFilter(
 
 
 /* ---------------------------------------------------------
-   9. Sortierung
+   9. DOM-Cache
    --------------------------------------------------------- */
 
 /**
- * Sortiert die Items innerhalb aller
- * Tracker-Listen.
- *
- * Unterkategorien selbst werden nicht
- * alphabetisch verschoben.
- *
- * Die Sortierung verwendet das Locale der
- * aktuell ausgewählten Sprache.
+ * Erfasst die für Suche, Filterung und Sortierung
+ * benötigten DOM-Elemente einmal pro Kategorie.
  *
  * @param {HTMLElement} container
- * @param {string} direction
+ * @returns {object}
  */
-function sortCategoryItems(
-	container,
-	direction
+function getCategoryElements(
+	container
 ) {
+	const cached =
+		categoryElementCache.get(
+			container
+		);
+
+	if (cached) {
+		return cached;
+	}
+
+
+	const items =
+		Array.from(
+			container.querySelectorAll(
+				".tracker-item"
+			)
+		);
+
 	const lists =
-		container.querySelectorAll(
-			".tracker-list"
+		Array.from(
+			container.querySelectorAll(
+				".tracker-list"
+			)
+		);
+
+	const groups =
+		Array.from(
+			container.querySelectorAll(
+				".category-group"
+			)
 		);
 
 
-	const locale =
-		getCurrentLocale();
-
+	const listItems =
+		new Map();
 
 	for (
-		const list of lists
+		const list
+		of lists
 	) {
-		const items =
+		listItems.set(
+			list,
 			Array.from(
 				list.querySelectorAll(
 					":scope > .tracker-item"
 				)
-			);
+			)
+		);
+	}
 
+
+	const groupItems =
+		new Map();
+
+	for (
+		const group
+		of groups
+	) {
+		groupItems.set(
+			group,
+			Array.from(
+				group.querySelectorAll(
+					".tracker-item"
+				)
+			)
+		);
+	}
+
+
+	const result = {
+		items,
+		lists,
+		groups,
+		listItems,
+		groupItems
+	};
+
+	categoryElementCache.set(
+		container,
+		result
+	);
+
+	return result;
+}
+
+
+/**
+ * Bündelt schnelle Suchänderungen auf maximal
+ * eine Filterberechnung pro Browser-Frame.
+ *
+ * @param {HTMLElement} container
+ * @param {Object} state
+ * @param {HTMLElement} resultCount
+ * @param {HTMLElement} emptyMessage
+ */
+function scheduleCategoryControlsUpdate(
+	container,
+	state,
+	resultCount,
+	emptyMessage
+) {
+	const previousFrame =
+		scheduledCategoryUpdateFrames.get(
+			container
+		);
+
+	if (
+		previousFrame !==
+		undefined
+	) {
+		cancelAnimationFrame(
+			previousFrame
+		);
+	}
+
+
+	const frame =
+		requestAnimationFrame(
+			() => {
+				scheduledCategoryUpdateFrames.delete(
+					container
+				);
+
+				if (
+					!container.isConnected
+				) {
+					return;
+				}
+
+				applyCategoryControls(
+					container,
+					state,
+					resultCount,
+					emptyMessage
+				);
+			}
+		);
+
+	scheduledCategoryUpdateFrames.set(
+		container,
+		frame
+	);
+}
+
+
+/* ---------------------------------------------------------
+   10. Sortierung
+   --------------------------------------------------------- */
+
+/**
+ * Sortiert die gecachten Items innerhalb aller
+ * Tracker-Listen.
+ *
+ * @param {object} categoryElements
+ * @param {string} direction
+ */
+function sortCategoryItems(
+	categoryElements,
+	direction
+) {
+	const locale =
+		getCurrentLocale();
+
+	for (
+		const list
+		of categoryElements.lists
+	) {
+		const items =
+			categoryElements.listItems.get(
+				list
+			) ?? [];
 
 		items.sort(
 			(first, second) => {
-
 				const firstName =
 					getItemSortName(
 						first
 					);
 
-
 				const secondName =
 					getItemSortName(
 						second
 					);
-
 
 				const comparison =
 					firstName.localeCompare(
@@ -1274,42 +1400,34 @@ function sortCategoryItems(
 						}
 					);
 
-
 				return direction ===
 					"desc"
 					? -comparison
 					: comparison;
-
 			}
 		);
 
-
-		for (
-			const item of items
-		) {
-			list.append(
-				item
-			);
-		}
+		/*
+		 * Ein DOM-Append pro Liste statt eines
+		 * einzelnen Appends pro Item.
+		 */
+		list.append(
+			...items
+		);
 	}
 }
 
 
 /* ---------------------------------------------------------
-   10. Controls anwenden
+   11. Controls anwenden
    --------------------------------------------------------- */
 
 /**
- * Wendet Suche, Statusfilter und Sortierung
- * gemeinsam auf die aktuelle Kategorie an.
+ * Wendet Suche und Statusfilter auf die gecachten
+ * Kategorieelemente an.
  *
- * Reihenfolge:
- *
- * 1. Sortierung
- * 2. Volltextsuche
- * 3. Statusfilter
- * 4. Listen aktualisieren
- * 5. Gruppen aktualisieren
+ * Sortiert wird ausschließlich beim initialen Rendern
+ * oder nach einer Änderung der Sortierauswahl.
  *
  * @param {HTMLElement} container
  * @param {Object} state
@@ -1322,45 +1440,58 @@ function applyCategoryControls(
 	resultCount,
 	emptyMessage
 ) {
+	/*
+	 * Ein direkt ausgelöstes Update ersetzt eine
+	 * eventuell noch ausstehende Suchberechnung.
+	 */
+	const pendingFrame =
+		scheduledCategoryUpdateFrames.get(
+			container
+		);
+
+	if (
+		pendingFrame !==
+		undefined
+	) {
+		cancelAnimationFrame(
+			pendingFrame
+		);
+
+		scheduledCategoryUpdateFrames.delete(
+			container
+		);
+	}
+
+
+	const categoryElements =
+		getCategoryElements(
+			container
+		);
+
 	const query =
 		normalizeSearchText(
 			state.query
 		);
-
 
 	const searchTerms =
 		query
 			.split(/\s+/)
 			.filter(Boolean);
 
-
 	const searchIsActive =
 		searchTerms.length > 0;
-
 
 	const statusIsActive =
 		state.status !==
 			"all";
 
-
-	/*
-	 * =====================================================
-	 * Accordion-Zustand der Suche behandeln
-	 * =====================================================
-	 */
-
 	const groups =
-		Array.from(
-			container.querySelectorAll(
-				".category-group"
-			)
-		);
+		categoryElements.groups;
 
 
 	/*
-	 * Suche beginnt.
-	 *
-	 * Aktuellen Accordion-Zustand speichern.
+	 * Suche beginnt:
+	 * Accordion-Zustand sichern.
 	 */
 	if (
 		searchIsActive &&
@@ -1369,12 +1500,11 @@ function applyCategoryControls(
 		state.searchActive =
 			true;
 
-
 		state.groupOpenState.clear();
 
-
 		for (
-			const group of groups
+			const group
+			of groups
 		) {
 			state.groupOpenState.set(
 				group,
@@ -1385,17 +1515,16 @@ function applyCategoryControls(
 
 
 	/*
-	 * Suche wurde beendet.
-	 *
-	 * Ursprünglichen Accordion-Zustand
-	 * wiederherstellen.
+	 * Suche endet:
+	 * ursprünglichen Accordion-Zustand herstellen.
 	 */
 	if (
 		!searchIsActive &&
 		state.searchActive
 	) {
 		for (
-			const group of groups
+			const group
+			of groups
 		) {
 			if (
 				state.groupOpenState.has(
@@ -1409,56 +1538,35 @@ function applyCategoryControls(
 			}
 		}
 
-
 		state.groupOpenState.clear();
-
 
 		state.searchActive =
 			false;
 	}
 
 
-	/*
-	 * =====================================================
-	 * Sortierung
-	 * =====================================================
-	 */
-
-	sortCategoryItems(
-		container,
-		state.sort
-	);
-
-
-	/*
-	 * =====================================================
-	 * Items filtern
-	 * =====================================================
-	 */
-
-	const items =
-		Array.from(
-			container.querySelectorAll(
-				".tracker-item"
-			)
+	if (state.sortDirty) {
+		sortCategoryItems(
+			categoryElements,
+			state.sort
 		);
+
+		state.sortDirty =
+			false;
+	}
 
 
 	let visibleItemCount =
 		0;
 
-
 	for (
-		const item of items
+		const item
+		of categoryElements.items
 	) {
-		/*
-		 * Volltextsuche.
-		 */
 		const searchText =
 			getItemSearchText(
 				item
 			);
-
 
 		const matchesSearch =
 			searchTerms.every(
@@ -1468,25 +1576,18 @@ function applyCategoryControls(
 					)
 			);
 
-
-		/*
-		 * Statusfilter.
-		 */
 		const matchesStatus =
 			matchesStatusFilter(
 				item,
 				state.status
 			);
 
-
 		const visible =
 			matchesSearch &&
 			matchesStatus;
 
-
 		item.hidden =
 			!visible;
-
 
 		if (visible) {
 			visibleItemCount++;
@@ -1494,82 +1595,41 @@ function applyCategoryControls(
 	}
 
 
-	/*
-	 * =====================================================
-	 * Tracker-Listen aktualisieren
-	 * =====================================================
-	 */
-
-	const lists =
-		Array.from(
-			container.querySelectorAll(
-				".tracker-list"
-			)
-		);
-
-
 	for (
-		const list of lists
+		const list
+		of categoryElements.lists
 	) {
-		const listItems =
-			Array.from(
-				list.querySelectorAll(
-					":scope > .tracker-item"
-				)
-			);
+		const listEntries =
+			categoryElements.listItems.get(
+				list
+			) ?? [];
 
-
-		const hasVisibleItem =
-			listItems.some(
+		list.hidden =
+			!listEntries.some(
 				item =>
 					!item.hidden
 			);
-
-
-		list.hidden =
-			!hasVisibleItem;
 	}
 
 
-	/*
-	 * =====================================================
-	 * Gruppen aktualisieren
-	 * =====================================================
-	 */
-
 	for (
-		const group of groups
+		const group
+		of groups
 	) {
-		const groupItems =
-			Array.from(
-				group.querySelectorAll(
-					".tracker-item"
-				)
-			);
-
+		const groupEntries =
+			categoryElements.groupItems.get(
+				group
+			) ?? [];
 
 		const hasVisibleItem =
-			groupItems.some(
+			groupEntries.some(
 				item =>
 					!item.hidden
 			);
 
-
-		/*
-		 * Gruppen ohne passende Items
-		 * komplett ausblenden.
-		 */
 		group.hidden =
 			!hasVisibleItem;
 
-
-		/*
-		 * Während einer Volltextsuche werden
-		 * Gruppen mit Treffern automatisch geöffnet.
-		 *
-		 * Ein reiner Statusfilter öffnet Gruppen
-		 * dagegen nicht automatisch.
-		 */
 		if (
 			searchIsActive &&
 			hasVisibleItem
@@ -1580,60 +1640,38 @@ function applyCategoryControls(
 	}
 
 
-	/*
-	 * =====================================================
-	 * Trefferanzeige
-	 * =====================================================
-	 */
-
 	if (searchIsActive) {
-
 		resultCount.textContent =
 			getResultCountText(
 				visibleItemCount,
 				true
 			);
 
-
 		resultCount.hidden =
 			false;
-
 	}
 	else if (statusIsActive) {
-
 		resultCount.textContent =
 			getResultCountText(
 				visibleItemCount,
 				false
 			);
 
-
 		resultCount.hidden =
 			false;
-
 	}
 	else {
-
 		resultCount.textContent =
 			"";
 
-
 		resultCount.hidden =
 			true;
-
 	}
 
-
-	/*
-	 * =====================================================
-	 * Keine Treffer
-	 * =====================================================
-	 */
 
 	const filteringIsActive =
 		searchIsActive ||
 		statusIsActive;
-
 
 	emptyMessage.hidden =
 		!(
@@ -1644,7 +1682,7 @@ function applyCategoryControls(
 
 
 /* ---------------------------------------------------------
-   11. Treffertext
+   12. Treffertext
    --------------------------------------------------------- */
 
 /**

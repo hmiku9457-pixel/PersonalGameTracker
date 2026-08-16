@@ -2040,6 +2040,29 @@ export function registerProgressToggleHandler(
 				);
 
 
+				/*
+				 * Kategorie-Controls gezielt über den
+				 * erfolgreich gespeicherten Statuswechsel
+				 * informieren.
+				 */
+				if (listItem) {
+					container.dispatchEvent(
+						new CustomEvent(
+							"tracker-item-state-changed",
+							{
+								detail: {
+									itemId:
+										item.id,
+
+									completed:
+										newState
+								}
+							}
+						)
+					);
+				}
+
+
 				console.info(
 					`[Progress] "${item.id}" wurde ${
 						newState
