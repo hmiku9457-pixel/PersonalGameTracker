@@ -1,0 +1,97 @@
+name: Hotfix - Grouped category lists
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hotfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Fehlenden Fortschrittsimport reparieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path(
+              "assets/js/views/categoryView.js"
+          )
+
+          content = path.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          )
+
+          old = '''import {
+          \tisItemCompleted,
+          \tloadGameProgressData,
+          \tsetItemCompleted,
+          \tgetProgressErrorMessage
+          } from "../services/progressService.js";
+          '''
+
+          new = '''import {
+          \tcalculateCategoryProgress,
+          \tisItemCompleted,
+          \tloadGameProgressData,
+          \tsetItemCompleted,
+          \tgetProgressErrorMessage
+          } from "../services/progressService.js";
+          '''
+
+          if new in content:
+              print(
+                  "[SKIP] calculateCategoryProgress ist bereits importiert."
+              )
+          elif old in content:
+              content = content.replace(
+                  old,
+                  new,
+                  1
+              )
+
+              path.write_text(
+                  content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+
+              print(
+                  "[WRITE] Fehlender calculateCategoryProgress-Import ergänzt."
+              )
+          else:
+              raise SystemExit(
+                  "Importblock in categoryView.js hat einen unerwarteten Zustand."
+              )
+          PY
+
+      - name: Aenderung committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/js/views/categoryView.js
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderung erforderlich."
+            exit 0
+          fi
+
+          git commit -m "Fix grouped category list rendering [skip ci]"
+          git push
