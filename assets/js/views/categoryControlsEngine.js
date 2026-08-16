@@ -253,15 +253,13 @@ export function applyCategoryControls(
         const item
         of categoryElements.items
     ) {
-        const searchText =
-            getItemSearchText(
-                item
-            );
-
         const matchesSearch =
+            !searchIsActive ||
             searchTerms.every(
                 term =>
-                    searchText.includes(
+                    getItemSearchText(
+                        item
+                    ).includes(
                         term
                     )
             );

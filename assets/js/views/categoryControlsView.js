@@ -457,7 +457,8 @@ export function renderCategoryControls(
 					container,
 					controlState,
 					resultCount,
-					emptyMessage
+					emptyMessage,
+					getResultCountText
 				);
 
 			}

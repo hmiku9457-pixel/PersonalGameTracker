@@ -428,7 +428,7 @@ button:disabled {
 	padding: 24px;
 }
 
-.auth-dialog-.site-header {
+.auth-dialog-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
