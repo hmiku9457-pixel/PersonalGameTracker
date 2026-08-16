@@ -1,0 +1,404 @@
+{
+  "id": "decontaminationChamber",
+  "name": "Decontamination Chamber",
+  "description": "Material-Tracker für Decontamination Chamber; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 4,
+    "groupCount": 3,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "decontamination-chamber-level-1",
+      "name": "Decontamination Chamber – Level 1",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.decontamination-chamber.level-1.portable-isotope-identifier",
+          "name": {
+            "de": "1× Portable Isotope Identifier",
+            "en": "1× Portable Isotope Identifier"
+          },
+          "description": {
+            "de": "1× Portable Isotope Identifier für Decontamination Chamber – Level 1 beschaffen.",
+            "en": "Obtain 1× Portable Isotope Identifier for Decontamination Chamber – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Decontamination Chamber",
+                "en": "Decontamination Chamber"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "9",
+                "en": "9"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Portable Isotope Identifier",
+                "en": "Portable Isotope Identifier"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "AZ3 Nuclear Power Plant: map-exklusive Container, verstrahlte Container, Metall-Lagerkisten und interaktive Safes durchsuchen; kann außerdem aus Spielerloot stammen.",
+                "en": "AZ3 Nuclear Power Plant: search map-exclusive containers, irradiated containers, metal storage crates and interactive safes; it can also appear in player loot."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2026-community+official-unlock",
+                "en": "2026-community+official-unlock"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decontamination-chamber-level-2",
+      "name": "Decontamination Chamber – Level 2",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.decontamination-chamber.level-2.portable-isotope-identifier",
+          "name": {
+            "de": "4× Portable Isotope Identifier",
+            "en": "4× Portable Isotope Identifier"
+          },
+          "description": {
+            "de": "4× Portable Isotope Identifier für Decontamination Chamber – Level 2 beschaffen.",
+            "en": "Obtain 4× Portable Isotope Identifier for Decontamination Chamber – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Decontamination Chamber",
+                "en": "Decontamination Chamber"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "14",
+                "en": "14"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Portable Isotope Identifier",
+                "en": "Portable Isotope Identifier"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "AZ3 Nuclear Power Plant: map-exklusive Container, verstrahlte Container, Metall-Lagerkisten und interaktive Safes durchsuchen; kann außerdem aus Spielerloot stammen.",
+                "en": "AZ3 Nuclear Power Plant: search map-exclusive containers, irradiated containers, metal storage crates and interactive safes; it can also appear in player loot."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2026-community",
+                "en": "2026-community"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.decontamination-chamber.level-2.laptop",
+          "name": {
+            "de": "1× Laptop",
+            "en": "1× Laptop"
+          },
+          "description": {
+            "de": "1× Laptop für Decontamination Chamber – Level 2 beschaffen.",
+            "en": "Obtain 1× Laptop for Decontamination Chamber – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Decontamination Chamber",
+                "en": "Decontamination Chamber"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "14",
+                "en": "14"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Laptop",
+                "en": "Laptop"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2026-community",
+                "en": "2026-community"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decontamination-chamber-level-3",
+      "name": "Decontamination Chamber – Level 3",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.decontamination-chamber.level-3.portable-isotope-identifier",
+          "name": {
+            "de": "6× Portable Isotope Identifier",
+            "en": "6× Portable Isotope Identifier"
+          },
+          "description": {
+            "de": "6× Portable Isotope Identifier für Decontamination Chamber – Level 3 beschaffen.",
+            "en": "Obtain 6× Portable Isotope Identifier for Decontamination Chamber – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Decontamination Chamber",
+                "en": "Decontamination Chamber"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "27",
+                "en": "27"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "6",
+                "en": "6"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Portable Isotope Identifier",
+                "en": "Portable Isotope Identifier"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "AZ3 Nuclear Power Plant: map-exklusive Container, verstrahlte Container, Metall-Lagerkisten und interaktive Safes durchsuchen; kann außerdem aus Spielerloot stammen.",
+                "en": "AZ3 Nuclear Power Plant: search map-exclusive containers, irradiated containers, metal storage crates and interactive safes; it can also appear in player loot."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2026-community-total-11",
+                "en": "2026-community-total-11"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,65 +1,74 @@
 [
-	{
-		"id": "crimsonDesert",
-		"name": "Crimson Desert",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/crimsonDesert.webp",
-			"position": "center center"
-		}
-	},
-	{
-		"id": "cyberpunk2077",
-		"name": "Cyberpunk 2077",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/cyberpunk2077.webp",
-			"position": "center center"
-		}
-	},
-	{
-		"id": "darkSouls1",
-		"name": "Dark Souls 1",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/darkSouls1.webp",
-			"position": "center center"
-		}
-	},
-	{
-		"id": "darkSouls2",
-		"name": "Dark Souls 2",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/darkSouls2.webp",
-			"position": "center center"
-		}
-	},
-	{
-		"id": "darkSouls3",
-		"name": "Dark Souls 3",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/darkSouls3.webp",
-			"position": "center center"
-		}
-	},
-	{
-		"id": "dragonsDogma2",
-		"name": "Dragon's Dogma 2",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/dragonsDogma2.webp",
-			"position": "center center"
-		}
-	},
-	{
-		"id": "theDivision2",
-		"name": "The Division 2",
-		"media": {
-			"type": "image",
-			"src": "assets/thumbnails/theDivision2.webp",
-			"position": "center center"
-		}
-	}
+  {
+    "id": "crimsonDesert",
+    "name": "Crimson Desert",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/crimsonDesert.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "cyberpunk2077",
+    "name": "Cyberpunk 2077",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/cyberpunk2077.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "darkSouls1",
+    "name": "Dark Souls 1",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/darkSouls1.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "darkSouls2",
+    "name": "Dark Souls 2",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/darkSouls2.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "darkSouls3",
+    "name": "Dark Souls 3",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/darkSouls3.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "dragonsDogma2",
+    "name": "Dragon's Dogma 2",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/dragonsDogma2.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "theDivision2",
+    "name": "The Division 2",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/theDivision2.webp",
+      "position": "center center"
+    }
+  },
+  {
+    "id": "deltaForce",
+    "name": "Delta Force",
+    "media": {
+      "type": "image",
+      "src": "assets/thumbnails/deltaForce.webp",
+      "position": "center center"
+    }
+  }
 ]

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "deltaForce.operator.uluru.level-01",
+    "name": {
+      "de": "Uluru – Level 1",
+      "en": "Uluru – Level 1"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 1 besitzen beziehungsweise erreichen.",
+      "en": "Have or reach Operator Level 1 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "1",
+          "en": "1"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Startlevel; keine vorgeschaltete Level-Challenge erforderlich.",
+          "en": "Starting level; no preceding level challenge required."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-02",
+    "name": {
+      "de": "Uluru – Level 2",
+      "en": "Uluru – Level 2"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 2 bringen.",
+      "en": "Reach Operator Level 2 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "2",
+          "en": "2"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-03",
+    "name": {
+      "de": "Uluru – Level 3",
+      "en": "Uluru – Level 3"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 3 bringen.",
+      "en": "Reach Operator Level 3 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "3",
+          "en": "3"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-04",
+    "name": {
+      "de": "Uluru – Level 4",
+      "en": "Uluru – Level 4"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 4 bringen.",
+      "en": "Reach Operator Level 4 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "4",
+          "en": "4"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-05",
+    "name": {
+      "de": "Uluru – Level 5",
+      "en": "Uluru – Level 5"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 5 bringen.",
+      "en": "Reach Operator Level 5 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "5",
+          "en": "5"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-06",
+    "name": {
+      "de": "Uluru – Level 6",
+      "en": "Uluru – Level 6"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 6 bringen.",
+      "en": "Reach Operator Level 6 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "6",
+          "en": "6"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-07",
+    "name": {
+      "de": "Uluru – Level 7",
+      "en": "Uluru – Level 7"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 7 bringen.",
+      "en": "Reach Operator Level 7 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "7",
+          "en": "7"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar.",
+          "en": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-08",
+    "name": {
+      "de": "Uluru – Level 8",
+      "en": "Uluru – Level 8"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 8 bringen.",
+      "en": "Reach Operator Level 8 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "8",
+          "en": "8"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar.",
+          "en": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-09",
+    "name": {
+      "de": "Uluru – Level 9",
+      "en": "Uluru – Level 9"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 9 bringen.",
+      "en": "Reach Operator Level 9 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "9",
+          "en": "9"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar.",
+          "en": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.uluru.level-10",
+    "name": {
+      "de": "Uluru – Level 10",
+      "en": "Uluru – Level 10"
+    },
+    "description": {
+      "de": "Uluru auf Operator-Level 10 bringen.",
+      "en": "Reach Operator Level 10 with Uluru."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Uluru",
+          "en": "Uluru"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Engineer",
+          "en": "Engineer"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "10",
+          "en": "10"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar.",
+          "en": "Für Level 7 ist öffentlich eine Warfare-Aufgabe mit „30 times“ Call-in dokumentiert; die genaue aktuelle UI-Formulierung ist unklar."
+        }
+      }
+    ]
+  }
+]

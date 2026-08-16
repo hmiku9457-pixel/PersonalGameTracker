@@ -1,0 +1,889 @@
+{
+  "id": "workbench",
+  "name": "Workbench",
+  "description": "Material-Tracker für Workbench; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 9,
+    "groupCount": 3,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "workbench-level-1",
+      "name": "Workbench – Level 1",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.workbench.level-1.intel-recorder",
+          "name": {
+            "de": "1× Intel Recorder",
+            "en": "1× Intel Recorder"
+          },
+          "description": {
+            "de": "1× Intel Recorder für Workbench – Level 1 beschaffen.",
+            "en": "Obtain 1× Intel Recorder for Workbench – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "15",
+                "en": "15"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Intel Recorder",
+                "en": "Intel Recorder"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.workbench.level-1.pack-of-cement",
+          "name": {
+            "de": "1× Pack of Cement",
+            "en": "1× Pack of Cement"
+          },
+          "description": {
+            "de": "1× Pack of Cement für Workbench – Level 1 beschaffen.",
+            "en": "Obtain 1× Pack of Cement for Workbench – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "15",
+                "en": "15"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Pack of Cement",
+                "en": "Pack of Cement"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Industrie-/Werkzeug-Beute: Toolboxes, Werkstätten, Lagerhallen und Bau-/Industriezonen durchsuchen. Auf Zero Dam ist der Cement Plant eine sinnvolle Route.",
+                "en": "Industrial/tool loot: search toolboxes, workshops, warehouses and construction/industrial zones. On Zero Dam, Cement Plant is a useful route."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.workbench.level-1.lcd-screen",
+          "name": {
+            "de": "1× LCD Screen",
+            "en": "1× LCD Screen"
+          },
+          "description": {
+            "de": "1× LCD Screen für Workbench – Level 1 beschaffen.",
+            "en": "Obtain 1× LCD Screen for Workbench – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "15",
+                "en": "15"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "LCD Screen",
+                "en": "LCD Screen"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "source-conflict",
+                "en": "source-conflict"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workbench-level-2",
+      "name": "Workbench – Level 2",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.workbench.level-2.wide-angle-lens",
+          "name": {
+            "de": "2× Wide-Angle Lens",
+            "en": "2× Wide-Angle Lens"
+          },
+          "description": {
+            "de": "2× Wide-Angle Lens für Workbench – Level 2 beschaffen.",
+            "en": "Obtain 2× Wide-Angle Lens for Workbench – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "27",
+                "en": "27"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Wide-Angle Lens",
+                "en": "Wide-Angle Lens"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: auf Zero Dam häufig rund um Saeeds Gebiet suchen.",
+                "en": "Community report: on Zero Dam, search around Saeed’s area."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.workbench.level-2.pack-of-cement",
+          "name": {
+            "de": "2× Pack of Cement",
+            "en": "2× Pack of Cement"
+          },
+          "description": {
+            "de": "2× Pack of Cement für Workbench – Level 2 beschaffen.",
+            "en": "Obtain 2× Pack of Cement for Workbench – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "27",
+                "en": "27"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Pack of Cement",
+                "en": "Pack of Cement"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Industrie-/Werkzeug-Beute: Toolboxes, Werkstätten, Lagerhallen und Bau-/Industriezonen durchsuchen. Auf Zero Dam ist der Cement Plant eine sinnvolle Route.",
+                "en": "Industrial/tool loot: search toolboxes, workshops, warehouses and construction/industrial zones. On Zero Dam, Cement Plant is a useful route."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.workbench.level-2.socket-adapter",
+          "name": {
+            "de": "2× Socket Adapter",
+            "en": "2× Socket Adapter"
+          },
+          "description": {
+            "de": "2× Socket Adapter für Workbench – Level 2 beschaffen.",
+            "en": "Obtain 2× Socket Adapter for Workbench – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "27",
+                "en": "27"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Socket Adapter",
+                "en": "Socket Adapter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: Substation-/Technikbereiche auf Zero Dam priorisieren.",
+                "en": "Community report: prioritize Substation/technical areas on Zero Dam."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workbench-level-3",
+      "name": "Workbench – Level 3",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.workbench.level-3.military-satellite-communications-device",
+          "name": {
+            "de": "1× Military Satellite Communications Device",
+            "en": "1× Military Satellite Communications Device"
+          },
+          "description": {
+            "de": "1× Military Satellite Communications Device für Workbench – Level 3 beschaffen.",
+            "en": "Obtain 1× Military Satellite Communications Device for Workbench – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "39",
+                "en": "39"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Military Satellite Communications Device",
+                "en": "Military Satellite Communications Device"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.workbench.level-3.asos-motherboard",
+          "name": {
+            "de": "3× ASOS Motherboard",
+            "en": "3× ASOS Motherboard"
+          },
+          "description": {
+            "de": "3× ASOS Motherboard für Workbench – Level 3 beschaffen.",
+            "en": "Obtain 3× ASOS Motherboard for Workbench – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "39",
+                "en": "39"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "ASOS Motherboard",
+                "en": "ASOS Motherboard"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.workbench.level-3.pack-of-cement",
+          "name": {
+            "de": "5× Pack of Cement",
+            "en": "5× Pack of Cement"
+          },
+          "description": {
+            "de": "5× Pack of Cement für Workbench – Level 3 beschaffen.",
+            "en": "Obtain 5× Pack of Cement for Workbench – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Workbench",
+                "en": "Workbench"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "39",
+                "en": "39"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "5",
+                "en": "5"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Pack of Cement",
+                "en": "Pack of Cement"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Industrie-/Werkzeug-Beute: Toolboxes, Werkstätten, Lagerhallen und Bau-/Industriezonen durchsuchen. Auf Zero Dam ist der Cement Plant eine sinnvolle Route.",
+                "en": "Industrial/tool loot: search toolboxes, workshops, warehouses and construction/industrial zones. On Zero Dam, Cement Plant is a useful route."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

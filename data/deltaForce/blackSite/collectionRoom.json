@@ -1,0 +1,402 @@
+{
+  "id": "collectionRoom",
+  "name": "Collection Room",
+  "description": "Material-Tracker für Collection Room; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 4,
+    "groupCount": 1,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "collection-room-level-1",
+      "name": "Collection Room – Level 1",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.collection-room.level-1.armored-vehicle-battery",
+          "name": {
+            "de": "1× Armored Vehicle Battery",
+            "en": "1× Armored Vehicle Battery"
+          },
+          "description": {
+            "de": "1× Armored Vehicle Battery für Collection Room – Level 1 beschaffen.",
+            "en": "Obtain 1× Armored Vehicle Battery for Collection Room – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Collection Room",
+                "en": "Collection Room"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "43",
+                "en": "43"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Armored Vehicle Battery",
+                "en": "Armored Vehicle Battery"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Ein Community-Fund wurde in/bei den Rohren südlich des Cement Plant auf Zero Dam gemeldet; kein garantierter Spawn.",
+                "en": "A community find was reported in/near pipes south of Cement Plant on Zero Dam; not a guaranteed spawn."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.collection-room.level-1.military-information-terminal",
+          "name": {
+            "de": "1× Military Information Terminal",
+            "en": "1× Military Information Terminal"
+          },
+          "description": {
+            "de": "1× Military Information Terminal für Collection Room – Level 1 beschaffen.",
+            "en": "Obtain 1× Military Information Terminal for Collection Room – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Collection Room",
+                "en": "Collection Room"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "43",
+                "en": "43"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Military Information Terminal",
+                "en": "Military Information Terminal"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.collection-room.level-1.smoothbore-gun-exhibit",
+          "name": {
+            "de": "1× Smoothbore Gun Exhibit",
+            "en": "1× Smoothbore Gun Exhibit"
+          },
+          "description": {
+            "de": "1× Smoothbore Gun Exhibit für Collection Room – Level 1 beschaffen.",
+            "en": "Obtain 1× Smoothbore Gun Exhibit for Collection Room – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Collection Room",
+                "en": "Collection Room"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "43",
+                "en": "43"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Smoothbore Gun Exhibit",
+                "en": "Smoothbore Gun Exhibit"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.collection-room.level-1.large-radio-station",
+          "name": {
+            "de": "1× Large Radio Station",
+            "en": "1× Large Radio Station"
+          },
+          "description": {
+            "de": "1× Large Radio Station für Collection Room – Level 1 beschaffen.",
+            "en": "Obtain 1× Large Radio Station for Collection Room – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Collection Room",
+                "en": "Collection Room"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "43",
+                "en": "43"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Large Radio Station",
+                "en": "Large Radio Station"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

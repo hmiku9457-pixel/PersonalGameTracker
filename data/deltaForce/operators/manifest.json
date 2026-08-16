@@ -1,0 +1,247 @@
+{
+  "id": "deltaForce-operators",
+  "name": "Operators",
+  "categories": [
+    {
+      "id": "dWolf",
+      "name": "D-Wolf",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für D-Wolf.",
+        "en": "Level progression and operator challenges for D-Wolf."
+      },
+      "type": "category",
+      "file": "dWolf.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "vyron",
+      "name": "Vyron",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Vyron.",
+        "en": "Level progression and operator challenges for Vyron."
+      },
+      "type": "category",
+      "file": "vyron.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "nox",
+      "name": "Nox",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Nox.",
+        "en": "Level progression and operator challenges for Nox."
+      },
+      "type": "category",
+      "file": "nox.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "tempest",
+      "name": "Tempest",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Tempest.",
+        "en": "Level progression and operator challenges for Tempest."
+      },
+      "type": "category",
+      "file": "tempest.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "stinger",
+      "name": "Stinger",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Stinger.",
+        "en": "Level progression and operator challenges for Stinger."
+      },
+      "type": "category",
+      "file": "stinger.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "toxik",
+      "name": "Toxik",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Toxik.",
+        "en": "Level progression and operator challenges for Toxik."
+      },
+      "type": "category",
+      "file": "toxik.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "vlinder",
+      "name": "Vlinder",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Vlinder.",
+        "en": "Level progression and operator challenges for Vlinder."
+      },
+      "type": "category",
+      "file": "vlinder.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "shepherd",
+      "name": "Shepherd",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Shepherd.",
+        "en": "Level progression and operator challenges for Shepherd."
+      },
+      "type": "category",
+      "file": "shepherd.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "uluru",
+      "name": "Uluru",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Uluru.",
+        "en": "Level progression and operator challenges for Uluru."
+      },
+      "type": "category",
+      "file": "uluru.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "sineva",
+      "name": "Sineva",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Sineva.",
+        "en": "Level progression and operator challenges for Sineva."
+      },
+      "type": "category",
+      "file": "sineva.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "gizmo",
+      "name": "Gizmo",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Gizmo.",
+        "en": "Level progression and operator challenges for Gizmo."
+      },
+      "type": "category",
+      "file": "gizmo.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "nTwo",
+      "name": "N-Two",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für N-Two.",
+        "en": "Level progression and operator challenges for N-Two."
+      },
+      "type": "category",
+      "file": "nTwo.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Luna.",
+        "en": "Level progression and operator challenges for Luna."
+      },
+      "type": "category",
+      "file": "luna.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "hackclaw",
+      "name": "Hackclaw",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Hackclaw.",
+        "en": "Level progression and operator challenges for Hackclaw."
+      },
+      "type": "category",
+      "file": "hackclaw.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "raptor",
+      "name": "Raptor",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Raptor.",
+        "en": "Level progression and operator challenges for Raptor."
+      },
+      "type": "category",
+      "file": "raptor.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    },
+    {
+      "id": "morse",
+      "name": "Morse",
+      "description": {
+        "de": "Level-Fortschritt und Operator-Challenges für Morse.",
+        "en": "Level progression and operator challenges for Morse."
+      },
+      "type": "category",
+      "file": "morse.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      }
+    }
+  ],
+  "itemCount": 160
+}

@@ -1,0 +1,82 @@
+{
+  "id": "deltaForce",
+  "name": "Delta Force",
+  "categories": [
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "description": {
+        "de": "Steam-Erfolge der PC-Version.",
+        "en": "Steam achievements for the PC version."
+      },
+      "type": "category",
+      "file": "achievements.json",
+      "itemCount": 53,
+      "itemLabel": {
+        "de": "Erfolge",
+        "en": "achievements"
+      }
+    },
+    {
+      "id": "weapons",
+      "name": "Weapons – Max Level",
+      "description": {
+        "de": "Alle levelbaren Waffen; pro Waffe wird nur das Max-Level getrackt.",
+        "en": "All levelable weapons; only maximum level is tracked per weapon."
+      },
+      "type": "category",
+      "file": "weapons.json",
+      "itemCount": 66,
+      "itemLabel": {
+        "de": "Waffen",
+        "en": "weapons"
+      },
+      "groupCount": 8,
+      "groupLabel": {
+        "de": "Waffengruppen",
+        "en": "weapon groups"
+      }
+    },
+    {
+      "id": "operators",
+      "name": "Operators",
+      "description": {
+        "de": "Operator-Level 1–10 mit Challenge-Hinweisen.",
+        "en": "Operator levels 1–10 with challenge notes."
+      },
+      "type": "manifest",
+      "file": "operators/manifest.json",
+      "itemCount": 160,
+      "itemLabel": {
+        "de": "Level",
+        "en": "levels"
+      },
+      "groupCount": 16,
+      "groupLabel": {
+        "de": "Operatoren",
+        "en": "operators"
+      }
+    },
+    {
+      "id": "blackSite",
+      "name": "Black Site",
+      "description": {
+        "de": "Base-Upgrades im Operations-Modus; jedes benötigte Material ist einzeln trackbar und enthält Fundhinweise.",
+        "en": "Operations Black Site upgrades; every required material is tracked individually with location hints."
+      },
+      "type": "manifest",
+      "file": "blackSite/manifest.json",
+      "itemCount": 139,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 11,
+      "groupLabel": {
+        "de": "Einrichtungen",
+        "en": "facilities"
+      }
+    }
+  ],
+  "itemCount": 418
+}

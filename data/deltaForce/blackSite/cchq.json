@@ -1,0 +1,1369 @@
+{
+  "id": "cchq",
+  "name": "CCHQ",
+  "description": "Material-Tracker für CCHQ; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 15,
+    "groupCount": 5,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "cchq-level-2",
+      "name": "CCHQ – Level 2",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.cchq.level-2.military-intel",
+          "name": {
+            "de": "2× Military Intel",
+            "en": "2× Military Intel"
+          },
+          "description": {
+            "de": "2× Military Intel für CCHQ – Level 2 beschaffen.",
+            "en": "Obtain 2× Military Intel for CCHQ – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "7",
+                "en": "7"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Military Intel",
+                "en": "Military Intel"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-2.relay",
+          "name": {
+            "de": "2× Relay",
+            "en": "2× Relay"
+          },
+          "description": {
+            "de": "2× Relay für CCHQ – Level 2 beschaffen.",
+            "en": "Obtain 2× Relay for CCHQ – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "7",
+                "en": "7"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Relay",
+                "en": "Relay"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "source-conflict",
+                "en": "source-conflict"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cchq-level-3",
+      "name": "CCHQ – Level 3",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.cchq.level-3.lcd-screen",
+          "name": {
+            "de": "1× LCD Screen",
+            "en": "1× LCD Screen"
+          },
+          "description": {
+            "de": "1× LCD Screen für CCHQ – Level 3 beschaffen.",
+            "en": "Obtain 1× LCD Screen for CCHQ – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "12",
+                "en": "12"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "LCD Screen",
+                "en": "LCD Screen"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-3.ram",
+          "name": {
+            "de": "1× RAM",
+            "en": "1× RAM"
+          },
+          "description": {
+            "de": "1× RAM für CCHQ – Level 3 beschaffen.",
+            "en": "Obtain 1× RAM for CCHQ – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "12",
+                "en": "12"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "RAM",
+                "en": "RAM"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-3.medical-uav",
+          "name": {
+            "de": "2× Medical UAV",
+            "en": "2× Medical UAV"
+          },
+          "description": {
+            "de": "2× Medical UAV für CCHQ – Level 3 beschaffen.",
+            "en": "Obtain 2× Medical UAV for CCHQ – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "12",
+                "en": "12"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Medical UAV",
+                "en": "Medical UAV"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cchq-level-4",
+      "name": "CCHQ – Level 4",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.cchq.level-4.spy-pen",
+          "name": {
+            "de": "1× Spy Pen",
+            "en": "1× Spy Pen"
+          },
+          "description": {
+            "de": "1× Spy Pen für CCHQ – Level 4 beschaffen.",
+            "en": "Obtain 1× Spy Pen for CCHQ – Level 4."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4",
+                "en": "Level 4"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "22",
+                "en": "22"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Spy Pen",
+                "en": "Spy Pen"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-4.asos-motherboard",
+          "name": {
+            "de": "2× ASOS Motherboard",
+            "en": "2× ASOS Motherboard"
+          },
+          "description": {
+            "de": "2× ASOS Motherboard für CCHQ – Level 4 beschaffen.",
+            "en": "Obtain 2× ASOS Motherboard for CCHQ – Level 4."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4",
+                "en": "Level 4"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "22",
+                "en": "22"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "ASOS Motherboard",
+                "en": "ASOS Motherboard"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-4.gs5-controller",
+          "name": {
+            "de": "2× GS5 Controller",
+            "en": "2× GS5 Controller"
+          },
+          "description": {
+            "de": "2× GS5 Controller für CCHQ – Level 4 beschaffen.",
+            "en": "Obtain 2× GS5 Controller for CCHQ – Level 4."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4",
+                "en": "Level 4"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "22",
+                "en": "22"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "GS5 Controller",
+                "en": "GS5 Controller"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cchq-level-5",
+      "name": "CCHQ – Level 5",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.cchq.level-5.digital-camera",
+          "name": {
+            "de": "1× Digital Camera",
+            "en": "1× Digital Camera"
+          },
+          "description": {
+            "de": "1× Digital Camera für CCHQ – Level 5 beschaffen.",
+            "en": "Obtain 1× Digital Camera for CCHQ – Level 5."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5",
+                "en": "Level 5"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Digital Camera",
+                "en": "Digital Camera"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-5.encrypted-router",
+          "name": {
+            "de": "1× Encrypted Router",
+            "en": "1× Encrypted Router"
+          },
+          "description": {
+            "de": "1× Encrypted Router für CCHQ – Level 5 beschaffen.",
+            "en": "Obtain 1× Encrypted Router for CCHQ – Level 5."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5",
+                "en": "Level 5"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Encrypted Router",
+                "en": "Encrypted Router"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-5.slr-camera",
+          "name": {
+            "de": "2× SLR Camera",
+            "en": "2× SLR Camera"
+          },
+          "description": {
+            "de": "2× SLR Camera für CCHQ – Level 5 beschaffen.",
+            "en": "Obtain 2× SLR Camera for CCHQ – Level 5."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5",
+                "en": "Level 5"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "SLR Camera",
+                "en": "SLR Camera"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cchq-level-6",
+      "name": "CCHQ – Level 6",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.cchq.level-6.quantum-storage",
+          "name": {
+            "de": "1× Quantum Storage",
+            "en": "1× Quantum Storage"
+          },
+          "description": {
+            "de": "1× Quantum Storage für CCHQ – Level 6 beschaffen.",
+            "en": "Obtain 1× Quantum Storage for CCHQ – Level 6."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6",
+                "en": "Level 6"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Quantum Storage",
+                "en": "Quantum Storage"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-6.merit-medal",
+          "name": {
+            "de": "2× Merit Medal",
+            "en": "2× Merit Medal"
+          },
+          "description": {
+            "de": "2× Merit Medal für CCHQ – Level 6 beschaffen.",
+            "en": "Obtain 2× Merit Medal for CCHQ – Level 6."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6",
+                "en": "Level 6"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Merit Medal",
+                "en": "Merit Medal"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-6.ssd",
+          "name": {
+            "de": "2× SSD",
+            "en": "2× SSD"
+          },
+          "description": {
+            "de": "2× SSD für CCHQ – Level 6 beschaffen.",
+            "en": "Obtain 2× SSD for CCHQ – Level 6."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6",
+                "en": "Level 6"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "SSD",
+                "en": "SSD"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.cchq.level-6.radio",
+          "name": {
+            "de": "4× Radio",
+            "en": "4× Radio"
+          },
+          "description": {
+            "de": "4× Radio für CCHQ – Level 6 beschaffen.",
+            "en": "Obtain 4× Radio for CCHQ – Level 6."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "CCHQ",
+                "en": "CCHQ"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6",
+                "en": "Level 6"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Radio",
+                "en": "Radio"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

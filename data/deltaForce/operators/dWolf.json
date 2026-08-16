@@ -1,0 +1,572 @@
+[
+  {
+    "id": "deltaForce.operator.d-wolf.level-01",
+    "name": {
+      "de": "D-Wolf – Level 1",
+      "en": "D-Wolf – Level 1"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 1 besitzen beziehungsweise erreichen.",
+      "en": "Have or reach Operator Level 1 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "1",
+          "en": "1"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Startlevel; keine vorgeschaltete Level-Challenge erforderlich.",
+          "en": "Starting level; no preceding level challenge required."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-02",
+    "name": {
+      "de": "D-Wolf – Level 2",
+      "en": "D-Wolf – Level 2"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 2 bringen.",
+      "en": "Reach Operator Level 2 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "2",
+          "en": "2"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-03",
+    "name": {
+      "de": "D-Wolf – Level 3",
+      "en": "D-Wolf – Level 3"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 3 bringen.",
+      "en": "Reach Operator Level 3 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "3",
+          "en": "3"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-04",
+    "name": {
+      "de": "D-Wolf – Level 4",
+      "en": "D-Wolf – Level 4"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 4 bringen.",
+      "en": "Reach Operator Level 4 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "4",
+          "en": "4"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-05",
+    "name": {
+      "de": "D-Wolf – Level 5",
+      "en": "D-Wolf – Level 5"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 5 bringen.",
+      "en": "Reach Operator Level 5 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "5",
+          "en": "5"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-06",
+    "name": {
+      "de": "D-Wolf – Level 6",
+      "en": "D-Wolf – Level 6"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 6 bringen.",
+      "en": "Reach Operator Level 6 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "6",
+          "en": "6"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-07",
+    "name": {
+      "de": "D-Wolf – Level 7",
+      "en": "D-Wolf – Level 7"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 7 bringen.",
+      "en": "Reach Operator Level 7 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "7",
+          "en": "7"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel).",
+          "en": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-08",
+    "name": {
+      "de": "D-Wolf – Level 8",
+      "en": "D-Wolf – Level 8"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 8 bringen.",
+      "en": "Reach Operator Level 8 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "8",
+          "en": "8"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel).",
+          "en": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-09",
+    "name": {
+      "de": "D-Wolf – Level 9",
+      "en": "D-Wolf – Level 9"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 9 bringen.",
+      "en": "Reach Operator Level 9 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "9",
+          "en": "9"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel).",
+          "en": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.d-wolf.level-10",
+    "name": {
+      "de": "D-Wolf – Level 10",
+      "en": "D-Wolf – Level 10"
+    },
+    "description": {
+      "de": "D-Wolf auf Operator-Level 10 bringen.",
+      "en": "Reach Operator Level 10 with D-Wolf."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "D-Wolf",
+          "en": "D-Wolf"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Assault",
+          "en": "Assault"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "10",
+          "en": "10"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel).",
+          "en": "30 Kills mit Triple Blaster, während Overload aktiv ist (öffentlich belegtes Operator-Challenge-Beispiel)."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,879 @@
+{
+  "id": "pharmacy",
+  "name": "Pharmacy",
+  "description": "Material-Tracker für Pharmacy; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 9,
+    "groupCount": 3,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "pharmacy-level-1",
+      "name": "Pharmacy – Level 1",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-1.blood-pressure-meter",
+          "name": {
+            "de": "1× Blood Pressure Meter",
+            "en": "1× Blood Pressure Meter"
+          },
+          "description": {
+            "de": "1× Blood Pressure Meter für Pharmacy – Level 1 beschaffen.",
+            "en": "Obtain 1× Blood Pressure Meter for Pharmacy – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "11",
+                "en": "11"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Blood Pressure Meter",
+                "en": "Blood Pressure Meter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-1.socket-adapter",
+          "name": {
+            "de": "1× Socket Adapter",
+            "en": "1× Socket Adapter"
+          },
+          "description": {
+            "de": "1× Socket Adapter für Pharmacy – Level 1 beschaffen.",
+            "en": "Obtain 1× Socket Adapter for Pharmacy – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "11",
+                "en": "11"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Socket Adapter",
+                "en": "Socket Adapter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: Substation-/Technikbereiche auf Zero Dam priorisieren.",
+                "en": "Community report: prioritize Substation/technical areas on Zero Dam."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy-level-2",
+      "name": "Pharmacy – Level 2",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-2.ledx",
+          "name": {
+            "de": "1× LEDX",
+            "en": "1× LEDX"
+          },
+          "description": {
+            "de": "1× LEDX für Pharmacy – Level 2 beschaffen.",
+            "en": "Obtain 1× LEDX for Pharmacy – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "23",
+                "en": "23"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "LEDX",
+                "en": "LEDX"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-2.bone-saw",
+          "name": {
+            "de": "3× Bone Saw",
+            "en": "3× Bone Saw"
+          },
+          "description": {
+            "de": "3× Bone Saw für Pharmacy – Level 2 beschaffen.",
+            "en": "Obtain 3× Bone Saw for Pharmacy – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "23",
+                "en": "23"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Bone Saw",
+                "en": "Bone Saw"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-2.medical-uav",
+          "name": {
+            "de": "1× Medical UAV",
+            "en": "1× Medical UAV"
+          },
+          "description": {
+            "de": "1× Medical UAV für Pharmacy – Level 2 beschaffen.",
+            "en": "Obtain 1× Medical UAV for Pharmacy – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "23",
+                "en": "23"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Medical UAV",
+                "en": "Medical UAV"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy-level-3",
+      "name": "Pharmacy – Level 3",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-3.experimental-data",
+          "name": {
+            "de": "1× Experimental Data",
+            "en": "1× Experimental Data"
+          },
+          "description": {
+            "de": "1× Experimental Data für Pharmacy – Level 3 beschaffen.",
+            "en": "Obtain 1× Experimental Data for Pharmacy – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "35",
+                "en": "35"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Experimental Data",
+                "en": "Experimental Data"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-3.ledx",
+          "name": {
+            "de": "1× LEDX",
+            "en": "1× LEDX"
+          },
+          "description": {
+            "de": "1× LEDX für Pharmacy – Level 3 beschaffen.",
+            "en": "Obtain 1× LEDX for Pharmacy – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "35",
+                "en": "35"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "LEDX",
+                "en": "LEDX"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-3.oximeter",
+          "name": {
+            "de": "1× Oximeter",
+            "en": "1× Oximeter"
+          },
+          "description": {
+            "de": "1× Oximeter für Pharmacy – Level 3 beschaffen.",
+            "en": "Obtain 1× Oximeter for Pharmacy – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "35",
+                "en": "35"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Oximeter",
+                "en": "Oximeter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.pharmacy.level-3.bone-saw",
+          "name": {
+            "de": "1× Bone Saw",
+            "en": "1× Bone Saw"
+          },
+          "description": {
+            "de": "1× Bone Saw für Pharmacy – Level 3 beschaffen.",
+            "en": "Obtain 1× Bone Saw for Pharmacy – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Pharmacy",
+                "en": "Pharmacy"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "35",
+                "en": "35"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Bone Saw",
+                "en": "Bone Saw"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

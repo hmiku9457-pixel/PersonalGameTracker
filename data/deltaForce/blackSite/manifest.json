@@ -1,0 +1,227 @@
+{
+  "id": "deltaForce-blackSite",
+  "name": "Black Site",
+  "categories": [
+    {
+      "id": "armorBench",
+      "name": "Armor Bench",
+      "description": {
+        "de": "Materialien und Fundhinweise für Armor Bench.",
+        "en": "Materials and location hints for Armor Bench."
+      },
+      "type": "category",
+      "file": "armorBench.json",
+      "itemCount": 10,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 3,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "cyberWarfareDivision",
+      "name": "Cyber Warfare Division",
+      "description": {
+        "de": "Materialien und Fundhinweise für Cyber Warfare Division.",
+        "en": "Materials and location hints for Cyber Warfare Division."
+      },
+      "type": "category",
+      "file": "cyberWarfareDivision.json",
+      "itemCount": 9,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 3,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench",
+      "description": {
+        "de": "Materialien und Fundhinweise für Workbench.",
+        "en": "Materials and location hints for Workbench."
+      },
+      "type": "category",
+      "file": "workbench.json",
+      "itemCount": 9,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 3,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "pharmacy",
+      "name": "Pharmacy",
+      "description": {
+        "de": "Materialien und Fundhinweise für Pharmacy.",
+        "en": "Materials and location hints for Pharmacy."
+      },
+      "type": "category",
+      "file": "pharmacy.json",
+      "itemCount": 9,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 3,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "csd",
+      "name": "CSD",
+      "description": {
+        "de": "Materialien und Fundhinweise für CSD.",
+        "en": "Materials and location hints for CSD."
+      },
+      "type": "category",
+      "file": "csd.json",
+      "itemCount": 24,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 7,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "firingRange",
+      "name": "Firing Range",
+      "description": {
+        "de": "Materialien und Fundhinweise für Firing Range.",
+        "en": "Materials and location hints for Firing Range."
+      },
+      "type": "category",
+      "file": "firingRange.json",
+      "itemCount": 24,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 7,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "stash",
+      "name": "Stash",
+      "description": {
+        "de": "Materialien und Fundhinweise für Stash.",
+        "en": "Materials and location hints for Stash."
+      },
+      "type": "category",
+      "file": "stash.json",
+      "itemCount": 27,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 7,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "cchq",
+      "name": "CCHQ",
+      "description": {
+        "de": "Materialien und Fundhinweise für CCHQ.",
+        "en": "Materials and location hints for CCHQ."
+      },
+      "type": "category",
+      "file": "cchq.json",
+      "itemCount": 15,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 5,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "divingCenter",
+      "name": "Diving Center",
+      "description": {
+        "de": "Materialien und Fundhinweise für Diving Center.",
+        "en": "Materials and location hints for Diving Center."
+      },
+      "type": "category",
+      "file": "divingCenter.json",
+      "itemCount": 4,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 1,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "collectionRoom",
+      "name": "Collection Room",
+      "description": {
+        "de": "Materialien und Fundhinweise für Collection Room.",
+        "en": "Materials and location hints for Collection Room."
+      },
+      "type": "category",
+      "file": "collectionRoom.json",
+      "itemCount": 4,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 1,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    },
+    {
+      "id": "decontaminationChamber",
+      "name": "Decontamination Chamber",
+      "description": {
+        "de": "Materialien und Fundhinweise für Decontamination Chamber.",
+        "en": "Materials and location hints for Decontamination Chamber."
+      },
+      "type": "category",
+      "file": "decontaminationChamber.json",
+      "itemCount": 4,
+      "itemLabel": {
+        "de": "Materialien",
+        "en": "materials"
+      },
+      "groupCount": 3,
+      "groupLabel": {
+        "de": "Upgrade-Stufen",
+        "en": "upgrade tiers"
+      }
+    }
+  ],
+  "itemCount": 139
+}

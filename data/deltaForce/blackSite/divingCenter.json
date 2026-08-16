@@ -1,0 +1,392 @@
+{
+  "id": "divingCenter",
+  "name": "Diving Center",
+  "description": "Material-Tracker für Diving Center; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 4,
+    "groupCount": 1,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "diving-center-level-1",
+      "name": "Diving Center – Level 1",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.diving-center.level-1.vein-finder",
+          "name": {
+            "de": "1× Vein Finder",
+            "en": "1× Vein Finder"
+          },
+          "description": {
+            "de": "1× Vein Finder für Diving Center – Level 1 beschaffen.",
+            "en": "Obtain 1× Vein Finder for Diving Center – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Diving Center",
+                "en": "Diving Center"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "33",
+                "en": "33"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Vein Finder",
+                "en": "Vein Finder"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.diving-center.level-1.uv-light",
+          "name": {
+            "de": "1× UV Light",
+            "en": "1× UV Light"
+          },
+          "description": {
+            "de": "1× UV Light für Diving Center – Level 1 beschaffen.",
+            "en": "Obtain 1× UV Light for Diving Center – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Diving Center",
+                "en": "Diving Center"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "33",
+                "en": "33"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "UV Light",
+                "en": "UV Light"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.diving-center.level-1.mosaic-lamp",
+          "name": {
+            "de": "1× Mosaic Lamp",
+            "en": "1× Mosaic Lamp"
+          },
+          "description": {
+            "de": "1× Mosaic Lamp für Diving Center – Level 1 beschaffen.",
+            "en": "Obtain 1× Mosaic Lamp for Diving Center – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Diving Center",
+                "en": "Diving Center"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "33",
+                "en": "33"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Mosaic Lamp",
+                "en": "Mosaic Lamp"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.diving-center.level-1.blood-pressure-meter",
+          "name": {
+            "de": "1× Blood Pressure Meter",
+            "en": "1× Blood Pressure Meter"
+          },
+          "description": {
+            "de": "1× Blood Pressure Meter für Diving Center – Level 1 beschaffen.",
+            "en": "Obtain 1× Blood Pressure Meter for Diving Center – Level 1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Diving Center",
+                "en": "Diving Center"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 1",
+                "en": "Level 1"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "33",
+                "en": "33"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Blood Pressure Meter",
+                "en": "Blood Pressure Meter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "2025-live-guide",
+                "en": "2025-live-guide"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

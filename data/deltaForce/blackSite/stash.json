@@ -1,0 +1,2617 @@
+{
+  "id": "stash",
+  "name": "Stash",
+  "description": "Material-Tracker für Stash; jedes benötigte Material ist ein eigener Fortschrittseintrag.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "material-per-upgrade-tier",
+    "itemCount": 27,
+    "groupCount": 7,
+    "note": "Live-Service-Daten: Quellenstatus steht je Material im Detail. Unverifizierte/fehlende spätere Tiers werden nicht erfunden."
+  },
+  "groups": [
+    {
+      "id": "stash-level-2",
+      "name": "Stash – Level 2",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-2.medical-uav",
+          "name": {
+            "de": "2× Medical UAV",
+            "en": "2× Medical UAV"
+          },
+          "description": {
+            "de": "2× Medical UAV für Stash – Level 2 beschaffen.",
+            "en": "Obtain 2× Medical UAV for Stash – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Medical UAV",
+                "en": "Medical UAV"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-2.intel-recorder",
+          "name": {
+            "de": "1× Intel Recorder",
+            "en": "1× Intel Recorder"
+          },
+          "description": {
+            "de": "1× Intel Recorder für Stash – Level 2 beschaffen.",
+            "en": "Obtain 1× Intel Recorder for Stash – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Intel Recorder",
+                "en": "Intel Recorder"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-2.relay",
+          "name": {
+            "de": "3× Relay",
+            "en": "3× Relay"
+          },
+          "description": {
+            "de": "3× Relay für Stash – Level 2 beschaffen.",
+            "en": "Obtain 3× Relay for Stash – Level 2."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 2",
+                "en": "Level 2"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Relay",
+                "en": "Relay"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stash-level-3",
+      "name": "Stash – Level 3",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-3.wide-angle-lens",
+          "name": {
+            "de": "2× Wide-Angle Lens",
+            "en": "2× Wide-Angle Lens"
+          },
+          "description": {
+            "de": "2× Wide-Angle Lens für Stash – Level 3 beschaffen.",
+            "en": "Obtain 2× Wide-Angle Lens for Stash – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Wide-Angle Lens",
+                "en": "Wide-Angle Lens"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: auf Zero Dam häufig rund um Saeeds Gebiet suchen.",
+                "en": "Community report: on Zero Dam, search around Saeed’s area."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-3.bucket-of-paint",
+          "name": {
+            "de": "1× Bucket of Paint",
+            "en": "1× Bucket of Paint"
+          },
+          "description": {
+            "de": "1× Bucket of Paint für Stash – Level 3 beschaffen.",
+            "en": "Obtain 1× Bucket of Paint for Stash – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Bucket of Paint",
+                "en": "Bucket of Paint"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Industrie-/Werkzeug-Beute: Toolboxes, Werkstätten, Lagerhallen und Bau-/Industriezonen durchsuchen. Auf Zero Dam ist der Cement Plant eine sinnvolle Route.",
+                "en": "Industrial/tool loot: search toolboxes, workshops, warehouses and construction/industrial zones. On Zero Dam, Cement Plant is a useful route."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: Cement Plant auf Zero Dam priorisieren.",
+                "en": "Community report: prioritize Cement Plant on Zero Dam."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-3.socket-adapter",
+          "name": {
+            "de": "2× Socket Adapter",
+            "en": "2× Socket Adapter"
+          },
+          "description": {
+            "de": "2× Socket Adapter für Stash – Level 3 beschaffen.",
+            "en": "Obtain 2× Socket Adapter for Stash – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Socket Adapter",
+                "en": "Socket Adapter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: Substation-/Technikbereiche auf Zero Dam priorisieren.",
+                "en": "Community report: prioritize Substation/technical areas on Zero Dam."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-3.wooden-carved-pipe",
+          "name": {
+            "de": "3× Wooden Carved Pipe",
+            "en": "3× Wooden Carved Pipe"
+          },
+          "description": {
+            "de": "3× Wooden Carved Pipe für Stash – Level 3 beschaffen.",
+            "en": "Obtain 3× Wooden Carved Pipe for Stash – Level 3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 3",
+                "en": "Level 3"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Wooden Carved Pipe",
+                "en": "Wooden Carved Pipe"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Alltags-/Food-Loot: Wohn-, Aufenthalts-, Restaurant-/Küchen- und Bürobereiche sowie allgemeine Container durchsuchen.",
+                "en": "Everyday/food loot: search residential, lounge, restaurant/kitchen and office areas plus general containers."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stash-level-4-specification",
+      "name": "Stash – Level 4 / Specification",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-4-specification.wide-angle-lens",
+          "name": {
+            "de": "2× Wide-Angle Lens",
+            "en": "2× Wide-Angle Lens"
+          },
+          "description": {
+            "de": "2× Wide-Angle Lens für Stash – Level 4 / Specification beschaffen.",
+            "en": "Obtain 2× Wide-Angle Lens for Stash – Level 4 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4 / Specification",
+                "en": "Level 4 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "14",
+                "en": "14"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Wide-Angle Lens",
+                "en": "Wide-Angle Lens"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: auf Zero Dam häufig rund um Saeeds Gebiet suchen.",
+                "en": "Community report: on Zero Dam, search around Saeed’s area."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-4-specification.encrypted-router",
+          "name": {
+            "de": "2× Encrypted Router",
+            "en": "2× Encrypted Router"
+          },
+          "description": {
+            "de": "2× Encrypted Router für Stash – Level 4 / Specification beschaffen.",
+            "en": "Obtain 2× Encrypted Router for Stash – Level 4 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4 / Specification",
+                "en": "Level 4 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "14",
+                "en": "14"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Encrypted Router",
+                "en": "Encrypted Router"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-4-specification.lemon-tea",
+          "name": {
+            "de": "4× Lemon Tea",
+            "en": "4× Lemon Tea"
+          },
+          "description": {
+            "de": "4× Lemon Tea für Stash – Level 4 / Specification beschaffen.",
+            "en": "Obtain 4× Lemon Tea for Stash – Level 4 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4 / Specification",
+                "en": "Level 4 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "14",
+                "en": "14"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Lemon Tea",
+                "en": "Lemon Tea"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Alltags-/Food-Loot: Wohn-, Aufenthalts-, Restaurant-/Küchen- und Bürobereiche sowie allgemeine Container durchsuchen.",
+                "en": "Everyday/food loot: search residential, lounge, restaurant/kitchen and office areas plus general containers."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-4-specification.relay",
+          "name": {
+            "de": "6× Relay",
+            "en": "6× Relay"
+          },
+          "description": {
+            "de": "6× Relay für Stash – Level 4 / Specification beschaffen.",
+            "en": "Obtain 6× Relay for Stash – Level 4 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 4 / Specification",
+                "en": "Level 4 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "14",
+                "en": "14"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "6",
+                "en": "6"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Relay",
+                "en": "Relay"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stash-level-5-project-planning",
+      "name": "Stash – Level 5 / Project Planning",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-5-project-planning.merit-medal",
+          "name": {
+            "de": "1× Merit Medal",
+            "en": "1× Merit Medal"
+          },
+          "description": {
+            "de": "1× Merit Medal für Stash – Level 5 / Project Planning beschaffen.",
+            "en": "Obtain 1× Merit Medal for Stash – Level 5 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5 / Project Planning",
+                "en": "Level 5 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "20",
+                "en": "20"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Merit Medal",
+                "en": "Merit Medal"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-5-project-planning.oximeter",
+          "name": {
+            "de": "2× Oximeter",
+            "en": "2× Oximeter"
+          },
+          "description": {
+            "de": "2× Oximeter für Stash – Level 5 / Project Planning beschaffen.",
+            "en": "Obtain 2× Oximeter for Stash – Level 5 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5 / Project Planning",
+                "en": "Level 5 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "20",
+                "en": "20"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Oximeter",
+                "en": "Oximeter"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Medizin-Beute: Medizintaschen, medizinische Kisten, Infirmary-/Klinikbereiche und medizinische Räume durchsuchen.",
+                "en": "Medical loot: search medical bags, medical crates, infirmary/clinic areas and medical rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-5-project-planning.encrypted-router",
+          "name": {
+            "de": "3× Encrypted Router",
+            "en": "3× Encrypted Router"
+          },
+          "description": {
+            "de": "3× Encrypted Router für Stash – Level 5 / Project Planning beschaffen.",
+            "en": "Obtain 3× Encrypted Router for Stash – Level 5 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5 / Project Planning",
+                "en": "Level 5 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "20",
+                "en": "20"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Encrypted Router",
+                "en": "Encrypted Router"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-5-project-planning.ssd",
+          "name": {
+            "de": "6× SSD",
+            "en": "6× SSD"
+          },
+          "description": {
+            "de": "6× SSD für Stash – Level 5 / Project Planning beschaffen.",
+            "en": "Obtain 6× SSD for Stash – Level 5 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 5 / Project Planning",
+                "en": "Level 5 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "20",
+                "en": "20"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "6",
+                "en": "6"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "SSD",
+                "en": "SSD"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stash-level-6-deployment",
+      "name": "Stash – Level 6 / Deployment",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-6-deployment.mantel-clock",
+          "name": {
+            "de": "1× Mantel Clock",
+            "en": "1× Mantel Clock"
+          },
+          "description": {
+            "de": "1× Mantel Clock für Stash – Level 6 / Deployment beschaffen.",
+            "en": "Obtain 1× Mantel Clock for Stash – Level 6 / Deployment."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6 / Deployment",
+                "en": "Level 6 / Deployment"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "28",
+                "en": "28"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Mantel Clock",
+                "en": "Mantel Clock"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-6-deployment.high-speed-ssd",
+          "name": {
+            "de": "4× High-Speed SSD",
+            "en": "4× High-Speed SSD"
+          },
+          "description": {
+            "de": "4× High-Speed SSD für Stash – Level 6 / Deployment beschaffen.",
+            "en": "Obtain 4× High-Speed SSD for Stash – Level 6 / Deployment."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6 / Deployment",
+                "en": "Level 6 / Deployment"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "28",
+                "en": "28"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "4",
+                "en": "4"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "High-Speed SSD",
+                "en": "High-Speed SSD"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-6-deployment.asos-motherboard",
+          "name": {
+            "de": "6× ASOS Motherboard",
+            "en": "6× ASOS Motherboard"
+          },
+          "description": {
+            "de": "6× ASOS Motherboard für Stash – Level 6 / Deployment beschaffen.",
+            "en": "Obtain 6× ASOS Motherboard for Stash – Level 6 / Deployment."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6 / Deployment",
+                "en": "Level 6 / Deployment"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "28",
+                "en": "28"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "6",
+                "en": "6"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "ASOS Motherboard",
+                "en": "ASOS Motherboard"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-6-deployment.ram",
+          "name": {
+            "de": "10× RAM",
+            "en": "10× RAM"
+          },
+          "description": {
+            "de": "10× RAM für Stash – Level 6 / Deployment beschaffen.",
+            "en": "Obtain 10× RAM for Stash – Level 6 / Deployment."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 6 / Deployment",
+                "en": "Level 6 / Deployment"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "28",
+                "en": "28"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "RAM",
+                "en": "RAM"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stash-level-7-specification",
+      "name": "Stash – Level 7 / Specification",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-7-specification.array-server",
+          "name": {
+            "de": "1× Array Server",
+            "en": "1× Array Server"
+          },
+          "description": {
+            "de": "1× Array Server für Stash – Level 7 / Specification beschaffen.",
+            "en": "Obtain 1× Array Server for Stash – Level 7 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 7 / Specification",
+                "en": "Level 7 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "36",
+                "en": "36"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Array Server",
+                "en": "Array Server"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-7-specification.military-satellite-communications-device",
+          "name": {
+            "de": "3× Military Satellite Communications Device",
+            "en": "3× Military Satellite Communications Device"
+          },
+          "description": {
+            "de": "3× Military Satellite Communications Device für Stash – Level 7 / Specification beschaffen.",
+            "en": "Obtain 3× Military Satellite Communications Device for Stash – Level 7 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 7 / Specification",
+                "en": "Level 7 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "36",
+                "en": "36"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Military Satellite Communications Device",
+                "en": "Military Satellite Communications Device"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-7-specification.wide-angle-lens",
+          "name": {
+            "de": "10× Wide-Angle Lens",
+            "en": "10× Wide-Angle Lens"
+          },
+          "description": {
+            "de": "10× Wide-Angle Lens für Stash – Level 7 / Specification beschaffen.",
+            "en": "Obtain 10× Wide-Angle Lens for Stash – Level 7 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 7 / Specification",
+                "en": "Level 7 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "36",
+                "en": "36"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Wide-Angle Lens",
+                "en": "Wide-Angle Lens"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            },
+            {
+              "label": {
+                "de": "Zusatzhinweis",
+                "en": "Extra hint"
+              },
+              "value": {
+                "de": "Community-Bericht: auf Zero Dam häufig rund um Saeeds Gebiet suchen.",
+                "en": "Community report: on Zero Dam, search around Saeed’s area."
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-7-specification.ssd",
+          "name": {
+            "de": "10× SSD",
+            "en": "10× SSD"
+          },
+          "description": {
+            "de": "10× SSD für Stash – Level 7 / Specification beschaffen.",
+            "en": "Obtain 10× SSD for Stash – Level 7 / Specification."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 7 / Specification",
+                "en": "Level 7 / Specification"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "36",
+                "en": "36"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "10",
+                "en": "10"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "SSD",
+                "en": "SSD"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Elektronik-Beute: PCs, Server, Elektronik-/Technikkisten, Büros und technische Räume priorisieren. Auf Zero Dam sind Administrative Area und Substation typische Technik-Routen; auf höherwertigen Maps lohnen sich Server-/Keycard-Räume.",
+                "en": "Electronics loot: prioritize PCs, servers, electronics/technical containers, offices and technical rooms. On Zero Dam, Administrative Area and Substation are typical tech routes; on higher-tier maps, server/keycard rooms are worthwhile."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stash-level-8-project-planning",
+      "name": "Stash – Level 8 / Project Planning",
+      "items": [
+        {
+          "id": "deltaForce.blackSite.stash.level-8-project-planning.rocket-fuel",
+          "name": {
+            "de": "1× Rocket Fuel",
+            "en": "1× Rocket Fuel"
+          },
+          "description": {
+            "de": "1× Rocket Fuel für Stash – Level 8 / Project Planning beschaffen.",
+            "en": "Obtain 1× Rocket Fuel for Stash – Level 8 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 8 / Project Planning",
+                "en": "Level 8 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "42",
+                "en": "42"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "1",
+                "en": "1"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Rocket Fuel",
+                "en": "Rocket Fuel"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Industrie-/Werkzeug-Beute: Toolboxes, Werkstätten, Lagerhallen und Bau-/Industriezonen durchsuchen. Auf Zero Dam ist der Cement Plant eine sinnvolle Route.",
+                "en": "Industrial/tool loot: search toolboxes, workshops, warehouses and construction/industrial zones. On Zero Dam, Cement Plant is a useful route."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-8-project-planning.golden-gazelle",
+          "name": {
+            "de": "2× Golden Gazelle",
+            "en": "2× Golden Gazelle"
+          },
+          "description": {
+            "de": "2× Golden Gazelle für Stash – Level 8 / Project Planning beschaffen.",
+            "en": "Obtain 2× Golden Gazelle for Stash – Level 8 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 8 / Project Planning",
+                "en": "Level 8 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "42",
+                "en": "42"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "2",
+                "en": "2"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Golden Gazelle",
+                "en": "Golden Gazelle"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-8-project-planning.999-9-point-gold-bar",
+          "name": {
+            "de": "3× 999.9 Point Gold Bar",
+            "en": "3× 999.9 Point Gold Bar"
+          },
+          "description": {
+            "de": "3× 999.9 Point Gold Bar für Stash – Level 8 / Project Planning beschaffen.",
+            "en": "Obtain 3× 999.9 Point Gold Bar for Stash – Level 8 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 8 / Project Planning",
+                "en": "Level 8 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "42",
+                "en": "42"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "3",
+                "en": "3"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "999.9 Point Gold Bar",
+                "en": "999.9 Point Gold Bar"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Hochwertiges Collectible: Safes, Keycard-Räume, hochwertige lose Spawns und High-Tier-Container in Normal/Hard-Runs priorisieren. Kein garantierter Standard-Spawn.",
+                "en": "High-value collectible: prioritize safes, keycard rooms, high-value loose spawns and high-tier containers in Normal/Hard runs. No guaranteed standard spawn."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.blackSite.stash.level-8-project-planning.military-trajectory-computer",
+          "name": {
+            "de": "5× Military Trajectory Computer",
+            "en": "5× Military Trajectory Computer"
+          },
+          "description": {
+            "de": "5× Military Trajectory Computer für Stash – Level 8 / Project Planning beschaffen.",
+            "en": "Obtain 5× Military Trajectory Computer for Stash – Level 8 / Project Planning."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Einrichtung",
+                "en": "Facility"
+              },
+              "value": {
+                "de": "Stash",
+                "en": "Stash"
+              }
+            },
+            {
+              "label": {
+                "de": "Upgrade-Stufe",
+                "en": "Upgrade tier"
+              },
+              "value": {
+                "de": "Level 8 / Project Planning",
+                "en": "Level 8 / Project Planning"
+              }
+            },
+            {
+              "label": {
+                "de": "Operations-Level",
+                "en": "Operations level"
+              },
+              "value": {
+                "de": "42",
+                "en": "42"
+              }
+            },
+            {
+              "label": {
+                "de": "Benötigte Menge",
+                "en": "Required quantity"
+              },
+              "value": {
+                "de": "5",
+                "en": "5"
+              }
+            },
+            {
+              "label": {
+                "de": "Material (In-Game EN)",
+                "en": "Material (in-game EN)"
+              },
+              "value": {
+                "de": "Military Trajectory Computer",
+                "en": "Military Trajectory Computer"
+              }
+            },
+            {
+              "label": {
+                "de": "Typische Fundorte",
+                "en": "Typical locations"
+              },
+              "value": {
+                "de": "Militär-/Intel-Beute: militärische Kisten, Aktenschränke, Büros, Safes, Boss-/Guard-Bereiche und verschlossene Hochwert-Räume priorisieren.",
+                "en": "Military/intel loot: prioritize military crates, filing cabinets, offices, safes, boss/guard areas and locked high-value rooms."
+              }
+            },
+            {
+              "label": {
+                "de": "Hinweis",
+                "en": "Note"
+              },
+              "value": {
+                "de": "Fundorte sind typische Lootquellen, keine garantierten festen Spawns.",
+                "en": "Locations are typical loot sources, not guaranteed fixed spawns."
+              }
+            },
+            {
+              "label": {
+                "de": "Datenstatus",
+                "en": "Data status"
+              },
+              "value": {
+                "de": "community-verified",
+                "en": "community-verified"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

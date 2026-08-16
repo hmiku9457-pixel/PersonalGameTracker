@@ -1,0 +1,572 @@
+[
+  {
+    "id": "deltaForce.operator.stinger.level-01",
+    "name": {
+      "de": "Stinger – Level 1",
+      "en": "Stinger – Level 1"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 1 besitzen beziehungsweise erreichen.",
+      "en": "Have or reach Operator Level 1 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "1",
+          "en": "1"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Startlevel; keine vorgeschaltete Level-Challenge erforderlich.",
+          "en": "Starting level; no preceding level challenge required."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-02",
+    "name": {
+      "de": "Stinger – Level 2",
+      "en": "Stinger – Level 2"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 2 bringen.",
+      "en": "Reach Operator Level 2 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "2",
+          "en": "2"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-03",
+    "name": {
+      "de": "Stinger – Level 3",
+      "en": "Stinger – Level 3"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 3 bringen.",
+      "en": "Reach Operator Level 3 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "3",
+          "en": "3"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-04",
+    "name": {
+      "de": "Stinger – Level 4",
+      "en": "Stinger – Level 4"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 4 bringen.",
+      "en": "Reach Operator Level 4 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "4",
+          "en": "4"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-05",
+    "name": {
+      "de": "Stinger – Level 5",
+      "en": "Stinger – Level 5"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 5 bringen.",
+      "en": "Reach Operator Level 5 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "5",
+          "en": "5"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-06",
+    "name": {
+      "de": "Stinger – Level 6",
+      "en": "Stinger – Level 6"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 6 bringen.",
+      "en": "Reach Operator Level 6 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "6",
+          "en": "6"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-07",
+    "name": {
+      "de": "Stinger – Level 7",
+      "en": "Stinger – Level 7"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 7 bringen.",
+      "en": "Reach Operator Level 7 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "7",
+          "en": "7"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert.",
+          "en": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-08",
+    "name": {
+      "de": "Stinger – Level 8",
+      "en": "Stinger – Level 8"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 8 bringen.",
+      "en": "Reach Operator Level 8 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "8",
+          "en": "8"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert.",
+          "en": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-09",
+    "name": {
+      "de": "Stinger – Level 9",
+      "en": "Stinger – Level 9"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 9 bringen.",
+      "en": "Reach Operator Level 9 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "9",
+          "en": "9"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert.",
+          "en": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.stinger.level-10",
+    "name": {
+      "de": "Stinger – Level 10",
+      "en": "Stinger – Level 10"
+    },
+    "description": {
+      "de": "Stinger auf Operator-Level 10 bringen.",
+      "en": "Reach Operator Level 10 with Stinger."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Stinger",
+          "en": "Stinger"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Support",
+          "en": "Support"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "10",
+          "en": "10"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert.",
+          "en": "Eine öffentlich dokumentierte frühe Mission verlangt 2.000 Heilung im Zusammenhang mit HIVE/Smoke; die exakte aktuelle UI-Formulierung ist nicht zuverlässig indexiert."
+        }
+      }
+    ]
+  }
+]

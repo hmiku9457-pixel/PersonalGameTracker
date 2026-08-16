@@ -1,0 +1,572 @@
+[
+  {
+    "id": "deltaForce.operator.raptor.level-01",
+    "name": {
+      "de": "Raptor – Level 1",
+      "en": "Raptor – Level 1"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 1 besitzen beziehungsweise erreichen.",
+      "en": "Have or reach Operator Level 1 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "1",
+          "en": "1"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Startlevel; keine vorgeschaltete Level-Challenge erforderlich.",
+          "en": "Starting level; no preceding level challenge required."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-02",
+    "name": {
+      "de": "Raptor – Level 2",
+      "en": "Raptor – Level 2"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 2 bringen.",
+      "en": "Reach Operator Level 2 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "2",
+          "en": "2"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-03",
+    "name": {
+      "de": "Raptor – Level 3",
+      "en": "Raptor – Level 3"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 3 bringen.",
+      "en": "Reach Operator Level 3 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "3",
+          "en": "3"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-04",
+    "name": {
+      "de": "Raptor – Level 4",
+      "en": "Raptor – Level 4"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 4 bringen.",
+      "en": "Reach Operator Level 4 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "4",
+          "en": "4"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-05",
+    "name": {
+      "de": "Raptor – Level 5",
+      "en": "Raptor – Level 5"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 5 bringen.",
+      "en": "Reach Operator Level 5 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "5",
+          "en": "5"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-06",
+    "name": {
+      "de": "Raptor – Level 6",
+      "en": "Raptor – Level 6"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 6 bringen.",
+      "en": "Reach Operator Level 6 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "6",
+          "en": "6"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-07",
+    "name": {
+      "de": "Raptor – Level 7",
+      "en": "Raptor – Level 7"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 7 bringen.",
+      "en": "Reach Operator Level 7 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "7",
+          "en": "7"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert.",
+          "en": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-08",
+    "name": {
+      "de": "Raptor – Level 8",
+      "en": "Raptor – Level 8"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 8 bringen.",
+      "en": "Reach Operator Level 8 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "8",
+          "en": "8"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert.",
+          "en": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-09",
+    "name": {
+      "de": "Raptor – Level 9",
+      "en": "Raptor – Level 9"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 9 bringen.",
+      "en": "Reach Operator Level 9 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "9",
+          "en": "9"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert.",
+          "en": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.raptor.level-10",
+    "name": {
+      "de": "Raptor – Level 10",
+      "en": "Raptor – Level 10"
+    },
+    "description": {
+      "de": "Raptor auf Operator-Level 10 bringen.",
+      "en": "Reach Operator Level 10 with Raptor."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Raptor",
+          "en": "Raptor"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "10",
+          "en": "10"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      },
+      {
+        "label": {
+          "de": "Verifizierte Hinweise",
+          "en": "Verified notes"
+        },
+        "value": {
+          "de": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert.",
+          "en": "Für den Übergang Level 9 → 10 wurden 20 Headshot-Kills aus mindestens 100 m in einem Warfare-Match öffentlich dokumentiert."
+        }
+      }
+    ]
+  }
+]

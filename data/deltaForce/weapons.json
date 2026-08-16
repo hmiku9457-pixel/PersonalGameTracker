@@ -1,0 +1,2250 @@
+{
+  "id": "weapons",
+  "name": "Weapons",
+  "description": "Alle levelbaren Delta-Force-Waffen; pro Waffe wird nur das Erreichen des Max-Levels getrackt.",
+  "lastUpdated": "2026-08-16",
+  "dataStatus": {
+    "scope": "max-level-per-weapon",
+    "itemCount": 66,
+    "groupCount": 8,
+    "note": "Compound Bow separat ergänzt; er besitzt eine eigene Level-Progression bis Level 9."
+  },
+  "groups": [
+    {
+      "id": "weapons-assault-rifles",
+      "name": "Sturm-/Kampfgewehre / Assault Rifles",
+      "items": [
+        {
+          "id": "deltaForce.weapon.ak-12.max-level",
+          "name": {
+            "de": "AK-12",
+            "en": "AK-12"
+          },
+          "description": {
+            "de": "AK-12 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AK-12."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.akm.max-level",
+          "name": {
+            "de": "AKM",
+            "en": "AKM"
+          },
+          "description": {
+            "de": "AKM auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AKM."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.aks-74u.max-level",
+          "name": {
+            "de": "AKS-74U",
+            "en": "AKS-74U"
+          },
+          "description": {
+            "de": "AKS-74U auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AKS-74U."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.ar-57.max-level",
+          "name": {
+            "de": "AR-57",
+            "en": "AR-57"
+          },
+          "description": {
+            "de": "AR-57 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AR-57."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.as-val.max-level",
+          "name": {
+            "de": "AS VAL",
+            "en": "AS VAL"
+          },
+          "description": {
+            "de": "AS VAL auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AS VAL."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.ash-12.max-level",
+          "name": {
+            "de": "ASh-12",
+            "en": "ASh-12"
+          },
+          "description": {
+            "de": "ASh-12 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the ASh-12."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.aug.max-level",
+          "name": {
+            "de": "AUG",
+            "en": "AUG"
+          },
+          "description": {
+            "de": "AUG auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AUG."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.car-15.max-level",
+          "name": {
+            "de": "CAR-15",
+            "en": "CAR-15"
+          },
+          "description": {
+            "de": "CAR-15 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the CAR-15."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.ci-19.max-level",
+          "name": {
+            "de": "CI-19",
+            "en": "CI-19"
+          },
+          "description": {
+            "de": "CI-19 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the CI-19."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.g3.max-level",
+          "name": {
+            "de": "G3",
+            "en": "G3"
+          },
+          "description": {
+            "de": "G3 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the G3."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.k416.max-level",
+          "name": {
+            "de": "K416",
+            "en": "K416"
+          },
+          "description": {
+            "de": "K416 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the K416."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.k437.max-level",
+          "name": {
+            "de": "K437",
+            "en": "K437"
+          },
+          "description": {
+            "de": "K437 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the K437."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.kc17.max-level",
+          "name": {
+            "de": "KC17",
+            "en": "KC17"
+          },
+          "description": {
+            "de": "KC17 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the KC17."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m16a4.max-level",
+          "name": {
+            "de": "M16A4",
+            "en": "M16A4"
+          },
+          "description": {
+            "de": "M16A4 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M16A4."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m4a1.max-level",
+          "name": {
+            "de": "M4A1",
+            "en": "M4A1"
+          },
+          "description": {
+            "de": "M4A1 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M4A1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m7.max-level",
+          "name": {
+            "de": "M7",
+            "en": "M7"
+          },
+          "description": {
+            "de": "M7 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M7."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.mcx-lt.max-level",
+          "name": {
+            "de": "MCX LT",
+            "en": "MCX LT"
+          },
+          "description": {
+            "de": "MCX LT auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the MCX LT."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.mk47.max-level",
+          "name": {
+            "de": "MK47",
+            "en": "MK47"
+          },
+          "description": {
+            "de": "MK47 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the MK47."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.ptr-32.max-level",
+          "name": {
+            "de": "PTR-32",
+            "en": "PTR-32"
+          },
+          "description": {
+            "de": "PTR-32 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the PTR-32."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.qbz95-1.max-level",
+          "name": {
+            "de": "QBZ95-1",
+            "en": "QBZ95-1"
+          },
+          "description": {
+            "de": "QBZ95-1 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the QBZ95-1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.rm277.max-level",
+          "name": {
+            "de": "RM277",
+            "en": "RM277"
+          },
+          "description": {
+            "de": "RM277 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the RM277."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.scar-h.max-level",
+          "name": {
+            "de": "SCAR-H",
+            "en": "SCAR-H"
+          },
+          "description": {
+            "de": "SCAR-H auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SCAR-H."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.sg552.max-level",
+          "name": {
+            "de": "SG552",
+            "en": "SG552"
+          },
+          "description": {
+            "de": "SG552 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SG552."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Sturm-/Kampfgewehre",
+                "en": "Assault Rifles"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-submachine-guns",
+      "name": "Maschinenpistolen / Submachine Guns",
+      "items": [
+        {
+          "id": "deltaForce.weapon.bizon.max-level",
+          "name": {
+            "de": "Bizon",
+            "en": "Bizon"
+          },
+          "description": {
+            "de": "Bizon auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Bizon."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.mk4.max-level",
+          "name": {
+            "de": "MK4",
+            "en": "MK4"
+          },
+          "description": {
+            "de": "MK4 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the MK4."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.mp5.max-level",
+          "name": {
+            "de": "MP5",
+            "en": "MP5"
+          },
+          "description": {
+            "de": "MP5 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the MP5."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.mp7.max-level",
+          "name": {
+            "de": "MP7",
+            "en": "MP7"
+          },
+          "description": {
+            "de": "MP7 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the MP7."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.p90.max-level",
+          "name": {
+            "de": "P90",
+            "en": "P90"
+          },
+          "description": {
+            "de": "P90 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the P90."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.qcq171.max-level",
+          "name": {
+            "de": "QCQ171",
+            "en": "QCQ171"
+          },
+          "description": {
+            "de": "QCQ171 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the QCQ171."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.smg-45.max-level",
+          "name": {
+            "de": "SMG-45",
+            "en": "SMG-45"
+          },
+          "description": {
+            "de": "SMG-45 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SMG-45."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.sr-3m.max-level",
+          "name": {
+            "de": "SR-3M",
+            "en": "SR-3M"
+          },
+          "description": {
+            "de": "SR-3M auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SR-3M."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.uzi.max-level",
+          "name": {
+            "de": "UZI",
+            "en": "UZI"
+          },
+          "description": {
+            "de": "UZI auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the UZI."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.vector.max-level",
+          "name": {
+            "de": "Vector",
+            "en": "Vector"
+          },
+          "description": {
+            "de": "Vector auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Vector."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.vityaz.max-level",
+          "name": {
+            "de": "Vityaz",
+            "en": "Vityaz"
+          },
+          "description": {
+            "de": "Vityaz auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Vityaz."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Maschinenpistolen",
+                "en": "Submachine Guns"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-marksman-rifles",
+      "name": "Präzisionsgewehre / Marksman Rifles",
+      "items": [
+        {
+          "id": "deltaForce.weapon.lever-action-rifle.max-level",
+          "name": {
+            "de": "Lever-Action Rifle",
+            "en": "Lever-Action Rifle"
+          },
+          "description": {
+            "de": "Lever-Action Rifle auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Lever-Action Rifle."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m14-ebr.max-level",
+          "name": {
+            "de": "M14 EBR",
+            "en": "M14 EBR"
+          },
+          "description": {
+            "de": "M14 EBR auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M14 EBR."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.mini-14.max-level",
+          "name": {
+            "de": "Mini-14",
+            "en": "Mini-14"
+          },
+          "description": {
+            "de": "Mini-14 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Mini-14."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.psg-1.max-level",
+          "name": {
+            "de": "PSG-1",
+            "en": "PSG-1"
+          },
+          "description": {
+            "de": "PSG-1 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the PSG-1."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.sks.max-level",
+          "name": {
+            "de": "SKS",
+            "en": "SKS"
+          },
+          "description": {
+            "de": "SKS auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SKS."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.sr-25.max-level",
+          "name": {
+            "de": "SR-25",
+            "en": "SR-25"
+          },
+          "description": {
+            "de": "SR-25 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SR-25."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.sr9.max-level",
+          "name": {
+            "de": "SR9",
+            "en": "SR9"
+          },
+          "description": {
+            "de": "SR9 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SR9."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.svd.max-level",
+          "name": {
+            "de": "SVD",
+            "en": "SVD"
+          },
+          "description": {
+            "de": "SVD auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SVD."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.svch.max-level",
+          "name": {
+            "de": "SVCH",
+            "en": "SVCH"
+          },
+          "description": {
+            "de": "SVCH auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SVCH."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.vss.max-level",
+          "name": {
+            "de": "VSS",
+            "en": "VSS"
+          },
+          "description": {
+            "de": "VSS auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the VSS."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Präzisionsgewehre",
+                "en": "Marksman Rifles"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-sniper-rifles",
+      "name": "Scharfschützengewehre / Sniper Rifles",
+      "items": [
+        {
+          "id": "deltaForce.weapon.awm.max-level",
+          "name": {
+            "de": "AWM",
+            "en": "AWM"
+          },
+          "description": {
+            "de": "AWM auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the AWM."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Scharfschützengewehre",
+                "en": "Sniper Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m700.max-level",
+          "name": {
+            "de": "M700",
+            "en": "M700"
+          },
+          "description": {
+            "de": "M700 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M700."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Scharfschützengewehre",
+                "en": "Sniper Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m82.max-level",
+          "name": {
+            "de": "M82",
+            "en": "M82"
+          },
+          "description": {
+            "de": "M82 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M82."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Scharfschützengewehre",
+                "en": "Sniper Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.r93.max-level",
+          "name": {
+            "de": "R93",
+            "en": "R93"
+          },
+          "description": {
+            "de": "R93 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the R93."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Scharfschützengewehre",
+                "en": "Sniper Rifles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.sv-98.max-level",
+          "name": {
+            "de": "SV-98",
+            "en": "SV-98"
+          },
+          "description": {
+            "de": "SV-98 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the SV-98."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Scharfschützengewehre",
+                "en": "Sniper Rifles"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-light-machine-guns",
+      "name": "Leichte Maschinengewehre / Light Machine Guns",
+      "items": [
+        {
+          "id": "deltaForce.weapon.m249.max-level",
+          "name": {
+            "de": "M249",
+            "en": "M249"
+          },
+          "description": {
+            "de": "M249 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M249."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Leichte Maschinengewehre",
+                "en": "Light Machine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m250.max-level",
+          "name": {
+            "de": "M250",
+            "en": "M250"
+          },
+          "description": {
+            "de": "M250 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M250."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Leichte Maschinengewehre",
+                "en": "Light Machine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.pkm.max-level",
+          "name": {
+            "de": "PKM",
+            "en": "PKM"
+          },
+          "description": {
+            "de": "PKM auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the PKM."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Leichte Maschinengewehre",
+                "en": "Light Machine Guns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.qjb201.max-level",
+          "name": {
+            "de": "QJB201",
+            "en": "QJB201"
+          },
+          "description": {
+            "de": "QJB201 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the QJB201."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Leichte Maschinengewehre",
+                "en": "Light Machine Guns"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-shotguns",
+      "name": "Schrotflinten / Shotguns",
+      "items": [
+        {
+          "id": "deltaForce.weapon.725-double-barrel-shotgun.max-level",
+          "name": {
+            "de": "725 Double-Barrel Shotgun",
+            "en": "725 Double-Barrel Shotgun"
+          },
+          "description": {
+            "de": "725 Double-Barrel Shotgun auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the 725 Double-Barrel Shotgun."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Schrotflinten",
+                "en": "Shotguns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.fs-12.max-level",
+          "name": {
+            "de": "FS-12",
+            "en": "FS-12"
+          },
+          "description": {
+            "de": "FS-12 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the FS-12."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Schrotflinten",
+                "en": "Shotguns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m1014.max-level",
+          "name": {
+            "de": "M1014",
+            "en": "M1014"
+          },
+          "description": {
+            "de": "M1014 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M1014."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Schrotflinten",
+                "en": "Shotguns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m870.max-level",
+          "name": {
+            "de": "M870",
+            "en": "M870"
+          },
+          "description": {
+            "de": "M870 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M870."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Schrotflinten",
+                "en": "Shotguns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.s12k.max-level",
+          "name": {
+            "de": "S12K",
+            "en": "S12K"
+          },
+          "description": {
+            "de": "S12K auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the S12K."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Schrotflinten",
+                "en": "Shotguns"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-pistols",
+      "name": "Pistolen / Pistols",
+      "items": [
+        {
+          "id": "deltaForce.weapon.357-revolver.max-level",
+          "name": {
+            "de": ".357 Revolver",
+            "en": ".357 Revolver"
+          },
+          "description": {
+            "de": ".357 Revolver auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the .357 Revolver."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.93r.max-level",
+          "name": {
+            "de": "93R",
+            "en": "93R"
+          },
+          "description": {
+            "de": "93R auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the 93R."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.desert-eagle.max-level",
+          "name": {
+            "de": "Desert Eagle",
+            "en": "Desert Eagle"
+          },
+          "description": {
+            "de": "Desert Eagle auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Desert Eagle."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.g17.max-level",
+          "name": {
+            "de": "G17",
+            "en": "G17"
+          },
+          "description": {
+            "de": "G17 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the G17."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.glock-18.max-level",
+          "name": {
+            "de": "Glock 18",
+            "en": "Glock 18"
+          },
+          "description": {
+            "de": "Glock 18 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Glock 18."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.m1911.max-level",
+          "name": {
+            "de": "M1911",
+            "en": "M1911"
+          },
+          "description": {
+            "de": "M1911 auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the M1911."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deltaForce.weapon.qsz-92g.max-level",
+          "name": {
+            "de": "QSZ-92G",
+            "en": "QSZ-92G"
+          },
+          "description": {
+            "de": "QSZ-92G auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the QSZ-92G."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Pistolen",
+                "en": "Pistols"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapons-special-weapons",
+      "name": "Spezialwaffen / Special Weapons",
+      "items": [
+        {
+          "id": "deltaForce.weapon.compound-bow.max-level",
+          "name": {
+            "de": "Compound Bow",
+            "en": "Compound Bow"
+          },
+          "description": {
+            "de": "Compound Bow auf das maximale Waffenlevel bringen.",
+            "en": "Reach the maximum weapon level with the Compound Bow."
+          },
+          "details": [
+            {
+              "label": {
+                "de": "Ziel",
+                "en": "Goal"
+              },
+              "value": {
+                "de": "Max-Level erreicht",
+                "en": "Maximum level reached"
+              }
+            },
+            {
+              "label": {
+                "de": "Kategorie",
+                "en": "Category"
+              },
+              "value": {
+                "de": "Spezialwaffen",
+                "en": "Special Weapons"
+              }
+            },
+            {
+              "label": {
+                "de": "Max-Level",
+                "en": "Max level"
+              },
+              "value": {
+                "de": "Level 9",
+                "en": "Level 9"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

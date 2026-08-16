@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-16",
+  "game": "Delta Force",
+  "platform": "PC",
+  "counts": {
+    "achievements": 53,
+    "weaponsMaxLevel": 66,
+    "operators": 16,
+    "operatorLevelItems": 160,
+    "blackSiteFacilities": 11,
+    "blackSiteMaterialItems": 139,
+    "totalTrackerItems": 418
+  },
+  "dataQuality": {
+    "achievements": "verified-current",
+    "weapons": "current-season-10; 65 firearms + Compound Bow",
+    "operators": "current roster; level 1-10 entries complete, exact full challenge text matrix not publicly verifiable",
+    "blackSite": "legacy/core requirements consolidated; current additions included where verifiable; data-status per item; known gaps documented"
+  }
+}

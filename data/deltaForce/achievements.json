@@ -1,0 +1,2281 @@
+[
+  {
+    "id": "deltaForce.achievement.ace-sniper",
+    "name": {
+      "de": "Ass-Sniper",
+      "en": "Ace Sniper"
+    },
+    "description": {
+      "de": "Töte 1 Feind aus über 400 m Entfernung in „Krieg“.",
+      "en": "Kill 1 enemy from beyond 400m in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.top-agent",
+    "name": {
+      "de": "Top-Agent",
+      "en": "Top Agent"
+    },
+    "description": {
+      "de": "Erreiche das max. Einsatzlevel.",
+      "en": "Reach max Operations level."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.veteran-operator",
+    "name": {
+      "de": "Veteran-Kämpfer",
+      "en": "Veteran Operator"
+    },
+    "description": {
+      "de": "Erreiche Einsatzlevel 30.",
+      "en": "Reach Operations Lv.30."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.field-marshal",
+    "name": {
+      "de": "Feldmarschall",
+      "en": "Field Marshal"
+    },
+    "description": {
+      "de": "Erreiche das maximale Kriegslevel.",
+      "en": "Reach max Warfare level."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.field-vanguard",
+    "name": {
+      "de": "Feldvorhut",
+      "en": "Field Vanguard"
+    },
+    "description": {
+      "de": "Erreiche Kriegslevel 25.",
+      "en": "Reach Warfare Lv.25."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.everlasting-heart",
+    "name": {
+      "de": "Ewiges Herz",
+      "en": "Everlasting Heart"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 Herz Afrikas aus Einsätzen.",
+      "en": "Extract with 1 Heart of Africa from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.military-enthusiast",
+    "name": {
+      "de": "Militär-Enthusiast",
+      "en": "Military Enthusiast"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 Kampfpanzermodell aus Einsätzen.",
+      "en": "Extract with 1 Battle Tank Model from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.mechanical-cardio",
+    "name": {
+      "de": "Mechanische Kardiologie",
+      "en": "Mechanical Cardio"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 medizinischem Beatmungsgerät aus Einsätzen.",
+      "en": "Extract with 1 Medical Ventilator from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.physical-hacker",
+    "name": {
+      "de": "Physischer Hacker",
+      "en": "Physical Hacker"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 streng geheimem Server aus Einsätzen.",
+      "en": "Extract with 1 Top Secret Server from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.next-gen-material",
+    "name": {
+      "de": "Material der nächsten Generation",
+      "en": "Next-Gen Material"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 verstärkter Kohlefasertafel aus Einsätzen.",
+      "en": "Extract with 1 Reinforced Carbon Fiberboard from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.precise-detection",
+    "name": {
+      "de": "Präzise Erkennung",
+      "en": "Precise Detection"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 tragbarem Militärradar aus Einsätzen.",
+      "en": "Extract with 1 Portable Military Radar from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.multi-core-processing",
+    "name": {
+      "de": "Mehrkernverarbeitung",
+      "en": "Multi-Core Processing"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 MandelBrick-Superrecheneinheit aus Einsätzen.",
+      "en": "Extract with 1 MandelBrick Supercomputing Unit from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.cleaner-bot",
+    "name": {
+      "de": "Reinigungsroboter",
+      "en": "Cleaner Bot"
+    },
+    "description": {
+      "de": "Extrahiere mit 1 Reinigungsroboter aus Einsätzen.",
+      "en": "Extract with 1 Robot Cleaner from Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.my-turf",
+    "name": {
+      "de": "Mein Revier",
+      "en": "My Turf"
+    },
+    "description": {
+      "de": "Töte 8 feindliche Kämpfer in einem Match in „Einsätze“.",
+      "en": "Kill 8 enemy operators in an Operations match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.brickyard-supervisor",
+    "name": {
+      "de": "Mandel zum Mitnehmen",
+      "en": "Brickyard Supervisor"
+    },
+    "description": {
+      "de": "Dekodiere 1 MandelBrick in „Einsätze“.",
+      "en": "Decode 1 MandelBrick in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.hotel-ownership-transfer-notice",
+    "name": {
+      "de": "Mitteilung über den Hotelbesitzwechsel",
+      "en": "Hotel Ownership Transfer Notice"
+    },
+    "description": {
+      "de": "Töte Reis 5-mal in „Einsätze“.",
+      "en": "Kill Reis 5 times in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.ghost-in-the-halls",
+    "name": {
+      "de": "Geist in den Hallen",
+      "en": "Ghost in the Halls"
+    },
+    "description": {
+      "de": "Töte Saeed 5-mal in „Einsätze“.",
+      "en": "Kill Saeed 5 times in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.on-the-scope",
+    "name": {
+      "de": "Im Zielfernrohr",
+      "en": "On the Scope"
+    },
+    "description": {
+      "de": "Töte Desmoulins 5-mal in „Einsätze“.",
+      "en": "Kill Desmoulins 5 times in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.ultimate-stash",
+    "name": {
+      "de": "Ultimativer Vorrat",
+      "en": "Ultimate Stash"
+    },
+    "description": {
+      "de": "Verbessere den Black Site-Vorrat auf das max. Level in „Einsätze“.",
+      "en": "Upgrade the Black Site Stash to max level in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.first-victory",
+    "name": {
+      "de": "Erster Sieg",
+      "en": "First Victory"
+    },
+    "description": {
+      "de": "Gewinne 1 Match in „Krieg“.",
+      "en": "Win 1 Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.heavy-barrage",
+    "name": {
+      "de": "Heftiges Sperrfeuer",
+      "en": "Heavy Barrage"
+    },
+    "description": {
+      "de": "Zerstöre 500 Fahrzeuge in „Krieg“.",
+      "en": "Destroy 500 vehicles in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.battlefield-angel",
+    "name": {
+      "de": "Engel des Schlachtfelds",
+      "en": "Battlefield Angel"
+    },
+    "description": {
+      "de": "Rette 5.000 Verbündete in „Krieg“.",
+      "en": "Rescue 5,000 allies in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.the-butcher",
+    "name": {
+      "de": "Der Schlächter",
+      "en": "The Butcher"
+    },
+    "description": {
+      "de": "Töte 10.000 Gegner in „Krieg“.",
+      "en": "Kill 10,000 enemies in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.bone-collector",
+    "name": {
+      "de": "Knochensammler",
+      "en": "Bone Collector"
+    },
+    "description": {
+      "de": "Erziele 1.000 Kopfschuss-Kills in „Krieg“.",
+      "en": "Make 1,000 headshot kills in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.an-eye-for-an-eye",
+    "name": {
+      "de": "Auge um Auge",
+      "en": "An Eye for an Eye"
+    },
+    "description": {
+      "de": "Räche dich 500-mal in „Krieg“.",
+      "en": "Revenge 500 times in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.tank-terminator",
+    "name": {
+      "de": "Panzer-Terminator",
+      "en": "Tank Terminator"
+    },
+    "description": {
+      "de": "Zerstöre mehr als 3 Fahrzeuge in einem Match in „Krieg“.",
+      "en": "Destroy more than 3 vehicles in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.rescue-more",
+    "name": {
+      "de": "Rette mehr!",
+      "en": "Rescue More!"
+    },
+    "description": {
+      "de": "Rette mehr als 75 Verbündete in einem Match in „Krieg“.",
+      "en": "Rescue more than 75 allies in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.killing-machine",
+    "name": {
+      "de": "Tötungsmaschine",
+      "en": "Killing Machine"
+    },
+    "description": {
+      "de": "Töte mehr als 120 Feinde in einem Match in „Krieg“.",
+      "en": "Kill more than 120 enemies in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.welding-warlord",
+    "name": {
+      "de": "Der Maschinist",
+      "en": "Welding Warlord"
+    },
+    "description": {
+      "de": "Erziele mehr als 1.000 Punkte durch Reparatur in einem Match in „Krieg“.",
+      "en": "Score more than 1,000 from repair in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.nuclear-strike",
+    "name": {
+      "de": "Nuklearschlag",
+      "en": "Nuclear Strike"
+    },
+    "description": {
+      "de": "Erziele mehr als 4.000 Punkte mit einem Lenkflugkörper in einem Match in „Krieg“.",
+      "en": "Score more than 4,000 using Guided Missile in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.headshot-expert",
+    "name": {
+      "de": "Kopfschuss-Experte",
+      "en": "Headshot Expert"
+    },
+    "description": {
+      "de": "Erziele 25 Kopfschuss-Kills in einem Match in „Krieg“.",
+      "en": "Make 25 headshot kills in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.endless-barrage",
+    "name": {
+      "de": "Endloses Sperrfeuer",
+      "en": "Endless Barrage"
+    },
+    "description": {
+      "de": "Versorge Gruppenkameraden 40-mal per Munitionskiste in einem Match in „Krieg“.",
+      "en": "Resupply squadmates 40 times via Ammo Crate in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.pistol-cleaner",
+    "name": {
+      "de": "Pistolenreiniger",
+      "en": "Pistol Cleaner"
+    },
+    "description": {
+      "de": "Töte 30 Feinde mit einer Pistole in einem Match in „Krieg“.",
+      "en": "Kill 30 enemies using a pistol in a Warfare match."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.field-marathon",
+    "name": {
+      "de": "Feldmarathon",
+      "en": "Field Marathon"
+    },
+    "description": {
+      "de": "Bewege dich 42,195 km in „Krieg“.",
+      "en": "Move 42.195km in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.field-half-marathon",
+    "name": {
+      "de": "Halbfeldmarathon",
+      "en": "Field Half-Marathon"
+    },
+    "description": {
+      "de": "Bewege dich 21,97 km in „Krieg“.",
+      "en": "Move 21.97km in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.d-wolf-operations",
+    "name": {
+      "de": "S-Wolf – Einsätze",
+      "en": "D-wolf - Operations"
+    },
+    "description": {
+      "de": "Teile als S-Wolf 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as D-wolf in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.d-wolf-warfare",
+    "name": {
+      "de": "S-Wolf – Krieg",
+      "en": "D-wolf - Warfare"
+    },
+    "description": {
+      "de": "Teile als S-Wolf 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as D-wolf in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.vyron-operations",
+    "name": {
+      "de": "Vyron – Einsätze",
+      "en": "Vyron - Operations"
+    },
+    "description": {
+      "de": "Teile als Vyron 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Vyron in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.vyron-warfare",
+    "name": {
+      "de": "Vyron – Krieg",
+      "en": "Vyron - Warfare"
+    },
+    "description": {
+      "de": "Teile als Vyron 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Vyron in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.stinger-operations",
+    "name": {
+      "de": "Stinger – Einsätze",
+      "en": "Stinger - Operations"
+    },
+    "description": {
+      "de": "Teile als Stinger 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Stinger in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.stinger-warfare",
+    "name": {
+      "de": "Stinger – Krieg",
+      "en": "Stinger - Warfare"
+    },
+    "description": {
+      "de": "Teile als Stinger 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Stinger in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.toxik-operations",
+    "name": {
+      "de": "Toxik – Einsätze",
+      "en": "Toxik - Operations"
+    },
+    "description": {
+      "de": "Teile als Toxik 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Toxik in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.toxik-warfare",
+    "name": {
+      "de": "Toxik – Krieg",
+      "en": "Toxik - Warfare"
+    },
+    "description": {
+      "de": "Teile als Toxik 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Toxik in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.shepherd-operations",
+    "name": {
+      "de": "Shepherd – Einsätze",
+      "en": "Shepherd - Operations"
+    },
+    "description": {
+      "de": "Teile als Shepherd 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Shepherd in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.shepherd-warfare",
+    "name": {
+      "de": "Shepherd – Krieg",
+      "en": "Shepherd - Warfare"
+    },
+    "description": {
+      "de": "Teile als Shepherd 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Shepherd in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.uluru-operations",
+    "name": {
+      "de": "Uluru – Einsätze",
+      "en": "Uluru - Operations"
+    },
+    "description": {
+      "de": "Teile als Uluru 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Uluru in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.uluru-warfare",
+    "name": {
+      "de": "Uluru – Krieg",
+      "en": "Uluru - Warfare"
+    },
+    "description": {
+      "de": "Teile als Uluru 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Uluru in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.luna-operations",
+    "name": {
+      "de": "Luna – Einsätze",
+      "en": "Luna - Operations"
+    },
+    "description": {
+      "de": "Teile als Luna 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Luna in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.luna-warfare",
+    "name": {
+      "de": "Luna – Krieg",
+      "en": "Luna - Warfare"
+    },
+    "description": {
+      "de": "Teile als Luna 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Luna in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.hackclaw-operations",
+    "name": {
+      "de": "Hackclaw – Einsätze",
+      "en": "Hackclaw - Operations"
+    },
+    "description": {
+      "de": "Teile als Hackclaw 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Hackclaw in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.hackclaw-warfare",
+    "name": {
+      "de": "Hackclaw – Krieg",
+      "en": "Hackclaw - Warfare"
+    },
+    "description": {
+      "de": "Teile als Hackclaw 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Hackclaw in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.sineva-operations",
+    "name": {
+      "de": "Sineva – Einsätze",
+      "en": "Sineva - Operations"
+    },
+    "description": {
+      "de": "Teile als Sineva 100.000 Schaden aus (Einsätze).",
+      "en": "Deal 100,000 damage as Sineva in Operations."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Einsätze",
+          "en": "Operations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.achievement.sineva-warfare",
+    "name": {
+      "de": "Sineva – Krieg",
+      "en": "Sineva - Warfare"
+    },
+    "description": {
+      "de": "Teile als Sineva 200.000 Schaden aus (Krieg).",
+      "en": "Deal 200,000 damage as Sineva in Warfare."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "value": {
+          "de": "Steam-Erfolg",
+          "en": "Steam achievement"
+        }
+      },
+      {
+        "label": {
+          "de": "Plattform",
+          "en": "Platform"
+        },
+        "value": {
+          "de": "PC / Steam",
+          "en": "PC / Steam"
+        }
+      },
+      {
+        "label": {
+          "de": "Modus",
+          "en": "Mode"
+        },
+        "value": {
+          "de": "Krieg",
+          "en": "Warfare"
+        }
+      }
+    ]
+  }
+]

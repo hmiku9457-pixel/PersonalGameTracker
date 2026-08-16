@@ -1,0 +1,532 @@
+[
+  {
+    "id": "deltaForce.operator.morse.level-01",
+    "name": {
+      "de": "Morse – Level 1",
+      "en": "Morse – Level 1"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 1 besitzen beziehungsweise erreichen.",
+      "en": "Have or reach Operator Level 1 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "1",
+          "en": "1"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Startlevel; keine vorgeschaltete Level-Challenge erforderlich.",
+          "en": "Starting level; no preceding level challenge required."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-02",
+    "name": {
+      "de": "Morse – Level 2",
+      "en": "Morse – Level 2"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 2 bringen.",
+      "en": "Reach Operator Level 2 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "2",
+          "en": "2"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-03",
+    "name": {
+      "de": "Morse – Level 3",
+      "en": "Morse – Level 3"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 3 bringen.",
+      "en": "Reach Operator Level 3 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "3",
+          "en": "3"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-04",
+    "name": {
+      "de": "Morse – Level 4",
+      "en": "Morse – Level 4"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 4 bringen.",
+      "en": "Reach Operator Level 4 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "4",
+          "en": "4"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-05",
+    "name": {
+      "de": "Morse – Level 5",
+      "en": "Morse – Level 5"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 5 bringen.",
+      "en": "Reach Operator Level 5 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "5",
+          "en": "5"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-06",
+    "name": {
+      "de": "Morse – Level 6",
+      "en": "Morse – Level 6"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 6 bringen.",
+      "en": "Reach Operator Level 6 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "6",
+          "en": "6"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-07",
+    "name": {
+      "de": "Morse – Level 7",
+      "en": "Morse – Level 7"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 7 bringen.",
+      "en": "Reach Operator Level 7 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "7",
+          "en": "7"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-08",
+    "name": {
+      "de": "Morse – Level 8",
+      "en": "Morse – Level 8"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 8 bringen.",
+      "en": "Reach Operator Level 8 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "8",
+          "en": "8"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-09",
+    "name": {
+      "de": "Morse – Level 9",
+      "en": "Morse – Level 9"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 9 bringen.",
+      "en": "Reach Operator Level 9 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "9",
+          "en": "9"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  },
+  {
+    "id": "deltaForce.operator.morse.level-10",
+    "name": {
+      "de": "Morse – Level 10",
+      "en": "Morse – Level 10"
+    },
+    "description": {
+      "de": "Morse auf Operator-Level 10 bringen.",
+      "en": "Reach Operator Level 10 with Morse."
+    },
+    "details": [
+      {
+        "label": {
+          "de": "Operator",
+          "en": "Operator"
+        },
+        "value": {
+          "de": "Morse",
+          "en": "Morse"
+        }
+      },
+      {
+        "label": {
+          "de": "Klasse",
+          "en": "Class"
+        },
+        "value": {
+          "de": "Recon",
+          "en": "Recon"
+        }
+      },
+      {
+        "label": {
+          "de": "Level",
+          "en": "Level"
+        },
+        "value": {
+          "de": "10",
+          "en": "10"
+        }
+      },
+      {
+        "label": {
+          "de": "Challenge-Regel",
+          "en": "Challenge rule"
+        },
+        "value": {
+          "de": "Für Operator-Level werden pro Abschnitt mehrere Operator-Missionen angeboten; öffentlich aktuelle Berichte beschreiben 6 Missionen (3 Warfare + 3 Operations), von denen 3 abgeschlossen werden müssen. Die vollständige exakte Aufgabenmatrix ist nicht zuverlässig öffentlich indexiert und wird deshalb nicht erfunden.",
+          "en": "Operator progression offers multiple missions per stage; current public reports describe 6 missions (3 Warfare + 3 Operations), with 3 required. The complete exact mission matrix is not reliably publicly indexed, so no tasks are fabricated here."
+        }
+      }
+    ]
+  }
+]
