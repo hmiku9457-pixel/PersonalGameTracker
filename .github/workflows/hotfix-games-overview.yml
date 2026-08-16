@@ -1,0 +1,124 @@
+name: Hotfix - Games overview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hotfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Fehlende Imports der Spieleuebersicht reparieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path(
+              "assets/js/views/gamesView.js"
+          )
+
+          content = path.read_text(
+              encoding="utf-8"
+          ).replace(
+              "\r\n",
+              "\n"
+          )
+
+          header_end = content.find(
+              "import {\n\tbuildGameHash"
+          )
+
+          if header_end < 0:
+              raise SystemExit(
+                  "routeHashService-Import in gamesView.js wurde nicht gefunden."
+              )
+
+          required_prefix = '''import {
+          \tgetActiveViewScope,
+          \tisViewScopeCurrent,
+          \tregisterViewCleanup
+          } from "../services/viewScopeService.js";
+
+
+          import {
+          \tcalculateManifestProgressFromMetadata
+          } from "../services/progressSummaryService.js";
+
+
+          import {
+          \tloadGameManifest,
+          \tloadGames
+          } from "../services/dataService.js";
+
+
+          '''
+
+          missing_tokens = [
+              "getActiveViewScope",
+              "isViewScopeCurrent",
+              "registerViewCleanup",
+              "calculateManifestProgressFromMetadata",
+              "loadGameManifest",
+              "loadGames"
+          ]
+
+          imports_area = content[
+              :content.find(
+                  "/* ---------------------------------------------------------",
+                  0
+              )
+          ]
+
+          if all(
+              token in imports_area
+              for token in missing_tokens
+          ):
+              print(
+                  "[SKIP] Alle benötigten Imports sind bereits vorhanden."
+              )
+          else:
+              content = (
+                  content[:header_end]
+                  + required_prefix
+                  + content[header_end:]
+              )
+
+              path.write_text(
+                  content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+
+              print(
+                  "[WRITE] Fehlende Imports der Spieleübersicht ergänzt."
+              )
+          PY
+
+      - name: Aenderung committen und pushen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/js/views/gamesView.js
+
+          if git diff --cached --quiet; then
+            echo "Keine Aenderung erforderlich."
+            exit 0
+          fi
+
+          git commit -m "Restore games overview imports [skip ci]"
+          git push
