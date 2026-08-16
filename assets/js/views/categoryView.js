@@ -16,6 +16,7 @@ import {
 } from "../services/dataService.js";
 
 import {
+	calculateCategoryProgress,
 	isItemCompleted,
 	loadGameProgressData,
 	setItemCompleted,
